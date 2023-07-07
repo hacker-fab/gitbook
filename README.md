@@ -2,7 +2,7 @@
 
 ## the manifesto.
 
-### **In just four months,**&#x20;
+### **In just eight months,**&#x20;
 
 students ranging from freshmen to PhDs went from an empty room with cardboard boxes of equipment to a nanofab facility capable of making functioning transistors.
 
