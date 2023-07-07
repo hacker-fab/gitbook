@@ -14,8 +14,6 @@
 * [🎨 For Designers](how-to-contribute/for-designers.md)
 * [🖥 For Developers](how-to-contribute/for-developers.md)
 
-## 📃 Process Manuals
-
 ## 🛠 Build Manuals
 
 * [📽 Photolithography Stepper V1](build-manuals/photolithography-stepper-v1.md)
