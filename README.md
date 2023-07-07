@@ -1,3 +1,9 @@
+---
+description: >-
+  wanna contribute?
+  https://app.gitbook.com/invite/QZ6cJs5t3fpGoMOKzqNM/yN2mWWMV8Xs4tyqCR5eM
+---
+
 # 👋 Intro to the Hacker Fab
 
 ## the manifesto.
