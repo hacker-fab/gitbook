@@ -17,3 +17,4 @@
 ## 🛠 Build Manuals
 
 * [📽 Photolithography Stepper V1](build-manuals/photolithography-stepper-v1.md)
+* [🔔 other build test](build-manuals/other-build-test.md)
