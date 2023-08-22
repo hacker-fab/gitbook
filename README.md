@@ -1,7 +1,19 @@
 ---
 description: >-
-  wanna contribute?
+  wanna contribute? make a Gitbook account and use the invite link below to
+  start making comments and edits:
   https://app.gitbook.com/invite/QZ6cJs5t3fpGoMOKzqNM/yN2mWWMV8Xs4tyqCR5eM
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # 👋 Intro to the Hacker Fab
@@ -58,12 +70,16 @@ This initiative was started in 2022 by Sam Zeloof, Elio Bourcart, and Alexander 
 [current-fab-capabilities.md](overview/current-fab-capabilities.md)
 {% endcontent-ref %}
 
+{% content-ref url="overview/build-a-fab.md" %}
+[build-a-fab.md](overview/build-a-fab.md)
+{% endcontent-ref %}
+
 ## Get Started
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="build-manuals/photolithography-stepper-v1.md" %}
-[photolithography-stepper-v1.md](build-manuals/photolithography-stepper-v1.md)
+{% content-ref url="builds/photolithography-stepper-v1.md" %}
+[photolithography-stepper-v1.md](builds/photolithography-stepper-v1.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

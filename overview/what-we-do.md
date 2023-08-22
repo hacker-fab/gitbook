@@ -1,11 +1,33 @@
-# 💡 What we do
+---
+description: 'Open-Source License:'
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: false
+---
 
-{% hint style="info" %}
-**GitBook tip:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at Loom as a perfect example of a succinct feature overview.
-{% endhint %}
+# ✍ Start Contributing
 
-## Video overview
 
-Got 2 minutes? Check out a video overview of our product:
 
-{% embed url="https://www.loom.com/embed/3bfa83acc9fd41b7b98b803ba9197d90" %}
+* [ ] documentation templates
+  * [ ] if forking an existing project, have a dedicated section for differences/quantifiable improvements
+* [ ] future work section/ideas
+*
+
+## Build Existing Work
+
+This doesn't necessarily mean recreating the [entire fab](build-a-fab.md). Each of these machines or processes can be worked on individually.
+
+## Join the Hacker Fab GitBook Group
+
+[CLICK HERE](https://app.gitbook.com/invite/QZ6cJs5t3fpGoMOKzqNM/yN2mWWMV8Xs4tyqCR5eM) to be added to the GitBook
+
+This will enable you to make comments on existing documentation, as well as fork and suggest edits to all GitBook documentation.

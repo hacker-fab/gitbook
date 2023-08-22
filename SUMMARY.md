@@ -4,17 +4,34 @@
 
 ## Overview
 
-* [💡 What we do](overview/what-we-do.md)
 * [✨ Current Fab Capabilities](overview/current-fab-capabilities.md)
+* [✍ Start Contributing](overview/what-we-do.md)
+* [▶ Build-a-Fab](overview/build-a-fab.md)
 
-## ✍ How to Contribute
+## 🛠 Builds
 
-* [📪 Making a post](how-to-contribute/making-a-post.md)
-* [📎 Understanding Projects](how-to-contribute/understanding-projects.md)
-* [🎨 For Designers](how-to-contribute/for-designers.md)
-* [🖥 For Developers](how-to-contribute/for-developers.md)
+* [📽 Photolithography Stepper V1](builds/photolithography-stepper-v1.md)
 
-## 🛠 Build Manuals
+## 🧑🍳 Process Manuals
 
-* [📽 Photolithography Stepper V1](build-manuals/photolithography-stepper-v1.md)
-* [🔔 other build test](build-manuals/other-build-test.md)
+* [Wafer Cleaving](process-manuals/wafer-cleaving.md)
+* [Patterning Manual](process-manuals/patterning-manual/README.md)
+  * [Vacuum Spin Coater](process-manuals/patterning-manual/vacuum-spin-coater.md)
+  * [Hot Plate Manual](process-manuals/patterning-manual/hot-plate-manual.md)
+  * [Solvent Strip Manual](process-manuals/patterning-manual/solvent-strip-manual.md)
+* [Plasma Etcher Manual](process-manuals/plasma-etcher-manual.md)
+* [Spin on Glass Manual](process-manuals/spin-on-glass-manual/README.md)
+  * [Spin on Glass Storage and Preperation](process-manuals/spin-on-glass-manual/spin-on-glass-storage-and-preperation.md)
+  * [Spin on Glass Inspection](process-manuals/spin-on-glass-manual/spin-on-glass-inspection.md)
+* [Tube Furnace](process-manuals/tube-furnace.md)
+* [Glass Acid Etch Manual](process-manuals/glass-acid-etch-manual.md)
+* [Evaporator Manual](process-manuals/evaporator-manual.md)
+* [Aluminum Acid Etch Manual](process-manuals/aluminum-acid-etch-manual.md)
+* [Probe Station Manual](process-manuals/probe-station-manual.md)
+
+## 🔲 Templates
+
+* [Generic Build Manual Template](templates/generic-build-manual-template.md)
+* [Generic Process Manual Template](templates/generic-process-manual-template.md)
+* [Generic BOM](templates/generic-bom.md)
+* [Hardware X Template (for reference)](templates/hardware-x-template-for-reference.md)
