@@ -1,8 +1,4 @@
 ---
-description: >-
-  wanna contribute? make a Gitbook account and use the invite link below to
-  start making comments and edits:
-  https://app.gitbook.com/invite/QZ6cJs5t3fpGoMOKzqNM/yN2mWWMV8Xs4tyqCR5eM
 layout:
   title:
     visible: true
@@ -20,7 +16,7 @@ layout:
 
 ## the manifesto.
 
-### **In just nineeeteenten months,**&#x20;
+### **In just nine months,**&#x20;
 
 students ranging from freshmen to PhDs went from an empty room with cardboard boxes of equipment to a nanofab facility capable of making functioning transistors.
 
@@ -46,7 +42,6 @@ designs, builds, and documents low cost open-source nanofab equipment. Every ste
 * Countless trailing edge nodes and research projects
 * Designing specific new machines alongside novel device research
 * An end-to-end semiconductor education platform
-*
   * Accessible and hands-on for undergrads + highschoolers
   * Low cost for institutions
   * No clean room + minimal safety training
@@ -70,8 +65,8 @@ This initiative was started in 2022 by Sam Zeloof, Elio Bourcart, and Alexander 
 [current-fab-capabilities.md](overview/current-fab-capabilities.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/build-a-fab-page-work-in-progress.md" %}
-[build-a-fab-page-work-in-progress.md](overview/build-a-fab-page-work-in-progress.md)
+{% content-ref url="overview/build-a-fab.md" %}
+[build-a-fab.md](overview/build-a-fab.md)
 {% endcontent-ref %}
 
 ## Get Started

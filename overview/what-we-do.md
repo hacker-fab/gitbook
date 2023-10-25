@@ -24,7 +24,7 @@ layout:
 
 ## Build Existing Work
 
-This doesn't necessarily mean recreating the [entire fab](build-a-fab-page-work-in-progress.md). Each of these machines or processes can be worked on individually.
+This doesn't necessarily mean recreating the [entire fab](build-a-fab.md). Each of these machines or processes can be worked on individually.
 
 ## Join the Hacker Fab GitBook Group
 
