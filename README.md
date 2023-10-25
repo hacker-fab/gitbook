@@ -70,8 +70,8 @@ This initiative was started in 2022 by Sam Zeloof, Elio Bourcart, and Alexander 
 [current-fab-capabilities.md](overview/current-fab-capabilities.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/build-a-fab.md" %}
-[build-a-fab.md](overview/build-a-fab.md)
+{% content-ref url="overview/build-a-fab-page-work-in-progress.md" %}
+[build-a-fab-page-work-in-progress.md](overview/build-a-fab-page-work-in-progress.md)
 {% endcontent-ref %}
 
 ## Get Started
