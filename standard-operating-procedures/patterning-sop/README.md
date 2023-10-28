@@ -1,11 +1,6 @@
 # 🎞 Patterning SOP
 
-| Patterning Manual |
-| ----------------- |
-
-Parameters\
-
-
+## Parameters
 
 1. HMDS Prebake Temperature
 2. HMDS Prebake Time
@@ -25,44 +20,15 @@ Parameters\
 16. Exposure Dose
 17. Developer Type
 18. Developer Time
-19. Developer Temperature\
+19. Developer Temperature
 
-
-\
-
-
-![](https://lh6.googleusercontent.com/DepkhvSUzCDeyU\_a0egOWeGpcdrrztHBxgIZeENh5sU6voH4ozvRGiTDb5UImGJPz03\_xUMAsx-ZperZ\_6mPW3ZEX9NjODHHIeaLigTkDRkdpPAStGClewdI\_L5F\_xsDzeyROslLjKiXvwaTxeXgRQ0)
-
-&#x20;  Substrate (varies)     Spin Coat![](https://lh3.googleusercontent.com/fVBs20cVgU51okQiSb0UXTraDnBpOqSPsuOtmAVHurukdNtNSDLSZSEIRNrXXx1iy\_PT0X22BVYNX2hN247JvBZ9rLJSn8xC-5X-33E2xabiTqBUnexg-w4j2K5mJsJHPAAkQsikit2IFtbE-OjlDFY)
-
-\
-
-
-![](https://lh3.googleusercontent.com/47dDWQ1z6xBtKTrF-hMjReifa7ZgT5GhnTstfFTeyg01AUnlxKTc0vdu323FuJNsnQu5SRUJYyITLwutEk1qkVBzvkmTfn-L8P8i762wupDAyt3w7xfyt04luRyIkrpkL\_Ed9b5atQAWep0pMushe64)
-
-\
-
-
-Expose Develop
-
-![](https://lh5.googleusercontent.com/jFWgvfuvgMXopu3uWUsfHAT330iL-StVB1mmBmmA0zvtatYaRHARCf4XGf9IqAaKJ8qm2SULmIpW9N4WxPjZn9ZEuMNbHyzCKpwQanjYeqDUzspRALHZjyWe20gGtL-3HIrS8u-5I6wq8Td7ekM4\_RU)  ![](https://lh6.googleusercontent.com/Ui53PDFHKm9Oji6Wvf5w7AJXymV8ssERq3wZ9rsX50UYup86Xzuk4yEtP6AgKrMT\_0XcC2rTt1OR6izGoWJUsxjpPukyWc1C71vbecWyTTRkqkHFzWIZr7VlPBRq0gGWQUX1--T4z0iXGKPp3rwEHik)
-
-\
-
-
-&#x20; &#x20;
+<figure><img src="../../.gitbook/assets/patterning_cross_sections.png" alt=""><figcaption></figcaption></figure>
 
 ## Purpose
 
 Patterning is the core of any micro/nanofabrication process, as it is used to mask etch and deposit steps. First we spin coat photoresist to deposit a thin layer. Then we use our maskless lithography stepper to expose our pattern in the resist with light. Finally we wash away the exposed region with developer. This leaves behind a resist pattern that is resistant to many types of acid and plasma etches. It can also be hard baked and used as a dielectric, or metal can be deposited on top of it for a lift off process. The procedure described here uses a positive resist, AZ-P4210, but negative resists also exist where unexposed areas become soluble.
 
-\
-
-
 See the appendix for useful resources about spin coating, our resist, and developer.
-
-\
-
 
 ## Tools
 
@@ -84,50 +50,49 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ### Preparation
 
-1. Open [this spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing) and record all values and results. Also record any steps that went wrong and how they went wrong.&#x20;
+1. If you have already claimed a chip number, and opened its specific chip view data sheet, record your patterning data into that sheet. If you have NOT claimed a chip number, and have NOT begun recording data in a chip specific sheet, open this [central chip count](https://docs.google.com/spreadsheets/d/1MrqtnkHcNr5hekHpQHusBZJG4nrdcxDz7Yg5Emn9BMQ/edit#gid=0) sheet, claim the next available chip number, open the blank chip view sheet for that specific chip number and record all subsequent process data into it.&#x20;
 2. [Cleave](https://docs.google.com/document/d/1UWZ\_X2TpRqdOWOC8YGubfD7xW-dz4nRNzJk5c\_mo4w0/edit?usp=sharing) the Si wafer into a \~1 cm x 1 cm square.
 3. Dust off the wafer with the nitrogen gun
 
-\
-
-
-Wafer Cleaning
+### Wafer Cleaning
 
 1. In the fume hood, hold the wafer with tweezers over the sink.
 2. Rinse the polished side of the wafer thoroughly with acetone, then isopropyl alcohol.
-3.
    1. The acetone leaves a residue that must be removed by the isopropyl alcohol rinse.
-4. Blow the wafer dry with the nitrogen gun.
-5.
+3. Blow the wafer dry with the nitrogen gun.
    1. Even when the wafer appears dry, there may still be moisture on the edges, so dry liberally.
-6. Inspect with the naked eye and note any marks on the wafer.
-7.
+4. Inspect with the naked eye and note any marks on the wafer.
    1. Marks present after cleaning are likely scratches that need to be documented so we observe their effect on the process.
 
 ### Spin Coat
 
+
+
+<figure><img src="../../.gitbook/assets/spin_bake.png" alt=""><figcaption></figcaption></figure>
+
 4. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
 5. If patterning on silicon, spin coat 1 drop of HMDS. Otherwise skip to 7.&#x20;
-6.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-7. Bake on the hot plate at 100°C for 30 seconds.
-8. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops
-9.
+6. Bake on the hot plate at 100°C for 30 seconds.
+7. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-10. Soft bake on the hot plate at 100°C for 90 seconds.
+   2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
 
-### Expose Using Maskless Photolithography Stepper![](https://lh6.googleusercontent.com/rN2HswTL3rTkrhE96V\_UChyl1EvvYTMRh7LrYaod65y1sQuYmfTMetf5ahwlpWZ2HDdwLPgl3uLJyCPmcksVdKQsGMUG2Y2gAHVWj50WWfWtaAoStkHEIWd4uk6ZnpN\_jDjurbdn9c0nmMKvXqXyB-I)![](https://lh3.googleusercontent.com/feOmT6ldGv9ecWx08YT12kbhHV3tMpaIUgp0nKF0uQ-8Ynx6bX6Y2S5aV6iXpFsGdZ8tM4IUzI5-ZVpkVoroLXqWToXUUpgVRmpTfslQ-xmbus3lloDhC40G2WK6RiVshBrp3-2vRwEaA5oyW27rVlM)
+       ![](https://lh7-us.googleusercontent.com/BciCSAplFhLYkyUqJh4kPKxU3ONYgSHvfXDoACU\_73Z-xF\_lqWpIHO5CPtZGyt3n-I2zkU4y8P\_jjom\_DykU0BANy6GmklaMhCM\_sEptYzvwVZ\_GXsdCKMdNSUenD\_o\_2e8Nrk9LY7WXKRp42rtfLiU)
+   3. Or, take o-ring off and clean then re-install.
+8. Soft bake on the hot plate at 100°C for 90 seconds.
+
+### Expose Using Maskless Photolithography Stepper![](https://lh6.googleusercontent.com/rN2HswTL3rTkrhE96V\_UChyl1EvvYTMRh7LrYaod65y1sQuYmfTMetf5ahwlpWZ2HDdwLPgl3uLJyCPmcksVdKQsGMUG2Y2gAHVWj50WWfWtaAoStkHEIWd4uk6ZnpN\_jDjurbdn9c0nmMKvXqXyB-I)<img src="https://lh3.googleusercontent.com/feOmT6ldGv9ecWx08YT12kbhHV3tMpaIUgp0nKF0uQ-8Ynx6bX6Y2S5aV6iXpFsGdZ8tM4IUzI5-ZVpkVoroLXqWToXUUpgVRmpTfslQ-xmbus3lloDhC40G2WK6RiVshBrp3-2vRwEaA5oyW27rVlM" alt="" data-size="original">
 
 1. Turn on the projector. Plug in the HDMI cable for the projector and the USB camera cable.
 2. Set up the projector as a second screen on your computer’s  display settings.
 3. Put your image to be patterned in a Google Slides presentation. Example: [patterning](https://docs.google.com/presentation/d/16H1Pf2Zkq9nyL4HAj6gduJSA1r-k2tIijDcd4yQjXhY/edit#slide=id.p).&#x20;
-4.
    1. Put a black screen as the last slide in your presentation. This will be the non-exposing/”off” slide.
    2. Put another black screen as the second to last slide, this time adding a dark gray plus sign or other easily focusable feature. Ensure this feature is in an area that will either get exposed or isn’t used.
-5. Copy the flat field correction mask from here and paste it on top of your pattern in google slides. Select the mask and go to format options > set opacity to 50%.
-6. Move the slideshow to your second (projected) desktop and press fn+f5 to present.
-7. Check that the red filter is inserted and the bandpass (UV) filter is out.
-8. Place the chip with soft baked photoresist on the stage.
+4. Copy the flat field correction mask from here and paste it on top of your pattern in google slides. Select the mask and go to format options > set opacity to 50%.
+5. Move the slideshow to your second (projected) desktop and press fn+f5 to present.
+6. Check that the red filter is inserted and the bandpass (UV) filter is out.
+7. Place the chip with soft baked photoresist on the stage.
 
 ![](https://lh6.googleusercontent.com/9uPJVGFYsM0O\_9eSTHUc5XmWndqLM7HFHuw\_IIwn\_mL4nsertKGQOKg5tSQJsOyLhXqmrktu4LiZTLpkMwXivTxCHepLq\_6gYmLWeQQknDNp\_qBLRyPEbfi6\_bTj30ni6f7QEToy6JDHYP5q4cF0FVI)
 
@@ -136,9 +101,6 @@ Wafer Cleaning
 10. Move the Z stage by 7 ticks counter clockwise. This will switch from focusing in red to focusing in UV.
 11. Alt tab and turn the exposure time to \~250ms and the gain all the way up on AmScope.
 12. Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.
-
-\
-
 
 ![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)
 

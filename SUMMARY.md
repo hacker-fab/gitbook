@@ -42,6 +42,6 @@
 
 * [Build Manual Template](templates/build-manual-template.md)
 * [Bought Equipment Template](templates/bought-equipment-template.md)
-* [Process Manual Template](templates/process-manual-template.md)
+* [Standard Operating Procedure Template](templates/standard-operating-procedure-template.md)
 * [BOM Template](templates/bom-template.md)
 * [Hardware X Template (for reference)](templates/hardware-x-template-for-reference.md)

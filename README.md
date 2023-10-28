@@ -31,12 +31,3 @@ description: the first open source semiconductor fab.
 {% content-ref url="overview/build-a-fab.md" %}
 [build-a-fab.md](overview/build-a-fab.md)
 {% endcontent-ref %}
-
-## Get Started
-
-We've put together some helpful guides for you to get setup with our product quickly and easily.
-
-{% content-ref url="builds/photolithography-stepper-v1.md" %}
-[photolithography-stepper-v1.md](builds/photolithography-stepper-v1.md)
-{% endcontent-ref %}
-
