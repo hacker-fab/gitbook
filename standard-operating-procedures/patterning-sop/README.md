@@ -82,99 +82,95 @@ See the appendix for useful resources about spin coating, our resist, and develo
    3. Or, take o-ring off and clean then re-install.
 8. Soft bake on the hot plate at 100°C for 90 seconds.
 
-### Expose Using Maskless Photolithography Stepper![](https://lh6.googleusercontent.com/rN2HswTL3rTkrhE96V\_UChyl1EvvYTMRh7LrYaod65y1sQuYmfTMetf5ahwlpWZ2HDdwLPgl3uLJyCPmcksVdKQsGMUG2Y2gAHVWj50WWfWtaAoStkHEIWd4uk6ZnpN\_jDjurbdn9c0nmMKvXqXyB-I)<img src="https://lh3.googleusercontent.com/feOmT6ldGv9ecWx08YT12kbhHV3tMpaIUgp0nKF0uQ-8Ynx6bX6Y2S5aV6iXpFsGdZ8tM4IUzI5-ZVpkVoroLXqWToXUUpgVRmpTfslQ-xmbus3lloDhC40G2WK6RiVshBrp3-2vRwEaA5oyW27rVlM" alt="" data-size="original">
+## Stepper Setup
 
-1. Turn on the projector. Plug in the HDMI cable for the projector and the USB camera cable.
-2. Set up the projector as a second screen on your computer’s  display settings.
-3. Put your image to be patterned in a Google Slides presentation. Example: [patterning](https://docs.google.com/presentation/d/16H1Pf2Zkq9nyL4HAj6gduJSA1r-k2tIijDcd4yQjXhY/edit#slide=id.p).&#x20;
+1. Turn on the projector. Plug in the HDMI cable for the projector and the USB camera cable to your computer.
+2. Plug in the Raspberry pi power adapter and press the button on the arduino nano to turn them on.
+3. Set up the projector as a second screen on your computer’s  display settings.
+4. Prepare patterns following [this guide](https://docs.google.com/document/d/1KSepVb3Hcj588Dh-XTc7v-McR3kzytuWSQJffmucU\_Q)
+5. Set up the patterning GUI util script
+   1. Run the python script\
+      It requires installing pillow and tkinter with pip3
+   2. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
+   3. Use the three import buttons to select the desired images, these can be changed whenever. Make sure they are correct using the small previews
+   4. Future mentions to GUI buttons will be in \[braces]
+6. Put your image to be patterned in a Google Slides presentation. Example: [resolution tests](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv\_O2MjYu2rck/edit?usp=sharing).&#x20;
    1. Put a black screen as the last slide in your presentation. This will be the non-exposing/”off” slide.
    2. Put another black screen as the second to last slide, this time adding a dark gray plus sign or other easily focusable feature. Ensure this feature is in an area that will either get exposed or isn’t used.
-4. Copy the flat field correction mask from here and paste it on top of your pattern in google slides. Select the mask and go to format options > set opacity to 50%.
-5. Move the slideshow to your second (projected) desktop and press fn+f5 to present.
-6. Check that the red filter is inserted and the bandpass (UV) filter is out.
-7. Place the chip with soft baked photoresist on the stage.
 
-![](https://lh6.googleusercontent.com/9uPJVGFYsM0O\_9eSTHUc5XmWndqLM7HFHuw\_IIwn\_mL4nsertKGQOKg5tSQJsOyLhXqmrktu4LiZTLpkMwXivTxCHepLq\_6gYmLWeQQknDNp\_qBLRyPEbfi6\_bTj30ni6f7QEToy6JDHYP5q4cF0FVI)
-
-8. Open AmScope, find your chip, focus and align. The plus sign grid pattern is useful for accurate focus.
-9. Switch to the black screen after your pattern in the presentation.
-10. Move the Z stage by 7 ticks counter clockwise. This will switch from focusing in red to focusing in UV.
-11. Alt tab and turn the exposure time to \~250ms and the gain all the way up on AmScope.
-12. Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.
-
-![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)
-
-![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)![](https://lh4.googleusercontent.com/VRPyrQwK\_ADG1V1mm6Gq3nevMz1RwQthJSGqMHmDBNkvN7wKcdxvVOo7FLDYYKaxJ3y7e4pYb6rQNPHBZGWk6veKRw5Go66YUB0pdc2EbI1o3TmGdSScYsX3MeoUpHYj-lUFVIml6U2SRn-lfPZ5i5k)
-
-\
+![](https://lh7-us.googleusercontent.com/AjvwQz8Y71m7Knqu636TT7OYoJrw6wIlNRHwAZwMsHg2LgaSShhtQDhUYRX2AObAnvlHiEntNSHZcHB3OZuI\_vbjK\_dz4LuvsMFfrz8\_f3QoirlpsVRzvckBB8DvG5dvr\_TEVvQG0orTsOdRoPfN1xY)\
 
 
-13. Press the left arrow key once to switch to the focus pattern. Use the Z axis to focus. Try to do this as quickly as possible to avoid unnecessary exposure.
-14. Expose your pattern for 4 seconds: press the left arrow key to switch to your pattern in the presentation. Switch back to the black screen when the timer elapses. Try to be precise.
-15. Move on to your next pattern and repeat. If you’re aligning with an underlying pattern you need to switch back to red. Otherwise you can try stepping over and exposing in UV without refocusing.
+7. Copy the flat field correction mask from here and paste it on top of your pattern in google slides. Select the mask and go to format options > set opacity to 50%.
+8. In your browser, navigate to [http://172.26.165.101:5000/#](http://172.26.165.101:5000). This is how you control the stage. Press “cancel” when it prompts you to calibrate.
+9. Open AmScope.
+10. Split the screen so you can see the browser with the stage control and AmScope at the same time.
 
-### Develop
+### Expose Using Maskless Photolithography Stepper![](https://lh7-us.googleusercontent.com/Lia8nB-zYR7jTZ-BAyqmLfcC8XK2Q42-5g-KZVExbk4D0nzauZuegzm6YqfFg7vUgbKnUz11yA1YtGhOd79ISMnL2um5PFiGz1qp1Hh6jT111mRUUD6Y6IsYOO9hQfpQFiYqEFeCN\_8QwheGJPzJ7Ok)![](https://lh7-us.googleusercontent.com/\_Naje8v1XmrtrmcESqpRnYjhoVvyEc6ViZ3egDPHCNkugYv681pdv\_yyoats2KmE9W6yzcnTs1IO9Dyizc04d1Td6FHqgODATFVvMo\_S8ceofZFW48t2ry1L-GlWfaQxyGqkEVp7m8bTS88C86akFhQ)
 
-![](https://lh3.googleusercontent.com/8t0zai1N\_1MtZZVBasmZL4gZmv5d\_03e59O2BsVZ9JNt-ylC91mVcNbgqXdbFKIbLy2oZ4Kzq8kZqquSSTwBt5TntuPb6J8bEFKqD3WepFdiz0GFuKYJVpC4vSxnU4k4MLOUR2kesyK\_r4qKale1YFg)
+![](https://lh7-us.googleusercontent.com/dRSsmK-uKgAaM8xnmsnyGyFoSse-XgZyhkQLNxFy0nfpqHdhXPCFwxxRxx774ubOQq4IMprBGQ3V7TyDUGBukJoepKM7AoDqucc1jBXt6XKUJiGaf9argbg0wcPH\_8xA9lnQkVPH7HIDa4pQAN5ZU8E)
 
-9. Rinse the evaporating dish if needed.
-10.
-    1. Simply use the left-most tap on the sink in the fume hood at a low pressure to lightly wash the dish
-11. Pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400L 3:1”.
-12. Fill another evaporating dish halfway with DI water.
-13. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
+1. Check that the red filter is inserted and the bandpass (UV) filter is out.
+2. Place the chip with soft baked photoresist on the stage.
+3. Press \[show red focus]&#x20;
+4. Find your chip by moving it with tweezers, then rotate it so the pattern is the right way up.
 
-![](https://lh6.googleusercontent.com/snfdxSTrBxX73iTHVqxZWscye7x2K4JO3A5xEPVomLEZJ8wVO7zl\_dboK0qVMhZwpuzvQuc5CQDvNcf3uD8yK4AJaiViZ9e8iY-\_Sh613l7jQgcefMLX3GiK1oAcB5\_4zLKUnxxkO76eYl2g9Cl8d\_A)
+<figure><img src="../../.gitbook/assets/redfocus.png" alt=""><figcaption><p>Example of focused view with red illuminuation</p></figcaption></figure>
 
-13. Agitate the chip in the developer solution with quick, small circular motions. Watch [this video](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) for proper technique.
-14. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should hit the water exactly at 0 seconds.
-15.
-    1. Note that development time includes all the time that developer is touching the chip, not just during agitation
-16. Dry off the chip with compressed air and/or blot it on a wipe.
+16. Use the stage to rough focus and align. Use the arrow keys with the OpenFlexure control screen to move the stage. Use pg up/ pg down to move in Z. The plus sign grid pattern is useful for accurate focus.
+17. Press \[clear] to project a black screen.
+18. Move the Z stage by 1800 steps in +Z. This will switch from focusing in red to approximately focusing in UV.
 
-### Inspect
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
 
-16. Look at the chip with your bare eyes to help build an intuition for the process.
-17. Put the chip under the microscope. Connect to the camera with your laptop and take pictures at 5X, 10X bright and dark field, 20X bright and dark field, and 50X.
-18. Batch save then upload the folder to [Patterning Photos](https://drive.google.com/drive/folders/1-ON8-167CTyXiuhVdlI1\_WMpKkx0M0a8?usp=share\_link).
-19. Paste a link to the folder in the last column of the patterning data sheet.
-20. Put the chip away in a plastic box and label it with a serial number.
+19. Turn the exposure time to 200-300ms and the gain all the way up on AmScope.
+20. &#x20;Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.
 
-\
-\
+<figure><img src="../../.gitbook/assets/UVfocus.png" alt="" width="373"><figcaption><p>UV focus marks.</p></figcaption></figure>
 
+21. Press \[show UV focus] to show UV focusing pattern. Use the Z axis to focus. Try to do this as quickly as possible to avoid unnecessary exposure. Press \[clear] at any point to hide the focusing image.
+22. &#x20;Set the desired patterning time (in milliseconds)
+23. &#x20;Press the big red \[pattern] button when ready.
+24. &#x20;Move on to your next pattern and repeat. If you’re aligning with an underlying pattern you need to switch back to red. Otherwise you can try stepping over and exposing in UV without refocusing.
 
-![](https://lh4.googleusercontent.com/9damakFFVRlaLSRXvMT-itCyaTfVh9tnMKHvQrELsXUR8L6qju3yoNbiU1jxSebu4H804kHAG\_8Nvwie5RfvVmxgSkvKQ3AT1IUs1SQEhu8LQS5UZJO\_guHfFWhb4QIfYQuGQE5yDluk3zA0wjWmcW8)
+## Develop
 
-Features here are \~30 microns thick
+<figure><img src="../../.gitbook/assets/developer_dish (1).png" alt="" width="375"><figcaption><p>Developer (Deionized water to AZ-400K 3:1) and DI water rinse.</p></figcaption></figure>
 
-\
-![](https://lh6.googleusercontent.com/iZrUZfa513nnCB6LPkVacG9-XJnQdDhO1S513m9buJLM8qkPUhSz\_KM4lmHOuKrxI\_Vybxr1Xeg2VzrNezgZ7KgG3EBlaGa12xwTIPEw2dSgLyCZeSjGjxpEzP9YIBnWkfseiE3qCkLtqlFHez6ze5Q)
+1. Rinse the evaporating dish if needed.
+   1. Simply use the left-most tap on the sink in the fume hood at a low pressure to lightly wash the dish
+2. If empty, pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”.
+3. Fill another evaporating dish halfway with DI water.
+4. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
+
+<figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate</p></figcaption></figure>
+
+5. Agitate the chip in the developer solution with quick, small circular motions. Watch [this video](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) for proper technique.
+6. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should hit the water exactly at 0 seconds.
+   1. Note that development time includes all the time that developer is touching the chip, not just during agitation
+7. Dry off the chip with compressed air and/or blot it on a wipe.
+
+## Inspect
+
+1. Look at the chip with your bare eyes to help build an intuition for the process.
+2. Put the chip under the microscope. Connect to the camera with your laptop and take pictures at 5X, 10X bright and dark field, 20X bright and dark field, and 50X.
+   1. You can use the 10x or 20x objective and use the calibrated measuring system to determine feature sizes on your chip
+3. Batch save then upload the folder to [Patterning Photos](https://drive.google.com/drive/folders/1-ON8-167CTyXiuhVdlI1\_WMpKkx0M0a8?usp=share\_link).
+4. Paste a link to the folder in the last column of the patterning data sheet.
+5. Put the chip away in a plastic box and label it with a serial number.
+
+<figure><img src="https://lh7-us.googleusercontent.com/VXwgwFNreCqK2AwOaKCXhZBzbwyT4Rb94mn578uF9Eky_c-yzWojG3Y63RT89DR-o_y3zF_SqohF4liGo6DpLJJQRN0xEtdLU3f5A2W-8rhRnB4BnpuuJDDCcIZ0Ytd6vWb8F3H1CAbMUTnQY-biRMA" alt="" width="375"><figcaption><p>Inspection image demonstrating non-uniform exposure</p></figcaption></figure>
 
 Right side: thicker lines and blurry edges. Left side: thin lines and sharp edges.
-
-\
-\
-\
-\
-\
-
 
 ## Safety
 
 1. HMDS is a toxic, volatile chemical that should only be used in the fume hood.
 2. Photoresist, while not as bad as HMDS, contains some nasty solvents and should be cleaned with acetone if it gets on anything other than chips and the spin coater.
-3. AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.
-
-\
+3. AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.\
 
 
 ***
-
-\
-
-
-## Appendix
 
 ### Additional Resources
 
@@ -186,18 +182,15 @@ See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us
 
 ### Alternative Exposure Technique: 365nm Flashlight
 
-21. Put on UV protection glasses.
-22. Before placing the chip under the exposure area, turn on the flashlight and adjust the position of the UV meter’s sensor head to maximize the reading.&#x20;
-23.
+13. Put on UV protection glasses.
+14. Before placing the chip under the exposure area, turn on the flashlight and adjust the position of the UV meter’s sensor head to maximize the reading.&#x20;
     1. Depending on the battery level, this should be around 10 mW/cm2.
-24. Turn off the flashlight, being careful not to move it out of position.
-25. Place the chip on the plastic cap photoresist side up.&#x20;
-26. Place the mask on the wafer. Gently press down to sandwich the two together.
-27.
+15. Turn off the flashlight, being careful not to move it out of position.
+16. Place the chip on the plastic cap photoresist side up.&#x20;
+17. Place the mask on the wafer. Gently press down to sandwich the two together.
     1. If the ThorLabs logo is correctly oriented then the chrome is facing you. Put that side face down towards the chip.
     2. Try not to slide the mask on the wafer because you’ll damage the photoresist.
-28. Place the cap with the wafer and mask on top of the UV sensor.
-29. Turn on the flashlight for the desired exposure time.
-30. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
-31.
+18. Place the cap with the wafer and mask on top of the UV sensor.
+19. Turn on the flashlight for the desired exposure time.
+20. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
     1. Does should be automatically calculated in the sheet based on exposure option used
