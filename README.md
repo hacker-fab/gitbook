@@ -1,59 +1,28 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
+description: the first open source semiconductor fab.
 ---
 
-# 👋 Intro to the Hacker Fab
+# 👋 Hacker Fab Documentation
 
-## the manifesto.
+## Introduction
 
-### **In just nine months,**&#x20;
+#### We design, build, document, and share DIY machines and processes to fabricate semiconductor devices in any room, for anyone with access to the internet.
 
-students ranging from freshmen to PhDs went from an empty room with cardboard boxes of equipment to a nanofab facility capable of making functioning transistors.
+#### This webpage contains instructions for how to build and operate all the tools necessary to make simple integrated circuits.
 
-![](https://lh3.googleusercontent.com/lRmHpquauoL\_iEgnxNkkwGI04mpofZGgyMhDto1he5ync1x4TCX4134kKSb6I1UGznP8pnzXx-JFX\_ewvNGFoR47AFBJ12LSmRCMSnT8wVe\_IzisG9O1jmSj5cHm\_dQSMs-7LKhia87Zi6TfDiDd7mE)![](https://lh4.googleusercontent.com/41LeT\_4autKYPYrvyJM67yVk7cKJj8Lr4R7oe6n3msQwCeAOp5Wm\_Bko6m2UAITBtuoT-RK-5bWpV8T\_wwHpPaGWHthsERSJTMiCywGE-pgwcq0GUvCsZd6v-mMwyTKBOWQ6oMYrl0o6pB5gSQcW5U4)
+#### Click [here](http://hackerfab.hoster904.com/) to learn more about the first Hacker Fab at Carnegie Mellon University.
 
-\
+## Tools
 
+Current Total Equipment Cost: $
 
-How can an industry demand the continuation of Moore's Law without students who invent new approaches, particularly when gaining hands-on experience requires access to immutable million dollar equipment?
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Thermal Evaporator V1</td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">Build</a> for $15,000</td><td><a href="standard-operating-procedures/evaporator-sop.md">SOP</a></td><td><a href=".gitbook/assets/assembled.PNG">assembled.PNG</a></td></tr><tr><td>Lithography Stepper V1</td><td><a href="builds/photolithography-stepper-v1.md">Build</a> for $5,280</td><td><a href="standard-operating-procedures/patterning-sop/">SOP</a></td><td><a href=".gitbook/assets/stepperV1.jpg">stepperV1.jpg</a></td></tr><tr><td>Spin Coater V1</td><td><a href="builds/spin-coater-v1-build-to-do.md">Build</a> for $200</td><td><a href="standard-operating-procedures/patterning-sop/vacuum-spin-coater.md">SOP</a></td><td><a href=".gitbook/assets/IMG_3895.jpg">IMG_3895.jpg</a></td></tr><tr><td>Tube Furnace</td><td><a href="https://youtu.be/oqOlrGPgng8?si=W4bGpYOg1724bw0Y">Build</a> for $181+wire</td><td></td><td></td></tr></tbody></table>
 
-\
-
-
-### **The Hacker Fab**&#x20;
-
-designs, builds, and documents low cost open-source nanofab equipment. Every step in the nanofabrication process can be perpetually experimented with and modified. You contribute and make the Hacker Fab more capable and cheaper.&#x20;
-
-\
+## Current Fabrication Process
 
 
-### **The Hacker Fab can be adapted to:**
 
-* Countless trailing edge nodes and research projects
-* Designing specific new machines alongside novel device research
-* An end-to-end semiconductor education platform
-  * Accessible and hands-on for undergrads + highschoolers
-  * Low cost for institutions
-  * No clean room + minimal safety training
-
-### **We want to accelerate.**
-
-The entire Hacker Fab network benefits from improvements made by another individual or institution. This includes process data, CAD, software, education materials, and more. Progress means large reductions in cost, lowering the barrier to entry for new collaborators to join. It will not be possible to push the capabilities of a singular Hacker Fab towards more modern complexity without collaboration.&#x20;
-
-\
-This initiative was started in 2022 by Sam Zeloof, Elio Bourcart, and Alexander Hakim at Carnegie Mellon University. Thanks to the tremendous support by the Electrical and Computer Engineering department, the first course ran in the Spring of 2023.&#x20;
-
-
+1. The substrate comes with&#x20;
 
 ## Quick links
 

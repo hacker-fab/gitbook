@@ -1,4 +1,4 @@
-# Aluminum Acid Etch Manual
+# 🧪 Aluminum Etch SOP
 
 | Aluminum Acid Etch Manual |
 | ------------------------- |

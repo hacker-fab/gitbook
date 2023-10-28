@@ -1,4 +1,4 @@
-# Glass Acid Etch Manual
+# 🧪 Glass Acid Etch SOP
 
 | Glass Acid Etch Manual |
 | ---------------------- |

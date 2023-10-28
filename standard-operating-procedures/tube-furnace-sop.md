@@ -1,4 +1,4 @@
-# Tube Furnace
+# 🌡 Tube Furnace SOP
 
 | Tube Furnace Manual |
 | ------------------- |

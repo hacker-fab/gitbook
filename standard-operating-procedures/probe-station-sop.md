@@ -1,4 +1,4 @@
-# Probe Station Manual
+# 🪡 Probe Station SOP
 
 | Probe Station Manual |
 | -------------------- |

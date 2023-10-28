@@ -1,4 +1,4 @@
-# Wafer Cleaving
+# 🖋 Wafer Cleaving SOP
 
 | Wafer Cleaving |
 | -------------- |

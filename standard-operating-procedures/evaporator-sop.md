@@ -1,4 +1,4 @@
-# Evaporator Manual
+# 💡 Evaporator SOP
 
 | Aluminum Evaporation |
 | -------------------- |

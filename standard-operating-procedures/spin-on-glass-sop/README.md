@@ -1,4 +1,4 @@
-# Spin on Glass Manual
+# 🥞 Spin on Glass SOP
 
 | Spin On Glass Manual |
 | -------------------- |

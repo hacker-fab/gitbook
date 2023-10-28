@@ -1,10 +1,9 @@
-# 📽 Photolithography Stepper V1
+---
+description: Build Manual
+---
 
-| Photolithography Stepper Build |
-| ------------------------------ |
+# 📸 Lithography Stepper V1 Build
 
-\
-\
 
 
 | Cost                  | $5,820.10 |
@@ -60,7 +59,6 @@ Stuff to buy. The BOM should include everything necessary to make the components
 
 [Link to spreadsheet](https://docs.google.com/spreadsheets/d/15UpCxY\_nHekpnzOzCkFMUzXC7nv4dYn63xlU\_RhJFrs/edit#gid=0) - edit sheet then update or copy table here
 
-\
 
 
 Total Cost: $5,820.10
