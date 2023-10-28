@@ -18,19 +18,7 @@ Current Total Equipment Cost: $
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Thermal Evaporator V1</td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">Build</a> for $15,000</td><td><a href="standard-operating-procedures/evaporator-sop.md">SOP</a></td><td><a href=".gitbook/assets/assembled.PNG">assembled.PNG</a></td></tr><tr><td>Lithography Stepper V1</td><td><a href="builds/photolithography-stepper-v1.md">Build</a> for $5,280</td><td><a href="standard-operating-procedures/patterning-sop/">SOP</a></td><td><a href=".gitbook/assets/stepperV1.jpg">stepperV1.jpg</a></td></tr><tr><td>Spin Coater V1</td><td><a href="builds/spin-coater-v1-build-to-do.md">Build</a> for $200</td><td><a href="standard-operating-procedures/patterning-sop/vacuum-spin-coater.md">SOP</a></td><td><a href=".gitbook/assets/IMG_3895.jpg">IMG_3895.jpg</a></td></tr><tr><td>Tube Furnace</td><td><a href="https://youtu.be/oqOlrGPgng8?si=W4bGpYOg1724bw0Y">Build</a> for $181+wire</td><td></td><td></td></tr></tbody></table>
 
-{% tabs %}
-{% tab title="First Tab" %}
 
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-
-{% tab title="Untitled" %}
-test
-{% endtab %}
-{% endtabs %}
 
 ## Quick links
 
@@ -54,10 +42,3 @@ We've put together some helpful guides for you to get setup with our product qui
 [photolithography-stepper-v1.md](builds/photolithography-stepper-v1.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
