@@ -143,7 +143,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 3. Fill another evaporating dish halfway with DI water.
 4. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
 
-<figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate the developer</p></figcaption></figure>
 
 5. Agitate the chip in the developer solution with quick, small circular motions. Watch [this video](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) for proper technique.
 6. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should hit the water exactly at 0 seconds.
@@ -162,6 +162,10 @@ See the appendix for useful resources about spin coating, our resist, and develo
 <figure><img src="https://lh7-us.googleusercontent.com/VXwgwFNreCqK2AwOaKCXhZBzbwyT4Rb94mn578uF9Eky_c-yzWojG3Y63RT89DR-o_y3zF_SqohF4liGo6DpLJJQRN0xEtdLU3f5A2W-8rhRnB4BnpuuJDDCcIZ0Ytd6vWb8F3H1CAbMUTnQY-biRMA" alt="" width="375"><figcaption><p>Inspection image demonstrating non-uniform exposure</p></figcaption></figure>
 
 Right side: thicker lines and blurry edges. Left side: thin lines and sharp edges.
+
+<figure><img src="../../.gitbook/assets/inspect1 (2).png" alt=""><figcaption><p>Inspection image showing blurring effect from defocused stepper</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/inspect2 (1).png" alt=""><figcaption><p>Insprction image showing incsufficient develop or exposure</p></figcaption></figure>
 
 ## Safety
 
@@ -192,5 +196,5 @@ See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us
     2. Try not to slide the mask on the wafer because you’ll damage the photoresist.
 18. Place the cap with the wafer and mask on top of the UV sensor.
 19. Turn on the flashlight for the desired exposure time.
-20. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
+20. &#x20;Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
     1. Does should be automatically calculated in the sheet based on exposure option used
