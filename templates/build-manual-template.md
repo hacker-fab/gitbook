@@ -1,4 +1,4 @@
-# Generic Build Manual Template
+# Build Manual Template
 
 | Title |
 | ----- |
@@ -13,8 +13,6 @@
 | Performance spec 1    | <p><br></p> |
 | Performance spec 2    | <p><br></p> |
 
-\
-\
 \
 \
 \

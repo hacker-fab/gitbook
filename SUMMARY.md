@@ -31,15 +31,17 @@
 * [🧪 Glass Acid Etch SOP](standard-operating-procedures/glass-acid-etch-sop.md)
 * [💡 Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
 * [🧪 Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
-* [🪡 Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
+* [📍 Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
+
+## Bought Equipment
+
+* [🎆 Plasma Etcher V1 Specs](bought-equipment/plasma-etcher-v1-specs.md)
+* [📍 Probe Station V1 Specs](bought-equipment/probe-station-v1-specs.md)
 
 ## 🔲 Templates
 
-* [Generic Build Manual Template](templates/generic-build-manual-template.md)
-* [Generic Process Manual Template](templates/generic-process-manual-template.md)
-* [Generic BOM](templates/generic-bom.md)
+* [Build Manual Template](templates/build-manual-template.md)
+* [Bought Equipment Template](templates/bought-equipment-template.md)
+* [Process Manual Template](templates/process-manual-template.md)
+* [BOM Template](templates/bom-template.md)
 * [Hardware X Template (for reference)](templates/hardware-x-template-for-reference.md)
-
-## Group 1
-
-* [Page 1](group-1/page-1.md)
