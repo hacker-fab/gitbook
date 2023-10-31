@@ -5,8 +5,8 @@
 ## Overview
 
 * [✨ Current Fab Capabilities](overview/current-fab-capabilities.md)
-* [✍ Start Contributing (PAGE WORK IN PROGRESS)](overview/what-we-do.md)
-* [▶ Build-a-Fab (PAGE WORK IN PROGRESS)](overview/build-a-fab.md)
+* [✍ Start Contributing (to do)](overview/what-we-do.md)
+* [▶ Build-a-Fab (to do)](overview/build-a-fab-to-do.md)
 
 ## 📜 Processes
 

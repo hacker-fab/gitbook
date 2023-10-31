@@ -28,6 +28,6 @@ description: the first open source semiconductor fab.
 [current-fab-capabilities.md](overview/current-fab-capabilities.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/build-a-fab.md" %}
-[build-a-fab.md](overview/build-a-fab.md)
+{% content-ref url="overview/build-a-fab-to-do.md" %}
+[build-a-fab-to-do.md](overview/build-a-fab-to-do.md)
 {% endcontent-ref %}
