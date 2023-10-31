@@ -8,6 +8,10 @@
 * [✍ Start Contributing (PAGE WORK IN PROGRESS)](overview/what-we-do.md)
 * [▶ Build-a-Fab (PAGE WORK IN PROGRESS)](overview/build-a-fab.md)
 
+## 📜 Processes
+
+* [Self-Aligned NMOS](processes/self-aligned-nmos.md)
+
 ## 🛠 Builds
 
 * [📸 Lithography Stepper V1 Build](builds/photolithography-stepper-v1.md)
@@ -25,7 +29,7 @@
   * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop/photoresist-strip-sop.md)
 * [🕳 Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
 * [🥞 Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
-  * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preparation.md)
+  * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
   * [Spin on Glass Inspection](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-inspection.md)
 * [🌡 Tube Furnace SOP](standard-operating-procedures/tube-furnace-sop.md)
 * [🧪 Glass Acid Etch SOP](standard-operating-procedures/glass-acid-etch-sop.md)

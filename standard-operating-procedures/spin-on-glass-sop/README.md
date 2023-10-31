@@ -51,7 +51,7 @@ The other purpose of the 700B is to act as a dielectric and insulate between con
 ## Materials
 
 1. Filmtronics 700B (undoped) or P504 (dopant) Spin On Glass
-   1. [Storage and Preparation](spin-on-glass-storage-and-preparation.md)
+   1. [Storage and Preparation](spin-on-glass-storage-and-preperation.md)
 2. Acetone
 3. Isopropanol
 
@@ -84,7 +84,7 @@ The other purpose of the 700B is to act as a dielectric and insulate between con
 6. Place wafer onto the chuck of the [vacuum spin coater](../patterning-sop/vacuum-spin-coater-sop.md)
 7. Open the SOG container while keeping the bottom resting on the table
    1. Never open containers up in the air or outside of the fume hood
-   2. **Ensure that the SOG container is not expired by inspecting with the naked eye. If you see floating particles of glass suspended in the liquid, this is expired SOG. See the** [**Storage and Preparation Document**](spin-on-glass-storage-and-preparation.md) **for more information.**
+   2. **Ensure that the SOG container is not expired by inspecting with the naked eye. If you see floating particles of glass suspended in the liquid, this is expired SOG. See the** [**Storage and Preparation Document**](spin-on-glass-storage-and-preperation.md) **for more information.**
 8. Pipette **1-2 drop** of SOG using Luer Lock filtered syringe:
    1. Take a clean syringe and draw it up \~¼ to create an air pocket in the tube
    2. Suck up SOG about halfway up the syringe. This is a lot more than you need for 1 drop, because the filter needs to be wetted by the excess solution before drops are released.
