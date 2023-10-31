@@ -23,10 +23,10 @@
 ## 🧑🍳 Standard Operating Procedures
 
 * [🖋 Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
-* [🎞 Patterning SOP](standard-operating-procedures/patterning-sop/README.md)
-  * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop/vacuum-spin-coater-sop.md)
-  * [Hot Plate SOP](standard-operating-procedures/patterning-sop/hot-plate-sop.md)
-  * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop/photoresist-strip-sop.md)
+* [🎞 Patterning SOP - Stepper V1](standard-operating-procedures/patterning-sop-stepper-v1/README.md)
+  * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
+  * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v1/hot-plate-sop.md)
+  * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v1/photoresist-strip-sop.md)
 * [🕳 Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
 * [🥞 Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
   * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
