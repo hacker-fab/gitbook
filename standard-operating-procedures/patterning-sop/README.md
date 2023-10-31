@@ -2,25 +2,7 @@
 
 ## Parameters
 
-1. HMDS Prebake Temperature
-2. HMDS Prebake Time
-3. HMDS Amount (Drops)
-4. HMDS Spin Speed
-5. HMDS Spin Time
-6. HMDS Bake Temperature
-7. HMDS Bake Time
-8. Resist Amount
-9. Resist Spin Speed
-10. Resist Spin Time
-11. Resist Bake Temperature
-12. Resist Bake Time
-13. Exposure Pattern
-14. Exposure Source
-15. Exposure Time
-16. Exposure Dose
-17. Developer Type
-18. Developer Time
-19. Developer Temperature
+<table><thead><tr><th width="262"></th><th width="116"></th><th width="213"></th><th></th></tr></thead><tbody><tr><td>HMDS Prebake Temperature</td><td>100°C</td><td>Resist Bake Temperature</td><td>100°C</td></tr><tr><td>HMDS Prebake Time</td><td>60s</td><td>Resist Bake Time</td><td>90s</td></tr><tr><td>HMDS Amount (Drops)</td><td>2</td><td>Exposure Pattern</td><td>link</td></tr><tr><td>HMDS Spin Speed</td><td>4000 rpm</td><td>Exposure Source</td><td>Stepper V1</td></tr><tr><td>HMDS Spin Time</td><td>20s</td><td>Exposure Time</td><td>4s</td></tr><tr><td>HMDS Bake Temperature</td><td>100°C</td><td>Exposure Dose</td><td></td></tr><tr><td>HMDS Bake Time</td><td>60s</td><td>Developer Type</td><td>AZ-400K</td></tr><tr><td>Resist Amount</td><td>2 drops</td><td>Developer Time</td><td>80s</td></tr><tr><td>Resist Spin Speed</td><td>4000 rpm</td><td>Developer Temperature</td><td>20°C</td></tr><tr><td>Resist Spin Time</td><td>30s</td><td></td><td></td></tr></tbody></table>
 
 <figure><img src="../../.gitbook/assets/patterning_cross_sections.png" alt=""><figcaption></figcaption></figure>
 
@@ -121,7 +103,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 17. Press \[clear] to project a black screen.
 18. Move the Z stage by 1800 steps in +Z. This will switch from focusing in red to approximately focusing in UV.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
 
 19. Turn the exposure time to 200-300ms and the gain all the way up on AmScope.
 20. &#x20;Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.

@@ -6,11 +6,10 @@
 \
 
 
-| Thickness             | 1.5 µm                            |
-| --------------------- | --------------------------------- |
-| Total Time            | 1.5 Hours active, 9 hours passive |
-| Other key parameters? | <p><br></p>                       |
-| <p><br></p>           | <p><br></p>                       |
+| Total Time            | 30 minutes active, 9 hours passive |
+| --------------------- | ---------------------------------- |
+| Other key parameters? | <p><br></p>                        |
+| <p><br></p>           | <p><br></p>                        |
 
 \
 ![](https://lh4.googleusercontent.com/lcRF4ra406WYNS5z0PAuYCBeRYkj-47LyzgHFv3xmgvgOo4LnJ97fDCWGx0pumSnOAYZEMJQ1nevbEnD5xp1ByTf29vCtqrESiEI9zF2VAoJJyzaMXPdJ-qIAIQ4lWWHUpzu6RrNGZbram9xbI0uzUM)\
@@ -27,9 +26,6 @@ Figure from Microchip Fabrication (Van Zant, 2004)
 Thermal evaporation is a layer deposition technique wherein the vapor pressure of a material is increased via resistive heating while the surrounding air is evacuated below that vapor pressure. The [mean free path](https://www.pfeiffer-vacuum.com/en/know-how/introduction-to-vacuum-technology/fundamentals/mean-free-path/) of gas in the chamber, which is determined by the pressure, must also be larger than the source to substrate distance. Under these conditions, the material evaporates into the vacuum and then coats any exposed surfaces. This is how we create deposit layers of metal, which are later etched into wires, and contact pads.
 
 The Hacker Fab currently uses aluminum for wiring because it’s relatively conductive, fast to evaporate, and cheap. However, it can be tricky to evaporate because it alloys readily with many refractory metals. This is described in depth [here](https://www.lesker.com/newweb/deposition\_materials/deposition-materials-notes.cfm?pgid=al1). We currently use an alumina crucible which seems to work for a handful of evaporations, though other setups may be more effective and should be tested.
-
-\
-
 
 ## Tools
 
@@ -122,4 +118,4 @@ This is because there is scum in the crucible and might be oxygen in the chamber
 \
 
 
-1. Evaporation is faster than sputtering (supposedly, it might be equivalent because evaporation operates at a much lower pressure than sputtering so pump down and bakeout take a while)&#x20;
+1. Evaporation is faster than sputtering (supposedly, it might be equivalent because evaporation operates at a much lower pressure than sputtering so pump down and bakeout take a whi

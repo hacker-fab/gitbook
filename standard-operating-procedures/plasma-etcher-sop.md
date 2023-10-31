@@ -1,21 +1,18 @@
+---
+description: This SOP is specifically for etching 300nm of polysilicon in the NMOS process
+---
+
 # 🕳 Plasma Etcher SOP
 
-| Plasma Etcher Manual |
-| -------------------- |
+| Total Time    | 15 min  |
+| ------------- | ------- |
+| SF6 flow rate | 10 sccm |
+| Etch time     | 60s     |
+| RF Power      | 100W    |
 
-\
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="189"><figcaption></figcaption></figure>
 
-
-| Thickness             | 300 nm      |
-| --------------------- | ----------- |
-| Total Time            | 15 min      |
-| Other key parameters? | <p><br></p> |
-| <p><br></p>           | <p><br></p> |
-
-![](https://lh4.googleusercontent.com/pPaaBVAtB1Mnz4C\_L9cdem5p9aHJb0411cJ\_2VdJ16rvECSafzF4JRYZ3eiozuibjHBbcAUm9uDSTJUOwTGQ95CW9VAHM8OBvtmOr-3VwSYWy0xZKAwD6\_C8ZomFtDrnifE\_0MzwY78hKjCWaNx4aK8)
-
-\
-![](https://lh6.googleusercontent.com/9DIDYjKQxIAkMApXhTK4v82aV0Y\_UZYmZ-2diw42qgRGYkEICZdVnBY6gYq6bi8F5WamMKn8u2PdpKKuF7JwrPIEEmyf54YYz5jEoaXHQPzst\_xbppUCuo2rXH597Dn1vMVBv\_QOVT5Bb5PdQqmganA)![](https://lh3.googleusercontent.com/j6yMsMF-LVl71qCtKmZYmdGAGZ5gTmTMtrddLXYZt7Ug5cg3mI4sVixhNHRpDFTJhYt5VGtVetw9EDD\_OMrV7GxHNrQqvm3EGl2h1r6A\_aegcfZ1XEKlfIfsrNIMFM\_oYPcJERrJJNkWxZhV4G7HZGY)\
+![](https://lh3.googleusercontent.com/j6yMsMF-LVl71qCtKmZYmdGAGZ5gTmTMtrddLXYZt7Ug5cg3mI4sVixhNHRpDFTJhYt5VGtVetw9EDD\_OMrV7GxHNrQqvm3EGl2h1r6A\_aegcfZ1XEKlfIfsrNIMFM\_oYPcJERrJJNkWxZhV4G7HZGY)![](https://lh6.googleusercontent.com/9DIDYjKQxIAkMApXhTK4v82aV0Y\_UZYmZ-2diw42qgRGYkEICZdVnBY6gYq6bi8F5WamMKn8u2PdpKKuF7JwrPIEEmyf54YYz5jEoaXHQPzst\_xbppUCuo2rXH597Dn1vMVBv\_QOVT5Bb5PdQqmganA)\
 
 
 ## Purpose
@@ -43,41 +40,38 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 
 ### Preparation
 
-1. Open [this spreadsheet](https://docs.google.com/spreadsheets/d/1R2Vo\_7094C-6gZt-e7njSJjOSsOZwEWKLs6w-fmdoSk/edit?usp=sharing) and record all values and results. Also record any steps that went wrong and how they went wrong.&#x20;
+1. If you have already claimed a chip number, and opened its specific chip view data sheet, record your patterning data into that sheet. If you have NOT claimed a chip number, and have NOT begun recording data in a chip specific sheet, open this [central chip count](https://docs.google.com/spreadsheets/d/1MrqtnkHcNr5hekHpQHusBZJG4nrdcxDz7Yg5Emn9BMQ/edit#gid=0) sheet, claim the next available chip number, open the blank chip view sheet for that specific chip number and record all subsequent process data into it.
 2. Turn on the etcher via the switch on the back panel.
 3. Turn on the laptop and open the Plasma Etch app.
 4. Turn on the RF power supply on top of the etcher.
 5. Open the chamber and place your chip in the middle of the rack. Close the chamber.
-6. Set O2 flow, SF6 flow, power, time, vacuum setpoint in Sequence screen (shown below). Save your sequence.
+6. Set O2 flow, SF6 flow, power, time, vacuum setpoint in Sequence screen. Save your sequence.
 
 ### Etching
 
-1. Go to power and turn on RF and vacuum. The pump will start.
+1. Go to **power** and turn on RF and vacuum. The pump will start.
 2. Wait until the pressure is below .1 Torr.
-3. Go to commands > cycle off. This will purge the chamber for three seconds with nitrogen in order to remove H2O. If any water is in the chamber during the plasma it will react with fluorine to make HF. Very bad.
-4. Commands > standby. This will start the pump again.
+3. Go to **commands > cycle off**. This will purge the chamber for three seconds with nitrogen in order to remove H2O. If any water is in the chamber during the plasma it will react with fluorine to make HF. Very bad.
+4. **Commands > standby**. This will start the pump again.
 5. Repeat steps 2-4 to purge again. This makes sure no water is in the chamber.
 6. Open the valve on the cylinders of gas that you are using. Lefty loosey.
 
 ![](https://lh3.googleusercontent.com/z-K7CU-RkI2anr8zqe7FrCUV2ncA2f-2\_0wO40aaPKTE1MMkd\_EI4sQSiZCDjC\_NAQeo96zIVi0B\_\_DF\_9CsLVZFN43jFutxQ4\_XQatcErRQGp6GarRT4gpPbWzosOydO5L1pO9fojQrCcltEL4rqwY)
 
-7. When you are ready to start etching, select commands > plasma.&#x20;
+7. When you are ready to start etching, select **commands > plasma**.&#x20;
 8. During the etch, monitor the pressure on the screen (should be at your setpoint) and the outlet pressure on the regulator (should be around 5 psig). Look in the window for pretty plasma!
 9. SHUT THE GAS CYLINDER. RIGHTY TIGHTY
 10. At the end of the cycle, the etcher will purge itself once, pump down, then purge again. To be safe we’ll purge a third time:
-11. Commands > standby. This will start the pump again.
+11. **Commands > standby**. This will start the pump again.
 12. Wait until the pressure is below .1 Torr.
-13. Commands > cycle off. Lets gas in for 3 seconds
-14. Commands > standby.
+13. **Commands > cycle off**. Lets gas in for 3 seconds
+14. **Commands > standby**.
 15. Wait until the pressure is below .1 Torr.
-16. Commands > shutdown. The chamber will come to atmosphere in 30 seconds, at which point you can open it.
+16. **Commands > shutdown**. The chamber will come to atmosphere in 30 seconds, at which point you can open it.
 
 ### Inspection
 
 1. Take pictures, upload them, and link them in the spreadsheet.
-
-\
-
 
 ## Safety
 

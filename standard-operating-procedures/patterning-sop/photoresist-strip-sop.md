@@ -1,9 +1,10 @@
-# Photoresist Strip Manual
+# Photoresist Strip SOP
 
 | Total Time                   | 1 minute   |
 | ---------------------------- | ---------- |
 | Acetone Spray Time           | 20 seconds |
 | Isopropyl Alcohol Rinse Time | 10 seconds |
+| Nitrogen Blow Dry Time       | 10 seconds |
 
 <figure><img src="../../.gitbook/assets/strip_cross_section.png" alt=""><figcaption><p>Resist strip cross section. The underlying chip doesn't need to look like this.</p></figcaption></figure>
 
