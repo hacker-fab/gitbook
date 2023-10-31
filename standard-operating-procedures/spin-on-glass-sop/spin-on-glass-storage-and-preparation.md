@@ -1,4 +1,18 @@
-# Spin on Glass Storage and Preperation
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
+# Spin on Glass Storage and Preparation
 
 | SOG Storage and Preparation |
 | --------------------------- |

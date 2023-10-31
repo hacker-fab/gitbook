@@ -1,10 +1,32 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # 🥞 Spin on Glass SOP
 
-| Total Time                                                                 | 2.5 Hours                     |
-| -------------------------------------------------------------------------- | ----------------------------- |
-| Spin Speed                                                                 | 4000 rpm                      |
-| Spin Time                                                                  | 30s                           |
-| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 5, 400, 20, 400, 0, 0] |
+## For more detailed parameters:
+
+[700B Process Sheet](https://docs.google.com/spreadsheets/d/1fmgTan5MyL4VjxuGR8\_-XMnE9dZDns9QorDNwK\_PFyc/edit#gid=0)
+
+[P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
+
+***
+
+| Total Time                                                                 | 2.5 Hours                    |
+| -------------------------------------------------------------------------- | ---------------------------- |
+| Spin Speed                                                                 | 4000 rpm                     |
+| Spin Time                                                                  | 30s                          |
+| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 10, 200, 10, 400, 30] |
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Spin on glass cross sections</p></figcaption></figure>
 
@@ -19,21 +41,23 @@ The other purpose of the 700B is to act as a dielectric and insulate between con
 
 2. P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will diffuse into the silicon over time and this can be significantly sped up by heating it up in the tube furnace.&#x20;
 
+***
+
 ## Tools
 
-3. [Vacuum spin coater](https://docs.google.com/document/d/1xl2Znqv970THWs4tepz\_Cetx3j9r2hTCr4MdhxKwyDc/edit?usp=sharing)
-4. [Hot Plate](https://docs.google.com/document/d/14IZRb\_CLO6zwDDNvO9dSkzYD5jisfbr-6na2exCk-T0/edit?usp=sharing)
+3. [Vacuum Spin Coater](../patterning-sop/vacuum-spin-coater-sop.md)
+4. [Hot Plate](../patterning-sop/hot-plate-sop.md)
 
 ## Materials
 
 1. Filmtronics 700B (undoped) or P504 (dopant) Spin On Glass
-   1. [storage and preparation](https://docs.google.com/document/d/1ZDfl5ehhsNCeg0cILxAQ3DSgg35inCzpQYTM5T-Tpig/edit?usp=sharing)
+   1. [Storage and Preparation](spin-on-glass-storage-and-preparation.md)
 2. Acetone
 3. Isopropanol
 
 ## Procedure
 
-### Preparation
+### Organization
 
 1. If you have already claimed a chip number, and opened its specific chip view data sheet, record your patterning data into that sheet. If you have NOT claimed a chip number, and have NOT begun recording data in a chip specific sheet, open this [central chip count](https://docs.google.com/spreadsheets/d/1MrqtnkHcNr5hekHpQHusBZJG4nrdcxDz7Yg5Emn9BMQ/edit#gid=0) sheet, claim the next available chip number, open the blank chip view sheet for that specific chip number and record all subsequent process data into it.
 
@@ -43,60 +67,65 @@ The other purpose of the 700B is to act as a dielectric and insulate between con
 2. Rinse the polished side of the wafer thoroughly with acetone, then isopropyl alcohol.
    1. The acetone leaves a residue that must be removed by the isopropyl alcohol rinse.
    2. If there is acetone film visible, repeat this step.
-3. Blow the wafer dry with the nitrogen gun.
-   1. Even when the wafer appears dry, there may still be moisture on the edges, so dry both sides liberally for about 20 seconds
-   2. If there is acetone film visible, repeat the wafer cleaning procedure.
+3. Blow the wafer dry with the nitrogen gun by pressing the wafer against a cleanroom wipe on the table to ensure it does not fly away. **Get a good grip on it with your tweezers**.
+   1. Even when the wafer appears dry, there may still be moisture on the edges, so dry both sides liberally for \~20 seconds
 4. Inspect with the naked eye and make note of any marks on the wafer.
-   1. Marks present after cleaning are likely scratches that need to be documented so we observe their effect on the process.
+   1. Marks present after cleaning are likely scratches that need to be documented
 
 ### Prebake
 
-4. Preheat the [Hot Plate](https://docs.google.com/document/d/14IZRb\_CLO6zwDDNvO9dSkzYD5jisfbr-6na2exCk-T0/edit?usp=sharing) to 100°C
-5. Place the wafer in the center of the hotplate for 20 seconds
-   1. Be sure to handle the wafer with tweezers that can handle high temperatures
+4. Preheat the[ Hot Plate](../patterning-sop/hot-plate-sop.md) to 100°C
+5. Place the wafer in the **center** of the hotplate for 20 seconds
+   1. Be sure to handle the wafer with tweezers that can handle high temperatures (metal tweezers)
    2. No need to turn the hotplate off since annealing will require 100°C initially as well
 
 ### Spin Coat
 
-6. Place wafer onto the chuck of the [vacuum spin coater](https://docs.google.com/document/d/1xl2Znqv970THWs4tepz\_Cetx3j9r2hTCr4MdhxKwyDc/edit?usp=sharing)
-7. Inspect the wafer for pre spin coating failure conditions ([Reference for failure conditions](https://docs.google.com/document/d/1PGFy6Bar8kD9Lnka1koOhkTMzc6LxXHq-yRzDwc0J-I/edit?usp=sharing))
-8. Pipette SOG using Luer Lock syringe
+6. Place wafer onto the chuck of the [vacuum spin coater](../patterning-sop/vacuum-spin-coater-sop.md)
+7. Open the SOG container while keeping the bottom resting on the table
+   1. Never open containers up in the air or outside of the fume hood
+   2. **Ensure that the SOG container is not expired by inspecting with the naked eye. If you see floating particles of glass suspended in the liquid, this is expired SOG. See the** [**Storage and Preparation Document**](spin-on-glass-storage-and-preparation.md) **for more information.**
+8. Pipette **1-2 drop** of SOG using Luer Lock filtered syringe:
    1. Take a clean syringe and draw it up \~¼ to create an air pocket in the tube
-   2. Twist on a syringe filter
-   3. Suck up SOG until you see liquid above the filter (in the syringe tube itself). This will take more than you think, because the filter has to be wetted
-   4. Release 1 or 2 drops back into the SOG container
-   5. Apply 1 or 2 drops to your chip, make sure the chip is completely covered
-   6. Dump any remaining SOG in the syringe back into the container
-   7. Dispose of the syringe and the filter
-9. Spin coat the wafer (Remember to switch on the vacuum!)
-   1. After spin coating, the SOG application should appear even. ([Reference for failure conditions](https://docs.google.com/document/d/1PGFy6Bar8kD9Lnka1koOhkTMzc6LxXHq-yRzDwc0J-I/edit?usp=sharing))
-10. Inspect the wafer for post spin coating failure conditions ([Reference for failure conditions](https://docs.google.com/document/d/1PGFy6Bar8kD9Lnka1koOhkTMzc6LxXHq-yRzDwc0J-I/edit?usp=sharing))
-11. Take a picture of the post spin wafer
+   2. Suck up SOG about halfway up the syringe. This is a lot more than you need for 1 drop, because the filter needs to be wetted by the excess solution before drops are released.
+   3. Twist on a syringe filter
+   4. Release 2 drops back into the SOG container
+   5. Apply 1 or 2 drops to your chip, make sure the chip is completely coated in solution but do not use more than 2 drops
+   6. Dump any remaining SOG in the syringe back into the SOG container
+   7. Dispose of the syringe and the filter in the waste bucket
+9. Spin coat the wafer <mark style="background-color:orange;">(Remember to switch on the vacuum!)</mark>
+   1. After spin coating, the SOG application should appear even. (See pictures below)
+10. Immediately move onto annealing
 
 ### ![](https://lh4.googleusercontent.com/4Ze7i5GPpmCDYI7aWq1580wodj3FLuTmzr5LFTFVKZZEH8wd3g3ZxrQDQnnKdB-IUx0fghg02me3XZP0K3uWaphXByDInh0R2B2zF9XwXxF4DsD2VuaxtlDmqD6MGCHN5h-SGkmNsc\_S5fNYML\_nlP4)![](https://lh6.googleusercontent.com/RT5HwEkmavaU19ulqmj9jaGKk7\_BrJwYQV73joK\_IWuo4s4lSiIjBKK0NuTwKOjWpMett8jFdsAquYMG\_DuvQ5Frj3jaCpMDT18Wev8pEJMBRENax5Zr5OsLYgqIhAI8IYR52UMHoDg1ugVve1Ms1j8)
 
-### Annealing (700B)
+### Hot Plate Annealing for 700B + P504
 
-12. Place wafer onto the [Hot Plate](https://docs.google.com/document/d/14IZRb\_CLO6zwDDNvO9dSkzYD5jisfbr-6na2exCk-T0/edit?usp=sharing) at desired temperature and time
+12. Before placing the wafer on the hot plate, use a cleanroom wipe to clean the surface of the hot plate using a small amount of acetone and IPA
+13. The hot plate should already be at 100C
+14. Place wafer onto the [Hot Plate](../patterning-sop/hot-plate-sop.md)
     1. Be sure to handle the wafer with tweezers that can handle high temperatures
     2. Place a cover, such as a glass dish upside down, on top of the wafer to avoid contamination and air movement as the wafer is annealing
-    3. Ramp up if to higher temperature if instructed to do so
-13. Ramp down temperature
+15. Follow the appropriate ramping profile (see top of this document or your own notes)
+16. Ramp down temperature
     1. When baking has finished, turn off the hot plate and and do NOT remove the wafer
     2. This allows the wafer to cool at a slower rate to prevent cracking.
-14. Once the hot plate cools to room (25-30C), remove the wafer. (this takes about an hour)
+17. Once the hot plate cools to below 200C, it is safe to remove the wafer. (this takes at least 20 minutes to ramp down).&#x20;
+    1. **Remember that the glass cover will also still be hot (although slightly less than 200C at this point). Do not burn yourself when removing the glass cover - nitrile gloves will not protect you from burns. If necessary, wait longer for the glass cover to get close to room temperature.**
+
+### Tube Furnace Anneal/Diffusion P504
+
+See [Tube Furnace SOP](../tube-furnace-sop.md) for details
 
 ### Inspection
 
-15. [Inspecting SOG wafers](https://docs.google.com/document/d/1\_ooYkyV0m09i5Vt-Nj7p-poasi7RSbHCJUnWa4\_Qd\_A/edit?usp=sharing)
-16. Upload microscope photos to the google drive&#x20;
-    1. Either link them into [this spreadsheet](https://docs.google.com/spreadsheets/d/16RCDKUIi40yrM9UH7k1RGnfHmALMW1aAkPhzuUAF6Tc/edit?usp=sharing) or create your own folder for a specific chip (whichever makes more sense or instructed to do so)
+See [Inspecting SOG wafers](spin-on-glass-inspection.md) document for a more detailed overview of failure conditions and possible causes.
 
 ## Safety
 
 Be sure to work under fume hood when working with SOG. The SOG can give off toxic vapors (especially during annealing)
 
-DO NOT touch the hot plate during operation. A 400 C hot plate will cause severe burns. (Reminder: 400 C = 752 F). A glass cover will also heat up to the same temperature.
+DO NOT touch the hot plate during operation. A 400 C hot plate will cause severe burns. (Reminder: 400 C = 752 F). The same is true of the glass cover, which is why it is important to ramp down before touching.
 
 \
 
