@@ -14,11 +14,7 @@ layout:
 
 # 🥞 Spin on Glass SOP
 
-## For more detailed parameters:
-
-[700B Process Sheet](https://docs.google.com/spreadsheets/d/1fmgTan5MyL4VjxuGR8\_-XMnE9dZDns9QorDNwK\_PFyc/edit#gid=0)
-
-[P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
+## Process Parameters
 
 ***
 
@@ -27,6 +23,12 @@ layout:
 | Spin Speed                                                                 | 4000 rpm                     |
 | Spin Time                                                                  | 30s                          |
 | Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 10, 200, 10, 400, 30] |
+
+#### For more detailed parameters:
+
+[700B Process Sheet](https://docs.google.com/spreadsheets/d/1fmgTan5MyL4VjxuGR8\_-XMnE9dZDns9QorDNwK\_PFyc/edit#gid=0)
+
+[P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Spin on glass cross sections</p></figcaption></figure>
 
