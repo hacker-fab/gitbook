@@ -1,4 +1,4 @@
-# 🎞 Patterning SOP
+# 🎞 Patterning SOP - Stepper V1
 
 ## Parameters
 
@@ -119,11 +119,12 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 <figure><img src="../../.gitbook/assets/developer_dish (1).png" alt="" width="375"><figcaption><p>Developer (Deionized water to AZ-400K 3:1) and DI water rinse.</p></figcaption></figure>
 
-1. Rinse the evaporating dish if needed.
-   1. Simply use the left-most tap on the sink in the fume hood at a low pressure to lightly wash the dish
-2. If empty, pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”.
-3. Fill another evaporating dish halfway with DI water.
-4. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
+1. Refresh the developer if it has been out for more than 6 hours. Otherwise skip to step 3.
+   1. Pour the used developer into the bottle labeled "developer waste"
+   2. Rinse the evaporating dish with DI water.
+   3. Pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”.
+   4. Fill another evaporating dish halfway with DI water.
+2. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
 
 <figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate the developer</p></figcaption></figure>
 
