@@ -68,10 +68,11 @@ IV curves are not the only tests that can be done with a parameter analyzer. Wit
 6. Look at the probe tips as you carefully turn the X/Y knobs on the manipulators to bring them close to the target area. Adjust X/Y/Z until they are all visible in the microscope. They will be out of focus because they’re above the surface of the chip.
 7. Adjust the manipulators until the correct probe tips are above each pad you want to probe. Then slowly lower them until you see the probe tip come into focus. Keep lowering until the probe tip makes contact and slides horizontally.
 8. Turn on the semiconductor parameter analyzer.
-9. Run your experiment by pressing the green arrow. Wait for it to complete.
-10. Verify your data in the graph tab. If there are sharp discontinuities you can try re-contacting the pads and running the test again.
-11. Save your data by going to the data tab. Use the chip number and date in the file name.
-12. When finished, move the probes vertically and horizontally away from the chip by about 5mm.
+9. Select the MOSFET Ids Vgs test.
+10. Run your experiment by pressing the green arrow. Wait for it to complete.
+11. Verify your data in the graph tab. If there are sharp discontinuities you can try re-contacting the pads and running the test again.
+12. Save your data by going to the data tab. Use the chip number and date in the file name.
+13. When finished, move the probes vertically and horizontally away from the chip by about 5mm.
 
 \
 \
