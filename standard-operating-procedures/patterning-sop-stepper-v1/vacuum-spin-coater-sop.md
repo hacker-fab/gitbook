@@ -1,10 +1,33 @@
-# Vacuum Spin Coater
+# Vacuum Spin Coater SOP
 
-![](https://lh5.googleusercontent.com/PeQ4mdAkcsU9BgZQGjO\_-1\_QUykEC97e3E14r-kcQ5yNKNKVaA\_jeSSVBn6ofksXh1jq84XeEJCmV\_Oaq8uDsv5srVARVdqIB9fWSSsleBkS6gm6TnXeti0nPTWcFKqrz0wf-Rlhk3CiPUu8Ci7uSqM)
+<figure><img src="https://lh5.googleusercontent.com/PeQ4mdAkcsU9BgZQGjO_-1_QUykEC97e3E14r-kcQ5yNKNKVaA_jeSSVBn6ofksXh1jq84XeEJCmV_Oaq8uDsv5srVARVdqIB9fWSSsleBkS6gm6TnXeti0nPTWcFKqrz0wf-Rlhk3CiPUu8Ci7uSqM" alt="" width="188"><figcaption><p><em>DIY Vacuum Spin Coater Hooked up to Rotary Vane Pump</em></p></figcaption></figure>
 
 ## Purpose
 
 To apply a thin layer of wet chemicals to the surface of the chip, with sub-micron control.&#x20;
+
+***
+
+## Tools
+
+1. [DIY Spin Coater](../../builds/spin-coater-v1-build-to-do.md)
+
+***
+
+## Troubleshooting
+
+<details>
+
+<summary>Spin Coater is Stuck, the chuck tries to move but it stays in place</summary>
+
+1. Remove the outer plastic vase that holds the residual photoresist and chemicals
+2. Wet a cleanroom wipe with acetone and wipe the outside of the chuck and the inside of the plastic vase clean
+3. Attempt to run the spin coater again
+4. If the problem persists, run the spin coater without the plastic vase or any chip present, then press the acetone covered wipe against the chuck as it is spinning to get a thorough clean
+
+</details>
+
+***
 
 ## Procedure
 
@@ -14,7 +37,7 @@ To apply a thin layer of wet chemicals to the surface of the chip, with sub-micr
    1. Also attempt to center the chip on the o-ring as best you can. This will minimize the chances of it flying off.
 4. Use a pipette to apply liquid on top of the wafer while it is seated in the spin coater
 5. Close the lid
-6. SWITCH ON THE VACUUM PUMP!
+6. <mark style="background-color:orange;">SWITCH ON THE VACUUM PUMP!</mark>
 7. Press “begin”
    1. This will begin a pre spin at 600 rpm
 8. Press “coat”

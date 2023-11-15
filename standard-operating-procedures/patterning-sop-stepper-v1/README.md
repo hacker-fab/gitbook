@@ -1,16 +1,36 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # 🎞 Patterning SOP - Stepper V1
+
+
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
 
 ## Parameters
 
 <table><thead><tr><th width="262"></th><th width="116"></th><th width="213"></th><th></th></tr></thead><tbody><tr><td>HMDS Prebake Temperature</td><td>100°C</td><td>Resist Bake Temperature</td><td>100°C</td></tr><tr><td>HMDS Prebake Time</td><td>60s</td><td>Resist Bake Time</td><td>90s</td></tr><tr><td>HMDS Amount (Drops)</td><td>2</td><td>Exposure Pattern</td><td>link</td></tr><tr><td>HMDS Spin Speed</td><td>4000 rpm</td><td>Exposure Source</td><td>Stepper V1</td></tr><tr><td>HMDS Spin Time</td><td>20s</td><td>Exposure Time</td><td>4s</td></tr><tr><td>HMDS Bake Temperature</td><td>100°C</td><td>Exposure Dose</td><td></td></tr><tr><td>HMDS Bake Time</td><td>60s</td><td>Developer Type</td><td>AZ-400K</td></tr><tr><td>Resist Amount</td><td>2 drops</td><td>Developer Time</td><td>80s</td></tr><tr><td>Resist Spin Speed</td><td>4000 rpm</td><td>Developer Temperature</td><td>20°C</td></tr><tr><td>Resist Spin Time</td><td>30s</td><td></td><td></td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/patterning_cross_sections.png" alt=""><figcaption></figcaption></figure>
+***
 
 ## Purpose
 
 Patterning is the core of any micro/nanofabrication process, as it is used to mask etch and deposit steps. First we spin coat photoresist to deposit a thin layer. Then we use our maskless lithography stepper to expose our pattern in the resist with light. Finally we wash away the exposed region with developer. This leaves behind a resist pattern that is resistant to many types of acid and plasma etches. It can also be hard baked and used as a dielectric, or metal can be deposited on top of it for a lift off process. The procedure described here uses a positive resist, AZ-P4210, but negative resists also exist where unexposed areas become soluble.
 
 See the appendix for useful resources about spin coating, our resist, and developer.
+
+***
 
 ## Tools
 
@@ -27,6 +47,8 @@ See the appendix for useful resources about spin coating, our resist, and develo
 5. Isopropanol
 6. Deionized water
 7. Evaporating dish
+
+***
 
 ## Procedure
 
@@ -122,16 +144,16 @@ See the appendix for useful resources about spin coating, our resist, and develo
 1. Refresh the developer if it has been out for more than 6 hours. Otherwise skip to step 3.
    1. Pour the used developer into the bottle labeled "developer waste"
    2. Rinse the evaporating dish with DI water.
-   3. Pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”.
+   3. Pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”. For a sense of scale: in the dish above this should only be about 3mm tall of liquid (just enough to cover the surface of the chip)
    4. Fill another evaporating dish halfway with DI water.
-2. Start the timer at the same time as you drop the wafer into the developer, photoresist side up.
+2. Start the timer **at the same time as you drop the wafer into the developer**, photoresist side up.
 
 <figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate the developer</p></figcaption></figure>
 
 5. Agitate the chip in the developer solution with quick, small circular motions. Watch [this video](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) for proper technique.
-6. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should hit the water exactly at 0 seconds.
+6. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should **hit the water exactly at 0 seconds**.
    1. Note that development time includes all the time that developer is touching the chip, not just during agitation
-7. Dry off the chip with compressed air and/or blot it on a wipe.
+7. Dry off the chip with compressed air.
 
 ## Inspect
 

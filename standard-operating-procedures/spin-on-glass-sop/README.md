@@ -30,7 +30,9 @@ layout:
 
 [P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Spin on glass cross sections</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
 
 ## Purpose
 

@@ -10,10 +10,11 @@ description: This SOP is specifically for etching 300nm of polysilicon in the NM
 | Etch time     | 60s     |
 | RF Power      | 100W    |
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="189"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
 
-![](https://lh3.googleusercontent.com/j6yMsMF-LVl71qCtKmZYmdGAGZ5gTmTMtrddLXYZt7Ug5cg3mI4sVixhNHRpDFTJhYt5VGtVetw9EDD\_OMrV7GxHNrQqvm3EGl2h1r6A\_aegcfZ1XEKlfIfsrNIMFM\_oYPcJERrJJNkWxZhV4G7HZGY)![](https://lh6.googleusercontent.com/9DIDYjKQxIAkMApXhTK4v82aV0Y\_UZYmZ-2diw42qgRGYkEICZdVnBY6gYq6bi8F5WamMKn8u2PdpKKuF7JwrPIEEmyf54YYz5jEoaXHQPzst\_xbppUCuo2rXH597Dn1vMVBv\_QOVT5Bb5PdQqmganA)\
+<figure><img src="../.gitbook/assets/image (14).png" alt="" width="256"><figcaption><p>After Reactive Ion Etch (RIE)</p></figcaption></figure>
 
+***
 
 ## Purpose
 
@@ -26,6 +27,8 @@ This first etch step creates the transistor’s gate by etching away almost all 
 
 The plasma etcher breaks down the normally inert SF6, creating a fluorine ion containing plasma on the surface of the chip. A combination of physical bombardment and chemical reaction removes material from the surface. Physical bombardment occurs when the pressure is low (<\~.1 Torr) and results in an anisotropic (vertical) etch. This allows for precise transfer of a photoresist pattern onto the underlying material. Chemical etching dominates at higher pressures and results in an isotropic etch. Fluorine reacts more quickly with Si than SiO2, resulting in high selectivity.
 
+***
+
 ## Tools
 
 1. PE-25 Plasma Etcher
@@ -35,6 +38,8 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 1. Chip with patterned resist on Si
 2. Acetone
 3. Isopropanol
+
+***
 
 ## Procedure
 
@@ -69,9 +74,7 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 15. Wait until the pressure is below .1 Torr.
 16. **Commands > shutdown**. The chamber will come to atmosphere in 30 seconds, at which point you can open it.
 
-### Inspection
-
-1. Take pictures, upload them, and link them in the spreadsheet.
+***
 
 ## Safety
 

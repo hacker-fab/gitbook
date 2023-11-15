@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # 🖋 Wafer Cleaving SOP
 
 ![](https://lh5.googleusercontent.com/WrEL2P-eEcnc9SOkBt02c8e-ecVWGcs1B4FsI21OduabHmqpJgFpk\_zSAcmn05p0HwtcVK423fw0AwmjT9I0H0KFIwlPkjUMtVIV0alYvtHm6fUKZWAhBL0zuJbhBJ6Oa9xBKRRFN5y--xzKgJboR7w)

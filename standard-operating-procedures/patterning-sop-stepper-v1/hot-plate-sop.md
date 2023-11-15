@@ -1,20 +1,31 @@
-# Hot Plate Manual
+# Hot Plate SOP
 
 ## Purpose
 
 Soft baking photoresist and annealing spin on glass.
 
+***
+
 ## Best Practices
 
-1. Mark a single location on hot plate to place chip every time
+<details>
+
+<summary>Mark a single location on hot plate to place chip throughout every experiment to minimize temperature variation</summary>
+
+
+
+1.
    1. Very inconsistent heating zones on most hot plates. These are not manufactured for 1cm^2 chip heating, original purpose is for heating of large beakers and liquids.
 
 ![](https://lh3.googleusercontent.com/WYfVDt0abYNOXX2Fi\_iroEAIb5VHuAy7fb9auPy7kqVQtK6x4t82GLi\_5BYltr4a5mqzT5EG-4FMyAPn09w9A7A7SXI75vha45Z-h6aUxaKBxC6Vx5MPISRACcavslC3wyrjSSry9-tREQGiFF3PeU0)
 
-2. Characterize ramp up time for different process steps and take note in process data
-   1. Some hot plates allow for controlled temperature ramping
+_A 400C hotplate is barely warm on the edges_
 
-## Operating Instructions&#x20;
+</details>
+
+***
+
+## Procedure&#x20;
 
 ### Heating
 

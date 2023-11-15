@@ -1,10 +1,20 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # 💡 Evaporator SOP
 
-| Aluminum Evaporation |
-| -------------------- |
-
-\
-
+## Parameters
 
 | Total Time            | 30 minutes active, 9 hours passive |
 | --------------------- | ---------------------------------- |
