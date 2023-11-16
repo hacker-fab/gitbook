@@ -8,13 +8,7 @@ To apply a thin layer of wet chemicals to the surface of the chip, with sub-micr
 
 ***
 
-## Tools
-
-1. [DIY Spin Coater](../../builds/spin-coater-v1-build-to-do.md)
-
-***
-
-## Troubleshooting
+## Troubleshooting and Best Practices
 
 <details>
 

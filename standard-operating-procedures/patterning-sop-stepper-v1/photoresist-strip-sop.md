@@ -4,6 +4,8 @@
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt="" width="256"><figcaption><p>Photoresist Removed post-strip</p></figcaption></figure>
 
+## Parameters
+
 | Total Time                   | 1 minute   |
 | ---------------------------- | ---------- |
 | Acetone Spray Time           | 20 seconds |
@@ -23,8 +25,6 @@ Stripping removes all photoresist from a chip. This is typically done after an e
 1. Fume Hood with Sink
 2. N2 gun
 
-***
-
 ## Materials
 
 1. Chip with photoresist
@@ -33,7 +33,7 @@ Stripping removes all photoresist from a chip. This is typically done after an e
 
 ***
 
-## Troubleshooting
+## Troubleshooting and Best Practices
 
 <details>
 

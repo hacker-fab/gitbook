@@ -17,15 +17,7 @@ layout:
 
 # 🧪 Glass Acid Etch SOP
 
-## Parameters
 
-|                                   |            |
-| --------------------------------- | ---------- |
-| Time (if glass annealed at 400C)  | 20 Seconds |
-| Time (if glass annealed at 1100C) | 5 Minutes  |
-| Temperature                       | Room Temp. |
-
-***
 
 <figure><img src="../.gitbook/assets/image (17).png" alt="" width="256"><figcaption><p>Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
 
@@ -36,6 +28,10 @@ Same process for Doped SOG:
 <figure><img src="../.gitbook/assets/image (20).png" alt="" width="256"><figcaption><p>Doped Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (21).png" alt="" width="256"><figcaption><p>Post-Etch Doped SOG Removed</p></figcaption></figure>
+
+## Parameters
+
+<table><thead><tr><th width="332"></th><th></th></tr></thead><tbody><tr><td>Time (if glass annealed at 400C)</td><td>20 Seconds</td></tr><tr><td>Time (if glass annealed at 1100C)</td><td>5 Minutes</td></tr><tr><td>Temperature</td><td>Room Temp.</td></tr></tbody></table>
 
 ***
 

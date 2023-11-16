@@ -6,7 +6,7 @@ Soft baking photoresist and annealing spin on glass.
 
 ***
 
-## Best Practices
+## Troubleshooting and Best Practices
 
 <details>
 

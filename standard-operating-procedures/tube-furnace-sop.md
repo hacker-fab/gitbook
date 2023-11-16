@@ -14,16 +14,20 @@ layout:
 
 # 🌡 Tube Furnace SOP
 
+
+
+<figure><img src="../.gitbook/assets/image (15).png" alt="" width="256"><figcaption><p>Bare Silicon Region Exposed</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (16).png" alt="" width="256"><figcaption><p>Doped Silicon (grey) and Doped Gate Poly (dark blue) Resulting from Thermal Diffusion</p></figcaption></figure>
+
+<figure><img src="https://lh3.googleusercontent.com/7qir7MnBPj-CUMSZWvlnCNPq5UV52gKTtnjRzcUaLVMF8-oqR11-48frpT_9RhUaT4LfpejWoQORQlAR0zCBQMYhZPg6n2mjp0EcBlpQsRGzJKBjwngtWeMu4vKebWMiOmyAfP3Ax9iW9IBCtzLPDQo" alt="" width="375"><figcaption><p>Tube Furnace</p></figcaption></figure>
+
+## Parameters
+
 | Temperature    | 1100°C |
 | -------------- | ------ |
 | Total Time     | 1 Hour |
 | Diffusion time | 30 min |
-
-<figure><img src="../.gitbook/assets/image (15).png" alt="" width="256"><figcaption><p>Bare Silicon Region Exposed</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (16).png" alt="" width="256"><figcaption><p>Doped Silicon Resulting from Thermal Diffusion using Doped Spin on Glass (SOG)</p></figcaption></figure>
-
-<figure><img src="https://lh3.googleusercontent.com/7qir7MnBPj-CUMSZWvlnCNPq5UV52gKTtnjRzcUaLVMF8-oqR11-48frpT_9RhUaT4LfpejWoQORQlAR0zCBQMYhZPg6n2mjp0EcBlpQsRGzJKBjwngtWeMu4vKebWMiOmyAfP3Ax9iW9IBCtzLPDQo" alt=""><figcaption><p>Tube Furnace</p></figcaption></figure>
 
 ***
 

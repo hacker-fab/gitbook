@@ -14,23 +14,18 @@ layout:
 
 # 📍 Probe Station SOP
 
-| Probe Station Manual |
-| -------------------- |
+## Parameters
 
-\
+|               |   |
+| ------------- | - |
+| Vds range     |   |
+| Vds step size |   |
+| Vgs range     |   |
+| Vgs step size |   |
+| Vb range      |   |
+| Vb step size  |   |
 
-
-Parameters\
-
-
-
-1. Vds range
-2. Vds step size
-3. Vgs range
-4. Vgs step size
-5. Vb range
-6. Vb step size\
-
+***
 
 ## Purpose
 

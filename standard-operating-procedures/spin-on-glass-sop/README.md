@@ -14,6 +14,12 @@ layout:
 
 # 🥞 Spin on Glass SOP
 
+
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
+
 ## Process Parameters
 
 ***
@@ -30,20 +36,19 @@ layout:
 
 [P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
+***
 
 ## Purpose
 
-1. 700B (undoped) SOG
-   1. As seen in the cross sections above. 700B is applied after the gate etch is performed. The purpose of 700B is then to protect certain areas of the wafer from P504 during the doping process. More specifically the 700B blocks off everywhere but the active areas. This means that the 700B layer must be consistent and impermeable, so, cracks and pinholes may be detrimental to the function of the chips transistors since they could allow dopant to leak into undesired areas of the chip. The cross sections of this are included below.
+700B (undoped) SOG
 
-<figure><img src="https://lh3.googleusercontent.com/mv6HAXtlUqH6EawcdYnrPIqupeaFxToTpSqpxjcf8sc9A6PDrBTgIhbIUTmLdMhhlnv2smCCLukoraZ6BB_tkkughBq3yd_rdtCl4Nt2S2GwX95S5qt3XwQtbjXsvfvjB668oy3ifjkn5H_nzULt1Q" alt="" width="375"><figcaption><p>700B acting as a diffusion barrier</p></figcaption></figure>
+As seen in the cross sections above. 700B is applied after the gate etch is performed. The purpose of 700B is then to protect certain areas of the wafer from P504 during the doping process. More specifically the 700B blocks off everywhere but the active areas. This means that the 700B layer must be consistent and impermeable, so, cracks and pinholes may be detrimental to the function of the chips transistors since they could allow dopant to leak into undesired areas of the chip.&#x20;
 
 The other purpose of the 700B is to act as a dielectric and insulate between contact areas on the chip. The resulting requirement is that the 700B layer is not conductive (which it is not)
 
-2. P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will diffuse into the silicon over time and this can be significantly sped up by heating it up in the tube furnace.&#x20;
+
+
+P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will diffuse into the silicon over time and this can be significantly sped up by heating it up in the tube furnace.&#x20;
 
 ***
 
@@ -58,6 +63,8 @@ The other purpose of the 700B is to act as a dielectric and insulate between con
    1. [Storage and Preparation](spin-on-glass-storage-and-preperation.md)
 2. Acetone
 3. Isopropanol
+
+***
 
 ## Procedure
 

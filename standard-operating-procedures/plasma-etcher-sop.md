@@ -1,8 +1,25 @@
 ---
 description: This SOP is specifically for etching 300nm of polysilicon in the NMOS process
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # 🕳 Plasma Etcher SOP
+
+<figure><img src="../.gitbook/assets/image (13).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (14).png" alt="" width="256"><figcaption><p>After Reactive Ion Etch (RIE)</p></figcaption></figure>
+
+## Parameters
 
 | Total Time    | 15 min  |
 | ------------- | ------- |
@@ -10,9 +27,11 @@ description: This SOP is specifically for etching 300nm of polysilicon in the NM
 | Etch time     | 60s     |
 | RF Power      | 100W    |
 
-<figure><img src="../.gitbook/assets/image (13).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
+#### For more detaild process parameters:
 
-<figure><img src="../.gitbook/assets/image (14).png" alt="" width="256"><figcaption><p>After Reactive Ion Etch (RIE)</p></figcaption></figure>
+[Plasma Etch Process Sheet](https://docs.google.com/spreadsheets/d/1-mvhaMWhcO-PKCisJJNyvKJd4Pv3DMQQeegNJ-yXHSk/edit#gid=0)
+
+[Plasma Clean Process Sheet](https://docs.google.com/spreadsheets/d/1n-9ACh263syzrxcAJIWBtZ5d4DbPKWw7ZwvzPnsIGhM/edit#gid=0)
 
 ***
 
@@ -82,7 +101,5 @@ SF6 is not toxic, but fluorine is. By purging before and after the plasma, we’
 
 1. Purging before removes all water from the chamber. This prevents any HF from being formed, which would otherwise corrode the pump and exhaust. If the exhaust hose connected to the pump turns green, this is an indication that HF is being formed.
 2. Purging after removes all reaction products from the chamber. This includes SiF4 and various other sulfur oxides.
-
-***
 
 \

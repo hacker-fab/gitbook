@@ -14,18 +14,20 @@ layout:
 
 # 💡 Evaporator SOP
 
+
+
+<figure><img src="../.gitbook/assets/image.png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
+
+***
+
 ## Parameters
 
-| Total Time            | 30 minutes active, 9 hours passive |
-| --------------------- | ---------------------------------- |
-| Other key parameters? | <p><br></p>                        |
-| <p><br></p>           | <p><br></p>                        |
-
-\
-![](https://lh4.googleusercontent.com/lcRF4ra406WYNS5z0PAuYCBeRYkj-47LyzgHFv3xmgvgOo4LnJ97fDCWGx0pumSnOAYZEMJQ1nevbEnD5xp1ByTf29vCtqrESiEI9zF2VAoJJyzaMXPdJ-qIAIQ4lWWHUpzu6RrNGZbram9xbI0uzUM)\
-![](https://lh4.googleusercontent.com/-v8lYlC07ARSZvnfczeDVNwu3i3IX0SChTv6HSh4oJvWWif7tXIuxddTfJQHoaNutTQY2gxf9meHjHfP-A14DDn61aNC6asulfgw-gh7W03Z8M19D13tJ\_iReLG1wMnRYBROrZtugSWn4cZKf2NDFvQ)![](https://lh4.googleusercontent.com/iLOxLUgCCHh\_xojVyMYlbmKjhzNI7QjOTdV3eDnDTrlJX0S4xDVZzHQSX1O9rtYiw5xyiDNtczgAb-0fB\_V0ypd068DUkW3KkveZmPB7ngaZanq4Y67i2za4oZYVSU4Uq-nhT5OkJ8NMVrvFSU8mwog)\
-\
-
+| Bakeout Time                                                |             |
+| ----------------------------------------------------------- | ----------- |
+| Pressure Before Beggining Evaporation (hPa)                 | <p><br></p> |
+| <p>Temp Time Sequence [c1, t1, c2, t2, c3, t3, ...]<br></p> | <p><br></p> |
 
 ## Purpose
 
@@ -37,6 +39,8 @@ Thermal evaporation is a layer deposition technique wherein the vapor pressure o
 
 The Hacker Fab currently uses aluminum for wiring because it’s relatively conductive, fast to evaporate, and cheap. However, it can be tricky to evaporate because it alloys readily with many refractory metals. This is described in depth [here](https://www.lesker.com/newweb/deposition\_materials/deposition-materials-notes.cfm?pgid=al1). We currently use an alumina crucible which seems to work for a handful of evaporations, though other setups may be more effective and should be tested.
 
+***
+
 ## Tools
 
 1. MTI Thermal Evaporator with Inficon Film Thickness Monitor
@@ -46,6 +50,8 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 1. Kapton tape
 2. 99.999% Aluminum wire
 3. Recommended: piranha solution
+
+***
 
 ## Procedure
 
@@ -72,7 +78,6 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 7. Make sure that the current knob on the side of the evaporator is in the “Auto” position.
 8. Press “Set” and “◀” to return to the standby state, then press and hold “▼” for 2 seconds to start the program. Press the green run button to enable current flow.
 
-\
 
 
 ### Evaporation
@@ -101,6 +106,8 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 ### Anneal
 
 400-500C
+
+***
 
 ## Safety
 

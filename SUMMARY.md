@@ -14,11 +14,22 @@
 
 ## 🛠 Builds
 
-* [📸 Lithography Stepper V1 Build](builds/photolithography-stepper-v1.md)
-* [🎥 Lithography Stepper V2 Build (to do)](builds/lithography-stepper-v2-build-to-do.md)
+* [📽 Photo-Lithography Stepper](builds/photo-lithography-stepper/README.md)
+  * [1⃣ Lithography Stepper V1 Build](builds/photo-lithography-stepper/photolithography-stepper-v1.md)
+  * [Micropositioner: Stepper Motor V1](builds/photo-lithography-stepper/micropositioner-stepper-motor-v1.md)
+  * [Micropositioner: Delta Stage](builds/photo-lithography-stepper/micropositioner-delta-stage.md)
+  * [Micropositioner: Piezo Stage](builds/photo-lithography-stepper/micropositioner-piezo-stage.md)
+  * [Litho Stepper Software](builds/photo-lithography-stepper/litho-stepper-software.md)
+  * [2⃣ Lithography Stepper V2 Build (to do)](builds/photo-lithography-stepper/lithography-stepper-v2-build-to-do.md)
 * [💡 Thermal Evaporator V1 Build (to do)](builds/thermal-evaporator-v1-build-to-do.md)
 * [💿 Spin Coater V1 Build (to do)](builds/spin-coater-v1-build-to-do.md)
 * [🌡 Tube Furnace (to do)](builds/tube-furnace-to-do.md)
+
+## 🔭 Guides
+
+* [🔎 Part Sourcing](guides/part-sourcing.md)
+* [Data Management](guides/data-management.md)
+* [Good Examples of Weekly Updates](guides/good-examples-of-weekly-updates.md)
 
 ## 🧑🍳 Standard Operating Procedures
 
@@ -39,8 +50,8 @@
 
 ## Bought Equipment
 
-* [🎆 Plasma Etcher V1 Specs](bought-equipment/plasma-etcher-v1-specs.md)
-* [📍 Probe Station V1 Specs](bought-equipment/probe-station-v1-specs.md)
+* [🎆 Plasma Etcher V1 Specs (to do)](bought-equipment/plasma-etcher-v1-specs-to-do.md)
+* [📍 Probe Station V1 Specs (to do)](bought-equipment/probe-station-v1-specs-to-do.md)
 
 ## 🔲 Templates
 
