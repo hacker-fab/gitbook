@@ -33,7 +33,6 @@
 
 ## 🧑🍳 Standard Operating Procedures
 
-* [🖋 Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [🎞 Patterning SOP - Stepper V1](standard-operating-procedures/patterning-sop-stepper-v1/README.md)
   * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
   * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v1/hot-plate-sop.md)
@@ -47,6 +46,7 @@
 * [💡 Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
 * [🧪 Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
 * [📍 Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
+* [🖋 Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 
 ## Bought Equipment
 

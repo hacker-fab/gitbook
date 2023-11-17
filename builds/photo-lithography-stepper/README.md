@@ -1,8 +1,9 @@
 # 📽 Photo-Lithography Stepper
 
+## _This Page is Work in Progress_
 
-
-
+* will give detailed context for all quantifiable parameters of lithography steppers
+* brief overview of where improvements can be made (make a clear path to stepper V3... Vn
 
 A photolithography stepper is a machine that exposes a pattern of light onto a layer of photoresist chemical on the wafer, then ‘steps’ over to the next pattern. Before each exposure, it must align with previous patterns on the wafer so that each layer of the device is in the correct position relative to the previous. The accuracy with which it can do this is called “alignment accuracy”. Alignment accuracy and optical resolution are the two most important metrics of a stepper’s performance.
 

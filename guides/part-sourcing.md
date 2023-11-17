@@ -49,7 +49,7 @@ layout:
 
 <summary>Avoid "Contact us for a Quote" at all times</summary>
 
-* Quotes are one of the worst business models we can think of. We try our best to not support companies that do this. If you ever start a company in the future, put a "buy now" button please.
+* We try our best to not support companies that do this. If you ever start a company in the future, put a "buy now" button please.
 * Long lead times, wasted time talking to someone, different prices if you are a university, company, individual, they try to package you in with expensive software, etc.
 
 </details>
