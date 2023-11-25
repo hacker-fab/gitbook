@@ -51,3 +51,15 @@ Each opening must be covered and sealed for the vacuum to exist. Therefore, each
 #### Final product
 
 <figure><img src="../.gitbook/assets/IMG_8927.jpg" alt="" width="375"><figcaption><p>Fully assembled vacuum chamber</p></figcaption></figure>
+
+## Pumping down the Vacuum Chamber
+
+#### 1. Attach the turbo pump to the chamber
+
+Connect the turbo pump (Hi-Cube 80) to the KF-40 plate using the corresponding KF-40 flange and O-ring. Since the turbo pump has a lip that makes it difficult to tighten the screws, we recommend using hex shaped 10-32 x 5/8" screws and tightening with a wrench.
+
+#### 2. Connect the pressure gauge
+
+The Pfeiffer MPT 200 Gauge has a KF-25 connection port. To optimize the 6 plates we chose, an adapter from KF-25 to KF-16 is needed to connect the pressure gauge to the vacuum chamber. Attach using a KF-16 flange to the plate and a KF-25 clamp to connect the adapter to the pressure gauge.
+
+<figure><img src="https://lh7-us.googleusercontent.com/RUduw8NYhUAYcC5eGjYP7mvngNn85c2TStduOvum2xsv0N8KkN6i2EUQVp8Okx7p4K2Dwnm2RU2RbfN_jQYqRuqvSPU8jitvvB3g-J9MTgDRRD6o5FgZIYj5mkmBLRijcQFgj58HMGWWCOw=s2048" alt="" width="375"><figcaption><p>Vacuum chamber connected to turbo pump.</p></figcaption></figure>
