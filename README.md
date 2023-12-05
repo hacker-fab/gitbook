@@ -23,11 +23,33 @@ layout:
 
 #### Click [here](http://hackerfab.hoster904.com/) to learn more about the first Hacker Fab at Carnegie Mellon University.
 
-## Tools
+## Tools&#x20;
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Thermal Evaporator V2</td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">Build</a> for $15,000</td><td><a href="standard-operating-procedures/evaporator-sop.md">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/assembled.PNG">assembled.PNG</a></td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">thermal-evaporator-v1-build-to-do.md</a></td></tr><tr><td>Lithography Stepper V1</td><td><a href="builds/photo-lithography-stepper/photolithography-stepper-v1.md">Build</a> for $5,280</td><td><a href="standard-operating-procedures/patterning-sop-stepper-v1/">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/stepperV1.jpg">stepperV1.jpg</a></td><td><a href="builds/photo-lithography-stepper/photolithography-stepper-v1.md">photolithography-stepper-v1.md</a></td></tr><tr><td>Spin Coater V1</td><td><a href="builds/spin-coater-v1-build-to-do.md">Build</a> for $200</td><td><a href="standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/spinner.jpg">spinner.jpg</a></td><td><a href="builds/spin-coater-v1-build-to-do.md">spin-coater-v1-build-to-do.md</a></td></tr><tr><td>Tube Furnace V1</td><td><a href="https://youtu.be/oqOlrGPgng8?si=W4bGpYOg1724bw0Y">Build</a> for $200</td><td><a href="standard-operating-procedures/tube-furnace-sop.md">SOP</a></td><td>Projects in Flight</td><td><a href=".gitbook/assets/furnace.jpg">furnace.jpg</a></td><td><a href="https://www.youtube.com/watch?v=oqOlrGPgng8">https://www.youtube.com/watch?v=oqOlrGPgng8</a></td></tr><tr><td>Plasma Etcher V1</td><td><a href="bought-equipment/plasma-etcher-v1-specs-to-do.md">Buy</a> for $17,400</td><td><a href="standard-operating-procedures/plasma-etcher-sop.md">SOP</a></td><td>Plasma Etch PE-25</td><td><a href=".gitbook/assets/pe25-large.png">pe25-large.png</a></td><td><a href="bought-equipment/plasma-etcher-v1-specs-to-do.md">plasma-etcher-v1-specs-to-do.md</a></td></tr><tr><td>Probe Station V1</td><td><a href="bought-equipment/probe-station-v1-specs-to-do.md">Buy</a> for $15,800</td><td><a href="standard-operating-procedures/probe-station-sop.md">SOP</a></td><td>MPI-TS50</td><td><a href=".gitbook/assets/proberMPI-TS50.jpg">proberMPI-TS50.jpg</a></td><td><a href="bought-equipment/probe-station-v1-specs-to-do.md">probe-station-v1-specs-to-do.md</a></td></tr><tr><td>Hot Plate</td><td><a href="https://www.amazon.com/Ohaus-Guardian-Hotplate-Ceramic-G51HP07C/dp/B086F9D1TR/ref=zg_bs_318002011_sccl_25/137-0043924-5115037?psc=1">Buy</a> for $258</td><td>Ohaus Guardian 5000</td><td></td><td><a href=".gitbook/assets/hotplate.jpg">hotplate.jpg</a></td><td></td></tr></tbody></table>
+Here is a list of all the tools built or bought.&#x20;
 
+Every build contains:
 
+* BOM
+* Links to Design Files
+* Links to Code
+
+Every build + bought item page contains:
+
+* Quantifiable end-user requirements
+
+### Fabrication Tools
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Lithography Stepper V1</td><td><a href="builds/photo-lithography-stepper/photolithography-stepper-v1.md">Build</a> for $5,280</td><td><a href="standard-operating-procedures/patterning-sop-stepper-v1/">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/stepperV1.jpg">stepperV1.jpg</a></td><td><a href="builds/photo-lithography-stepper/photolithography-stepper-v1.md">photolithography-stepper-v1.md</a></td></tr><tr><td>Lithography Stepper V2</td><td>(work in progress)</td><td></td><td></td><td></td><td></td></tr><tr><td>Vacuum Spin Coater V1</td><td><a href="builds/spin-coater-v1-build-to-do.md">Build</a> for $200</td><td><a href="standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/spinner.jpg">spinner.jpg</a></td><td><a href="builds/spin-coater-v1-build-to-do.md">spin-coater-v1-build-to-do.md</a></td></tr><tr><td>Thermal Evaporator V1</td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">Build</a> for $15,000</td><td><a href="standard-operating-procedures/evaporator-sop.md">SOP</a></td><td>Carnegie Mellon</td><td><a href=".gitbook/assets/assembled.PNG">assembled.PNG</a></td><td><a href="builds/thermal-evaporator-v1-build-to-do.md">thermal-evaporator-v1-build-to-do.md</a></td></tr><tr><td>Tube Furnace V1</td><td><a href="https://youtu.be/oqOlrGPgng8?si=W4bGpYOg1724bw0Y">Build</a> for $200</td><td><a href="standard-operating-procedures/tube-furnace-sop.md">SOP</a></td><td>Projects in Flight</td><td><a href=".gitbook/assets/furnace.jpg">furnace.jpg</a></td><td><a href="https://www.youtube.com/watch?v=oqOlrGPgng8">https://www.youtube.com/watch?v=oqOlrGPgng8</a></td></tr><tr><td>Plasma Etcher</td><td><a href="bought-equipment/plasma-etcher-v1-specs-to-do.md">Buy</a> for $17,400</td><td><a href="standard-operating-procedures/plasma-etcher-sop.md">SOP</a></td><td>Plasma Etch PE-25</td><td><a href=".gitbook/assets/pe25-large.png">pe25-large.png</a></td><td><a href="bought-equipment/plasma-etcher-v1-specs-to-do.md">plasma-etcher-v1-specs-to-do.md</a></td></tr></tbody></table>
+
+### Verification / Metrology Tools
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Hot Plate</td><td><a href="https://www.amazon.com/SainSmart-Soldering-Preheating-Preheater-Intelligent/dp/B08R6XFPKR/ref=sr_1_5?crid=GQGSA76ZKKCZ&#x26;keywords=mini%2Bhot%2Bplate%2Bsoldering&#x26;qid=1701728962&#x26;sprefix=mini%2Bhot%2Bplate%2Bsoldeirn%2Caps%2C71&#x26;sr=8-5&#x26;th=1">Buy</a> for $125</td><td></td><td><a href=".gitbook/assets/2023-12-04 17_30_26-mini hot plate in hand.jpg ‎- Photos (1).png">2023-12-04 17_30_26-mini hot plate in hand.jpg ‎- Photos (1).png</a></td><td></td></tr><tr><td>Probe Station V1</td><td><a href="bought-equipment/probe-station-v1-specs-to-do.md">Buy </a>for $15,800</td><td><a href="standard-operating-procedures/probe-station-sop.md">SOP</a></td><td><a href=".gitbook/assets/proberMPI-TS50.jpg">proberMPI-TS50.jpg</a></td><td><a href="bought-equipment/probe-station-v1-specs-to-do.md">probe-station-v1-specs-to-do.md</a></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+
+### Chemicals
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>link to photoresist page?</td><td></td><td></td></tr><tr><td>Spin on Glass(es)</td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+
+##
 
 ## Quick links
 
@@ -35,8 +57,8 @@ layout:
 [what-we-do.md](overview/what-we-do.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/current-fab-capabilities.md" %}
-[current-fab-capabilities.md](overview/current-fab-capabilities.md)
+{% content-ref url="overview/current-fab-capabilities/" %}
+[current-fab-capabilities](overview/current-fab-capabilities/)
 {% endcontent-ref %}
 
 {% content-ref url="overview/build-a-fab-to-do.md" %}

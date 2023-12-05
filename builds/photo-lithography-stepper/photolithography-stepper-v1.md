@@ -1,5 +1,9 @@
 # 1⃣ Lithography Stepper V1 Build
 
+## Background
+
+Our design was based on [Sam Zeloof](http://sam.zeloof.xyz/maskless-photolithography/) and [Huygens Optics](https://www.youtube.com/watch?v=\_w0Z2Y5vaAQ)’ versions of this tool. Sam repurposed a vertical microscope for structure and laid out optics experimentally with a 5x reduction objective, whereas Huygens built his own horizontal structure, and used more involved optics with a 20x reduction. We took the middle road by combining a scratch built structure with ThorLabs optical and optomechanical components to ensure alignment. We use a 10x objective for demagnification. We also opted for a different mechanical XYZ stage.
+
 ## Hardware Specs
 
 | Cost                  | $5,820.10 |
