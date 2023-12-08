@@ -63,3 +63,29 @@ Connect the turbo pump (Hi-Cube 80) to the KF-40 plate using the corresponding K
 The Pfeiffer MPT 200 Gauge has a KF-25 connection port. To optimize the 6 plates we chose, an adapter from KF-25 to KF-16 is needed to connect the pressure gauge to the vacuum chamber. Attach using a KF-16 flange to the plate and a KF-25 clamp to connect the adapter to the pressure gauge.
 
 <figure><img src="https://lh7-us.googleusercontent.com/RUduw8NYhUAYcC5eGjYP7mvngNn85c2TStduOvum2xsv0N8KkN6i2EUQVp8Okx7p4K2Dwnm2RU2RbfN_jQYqRuqvSPU8jitvvB3g-J9MTgDRRD6o5FgZIYj5mkmBLRijcQFgj58HMGWWCOw=s2048" alt="" width="375"><figcaption><p>Vacuum chamber connected to turbo pump.</p></figcaption></figure>
+
+
+
+## Implement Heating Parts
+
+Heating the vacuum chamber is necessary for two reasons. First, high temperatures of approximately 1200˚C are needed to evaporate the aluminum and perform the thermal evaporation process. Second, heating the chamber allows it to bakeout, meaning that the water trapped inside evaporates allowing the vacuum to achieve a lower pressure.
+
+Our setup consists of two parts: the **crucible** and the **substrate heater.**
+
+### Crucible Set-Up
+
+The crucible is comprised of the following parts:
+
+* #### [Tungsten Filament](https://www.lesker.com/newweb/evaporation\_sources/basket-crucible-heaters.cfm)
+* #### [Alumina Thermal Crucible](https://www.lesker.com/newweb/evaporation\_sources/thermal-crucibles-alumina.cfm?highlight=EVC1AO)
+* #### [Insulating Bucket](https://www.lesker.com/newweb/evaporation\_sources/thermal-crucibles-alumina.cfm?highlight=EVC5AO\&highlight=EVC5AO)
+
+After assembling these parts together, connect the copper power feedthroughs to either end of the tungsten filament using an [inline barrel connector](https://www.lesker.com/feedthroughs/connectors-inlinebarrel/part/ftaibc094).
+
+[Ceramic beads](https://www.lesker.com/newweb/feedthroughs/ceramic\_fishsplinebeads.cfm?pgid=0) can be used to safely insulate the metal and prevent electrical misconnections.&#x20;
+
+Next, connect a power supply to the external end of the power feedthroughs to heat up the crucible.
+
+Finally, attach the thermal  breakout board and arduino to the thermocouple to read the temperature values.&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Crucible heated to evaporate aluminum and deposit over chip.</p></figcaption></figure>
