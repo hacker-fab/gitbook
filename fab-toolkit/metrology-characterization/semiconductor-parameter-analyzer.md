@@ -1,2 +1,0 @@
-# Semiconductor Parameter Analyzer
-
