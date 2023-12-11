@@ -13,8 +13,8 @@ description: MPI-TS50
 | Cost                  | $15,800     |
 | --------------------- | ----------- |
 | Approximate Work Time | <p><br></p> |
-| Positioning Precision | <p><br></p> |
-| Range                 | <p><br></p> |
+| Performance spec 1    | <p><br></p> |
+| Performance spec 2    | <p><br></p> |
 
 \
 

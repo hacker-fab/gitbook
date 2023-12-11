@@ -1,2 +1,0 @@
-# Micropositioner: Delta Stage
-

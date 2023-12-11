@@ -12,12 +12,22 @@ layout:
     visible: false
 ---
 
-# 📽 Photo-Lithography Stepper
+# 🎥 Patterning
 
-## _This Page is Work in Progress_
 
-* will give detailed context for all quantifiable parameters of lithography steppers
-* brief overview of where improvements can be made (make a clear path to stepper V3... Vn
+
+concise explanation and context&#x20;
+
+* Not to try and cover theory or industry standard, but to break the problem into first principles just enough to give context to the quantifiable parameters
+* Also an opportunity to frame the problem wide enough to set the tone of thinking of these machines from the ground up (aligned with goal, don't think of industry as immutable)
+
+exhaustive list of industry methods and examples
+
+quantifiable end user parameters with descriptions + standardized tests
+
+
+
+***
 
 ## Background
 
@@ -35,22 +45,37 @@ Commercial lithography machines use photomasks to create the image, typically ma
 
 ## Quantifiable Parameters
 
-Optical Resolution
+#### Functional Specifications: The End Product&#x20;
 
-* info about how to verify this
+<details>
 
-Mechanical Resolution
+<summary>Developed Resolution</summary>
 
-* step size
-* repeatability (specific test we conducted, "repeatability" is vague)
+describe out standardized test: darkfield/brightfield, developed with AZ400K for 80s, measured pitch distance, used airforce test pattern
 
-Cost
+**Value**:&#x20;
 
-Footprint
+**Tools Required for Verification**:&#x20;
 
-Weight
+**Method of Verification**:&#x20;
 
-Automation capabilities
+**Possible Variation**: Error during development (see [Patterning SOP](../../standard-operating-procedures/patterning-sop-stepper-v1/))
 
-* what human actions are required: manual loading/unloading, choose the pattern, align manually or automatically with software,&#x20;
+**References**: _pics/videos_
+
+</details>
+
+<details>
+
+<summary>Automation Capabilities / Throughput</summary>
+
+what human actions are required: manual loading/unloading, choose the pattern, align manually or automatically with software
+
+approximate area exposed per second
+
+how much time to do one exposure, how much of that is active work vs. waiting around
+
+</details>
+
+&#x20;**Machine Specifications: Defined in Individual Build Docs**
 

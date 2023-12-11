@@ -13,18 +13,38 @@
 
 * [Self-Aligned NMOS V1](processes/self-aligned-nmos-v1.md)
 
-## 🛠 Builds
+## Fab Toolkit
 
-* [📽 Photo-Lithography Stepper](builds/photo-lithography-stepper/README.md)
-  * [1⃣ Lithography Stepper V1 Build](builds/photo-lithography-stepper/photolithography-stepper-v1.md)
-  * [Micropositioner: Stepper Motor V1](builds/photo-lithography-stepper/micropositioner-stepper-motor-v1.md)
-  * [Micropositioner: Delta Stage](builds/photo-lithography-stepper/micropositioner-delta-stage.md)
-  * [Micropositioner: Piezo Stage](builds/photo-lithography-stepper/micropositioner-piezo-stage.md)
-  * [Litho Stepper Software](builds/photo-lithography-stepper/litho-stepper-software.md)
-  * [2⃣ Lithography Stepper V2 Build (to do)](builds/photo-lithography-stepper/lithography-stepper-v2-build-to-do.md)
-* [💡 Thermal Evaporator V1 Build (to do)](builds/thermal-evaporator-v1-build-to-do.md)
-* [💿 Spin Coater V1 Build (to do)](builds/spin-coater-v1-build-to-do.md)
-* [🌡 Tube Furnace (to do)](builds/tube-furnace-to-do.md)
+* [🎥 Patterning](fab-toolkit/patterning/README.md)
+  * [Lithography Stepper V2 Build (to do)](fab-toolkit/patterning/lithography-stepper-v2-build-to-do.md)
+  * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
+  * [Litho Stepper Software](fab-toolkit/patterning/litho-stepper-software.md)
+* [🧱 Deposition](fab-toolkit/deposition/README.md)
+  * [💡 Thermal Evaporator V1 Build (to do)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
+  * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
+* [🕳 Etching](fab-toolkit/etching/README.md)
+  * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
+  * [HF Jig](fab-toolkit/etching/hf-jig.md)
+* [🛠 Other Processing Macines](fab-toolkit/other-processing-macines/README.md)
+  * [Tube Furnace](fab-toolkit/other-processing-macines/tube-furnace.md)
+  * [Cleaving Jig](fab-toolkit/other-processing-macines/cleaving-jig.md)
+  * [🌡 Tube Furnace (to do)](fab-toolkit/other-processing-macines/tube-furnace-to-do.md)
+* [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
+  * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer.md)
+  * [Probe Station](fab-toolkit/metrology-characterization/probe-station.md)
+  * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
+  * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
+* [⚗ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
+  * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
+  * [Dialectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
+    * [Spin on Glass](fab-toolkit/chemicals-materials/dialectrics/spin-on-glass.md)
+  * [Conductors](fab-toolkit/chemicals-materials/conductors/README.md)
+    * [Aluminum](fab-toolkit/chemicals-materials/conductors/aluminum.md)
+  * [Etchants](fab-toolkit/chemicals-materials/etchants/README.md)
+    * [Hydrofluoric Acid](fab-toolkit/chemicals-materials/etchants/hydrofluoric-acid.md)
+    * [Aluminum Etchant (Nitric, Acetic, Phosphoric Acids)](fab-toolkit/chemicals-materials/etchants/aluminum-etchant-nitric-acetic-phosphoric-acids.md)
+* [🧠 Automation](fab-toolkit/automation/README.md)
+  * [Lab Robot](fab-toolkit/automation/lab-robot.md)
 
 ## 🔭 Guides
 
@@ -54,10 +74,10 @@
 * [🎆 Plasma Etcher V1 Specs (to do)](bought-equipment/plasma-etcher-v1-specs-to-do.md)
 * [📍 Probe Station V1 Specs (to do)](bought-equipment/probe-station-v1-specs-to-do.md)
 
-## 🔲 Templates
+## 🔲 Templates (to do)
 
-* [Build Manual Template](templates/build-manual-template.md)
-* [Bought Equipment Template](templates/bought-equipment-template.md)
-* [Standard Operating Procedure Template](templates/standard-operating-procedure-template.md)
-* [BOM Template](templates/bom-template.md)
-* [Hardware X Template (for reference)](templates/hardware-x-template-for-reference.md)
+* [Build Manual Template](templates-to-do/build-manual-template.md)
+* [Bought Equipment Template](templates-to-do/bought-equipment-template.md)
+* [Standard Operating Procedure Template](templates-to-do/standard-operating-procedure-template.md)
+* [BOM Template](templates-to-do/bom-template.md)
+* [Hardware X Template (for reference)](templates-to-do/hardware-x-template-for-reference.md)
