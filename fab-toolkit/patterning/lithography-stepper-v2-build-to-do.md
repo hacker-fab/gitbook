@@ -88,6 +88,21 @@
 
 </details>
 
+## Background
+
+Our design was based on [Sam Zeloof](http://sam.zeloof.xyz/maskless-photolithography/) and [Huygens Optics](https://www.youtube.com/watch?v=\_w0Z2Y5vaAQ)’ versions of this tool, which is essentially a projector connected to a microscope. We use a 10x objective for demagnification and a mechanical XYZ stage for positioning.
+
+Stepper version 2 has greatly improved mechanical performance over V1 while using the same DLP chip from Texas Instruments. Several factors led to this improvement:
+
+1. Instead of an off the shelf projector with a flimsy plastic housing, we switched to a bare bones DLP evaluation module made directly by TI. This allows for a more robust physical connection to the projector housing.
+2. By swapping to a finite conjugate microscope objective, the optical path length is reduced from \~250 to 160 mm. This reduces the moment of inertia of the optics subassembly, therefore also reducing vibration.
+3. Swapping to LEDs instead of the broad spectrum mercury lamp removes the need to constantly swap filters, which introduced random perturbations from touching the optics.
+4. Mounting the projector horizontally means less structure is needed.
+
+####
+
+####
+
 #### Machine Specifications - Build
 
 Cost
