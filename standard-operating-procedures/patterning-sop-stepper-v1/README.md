@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🎞 Patterning SOP - Stepper V1
+# Patterning SOP - Stepper V1
 
 
 

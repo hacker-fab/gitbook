@@ -15,7 +15,7 @@ layout:
     visible: false
 ---
 
-# 🔎 Part Sourcing
+# Part Sourcing
 
 ## :woman\_running:We like making hardware, fast :man\_running:
 

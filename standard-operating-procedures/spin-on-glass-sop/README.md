@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🥞 Spin on Glass SOP
+# Spin on Glass SOP
 
 
 

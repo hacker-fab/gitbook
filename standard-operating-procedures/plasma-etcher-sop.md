@@ -13,7 +13,7 @@ layout:
     visible: false
 ---
 
-# 🕳 Plasma Etcher SOP
+# Plasma Etcher SOP
 
 <figure><img src="../.gitbook/assets/image (13).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
 

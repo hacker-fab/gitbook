@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 📍 Probe Station SOP
+# Probe Station SOP
 
 ## Parameters
 

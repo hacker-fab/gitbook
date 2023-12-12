@@ -28,7 +28,7 @@
 * [🛠 Other Processing Macines](fab-toolkit/other-processing-macines/README.md)
   * [Tube Furnace](fab-toolkit/other-processing-macines/tube-furnace.md)
   * [Cleaving Jig](fab-toolkit/other-processing-macines/cleaving-jig.md)
-  * [🌡 Tube Furnace (to do)](fab-toolkit/other-processing-macines/tube-furnace-to-do.md)
+  * [Tube Furnace (to do)](fab-toolkit/other-processing-macines/tube-furnace-to-do.md)
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
     * [SMU - Analog Discoveries](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
@@ -48,33 +48,28 @@
 * [🧠 Automation](fab-toolkit/automation/README.md)
   * [Lab Robot](fab-toolkit/automation/lab-robot.md)
 
-## 🔭 Guides
+## Guides
 
-* [🔎 Part Sourcing](guides/part-sourcing.md)
+* [Part Sourcing](guides/part-sourcing.md)
 * [Data Management](guides/data-management.md)
 * [Good Examples of Weekly Updates](guides/good-examples-of-weekly-updates.md)
 
 ## 🧑🍳 Standard Operating Procedures
 
-* [🎞 Patterning SOP - Stepper V1](standard-operating-procedures/patterning-sop-stepper-v1/README.md)
+* [Patterning SOP - Stepper V1](standard-operating-procedures/patterning-sop-stepper-v1/README.md)
   * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
   * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v1/hot-plate-sop.md)
   * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v1/photoresist-strip-sop.md)
-* [🕳 Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
-* [🥞 Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
+* [Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
+* [Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
   * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
   * [Spin on Glass Inspection](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-inspection.md)
-* [🌡 Tube Furnace SOP](standard-operating-procedures/tube-furnace-sop.md)
-* [🧪 Glass Acid Etch SOP](standard-operating-procedures/glass-acid-etch-sop.md)
-* [💡 Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
-* [🧪 Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
-* [📍 Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
-* [🖋 Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
-
-## Bought Equipment
-
-* [🎆 Plasma Etcher V1 Specs (to do)](bought-equipment/plasma-etcher-v1-specs-to-do.md)
-* [📍 Probe Station V1 Specs (to do)](bought-equipment/probe-station-v1-specs-to-do.md)
+* [Tube Furnace SOP](standard-operating-procedures/tube-furnace-sop.md)
+* [Glass Acid Etch SOP](standard-operating-procedures/glass-acid-etch-sop.md)
+* [Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
+* [Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
+* [Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
+* [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 
 ## 🔲 Templates (to do)
 

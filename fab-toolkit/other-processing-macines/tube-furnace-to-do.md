@@ -1,2 +1,2 @@
-# 🌡 Tube Furnace (to do)
+# Tube Furnace (to do)
 

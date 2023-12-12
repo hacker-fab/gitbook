@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🧪 Aluminum Etch SOP
+# Aluminum Etch SOP
 
 
 

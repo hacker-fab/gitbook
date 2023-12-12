@@ -15,7 +15,7 @@ layout:
     visible: false
 ---
 
-# 🧪 Glass Acid Etch SOP
+# Glass Acid Etch SOP
 
 
 

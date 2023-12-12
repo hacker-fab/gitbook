@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 💡 Evaporator SOP
+# Evaporator SOP
 
 
 

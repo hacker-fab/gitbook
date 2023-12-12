@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🌡 Tube Furnace SOP
+# Tube Furnace SOP
 
 
 
