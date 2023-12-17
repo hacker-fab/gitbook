@@ -83,12 +83,24 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 4. Inspect with the naked eye and make note of any marks on the wafer.
    1. Marks present after cleaning are likely scratches that need to be documented
 
+<div>
+
+<figure><img src="../../.gitbook/assets/cleaning.jpg" alt=""><figcaption><p>Acetone rinse</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/drying.jpg" alt=""><figcaption><p>Drying with nitrogen gun</p></figcaption></figure>
+
+</div>
+
 ### Prebake
 
 4. Preheat the[ Hot Plate](../patterning-sop-stepper-v1/hot-plate-sop.md) to 100°C
 5. Place the wafer in the **center** of the hotplate for 20 seconds
    1. Be sure to handle the wafer with tweezers that can handle high temperatures (metal tweezers)
    2. No need to turn the hotplate off since annealing will require 100°C initially as well
+
+<figure><img src="../../.gitbook/assets/hotplate (1).jpg" alt="" width="375"><figcaption><p>100C hotplate with chip in the center</p></figcaption></figure>
 
 ### Spin Coat
 
@@ -104,9 +116,20 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
    5. Apply 1 or 2 drops to your chip, make sure the chip is completely coated in solution but do not use more than 2 drops
    6. Dump any remaining SOG in the syringe back into the SOG container
    7. Dispose of the syringe and the filter in the waste bucket
-9. Spin coat the wafer <mark style="background-color:orange;">(Remember to switch on the vacuum!)</mark>
+
+<div>
+
+<figure><img src="../../.gitbook/assets/syringe.jpg" alt=""><figcaption><p>Pipette with SOG and air pocket</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/syringe-filter.jpg" alt=""><figcaption><p>Pipette with filter</p></figcaption></figure>
+
+</div>
+
+6. Spin coat the wafer <mark style="background-color:orange;">(Remember to switch on the vacuum!)</mark>
    1. After spin coating, the SOG application should appear even. (See pictures below)
-10. Immediately move onto annealing
+7. Immediately move onto annealing
 
 ### ![](https://lh4.googleusercontent.com/4Ze7i5GPpmCDYI7aWq1580wodj3FLuTmzr5LFTFVKZZEH8wd3g3ZxrQDQnnKdB-IUx0fghg02me3XZP0K3uWaphXByDInh0R2B2zF9XwXxF4DsD2VuaxtlDmqD6MGCHN5h-SGkmNsc\_S5fNYML\_nlP4)![](https://lh6.googleusercontent.com/RT5HwEkmavaU19ulqmj9jaGKk7\_BrJwYQV73joK\_IWuo4s4lSiIjBKK0NuTwKOjWpMett8jFdsAquYMG\_DuvQ5Frj3jaCpMDT18Wev8pEJMBRENax5Zr5OsLYgqIhAI8IYR52UMHoDg1ugVve1Ms1j8)
 
