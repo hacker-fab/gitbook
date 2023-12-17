@@ -20,7 +20,7 @@
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
   * [Litho Stepper Software](fab-toolkit/patterning/litho-stepper-software.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
-  * [💡 Thermal Evaporator V1 Build (to do)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
+  * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-wip.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
 * [🕳 Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)

@@ -1,4 +1,13 @@
-# 💡 Thermal Evaporator V1 Build (to do)
+---
+description: >-
+  This page outlines the v1 build of our aluminum thermal evaporator. Our design
+  primarily uses the 6 in. x 6 in. x 6 in. modular vacuum chamber + fitted
+  plates provided by Ideal Vacuum Products.
+---
+
+# 💡 Thermal Evaporator V1 Build (WIP)
+
+&#x20;
 
 ## Vacuum Chamber Assembly
 
