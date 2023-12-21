@@ -45,6 +45,7 @@
   * [Etchants](fab-toolkit/chemicals-materials/etchants/README.md)
     * [Hydrofluoric Acid](fab-toolkit/chemicals-materials/etchants/hydrofluoric-acid.md)
     * [Aluminum Etchant (Nitric, Acetic, Phosphoric Acids)](fab-toolkit/chemicals-materials/etchants/aluminum-etchant-nitric-acetic-phosphoric-acids.md)
+  * [Dopant Sources](fab-toolkit/chemicals-materials/dopant-sources.md)
 * [🧠 Automation](fab-toolkit/automation/README.md)
   * [Lab Robot](fab-toolkit/automation/lab-robot.md)
 
