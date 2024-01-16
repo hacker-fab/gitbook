@@ -1,11 +1,6 @@
 # Build Manual Template
 
-| Title |
-| ----- |
-
-\
-\
-
+## &#x20;
 
 | Cost                  | $           |
 | --------------------- | ----------- |
@@ -14,7 +9,9 @@
 | Performance spec 2    | <p><br></p> |
 
 \
-\
+Hardware Description
+
+Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area? \
 \
 
 
@@ -28,9 +25,7 @@ Useful Links:
 
 [Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV\_o5o/edit) and other related documents
 
-## Hardware Description
-
-Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area?&#x20;
+##
 
 ## [Tools](https://docs.google.com/document/d/1vQ3mLdk9Qs4jteeLivA5NhKBnKZaRAJCvF41PBNDRNI/edit#bookmark=id.e9qhfw513e84)
 

@@ -77,5 +77,86 @@ how much time to do one exposure, how much of that is active work vs. waiting ar
 
 </details>
 
-&#x20;**Machine Specifications: Defined in Individual Build Docs**
+&#x20;**Patterning Machine Specifications:**&#x20;
 
+<details>
+
+<summary>Optical Resolution</summary>
+
+**Tools Required for Verification**: Microscope + Calibrated Camera to convert pixels to μm
+
+**Method of Verification**: _make another page for optical resolution test?_
+
+**Possible Variation**: misalignment of optics during assembly
+
+**References**: _pics/_[_videos_](#user-content-fn-1)[^1]
+
+</details>
+
+<details>
+
+<summary>Developed Resolution</summary>
+
+**Tools Required for Verification**:&#x20;
+
+**Method of Verification**:&#x20;
+
+**Possible Variation**: Error during development (see [Patterning SOP](../../standard-operating-procedures/patterning-sop-stepper-v1/))
+
+**References**: _pics/videos_
+
+</details>
+
+<details>
+
+<summary>Single Exposure Area</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>Approximate Exposure Time (for AZ P4210 photoresist)</summary>
+
+**Tools Required for Verification**: AZ400K Developer Solution + Microscope
+
+**Method of Verification**:&#x20;
+
+**Possible Variation**: Can vary UV LED power and beam splitter ratio to decrease/increase exposure time
+
+
+
+
+
+**References**: _pics/videos_
+
+</details>
+
+<details>
+
+<summary>Mechanical Resolution - Step Size</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>Mechanical Resolution - Repeatability</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>Maximum Wafer Size</summary>
+
+
+
+</details>
+
+
+
+[^1]: 
