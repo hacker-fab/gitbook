@@ -1,4 +1,4 @@
-# 1⃣ Lithography Stepper V1 Build
+# Lithography Stepper V1 Build
 
 ## Background
 
@@ -20,7 +20,7 @@ Our design was based on [Sam Zeloof](http://sam.zeloof.xyz/maskless-photolithogr
 
 ## Related Links
 
-[Patterning SOP](../../standard-operating-procedures/patterning-sop-stepper-v1/)
+[Patterning SOP](../../archive/patterning-sop-stepper-v1.md)
 
 [Litho Stepper Software](litho-stepper-software.md)
 

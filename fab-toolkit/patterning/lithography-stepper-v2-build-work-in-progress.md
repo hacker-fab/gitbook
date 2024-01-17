@@ -17,7 +17,7 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 3. Swapping to LEDs instead of the broad spectrum mercury lamp removes the need to constantly swap filters, which introduced random perturbations from touching the optics. We replaced the stock blue LED with a 410 nm LED mounted on a custom PCB. The PCB design files can be found [here](https://github.com/hacker-fab/lithography-stepper/blob/main/LED%20PCB/UV\_LED/UV\_LED\_v2.zip).
 4. Mounting the projector horizontally means less structure is needed.
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 ## Tools Required
 
@@ -30,9 +30,9 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 
 The PCB Gerber files for our UV LED can be found [here](https://github.com/hacker-fab/lithography-stepper/blob/main/LED%20PCB/UV\_LED/UV\_LED\_v2.zip). We provide a screenshot of the layout in Altium and a 3D render of the PCB below.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (2).png>)
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (6) (1).png>)
 
 You can order it through your PCB manufacturer of choice (we used JLCPCB). However, note that the PCB is [**copper core**](https://jlcpcb.com/blog/62-JLCPCB-Direct-Heatsink-Copper-Cored-PCBs-Available-Now!). This is because the LEDs draw several amps of current in operation. To ensure that the PCB doesn't melt, you should use copper core to facilitate better heat flow.
 
@@ -46,14 +46,14 @@ Once the paste is applied, you can use a pick and place machine to align the com
 
 Below is a completed version of the PCB - note the polarity:
 
-![](<../../.gitbook/assets/image (7).png>)\
+![](<../../.gitbook/assets/image (7) (1).png>)\
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB.
 
 ## Assembling the TI DLP dev kit
 
 (To do - need to disassemble to take more photos of each step...)
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>First V2 patterning - 10 second exposure with unfocused 410 nm UV light.</p></figcaption></figure>
 

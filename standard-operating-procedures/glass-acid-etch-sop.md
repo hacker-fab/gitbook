@@ -100,7 +100,7 @@ A [buffered oxide etch](https://us.vwr.com/store/product/36722614/buffered-oxide
 17. Rinse the chip using the DI water squirt gun over the sink for 20 seconds
     1. Make sure you don't drop your chip
 18. Dry your chip off with a nitrogen gun.
-    1. Refer to [Photoresist Strip SOP](patterning-sop-stepper-v1/photoresist-strip-sop.md) for proper nitrogen gun usage if needed
+    1. Refer to [Photoresist Strip SOP](patterning-sop-stepper-v2/photoresist-strip-sop.md) for proper nitrogen gun usage if needed
 
 ***
 

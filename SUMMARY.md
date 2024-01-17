@@ -57,10 +57,10 @@
 
 ## 🧑🍳 Standard Operating Procedures
 
-* [Patterning SOP - Stepper V1](standard-operating-procedures/patterning-sop-stepper-v1/README.md)
-  * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
-  * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v1/hot-plate-sop.md)
-  * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v1/photoresist-strip-sop.md)
+* [Patterning SOP - Stepper V2](standard-operating-procedures/patterning-sop-stepper-v2/README.md)
+  * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
+  * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v2/hot-plate-sop.md)
+  * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-strip-sop.md)
 * [Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
 * [Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
   * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
@@ -79,3 +79,7 @@
 * [Standard Operating Procedure Template](templates-to-do/standard-operating-procedure-template.md)
 * [BOM Template](templates-to-do/bom-template.md)
 * [Hardware X Template (for reference)](templates-to-do/hardware-x-template-for-reference.md)
+
+## Archive
+
+* [Patterning SOP - Stepper V1](archive/patterning-sop-stepper-v1.md)

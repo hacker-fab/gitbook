@@ -16,9 +16,9 @@ layout:
 
 
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
 
 ## Process Parameters
 
@@ -54,8 +54,8 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 ## Tools
 
-3. [Vacuum Spin Coater](../patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
-4. [Hot Plate](../patterning-sop-stepper-v1/hot-plate-sop.md)
+3. [Vacuum Spin Coater](../patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
+4. [Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md)
 
 ## Materials
 
@@ -95,7 +95,7 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 ### Prebake
 
-4. Preheat the[ Hot Plate](../patterning-sop-stepper-v1/hot-plate-sop.md) to 100°C
+4. Preheat the[ Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md) to 100°C
 5. Place the wafer in the **center** of the hotplate for 20 seconds
    1. Be sure to handle the wafer with tweezers that can handle high temperatures (metal tweezers)
    2. No need to turn the hotplate off since annealing will require 100°C initially as well
@@ -104,7 +104,7 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 ### Spin Coat
 
-6. Place wafer onto the chuck of the [vacuum spin coater](../patterning-sop-stepper-v1/vacuum-spin-coater-sop.md)
+6. Place wafer onto the chuck of the [vacuum spin coater](../patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
 7. Open the SOG container while keeping the bottom resting on the table
    1. Never open containers up in the air or outside of the fume hood
    2. **Ensure that the SOG container is not expired by inspecting with the naked eye. If you see floating particles of glass suspended in the liquid, this is expired SOG. See the** [**Storage and Preparation Document**](spin-on-glass-storage-and-preperation.md) **for more information.**
@@ -137,7 +137,7 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 12. Before placing the wafer on the hot plate, use a cleanroom wipe to clean the surface of the hot plate using a small amount of acetone and IPA
 13. The hot plate should already be at 100C
-14. Place wafer onto the [Hot Plate](../patterning-sop-stepper-v1/hot-plate-sop.md)
+14. Place wafer onto the [Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md)
     1. Be sure to handle the wafer with tweezers that can handle high temperatures
     2. Place a cover, such as a glass dish upside down, on top of the wafer to avoid contamination and air movement as the wafer is annealing
 15. Follow the appropriate ramping profile (see top of this document or your own notes)

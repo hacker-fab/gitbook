@@ -90,4 +90,4 @@ Next, connect a power supply to the external end of the power feedthroughs to he
 
 Finally, attach the thermal  breakout board and arduino to the thermocouple to read the temperature values.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Crucible heated to evaporate aluminum and deposit over chip.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption><p>Crucible heated to evaporate aluminum and deposit over chip.</p></figcaption></figure>
