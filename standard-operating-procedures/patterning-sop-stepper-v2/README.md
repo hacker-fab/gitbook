@@ -104,8 +104,9 @@ See the appendix for useful resources about spin coating, our resist, and develo
    1. Run the python script called Lithographer.py\
       It requires installing pillow and tkinter with pip3
    2. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
-   3. Use the three import buttons to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
-   4. Future mentions to GUI buttons will be in \[braces]
+   3. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
+   4. For more information, click the "help" button at the bottom right
+   5. Future mentions to GUI buttons will be in \[braces]
 7. Open SpinView, select BlackFly S, and press the green play button.
 8. Open Arduino, and open the serial monitor. You should see the output "Grbl 1.1h \['$' for help]".
 9. Enter G91 into the serial monitor. This switches the stage to relative positioning mode.
