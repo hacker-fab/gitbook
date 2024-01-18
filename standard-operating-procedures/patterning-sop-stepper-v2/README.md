@@ -116,6 +116,8 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ### Expose Using Maskless Photolithography Stepper
 
+If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somehwat quickly because the stepper will begin to expose photoresist in about 1 minute.
+
 <figure><img src="../../.gitbook/assets/image.png" alt="" width="355"><figcaption></figcaption></figure>
 
 1. Push the projector to the left, out of the way of the small hole in the chip holding jig.
@@ -142,25 +144,25 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 155851.png" alt=""><figcaption><p>A well aligned exposure. Note that the previous layer is slightly smaller than the proected pattern.</p></figcaption></figure>
 
-2. Move the X and Y axes manually, or by inputting commands via the serial monitor. The syntax is "x1.24" to move in X by 1.24 steps, or "y-.4" to move in Y by -.4 steps. One arbitrary "step" is equal to 77.5 microns. The minimum step size possible is .1 steps, or about 8 microns.&#x20;
+2. Move the X and Y axes manually, or by inputting commands via the serial monitor. The syntax is "x1.24" to move in X by 1.24 steps, or "y-.4" to move in Y by -.4 steps. One arbitrary "step" is equal to 77.5 microns. The minimum reliable step size is .1, or about 8 microns.&#x20;
    1. If this is your first layer, find an area with little dust, plan how many exposures you will do and in which direction you will move.
    2. Otherwise, align to your previous layer. You may want to do the final alignment manually for finer control.
-3. Move the Z axis by -.7 steps. This will switch from focusing in red to focusing in UV.
+3. Once you're ready to expose, move the Z axis by -.7 steps. This will switch from focusing in red to focusing in UV.
 4. Set your exposure time to 8000 ms.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 160251.png" alt=""><figcaption><p>Well-focused UV, ready to expose.</p></figcaption></figure>
 
-2. Press show UV focus. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused.
-3. Press the big red "Begin Patterning" button. Avoid bumping the table.
-4. Press "Show Red Focus" and move in Z by =.7 steps to switch back to red.
+2. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused.
+3. Press the big red "Begin Patterning" button. Avoid bumping the table while you wait for the exposure to finish.
+4. Press "Show Red Focus" and move in Z by = .7 steps to switch back to red.
 5. Move on to your next pattern and repeat. A good spacing between patterns is 7.5 steps in Y and 14 steps in X. This will allow you to easily find your next pattern. Take note of where you started, which direction you're moving, and how many exposures you've done so that you don't miss any patterns.&#x20;
-6. Once you're finished, press "Clear". Push the projector to the left again, and carefully hold your chip while you turn off the vacuum.
+6. Once you're finished, press "Clear". Push the projector to the left again, and carefully hold your chip with tweezers while you turn off the vacuum.
 
 ## Develop
 
 <figure><img src="../../.gitbook/assets/developer_dish (1).png" alt="" width="375"><figcaption><p>Developer (Deionized water to AZ-400K 3:1) and DI water rinse.</p></figcaption></figure>
 
-1. Refresh the developer if it has been out for more than 6 hours. Otherwise skip to step 3.
+1. Refresh the developer if it has been out for more than 6 hours. Otherwise skip to step 2.
    1. Pour the used developer into the bottle labeled "developer waste"
    2. Rinse the evaporating dish with DI water.
    3. Pour about 30 mL of pre-diluted 3:1 AZ-400K developer solution into the evaporating dish labeled “AZ-400K 3:1”. For a sense of scale: in the dish above this should only be about 3mm tall of liquid (just enough to cover the surface of the chip)
@@ -177,11 +179,16 @@ See the appendix for useful resources about spin coating, our resist, and develo
 ## Inspect
 
 1. Look at the chip with your bare eyes to help build an intuition for the process.
-2. Put the chip under the microscope. Connect to the camera with your laptop and take pictures at 5X, 10X bright and dark field, 20X bright and dark field, and 50X.
-   1. You can use the 10x or 20x objective and use the calibrated measuring system to determine feature sizes on your chip
-3. Batch save then upload the folder to [Patterning Photos](https://drive.google.com/drive/folders/1-ON8-167CTyXiuhVdlI1\_WMpKkx0M0a8?usp=share\_link).
-4. Paste a link to the folder in the last column of the patterning data sheet.
-5. Put the chip away in a plastic box and label it with a serial number.
+2. Put the chip under the microscope. Connect to the camera with your laptop and take pictures of each developed pattern at 5x. If there are smaller interesting features or defects, you may take pictures at higher magnification or under dark field. Be aware that it's easy to get carried away with the microscope.
+
+![](../../.gitbook/assets/2740001.jpg)![](../../.gitbook/assets/2740002.jpg)![](../../.gitbook/assets/274\_40x\_annotated0001.jpg)![](../../.gitbook/assets/274\_40x\_annotated0002.jpg)
+
+1. In order to measure the developed pattern resolution, expose [this resolution test pattern](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv\_O2MjYu2rck/edit?usp=sharing). The resolution is equal to the line pitch that is resolved in both light and dark field. Use AmScope to measure. The pitch is the distance between the center of two lines.
+2. For each chip, batch save with the chip number as the first three characters in the file prefix. Do not change the folder. A script will upload to [drive](https://drive.google.com/drive/u/1/folders/1ySfcQiROhOYFecQzDvk9XBO2B2KqJLy6) every 5 min.&#x20;
+3. Paste a link to the folder in the last column of the chip sheet.
+4. Put the chip away in a plastic box and label it with a serial number.
+
+See below for examples of underexposure/development, overexposure/development, non-uniformity, and optical blurring.&#x20;
 
 <figure><img src="https://lh7-us.googleusercontent.com/VXwgwFNreCqK2AwOaKCXhZBzbwyT4Rb94mn578uF9Eky_c-yzWojG3Y63RT89DR-o_y3zF_SqohF4liGo6DpLJJQRN0xEtdLU3f5A2W-8rhRnB4BnpuuJDDCcIZ0Ytd6vWb8F3H1CAbMUTnQY-biRMA" alt="" width="375"><figcaption><p>Inspection image demonstrating non-uniform exposure</p></figcaption></figure>
 
