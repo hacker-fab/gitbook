@@ -29,14 +29,15 @@ To apply a thin layer of wet chemicals to the surface of the chip, with sub-micr
 2. Use the arrows on the touch screen to set the spin time and rpm
 3. Use tweezers to place wafer onto the o-ring so that the chip completely covers the o-ring and will seal onto it
    1. Also attempt to center the chip on the o-ring as best you can. This will minimize the chances of it flying off.
-4. Use a pipette to apply liquid on top of the wafer while it is seated in the spin coater
-5. Close the lid
-6. <mark style="background-color:orange;">SWITCH ON THE VACUUM PUMP!</mark>
-7. Press “begin”
+4. Use a pipette to apply liquid on top of the wafer while it is seated in the spin coater. You only need a couple drops in the pipette, don't suck up extra.&#x20;
+5. Close the HMDS/photoresist/SOG lid.
+6. Close the spin coater lid
+7. <mark style="background-color:orange;">SWITCH ON THE VACUUM PUMP!</mark>
+8. Press “begin”
    1. This will begin a pre spin at 600 rpm
-8. Press “coat”
-9. When the spin time has been reached, the coater will automatically ramp down to rest
-10. Open the lid and remove the wafer with tweezers
+9. Press “coat”
+10. When the spin time has been reached, the coater will automatically ramp down to rest
+11. Open the lid and remove the wafer with tweezers
 
 ## Side Notes
 

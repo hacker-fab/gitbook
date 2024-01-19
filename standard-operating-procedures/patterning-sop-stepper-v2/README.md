@@ -74,17 +74,18 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 <figure><img src="../../.gitbook/assets/spin_bake.png" alt=""><figcaption></figcaption></figure>
 
-4. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
-5. If patterning on silicon or glass, spin coat 2 drops of HMDS. Otherwise skip to 7.
+5. See the [Vacuum Spin Coater SOP](https://hacker-fab.gitbook.io/hacker-fab-space/standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop). Remember to pipette an appropriate amount, close the lid, and turn on the vacuum.
+6. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
+7. If patterning on silicon or glass, spin coat 2 drops of HMDS. Otherwise skip to 7.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-6. Bake on the hot plate at 100°C for 60 seconds.
-7. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops
+8. Bake on the hot plate at 100°C for 60 seconds.
+9. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
    2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
 
        ![](https://lh7-us.googleusercontent.com/BciCSAplFhLYkyUqJh4kPKxU3ONYgSHvfXDoACU\_73Z-xF\_lqWpIHO5CPtZGyt3n-I2zkU4y8P\_jjom\_DykU0BANy6GmklaMhCM\_sEptYzvwVZ\_GXsdCKMdNSUenD\_o\_2e8Nrk9LY7WXKRp42rtfLiU)
    3. Or, take o-ring off and clean then re-install.
-8. Soft bake on the hot plate at 100°C for 90 seconds.
+10. Soft bake on the hot plate at 100°C for 90 seconds.
 
 ## Stepper Setup
 
