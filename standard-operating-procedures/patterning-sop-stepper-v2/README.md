@@ -75,9 +75,9 @@ See the appendix for useful resources about spin coating, our resist, and develo
 <figure><img src="../../.gitbook/assets/spin_bake.png" alt=""><figcaption></figcaption></figure>
 
 4. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
-5. If patterning on silicon, spin coat 1 drop of HMDS. Otherwise skip to 7.
+5. If patterning on silicon or glass, spin coat 2 drops of HMDS. Otherwise skip to 7.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-6. Bake on the hot plate at 100°C for 30 seconds.
+6. Bake on the hot plate at 100°C for 60 seconds.
 7. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
    2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
