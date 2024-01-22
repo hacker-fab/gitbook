@@ -76,9 +76,9 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 5. See the [Vacuum Spin Coater SOP](https://hacker-fab.gitbook.io/hacker-fab-space/standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop). Remember to pipette an appropriate amount, close the lid, and turn on the vacuum.
 6. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
-7. If patterning on silicon or glass, spin coat 2 drops of HMDS. Otherwise skip to 7.
+7. If patterning on silicon or glass, spin coat 1-2 drops of HMDS. Otherwise skip to 7.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-8. Bake on the hot plate at 100°C for 60 seconds.
+8. HMDS bake on the hot plate
 9. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
    2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
@@ -105,7 +105,8 @@ See the appendix for useful resources about spin coating, our resist, and develo
    4. For more information, click the "help" button at the bottom right
    5. Future mentions to GUI buttons will be in \[braces]
 7. Open SpinView, select BlackFly S, and press the green play button.
-8. Open Arduino, and open the serial monitor. You should see the output "Grbl 1.1h \['$' for help]".
+8. Open Arduino, and open the serial monitor. You should see the output "Grbl 1.1h \['$' for help]".&#x20;
+   1. If this does not show, click the black button on top of the motor driver to reset.
 9. Enter G91 into the serial monitor. This switches the stage to relative positioning mode.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 152141.png" alt=""><figcaption></figcaption></figure>
@@ -146,7 +147,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 160251.png" alt=""><figcaption><p>Well-focused UV, ready to expose.</p></figcaption></figure>
 
-2. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused.
+2. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused (all crosses look in focus).
 3. Press the big red "Begin Patterning" button. Avoid bumping the table while you wait for the exposure to finish.
 4. Press "Show Red Focus" and move in Z by = .7 steps to switch back to red.
 5. Move on to your next pattern and repeat. A good spacing between patterns is 7.5 steps in Y and 14 steps in X. This will allow you to easily find your next pattern. Take note of where you started, which direction you're moving, and how many exposures you've done so that you don't miss any patterns.
@@ -174,6 +175,11 @@ If you're doing this for the first time, it is recommended to read through the f
 
 1. Look at the chip with your bare eyes to help build an intuition for the process.
 2. Put the chip under the microscope. Connect to the camera with your laptop and take pictures of each developed pattern at 5x. If there are smaller interesting features or defects, you may take pictures at higher magnification or under dark field. Be aware that it's easy to get carried away with the microscope.
+3. **If you want to measure the length of pitch in microns (**μm**) then you must use only the calibrated objective.**
+   1. This calibration converts pixels of the camera to microns using a calibration slide from the manufacturer. If you use a different objective, the measurement will be inaccurate.
+   2. After this is selected, measure the pitch or any other length using the line tool
+
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
 
 ![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0001.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0002.jpg)
 
