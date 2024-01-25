@@ -49,18 +49,38 @@ Every build + bought item page contains:
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>Photoresists + Developers</td><td></td><td></td></tr><tr><td>Dielectrics</td><td></td><td></td></tr><tr><td>Conductors</td><td></td><td></td></tr><tr><td>Etchants</td><td></td><td></td></tr><tr><td>Dopant Sources</td><td></td><td></td></tr></tbody></table>
 
-##
+***
 
-## Quick links
+## Licensing
 
-{% content-ref url="overview/what-we-do.md" %}
-[what-we-do.md](overview/what-we-do.md)
-{% endcontent-ref %}
+<details>
 
-{% content-ref url="overview/current-fab-capabilities/" %}
-[current-fab-capabilities](overview/current-fab-capabilities/)
-{% endcontent-ref %}
+<summary>Hardware: CERN-OHL-W</summary>
 
-{% content-ref url="overview/build-a-fab-to-do.md" %}
-[build-a-fab-to-do.md](overview/build-a-fab-to-do.md)
-{% endcontent-ref %}
+For example, if you release HDL files under CERN-OHL-W and then somebody uses those files in their FPGA, when they distribute the bitstream (either putting it online or shipping a product with it) they do not to make the rest of the HDL design available under CERN-OHL-W as well.&#x20;
+
+https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes&#x20;
+
+https://ohwr.org/cern\_ohl\_w\_v2.pdf
+
+</details>
+
+<details>
+
+<summary>Software: MPL v2.0</summary>
+
+The MPL’s “file-level” copyleft is designed to encourage contributors to share modifications they make to your code, while still allowing them to combine your code with code under other licenses (open or proprietary) with minimal restrictions.&#x20;
+
+https://www.mozilla.org/en-US/MPL/2.0/&#x20;
+
+https://www.mozilla.org/en-US/MPL/2.0/FAQ/
+
+</details>
+
+<details>
+
+<summary>Documentation: CC BY-SA 4.0</summary>
+
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, **so long as attribution is given to the creator**. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. https://creativecommons.org/licenses/by-sa/4.0/ https://creativecommons.org/share-your-work/cclicenses/
+
+</details>
