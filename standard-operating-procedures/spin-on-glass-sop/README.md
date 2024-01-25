@@ -28,7 +28,7 @@ layout:
 | -------------------------------------------------------------------------- | ------------------ |
 | Spin Speed                                                                 | 4000 rpm           |
 | Spin Time                                                                  | 30s                |
-| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 2, 400, 30] |
+| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 2, 400, 10] |
 
 #### For more detailed parameters:
 
@@ -139,17 +139,14 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 13. The hot plate should already be at 100C
 14. Place wafer onto the [Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md)
     1. Be sure to handle the wafer with tweezers that can handle high temperatures
-    2. Place a cover, such as a glass dish upside down, on top of the wafer to avoid contamination and air movement as the wafer is annealing
-15. Follow the appropriate ramping profile (see top of this document or your own notes)
-16. Ramp down temperature
-    1. When baking has finished, turn off the hot plate and and do NOT remove the wafer
-    2. This allows the wafer to cool at a slower rate to prevent cracking.
-17. Once the hot plate cools to below 200C, it is safe to remove the wafer. (this takes at least 20 minutes to ramp down).&#x20;
-    1. **Remember that the glass cover will also still be hot (although slightly less than 200C at this point). Do not burn yourself when removing the glass cover - nitrile gloves will not protect you from burns. If necessary, wait longer for the glass cover to get close to room temperature.**
+    2. Place a cover, such as a glass dish upside down, on top of the wafer to avoid contamination and air movement as the wafer is annealing.
+15. Follow the appropriate ramping profile (see top of this document or your own notes). Normally immediately ramping from 100C to 400C is OK.
+16. Put on heat-resistant gloves and remove the glass cover. **Do not burn yourself when removing the glass cover - nitrile gloves will not protect you from burns. 400C is 752F, which is way way hotter than an oven!**&#x20;
+17. Use metal tweezers to remove the chip. Again be careful not to burn yourself.
 
 ### Tube Furnace Anneal/Diffusion P504
 
-See [Tube Furnace SOP](../tube-furnace-sop.md) for details
+If the next step requires higher temperatures, see the [Tube Furnace SOP](../tube-furnace-sop.md) for details.
 
 ### Inspection
 

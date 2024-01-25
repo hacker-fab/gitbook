@@ -24,10 +24,11 @@ layout:
 
 ## Parameters
 
-| Temperature    | 1100°C |
-| -------------- | ------ |
-| Total Time     | 1 Hour |
-| Diffusion time | 30 min |
+| Temperature     | 1100°C |
+| --------------- | ------ |
+| Total Time      | 1 Hour |
+| Pre-doping time | 5 min  |
+| Diffusion time  | 30 min |
 
 ***
 
@@ -64,23 +65,28 @@ Many types of dopant sources are used, including solid, liquid, and glass. Our p
 
 ![](https://lh5.googleusercontent.com/wXurgh65gFX6Em6MDdvlSiRRvWrNOUFiQ3A\_7IbE6lcTO1wunEGcIgzzVtXCno\_Cqv61BXWATX3zHmQOIGmaiYzDI0crFLY7eiXBXj9PiV8cPImylx\_-1X16ZSdvRn5DL9FhGQJJyTwVYr8ciRkIdB8)
 
-1.  Put the <mark style="background-color:yellow;">fused silica</mark> microscope slide in the entrance of the tube. Do not use a regular microscope slide, or it will melt inside the tube.
+1. Put the <mark style="background-color:yellow;">fused silica</mark> microscope slide in the entrance of the tube. Do not use a regular borosilicate microscope slide, or it will melt inside the tube. The edge of a fused silica slide is pure white, while borosilicate is a little bit green.
 
-    1. Do NOT use borosilicate slides or other microscope slides. If the slide has a green tiny on the edges, it is NOT for use in the tube furnace.
-
-    ![](<../.gitbook/assets/melted chip in tube furnace.jpg>)
+![](<../.gitbook/assets/melted chip in tube furnace.jpg>)
 
 _A chip permanently fused to the tube furnace walls when improper slide was used_ :fire:
 
 1. Place your chips on the slide.
-2. Use the glass rod to push the slide into the exact center of the tube, being careful to not scratch the inside of the tube too much.
+2. Use the glass rod to push the slide into the tube, being careful to not scratch the inside of the tube too much. In order to minimize thermal stress, insert the chip in steps:
+   1. Push the chip to the entrance of the white insulation. Wait 30 seconds.
+   2. Push the chip to the other side of the white insulation. Wait 30 seconds.
+   3. Push the chip an additional 3 inches. Wait 30 seconds.
+   4. Push the chip to the center of the tube. Start the timer. Do not count the steps in the total diffusion time.
 3. Place the rod aside.
 
 ### Removing chips
 
-1. Use the glass rod to push the slide to the end of the tube.
+1. Use the glass rod to push the slide to the other end of the tube.
+   1. Repeat the stepping process in reverse. 30 seconds each at: 3" from the inside of the insulation, at the inside of the insulation, and at the outside of the insulation.
+   2. Push the slide all the way to the end until it is reachable.
 2. Wait a few minutes for the slide to cool down.
-3. Use metal tweezers to take the slide out.
+3. Use metal tweezers to take the slide out. Don't use the orange ones because they don't close all the way.
+4. Put the slide on a heat resistant surface and wait 5 minutes before handling the chip.
 
 ***
 
