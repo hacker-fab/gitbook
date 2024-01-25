@@ -83,7 +83,7 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 ![](https://lh3.googleusercontent.com/z-K7CU-RkI2anr8zqe7FrCUV2ncA2f-2\_0wO40aaPKTE1MMkd\_EI4sQSiZCDjC\_NAQeo96zIVi0B\_\_DF\_9CsLVZFN43jFutxQ4\_XQatcErRQGp6GarRT4gpPbWzosOydO5L1pO9fojQrCcltEL4rqwY)
 
 7. When you are ready to start etching, select **commands > plasma**.&#x20;
-8. During the etch, monitor the pressure on the screen (should be at your setpoint) and the outlet pressure on the regulator (should be around 5 psig). Look in the window for pretty plasma!
+8. During the etch, monitor the pressure on the screen (should be at your setpoint) and the outlet pressure on the regulator (should be around 5-15 psig). Look in the window for pretty plasma!
 9. SHUT THE GAS CYLINDER. RIGHTY TIGHTY
 10. At the end of the cycle, the etcher will purge itself once, pump down, then purge again. To be safe we’ll purge a third time:
 11. **Commands > standby**. This will start the pump again.
