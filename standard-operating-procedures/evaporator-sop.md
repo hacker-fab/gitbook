@@ -18,7 +18,7 @@ layout:
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
 
 ***
 

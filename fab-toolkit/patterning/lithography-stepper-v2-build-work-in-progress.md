@@ -2,9 +2,7 @@
 
 ## Hardware Specs
 
-<table><thead><tr><th width="279">Cost</th><th>$3,708.03</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>3 hours*</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>15 µm</td></tr><tr><td>Mechanical Repeatability</td><td>15 µm</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
-
-\*This depends on a number of factors. There is some assembly required for the UV LED PCB, as detailed below, which should take less than an hour. Then there is mechanical assembly required; depending on the type of positioning stage used, this will take at least 2 hours but possibly many more. We will update this once we've finalized the stage to be used.
+<table><thead><tr><th width="279">Cost</th><th>$3,708.03</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>6 hours</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>15 µm</td></tr><tr><td>Mechanical Repeatability</td><td>15 µm</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
 
 ## Hardware Description
 
@@ -92,21 +90,17 @@ Taking pictures after every step is key to ensuring you can put it back together
 
 1. Test the projector before we completely take it apart :)
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 2. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="355"><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>First V2 patterning - 10 second exposure with unfocused 410 nm UV light.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 ### Assemble the Optics
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Assemble the Micropositioning Stage
 
