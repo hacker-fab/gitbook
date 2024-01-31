@@ -1,6 +1,6 @@
 # Build Manual Template
 
-## &#x20;
+## Hardware Specs
 
 | Cost                  | $           |
 | --------------------- | ----------- |
@@ -8,24 +8,17 @@
 | Performance spec 1    | <p><br></p> |
 | Performance spec 2    | <p><br></p> |
 
-\
-Hardware Description
+## Hardware Description
 
 Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area? \
-\
 
 
-Insert picture of completed hardware
-
-\
-\
+Insert picture of completed hardware\
 
 
 Useful Links:
 
 [Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV\_o5o/edit) and other related documents
-
-##
 
 ## [Tools](https://docs.google.com/document/d/1vQ3mLdk9Qs4jteeLivA5NhKBnKZaRAJCvF41PBNDRNI/edit#bookmark=id.e9qhfw513e84)
 
@@ -37,13 +30,7 @@ Useful Links:
 
 Stuff to buy. The BOM should include everything necessary to make the components in the next section, design files.
 
-\
-
-
 [Link to spreadsheet](https://docs.google.com/spreadsheets/d/1tM25RrjC127YzbMv5\_YfaZUyqUb6dUSwdO-u9tCkjsk/edit#gid=0) - edit sheet then update or copy table here
-
-\
-
 
 | Name        | QTY         | Cost per unit - USD | Total cost - USD | Purchasing Link                                 |
 | ----------- | ----------- | ------------------- | ---------------- | ----------------------------------------------- |
@@ -51,7 +38,6 @@ Stuff to buy. The BOM should include everything necessary to make the components
 | Item 2      | 1           | 10                  | 10               | [Amazon](https://www.amazon.com/)               |
 | <p><br></p> | <p><br></p> | <p><br></p>         | 0                | <p><br></p>                                     |
 
-\
 
 
 You can use this space for any additional descriptions of the materials used.
@@ -60,13 +46,7 @@ You can use this space for any additional descriptions of the materials used.
 
 Stuff to make. Complete a separate row for each design file associated with your hardware (including the primary design files). Any empty rows should be deleted.
 
-\
-
-
 [Link to GitHub repository](https://github.com/orgs/hacker-fab/repositories)
-
-\
-
 
 | File Name w/ link                                                                                | Description                                                              | QTY | Tools Used                      |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | --- | ------------------------------- |
@@ -79,23 +59,19 @@ Stuff to make. Complete a separate row for each design file associated with your
 
 CAD files:
 
-You are encouraged to use free and open source software packages for creating the files.  For  CAD files, OpenSCAD, FreeCAD, or Blender are encouraged, but, if these are not available, we accept source files from proprietary CAD packages, such as Autocad or Solidworks, and other drawing packages.
-
-\
+You are encouraged to use free and open source software packages for creating the files.  For  CAD files, OpenSCAD, FreeCAD, or Blender are encouraged, but, if these are not available, we accept source files from proprietary CAD packages, such as Autocad or Solidworks, and other drawing packages.\
 
 
 3D printing:
 
 Supplementary files that facilitate digital replication of the devices are encouraged; for example, STL/3MF files for 3D printing components.&#x20;
 
-\
 
 
 Electronics:
 
 PCB layouts and other electronics design files should be uploaded to Github.
 
-\
 
 
 Software and firmware:
@@ -114,9 +90,6 @@ Provide detailed, step-by-step construction instructions for the submitted hardw
 * Tips and tricks to simplify the assembly process
 * Possible errors that might occur during assembly and how to rectify them
 
-\
-
-
 ### 3D Print Sub-assembly 1
 
 1. Step 1
@@ -127,15 +100,7 @@ Provide detailed, step-by-step construction instructions for the submitted hardw
 
 4. Step 1
 5. Step 2
-6. Step 3
-
-\
-
-
-\
-
-
-\
+6. Step 3\
 
 
 ## Validation and Characterization
@@ -145,9 +110,6 @@ Demonstrate the operation of the hardware and characterize its performance for a
 * Highlight a relevant use case.
 * If possible, characterize performance of the hardware over operational parameters.
 * Create a bulleted list describing the capabilities (and limitations) of the hardware.  For example, load and operation time, spin speed, coefficient of variation, accuracy, precision, etc
-
-\
-
 
 ## Safety
 

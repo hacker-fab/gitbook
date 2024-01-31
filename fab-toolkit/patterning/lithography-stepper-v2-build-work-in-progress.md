@@ -2,7 +2,7 @@
 
 ## Hardware Specs
 
-<table><thead><tr><th width="279">Cost</th><th>>$1,000</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>3 hours*</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>15 µm</td></tr><tr><td>Mechanical Repeatability</td><td>15 µm</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
+<table><thead><tr><th width="279">Cost</th><th>$3,708.03</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>3 hours*</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>15 µm</td></tr><tr><td>Mechanical Repeatability</td><td>15 µm</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
 
 \*This depends on a number of factors. There is some assembly required for the UV LED PCB, as detailed below, which should take less than an hour. Then there is mechanical assembly required; depending on the type of positioning stage used, this will take at least 2 hours but possibly many more. We will update this once we've finalized the stage to be used.
 
@@ -21,12 +21,49 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 
 ## Tools Required
 
-* (Mechanical tools?)
+* M3 and M4 taps
+* 3D printer
 * Pick-and-place machine
 * Reflow oven
 * Solder paste (preferably a syringe)
 
-## Assembling the UV LED PCB
+## Bill of Materials
+
+Total Cost: $3,708.03
+
+<table><thead><tr><th width="337">Name</th><th width="64">Qty</th><th width="128">Total</th><th>Link</th></tr></thead><tbody><tr><td>TI DLP Evaluation Module</td><td>1</td><td>$999</td><td><a href="https://www.ti.com/tool/DLPDLCR471TPEVM">TI</a></td></tr><tr><td>Assorted Optics</td><td>1</td><td>$1,497.04</td><td><a href="https://www.thorlabs.com/uploadcart/">Thorlabs</a>*</td></tr><tr><td>10X Din Plan Objective</td><td>1</td><td>$150</td><td><a href="https://www.edmundoptics.com/p/10x-din-plan-commercial-grade-objective/5386/">Edmunds</a></td></tr><tr><td>FLIR Blackfly S Camera w/ Sony IMX183</td><td>1</td><td>$699</td><td><a href="https://www.edmundoptics.com/p/bfs-u3-200s6c-c-usb3-blackflyreg-s-color-camera/40178/">Edmunds</a></td></tr><tr><td>USB Type A to Micro B locking cable</td><td>1</td><td>$24.6</td><td><a href="https://www.edmundoptics.com/p/usb-30-locking-cable-3m-length/29172/">Edmunds</a></td></tr><tr><td>XYZ Stage 40mm</td><td>1</td><td>$125</td><td><a href="https://www.amazon.com/Pricision-40x40mm-Trimming-Bearing-Platform/dp/B07D7N9GT6/ref=sr_1_4?crid=32WSW494CE1YE&#x26;keywords=30mm+xyz+stage&#x26;qid=1706559232&#x26;sprefix=30mm+xyz+stage%2Caps%2C80&#x26;sr=8-4&#x26;ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Amazon</a></td></tr><tr><td>Rotation Stage </td><td>1</td><td>$58.99</td><td><a href="https://www.amazon.com/Displacement-Platform-FineTuning-Production-Machinery/dp/B0972XB4NW/ref=sr_1_3?crid=2M0YGWAA27LQA&#x26;keywords=60mm+rotation+stage&#x26;qid=1706559352&#x26;sprefix=60mm+rotation+stage%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>NEMA 28 Steppers</td><td>4</td><td>$71.96</td><td><a href="https://www.amazon.com/gp/product/B07PNV7RBW/ref=ox_sc_act_title_1?smid=A3HCJ70Z0RHBT6&#x26;th=1">Amazon</a></td></tr><tr><td>Arduino Uno (Elegoo)</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_6?crid=25HW74RSV1WUQ&#x26;keywords=arduino&#x26;qid=1706561234&#x26;sprefix=arduino%2Caps%2C115&#x26;sr=8-6">Amazon</a></td></tr><tr><td>CNC Shield for Arduino V3.0</td><td>1</td><td>$10.99</td><td><a href="https://www.amazon.com/Organizer-Expansion-Stepper-Heatsink-Arduino/dp/B07TT3C3HB/ref=sr_1_1?crid=3U63T1GH2IYGH&#x26;keywords=arduino+stepper+shield&#x26;qid=1706561169&#x26;sprefix=arduino+stepper+shield%2Caps%2C104&#x26;sr=8-1">Amazon</a></td></tr><tr><td>Flexible Shaft 1/8"</td><td>1</td><td>$6.49</td><td><a href="https://www.amazon.com/uxcell-Flexible-Attachment-Grinder-Extension/dp/B07PLCKQMQ/ref=sr_1_2?crid=3BUQUGXE0CYTJ&#x26;keywords=Flexible+Shaft+Inner+Core&#x26;qid=1699635781&#x26;sprefix=flexible+shaft+inner+core%2Caps%2C176&#x26;sr=8-2">Amazon</a></td></tr><tr><td>Shield Power Supply 12V</td><td>1</td><td>$11.99</td><td><a href="https://www.amazon.com/ALITOVE-Adapter-Converter-100-240V-5-5x2-1mm/dp/B01GEA8PQA/ref=sr_1_4?keywords=12v+power+supply&#x26;qid=1706561572&#x26;sr=8-4">Amazon</a></td></tr><tr><td>2.5mm Barrel Connector</td><td>1</td><td>$8.99</td><td><a href="https://www.amazon.com/Fancasee-Replacement-Degree-Pigtail-Supply/dp/B081TXY6ML/ref=sr_1_3?crid=1LPRM16V3EL0T&#x26;keywords=2.5mm+dc+plug+pigtail&#x26;qid=1706561706&#x26;sprefix=2.5mm+dc+plug+pigtail%2Caps%2C94&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Vacuum pump for chuck</td><td>1</td><td>$26.99</td><td><a href="https://www.amazon.com/Vacuum-Pump-Diaphragm-Compressor-Silicone/dp/B071GL3XXQ/ref=pd_day0fbt_vft_none_img_sccl_1/144-6072015-7453507?pd_rd_w=PBVUD&#x26;content-id=amzn1.sym.740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_p=740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_r=9VDFX53S60MBXC13MG3J&#x26;pd_rd_wg=Nw0MD&#x26;pd_rd_r=886a99a9-24db-410f-b398-69cd16cf50f2&#x26;pd_rd_i=B071GL3XXQ&#x26;psc=1">Amazon</a></td></tr></tbody></table>
+
+\*Upload this CSV file to Thorlabs for all the optomechanical parts + beamsplitter.
+
+{% file src="../../.gitbook/assets/StepperV2_Thorlabs_BOM.csv" %}
+
+## Design File Summary
+
+[Link to GitHub repository](https://github.com/orgs/hacker-fab/repositories)
+
+<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>. Can be waterjet or 3D printed.</td><td>1</td><td>Water jet </td></tr><tr><td>Mounting Plate - To Do</td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
+
+## Build Instructions
+
+Provide detailed, step-by-step construction instructions for the submitted hardware:
+
+* Include all necessary information for reproducing it.
+* Explain and (when possible) characterize design decisions. Include any design alternatives you created.
+* Use visual instructions such as schematics, images and videos.
+* Clearly reference design files and component parts described in the Design file summary and the Bill of materials summary
+* Highlight any potential safety concerns.
+* Tips and tricks to simplify the assembly process
+* Possible errors that might occur during assembly and how to rectify them
+
+### Get the Metal Parts Made
+
+If you have access to a water jet, you may cut these parts from 1/4" aluminum plate. Otherwise you can order the parts from [Xometry ](https://www.xometry.com/capabilities/sheet-cutting/waterjet-cutting/)or another online CNC shop.
+
+Config > 3D print or Water jet
+
+tap holes
+
+### Assemble the UV LED PCB
 
 The PCB Gerber files for our UV LED can be found [here](https://github.com/hacker-fab/lithography-stepper/blob/main/LED%20PCB/UV\_LED/UV\_LED\_v2.zip). We provide a screenshot of the layout in Altium and a 3D render of the PCB below.
 
@@ -49,31 +86,59 @@ Below is a completed version of the PCB - note the polarity:
 ![](<../../.gitbook/assets/image (7) (1).png>)\
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB.
 
-## Assembling the TI DLP dev kit
+### Disassemble the TI DLP dev kit
 
-(To do - need to disassemble to take more photos of each step...)
+Taking pictures after every step is key to ensuring you can put it back together properly.
+
+1. Test the projector before we completely take it apart :)
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+
+2. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
+
+
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>First V2 patterning - 10 second exposure with unfocused 410 nm UV light.</p></figcaption></figure>
 
+### Assemble the Optics
+
+
+
+### Assemble the Micropositioning Stage
+
+For more info about the CNC shield see the original designer's page here:
+
+{% embed url="https://blog.protoneer.co.nz/arduino-cnc-shield/" %}
+
+### Mechanical Integration
+
+### Install Software and Flash Firmware
+
+[https://github.com/gnea/grbl/wiki/Compiling-Grbl](https://github.com/gnea/grbl/wiki/Compiling-Grbl)
+
+{% @github-files/github-code-block url="https://github.com/gnea/grbl/wiki/Compiling-Grbl" %}
+
+[https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision\&segment=iis](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision\&segment=iis)
+
+### Final Alignment
+
 ## Safety
 
 Wear [UV-blocking glasses](https://www.amazon.com/Tool-Klean-Safety-Glasses-Protection/dp/B081BHTJT8/ref=sr\_1\_5?crid=38LVX5C7MIN2M\&keywords=uv+protection+glasses\&qid=1674228429\&sprefix=uv+protection+%2Caps%2C96\&sr=8-5) whenever light leakage from the projector is possible.
 
-## Quantifiable Parameters
+## Validation and Characterization
 
-#### **Machine Specifications - Functional**
+Demonstrate the operation of the hardware and characterize its performance for a specific application.
 
-##
+* Highlight a relevant use case.
+* If possible, characterize performance of the hardware over operational parameters.
+* Create a bulleted list describing the capabilities (and limitations) of the hardware.  For example, load and operation time, spin speed, coefficient of variation, accuracy, precision, etc
 
-
-
-
-
-
-
-
+## Appendix
 
 
 

@@ -117,15 +117,15 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somehwat quickly because the stepper will begin to expose photoresist in about 1 minute.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="355"><figcaption></figcaption></figure>
 
 1. Push the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3).png>) ![](<../../.gitbook/assets/image (4).png>) ![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (3) (1).png>) ![](<../../.gitbook/assets/image (4).png>) ![](<../../.gitbook/assets/image (5).png>)
 
 2. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
