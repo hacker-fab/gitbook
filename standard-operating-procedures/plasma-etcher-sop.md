@@ -73,8 +73,8 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 
 ### Etching
 
-1. Go to **power** and turn on RF and vacuum. The pump will start.
-2. Wait until the pressure is below .1 Torr.
+1. At the top menu bar, go to **power** and turn on RF and vacuum. The pump will start.
+2. Wait until the pressure (the number next to "vacuum") is below .1 Torr.
 3. Go to **commands > cycle off**. This will purge the chamber for three seconds with nitrogen in order to remove H2O. If any water is in the chamber during the plasma it will react with fluorine to make HF. Very bad.
 4. **Commands > standby**. This will start the pump again.
 5. Repeat steps 2-4 to purge again. This makes sure no water is in the chamber.
