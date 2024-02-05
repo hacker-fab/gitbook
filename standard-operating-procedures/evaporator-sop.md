@@ -114,8 +114,27 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 1. As previously mentioned, don’t vent the chamber too quickly. Turbopumps supposedly have the kinetic energy of a car on a highway and can “grenade”... we don’t want to find out what that means.
 2. The sample holder may be hot. Be careful.
 
-\
+## Appendix
 
+## Flash Evaporation Alternate Technique
+
+Use this as a backup technique when the crucible/thermocouple are out of commission. No temperature control is used, instead we manually control the current running through a tungsten filament with aluminum wire wrapped around it. This is a quicker, less accurate technique. The deposition monitor can still be used to determine when the metal is depositing on the chip, though it may be less accurate due to the rate of deposition.
+
+### Preparation
+
+1. Use a 3-wire tungsten filament instead of a crucible. Wrap 20 cm of aluminum wire around it, keeping away from either end.
+2. Screw it into the terminal posts in the evaporator.
+3. Scrape/wipe off some deposited aluminum from the glass jar so that you can see into the chamber.
+4. Follow all other steps for pump down, except anything that mentions programming temperatures.
+
+### Evaporation
+
+1. Turn the switch on the right of the machine clockwise so it's set to manual mode.
+2. Use the knob above it to set current to 12A. The current is displayed on the front panel.
+3. Monitor the filament for \~5 minutes until it starts to glow. The aluminum will also melt and wet onto the filament.
+4. Increase the current to \~20A. It should start to glow white hot. If the deposition monitor is on, it should start to record some deposition. The walls of the chamber will also turn opaque from the aluminum. Hold for a couple minutes.
+5. Decrease the current to 10A, then 5A, then 0A to slowly cool the filament. Wait 10 minutes.
+6. Follow the vent procedure listed above.
 
 ***
 
