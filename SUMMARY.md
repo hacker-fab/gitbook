@@ -71,6 +71,7 @@
 * [Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
 * [Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
+* [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 
 ## 🔲 Templates (to do)
 
