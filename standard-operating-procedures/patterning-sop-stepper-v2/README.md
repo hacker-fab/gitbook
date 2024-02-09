@@ -115,7 +115,9 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ### Expose Using Maskless Photolithography Stepper
 
-If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somehwat quickly because the stepper will begin to expose photoresist in about 1 minute.
+If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somewhat quickly because the stepper will begin to expose photoresist in about 1 minute.
+
+0\. Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="355"><figcaption></figcaption></figure>
 
