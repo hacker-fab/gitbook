@@ -229,4 +229,4 @@ See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us
 18. Place the cap with the wafer and mask on top of the UV sensor.
 19. Turn on the flashlight for the desired exposure time.
 20. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
-    1. Does should be automatically calculated in the sheet based on exposure option used
+    1. Dose should be automatically calculated in the sheet based on exposure option used
