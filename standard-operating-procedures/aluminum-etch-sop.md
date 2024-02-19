@@ -22,12 +22,11 @@ layout:
 
 ## Parameters
 
-|            |   |
-| ---------- | - |
-| Acid Ratio |   |
-| Etch Time  |   |
-| Etch Temp  |   |
-| Stir RPM   |   |
+|           |         |
+| --------- | ------- |
+| Etch Rate | >1 nm/s |
+| Etch Temp | 40C     |
+| Stir RPM  | 350     |
 
 ***
 
