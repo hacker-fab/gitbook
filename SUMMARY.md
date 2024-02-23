@@ -6,8 +6,8 @@
 
 * [✨ Current Fab Capabilities](overview/current-fab-capabilities/README.md)
   * [Fab Capabilities May 2023](overview/current-fab-capabilities/current-fab-capabilities.md)
-* [✍ Start Contributing (to do)](overview/what-we-do.md)
-* [▶ Build-a-Fab (to do)](overview/build-a-fab-to-do.md)
+* [✍️ Start Contributing (to do)](overview/what-we-do.md)
+* [▶️ Build-a-Fab (to do)](overview/build-a-fab-to-do.md)
 
 ## 📜 Processes
 
@@ -22,10 +22,10 @@
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
-* [🕳 Etching](fab-toolkit/etching/README.md)
+* [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
-* [🛠 Other Processing Machines](fab-toolkit/other-processing-machines/README.md)
+* [🛠️ Other Processing Machines](fab-toolkit/other-processing-machines/README.md)
   * [Tube Furnace](fab-toolkit/other-processing-machines/tube-furnace.md)
   * [Cleaving Jig](fab-toolkit/other-processing-machines/cleaving-jig.md)
   * [Tube Furnace (to do)](fab-toolkit/other-processing-machines/tube-furnace-to-do.md)
@@ -36,7 +36,7 @@
     * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
-* [⚗ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
+* [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
   * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
   * [Dialectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
     * [Spin on Glass](fab-toolkit/chemicals-materials/dialectrics/spin-on-glass.md)
@@ -55,7 +55,7 @@
 * [Data Management](guides/data-management.md)
 * [Good Examples of Weekly Updates](guides/good-examples-of-weekly-updates.md)
 
-## 🧑🍳 Standard Operating Procedures
+## 🧑‍🍳 Standard Operating Procedures
 
 * [Patterning SOP - Stepper V2](standard-operating-procedures/patterning-sop-stepper-v2/README.md)
   * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
