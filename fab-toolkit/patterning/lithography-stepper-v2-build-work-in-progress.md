@@ -38,9 +38,9 @@ Total Cost: $3,708.03
 
 ## Design File Summary
 
-[Link to GitHub repository](https://github.com/orgs/hacker-fab/repositories)
+Note: the OnShape folder is organized poorly because it was our first time using it. Won't happen again, we promise!
 
-<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>. Can be waterjet or 3D printed.</td><td>1</td><td>Water jet/<br>Online CNC shop</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
+<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
 
 ## Build Instructions
 
@@ -80,7 +80,7 @@ Base Plate: [Click here](https://cad.onshape.com/documents/052936cc5219e79ce8b1d
 
 Adapter plate: This should be manually machineable but we haven't tried.
 
-### Assemble the UV LED PCB
+### Solder the UV LED PCB
 
 The PCB Gerber files for our UV LED can be found [here](https://github.com/hacker-fab/lithography-stepper/blob/main/LED%20PCB/UV\_LED/UV\_LED\_v2.zip). We provide a screenshot of the layout in Altium and a 3D render of the PCB below.
 
@@ -146,6 +146,8 @@ t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38
 
 ### Assemble the Optics
 
+See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97) for interactive assembly help (select option 3)
+
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -176,13 +178,25 @@ t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38
 7. Assemble the objective tube, which consists of a 0.5" lens tube (SM1L05), a 0.3" lens tube (SM1L03) an SM1 to RMS adapter (SM1A3), and the microscope objective.
 8. Temporarily loosen the top lens tube coupler in order to finally screw the entire assembly into the projector.
 
-### Assemble the Micropositioning Stage
+### 3D Print and Assemble the Stage
+
+Print all of these parts. You may need to re-orient them so they print well. The stepper mounts will all need small supports in the motor flange. The X and Y axes need other supports as well.
+
+The sliding shaft coupler should press fit (with significant force) onto the micrometers and slide on the motor shafts with zero slop. Be careful - the micrometer handles may have different diameters.&#x20;
+
+<table><thead><tr><th width="315">File Name w/ link</th><th width="362">Description</th><th width="224">QTY</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td></tr></tbody></table>
+
+
+
+
 
 For more info about the CNC shield see the original designer's page here:
 
 {% embed url="https://blog.protoneer.co.nz/arduino-cnc-shield/" %}
 
 ### Mechanical Integration
+
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ### Install Software and Flash Firmware
 
