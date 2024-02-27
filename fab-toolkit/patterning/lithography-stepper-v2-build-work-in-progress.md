@@ -24,6 +24,7 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 * Pick-and-place machine
 * Reflow oven
 * Solder paste (preferably a syringe)
+* Calipers
 
 ## Bill of Materials
 
@@ -71,7 +72,7 @@ When downloading the Adapter Plate DXF for water jetting, go to Config > Water j
 
 #### Option 2: CNC Shop
 
-Click here for a SendCutSend shopping cart with the parts already uploaded and configured. This has not been tested yet.
+[Click here for a SendCutSend](https://cart.sendcutsend.com/c2ynz1un076a) shopping cart with the parts already uploaded and configured. This has not been tested yet.
 
 #### Option 3: Manual Machining
 
@@ -129,11 +130,11 @@ Taking pictures after every step is key to ensuring you can put it back together
 t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38).png>)
 
 6. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.&#x20;
-7. Glue the black plastic piece to the UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
+7. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt="" width="355"><figcaption></figcaption></figure>
 
-8. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller.
+8. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -145,7 +146,35 @@ t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38
 
 ### Assemble the Optics
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>All the tubes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure>
+
+1. Start with the beamsplitter cube. Unscrew the set screws, remove the holder, and clip in the beamsplitter. The text ("Thorlabs") should be facing the microscope objective and camera when the holder is reinserted. Keep track of this during assembly and fix it later if necessary.
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt="" width="375"><figcaption></figcaption></figure>
+
+2. Assemble the DLP tube. From left to right, the parts in the first picture are 0.3" lens tube (SM1L03), 0.5" lens tube coupler (SM1CPL05), 0.5" adjustable lens tube (SM1V05), and 0.5" lens tube (SM1L05). You may want to remove any internal lens rings. The adjustable lens tube allows axial length adjustment and the coupler allows rotation about the optical axis.
+
+<figure><img src="../../.gitbook/assets/image (48).png" alt="" width="375"><figcaption></figcaption></figure>
+
+3. Screw the DLP tube into the beamsplitter cube. The correct orientation is shown above, and the arrow points to the side of the beamsplitter with the text (and optical coating).
+4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), and another 1" lens tube (SM1L10) (shown below).
+
+<figure><img src="../../.gitbook/assets/image (54).png" alt="" width="375"><figcaption></figcaption></figure>
+
+5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).
+
+<figure><img src="../../.gitbook/assets/image (49).png" alt="" width="375"><figcaption></figcaption></figure>
+
+6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
+
+<figure><img src="../../.gitbook/assets/image (53).png" alt="" width="375"><figcaption></figcaption></figure>
+
+7. Assemble the objective tube, which consists of a 0.5" lens tube (SM1L05), a 0.3" lens tube (SM1L03) an SM1 to RMS adapter (SM1A3), and the microscope objective.
+8. Temporarily loosen the top lens tube coupler in order to finally screw the entire assembly into the projector.
 
 ### Assemble the Micropositioning Stage
 
