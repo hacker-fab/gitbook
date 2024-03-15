@@ -14,7 +14,7 @@ layout:
 
 # Self-Aligned NMOS V1
 
-<figure><img src="../.gitbook/assets/image (22).png" alt="" width="375"><figcaption><p>6 Transistors Self Aligned NMOS Brightfield Picture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt="" width="375"><figcaption><p>6 Transistors Self Aligned NMOS Brightfield Picture</p></figcaption></figure>
 
 ### Simplified View of Process
 

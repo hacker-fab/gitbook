@@ -30,7 +30,7 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 
 Total Cost: $3,708.03
 
-<table><thead><tr><th width="337">Name</th><th width="64">Qty</th><th width="128">Total</th><th>Link</th></tr></thead><tbody><tr><td>TI DLP Evaluation Module</td><td>1</td><td>$999</td><td><a href="https://www.ti.com/tool/DLPDLCR471TPEVM">TI</a></td></tr><tr><td>Assorted Optics</td><td>1</td><td>$1,497.04</td><td><a href="https://www.thorlabs.com/uploadcart/">Thorlabs</a>*</td></tr><tr><td>10X Din Plan Objective</td><td>1</td><td>$150</td><td><a href="https://www.edmundoptics.com/p/10x-din-plan-commercial-grade-objective/5386/">Edmunds</a></td></tr><tr><td>FLIR Blackfly S Camera w/ Sony IMX183</td><td>1</td><td>$699</td><td><a href="https://www.edmundoptics.com/p/bfs-u3-200s6c-c-usb3-blackflyreg-s-color-camera/40178/">Edmunds</a></td></tr><tr><td>USB Type A to Micro B locking cable</td><td>1</td><td>$24.6</td><td><a href="https://www.edmundoptics.com/p/usb-30-locking-cable-3m-length/29172/">Edmunds</a></td></tr><tr><td>19V 4.74A Projector Power Supply</td><td>1</td><td>$17.99</td><td><a href="https://www.amazon.com/Nobsound-Adapter-Universal-Charger-100-240V/dp/B074J81XRB/ref=sr_1_9?keywords=19v+power+supply&#x26;qid=1685981984&#x26;sr=8-9">Amazon</a></td></tr><tr><td>XYZ Stage 40mm</td><td>1</td><td>$125</td><td><a href="https://www.amazon.com/Pricision-40x40mm-Trimming-Bearing-Platform/dp/B07D7N9GT6/ref=sr_1_4?crid=32WSW494CE1YE&#x26;keywords=30mm+xyz+stage&#x26;qid=1706559232&#x26;sprefix=30mm+xyz+stage%2Caps%2C80&#x26;sr=8-4&#x26;ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Amazon</a></td></tr><tr><td>Rotation Stage </td><td>1</td><td>$58.99</td><td><a href="https://www.amazon.com/Displacement-Platform-FineTuning-Production-Machinery/dp/B0972XB4NW/ref=sr_1_3?crid=2M0YGWAA27LQA&#x26;keywords=60mm+rotation+stage&#x26;qid=1706559352&#x26;sprefix=60mm+rotation+stage%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>NEMA 28 Steppers</td><td>4</td><td>$71.96</td><td><a href="https://www.amazon.com/gp/product/B07PNV7RBW/ref=ox_sc_act_title_1?smid=A3HCJ70Z0RHBT6&#x26;th=1">Amazon</a></td></tr><tr><td>Arduino Uno (Elegoo)</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_6?crid=25HW74RSV1WUQ&#x26;keywords=arduino&#x26;qid=1706561234&#x26;sprefix=arduino%2Caps%2C115&#x26;sr=8-6">Amazon</a></td></tr><tr><td>CNC Shield for Arduino V3.0</td><td>1</td><td>$10.99</td><td><a href="https://www.amazon.com/Organizer-Expansion-Stepper-Heatsink-Arduino/dp/B07TT3C3HB/ref=sr_1_1?crid=3U63T1GH2IYGH&#x26;keywords=arduino+stepper+shield&#x26;qid=1706561169&#x26;sprefix=arduino+stepper+shield%2Caps%2C104&#x26;sr=8-1">Amazon</a></td></tr><tr><td>Flexible Shaft 1/8"</td><td>1</td><td>$6.49</td><td><a href="https://www.amazon.com/uxcell-Flexible-Attachment-Grinder-Extension/dp/B07PLCKQMQ/ref=sr_1_2?crid=3BUQUGXE0CYTJ&#x26;keywords=Flexible+Shaft+Inner+Core&#x26;qid=1699635781&#x26;sprefix=flexible+shaft+inner+core%2Caps%2C176&#x26;sr=8-2">Amazon</a></td></tr><tr><td>Shield Power Supply 12V</td><td>1</td><td>$11.99</td><td><a href="https://www.amazon.com/ALITOVE-Adapter-Converter-100-240V-5-5x2-1mm/dp/B01GEA8PQA/ref=sr_1_4?keywords=12v+power+supply&#x26;qid=1706561572&#x26;sr=8-4">Amazon</a></td></tr><tr><td>2.5mm Barrel Connector</td><td>1</td><td>$8.99</td><td><a href="https://www.amazon.com/Fancasee-Replacement-Degree-Pigtail-Supply/dp/B081TXY6ML/ref=sr_1_3?crid=1LPRM16V3EL0T&#x26;keywords=2.5mm+dc+plug+pigtail&#x26;qid=1706561706&#x26;sprefix=2.5mm+dc+plug+pigtail%2Caps%2C94&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Vacuum pump for chuck</td><td>1</td><td>$26.99</td><td><a href="https://www.amazon.com/Vacuum-Pump-Diaphragm-Compressor-Silicone/dp/B071GL3XXQ/ref=pd_day0fbt_vft_none_img_sccl_1/144-6072015-7453507?pd_rd_w=PBVUD&#x26;content-id=amzn1.sym.740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_p=740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_r=9VDFX53S60MBXC13MG3J&#x26;pd_rd_wg=Nw0MD&#x26;pd_rd_r=886a99a9-24db-410f-b398-69cd16cf50f2&#x26;pd_rd_i=B071GL3XXQ&#x26;psc=1">Amazon</a></td></tr><tr><td>410nm Lumiled LED</td><td>4</td><td>$27.96</td><td><a href="https://www.digikey.com/en/products/detail/lumileds/L1F3-U400200012000/7389568">Digikey</a></td></tr><tr><td>Pico-spox 10pos Vertical Connector</td><td>2</td><td>$1.86</td><td><a href="https://www.digikey.com/en/products/detail/molex/0874371043/717647">Digikey</a></td></tr></tbody></table>
+<table><thead><tr><th width="337">Name</th><th width="64">Qty</th><th width="128">Total</th><th>Link</th></tr></thead><tbody><tr><td>TI DLP Evaluation Module</td><td>1</td><td>$999</td><td><a href="https://www.ti.com/tool/DLPDLCR471TPEVM">TI</a></td></tr><tr><td>Assorted Optics</td><td>1</td><td>$1,497.04</td><td><a href="https://www.thorlabs.com/uploadcart/">Thorlabs</a>*</td></tr><tr><td>10X Din Plan Objective</td><td>1</td><td>$150</td><td><a href="https://www.edmundoptics.com/p/10x-din-plan-commercial-grade-objective/5386/">Edmunds</a></td></tr><tr><td>FLIR Blackfly S Camera w/ Sony IMX183</td><td>1</td><td>$699</td><td><a href="https://www.edmundoptics.com/p/bfs-u3-200s6c-c-usb3-blackflyreg-s-color-camera/40178/">Edmunds</a></td></tr><tr><td>USB Type A to Micro B locking cable</td><td>1</td><td>$24.6</td><td><a href="https://www.edmundoptics.com/p/usb-30-locking-cable-3m-length/29172/">Edmunds</a></td></tr><tr><td>19V 4.74A Projector Power Supply</td><td>1</td><td>$17.99</td><td><a href="https://www.amazon.com/Nobsound-Adapter-Universal-Charger-100-240V/dp/B074J81XRB/ref=sr_1_9?keywords=19v+power+supply&#x26;qid=1685981984&#x26;sr=8-9">Amazon</a></td></tr><tr><td>XYZ Stage 40mm</td><td>1</td><td>$125</td><td><a href="https://www.amazon.com/Pricision-40x40mm-Trimming-Bearing-Platform/dp/B07D7N9GT6/ref=sr_1_4?crid=32WSW494CE1YE&#x26;keywords=30mm+xyz+stage&#x26;qid=1706559232&#x26;sprefix=30mm+xyz+stage%2Caps%2C80&#x26;sr=8-4&#x26;ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Amazon</a></td></tr><tr><td>Rotation Stage </td><td>1</td><td>$58.99</td><td><a href="https://www.amazon.com/Displacement-Platform-FineTuning-Production-Machinery/dp/B0972XB4NW/ref=sr_1_3?crid=2M0YGWAA27LQA&#x26;keywords=60mm+rotation+stage&#x26;qid=1706559352&#x26;sprefix=60mm+rotation+stage%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>NEMA 28 Steppers</td><td>4</td><td>$71.96</td><td><a href="https://www.amazon.com/gp/product/B07PNV7RBW/ref=ox_sc_act_title_1?smid=A3HCJ70Z0RHBT6&#x26;th=1">Amazon</a></td></tr><tr><td>Arduino Uno (Elegoo)</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_6?crid=25HW74RSV1WUQ&#x26;keywords=arduino&#x26;qid=1706561234&#x26;sprefix=arduino%2Caps%2C115&#x26;sr=8-6">Amazon</a></td></tr><tr><td>CNC Shield for Arduino V3.0</td><td>1</td><td>$10.99</td><td><a href="https://www.amazon.com/Organizer-Expansion-Stepper-Heatsink-Arduino/dp/B07TT3C3HB/ref=sr_1_1?crid=3U63T1GH2IYGH&#x26;keywords=arduino+stepper+shield&#x26;qid=1706561169&#x26;sprefix=arduino+stepper+shield%2Caps%2C104&#x26;sr=8-1">Amazon</a></td></tr><tr><td>Stepper Motor Drivers</td><td>1</td><td>$22.99</td><td><a href="https://www.amazon.com/BIGTREETECH-Direct-TMC2208-TMC2209-TMC5160/dp/B07ZPYKL46?th=1">Amazon</a></td></tr><tr><td>Flexible Shaft 1/8"</td><td>1</td><td>$6.49</td><td><a href="https://www.amazon.com/uxcell-Flexible-Attachment-Grinder-Extension/dp/B07PLCKQMQ/ref=sr_1_2?crid=3BUQUGXE0CYTJ&#x26;keywords=Flexible+Shaft+Inner+Core&#x26;qid=1699635781&#x26;sprefix=flexible+shaft+inner+core%2Caps%2C176&#x26;sr=8-2">Amazon</a></td></tr><tr><td>Shield Power Supply 12V</td><td>2</td><td>$23.98</td><td><a href="https://www.amazon.com/ALITOVE-Adapter-Converter-100-240V-5-5x2-1mm/dp/B01GEA8PQA/ref=sr_1_4?keywords=12v+power+supply&#x26;qid=1706561572&#x26;sr=8-4">Amazon</a></td></tr><tr><td>2.5mm Barrel Connector</td><td>1</td><td>$8.99</td><td><a href="https://www.amazon.com/Fancasee-Replacement-Degree-Pigtail-Supply/dp/B081TXY6ML/ref=sr_1_3?crid=1LPRM16V3EL0T&#x26;keywords=2.5mm+dc+plug+pigtail&#x26;qid=1706561706&#x26;sprefix=2.5mm+dc+plug+pigtail%2Caps%2C94&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Vacuum pump for chuck</td><td>1</td><td>$26.99</td><td><a href="https://www.amazon.com/Vacuum-Pump-Diaphragm-Compressor-Silicone/dp/B071GL3XXQ/ref=pd_day0fbt_vft_none_img_sccl_1/144-6072015-7453507?pd_rd_w=PBVUD&#x26;content-id=amzn1.sym.740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_p=740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_r=9VDFX53S60MBXC13MG3J&#x26;pd_rd_wg=Nw0MD&#x26;pd_rd_r=886a99a9-24db-410f-b398-69cd16cf50f2&#x26;pd_rd_i=B071GL3XXQ&#x26;psc=1">Amazon</a></td></tr><tr><td>M2.5 Screw Assortment</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/VIGRUE-Button-Washers-Assortment-Storage/dp/B08VHVB4H5/ref=sr_1_3?crid=24MVS2UJSXWC&#x26;keywords=m2.5&#x26;qid=1695828225&#x26;sprefix=m2.5%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Collapsible Magnetic Tray for Vibration</td><td>1</td><td>$14.99</td><td>Amazon</td></tr><tr><td>410nm Lumiled LED</td><td>4</td><td>$27.96</td><td><a href="https://www.digikey.com/en/products/detail/lumileds/L1F3-U400200012000/7389568">Digikey</a></td></tr><tr><td>Pico-spox 10pos Vertical Connector</td><td>2</td><td>$1.86</td><td><a href="https://www.digikey.com/en/products/detail/molex/0874371043/717647">Digikey</a></td></tr></tbody></table>
 
 \*Upload this CSV file to Thorlabs for all the optomechanical parts + beamsplitter.
 
@@ -40,7 +40,7 @@ Total Cost: $3,708.03
 
 Note: the OnShape folder is organized poorly because it was our first time using it. Won't happen again, we promise!
 
-<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
+<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
 
 ## Build Instructions
 
@@ -86,7 +86,7 @@ The PCB Gerber files for our UV LED can be found [here](https://github.com/hacke
 
 ![](<../../.gitbook/assets/image (3) (2).png>)
 
-![](<../../.gitbook/assets/image (6) (1).png>)
+![](<../../.gitbook/assets/image (6) (1) (1).png>)
 
 You can order it through your PCB manufacturer of choice (we used JLCPCB). However, note that the PCB is [**copper core**](https://jlcpcb.com/blog/62-JLCPCB-Direct-Heatsink-Copper-Cored-PCBs-Available-Now!). This is because the LEDs draw several amps of current in operation. To ensure that the PCB doesn't melt, you should use copper core to facilitate better heat flow.
 
@@ -100,18 +100,18 @@ Once the paste is applied, you can use a pick and place machine to align the com
 
 Below is a completed version of the PCB - note the polarity:
 
-![](<../../.gitbook/assets/image (7) (1).png>)\
+![](<../../.gitbook/assets/image (7) (1) (1).png>)\
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB.
 
 ### Disassemble the TI DLP dev kit
 
 Taking pictures after every step is key to ensuring you can put it back together properly.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 2. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
@@ -148,7 +148,7 @@ t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38
 
 See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97) for interactive assembly help (select option 3)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -163,48 +163,122 @@ See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336
 <figure><img src="../../.gitbook/assets/image (48).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Screw the DLP tube into the beamsplitter cube. The correct orientation is shown above, and the arrow points to the side of the beamsplitter with the text (and optical coating).
-4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), and another 1" lens tube (SM1L10) (shown below).
+4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), another 1" lens tube (SM1L10), and C-mount SM1 adapter (SM1A9) (last two shown below).
 
 <figure><img src="../../.gitbook/assets/image (54).png" alt="" width="375"><figcaption></figcaption></figure>
 
-5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).
+5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>Camera and beamplsitter cube should be parallel.</p></figcaption></figure>
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
 <figure><img src="../../.gitbook/assets/image (53).png" alt="" width="375"><figcaption></figcaption></figure>
 
 7. Assemble the objective tube, which consists of a 0.5" lens tube (SM1L05), a 0.3" lens tube (SM1L03) an SM1 to RMS adapter (SM1A3), and the microscope objective.
+
+<figure><img src="../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure>
+
 8. Temporarily loosen the top lens tube coupler in order to finally screw the entire assembly into the projector.
 
 ### 3D Print and Assemble the Stage
 
-Print all of these parts. You may need to re-orient them so they print well. The stepper mounts will all need small supports in the motor flange. The X and Y axes need other supports as well.
+Print all of the parts in the table below. Black PLA is fine. You may need to re-orient them so they print well. The stepper mounts will all need small supports in the motor flange. The X and Y axes need other supports as well.
 
-The sliding shaft coupler should press fit (with significant force) onto the micrometers and slide on the motor shafts with zero slop. Be careful - the micrometer handles may have different diameters.&#x20;
+<table><thead><tr><th width="315">File Name w/ link</th><th width="362">Description</th><th width="224">QTY</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td></tr></tbody></table>
 
-<table><thead><tr><th width="315">File Name w/ link</th><th width="362">Description</th><th width="224">QTY</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft. </td><td>3</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td></tr></tbody></table>
+1. Unscrew all the, micrometers, L-stops and stage locks from the micrometer stage. Separate the X, Y and Z axes. Throughout the assmebly process we will be replacing the stock screws with \~4mm longer ones as we reattach the various components to the stage. All 3d printed mounts are 4mm thick at the screw holes. Have your M2.5 screw kit handy!
 
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="338"><figcaption></figcaption></figure>
 
+2. Press fit the three sliding shaft couplers onto the three micrometer handles until the knurled surface is fully covered. They should fit with significant force and maybe gentle hammering. Be careful - the micrometer handles may have different diameters so you may need to modify the CAD and reprint to get a correct fit.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
+3. The shaft couplers should slide on the motor shafts with zero slop. Modify dimensions and re-print if this is not the case. Graphite lubricant may help decrese sliding friction, and the fit will get looser after repeated axial movement as the steel deforms and smooths the plastic.
 
-For more info about the CNC shield see the original designer's page here:
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-{% embed url="https://blog.protoneer.co.nz/arduino-cnc-shield/" %}
+4. Screw the motor, coupler, and micrometer into the X axis motor mount as shown. Doing this step before attaching to the rest of the stage takes advantage of the slop in the micrometer mounting screws and aids alignment.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+
+5. Slide the Y axis motor mount onto the Y axis. You will need to remove some screws and push the stage to allow it to slide on.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+
+6. Attach the motor. Don't screw down the micrometer mount yet.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="355"><figcaption></figcaption></figure>
+
+7. While pushing the stage so the micrometer isn't touching the stop, fasten the micrometer mount. This avoids preloading the micrometer/motor assembly and improves shaft alignment.
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="355"><figcaption></figcaption></figure>
+
+7. Reattach the X axis micrometer stop as well. You may need to adjust the screw length to get it to fit.
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure>
+
+8. Insert the Z axis motor mount to the Z axis. The easiest way to do this is to insert it upside down from the opposite side, then flip it while pushing the stage up, then slide it back so the holes line up. Basically it takes some fiddling.
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="355"><figcaption></figcaption></figure>
+
+9. As with the other stages, attach the motor first, then secure the mounts. Tighten the set screw at the green arrow. Make sure the micrometer is flush with the mount at the yellow arrow. Again pushing upwards at the red arrow eliminates prelaod from the spring inside the stage and helps alignment.
+
+<figure><img src="../../.gitbook/assets/image (14).png" alt="" width="355"><figcaption></figcaption></figure>
+
+10. Tighten down the Z axis mount.
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="375"><figcaption></figcaption></figure>
+
+11. Attach the X axis motor mount to the stage with the screws at the red arrows.
+
+<figure><img src="../../.gitbook/assets/image (16).png" alt="" width="375"><figcaption></figcaption></figure>
+
+12. Add additional screws on the X and Y axes to make sure the mounts are solidly attached. Ignore the spring in the above image.
+
+<figure><img src="../../.gitbook/assets/image (17).png" alt="" width="355"><figcaption></figcaption></figure>
+
+13. Attach the right angle bracket to the theta stage and the top of the Z stage.
+
+<figure><img src="../../.gitbook/assets/image (18).png" alt="" width="355"><figcaption></figcaption></figure>
+
+14. Screw the chip vacuum chuck onto the theta stage. The stage is finished.
 
 ### Mechanical Integration
 
 <figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-### Install Software and Flash Firmware
+1. Bolt the XYZ stage to the base plate using short screws so they don't protrude out the bottom. Ensure the stage is aligned with the tapped holes by pushing it forward while screwing it down.
+2. Screw in the four alignment screws for the projector. They don't need to go in all the way.
 
-[https://github.com/gnea/grbl/wiki/Compiling-Grbl](https://github.com/gnea/grbl/wiki/Compiling-Grbl)
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+3. Push the projector and optics against the four screws to ensure alignment.
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+4. Plug in everything: power for the projector, locking USB cable for the camera, USB cable for the stage, power for the stage, HDMI for the projector, power for the pump, and vacuum tube for the chuck. Do not power the stage arduino shield without the motors connected, or you will burn out the drivers.
+
+### Install Software and Flash Firmware
 
 {% @github-files/github-code-block url="https://github.com/gnea/grbl/wiki/Compiling-Grbl" %}
 
-[https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision\&segment=iis](https://www.flir.com/products/spinnaker-sdk/?vertical=machine+vision\&segment=iis)
+{% embed url="https://blog.protoneer.co.nz/arduino-cnc-shield/" %}
+
+1. Flash the Arduino with GRBL. [Link ](https://github.com/gnea/grbl/wiki/Compiling-Grbl)is above (it works). For more info about the CNC shield see the original designer's page above.
+
+{% @github-files/github-code-block url="https://github.com/hacker-fab/code/tree/main/litho/scripts" %}
+
+2. Clone the Lithographer repo (link above) and run it with Python version 3.10.
+
+@Kent and Luca Insert more complete software setup then link to Stepper SOP for final setup. Don't forget FLIR driver.
 
 ### Final Alignment
 

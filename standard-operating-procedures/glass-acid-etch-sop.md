@@ -19,15 +19,15 @@ layout:
 
 
 
-<figure><img src="../.gitbook/assets/image (17).png" alt="" width="256"><figcaption><p>Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt="" width="256"><figcaption><p>Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (19).png" alt="" width="256"><figcaption><p>Post-Etch SOG Removed</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt="" width="256"><figcaption><p>Post-Etch SOG Removed</p></figcaption></figure>
 
 Same process for Doped SOG:
 
-<figure><img src="../.gitbook/assets/image (20).png" alt="" width="256"><figcaption><p>Doped Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt="" width="256"><figcaption><p>Doped Spin on Glass (SOG) on Surface masked by photoresist (in red)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (21).png" alt="" width="256"><figcaption><p>Post-Etch Doped SOG Removed</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt="" width="256"><figcaption><p>Post-Etch Doped SOG Removed</p></figcaption></figure>
 
 ## Parameters
 

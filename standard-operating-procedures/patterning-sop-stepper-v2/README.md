@@ -14,7 +14,7 @@ layout:
 
 # Patterning SOP - Stepper V2
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
 
 ## Parameters
 
@@ -119,19 +119,19 @@ If you're doing this for the first time, it is recommended to read through the f
 
 0\. Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 1. Push the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1).png>) ![](<../../.gitbook/assets/image (4).png>) ![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (3) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
 
 2. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
-![](<../../.gitbook/assets/image (6).png>) ![](<../../.gitbook/assets/IMG\_6036 (1).jpg>)
+![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG\_6036 (1).jpg>)
 
 3. Push the projector back into place. Ensure it is touching all four bolts.
 
@@ -181,7 +181,7 @@ If you're doing this for the first time, it is recommended to read through the f
    1. This calibration converts pixels of the camera to microns using a calibration slide from the manufacturer. If you use a different objective, the measurement will be inaccurate.
    2. After this is selected, measure the pitch or any other length using the line tool
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
 
 ![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0001.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0002.jpg)
 

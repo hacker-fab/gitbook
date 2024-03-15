@@ -15,9 +15,9 @@ layout:
 
 # Plasma Etcher SOP
 
-<figure><img src="../.gitbook/assets/image (13).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt="" width="256"><figcaption><p>Before Reactive Ion Etch (RIE)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14).png" alt="" width="256"><figcaption><p>After Reactive Ion Etch (RIE)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt="" width="256"><figcaption><p>After Reactive Ion Etch (RIE)</p></figcaption></figure>
 
 ## Parameters
 

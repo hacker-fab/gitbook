@@ -16,9 +16,9 @@ layout:
 
 
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Spin on Glass (SOG)</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt="" width="256"><figcaption><p>After Spin on Glass (SOG)</p></figcaption></figure>
 
 ## Process Parameters
 
