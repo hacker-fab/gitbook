@@ -93,6 +93,16 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 15. Wait until the pressure is below .1 Torr.
 16. **Commands > shutdown**. The chamber will come to atmosphere in 30 seconds, at which point you can open it.
 
+## O2 Plasma Cleaning
+
+The procedure is the same as for silicon etching, but you may skip a purge before and after the plasma. This is because&#x20;
+
+| Total Time   | 6 min   |
+| ------------ | ------- |
+| O2 flow rate | 10 sccm |
+| Etch time    | 120s    |
+| RF Power     | 100W    |
+
 ***
 
 ## Safety

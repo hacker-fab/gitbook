@@ -24,11 +24,11 @@ layout:
 
 ***
 
-| Total Time                                                                 | 2.5 Hours          |
+| Total Time                                                                 | 20 minutes         |
 | -------------------------------------------------------------------------- | ------------------ |
 | Spin Speed                                                                 | 4000 rpm           |
 | Spin Time                                                                  | 30s                |
-| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 2, 400, 10] |
+| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 2, 400, 15] |
 
 #### For more detailed parameters:
 
