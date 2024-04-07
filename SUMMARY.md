@@ -16,7 +16,7 @@
 ## Fab Toolkit
 
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
-  * [Lithography Stepper V2 Build (work-in-progress)](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
+  * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
   * [Litho Stepper Software](fab-toolkit/patterning/litho-stepper-software.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
