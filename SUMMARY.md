@@ -1,6 +1,6 @@
 # Table of contents
 
-* [⭐ Hacker Fab Documentation](README.md)
+* [Hacker Fab Documentation](README.md)
 
 ## Overview
 
@@ -29,13 +29,13 @@
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
+  * [Electroless Nickel Plating](fab-toolkit/deposition/electroless-nickel-plating.md)
 * [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
 * [🛠️ Other Processing Machines](fab-toolkit/other-processing-machines/README.md)
   * [Tube Furnace](fab-toolkit/other-processing-machines/tube-furnace.md)
   * [Cleaving Jig](fab-toolkit/other-processing-machines/cleaving-jig.md)
-  * [Tube Furnace (to do)](fab-toolkit/other-processing-machines/tube-furnace-to-do.md)
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
     * [SMU - Analog Discoveries](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
@@ -55,6 +55,8 @@
   * [Dopant Sources](fab-toolkit/chemicals-materials/dopant-sources.md)
 * [🧠 Automation](fab-toolkit/automation/README.md)
   * [Lab Robot](fab-toolkit/automation/lab-robot.md)
+* [🏘️ Subsystems](fab-toolkit/subsystems/README.md)
+  * [Piezo Nanopositioner (Stick Slip)](fab-toolkit/subsystems/piezo-nanopositioner-stick-slip.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
