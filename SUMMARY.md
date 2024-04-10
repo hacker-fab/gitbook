@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Hacker Fab Documentation](README.md)
+* [⭐ Hacker Fab Documentation](README.md)
 
 ## Overview
 
@@ -8,6 +8,12 @@
   * [Fab Capabilities May 2023](overview/current-fab-capabilities/current-fab-capabilities.md)
 * [✍️ Start Contributing (to do)](overview/what-we-do.md)
 * [▶️ Build-a-Fab (to do)](overview/build-a-fab-to-do.md)
+
+## Guides
+
+* [Required Reading (todo)](guides/required-reading-todo.md)
+* [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
+* [Part Sourcing](guides/part-sourcing.md)
 
 ## 📜 Processes
 
@@ -49,12 +55,6 @@
   * [Dopant Sources](fab-toolkit/chemicals-materials/dopant-sources.md)
 * [🧠 Automation](fab-toolkit/automation/README.md)
   * [Lab Robot](fab-toolkit/automation/lab-robot.md)
-
-## Guides
-
-* [Part Sourcing](guides/part-sourcing.md)
-* [Data Management](guides/data-management.md)
-* [Good Examples of Weekly Updates](guides/good-examples-of-weekly-updates.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
