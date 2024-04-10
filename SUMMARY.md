@@ -5,13 +5,13 @@
 ## Overview
 
 * [✨ Current Fab Capabilities](overview/current-fab-capabilities/README.md)
+  * [Fab Capabilities November 2023](overview/current-fab-capabilities/fab-capabilities-november-2023.md)
   * [Fab Capabilities May 2023](overview/current-fab-capabilities/current-fab-capabilities.md)
-* [✍️ Start Contributing (to do)](overview/what-we-do.md)
-* [▶️ Build-a-Fab (to do)](overview/build-a-fab-to-do.md)
 
-## Guides
+## 🟡 Guides
 
 * [Required Reading (todo)](guides/required-reading-todo.md)
+* [Build-a-Fab](guides/build-a-fab-to-do.md)
 * [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
 * [Part Sourcing](guides/part-sourcing.md)
 

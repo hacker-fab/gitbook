@@ -27,12 +27,12 @@ Our Goals:
 
 Right now we use factories and tools that are optimized to manufacture at scale to do our prototyping. There does not exist a set of machines that enable rapid tape-out of semiconductor devices on a budget, nor are there any resources to make/modify fab tools from the ground up.
 
-The use of low-cost, abundant, and fast-turn-around hardware serves a larger purpose than making it cheaper and faster. These design constraints are what enable others to recreate, modify, and contribute to our work.
+The use of low-cost, abundant, and fast-turn-around hardware serves a larger purpose than making the fab cheaper. These design constraints are what enable others to recreate, modify, and contribute to our work. The simpler the better.
 
-|                                                     |                    |
-| :-------------------------------------------------: | ------------------ |
-| Number of People Who Have Made a Transistor by Hand | 38                 |
-|                Number of Hacker Fabs                | 1 (+1 in progress) |
+|                                                                              |                                                               |
+| :--------------------------------------------------------------------------: | ------------------------------------------------------------- |
+| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4><mark style="color:green;">38</mark></h4>                 |
+|                        <h4>Number of Hacker Fabs</h4>                        | <h4><mark style="color:green;">1 (+1 in progress)</mark></h4> |
 
 ***
 
@@ -41,6 +41,10 @@ The use of low-cost, abundant, and fast-turn-around hardware serves a larger pur
 You don't need prior nanofabrication experience to create meaningful contributions.
 
 You do need to read the [**Required Reading**](guides/required-reading-todo.md)**.**
+
+You don't need to recreate the entire fab to contribute, [**although you can**](guides/build-a-fab-to-do.md).
+
+We communicate entirely over [**Discord**](https://discord.gg/HFb3FKAxuX).
 
 ***
 
@@ -87,9 +91,9 @@ Every build contains:
 
 For example, if you release HDL files under CERN-OHL-W and then somebody uses those files in their FPGA, when they distribute the bitstream (either putting it online or shipping a product with it) they do not to make the rest of the HDL design available under CERN-OHL-W as well.&#x20;
 
-https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes&#x20;
+[https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes  ](https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes)
 
-https://ohwr.org/cern\_ohl\_w\_v2.pdf
+[https://ohwr.org/cern\_ohl\_w\_v2.pdf](https://ohwr.org/cern\_ohl\_w\_v2.pdf)
 
 </details>
 
@@ -99,9 +103,9 @@ https://ohwr.org/cern\_ohl\_w\_v2.pdf
 
 The MPL’s “file-level” copyleft is designed to encourage contributors to share modifications they make to your code, while still allowing them to combine your code with code under other licenses (open or proprietary) with minimal restrictions.&#x20;
 
-https://www.mozilla.org/en-US/MPL/2.0/&#x20;
+[https://www.mozilla.org/en-US/MPL/2.0/ ](https://www.mozilla.org/en-US/MPL/2.0/)
 
-https://www.mozilla.org/en-US/MPL/2.0/FAQ/
+[https://www.mozilla.org/en-US/MPL/2.0/FAQ/](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)
 
 </details>
 
@@ -109,6 +113,6 @@ https://www.mozilla.org/en-US/MPL/2.0/FAQ/
 
 <summary>Documentation: CC BY-SA 4.0</summary>
 
-This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, **so long as attribution is given to the creator**. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. https://creativecommons.org/licenses/by-sa/4.0/ https://creativecommons.org/share-your-work/cclicenses/
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, **so long as attribution is given to the creator**. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. [https://creativecommons.org/licenses/by-sa/4.0/ ](https://creativecommons.org/licenses/by-sa/4.0/)[https://creativecommons.org/share-your-work/cclicenses/](https://creativecommons.org/share-your-work/cclicenses/)
 
 </details>

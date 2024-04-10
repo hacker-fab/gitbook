@@ -119,15 +119,15 @@ If you're doing this for the first time, it is recommended to read through the f
 
 0\. Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 1. Push the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
 
 2. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
