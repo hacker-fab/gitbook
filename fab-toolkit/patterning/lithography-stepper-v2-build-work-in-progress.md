@@ -1,4 +1,4 @@
-# Lithography Stepper V2 Build (work-in-progress)
+# Lithography Stepper V2 Build
 
 ## Hardware Specs
 
@@ -266,7 +266,7 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 4. Plug in everything: power for the projector, locking USB cable for the camera, USB cable for the stage, power for the stage, HDMI for the projector, power for the pump, and vacuum tube for the chuck. Do not power the stage arduino shield without the motors connected, or you will burn out the drivers.
 
-### Install Software and Flash Firmware
+### Install Software and Flash Firmware (WIP)
 
 {% @github-files/github-code-block url="https://github.com/gnea/grbl/wiki/Compiling-Grbl" %}
 
@@ -280,13 +280,13 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 @Kent and Luca Insert more complete software setup then link to Stepper SOP for final setup. Don't forget FLIR driver.
 
-### Final Alignment
+### Final Alignment (to do)
 
 ## Safety
 
 Wear [UV-blocking glasses](https://www.amazon.com/Tool-Klean-Safety-Glasses-Protection/dp/B081BHTJT8/ref=sr\_1\_5?crid=38LVX5C7MIN2M\&keywords=uv+protection+glasses\&qid=1674228429\&sprefix=uv+protection+%2Caps%2C96\&sr=8-5) whenever light leakage from the projector is possible.
 
-## Validation and Characterization
+## Validation and Characterization (WIP)
 
 Demonstrate the operation of the hardware and characterize its performance for a specific application.
 
