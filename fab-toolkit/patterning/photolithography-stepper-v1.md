@@ -22,7 +22,7 @@ Our design was based on [Sam Zeloof](http://sam.zeloof.xyz/maskless-photolithogr
 
 [Patterning SOP](../../archive/patterning-sop-stepper-v1.md)
 
-[Litho Stepper Software](litho-stepper-software.md)
+[Litho Stepper Software](broken-reference)
 
 ***
 

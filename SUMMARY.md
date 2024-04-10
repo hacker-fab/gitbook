@@ -24,7 +24,6 @@
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
   * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
-  * [Litho Stepper Software](fab-toolkit/patterning/litho-stepper-software.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
@@ -55,8 +54,9 @@
   * [Dopant Sources](fab-toolkit/chemicals-materials/dopant-sources.md)
 * [🧠 Automation](fab-toolkit/automation/README.md)
   * [Lab Robot](fab-toolkit/automation/lab-robot.md)
-* [🏘️ Subsystems](fab-toolkit/subsystems/README.md)
-  * [Piezo Nanopositioner (Stick Slip)](fab-toolkit/subsystems/piezo-nanopositioner-stick-slip.md)
+* [🏘️ Submodules](fab-toolkit/submodules/README.md)
+  * [Piezo Nanopositioner (Stick Slip)](fab-toolkit/submodules/piezo-nanopositioner-stick-slip.md)
+  * [Interferometer](fab-toolkit/submodules/interferometer.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
@@ -75,6 +75,11 @@
 * [Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
+
+## 🟢 WORKING DOCS
+
+* [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
+* [CV Measurements](working-docs/cv-measurements.md)
 
 ## 🔲 Templates (to do)
 

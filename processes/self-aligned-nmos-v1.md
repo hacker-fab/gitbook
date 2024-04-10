@@ -14,8 +14,6 @@ layout:
 
 # Self-Aligned NMOS V1
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt="" width="375"><figcaption><p>6 Transistors Self Aligned NMOS Brightfield Picture</p></figcaption></figure>
-
 ### Simplified View of Process
 
 <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
@@ -24,6 +22,6 @@ layout:
 
 {% embed url="https://www.fabublox.com/process-editor/45df196a-9cd0-459a-9e67-84c18a469115" %}
 
-### Alternatively: See Google Sheets for Comprehensive Example with all Parameter Values (Chip 234 Shown Below)
+### Alternatively: See Google Sheets for Comprehensive Example with all Parameter Values (Chip 336 Shown Below)
 
-{% embed url="https://docs.google.com/spreadsheets/d/1JyftnOVbxqcMsBS1SepNMq9SqVyFJqiAEL2ijbdNH_o/edit#gid=0" %}
+{% embed url="https://docs.google.com/spreadsheets/d/1jYX2p2FmB2UAPCbBDegczZrLXst202oPel8wEE087Ds/edit#gid=0" %}
