@@ -22,16 +22,18 @@ layout:
 Our Goals:
 
 1. Make integrated circuit prototyping as fast as 3D printing
-2. Make DIY version of every nanofab tool
+2. Make DIY version of every nanofabrication tool
 3. Get there with collaborative open source hardware
 
-Right now we use factories and tools that are optimized to manufacture at scale to do our prototyping. There does not exist a set of machines that enable rapid tape-out of semiconductor devices on a budget, nor are there any resources to make/modify fab tools from the ground up.
+Right now we use factories and tools that are optimized to manufacture at scale to do our integrated circuit prototyping. There does not exist a set of machines that enable rapid tape-out of semiconductor devices on a budget, nor are there sufficient resources to make/modify fab tools from the ground up.
+
+Nanofabrication is often communicated as complex [magic](https://www.youtube.com/watch?v=d9SWNLZvA8g), where every machine is immutable. We believe that innovation in the industry requires a thorough understanding of these machines from first principles, which will lead us to simpler solutions. Even on machines and processes of magnitudes less complexity than modern industry, there are designs worth sharing.
 
 The use of low-cost, abundant, and fast-turn-around hardware serves a larger purpose than making the fab cheaper. These design constraints are what enable others to recreate, modify, and contribute to our work. The simpler the better.
 
 |                                                                              |                                                               |
 | :--------------------------------------------------------------------------: | ------------------------------------------------------------- |
-| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4><mark style="color:green;">38</mark></h4>                 |
+| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4><mark style="color:green;">42</mark></h4>                 |
 |                        <h4>Number of Hacker Fabs</h4>                        | <h4><mark style="color:green;">1 (+1 in progress)</mark></h4> |
 
 ***
