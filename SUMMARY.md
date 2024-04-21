@@ -80,6 +80,7 @@
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CV Measurements](working-docs/cv-measurements.md)
+* [Getting started with Klayout](working-docs/getting-started-with-klayout.md)
 
 ## 🔲 Templates (to do)
 
