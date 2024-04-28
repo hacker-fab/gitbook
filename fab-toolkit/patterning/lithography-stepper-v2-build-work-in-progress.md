@@ -276,7 +276,22 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 {% @github-files/github-code-block url="https://github.com/hacker-fab/code/tree/main/litho/scripts" %}
 
-2. Clone the Lithographer repo (link above) and run it with Python version 3.10.
+2. Clone the Lithographer repo (link above)
+3. Open preferred terminal in main `code` folder
+   - We recommended to using the [official git terminal](https://gitforwindows.org/), especially on Windows
+4. Install Python 3.10
+   - If unsure, call `py -3.10 -V` to see installed version of python 3.10
+   - Download and install Python 3.10 from [official download link](https://www.python.org/downloads/release/python-3100/)
+6. Import necessary libraries with pip
+   - `pip install pillow, serial, opencv-python`
+   - TKinter should be bundled with the 3.10 download, but if not found, it must be installed with local package manager: not pip
+   - PIL / Pillow -> `pip install pillow`
+   - Serial -> `pip install serial`
+   - cv2 -> `pip install opencv-python`
+   - Do not install `camera` library with pip, as it will conflict with flir
+8. run lithographer.py with Python 3.10
+   - `py -3.10 ./litho/scripts/Lithographer.py`
+9. If running without camera, set set global constant `RUN_WITHOUT_CAMERA` in `Lithographer.py` to `True`
 
 @Kent and Luca Insert more complete software setup then link to Stepper SOP for final setup. Don't forget FLIR driver.
 
