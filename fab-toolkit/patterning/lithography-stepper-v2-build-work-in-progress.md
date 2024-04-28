@@ -292,8 +292,9 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 8. run lithographer.py with Python 3.10
    - `py -3.10 ./litho/scripts/Lithographer.py`
 9. If running without camera, set set global constant `RUN_WITHOUT_CAMERA` in `Lithographer.py` to `True`
+10. See [litho SOP](https://github.com/hacker-fab/gitbook/tree/6ffdd3593cad33dda466e3b4e3a61bcb9ca23b7a/standard-operating-procedures/patterning-sop-stepper-v2) for how to use
 
-@Kent and Luca Insert more complete software setup then link to Stepper SOP for final setup. Don't forget FLIR driver.
+@Kent Don't forget FLIR driver.
 
 ### Final Alignment (to do)
 
