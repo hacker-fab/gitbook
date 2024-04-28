@@ -50,8 +50,8 @@ The following steps assume that the probe and positioners are connected and prob
 
 (Refer to the Probe Station Document)
 
-{% content-ref url="probe-station.md" %}
-[probe-station.md](probe-station.md)
+{% content-ref url="../probe-station.md" %}
+[probe-station.md](../probe-station.md)
 {% endcontent-ref %}
 
 * For our purposes, click on Tracer (for IV Characterization).
