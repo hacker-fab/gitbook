@@ -36,7 +36,7 @@
   * [Tube Furnace](fab-toolkit/other-processing-machines/tube-furnace.md)
   * [Cleaving Jig](fab-toolkit/other-processing-machines/cleaving-jig.md)
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
-  * [Probe Station](fab-toolkit/metrology-characterization/probe-station.md)
+  * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
     * [SMU - Analog Discoveries](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
     * [SMU - Keithley 4200SCS](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-keithley-4200scs.md)
@@ -74,6 +74,7 @@
 * [Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
 * [Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
 * [Probe Station SOP](standard-operating-procedures/probe-station-sop.md)
+* [Probe Station SOP - V2](standard-operating-procedures/probe-station-sop-v2.md)
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 

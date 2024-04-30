@@ -6,8 +6,8 @@ description: A step-by-step guide on working with the Probe Station
 
 To learn more about the hardware and software involved, refer:
 
-{% content-ref url="semiconductor-parameter-analyzer/smu-analog-discoveries.md" %}
-[smu-analog-discoveries.md](semiconductor-parameter-analyzer/smu-analog-discoveries.md)
+{% content-ref url="smu-analog-discoveries.md" %}
+[smu-analog-discoveries.md](smu-analog-discoveries.md)
 {% endcontent-ref %}
 
 ***
