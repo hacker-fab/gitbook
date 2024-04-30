@@ -98,7 +98,7 @@ Once the paste is applied, you can use a pick and place machine to align the com
 
 Below is a completed version of the PCB - note the polarity:
 
-![](https://github.com/hacker-fab/gitbook/assets/75909808/bb5edf85-997c-4415-9885-2b663f7f4387)\
+![](https://github.com/hacker-fab/gitbook/assets/75909808/095bb879-172e-434f-958c-d34c42a84092)\
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB.
 To see the UV light, simply look at the leds through your phone's camera, as the sensors see it as purple light. 
 
