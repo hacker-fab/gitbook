@@ -4,9 +4,10 @@
 
 | Cost                  | $           |
 | --------------------- | ----------- |
-| Approximate Work Time | <p><br></p> |
-| Performance spec 1    | <p><br></p> |
-| Performance spec 2    | <p><br></p> |
+| Approximate Active Build Time | <p>6 Hours<br></p> |
+| Approximate Total Build Time    | <p>48 Hours<br></p> |
+| Max Temperature    | <p>1200C<br></p> |
+| Max Running Time    | <p>30 Minutes (TBD)<br></p> |
 
 ## Hardware Description
 
