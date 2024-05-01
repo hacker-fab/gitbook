@@ -41,6 +41,7 @@ Stuff to buy. The BOM should include everything necessary to make the components
 | Fiberglass Insulated Wire      | 10ft           | 2.7                  | 20.70               | [McMaster](https://www.mcmaster.com/8209K15/)               |
 | Test Tube      | 1           | 26.90                  | 26.90               | [Amazon](https://technicalglass.com/product/35cc-fused-quartz-test-tubes-w-lip/)               |
 | Castable Ceramic Kit      | 1           | 10                  | 10               | [Amazon](https://www.amazon.com/)               |
+| Viton O-Ring Set      | 1           | 10                  | 10               | [Harbor Freight](https://www.amazon.com/)               |
 | <p><br></p> | <p><br></p> | <p><br></p>         | 0                | <p><br></p>                                     |
 
 
@@ -55,9 +56,10 @@ Stuff to make. Complete a separate row for each design file associated with your
 
 | File Name w/ link                                                                                | Description                                                              | QTY | Tools Used                      |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | --- | ------------------------------- |
-| [Mechanical File 1](https://github.com/hacker-fab/lithography-stepper/blob/main/CAD/base.SLDPRT) | Housing for Electronics, connects to XYZ component. 3D printed from ABS. | 2   | 3D printer                      |
-| Electronic File 1                                                                                | PCB that controls XYZ sensors and actuators. Controlled by XYZ component | 3   | PCB fab, pick and place machine |
-| Software File 1                                                                                  | Firmware for XYZ microcontroller.                                        | N/A | Arduino Uno                     |
+| [Tube Furnace Assembly](https://cad.onshape.com/documents/7ca245ff5619be80b9b7c11c/w/72634921600cf05b54213a5d/e/d22908dc7684c4069f65515b) | Complete tube furnace assembly file | 1   | --                      |
+| [Ceramic Cap Mould](https://cad.onshape.com/documents/279b6d9d916df77415a78659/w/fec5166005d12b217a27bd33/e/638f8ec910503f23116640b0) | Mould to cast ceramic cap with hole for thermocouple | 1   | 3D Printer                      |
+| Power Management PCB                                                                                | PCB that steps down AC voltage and switches it for temperature control. | 1   | PCB fab, pick and place machine |
+| Arduino Temperature Control Script                                                                                  | Firmware for arduino microcontroller.                                        | N/A | Arduino Uno                     |
 
 \
 
@@ -95,27 +97,46 @@ Provide detailed, step-by-step construction instructions for the submitted hardw
 * Tips and tricks to simplify the assembly process
 * Possible errors that might occur during assembly and how to rectify them
 
-### 3D Print Sub-assembly 1
+### Build Main Tube Furnace Assembly
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. Create Insulation Layer Inside Can
+  a. Cut rectangles of fiberglass insulation (5in height), any length.
+  b. Fill inside of can with fiberglass insulation, leaving a ~1 in diameter cylindrical gap in the middle.
+  c. TIP: if gap is too wide to leave as-is, but too small for a full layer of insulation, two alternatives:
+    i. Press existing insulation against inner walls of the can, just enough to have layer fit (but not too much to remove air gaps in fiber)
+    ii. Splice a new layer of insulation in two -- after creating a small cut, it should be possible to "peel" layers of insulation from the sheet.
+2. Make and insert nichrome wire coil
+   a. Tightly wrap 20 windings of nichrome wire around the test tube. The spacing between windings is not important in this step, so it could be between 0-10mm.
+   b. Remove the coil from the test tube while compressing it. All turns should be touching at this point, and the spring should be fully compressed.
+   c. Insert the compressed spring into the cavity previously made in the can, all the way to the bottom.
+   d. Let go of the spring -- it should be tight enough against the insulation walls so that it doesn't decompress on its own.
+   e. Pull the upper end of the spring upwards, so that the spring expands throughout the cavity of the furnace.
+   f. Both ends of the nichrome should come out of the top of the furnace. For the end that comes from the bottom, use thinner pieces of fiberglass insulation to separate the vertical piece from the rest of the coil.
+4. Make electrical connections
+   a. Solder 1 ft of fiberglass insulated wire to each end of the nichrome wire.
 
-### Solder Sub-assembly 2
+### Cast Ceramic Caps
 
-4. Step 1
-5. Step 2
-6. Step 3\
+1. 3D Print Mould
+2. Apply Mould Release Spray to the mould (thin layer, 10-12 in away from mould). Let dry for 30 minutes.
+3. Fill mould up with castable ceramic mix (100:30 ratio base:activator). Please refer to castable ceramic kit for up to date instructions.
+4. Let dry for 24 hours (or as directed by castable ceramic kit manual).
+5. Release the mould.
+  a. I found the easiest way to do this was to use a heat gun to slighly deform the mould, which made it much easier to release.
+7. Post-process ceramic cap as directed by kit manual.
 
 
 ## Validation and Characterization
 
 Demonstrate the operation of the hardware and characterize its performance for a specific application.
 
-* Highlight a relevant use case.
-* If possible, characterize performance of the hardware over operational parameters.
-* Create a bulleted list describing the capabilities (and limitations) of the hardware.  For example, load and operation time, spin speed, coefficient of variation, accuracy, precision, etc
+The DIY tube furnace is designed to operate under conditions that enable the process of diffusion.
+
+* Operation time: 30 minutes.
+* Max Temperature: 1200C.
 
 ## Safety
+
+
 
 ## Appendix
