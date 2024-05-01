@@ -11,10 +11,9 @@
 
 ## Hardware Description
 
-Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area? \
+This DIY Tube Furnace provides an alternative to commercial tube furnaces, at a fraction of the size and cost. This version works with resistance heating, which allows for a compact design. \
 
-
-Insert picture of completed hardware\
+![IMG_2331](https://github.com/hacker-fab/gitbook/assets/74506223/82ffe310-64e3-4a2d-bebc-953d48f2fe83)
 
 
 Useful Links:
@@ -35,8 +34,13 @@ Stuff to buy. The BOM should include everything necessary to make the components
 
 | Name        | QTY         | Cost per unit - USD | Total cost - USD | Purchasing Link                                 |
 | ----------- | ----------- | ------------------- | ---------------- | ----------------------------------------------- |
-| Item 1      | 10          | 0.01                | 0.1              | [McMaster](https://www.mcmaster.com/91251A051/) |
-| Item 2      | 1           | 10                  | 10               | [Amazon](https://www.amazon.com/)               |
+| Nichrome Wire 22awg      | 1          | 11.99                | 11.99              | [Amazon]([https://www.amazon.com/Nichrome-80-Gauge-Resistance-Wire/dp/B07CHX2T52/ref=pd_bxgy_d_sccl_1/136-4311860-8506401?pd_rd_w=mXvnA&content-id=amzn1.sym.c51e3ad7-b551-4b1a-b43c-3cf69addb649&pf_rd_p=c51e3ad7-b551-4b1a-b43c-3cf69addb649&pf_rd_r=A4YSNT87EHM66DSPGVSH&pd_rd_wg=46Oul&pd_rd_r=80e8a761-f8df-4aab-ba5e-a662dc18b3fb&pd_rd_i=B07CHX2T52&psc=1]) |
+| Ceramic Wool Insulator      | 1           | 15.98                  | 15.98               | [Amazon]([https://www.amazon.com/gp/product/B09R9NW7HG?ie=UTF8&th=1&linkCode=sl1&tag=projectsinfli-20&linkId=11036526d5c75fa2a69a66da4628a4e2&language=en_US&ref_=as_li_ss_tl])             |
+| High Temperature TC Probe      | 1           | 9.89                  | 9.89               | [McMaster]([https://www.mcmaster.com/3859K44/])             |
+| Quart Aluminum Can      | 1           | 12.99                  | 12.99               | [Amazon]([https://www.amazon.com/Empty-Quart-Paint-Unlined-Metal/dp/B015Y9OY4Y/ref=sr_1_3?crid=3VTGIYGJ30247&keywords=aluminum+can&qid=1707862429&s=hi&sprefix=aluminum+chan%2Ctools%2C123&sr=1-3])               |
+| Fiberglass Insulated Wire      | 10ft           | 2.7                  | 20.70               | [McMaster](https://www.mcmaster.com/8209K15/)               |
+| Test Tube      | 1           | 26.90                  | 26.90               | [Amazon](https://technicalglass.com/product/35cc-fused-quartz-test-tubes-w-lip/)               |
+| Castable Ceramic Kit      | 1           | 10                  | 10               | [Amazon](https://www.amazon.com/)               |
 | <p><br></p> | <p><br></p> | <p><br></p>         | 0                | <p><br></p>                                     |
 
 
