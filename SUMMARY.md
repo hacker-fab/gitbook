@@ -44,7 +44,7 @@
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
 * [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
   * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
-  * [Dialectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
+  * [Dielectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
     * [Spin on Glass](fab-toolkit/chemicals-materials/dialectrics/spin-on-glass.md)
   * [Conductors](fab-toolkit/chemicals-materials/conductors/README.md)
     * [Aluminum](fab-toolkit/chemicals-materials/conductors/aluminum.md)
