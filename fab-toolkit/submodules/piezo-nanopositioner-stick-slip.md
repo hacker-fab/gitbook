@@ -1,72 +1,88 @@
+---
+description: >-
+  Based on Original Paper Found Here:
+  https://www.sciencedirect.com/science/article/pii/S2468067222000621
+---
+
 # Piezo Nanopositioner (Stick Slip)
 
-## **How to make a piezo nanopositioner work**
+## **Background**
 
-**A List of Quantifiable Parameters**
+**In this Document**
 
-At its fundamental level, a piezo inertia actuator might seem quite simple: two contacting surfaces one of which alternates between moving slowly and quickly in alternating directions which, in turn, causes displacement on the other surface. However, there are many – often elusive – variables at play, all of which have profoundly significant effects on the functioning of a piezo inertia actuator.
+At its fundamental level, a piezo inertia actuator might seem quite simple: two contacting surfaces one of which alternates between moving slowly and quickly in alternating directions which, in turn, causes displacement on the other surface. However, there are many variables at play, all of which have significant effects on the efficacy of a piezo inertia actuator.
 
-Because of the subtle, often opposing, impact all of these variables have, there is no single optimal solution to each one, rather one must experiment with different combinations of variables that function well given specific designs of piezo inertia actuators. However, understanding the most impactful variables and their effects can simplify this process.
+There is no single optimal solution to each individual variable, rather different combinations of variables function well together given specific piezo inertia actuator assemblies. Understanding the most impactful variables and their effects can simplify this process.
 
-In this document, I will give insight into many of these variables and to the impact I have found them to cause. I will also describe a specific configuration that resulted in a working piezo inertia actuator.
+This document includes a list of specific variables broken down as closely to first principles as possible + a specific configuration that resulted in a working piezo inertia actuator.
+
+**Background**
+
+<figure><img src="../../.gitbook/assets/image (61).png" alt="" width="375"><figcaption><p>Source: <a href="https://xeryon.com/technology/how-do-piezo-motors-work/">Xeryon</a></p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (62).png" alt="" width="375"><figcaption><p>Source: <a href="https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=13790">Thorlabs</a></p></figcaption></figure>
+
+Piezo actuators are tiny stacks crystals that respond to voltage by physically expanding in a very repeatable way. The simplest of these crystal stacks simply expands and contracts in one direction. The magnitude of this expansion can range from single nanometers to multiple microns.
+
+Actuator assemblies have been made utilizing this crystal stack by amplifying it's small expansion. This can be taken a step futher - by applying a sawtooth wave function to the piezo crystal, it can be made to expand slowly, but contract quickly. This, in tandem with some clever friction interfaces and dynamics, can be utilized to make a separate stage move much more than just the short range of the piezo draw (expansion) distance. It can effectively be used to move an infinite range.
 
 ![](../../.gitbook/assets/0.png)
 
-1. ### **Friction between and**
+1. ### **Friction between A and B**
 
-The friction force between and is, perhaps, the variable that has the greatest effect on the reliability of the actuator.
+The friction force between A and B is determined by the **material choice**, as well as the **preload force** Fa.
 
-Having too much friction makes it harder for the slip phase of the stick-slip cycle to work. When the friction force is too strong, the inertia of is no longer enough to overcome the higher friction force and the and surfaces do not slip; the assembly simply vibrates.
+Having too much friction makes it harder for the slip phase of the stick-slip cycle to work. When the friction force is too strong, the inertia of A is no longer enough to overcome the higher friction force and the and surfaces do not slip; the assembly simply vibrates back and forth.
 
-However, when the friction force is too weak the contact between both surfaces becomes inconsistent and the actuator does not work reliably. Sometimes the actuator does not stick, sometimes it does not slip. Similarly to when there is too much friction, the assembly mostly just vibrates.
+However, when the friction force is too weak the contact between both surfaces becomes inconsistent. This can also result in the stick phase being only a fraction of the draw distance of the piezo. Similarly to when there is too much friction, the assembly mostly just vibrates. This makes this hard to diagnose the issue.
 
-2. ### **Preload**
 
-Having a preload force between the and surfaces is paramount. If there were none, we would be relying on the alignment between the and surfaces to certify that there was constant and known friction force between the and surfaces.
 
-Having a preload ensures that even if both surfaces are not perfectly aligned they maintain contact with each other and gives us control on the friction force between and : if we need more friction between and we can increase and if we need less friction we can decrease .
+Having a preload force between the and surfaces is paramount. If there were none, we would be relying on perfect alignment between the A and B surfaces throughout its range of motion.
 
-3. ### **Finish & consistency of and surfaces**
+Having a preload ensures that even if both surfaces are not perfectly aligned they maintain contact with each other. This preload force also and gives us control on the friction between A and B.
 
-As the piezo expands a very small amount (microns) any imperfections, burs, or debris between the and surfaces can cause the stick-slip cycle to fail and the actuator to get stuck. Therefore, having smooth surface finishes in and is desirable and increases reliability. Keeping the surfaces clean from debris has the same effect and also prolongs the life of the surfaces. Furthermore, it is also desirable for the surfaces of and to be hard, as this also prolongs the life of the surfaces.
+2. ### **Finish & consistency of and surfaces**
 
-As a smooth surface finish is desirable, the preload force plays a very useful role here. It is possible to have a smoother surface finish in and (which would decrease the coefficient of friction u) but increase the preload force which has the opposite effect of increasing the friction force.
+As the piezo expands a very small amount (microns) any imperfections, burs, or debris between the and surfaces can cause the stick-slip cycle to fail and the actuator to get stuck. Therefore, having smooth surface finishes is desirable and increases reliability. Keeping the surfaces clean from debris has the same effect and also prolongs the lifetime of the surfaces. Furthermore, it is also desirable for the surfaces of A and B to be hard.
 
-4. ### **Mass of A**
+As a smooth surface finish is desirable, the preload force plays a very useful role here. It is possible to have a very smooth surface finish (which would decrease the coefficient of friction u) but increase the preload force to compensate.&#x20;
 
-The entire concept of a piezo inertia actuator relies on the fact that will have a high enough momentum so that it can overcome the friction force between and and the piezo will slip, therefore, as momentum is related to mass and velocity, the mass of a is very impactful and useful.
+3. ### **Mass of A**
 
-The reason why the mass of is useful lies in the asymmetrical nature of the force required to perform the stick and the slip phases. Piezos can exert very high forces when expanding (stick phase), however, during the slip phase, we only require enough force to overcome the friction force between and B.
+The entire concept of a piezo inertia actuator relies on the fact that the momentum of the stage during the stick phase will continue and overcome the friction force between A and B during the slip phase. In other words, the piezo pushes the mass A some amount then quickly pulls back. Without sufficient A mass, the slipping phase becomes very difficult to achieve.&#x20;
 
-By increasing the mass moved by the piezo, the momentum of immediately before the slip phase also increases and therefore it is easier to overcome the friction between and B, and slip; it basically becomes harder to stick. However, due to the fact that can move as slowly as we want during the stick phase and that piezos can exert very large amounts of force, the difficulty to stick, experienced during the slip phase, is not experienced here.
+Piezos can exert very high forces when expanding (stick phase), so increasing mass does not put significant strain on the piezo actuator itself. During the slip phase, we only require enough force to overcome the friction force between and B.
 
-This becomes extremely useful to increase the reliability of the actuator and ensure it slips when it is expected for it to slip. This can be especially useful when the slew rate of the piezo driver is not fast enough, you can basically use brute force to make it slip. However, as you are moving more mass, you might need to compensate by slowing the frequency at which you drive the piezo.
+4. ### Slew Rate of Driver
+
+The rate at which the piezo can slip is just as important as the momentum of the stage. This is dictated by the capacitance of the piezo stack itself, but we have found that the more impactful variable at play is the **slew rate of the driver**. A proper driver that can pump or deplete voltage from the piezo in a matter of microseconds is critical to get consistent slipping action.
+
+This can also dictate the frequency at which you can drive the stage, defining the maximum speed the actuator can move.
 
 5. ### **Waveform driving the piezo**
 
-Though a linear saw-tooth waveform is able to produce movement of the piezo inertia actuator, it is far from optimal. Using a linearly increasing or decreasing waveform limits the driving frequency to what does not cause slipping at the start of the sticking phase.
+<figure><img src="../../.gitbook/assets/image (58).png" alt="" width="563"><figcaption><p>Screenshot of Googling "piezo stick slip" showing pure sawtooths everywhere</p></figcaption></figure>
 
-As we need to maximize for the maximum possible driving frequency and velocity (absolute velocity) at the end of the sticking phase, using a gradually increasing waveform like the ones seen below is the optimal solution.
+Though a linear saw-tooth waveform is able to produce movement of the piezo inertia actuator, it is far from optimal. Using a linearly increasing or decreasing waveform is not ideal for the sticking phase, as the sharp changes in direction can make the stage slip before sticking action occurs.&#x20;
 
-Instead of limiting the driving frequency to what does not cause slipping at just the start of the sticking phase, thee velocity of the waveform starts of slowly and gradually increases speed, which allows it to reach higher driving frequencies without slipping and even a greater velocity at the end of the sticking phase – which increases the momentum of the surface A.
+Using a gradually increasing waveform like the ones seen below is a more optimal solution.
 
-![](../../.gitbook/assets/1.png)
+The velocity of the waveform starts off slowly and gradually increases speed, which allows it to reach higher driving frequencies without slipping and even a greater velocity at the end of the sticking phase – which increases the momentum of the surface A.
 
-_**A is moving in the same direction as the piezo**_
+<figure><img src="../../.gitbook/assets/image (59).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the same direction as the piezo</strong></em></p></figcaption></figure>
 
-![](../../.gitbook/assets/2.png)
+<figure><img src="../../.gitbook/assets/image (60).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the opposite direction as the piezo (reversed direction)</strong></em></p></figcaption></figure>
 
-_**A is moving in the opposite direction as the piezo**_
-
-Let Fcr be the maximum driving frequency at which there still is sticking: it is desirable that the rapidly changing portions of the signal (sliping phase) be 4 times faster than Fcr and that the slowly changing portions of the signal be 4 times slower than Fcr.
-
-The slipping phase should transition from low to high voltage as quickly as possible. This slew rate is mostly dependent on the capacitance of the piezo element and the power of the piezo driver used. Having a faster slew rate allows for slipping when the surface has less momentum and makes the actuator more reliable.
+Let Fcr be the maximum driving frequency at which there still is sticking: it is desirable that the rapidly changing portions of the signal (slipping phase) be **4 times** faster than Fcr and that the slowly changing portions of the signal be 4 times slower than Fcr.
 
 6. ### **Stiffness / stability of the entire assembly**
 
-The nature of the piezo inertia driving results is vibrations being created. They are undesired and indicate inefficiencies in the actuator.
+Vibrations are naturally created by the piezo element. They are undesired and indicate lead to inefficiencies.
 
-However, manufacturing the chassis assembly out of a stiffer and heavier material and fixturing the assembly to a stable base reduces said vibrations and greatly increases the efficiency and reliability of the machine.
+Manufacturing the chassis assembly out of a stiffer and heavier material and fixturing the assembly to a stable base reduces said vibrations and greatly increases the efficiency and reliability of the machine.
+
+This is especially critical for stages with more than one axis stacked on top of one another. This is yet to be tested.
 
 ### **Example Configuration that Works**
 
