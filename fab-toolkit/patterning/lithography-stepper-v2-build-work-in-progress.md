@@ -99,8 +99,7 @@ Once the paste is applied, you can use a pick and place machine to align the com
 Below is a completed version of the PCB - note the polarity:
 
 ![](https://github.com/hacker-fab/gitbook/assets/75909808/095bb879-172e-434f-958c-d34c42a84092)\
-You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB.
-To see the UV light, simply look at the leds through your phone's camera, as the sensors see it as purple light. 
+You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB. To see the UV light, simply look at the leds through your phone's camera, as the sensors see it as purple light.
 
 ### Disassemble the TI DLP dev kit
 
@@ -291,11 +290,22 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 6. run lithographer.py with Python 3.10
    * `py -3.10 ./litho/scripts/Lithographer.py`
 7. If running without camera, set set global constant `RUN_WITHOUT_CAMERA` in `Lithographer.py` to `True`
-8. See [litho SOP](https://github.com/hacker-fab/gitbook/tree/6ffdd3593cad33dda466e3b4e3a61bcb9ca23b7a/standard-operating-procedures/patterning-sop-stepper-v2) for how to use
+8. See [litho SOP](../../archive/patterning-sop-stepper-v1.md#stepper-setup) for how to use
 
-@Kent Don't forget FLIR driver.
+### Final Alignment (WIP)
 
-### Final Alignment (to do)
+Once the stepper is connected to a computer and the live camera feed is visible, proceed with final alignment. The goal is to adjust the tube length between the DLP housing and the beamsplitter cube such that both the projected image and the chip are in focus.&#x20;
+
+1. Place a chip with a visible pattern on it. Cracked glass or extremely dirty chips are good options.
+2. Project a mostly red image with some fine marks for determining focus.
+3. Using the Z axis (focus) of the stage, focus onto the chip surface. Disregard the projected pattern for now.
+
+![](<../../.gitbook/assets/image (57).png>)
+
+4. Loosen the clamp that connects the two parts of the DLP-beamsplitter tube so that they freely rotate. (update picture)
+5. Loosen the locking ring on the adjustable lens tube.
+6. Screw the adjustable lens tube in/out while periodically checking to see if the projected image gets more or less in focus. You may need to push the optics into the coupler to ensure planarity.
+7. Once both images are in focus at the same time, tighten the locking ring on the adjustable lens tune as well as the coupler. (insert image)
 
 ## Safety
 
