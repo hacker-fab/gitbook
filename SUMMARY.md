@@ -77,6 +77,7 @@
 * [Probe Station SOP - V2](standard-operating-procedures/probe-station-sop-v2.md)
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
+* [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
 
 ## 🟢 WORKING DOCS
 
