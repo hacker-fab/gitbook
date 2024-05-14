@@ -30,25 +30,31 @@ Actuator assemblies have been made utilizing this crystal stack by amplifying it
 
 1. ### **Friction between A and B**
 
-The friction force between A and B is determined by the **material choice**, as well as the **preload force** Fa.
+The friction force between A and B is determined by the **material choice**, **cleanliness**, as well as the **preload force** Fa.
 
 Having too much friction makes it harder for the slip phase of the stick-slip cycle to work. When the friction force is too strong, the inertia of A is no longer enough to overcome the higher friction force and the and surfaces do not slip; the assembly simply vibrates back and forth.
 
 However, when the friction force is too weak the contact between both surfaces becomes inconsistent. This can also result in the stick phase being only a fraction of the draw distance of the piezo. Similarly to when there is too much friction, the assembly mostly just vibrates. This makes this hard to diagnose the issue.
 
+It is also desirable for the surfaces of A and B to be hard.
 
+As the piezo expands a very small amount (microns) any imperfections or change in angle between the A and B surfaces can cause the stick-slip cycle to fail and the actuator to get stuck. Therefore, having smooth surface finishes is desirable and increases reliability. Keeping the surfaces clean from debris has the same effect and also prolongs the lifetime of the surfaces.&#x20;
 
 Having a preload force between the and surfaces is paramount. If there were none, we would be relying on perfect alignment between the A and B surfaces throughout its range of motion.
 
 Having a preload ensures that even if both surfaces are not perfectly aligned they maintain contact with each other. This preload force also and gives us control on the friction between A and B.
 
-2. ### **Finish & consistency of and surfaces**
+2. ### **Planarity of A and B surfaces**
 
-As the piezo expands a very small amount (microns) any imperfections, burs, or debris between the and surfaces can cause the stick-slip cycle to fail and the actuator to get stuck. Therefore, having smooth surface finishes is desirable and increases reliability. Keeping the surfaces clean from debris has the same effect and also prolongs the lifetime of the surfaces. Furthermore, it is also desirable for the surfaces of A and B to be hard.
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption><p>Piezo mounted externally (to chassis) or on the stage itself</p></figcaption></figure>
 
-As a smooth surface finish is desirable, the preload force plays a very useful role here. It is possible to have a very smooth surface finish (which would decrease the coefficient of friction u) but increase the preload force to compensate.&#x20;
+If the piezo element is mounted on the chassis, and not the stage itself, then any slop in the stage mounting will propagate as the stage moves throughout its range of motion. This can increase or decrease the force between the magnet and the stage, as well as wedge the magnet's corner against the stage.&#x20;
 
-3. ### **Mass of A**
+This is very unpredictable for the stage dynamics. Making more precise mounting for the stage is also desirable for other reasons, such as wanting a very linear range of motion (assuming that the magnet interface is operating properly to begin with). This can be expensive however, as the tolerances are on the order of microns.&#x20;
+
+A poorly mounted stage can be calibrated out when using a 3-axis system, curbing the finicky precise mounting and tolerancing.
+
+3. ### **Mass of A (Inertia)**
 
 The entire concept of a piezo inertia actuator relies on the fact that the momentum of the stage during the stick phase will continue and overcome the friction force between A and B during the slip phase. In other words, the piezo pushes the mass A some amount then quickly pulls back. Without sufficient A mass, the slipping phase becomes very difficult to achieve.&#x20;
 
@@ -111,6 +117,10 @@ The design starts performing the best when there is over 50g of mass on top of t
 The piezo element is driven with an 8 bit DAC and a [PDu150](https://www.piezodrive.com/product/pdu150-three-channel-ultra-low-noise-150v-piezo-driver/) piezo driver. The waveform used is the same shown in the images in section “5. Waveform driving the piezo”, it has a peak voltage of 120V and a driving frequency of 1,400 Hz.
 
 Previously, we used the [BD150](https://www.piezodrive.com/product/bd150-dual-channel-150v-amplifier/) driver, however, its slew rate was extremely low and the upgrade to the [PDu150](https://www.piezodrive.com/product/pdu150-three-channel-ultra-low-noise-150v-piezo-driver/) driver showed very significant improvements.
+
+BD150 slew rate = 12 V/us
+
+PDu150 slew rate = 38 V/us
 
 6. **Stiffness / stability of the entire assembly**
 
