@@ -24,6 +24,7 @@
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
   * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
+  * [Getting started with Klayout](fab-toolkit/patterning/getting-started-with-klayout.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
@@ -40,6 +41,7 @@
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
     * [SMU - Analog Discoveries](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
     * [SMU - Keithley 4200SCS](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-keithley-4200scs.md)
+  * [CV Measurements](fab-toolkit/metrology-characterization/cv-measurements.md)
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
 * [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
@@ -82,8 +84,6 @@
 ## 🟢 WORKING DOCS
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
-* [CV Measurements](working-docs/cv-measurements.md)
-* [Getting started with Klayout](working-docs/getting-started-with-klayout.md)
 
 ## 🔲 Templates (to do)
 

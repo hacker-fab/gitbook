@@ -129,23 +129,23 @@ Appendix 2. Masks for an NMOS enhancement load inverter
 
 <div>
 
-<figure><img src="../.gitbook/assets/blue1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blue1.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/blue2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blue2.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/blue3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blue3.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/blue4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blue4.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/red11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/red11.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
