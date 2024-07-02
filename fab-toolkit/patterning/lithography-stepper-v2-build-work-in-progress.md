@@ -40,7 +40,7 @@ Total Cost: $3,708.03
 
 Note: the OnShape folder is organized poorly because it was our first time using it. Won't happen again, we promise!
 
-<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft.</td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/lithography-stepper/blob/main/scripts/Lithographer.py">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
+<table><thead><tr><th>File Name w/ link</th><th width="267">Description</th><th width="82">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://github.com/hacker-fab/lithography-stepper/tree/main/40mm_XYZA_CAD">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft.</td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/stepper/tree/main/litho/scripts">Lithographer.py</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
 
 ## Build Instructions
 
@@ -266,31 +266,102 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 ### Install Software and Flash Firmware (WIP)
 
+To install and run the software, you will need a Windows system that has two USB ports. The rest of this section describes how to install the following dependencies:
+
+1. Arduino GRBL firmware
+2. Python version 3.10 and Python libraries
+3. FLIR Blackfly S Camera Drivers & Viewer
+
+After these are installed, you may clone and instantiate the stepper repository on your device. Optionally, you can develop your own driver for the Flir camera to allow a GUI-integrated live camera preview of the stage. Instructions for such are included below as well.
+
+#### Arduino GRBL Installation
+
+1. Install Arduino IDE.
+2. Flash the Arduino with GRBL following the instructions in the [Link ](https://github.com/gnea/grbl/wiki/Compiling-Grbl)below (it may display as "Not found", but we have found that the link works anyway). For more info about the CNC shield, see the original designer's page below.
+
 {% @github-files/github-code-block url="https://github.com/gnea/grbl/wiki/Compiling-Grbl" %}
 
 {% embed url="https://blog.protoneer.co.nz/arduino-cnc-shield/" %}
 
-1. Flash the Arduino with GRBL. [Link ](https://github.com/gnea/grbl/wiki/Compiling-Grbl)is above (it works). For more info about the CNC shield see the original designer's page above.
+3. To test that the installation was successful, open Arduino IDE and open the serial monitor. You should see text indicating that a version of GRBL is running on your Arduino.
 
-{% @github-files/github-code-block url="https://github.com/hacker-fab/code/tree/main/litho/scripts" %}
+#### Python Version 3.10
 
-2. Clone the Lithographer repo (link above)
-3. Open preferred terminal in main `code` folder
-   * We recommended to using the [official git terminal](https://gitforwindows.org/), especially on Windows
-4. Install Python 3.10
-   * If unsure, call `py -3.10 -V` to see installed version of python 3.10
-   * Download and install Python 3.10 from [official download link](https://www.python.org/downloads/release/python-3100/)
-5. Import necessary libraries with pip
+At the time of development the latest Python version the Flir Spinnaker SDK supports is version 3.10. As such, you must install libraries and run the software for/from this version.
+
+1. We highly recommend using a Linux-based terminal on your Windows system for installation. One option is the [official git terminal](https://gitforwindows.org/). The following instructions assume you are using this terminal environment.
+2. Open git terminal. Check if you have Python 3.10 already installed on your system by running `py -3.10 -V`. If no installation is present, download and install Python 3.10 from the [official download link](https://www.python.org/downloads/release/python-3100/).
+3. Import necessary libraries with pip
    * `pip install pillow, serial, opencv-python`
    * TKinter should be bundled with the 3.10 download, but if not found, it must be installed with local package manager: not pip
    * PIL / Pillow -> `pip install pillow`
    * Serial -> `pip install serial`
    * cv2 -> `pip install opencv-python`
-   * Do not install `camera` library with pip, as it will conflict with flir
-6. run lithographer.py with Python 3.10
+   * Do not install `camera` library with pip, as it will conflict with the Flir python library
+
+#### FLIR Blackfly S Drivers & Viewer Installation
+
+(WIP)
+
+#### Stepper GUI Installation
+
+{% @github-files/github-code-block url="https://github.com/hacker-fab/stepper" %}
+
+1. Open git terminal to the location where you want the Stepper GUI software to be downloaded. Then, run the following commands:
+
+* `git clone https://github.com/hacker-fab/stepper .`
+* `cd stepper`
+
+2. If you have access to the private Flir camera submodule repository, then also enter the following commands:
+
+* `git submodule init`
+*   `git submodule update`
+
+
+
+    Otherwise, disable the camera in the software. To do this, go to the stepper/litho/scripts/config.py file and toggle the necessary flags at the top (i.e. RUN\_WITH\_CAMERA = False). (Or, if are using a different camera, update config.py to select your camera instead. The camera must implement the CameraModule interface.)
+
+3. Run the software.
+
+* `py -3.10 ./litho/scripts/Lithographer.py`
+
+4. Run lithographer.py with Python 3.10:
    * `py -3.10 ./litho/scripts/Lithographer.py`
-7. If running without camera, set set global constant `RUN_WITHOUT_CAMERA` in `Lithographer.py` to `True`
-8. See [litho SOP](../../archive/patterning-sop-stepper-v1.md#stepper-setup) for how to use
+5. For instructions on how to use the Stepper GUI software (including troubleshooting), please see the [Standard Operating Procedures](../../standard-operating-procedures/patterning-sop-stepper-v2/).
+
+#### Optional: Flir Spinnaker SDK (for software developers)
+
+The Stepper V2 build uses a Teledyne Flir camera and custom software written for it. The Stepper software uses the Flir Spinnaker SDK to integrate a live camera preview of the stepper's stage. Since the SDK and its derivative software are closed-source components, we currently do not possess the legal authority to grant access to our custom Flir camera driver to third parties. The following steps describe how to install the Flir Spinnaker SDK and how to develop your own driver. Please carefully review all terms, agreements, and licensing requirements. Follow the steps below.
+
+1. Create an account on the Flir website ([https://www.flir.com/](https://www.flir.com/)), or, if you already have one, sign in.&#x20;
+2. Download the Flir Spinnaker SDK ([https://www.flir.com/products/spinnaker-sdk/](https://www.flir.com/products/spinnaker-sdk/)) for Windows.
+3. Decompress your download if necessary. Open the README.txt file in the (decompressed) download and follow the installation instructions inside.&#x20;
+4. Test that the installation was successful by running an example program. To do this, first make sure your Flir camera is connected. Then, open git terminal in the "Examples" folder. Then, choose any example .py script and run it by entering `py -3.10 NameOfYourScript.py`. Ensure that the program output reports connection and communication with your Flir camera.
+5.  To write a Flir camera driver compatible with the rest of the software, you must conform to the stepper's [CameraModule API](https://github.com/hacker-fab/stepper/blob/main/litho/scripts/camera/camera\_module.py). Follow the example(s) in [stepper/litho/scripts/camera](https://github.com/hacker-fab/stepper/blob/main/litho/scripts/camera/) to implement an interface for your purposes. Within your custom "FlirCamera" class, which should be defined as a subclass of CameraModule and a Flir event handler, we recommend implementing at least the following functions:
+
+    * def \_\_init\_\_(self)
+    * def setStreamCaptureCallback(self, callback)
+    * def streamImageReady(self); returns True if live image is available
+    * def getStreamCaptureImage(self); returns a tuple of (numpy ND image array, shape of that array, and an image format string ("rgb888" or "mono8")), or False if the image is invalid
+    * def isOpen(self); returns True if the camera is active
+    * def open(self); returns True on success
+    * def close(self); returns True on success
+    * def startStreamCapture(self); returns True on success
+    * def stopStreamCapture(self); returns True on success
+    * a Flir image event handler
+
+    We also suggest optimizing live preview performance by selecting a low-overhead color processing scheme and by displaying only the most recently acquired image (i.e. newest first). The Flir SDK code examples show how you might do this.
+6. In config.py, assign "camera" to an instance of your FlirCamera class. For instance:
+
+```python
+RUN_WITH_CAMERA: bool = True # set to True to test camera preview 
+RUN_WITH_STAGE: bool = False # set to True if controlling the stage from GUI
+if(RUN_WITH_CAMERA):
+  # ...
+  import camera.flir.flir_camera as flir # in camera/flir/flir_camera.py...
+  camera = flir.FlirCamera() # instantiate a FlirCamera
+  # the camera variable is imported and used by the remaining stepper code.
+```
 
 ### Final Alignment (WIP)
 
