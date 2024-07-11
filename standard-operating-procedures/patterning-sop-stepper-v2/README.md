@@ -32,6 +32,13 @@ Patterning is the core of any micro/nanofabrication process, as it is used to ma
 
 See the appendix for useful resources about spin coating, our resist, and developer.
 
+## Safety
+
+* Harm to your eyes/eyesight is possible if you do not wear the right protective equipment. To shield your eyes from harmful UV-rays, everyone working with or near the stepper should wear UV-blocking goggles/glasses.&#x20;
+* HMDS is a toxic, volatile chemical that should only be used in the fume hood.
+* Photoresist, while not as bad as HMDS, contains some nasty solvents and should be cleaned with acetone if it gets on anything other than chips and the spin coater.
+* AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.
+
 ***
 
 ## Tools
@@ -104,7 +111,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
    3. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
    4. For more information, click the "help" button at the bottom right
    5. Future mentions to GUI buttons will be in \[braces]
-7. Open SpinView, select BlackFly S, and press the green play button.
+7. Open SpinView, select BlackFly S, and press the green play button. If you see horizontal bands across the live camera preview, follow the corresponding steps in [Troubleshooting](./#troubleshooting).&#x20;
 8. Open Arduino, and open the serial monitor. You should see the output "Grbl 1.1h \['$' for help]".&#x20;
    1. If this does not show, click the black button on top of the motor driver to reset.
 9. Enter G91 into the serial monitor. This switches the stage to relative positioning mode.
@@ -117,43 +124,43 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somewhat quickly because the stepper will begin to expose photoresist in about 1 minute.
 
-0\. Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
+1. &#x20;Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
-1. Push the projector to the left, out of the way of the small hole in the chip holding jig.
+2. Push the projector to the left, out of the way of the small hole in the chip holding jig.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-2. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
+3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
 ![](<../../.gitbook/assets/image (3) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
 
-2. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
+4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
 ![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG\_6036 (1).jpg>)
 
-3. Push the projector back into place. Ensure it is touching all four bolts.
+5. Push the projector back into place. Ensure it is touching all four bolts.
 
 <img src="../../.gitbook/assets/IMG_6039.jpg" alt="" data-size="original">
 
-2. Turn the Z knob until the objective lens is \~2mm from the chip and the image on SpinView is in focus.
+6. Turn the Z knob until the objective lens is \~2mm from the chip and the image on SpinView is in focus.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 155851.png" alt=""><figcaption><p>A well aligned exposure. Note that the previous layer is slightly smaller than the proected pattern.</p></figcaption></figure>
 
-2. Move the X and Y axes manually, or by inputting commands via the serial monitor. The syntax is "x1.24" to move in X by 1.24 steps, or "y-.4" to move in Y by -.4 steps. One arbitrary "step" is equal to 77.5 microns. The minimum reliable step size is .1, or about 8 microns.
-   1. If this is your first layer, find an area with little dust, plan how many exposures you will do and in which direction you will move.
-   2. Otherwise, align to your previous layer. You may want to do the final alignment manually for finer control.
-3. Once you're ready to expose, move the Z axis by .7 steps. This will switch from focusing in red to focusing in UV.
-4. Set your exposure time to 8000 ms.
+7. Move the X and Y axes manually, or by inputting commands via the serial monitor. The syntax is "x1.24" to move in X by 1.24 steps, or "y-.4" to move in Y by -.4 steps. One arbitrary "step" is approximately equal to 1 micron. To avoid straining the motors/stage, test small step sizes (i.e. 1) before trying larger ones (i.e. 10 or more). The minimum reliable step size is about 8-12 microns.
+8. If this is your first layer, find an area with little dust, plan how many exposures you will do and in which direction you will move.
+9. Otherwise, align to your previous layer. You may want to do the final alignment manually for finer control.
+10. Once you're ready to expose, move the Z axis by 54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
+11. Set your exposure time to 8000 ms.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 160251.png" alt=""><figcaption><p>Well-focused UV, ready to expose.</p></figcaption></figure>
 
-2. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused (all crosses look in focus).
-3. Press the big red "Begin Patterning" button. Avoid bumping the table while you wait for the exposure to finish.
-4. Press "Show Red Focus" and move in Z by = -.7 steps to switch back to red.
-5. Move on to your next pattern and repeat. A good spacing between patterns is 7.5 steps in Y and 14 steps in X. This will allow you to easily find your next pattern. Take note of where you started, which direction you're moving, and how many exposures you've done so that you don't miss any patterns.
-6. Once you're finished, press "Clear". Push the projector to the left again, and carefully hold your chip with tweezers while you turn off the vacuum.
+12. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused (all crosses look in focus).
+13. Press the big red "Begin Patterning" button. Avoid bumping the table while you wait for the exposure to finish.
+14. Press "Show Red Focus" and move in Z by -54 steps to switch back to red.
+15. Move on to your next pattern and repeat. A good spacing between patterns is 580 steps in Y and 1080 steps in X (assuming one step per micron). This will allow you to easily find your next pattern. Take note of where you started, which direction you're moving, and how many exposures you've done so that you don't miss any patterns.
+16. Once you're finished, press "Clear". Push the projector to the left again, and carefully hold your chip with tweezers while you turn off the vacuum.
 
 ## Develop
 
@@ -185,10 +192,10 @@ If you're doing this for the first time, it is recommended to read through the f
 
 ![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0001.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0002.jpg)
 
-1. In order to measure the developed pattern resolution, expose [this resolution test pattern](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv\_O2MjYu2rck/edit?usp=sharing). The resolution is equal to the line pitch that is resolved in both light and dark field. Use AmScope to measure. The pitch is the distance between the center of two lines.
-2. For each chip, batch save with the chip number as the first three characters in the file prefix. Do not change the folder. A script will upload to [drive](https://drive.google.com/drive/u/1/folders/1ySfcQiROhOYFecQzDvk9XBO2B2KqJLy6) every 5 min.
-3. Paste a link to the folder in the last column of the chip sheet.
-4. Put the chip away in a plastic box and label it with a serial number.
+4. In order to measure the developed pattern resolution, expose [this resolution test pattern](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv\_O2MjYu2rck/edit?usp=sharing). The resolution is equal to the line pitch that is resolved in both light and dark field. Use AmScope to measure. The pitch is the distance between the center of two lines.
+5. For each chip, batch save with the chip number as the first three characters in the file prefix. Do not change the folder. A script will upload to [drive](https://drive.google.com/drive/u/1/folders/1ySfcQiROhOYFecQzDvk9XBO2B2KqJLy6) every 5 min.
+6. Paste a link to the folder in the last column of the chip sheet.
+7. Put the chip away in a plastic box and label it with a serial number.
 
 See below for examples of underexposure/development, overexposure/development, non-uniformity, and optical blurring.
 
@@ -199,12 +206,6 @@ Right side: thicker lines and blurry edges. Left side: thin lines and sharp edge
 <figure><img src="../../.gitbook/assets/inspect1 (2).png" alt=""><figcaption><p>Inspection image showing blurring effect from defocused stepper</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/inspect2 (1).png" alt=""><figcaption><p>Insprction image showing incsufficient develop or exposure</p></figcaption></figure>
-
-## Safety
-
-1. HMDS is a toxic, volatile chemical that should only be used in the fume hood.
-2. Photoresist, while not as bad as HMDS, contains some nasty solvents and should be cleaned with acetone if it gets on anything other than chips and the spin coater.
-3. AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.\\
 
 ***
 
@@ -218,15 +219,27 @@ See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us
 
 ### Alternative Exposure Technique: 365nm Flashlight
 
-13. Put on UV protection glasses.
-14. Before placing the chip under the exposure area, turn on the flashlight and adjust the position of the UV meter’s sensor head to maximize the reading.
-    1. Depending on the battery level, this should be around 10 mW/cm2.
-15. Turn off the flashlight, being careful not to move it out of position.
-16. Place the chip on the plastic cap photoresist side up.
-17. Place the mask on the wafer. Gently press down to sandwich the two together.
-    1. If the ThorLabs logo is correctly oriented then the chrome is facing you. Put that side face down towards the chip.
-    2. Try not to slide the mask on the wafer because you’ll damage the photoresist.
-18. Place the cap with the wafer and mask on top of the UV sensor.
-19. Turn on the flashlight for the desired exposure time.
-20. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
-    1. Dose should be automatically calculated in the sheet based on exposure option used
+1. Put on UV protection glasses.
+2. Before placing the chip under the exposure area, turn on the flashlight and adjust the position of the UV meter’s sensor head to maximize the reading.
+   1. Depending on the battery level, this should be around 10 mW/cm2.
+3. Turn off the flashlight, being careful not to move it out of position.
+4. Place the chip on the plastic cap photoresist side up.
+5. Place the mask on the wafer. Gently press down to sandwich the two together.
+   1. If the ThorLabs logo is correctly oriented then the chrome is facing you. Put that side face down towards the chip.
+   2. Try not to slide the mask on the wafer because you’ll damage the photoresist.
+6. Place the cap with the wafer and mask on top of the UV sensor.
+7. Turn on the flashlight for the desired exposure time.
+8. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
+   1. Dose should be automatically calculated in the sheet based on exposure option used
+
+## Troubleshooting
+
+If horizontal bands appear in Flir-based camera preview:
+
+1. Open the Flir camera viewer.
+2. Select the connected Flir camera model (Blackfly S) and select the green triangle. You should see a preview of the camera's output (it may appear black or grainy; this is okay).
+3. Update the camera settings so that Acquisition Frame Rate Enable, Acquisition Frame Rate, Exposure Auto, and Exposure Time have the same values shown below:
+
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Example Flir Blackfly S Camera Settings</p></figcaption></figure>
+
+4. Verify that the horizontal bands are no longer present across the camera preview. This may be easier when viewing the stage or a chip while illuminated with the projector.&#x20;
