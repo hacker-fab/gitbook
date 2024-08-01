@@ -17,6 +17,8 @@ layout:
 
 <figure><img src=".gitbook/assets/Hacker Fab_Black w lilac.png" alt="" width="563"><figcaption></figcaption></figure>
 
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">discord.</td><td><a href="https://discord.gg/HFb3FKAxuX">https://discord.gg/HFb3FKAxuX</a></td><td><a href=".gitbook/assets/discord logo.png">discord logo.png</a></td></tr><tr><td align="center">github.</td><td><a href="https://github.com/hacker-fab">https://github.com/hacker-fab</a></td><td></td></tr><tr><td align="center">x.</td><td><a href="https://x.com/TheHackerFab">https://x.com/TheHackerFab</a></td><td></td></tr></tbody></table>
+
 ## <mark style="color:purple;">intro.</mark>
 
 Our Goals:
