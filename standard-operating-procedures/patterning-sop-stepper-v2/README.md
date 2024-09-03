@@ -96,35 +96,32 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ## Stepper Setup
 
-1. Power: Check that the projector, stage, and pump are all plugged in.
-2. Plug the HDMI cable for the projector and the USB camera cable into your computer.
-3. Plug the Arduino + CNC shield USB cable into your computer.
-4. Set up the projector as an extended screen on your computer’s display settings (Win+P on Windows).
-5. Prepare your exposure, red align, and UV focus patterns.
-   1. Your exposure pattern should be pure blue in the areas you want exposed, and black elsewhere. Include alignment marks for the next layer.
-   2. Your red align image should be completely pure red except for alignment marks that match the previous layer.
-   3. Your UV focus pattern should be completely black except for blue focus marks. Ideally these should be in a region that gets fully exposed. You may also use grayscale to avoid unintentional exposure.
-6. Set up the patterning GUI util script
-   1. Run the python script called Lithographer.py\
-      It requires installing pillow and tkinter with pip3
-   2. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
-   3. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
-   4. For more information, click the "help" button at the bottom right
-   5. Future mentions to GUI buttons will be in \[braces]
-7. Open SpinView, select BlackFly S, and press the green play button. If you see horizontal bands across the live camera preview, follow the corresponding steps in [Troubleshooting](./#troubleshooting).&#x20;
-8. Open Arduino, and open the serial monitor. You should see the output "Grbl 1.1h \['$' for help]".&#x20;
-   1. If this does not show, click the black button on top of the motor driver to reset.
-9. Enter G91 into the serial monitor. This switches the stage to relative positioning mode.
+1. Power: Check that the projector, stage, and vacuum pump are all plugged in.
+2. Plug the HDMI cable for the projector, the USB camera cable, and the Arduino + CNC Shield USB into your computer.
+3. Set up the projector as an extended screen on your computer’s display settings (Win+P on Windows).
+4.  Prepare your exposure, red align, and UV focus patterns.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 152141.png" alt=""><figcaption></figcaption></figure>
+    1. Your exposure pattern should be pure blue in the areas you want exposed, and black elsewhere. Include alignment marks for the next layer.
+    2. Your red align image should be completely pure red except for alignment marks that match the previous layer.
+    3. Your UV focus pattern should be completely black except for blue focus marks. Ideally these should be in a region that gets fully exposed. You may also use grayscale to avoid unintentional exposure.
 
-10. Rearrange the screen so you can see the browser with the stage control and AmScope at the same time.
+    Note: If your pattern images have extraneous color components, the GUI has options to enable/disable different color channels for the red focus, UV focus, and exposure pattern. Use these at your convenience.
+5. Set up the patterning GUI util script
+   1. In the source or scripts folder, find and open config.py in your text editor of choice. If your GUI has an integrated camera implemented, set RUN\_WITH\_CAMERA to True. If your GUI uses a motorized stage, set RUN\_WITH\_STAGE to True.
+   2. Run the python script called Lithographer.py. You can do this by opening a terminal and running the command "py -3.10 Lithographer.py". Make sure you have all dependencies installed as described in [Lithography Stepper V2 Build](../../fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md). If the program does not run, see [#troubleshooting](./#troubleshooting "mention").
+   3. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
+   4. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
+   5. For more information about the software and its usage, click the "help" button at the bottom right of the GUI.
+6. If you do not have an integrated GUI camera implemented and you are using the Flir Camera, open SpinView, select BlackFly S, and press the green play button. If you see horizontal bands across the live camera preview, follow the corresponding steps in [Troubleshooting](./#troubleshooting).&#x20;
+7. The GUI should appear similarly to below. If you do not see content on the camera preview yet, this is fine for now.&#x20;
+
+<figure><img src="../../.gitbook/assets/361065448-b9bd3507-418f-4569-82f7-4835a372ce67.png" alt=""><figcaption></figcaption></figure>
 
 ### Expose Using Maskless Photolithography Stepper
 
 If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somewhat quickly because the stepper will begin to expose photoresist in about 1 minute.
 
-1. &#x20;Make sure the correct pattern is loaded in the Lithographer GUI. See step 6.3 in Setup ^.
+1. &#x20;Make sure the correct pattern is loaded in the Lithographer GUI. See step 4.4 in [#stepper-setup](./#stepper-setup "mention")
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
@@ -144,15 +141,14 @@ If you're doing this for the first time, it is recommended to read through the f
 
 <img src="../../.gitbook/assets/IMG_6039.jpg" alt="" data-size="original">
 
-6. Turn the Z knob until the objective lens is \~2mm from the chip and the image on SpinView is in focus.
+6. Turn the Z knob on the stage or modify the GUI stage coordinates until the objective lens is \~2mm from the chip and the image on SpinView or the GUI is in focus.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 155851.png" alt=""><figcaption><p>A well aligned exposure. Note that the previous layer is slightly smaller than the proected pattern.</p></figcaption></figure>
 
-7. Move the X and Y axes manually, or by inputting commands via the serial monitor. The syntax is "x1.24" to move in X by 1.24 steps, or "y-.4" to move in Y by -.4 steps. One arbitrary "step" is approximately equal to 1 micron. To avoid straining the motors/stage, test small step sizes (i.e. 1) before trying larger ones (i.e. 10 or more). The minimum reliable step size is about 8-12 microns.
-8. If this is your first layer, find an area with little dust, plan how many exposures you will do and in which direction you will move.
-9. Otherwise, align to your previous layer. You may want to do the final alignment manually for finer control.
-10. Once you're ready to expose, move the Z axis by 54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
-11. Set your exposure time to 8000 ms.
+7. Move the X and Y axes manually, or by using the GUI. One arbitrary "step" is approximately equal to 1 micron. To avoid straining the motors/stage, test small step sizes (i.e. 1) before trying larger ones (i.e. 10 or more). The minimum reliable step size is about 8-12 microns.
+8. If this is your first layer, find an area with minimal contaminants, plan how many exposures you will do, and in which direction you will move. Otherwise, align to your previous layer using your pattern's alignment marks.&#x20;
+9. Once you're ready to expose, move the Z axis by 54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
+10. Set your exposure time to 8000 ms.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 160251.png" alt=""><figcaption><p>Well-focused UV, ready to expose.</p></figcaption></figure>
 
