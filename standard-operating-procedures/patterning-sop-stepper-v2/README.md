@@ -83,10 +83,10 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 5. See the [Vacuum Spin Coater SOP](https://hacker-fab.gitbook.io/hacker-fab-space/standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop). Remember to pipette an appropriate amount, close the lid, and turn on the vacuum.
 6. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
-7. If patterning on silicon or glass, spin coat 1-2 drops of HMDS. Otherwise skip to 7.
+7. If patterning on silicon or glass, spin coat 2-3 drops of HMDS. Otherwise skip to 7.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
-8. HMDS bake on the hot plate
-9. Spin coat as much photoresist as needed to mostly cover the chip, normally 2-3 drops.
+8. HMDS bake on the hot plate at 100°C for 60 seconds.
+9. Spin coat as much photoresist as needed to mostly cover the chip, normally 3-4 drops.
    1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
    2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
 
@@ -125,7 +125,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
-2. Push the projector to the left, out of the way of the small hole in the chip holding jig.
+2. LYFT and move the projector to the left, out of the way of the small hole in the chip holding jig.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -137,7 +137,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 ![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG\_6036 (1).jpg>)
 
-5. Push the projector back into place. Ensure it is touching all four bolts.
+5. LYFT and move the projector back into place. Ensure it is touching all four bolts. Be careful about not scratching the chip.
 
 <img src="../../.gitbook/assets/IMG_6039.jpg" alt="" data-size="original">
 
