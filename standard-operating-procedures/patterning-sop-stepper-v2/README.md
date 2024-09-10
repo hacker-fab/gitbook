@@ -147,14 +147,14 @@ If you're doing this for the first time, it is recommended to read through the f
 
 7. Move the X and Y axes manually, or by using the GUI. One arbitrary "step" is approximately equal to 1 micron. To avoid straining the motors/stage, test small step sizes (i.e. 1) before trying larger ones (i.e. 10 or more). The minimum reliable step size is about 8-12 microns.
 8. If this is your first layer, find an area with minimal contaminants, plan how many exposures you will do, and in which direction you will move. Otherwise, align to your previous layer using your pattern's alignment marks.&#x20;
-9. Once you're ready to expose, move the Z axis by 54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
+9. Once you're ready to expose, move the Z axis by -54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
 10. Set your exposure time to 8000 ms.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 160251.png" alt=""><figcaption><p>Well-focused UV, ready to expose.</p></figcaption></figure>
 
 12. Press show UV focus. You are now exposing the photoresist, so try to do this quickly. If necessary, make fine adjustments to the Z axis if any marks seem less in focus than others. The image above is well focused (all crosses look in focus).
 13. Press the big red "Begin Patterning" button. Avoid bumping the table while you wait for the exposure to finish.
-14. Press "Show Red Focus" and move in Z by -54 steps to switch back to red.
+14. Press "Show Red Focus" and move in Z by +54 steps to switch back to red.
 15. Move on to your next pattern and repeat. A good spacing between patterns is 580 steps in Y and 1080 steps in X (assuming one step per micron). This will allow you to easily find your next pattern. Take note of where you started, which direction you're moving, and how many exposures you've done so that you don't miss any patterns.
 16. Once you're finished, press "Clear". Push the projector to the left again, and carefully hold your chip with tweezers while you turn off the vacuum.
 
