@@ -1,4 +1,28 @@
-Thermal Evaporator SOP
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
+# Thermal Evaporator SOP
+
+***
+
+## Purpose
+
+Thermal evaporation heats up a metal (in this case Aluminum) to really hot temperatures in order to evaporate it onto the chip. Evaporatoing metals like aluminum is what allows us to conduct electricity through our design.
+
+***
+
+## Procedure
 
 1. Make sure the vacuum has been turned off for at least 5 minutes
 2. Make sure pressure is at room pressure (~1000 hPa). If it is not, slowly open the valve (black knob on the right side of the vacuum) and release pressure one order of magnitude about every 15 seconds
@@ -27,3 +51,18 @@ Thermal Evaporator SOP
 19. Press stop on the computer program
 20. Turn off the vacuum pump. WAIT at least 5 minutes
 21. After 5 minutes, slowly open the valve (black knob on the right side of the vacuum) and release pressure one order of magnitude about every 15 seconds
+
+***
+
+## Figures
+
+![evap_program](https://github.com/user-attachments/assets/10548e2b-cc14-48dc-b265-fd82b72b3ae9)
+
+
+\
+
+
+***
+
+\
+
