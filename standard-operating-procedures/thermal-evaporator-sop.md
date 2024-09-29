@@ -57,7 +57,7 @@ Thermal evaporation heats up a metal (in this case Aluminum) to really hot tempe
 ## Figures
 
 <img src="https://github.com/user-attachments/assets/10548e2b-cc14-48dc-b265-fd82b72b3ae9" width="500" height="800"/>
-<figcaption>Caption goes here</figcaption>
+<figcaption>*Caption goes here*</figcaption>
 Figure 1: Program on computer next to thermal evaporator, Note green start button to start, rate (A/s) in table, and thickness (Angstroms) in table
 
 
