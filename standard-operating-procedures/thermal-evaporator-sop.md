@@ -62,13 +62,28 @@ Thermal evaporation heats up a metal (in this case Aluminum) to really hot tempe
 
 <br />
 
+<img src="https://github.com/user-attachments/assets/ba945be4-baf1-49b2-ab07-94280e0faa0a" width="500" height="800"/>
+<br />
+<i>Figure 2: Front of thermal evaporator. A (red circle) indicates the screen which shows pressure while B (blue circles) indicates the lid's knobs </i>
 
+<br />
 
+<img src="https://github.com/user-attachments/assets/59a587ee-ac2b-4714-ad02-7c1dfd0f0b84" width="500" height="800"/>
+<br />
+<i>Figure 3: Right side of thermal evaporator. A (blue circle) indicates the knob to close and open the vent </i>
 
-\
+<br />
+
+<img src="https://github.com/user-attachments/assets/3a8de28a-9f92-4f90-a8e1-aaa95dfc43f4" width="500" height="800"/>
+<br />
+<i>Figure 4: Thermal evaporator with lid open. A (red circle) indicates where the tape and chip should be placed </i>
+
+<br />
+
+<img src="https://github.com/user-attachments/assets/ac94f7aa-9848-4896-9915-a45b899f118b" width="500" height="800"/>
+<br />
+<i>Figure 5: Inside of thermal evaporator. A (red circle) indicates the Tungsten coil, B (blue circles) screw the coil in place, and C (yelow circle) is the metal sheet blocking the vacuum </i>
 
 
 ***
-
-\
 
