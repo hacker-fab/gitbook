@@ -18,7 +18,7 @@ layout:
 
 ## Purpose
 
-Thermal evaporation heats up a metal (in this case Aluminum) to really hot temperatures in order to evaporate it onto the chip. Evaporatoing metals like aluminum is what allows us to conduct electricity through our design.
+Thermal evaporation heats up a metal (in this case Aluminum) to really hot temperatures in order to evaporate it onto the chip. Evaporating metals like aluminum is what allows us to conduct electricity through our design.
 
 ***
 
