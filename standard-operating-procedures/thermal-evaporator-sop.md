@@ -56,7 +56,7 @@ Thermal evaporation heats up a metal (in this case Aluminum) to really hot tempe
 
 ## Figures
 
-![evap_program](https://github.com/user-attachments/assets/10548e2b-cc14-48dc-b265-fd82b72b3ae9 =100x20)
+![evap_program](https://github.com/user-attachments/assets/10548e2b-cc14-48dc-b265-fd82b72b3ae9){ width=50% }
 *image_caption*
 
 
