@@ -21,6 +21,6 @@ layout:
 
 <figure><img src="../../.gitbook/assets/iv curves 11-23.png" alt=""><figcaption><p>IV Curves of Good NMOS Transistor November 2023. Red is Gate Leakage</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>NAND Gate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>NAND Gate</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Enhancement Mode NMOS Inverter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Enhancement Mode NMOS Inverter</p></figcaption></figure>

@@ -73,6 +73,7 @@
   * [Spin on Glass Thickness Measurement](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-thickness-measurement.md)
 * [Tube Furnace SOP](standard-operating-procedures/tube-furnace-sop.md)
 * [Glass Acid Etch SOP](standard-operating-procedures/glass-acid-etch-sop.md)
+* [DIY Thermal Evaporator SOP](standard-operating-procedures/diy-thermal-evaporator-sop.md)
 * [Evaporator SOP](standard-operating-procedures/evaporator-sop.md)
 * [Aluminum Etch SOP](standard-operating-procedures/aluminum-etch-sop.md)
 * [Probe Station SOP](standard-operating-procedures/probe-station-sop.md)

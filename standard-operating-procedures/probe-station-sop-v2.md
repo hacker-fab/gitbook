@@ -51,7 +51,7 @@ To enable precisely controlled experiments on microscopic chips, we currently us
 
 ### Run Program
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption><p>Program from Vscode view + terminal</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56) (1).png" alt=""><figcaption><p>Program from Vscode view + terminal</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-04-01 at 16.57.48.png" alt=""><figcaption><p>New window with plot of IV curves for ideal mosfet</p></figcaption></figure>
 

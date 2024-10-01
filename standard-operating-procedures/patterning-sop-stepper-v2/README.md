@@ -34,7 +34,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ## Safety
 
-* Harm to your eyes/eyesight is possible if you do not wear the right protective equipment. To shield your eyes from harmful UV-rays, everyone working with or near the stepper should wear UV-blocking goggles/glasses.&#x20;
+* Harm to your eyes/eyesight is possible if you do not wear the right protective equipment. To shield your eyes from harmful UV-rays, everyone working with or near the stepper should wear UV-blocking goggles/glasses.
 * HMDS is a toxic, volatile chemical that should only be used in the fume hood.
 * Photoresist, while not as bad as HMDS, contains some nasty solvents and should be cleaned with acetone if it gets on anything other than chips and the spin coater.
 * AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.
@@ -112,8 +112,8 @@ See the appendix for useful resources about spin coating, our resist, and develo
    3. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
    4. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
    5. For more information about the software and its usage, click the "help" button at the bottom right of the GUI.
-6. If you do not have an integrated GUI camera implemented and you are using the Flir Camera, open SpinView, select BlackFly S, and press the green play button. If you see horizontal bands across the live camera preview, follow the corresponding steps in [Troubleshooting](./#troubleshooting).&#x20;
-7. The GUI should appear similarly to below. If you do not see content on the camera preview yet, this is fine for now.&#x20;
+6. If you do not have an integrated GUI camera implemented and you are using the Flir Camera, open SpinView, select BlackFly S, and press the green play button. If you see horizontal bands across the live camera preview, follow the corresponding steps in [Troubleshooting](./#troubleshooting).
+7. The GUI should appear similarly to below. If you do not see content on the camera preview yet, this is fine for now.
 
 <figure><img src="../../.gitbook/assets/361065448-b9bd3507-418f-4569-82f7-4835a372ce67.png" alt=""><figcaption></figcaption></figure>
 
@@ -121,17 +121,17 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 If you're doing this for the first time, it is recommended to read through the full instructions before starting. You will need to move somewhat quickly because the stepper will begin to expose photoresist in about 1 minute.
 
-1. &#x20;Make sure the correct pattern is loaded in the Lithographer GUI. See step 4.4 in [#stepper-setup](./#stepper-setup "mention")
+1. Make sure the correct pattern is loaded in the Lithographer GUI. See step 4.4 in [#stepper-setup](./#stepper-setup "mention")
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 2. LYFT and move the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
 
 4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
@@ -146,7 +146,7 @@ If you're doing this for the first time, it is recommended to read through the f
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-17 155851.png" alt=""><figcaption><p>A well aligned exposure. Note that the previous layer is slightly smaller than the proected pattern.</p></figcaption></figure>
 
 7. Move the X and Y axes manually, or by using the GUI. One arbitrary "step" is approximately equal to 1 micron. To avoid straining the motors/stage, test small step sizes (i.e. 1) before trying larger ones (i.e. 10 or more). The minimum reliable step size is about 8-12 microns.
-8. If this is your first layer, find an area with minimal contaminants, plan how many exposures you will do, and in which direction you will move. Otherwise, align to your previous layer using your pattern's alignment marks.&#x20;
+8. If this is your first layer, find an area with minimal contaminants, plan how many exposures you will do, and in which direction you will move. Otherwise, align to your previous layer using your pattern's alignment marks.
 9. Once you're ready to expose, move the Z axis by -54 steps (fine-tune if necessary). This will switch from focusing in red to focusing in UV.
 10. Set your exposure time to 8000 ms.
 
@@ -180,7 +180,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 1. Look at the chip with your bare eyes to help build an intuition for the process.
 2. Put the chip under the microscope. Connect to the camera with your laptop and take pictures of each developed pattern at 5x. If there are smaller interesting features or defects, you may take pictures at higher magnification or under dark field. Be aware that it's easy to get carried away with the microscope.
-3. **If you want to measure the length of pitch in microns (**μm**) then you must use only the calibrated objective.**
+3. **If you want to measure the length of pitch in microns (μm) then you must use only the calibrated objective.**
    1. This calibration converts pixels of the camera to microns using a calibration slide from the manufacturer. If you use a different objective, the measurement will be inaccurate.
    2. After this is selected, measure the pitch or any other length using the line tool
 
@@ -238,4 +238,4 @@ If horizontal bands appear in Flir-based camera preview:
 
 <figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Example Flir Blackfly S Camera Settings</p></figcaption></figure>
 
-4. Verify that the horizontal bands are no longer present across the camera preview. This may be easier when viewing the stage or a chip while illuminated with the projector.&#x20;
+4. Verify that the horizontal bands are no longer present across the camera preview. This may be easier when viewing the stage or a chip while illuminated with the projector.
