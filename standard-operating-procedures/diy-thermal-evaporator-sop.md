@@ -40,13 +40,13 @@ Thermal evaporation heats up a metal (in this case Aluminum) to really hot tempe
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p><em>Figure 5: Program on computer next to thermal evaporator. Note green start button to begin, rate (A/s) in the table, and thickness (Angstroms) in the table on the computer program. A (yellow circle) indicates the power supply on bottom and B (red circle) indicates the knob for adjusting current.</em></p></figcaption></figure>
 
 * Press start on the computer as shown in Figure 5.
-* Turn up the current on the power source as shown in Figure 5. Keep adjusting the current to keep the rate between 30-100 Angstroms/second until the thickness hits 5 Angstroms.
+* Turn up the current on the power source as shown in Figure 5. Keep adjusting the current to keep the rate between 30-100 Angstroms/second until the thickness hits 5 kÅ.
   * If you click the dial, you can change the digit.
   * You will probably end up between 40-50 Amps.
   * The voltage and power will automatically change as you adjust the current, so you do not need to worry about it.
   * The pressure might increase to 1e-4 hPa which is not a problem.
-  * You may not get to 5 Angstroms so keep turning up the current. But after 5 minutes, if you keep increasing past 55 Amps and the thickness does not increase, the aluminum has probably already melted off. It is not a huge deal if the layer is thin for our NMOS process, but it is not ideal.
-* After the thickness hits 5 Angstroms, turn off the power source.
+  * You may not get to 5 kÅ so keep turning up the current. But after 5 minutes, if you keep increasing past 55 Amps and the thickness does not increase, the aluminum has probably already melted off. It is not a huge deal if the layer is thin for our NMOS process, but it is not ideal.
+* After the thickness hits 5 kÅ, turn off the power source.
 * Press stop on the computer program.
 * Turn off the vacuum pump. WAIT at least 5 minutes.
 * After 5 minutes, slowly open the valve (black knob on the right side of the vacuum) and release pressure one order of magnitude about every 15 seconds.
