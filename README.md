@@ -17,7 +17,7 @@ layout:
 
 <figure><img src=".gitbook/assets/Hacker Fab_Black w lilac.png" alt="" width="563"><figcaption></figcaption></figure>
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">discord.</td><td><a href="https://discord.gg/HFb3FKAxuX">https://discord.gg/HFb3FKAxuX</a></td><td><a href=".gitbook/assets/discord logo.png">discord logo.png</a></td></tr><tr><td align="center">github.</td><td><a href="https://github.com/hacker-fab">https://github.com/hacker-fab</a></td><td></td></tr><tr><td align="center">x.</td><td><a href="https://x.com/TheHackerFab">https://x.com/TheHackerFab</a></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">discord.</td><td><a href="https://discord.gg/HFb3FKAxuX">https://discord.gg/HFb3FKAxuX</a></td><td></td></tr><tr><td align="center">github.</td><td><a href="https://github.com/hacker-fab">https://github.com/hacker-fab</a></td><td></td></tr><tr><td align="center">x.</td><td><a href="https://x.com/TheHackerFab">https://x.com/TheHackerFab</a></td><td></td></tr></tbody></table>
 
 ## <mark style="color:purple;">intro.</mark>
 
@@ -35,8 +35,8 @@ The use of low-cost, abundant, and fast-turn-around hardware serves a larger pur
 
 |                                                                              |                                                               |
 | :--------------------------------------------------------------------------: | ------------------------------------------------------------- |
-| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4><mark style="color:green;">42</mark></h4>                 |
-|                        <h4>Number of Hacker Fabs</h4>                        | <h4><mark style="color:green;">1 (+1 in progress)</mark></h4> |
+| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4>75</h4>                                                   |
+|                        <h4>Number of Hacker Fabs</h4>                        | <h4>3 <mark style="color:green;">(+1 in progress)</mark></h4> |
 
 ***
 
@@ -56,9 +56,9 @@ We communicate entirely over [**Discord**](https://discord.gg/HFb3FKAxuX).
 
 This page is a home for all documentation. There are enough resources here to turn an empty room into one that fabricates simple IC's in a matter of months. Many pages are works in progress, as a lot of documentation is being migrated from our Google Drive.
 
-Click [here](http://hackerfab.hoster904.com/) to learn more about the first Hacker Fab at Carnegie Mellon University.
-
 Any contributor can submit change requests with a free Gitbook account. All of this is on Github, but formatted nicely here on Gitbook.
+
+For the most up-to-date status on everything, join the [**Discord**](https://discord.gg/HFb3FKAxuX).
 
 ***
 
@@ -87,7 +87,15 @@ Every build contains:
 
 ***
 
-## licensing.
+## background and licensing.
+
+The Hacker Fab was inspired by [Sam Zeloof](https://www.youtube.com/@SamZeloof).
+
+The Hacker Fab was started by Elio Bourcart, Alexander Hakim, and Sam Zeloof.
+
+The first Hacker Fab was opened at [Carnegie Mellon University](https://hackerfab.ece.cmu.edu/).
+
+The Hacker Fab is run entirely by independent contributors.
 
 <details>
 
