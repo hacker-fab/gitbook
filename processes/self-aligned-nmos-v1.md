@@ -20,7 +20,7 @@ layout:
 
 ### See Fabublox for Interactive View&#x20;
 
-{% embed url="https://www.fabublox.com/process-editor/45df196a-9cd0-459a-9e67-84c18a469115" %}
+{% embed url="[https://www.fabublox.com/process-editor/45df196a-9cd0-459a-9e67-84c18a469115](https://www.fabublox.com/process-editor/f52fe668-594d-4a94-bfb1-b1e3ce845f38)" %}
 
 ### Alternatively: See Google Sheets for Comprehensive Example with all Parameter Values (Chip 336 Shown Below)
 
