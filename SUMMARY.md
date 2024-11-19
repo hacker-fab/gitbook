@@ -6,7 +6,7 @@
 
 * [✨ Current Fab Capabilities](overview/current-fab-capabilities/README.md)
   * [Fab Capabilities November 2023](overview/current-fab-capabilities/fab-capabilities-november-2023.md)
-  * [Fab Capabilities May 2023](overview/current-fab-capabilities/current-fab-capabilities.md)
+  * [Fab Capabilities May 2023](overview/current-fab-capabilities/fab-capabilities-may-2023.md)
 
 ## 🟡 Guides
 
