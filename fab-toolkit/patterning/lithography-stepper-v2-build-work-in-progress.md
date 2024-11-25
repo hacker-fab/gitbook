@@ -380,12 +380,4 @@ Once the stepper is connected to a computer and the live camera feed is visible,
 
 Wear [UV-blocking glasses](https://www.amazon.com/Tool-Klean-Safety-Glasses-Protection/dp/B081BHTJT8/ref=sr_1_5?crid=38LVX5C7MIN2M\&keywords=uv+protection+glasses\&qid=1674228429\&sprefix=uv+protection+%2Caps%2C96\&sr=8-5) whenever light leakage from the projector is possible.
 
-## Validation and Characterization (WIP)
-
-Demonstrate the operation of the hardware and characterize its performance for a specific application.
-
-* Highlight a relevant use case.
-* If possible, characterize performance of the hardware over operational parameters.
-* Create a bulleted list describing the capabilities (and limitations) of the hardware. For example, load and operation time, spin speed, coefficient of variation, accuracy, precision, etc
-
 ## Appendix
