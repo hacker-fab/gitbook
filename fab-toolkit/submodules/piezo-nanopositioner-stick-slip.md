@@ -6,6 +6,8 @@ description: >-
 
 # Piezo Nanopositioner (Stick Slip)
 
+***
+
 ## **Background**
 
 **In this Document**
@@ -89,6 +91,18 @@ Vibrations are naturally created by the piezo element. They are undesired and in
 Manufacturing the chassis assembly out of a stiffer and heavier material and fixturing the assembly to a stable base reduces said vibrations and greatly increases the efficiency and reliability of the machine.
 
 This is especially critical for stages with more than one axis stacked on top of one another. This is yet to be tested.
+
+***
+
+## PCB Files on Github
+
+{% @github-files/github-code-block url="https://github.com/hacker-fab/piezo-nanopositioner" %}
+
+[PDu150](https://www.piezodrive.com/product/pdu150-three-channel-ultra-low-noise-150v-piezo-driver/) with a regular STM32 ADC was used for the testing below
+
+PCB files above are the 2nd iteration on a custom board, with higher resolution ADC
+
+
 
 ### **Example Configuration that Works**
 
