@@ -54,9 +54,11 @@ We communicate entirely over [**Discord**](https://discord.gg/HFb3FKAxuX).
 
 ## this website.
 
-This page is a home for all documentation. There are enough resources here to turn an empty room into one that fabricates simple IC's in a matter of months. Many pages are works in progress, as a lot of documentation is being migrated from our Google Drive.
+This page is a home for all shared documentation. There are enough resources here to turn an empty room into one that fabricates simple IC's in a matter of months.&#x20;
 
-Any contributor can submit change requests with a free Gitbook account. All of this is on Github, but formatted nicely here on Gitbook.
+Many pages are works-in-progress. It is natural for individual contributors' work-in-progress notes to exist on google drive, notion, etc. Links to these exist at the top of each page, however these notes **move to Gitbook as soon as possible**.
+
+Any contributor can submit change requests with a free Gitbook account. All of this is on Github, but formatted nicely here on Gitbook. You can contribute directly through Github as well.
 
 For the most up-to-date status on everything, join the [**Discord**](https://discord.gg/HFb3FKAxuX).
 
@@ -105,7 +107,7 @@ For example, if you release HDL files under CERN-OHL-W and then somebody uses th
 
 [https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes  ](https://ohwr.org/project/cernohl/wikis/faq#q-what-are-all-these-suffixes)
 
-[https://ohwr.org/cern\_ohl\_w\_v2.pdf](https://ohwr.org/cern\_ohl\_w\_v2.pdf)
+[https://ohwr.org/cern\_ohl\_w\_v2.pdf](https://ohwr.org/cern_ohl_w_v2.pdf)
 
 </details>
 
