@@ -9,7 +9,7 @@ Thermal evaporation heats up a metal (in this case Aluminum) to really hot tempe
 ### Preparation
 
 * Make sure the vacuum has been turned off for at least 5 minutes.
-* Make sure pressure is at room pressure (\~1000 hPa) as shown in Figure 1. If it is not, slowly open the valve (black knob on the right side of the vacuum) as shown in Figure 2, and release pressure one order of magnitude about every 15 seconds.
+* Make sure pressure is at room pressure (\~1000 hPa) as shown in Figure 1. If it is not, slowly open (counterclockwise) the valve (black knob on the right side of the vacuum) as shown in Figure 2, and release pressure one order of magnitude about every 15 seconds.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p><em>Figure 1: Front of thermal evaporator. A (red circle) indicates the screen which shows pressure while B (blue circles) indicates the lid's knobs and C (yellow circle) indicates the vacuum on/off button.</em></p></figcaption></figure>
 
