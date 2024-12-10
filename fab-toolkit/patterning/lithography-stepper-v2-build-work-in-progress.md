@@ -327,6 +327,23 @@ At the time of development the latest Python version the Flir Spinnaker SDK supp
    * `py -3.10 ./litho/scripts/Lithographer.py`
 5. For instructions on how to use the Stepper GUI software (including troubleshooting), please see the [Standard Operating Procedures](../../standard-operating-procedures/patterning-sop-stepper-v2/).
 
+#### Pattern_net Usage Example
+
+## Step 1: Navigate to the `pattern_net` Folder
+1. Run the following command to create a new Conda environment:
+
+* 'conda create -n pattern_net python=3.11.0
+* 'conda activate pattern_net
+* 'pip install -r requirements.txt
+
+2. Set the dataset, replace the data folder path to your local path:
+* '~/pattern_net_data/train
+* '~/pattern_net_data/test
+
+3. Run the training script:
+* 'python train.py
+
+
 #### Optional: Flir Spinnaker SDK (for software developers)
 
 The Stepper V2 build uses a Teledyne Flir camera and custom software written for it. The Stepper software uses the Flir Spinnaker SDK to integrate a live camera preview of the stepper's stage. Since the SDK and its derivative software are closed-source components, we currently do not possess the legal authority to grant access to our custom Flir camera driver to third parties. The following steps describe how to install the Flir Spinnaker SDK and how to develop your own driver. Please carefully review all terms, agreements, and licensing requirements. Follow the steps below.
