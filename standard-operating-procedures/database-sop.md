@@ -24,7 +24,7 @@ Note: You may need to change browser settings to allow insecure content or manua
 
 ## Running the program locally ##
 ### Prerequisites ###
-Install the required dependencies by running the following command (it’s highly recommended you work in a virtual environment)
+Install the required dependencies by running the following command (it’s highly recommended you work in a [virtual environment](https://docs.python.org/3/library/venv.html))
 
 	pip install requirements.txt
 
@@ -56,7 +56,7 @@ Cross-reference the new “db.sqlite3” and your initial migration file “0001
 Base all future model changes on this initial migration.
 
 Another migration issue we faced was the loss of existing data when renaming or altering tables and fields. We found that if we tried to rename fields and alter definitions in the same migration, the system would simply delete the old model and create a new one, which is bad because it deletes all existing data within the table. A workaround is to do renaming in one migration, then changing field definitions in another migration. This ensures that migration actions are limited to Rename and Alter (instead of Remove and Add/Create).
-Relevant Django documentation: Migration operations
+Relevant Django documentation: [Migration operations](https://docs.djangoproject.com/en/5.1/ref/migration-operations/)
 
 ### User Actions and Flow(bullet points for now. Will add details later):
 Login Page
