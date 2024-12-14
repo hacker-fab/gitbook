@@ -60,6 +60,7 @@
 * [🏘️ Submodules](fab-toolkit/submodules/README.md)
   * [Piezo Nanopositioner (Stick Slip)](fab-toolkit/submodules/piezo-nanopositioner-stick-slip.md)
   * [Interferometer](fab-toolkit/submodules/interferometer.md)
+* [📚 Database](fab-toolkit/digital-twins/database-build.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
@@ -82,6 +83,7 @@
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
+* [Database SOP](standard-operating-procedures/database-sop.md)
 
 ## 🟢 WORKING DOCS
 
