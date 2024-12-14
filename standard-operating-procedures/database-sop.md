@@ -15,25 +15,25 @@ layout:
 # Database SOP
 
 
-Accessing global website
+## Accessing global website ##
 On a browser, go to:
 
 	http://db.hackerfab.org
 
 Note: You may need to change browser settings to allow insecure content or manually change the URL from https to http. Sometimes certain browsers cause more problems than others, so we recommend trying a different browser if there are connection issues.
 
-Running the program locally (also will be updated in the primary README)
-Prerequisites
+## Running the program locally ##
+### Prerequisites ###
 Install the required dependencies by running the following command (it’s highly recommended you work in a virtual environment)
 
-pip install requirements.txt
+	pip install requirements.txt
 
-Running the web application
+### Running the web application
 Since we are using the Django web framework, running the program is a simple process.
 
 First, we need to apply the database migrations to ensure that the database schema matches the current state of our models. To do this, run the following command:
 
-python manage.py migrate
+	python manage.py migrate
 
 In the terminal, you should see migrations being printed out with a green OK next to each row indicating that the migration was successful. 
 
@@ -41,13 +41,13 @@ Note: You do not need to (and should not) run the makemigrations command despite
 
 Next we can run the web server locally on port 8000 with the following command:
 
-python manage.py runserver
+	python manage.py runserver
 
 To access the website that is running, on your web browser, visit the following page:
 
-http://127.0.0.1:8000
+	http://127.0.0.1:8000
 
-Fixing Migration Errors
+### Fixing Migration Errors
 A major source of merge issues originated from migration errors in the database when we changed table schemas. Common errors include “table/field not found” or “table/field already exists”. The best way to avoid these is to test code changes on the most recent version of the actual running database. 
 
 Download a copy of the sqlite3 database from the AWS instance and paste it into your code folder. 
@@ -58,7 +58,7 @@ Base all future model changes on this initial migration.
 Another migration issue we faced was the loss of existing data when renaming or altering tables and fields. We found that if we tried to rename fields and alter definitions in the same migration, the system would simply delete the old model and create a new one, which is bad because it deletes all existing data within the table. A workaround is to do renaming in one migration, then changing field definitions in another migration. This ensures that migration actions are limited to Rename and Alter (instead of Remove and Add/Create).
 Relevant Django documentation: Migration operations
 
-User Actions and Flow(bullet points for now. Will add details later):
+### User Actions and Flow(bullet points for now. Will add details later):
 Login Page
 Users use Google Oauth for logging in.
 Successful login redirects users to the dashboard page
