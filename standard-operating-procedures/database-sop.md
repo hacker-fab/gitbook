@@ -16,9 +16,7 @@ layout:
 
 
 ## Accessing global website ##
-On a browser, go to:
-
-	http://db.hackerfab.org
+On a browser, go to: [http://db.hackerfab.org](http://db.hackerfab.org)
 
 Note: You may need to change browser settings to allow insecure content or manually change the URL from https to http. Sometimes certain browsers cause more problems than others, so we recommend trying a different browser if there are connection issues.
 
