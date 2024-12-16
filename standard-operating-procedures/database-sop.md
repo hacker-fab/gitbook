@@ -56,121 +56,164 @@ Base all future model changes on this initial migration.
 Another migration issue we faced was the loss of existing data when renaming or altering tables and fields. We found that if we tried to rename fields and alter definitions in the same migration, the system would simply delete the old model and create a new one, which is bad because it deletes all existing data within the table. A workaround is to do renaming in one migration, then changing field definitions in another migration. This ensures that migration actions are limited to Rename and Alter (instead of Remove and Add/Create).
 Relevant Django documentation: [Migration operations](https://docs.djangoproject.com/en/5.1/ref/migration-operations/)
 
-### User Actions and Flow:
+## User Actions and Flow: ##
 The Hacker Fab database was built to streamline how users manage fabrication data, balancing functionality with simplicity. The system guides users through a clear and intuitive flow, starting from secure authentication all the way to advanced data exploration. Below is a detailed breakdown of each page’s purpose, how users interact with it, and the challenges we tackled during the development.
 The Hacker Fab database was built to make managing fabrication data simple yet powerful. We aimed to create a system that keeps complex data organized while remaining easy to use, so users can focus on their work without getting lost in the tools. The platform guides users through a smooth and intuitive process, starting with secure authentication using Google OAuth and leading all the way to advanced data exploration with customizable filters. Every aspect of the design was intentionally created to balance functionality and usability. Each page is deconstructed in the following sections, describing how users use it and the challenges of each.
 
-Login/Registration Page
-The Login Page provides secure access using Google Oauth. Users who are not yet registered are redirected to the Registration Page, where they create accounts via Oauth integration. The use of Oauth eliminates the need for manual passwords while ensuring security. Successful authentication redirects users to the Dashboard Page.
+**1. Login/Registration Page**
+
+The **Login Page** provides secure access using Google Oauth. Users who are not yet registered are redirected to the **Registration Page**, where they create accounts via Oauth integration. The use of Oauth eliminates the need for manual passwords while ensuring security. Successful authentication redirects users to the **Dashboard Page**.
 The current design includes both Google Oauth and manual username/password inputs. Moving forward, the manual login option will be removed, and Oauth will be the sole method for authentication to simplify the process and enhance security. This update is planned for next semester.
+
 <img width="1381" alt="Screenshot 2024-12-16 at 9 12 15 PM" src="https://github.com/user-attachments/assets/a330b1ea-ebf0-4575-aaba-09d1b383473c" />
+
 <img width="1356" alt="Screenshot 2024-12-16 at 9 12 26 PM" src="https://github.com/user-attachments/assets/70f3527a-9962-4762-b0be-17cdc40c878e" />
+
 <img width="1350" alt="Screenshot 2024-12-16 at 9 12 33 PM" src="https://github.com/user-attachments/assets/f3d9b4cf-1b84-4b94-be38-392478bfcad5" />
+
 <img width="1350" alt="Screenshot 2024-12-16 at 9 12 39 PM" src="https://github.com/user-attachments/assets/ee2f82d5-a5ce-40f3-a43b-d3f438911d20" />
 
 
+**2. Dashboard Page (My Chips Page)**
 
+The **Dashboard Page** serves as the main hub where users can view, manage, and navigate through their chip entries. This page displays a table listing all chips created by the logged-in-user. Each chip entry includes a clickable chip number, which leads to the **Existing Chip Page(Chip Num Page)** for further details. Users can also create new chips by navigating to the **New Chip Page**.
 
-
-Dashboard Page (My Chips Page)
-The Dashboard Page serves as the main hub where users can view, manage, and navigate through their chip entries. This page displays a table listing all chips created by the logged-in-user. Each chip entry includes a clickable chip number, which leads to the Existing Chip Page(Chip Num Page) for further details. Users can also create new chips by navigating to the New Chip Page.
 <img width="604" alt="Screenshot 2024-12-16 at 10 14 16 PM" src="https://github.com/user-attachments/assets/6a9708a3-461b-4d9a-8f00-b33b1ffb26bf" />
+
 <img width="1382" alt="Screenshot 2024-12-16 at 9 12 21 PM" src="https://github.com/user-attachments/assets/f95fb9ce-fc38-4058-9071-262438a2e9b7" />
 
 
 
-Existing Chip Page(Chip Num Page)
-The Existing Chip Page(Chip Num Page) provides a detailed description of the selected chip, displaying all its associated processes and parameters. Users who own the chip can edit its details, while others are limited to a read-only view. The page includes collapsible sections for better organization and clarity.
+**3. Existing Chip Page(Chip Num Page)**
+
+The **Existing Chip Page(Chip Num Page)** provides a detailed description of the selected chip, displaying all its associated processes and parameters. Users who own the chip can edit its details, while others are limited to a read-only view. The page includes collapsible sections for better organization and clarity.
+
 <img width="829" alt="Screenshot 2024-12-16 at 9 13 09 PM" src="https://github.com/user-attachments/assets/577ca809-2e7b-4b6a-b512-d6ab6d2154ce" />
+
 <img width="751" alt="Screenshot 2024-12-16 at 9 13 13 PM" src="https://github.com/user-attachments/assets/3bbc0a8d-f868-4ff2-99c9-81fdbda7c50b" />
 
 
 
-Central Chip Page
-The Central Chip Page expands visibility to all chips in the system, supporting collaboration between different users and institutions. Chips are displayed in a table format, similar to the Dashboard, with pagination, ensuring efficient performance when handling big datasets.
+**4. Central Chip Page**
+
+The **Central Chip Page** expands visibility to all chips in the system, supporting collaboration between different users and institutions. Chips are displayed in a table format, similar to the Dashboard, with pagination, ensuring efficient performance when handling big datasets.
+
 <img width="1359" alt="Screenshot 2024-12-16 at 9 12 55 PM" src="https://github.com/user-attachments/assets/539fd630-7554-4842-9311-cf2da45f68ad" />
 
 
-New Chip Page
-On the New Chip Page, users can create new chips by typing in the chip number and choosing the functions from a dropdown. Users begin by entering a unique chip number and selecting a process type from a dropdown menu. If a pre-defined chip profile, such as the NMOS process, is selected, the system automatically pre-fills the relevant parameters with standard values, streamlining the workflow for common fabrication processes. Alternatively, users can choose to create a completely custom profile, which directs them to a blank chip page where they can manually add process steps and parameters from scratch. This black setup provides full control over fabrication details. Once the chip entry is submitted, the chip is added to the Dashboard Page, where users can view and manage it alongside their existing chips.
+**5. New Chip Page**
+
+On the **New Chip Page**, users can create new chips by typing in the chip number and choosing the functions from a dropdown. Users begin by entering a unique chip number and selecting a process type from a dropdown menu. If a pre-defined chip profile, such as the NMOS process, is selected, the system automatically pre-fills the relevant parameters with standard values, streamlining the workflow for common fabrication processes. Alternatively, users can choose to create a completely custom profile, which directs them to a blank chip page where they can manually add process steps and parameters from scratch. This black setup provides full control over fabrication details. Once the chip entry is submitted, the chip is added to the **Dashboard Page**, where users can view and manage it alongside their existing chips.
+
 <img width="1352" alt="Screenshot 2024-12-16 at 9 13 31 PM" src="https://github.com/user-attachments/assets/5f45d431-fd96-4557-827c-62e79727aab9" />
 
 
 
-Search Page
-The Search Page is designed to help users locate chips and processes using filters. Advanced search options allow users to group results by process type or chip number and filter by parameter ranges. Search results are displayed in a clean, horizontal table layout that improves readability and quick comparisons.
+**6. Search Page**
+
+The **Search Page** is designed to help users locate chips and processes using filters. Advanced search options allow users to group results by process type or chip number and filter by parameter ranges. Search results are displayed in a clean, horizontal table layout that improves readability and quick comparisons.
+
 <img width="1147" alt="Screenshot 2024-12-16 at 9 13 42 PM" src="https://github.com/user-attachments/assets/6886ebcd-cb1c-4454-80e5-83457f7de92e" />
 
 
 
-Profile Page
-The Profile Page allows users to view and manage their account information. Users can update personal details such as their name and email, as well as their bio messages to ensure their credentials remain accurate and up-to-date. A unique feature of the page is the ability to upload a profile image by selecting a file. The uploaded image is displayed within a rectangular frame styled to resemble a chip being held, aligning with the overall theme of the fabrication process. 
-For security and consistency, authentication details, including passwords, are managed externally through Google Oauth, so no manual password updates are needed within the system. The page is designed to be minimalistic and user-friendly, with clearly labeled fields and straightforward editing options. Changes made on the Profile Page are immediately reflected in the system, maintaining synchronization with user-related records.
+**7. Profile Page**
+
+The **Profile Page** allows users to view and manage their account information. Users can update personal details such as their name and email, as well as their bio messages to ensure their credentials remain accurate and up-to-date. A unique feature of the page is the ability to upload a profile image by selecting a file. The uploaded image is displayed within a rectangular frame styled to resemble a chip being held, aligning with the overall theme of the fabrication process. 
+For security and consistency, authentication details, including passwords, are managed externally through Google Oauth, so no manual password updates are needed within the system. The page is designed to be minimalistic and user-friendly, with clearly labeled fields and straightforward editing options. Changes made on the **Profile Page** are immediately reflected in the system, maintaining synchronization with user-related records.
+
 <img width="1338" alt="Screenshot 2024-12-16 at 9 13 48 PM" src="https://github.com/user-attachments/assets/9ac45c86-144b-4267-a612-0471b5c6e9a0" />
 
 
-General Navigation
-Navigation is consistent and intuitive. The Hacker Fab logo links to the Home(Dashboard) Page, and users can access their Profile Page in the header via clicking on their name. This page allows users to update their credentials, including their name and email.
+**8. General Navigation**
+
+Navigation is consistent and intuitive. The Hacker Fab logo links to the **Home(Dashboard) Page**, and users can access their Profile Page in the header via clicking on their name. This page allows users to update their credentials, including their name and email.
 
 
 
-Challenges and Problems:
+## Challenges and Problems: ##
+
 Throughout the development of the Hacker Fab database, we encountered various challenges that required iterative improvements. These challenges ranged from technical errors to usability concerns, and addressing them was critical in shaping the final product. Below is the breakdown of the key challenges for each page and the solutions implemented.
-Oauth Integration Issues
+
+### Oauth Integration Issues ###
 To enable secure authentication, we implemented Google Oauth, which allows users to log in or register without manual password management. The integration process required updates across three areas:
-Google Cloud Settings
+
+**1. Google Cloud Settings**
+
 In the Google Cloud Console, these were the steps taken:
-Created a new project
-Configured Oauth consent settings
-Generated Client ID and Client Secret
-Set the Authorized Redirect URIs to match both local development and production environments:
-Local : http://127.0.0.1:8000/oauth/complete/google-oauth2/  & http://localhost:8000/oauth/complete/google-oauth2/
-Production: http://db.hackerfab.org/oauth/complete/google-oauth2/ 
+- Created a new project
+- Configured Oauth consent settings
+- Generated Client ID and Client Secret
+- Set the Authorized Redirect URIs to match both local development and production environments:
+	- Local: http://127.0.0.1:8000/oauth/complete/google-oauth2/  & http://localhost:8000/oauth/complete/google-oauth2/
+	- Production: http://db.hackerfab.org/oauth/complete/google-oauth2/
+ 
 <img width="601" alt="Screenshot 2024-12-16 at 10 16 20 PM" src="https://github.com/user-attachments/assets/b500d94b-1686-4879-bedd-71ffb2287601" />
+
 <img width="599" alt="Screenshot 2024-12-16 at 10 16 30 PM" src="https://github.com/user-attachments/assets/e90aa462-a76d-459e-99a6-a3b8d7340446" />
 
-
-
-Config.ini File for Secure Credentials
+**2. Config.ini File for Secure Credentials**
+ 
 To avoid hardcoding sensitive information, the Oauth credentials were stored securely in a config.ini file.
+
 <img width="605" alt="Screenshot 2024-12-16 at 10 16 41 PM" src="https://github.com/user-attachments/assets/93b37cbf-eb92-4f5f-a927-c134ffe361b6" />
 
-Django settings.py Changes
+
+**3. Django settings.py Changes**
+
 The credentials were then loaded into settings.py using the ConfigParser library the social-auth-app-django library.
+
 <img width="607" alt="Screenshot 2024-12-16 at 10 16 50 PM" src="https://github.com/user-attachments/assets/a4154a61-78ed-4ae1-921e-133ed475cdd3" />
+
 <img width="337" alt="Screenshot 2024-12-16 at 10 16 59 PM" src="https://github.com/user-attachments/assets/99c5219d-1a82-411d-a2ff-e7e611136870" />
+
 <img width="602" alt="Screenshot 2024-12-16 at 10 17 06 PM" src="https://github.com/user-attachments/assets/dcc13276-f4c4-4235-9cad-9e742421ecd6" />
 
-
-
-HTML Updates
+**4. HTML Updates**
+ 
 <img width="603" alt="Screenshot 2024-12-16 at 10 17 14 PM" src="https://github.com/user-attachments/assets/23be373d-2cf5-418b-a19c-d8ce8aa2efb9" />
 
-Minor Issue:
+**Minor Issue:**
+
 <img width="606" alt="Screenshot 2024-12-16 at 10 17 24 PM" src="https://github.com/user-attachments/assets/aafd3dfc-01e7-4dc7-9f49-bbec15163140" />
 
 During local testing, this error occurred because the Oauth library dependencies were missing. This was quickly resolved by installing the required packages:
-	% pip install social-auth-app-django
-% pip install google-auth google-auth-oauthlib
-SSL certificate handling: HTTP → HTTPS Conversion
+
+**% pip install social-auth-app-django**
+
+**% pip install google-auth google-auth-oauthlib**
+ 
+### SSL certificate handling: HTTP → HTTPS Conversion ###
 One of the most critical challenges were enabling HTTPS for secure data transmission. This process involved:
-SSH Connection to the Server
+
+**1. SSH Connection to the Server**
+
 To configure HTTPS, access to the server was required. The private key file was first secured with appropriate permissions to ensure restricted access:
-	% chmod 400 /Users/minjikim/Downloads/HackerFabDB.pem
+
+**% chmod 400 /Users/minjikim/Downloads/HackerFabDB.pem**
+
 Using the private key, we connected to the AWS EC2 instance:
-% ssh -i /Users/minjikim/Downloads/HackerFabDB.pem ubuntu@ec2-18-117-195-169.us-east-2.compute.amazonaws.com (one command)
+
+**% ssh -i /Users/minjikim/Downloads/HackerFabDB.pem ubuntu@ec2-18-117-195-169.us-east-2.compute.amazonaws.com (one command)**
+
 Once connected, all further configurations for SSL were performed directly on the server.
-Installing Cerbot for SSL Certificates
+
+**2. Installing Cerbot for SSL Certificates**
+
 We used Cerbot to automate the process of obtaining and configuring SSL certificates with Let’s Encrypt:
-	% sudo apt update
-% sudo apt install certbot python3-certbot-nginx
+
+**% sudo apt update**
+
+**% sudo apt install certbot python3-certbot-nginx**
+ 
 Configuring Ngnix to redirect HTTP to HTTPS and load the SSL certificate
 The Nginx configuration was updated to redirect HTTP to HTTPS and include SSL settings. Cerbot handled much of this automatically with the following command:
-	% sudo certbot –nginx -d db.hackerfab.org
-Minor Issue:
+
+**% sudo certbot –nginx -d db.hackerfab.org**
+
+**Minor Issue:**
 While the HTTPS conversion was successful, the CSS files were not loading correctly on the production site. This problem is likely due to the static file configurations not working properly with HTTPS, or absolute paths still pointing to HTTP. This will be one of the first things I will tackle next semester to ensure the static files load properly.
 
 
-
-Planned Improvements & Final Comment
+## Planned Improvements & Final Comment ##
 The Hacker Fab database has made significant strides this semester, greatly improving usability and core functionality. While the current design delivers a functional and intuitive experience, some CSS styling elements, such as form alignment, button styling, and page responsiveness, are not yet fully complete. These refinements, along with improvements to static file handling, are planned for next semester to address remaining hurdles and ensure the platform evolves into an even more polished and seamless tool for its users.
