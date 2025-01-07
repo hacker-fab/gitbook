@@ -88,6 +88,8 @@
 ## 🟢 WORKING DOCS
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
+* [CMU Updates](working-docs/cmu-updates/README.md)
+  * [Test Student](working-docs/cmu-updates/test-student.md)
 
 ## 🔲 Templates (to do)
 
