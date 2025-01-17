@@ -90,6 +90,7 @@
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CMU Updates](working-docs/cmu-updates/README.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
+  * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
 
 ## 🔲 Templates (to do)
 
