@@ -94,6 +94,7 @@
   * [Example Student](working-docs/cmu-updates/example-student.md)
   * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
   * [Michael Juan](working-docs/cmu-updates/michael-juan.md)
+  * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
 
 ## 🔲 Templates (to do)
 
