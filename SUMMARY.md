@@ -97,6 +97,7 @@
   * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
   * [Michael Juan](working-docs/cmu-updates/michael-juan.md)
   * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
+  * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
 
 ## 🔲 Templates (to do)
 
