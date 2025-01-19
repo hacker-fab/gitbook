@@ -98,6 +98,7 @@
   * [Michael Juan](working-docs/cmu-updates/michael-juan.md)
   * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
   * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
+  * [Marta Freitas](working-docs/cmu-updates/marta-freitas.md)
 
 ## 🔲 Templates (to do)
 
