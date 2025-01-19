@@ -93,6 +93,7 @@
   * [Gongwei Wang's updates](working-docs/cmu-updates/gongwei-wangs-updates.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
   * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
+  * [Michael Juan](working-docs/cmu-updates/michael-juan.md)
 
 ## 🔲 Templates (to do)
 
