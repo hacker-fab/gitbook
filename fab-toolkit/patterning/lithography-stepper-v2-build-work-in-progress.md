@@ -95,7 +95,7 @@ When assembling the UV LED PCB, it is easiest to use a solder syringe to careful
 Once the paste is applied, you can use a pick and place machine to align the components with their pads. Keep in mind that you need to use a nozzle that is small enough to pick up the LEDs. Finally, you can put the PCB into a reflow oven to solder the components to the board.
 
 Below is a completed version of the PCB - **note the polarity!** This image shows the correct orientation of the LEDs (credit to University of Utah for the photo). If you have it flipped, then the projector will project an image briefly before shutting itself off:\
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (1).png>)
 
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB. To see the UV light, simply look at the leds through your phone's camera, as the sensors see it as purple light.
 
@@ -103,11 +103,11 @@ You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to
 
 Taking pictures after every step is key to ensuring you can put it back together properly.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 2. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
@@ -189,7 +189,7 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 2. Press fit the three sliding shaft couplers onto the three micrometer handles until the knurled surface is fully covered. They should fit with significant force and maybe gentle hammering. Be careful - the micrometer handles may have different diameters so you may need to modify the CAD and reprint to get a correct fit.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. The shaft couplers should slide on the motor shafts with zero slop. Modify dimensions and re-print if this is not the case. Graphite lubricant may help decrese sliding friction, and the fit will get looser after repeated axial movement as the steel deforms and smooths the plastic.
 

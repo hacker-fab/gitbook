@@ -12,13 +12,13 @@ layout:
     visible: false
 ---
 
-# Evaporator SOP
+# MTI Evaporator SOP (No longer in use)
 
 
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
 
 ***
 
@@ -31,13 +31,13 @@ layout:
 
 ## Purpose
 
-![](https://lh4.googleusercontent.com/yv3Xvd\_KIRFxikW8IXeoZz1DrsRdIafct336MdBGMAKMBAcVv4k3aiLItyXGGFSA6E8y3ncllHQAcnt8YQhpf10OkZLj39s-UvdM6QOPQ19bSnF46kU1N6VdMYFmDuNQvpSWjqaXJU4cdtVMF84BIsk)
+![](https://lh4.googleusercontent.com/yv3Xvd_KIRFxikW8IXeoZz1DrsRdIafct336MdBGMAKMBAcVv4k3aiLItyXGGFSA6E8y3ncllHQAcnt8YQhpf10OkZLj39s-UvdM6QOPQ19bSnF46kU1N6VdMYFmDuNQvpSWjqaXJU4cdtVMF84BIsk)
 
 Figure from Microchip Fabrication (Van Zant, 2004)
 
 Thermal evaporation is a layer deposition technique wherein the vapor pressure of a material is increased via resistive heating while the surrounding air is evacuated below that vapor pressure. The [mean free path](https://www.pfeiffer-vacuum.com/en/know-how/introduction-to-vacuum-technology/fundamentals/mean-free-path/) of gas in the chamber, which is determined by the pressure, must also be larger than the source to substrate distance. Under these conditions, the material evaporates into the vacuum and then coats any exposed surfaces. This is how we create deposit layers of metal, which are later etched into wires, and contact pads.
 
-The Hacker Fab currently uses aluminum for wiring because it’s relatively conductive, fast to evaporate, and cheap. However, it can be tricky to evaporate because it alloys readily with many refractory metals. This is described in depth [here](https://www.lesker.com/newweb/deposition\_materials/deposition-materials-notes.cfm?pgid=al1). We currently use an alumina crucible which seems to work for a handful of evaporations, though other setups may be more effective and should be tested.
+The Hacker Fab currently uses aluminum for wiring because it’s relatively conductive, fast to evaporate, and cheap. However, it can be tricky to evaporate because it alloys readily with many refractory metals. This is described in depth [here](https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=al1). We currently use an alumina crucible which seems to work for a handful of evaporations, though other setups may be more effective and should be tested.
 
 ***
 
@@ -57,8 +57,8 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 
 ### Preparation
 
-1. Open the [Evaporation Data](https://docs.google.com/spreadsheets/d/1pLmIeejaP6-JWRBXLnWrWZQuf21\_CxsJdZeJoiU9y5w/edit?usp=sharing) sheet and plan your experiment.
-2. (Recommended) Use piranha solution or [O2 plasma](https://docs.google.com/document/d/18O1M\_P8trr4wdzKeulmmXW6kANNKmp0MQrCSmAgrgFM/edit?usp=sharing) to clean the chip.
+1. Open the [Evaporation Data](https://docs.google.com/spreadsheets/d/1pLmIeejaP6-JWRBXLnWrWZQuf21_CxsJdZeJoiU9y5w/edit?usp=sharing) sheet and plan your experiment.
+2. (Recommended) Use piranha solution or [O2 plasma](https://docs.google.com/document/d/18O1M_P8trr4wdzKeulmmXW6kANNKmp0MQrCSmAgrgFM/edit?usp=sharing) to clean the chip.
 3. Place the chip on a hot plate at 180°C for 90 minutes. Cover it to avoid surface contamination.
 4. Wear gloves while handling parts exposed to vacuum because oil from your hands will outgas.
 5. Use double sided kapton tape to attach the chip(s) to the center of the substrate holder.
@@ -66,14 +66,14 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 
 ### Bakeout
 
-1. Use double sided kapton tape to attach the chip(s) to the center of the substrate holder.![](https://lh6.googleusercontent.com/9NKK\_9\_h\_\_AKVDh1-1foSxiXcjLL4kise\_raDG2HCA8MmmvWU9OFTTzazokaXLYgdicB0TnPsvD4SMcC-LD3xwRjsY8Yhcq8wdRpykdcAESKPtfhH2eptlbX0Q86TDZ2zoASNXuDiXFWlyNCWA2RKjk)
+1. Use double sided kapton tape to attach the chip(s) to the center of the substrate holder.![](https://lh6.googleusercontent.com/9NKK_9_h__AKVDh1-1foSxiXcjLL4kise_raDG2HCA8MmmvWU9OFTTzazokaXLYgdicB0TnPsvD4SMcC-LD3xwRjsY8Yhcq8wdRpykdcAESKPtfhH2eptlbX0Q86TDZ2zoASNXuDiXFWlyNCWA2RKjk)
 2. Carefully close the chamber.
 3. Check that the vent knob on the turbopump is fully closed by turning clockwise.
 4. Start the vacuum by pressing the on/off button on the pump.
 
-![](https://lh4.googleusercontent.com/xCCTs0kXiXJMCuR3\_fyMlPI1FLkjscfvJLRqQDn1mLsQyrhwaw9U7yJxXDkKYlScPsGv\_Dc4fpo7hCTS01DJ\_YQ64udh\_0UotkJOeIecCxjwFShNk-rX9l5\_pebQDDCm\_38steTymFZ6bDwNPpm\_jq4)
+![](https://lh4.googleusercontent.com/xCCTs0kXiXJMCuR3_fyMlPI1FLkjscfvJLRqQDn1mLsQyrhwaw9U7yJxXDkKYlScPsGv_Dc4fpo7hCTS01DJ_YQ64udh_0UotkJOeIecCxjwFShNk-rX9l5_pebQDDCm_38steTymFZ6bDwNPpm_jq4)
 
-5. Program the bakeout sequence to ramp to 700°C over 2000 s, then hold for 3600 s, then ramp down over 2000 s. Refer to page 15 of the [evaporator manual](https://drive.google.com/file/d/163nug7sO17XjpK8Gmx-9\_C81ZMmk-d6B/view?usp=share\_link) for detailed programming instructions.&#x20;
+5. Program the bakeout sequence to ramp to 700°C over 2000 s, then hold for 3600 s, then ramp down over 2000 s. Refer to page 15 of the [evaporator manual](https://drive.google.com/file/d/163nug7sO17XjpK8Gmx-9_C81ZMmk-d6B/view?usp=share_link) for detailed programming instructions.&#x20;
 6. Wait for the pressure to get below 5E-5 hPa. You can also program the bakeout to have a long 0°C segment at the beginning.
 7. Make sure that the current knob on the side of the evaporator is in the “Auto” position.
 8. Press “Set” and “◀” to return to the standby state, then press and hold “▼” for 2 seconds to start the program. Press the green run button to enable current flow.
@@ -101,7 +101,7 @@ The Hacker Fab currently uses aluminum for wiring because it’s relatively cond
 6. Open the chamber and place the substrate holder face up.
 7. Use a utility knife blade to separate the chip(s) from the substrate holder.
 8. Peel/scrape off any tape residue left on the chip.
-9. Take inspection pictures and upload them in a new [Evaporation Photos](https://drive.google.com/drive/folders/1UahZeNBUPMZiq7Gocv0FQa7C8czsouz5?usp=share\_link) folder, then link that folder in the [Evaporation Data](https://docs.google.com/spreadsheets/d/1pLmIeejaP6-JWRBXLnWrWZQuf21\_CxsJdZeJoiU9y5w/edit?usp=sharing) spreadsheet.
+9. Take inspection pictures and upload them in a new [Evaporation Photos](https://drive.google.com/drive/folders/1UahZeNBUPMZiq7Gocv0FQa7C8czsouz5?usp=share_link) folder, then link that folder in the [Evaporation Data](https://docs.google.com/spreadsheets/d/1pLmIeejaP6-JWRBXLnWrWZQuf21_CxsJdZeJoiU9y5w/edit?usp=sharing) spreadsheet.
 
 ### Anneal
 
