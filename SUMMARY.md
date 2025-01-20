@@ -100,6 +100,7 @@
   * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
   * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
   * [Marta Freitas](working-docs/cmu-updates/marta-freitas.md)
+  * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates.md)
 
 ## 🔲 Templates (to do)
 
