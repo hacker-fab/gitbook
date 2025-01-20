@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# Spin on Glass SOP
+# Spin on Glass/Diffusant SOP
 
 
 
@@ -24,31 +24,33 @@ layout:
 
 ***
 
-| Total Time                                                                 | 20 minutes         |
-| -------------------------------------------------------------------------- | ------------------ |
-| Spin Speed                                                                 | 4000 rpm           |
-| Spin Time                                                                  | 30s                |
-| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | \[100, 2, 400, 15] |
-
-#### For more detailed parameters:
-
-[700B Process Sheet](https://docs.google.com/spreadsheets/d/1fmgTan5MyL4VjxuGR8\_-XMnE9dZDns9QorDNwK\_PFyc/edit#gid=0)
-
-[P504 Process Sheet](https://docs.google.com/spreadsheets/u/3/d/182fEtTWk\_8xHNYmWTH\_aYQlMbS8q68xoudcD6ADTvAQ/edit?usp=drive\_web\&ouid=115587224328658053131)
+| Total Time                                                                 | 15-35 minutes                                                            |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Spin Speed                                                                 | 4000 rpm                                                                 |
+| Spin Time                                                                  | 20s                                                                      |
+| Anneal Temperature Profile \[temp 1, time 1, temp 2, time 2...] \[°C, min] | **700B**: \[400, 20-30], **P504**: \[200, 10-15], **B154** \[200, 10-15] |
 
 ***
 
 ## Purpose
 
-700B (undoped) SOG
+Three types of "spin on glass" are currently used in the Hacker Fab. 700B, P504, and B154, all three sourced from Filmtronics. Each of these begin as liquids, which are spun onto the surface of the chip, then annealed to form solid thin films. This is known as a sol-gel process.&#x20;
 
-As seen in the cross sections above. 700B is applied after the gate etch is performed. The purpose of 700B is then to protect certain areas of the wafer from P504 during the doping process. More specifically the 700B blocks off everywhere but the active areas. This means that the 700B layer must be consistent and impermeable, so, cracks and pinholes may be detrimental to the function of the chips transistors since they could allow dopant to leak into undesired areas of the chip.&#x20;
+700B becomes an undoped thin film of SiO2, but with lower density than a thermally grown SiO2. After high temperature exposure (\~1100C) this thin film densifies to the density of a thermally grown oxide.
 
-The other purpose of the 700B is to act as a dielectric and insulate between contact areas on the chip. The resulting requirement is that the 700B layer is not conductive (which it is not)
+P504 becomes a thin film of SiO2, with a small amount of Phosphorous in it, also with lower density than a thermally grown SiO2. This is also referred to as a "spin on diffusant." After high temperature diffusion (\~1100C) this thin film densifies to the density of a thermally grown oxide.
 
+B154 does not have SiO2 precursors like 700B and P504, but becomes a solid thin film with a small amount of Boron in it. The composition of this solid film after relatively low temperature exposure (\~200) is not clear, since the formula is proprietary, but it is believed to be some sort of polymer. Upon diffusion (exposure around \~1100C) the B154 thin film becomes SiO2 of thermally grown density.
 
+These spin on glass films are often etched with a dilute HF solution, or BOE (HF + NH4F) due to the high selectivity with Si. However, the etch rate of spin on glass annealed around 400C is much faster than that of spin on glass that has been densified at around 1100C. Additionally, the B154 film that has been annealed at 200C is not effectively etched with HF, but is effectively etched with HF after diffusion at 1100C.
 
-P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will diffuse into the silicon over time and this can be significantly sped up by heating it up in the tube furnace.&#x20;
+As indicated above, the purpose of the P504 and B154 deposition is to create a dopant source at the surface of the silicon, which can be diffused into the silicon substrate. 700B is used as a diffusion barrier, or a dielectric layer to fabricate metal interconnects on top of.
+
+### Defects
+
+The main concern with spin on glass, is its tendency to crack (extent of cracking varies, but full shatter can occur leading to flake off), have variation in uniformity, and have pinholes. Cracks and pinholes can lead to uneven doping across the surface, failure of 700B to act as a diffusion barrier, or metal interconnects shorting to the Si below. Factors like humidity, annealing temperature profile, particulate contamination, and shelf life of the spin on glass solution.
+
+However, the CMU Hacker Fab has found particulate contamination to be the number one cause of defects, and this issue has been mitigated greatly by using filtered syringe tips during deposition, as seen below in the procedure.
 
 ***
 
@@ -59,7 +61,7 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 ## Materials
 
-1. Filmtronics 700B (undoped) or P504 (dopant) Spin On Glass
+1. Filmtronics 700B, P504, or B154.
    1. [Storage and Preparation](spin-on-glass-storage-and-preperation.md)
 2. Acetone
 3. Isopropanol
@@ -68,35 +70,23 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 
 ## Procedure
 
-### Organization
-
-1. If you have already claimed a chip number, and opened its specific chip view data sheet, record your patterning data into that sheet. If you have NOT claimed a chip number, and have NOT begun recording data in a chip specific sheet, open this [central chip count](https://docs.google.com/spreadsheets/d/1MrqtnkHcNr5hekHpQHusBZJG4nrdcxDz7Yg5Emn9BMQ/edit#gid=0) sheet, claim the next available chip number, open the blank chip view sheet for that specific chip number and record all subsequent process data into it.
-
 ### Wafer Cleaning
 
-1. In the fume hood, hold the wafer with tweezers over the sink.
-2. Rinse the polished side of the wafer thoroughly with acetone, then isopropyl alcohol.
+1. Check that the working volume of spin on glass is labeled with the date it was poured. For 700B and P504, ensure that the solution has not been out for more than a month (main bottle is stored at 5C).
+   1. If you are pouring a new working volume of P504 or 700B, let it come to room temperature before using it (ideally, wait 24 hours).
+2. Preheat the[ Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md) to 100°C
+3. In the fume hood, hold the wafer with tweezers over the sink.
+4. Rinse the polished side of the wafer thoroughly with acetone, then isopropyl alcohol.
    1. The acetone leaves a residue that must be removed by the isopropyl alcohol rinse.
-   2. If there is acetone film visible, repeat this step.
-3. Blow the wafer dry with the nitrogen gun by pressing the wafer against a cleanroom wipe on the table to ensure it does not fly away. **Get a good grip on it with your tweezers**.
+5. Blow the wafer dry with the nitrogen gun by pressing the wafer against a cleanroom wipe on the table to ensure it does not fly away. **Get a good grip on it with your tweezers**.
    1. Even when the wafer appears dry, there may still be moisture on the edges, so dry both sides liberally for \~20 seconds
-4. Inspect with the naked eye and make note of any marks on the wafer.
-   1. Marks present after cleaning are likely scratches that need to be documented
+   2. if there is visible acetone residue after drying, repeat steps 2-3
 
-<div>
-
-<figure><img src="../../.gitbook/assets/cleaning.jpg" alt=""><figcaption><p>Acetone rinse</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/drying.jpg" alt=""><figcaption><p>Drying with nitrogen gun</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/cleaning.jpg" alt=""><figcaption><p>Acetone rinse</p></figcaption></figure> <figure><img src="../../.gitbook/assets/drying.jpg" alt=""><figcaption><p>Drying with nitrogen gun</p></figcaption></figure></div>
 
 ### Prebake
 
-4. Preheat the[ Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md) to 100°C
-5. Place the wafer in the **center** of the hotplate for 20 seconds
+4. Place the wafer in the **center** of the hotplate for 20 seconds
    1. Be sure to handle the wafer with tweezers that can handle high temperatures (metal tweezers)
    2. No need to turn the hotplate off since annealing will require 100°C initially as well
 
@@ -107,9 +97,8 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
 6. Place wafer onto the chuck of the [vacuum spin coater](../patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
 7. Open the SOG container while keeping the bottom resting on the table
    1. Never open containers up in the air or outside of the fume hood
-   2. **Ensure that the SOG container is not expired by inspecting with the naked eye. If you see floating particles of glass suspended in the liquid, this is expired SOG. See the** [**Storage and Preparation Document**](spin-on-glass-storage-and-preperation.md) **for more information.**
 8. Pipette **1-2 drop** of SOG using Luer Lock filtered syringe:
-   1. Take a clean syringe and draw it up \~¼ to create an air pocket in the tube
+   1. Take a clean syringe and draw it up \~½ to create an air pocket in the tube
    2. Suck up SOG about halfway up the syringe. This is a lot more than you need for 1 drop, because the filter needs to be wetted by the excess solution before drops are released.
    3. Twist on a syringe filter
    4. Release 2 drops back into the SOG container
@@ -117,32 +106,21 @@ P504 (doped glass) is doped with boron, unlike 700B. Naturally, this boron will 
    6. Dump any remaining SOG in the syringe back into the SOG container
    7. Dispose of the syringe and the filter in the waste bucket
 
-<div>
-
-<figure><img src="../../.gitbook/assets/syringe.jpg" alt=""><figcaption><p>Pipette with SOG and air pocket</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/syringe-filter.jpg" alt=""><figcaption><p>Pipette with filter</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/syringe.jpg" alt=""><figcaption><p>Pipette with SOG and air pocket</p></figcaption></figure> <figure><img src="../../.gitbook/assets/syringe-filter.jpg" alt=""><figcaption><p>Pipette with filter</p></figcaption></figure></div>
 
 6. Spin coat the wafer <mark style="background-color:orange;">(Remember to switch on the vacuum!)</mark>
    1. After spin coating, the SOG application should appear even. (See pictures below)
 7. Immediately move onto annealing
 
-### ![](https://lh4.googleusercontent.com/4Ze7i5GPpmCDYI7aWq1580wodj3FLuTmzr5LFTFVKZZEH8wd3g3ZxrQDQnnKdB-IUx0fghg02me3XZP0K3uWaphXByDInh0R2B2zF9XwXxF4DsD2VuaxtlDmqD6MGCHN5h-SGkmNsc\_S5fNYML\_nlP4)![](https://lh6.googleusercontent.com/RT5HwEkmavaU19ulqmj9jaGKk7\_BrJwYQV73joK\_IWuo4s4lSiIjBKK0NuTwKOjWpMett8jFdsAquYMG\_DuvQ5Frj3jaCpMDT18Wev8pEJMBRENax5Zr5OsLYgqIhAI8IYR52UMHoDg1ugVve1Ms1j8)
+### ![](https://lh4.googleusercontent.com/4Ze7i5GPpmCDYI7aWq1580wodj3FLuTmzr5LFTFVKZZEH8wd3g3ZxrQDQnnKdB-IUx0fghg02me3XZP0K3uWaphXByDInh0R2B2zF9XwXxF4DsD2VuaxtlDmqD6MGCHN5h-SGkmNsc_S5fNYML_nlP4)![](https://lh6.googleusercontent.com/RT5HwEkmavaU19ulqmj9jaGKk7_BrJwYQV73joK_IWuo4s4lSiIjBKK0NuTwKOjWpMett8jFdsAquYMG_DuvQ5Frj3jaCpMDT18Wev8pEJMBRENax5Zr5OsLYgqIhAI8IYR52UMHoDg1ugVve1Ms1j8)
 
-### Hot Plate Annealing for 700B + P504
+### Hot Plate Annealing.
 
-12. Before placing the wafer on the hot plate, use a cleanroom wipe to clean the surface of the hot plate using a small amount of acetone and IPA
-13. The hot plate should already be at 100C
-14. Place wafer onto the [Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md)
+12. The hot plate should already be at 100C
+13. Place wafer onto the center of the [Hot Plate](../patterning-sop-stepper-v2/hot-plate-sop.md)
     1. Be sure to handle the wafer with tweezers that can handle high temperatures
-    2. Place a cover, such as a glass dish upside down, on top of the wafer to avoid contamination and air movement as the wafer is annealing.
-15. Follow the appropriate ramping profile (see top of this document or your own notes). Normally immediately ramping from 100C to 400C is OK.
-16. Put on heat-resistant gloves and remove the glass cover. **Do not burn yourself when removing the glass cover - nitrile gloves will not protect you from burns. 400C is 752F, which is way way hotter than an oven!**&#x20;
-17. Use metal tweezers to remove the chip. Again be careful not to burn yourself.
+14. Set the hotplate to the desired annealing temperature (200C for P504 or B154, 400C for 700B)
+15. After the desired anneal time has passed (10-15 minutes for P504 and B154, 20-30 minutes for 700B), use metal tweezers to remove the chip. Be careful not to burn yourself.
 
 ### Tube Furnace Anneal/Diffusion P504
 

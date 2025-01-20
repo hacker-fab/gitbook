@@ -69,7 +69,7 @@
   * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v2/hot-plate-sop.md)
   * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-strip-sop.md)
 * [Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
-* [Spin on Glass SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
+* [Spin on Glass/Diffusant SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
   * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
   * [Spin on Glass Defect Inspection](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-inspection.md)
   * [Spin on Glass Thickness Measurement](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-thickness-measurement.md)
