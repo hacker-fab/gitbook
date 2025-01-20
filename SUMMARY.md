@@ -92,6 +92,7 @@
   * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
   * [Gongwei Wang's updates](working-docs/cmu-updates/gongwei-wangs-updates.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
+  * [Ying Meng](working-docs/cmu-updates/ying-meng.md)
   * [Shagun Maheshwari](working-docs/cmu-updates/shagun-maheshwari.md)
   * [Yuichi Hirose](working-docs/cmu-updates/yuichi-hirose.md)
   * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
