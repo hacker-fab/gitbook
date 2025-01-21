@@ -103,6 +103,7 @@
   * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates.md)
   * [Sandra You's Updates](working-docs/cmu-updates/sandra-yous-updates.md)
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
+  * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
 
 ## 🔲 Templates (to do)
 
