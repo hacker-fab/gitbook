@@ -89,6 +89,7 @@
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CMU Updates](working-docs/cmu-updates/README.md)
+  * [Jessica Wen](working-docs/cmu-updates/jessica-wen.md)
   * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
   * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
   * [Gongwei Wang's updates](working-docs/cmu-updates/gongwei-wangs-updates.md)
