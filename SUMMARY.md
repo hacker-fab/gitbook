@@ -100,8 +100,9 @@
   * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
   * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
   * [Marta Freitas](working-docs/cmu-updates/marta-freitas.md)
-  * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates/README.md)
-    * [Sandra You's Updates](working-docs/cmu-updates/matthew-chois-updates/sandra-yous-updates.md)
+  * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates.md)
+  * [Sandra You's Updates](working-docs/cmu-updates/sandra-yous-updates.md)
+  * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
 
 ## 🔲 Templates (to do)
 
