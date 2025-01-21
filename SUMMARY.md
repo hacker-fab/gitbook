@@ -89,6 +89,7 @@
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CMU Updates](working-docs/cmu-updates/README.md)
+  * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
   * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
   * [Gongwei Wang's updates](working-docs/cmu-updates/gongwei-wangs-updates.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
@@ -104,6 +105,7 @@
   * [Sandra You's Updates](working-docs/cmu-updates/sandra-yous-updates.md)
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
+* [Yang Bai](working-docs/yang-bai.md)
 
 ## 🔲 Templates (to do)
 
