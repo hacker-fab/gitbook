@@ -25,6 +25,7 @@
   * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
   * [Getting started with Klayout](fab-toolkit/patterning/getting-started-with-klayout.md)
+  * [Patterning Tasks - Spring 2025](fab-toolkit/patterning/patterning-tasks-spring-2025.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
