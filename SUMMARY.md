@@ -109,6 +109,7 @@
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
   * [Shayaan Gandhi](working-docs/cmu-updates/shayaan-gandhi.md)
+  * [Sky Bailey](working-docs/cmu-updates/sky-bailey.md)
 
 ## 🔲 Templates (to do)
 
