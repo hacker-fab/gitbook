@@ -105,7 +105,7 @@
   * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
   * [Marta Freitas](working-docs/cmu-updates/marta-freitas.md)
   * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates.md)
-  * [Sandra You's Updates](working-docs/cmu-updates/sandra-yous-updates.md)
+  * [Sandra You](working-docs/cmu-updates/sandra-you.md)
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
   * [Shayaan Gandhi](working-docs/cmu-updates/shayaan-gandhi.md)
