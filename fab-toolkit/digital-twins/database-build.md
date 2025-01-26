@@ -54,6 +54,9 @@ Diagram representing the data structure of the query results passed as a context
 
 !!!!!!!!!!!!!!!!!!!!!!!!!! System architecture for interfacing with tools (the spincoater for now) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+SEE this link for better formatting:
+https://docs.google.com/document/d/1SrD66bqmS1xxs2jt_WWSY7eLr6vyDJxIB4dbMdbxkws/edit?tab=t.0#heading=h.ai1m6262yla9
+
 System Architecture
 1. AWS Server
 Purpose: Centralized management of the job queue and storage of job-related data.
