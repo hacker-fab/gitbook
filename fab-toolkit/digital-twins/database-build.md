@@ -51,3 +51,81 @@ When a user performs a search for data, they can enter specific filters to narro
 The code in [views.py](https://github.com/hacker-fab/data-management/blob/main/data_management/views.py) is responsible for passing the data from the query result to the html files so that they can be displayed on the web page. There is an important detail that developers should take note of when implementing any functions that return queried results to users. We have implemented a specific data format to pass to the html page in order to standardize the design of the html pages and controller function outputs. When an html page is rendered, [views.py](https://github.com/hacker-fab/data-management/blob/main/data_management/views.py) provides it a context, which contains data (variables) that are required by or will be displayed in the html page. The html page expects the queried data provided in the context to be an array of arrays of dictionaries. Since Django’s querying library returns the queried data to us in the form of a [QuerySet](https://docs.djangoproject.com/en/5.1/topics/db/queries/#retrieving-objects), we must convert the QuerySet into an array of dictionaries using Django’s model\_to\_dict() function found in their [forms.models](https://docs.djangoproject.com/en/4.2/_modules/django/forms/models/) library. Each dictionary represents a single entry in the database. The keys correspond to the column names, which map to the corresponding value for that column. Each array of dictionaries within the outer array corresponds to a grouping of data. This enables us to group data based on the process types so that they can be displayed on the page with the correct column headers. This data structure is depicted below.
 
 Diagram representing the data structure of the query results passed as a context to be rendered in the html ![image](https://github.com/user-attachments/assets/ed479c19-202b-47dc-bb17-22bbc92e04d9)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!! System architecture for interfacing with tools (the spincoater for now) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+System Architecture
+1. AWS Server
+Purpose: Centralized management of the job queue and storage of job-related data.
+Components:
+API Gateway: To handle incoming API requests from the Raspberry Pi and the primary web application. 
+Lambda Functions (or EC2-based backend):
+Job Queue API: Handles enqueueing, dequeuing, and querying of jobs.
+Job Status API: Updates job status upon completion.
+DynamoDB (or RDS):
+Job Queue Table: Stores queued jobs with parameters, states (pending, in progress, completed), timestamps, and priority levels.
+Job Log Table: Stores historical job execution logs.
+S3: Optional for storing any job-related resources or output files.
+2. Raspberry Pi
+Purpose: Acts as a client to fetch, run, and manage jobs locally.
+Major advantage of Raspberry PI: Runs full GUI linux distro that can directly connect to CMU WIFI or ethernet. 
+Components:
+Job Fetching Service:
+Runs every 5 seconds (via a cron job or background service).
+Sends an API request to the AWS server to check for the next job.
+Receives and dequeues a job (if available).
+UI Module:
+Displays the job details on a connected screen.
+Allows the user to manually start the job or view progress.
+Supports initiating a new job via the UI.
+Job Execution Module:
+Sends job parameters to the microcontroller (spin coater controller for this semester) for execution. The Raspberry PI is physically connected to the spin coater microcontroller using jumper wires. This will replace the buttons that are currently used as input. 
+Monitors job progress and completion.
+Job Completion Handler:
+Sends a POST request to the AWS server with job status and result details after execution.
+
+Data Flow
+Job Creation:
+The primary way that jobs will be created is through the hacker fab website. The hacker fab website will call the appropriate API call to manage the jobs database. The implementation of this is out of the initial scope for my project. For testing purposes for this semester, I will use POSTMAN to send API calls to the AWS jobs database. 
+Users can also create new jobs directly via the Raspberry Pi UI. This allows for redundancy in the case that the machine needs to be controlled without the database.
+There will be an option to run the job immediately or to send it to the database to be added to the queue. 
+Job Queue Management:
+The AWS server maintains a centralized queue of jobs.
+The Raspberry Pi fetches and dequeues jobs by querying the API. Only jobs for the specific machine are dequeued. 
+Job Execution:
+The Raspberry Pi receives the job and displays it on the connected UI.
+Upon user interaction (manual start) or automatically (if set), the job is run on the spin coater (or other device in the future)
+Job Completion:
+After execution, the Raspberry Pi sends the success/failure status to the AWS server, updating the job's record in the database.
+
+Technical Details
+AWS Backend
+API Gateway Endpoints from AWS for raspberry PI:
+GET /jobs/next: Fetch the next job from the queue.
+POST /jobs/completion: Update job completion details.
+API Gateway Endpoints from AWS for web application:
+POST /jobs: Enqueue a new job. The request has the machine name, input parameters, priority. The response will have the job_id of the newly created job, or error. 
+GET /jobs_by_id: The request includes the job_id(s) for which you will get details. All data for that row of the table will then be returned. NOTE: you can pass a list of job_ids to get multiple rows of data at the same time.
+GET /jobs_by_machine: The request includes the machine name. All jobs that are in the database (regardless of status) will be returned. 
+Job Queue Table Schema:
+job_id (Primary Key)
+machine (the machine to run the job on. E.g. spin coater)
+status (Pending/In Progress/Completed/Failed)
+input_parameters (JSON for variable parameters)
+output_parameters (JSON for results from the machine)
+timestamp (Queued timestamp)
+priority (Optional for prioritized execution)
+Raspberry Pi Software
+Language: Python for compatibility with Pi and microcontroller communication.
+UI Framework:
+Tkinter. Lightweight GUI
+API Client:
+Fetches jobs and sends completion status using requests library.
+Microcontroller Interface
+This will vary significantly depending on the tool we are attempting to automate. 
+This code will be modularized and will be one of the only things that will need to be modified when adding a new tool to the system. 
+Job Execution Commands: Defined in a simple protocol (e.g., JSON commands). These commands are then parsed and used to control the microcontroller. 
+For example, for the spin coater, the output from the I/O ports of the raspberry pi can be connected to where the buttons are on the spin coater microcontroller and simulate the button presses. There might also be an even simpler way to connect the raspberry pi to the spin coater microcontroller after talking to someone familiar with the spin coater. 
+
+
+
