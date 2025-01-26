@@ -110,6 +110,7 @@
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
   * [Shayaan Gandhi](working-docs/cmu-updates/shayaan-gandhi.md)
   * [Sky Bailey](working-docs/cmu-updates/sky-bailey.md)
+  * [Haewon Uhm](working-docs/cmu-updates/haewon-uhm.md)
 
 ## 🔲 Templates (to do)
 
