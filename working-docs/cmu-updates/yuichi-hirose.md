@@ -35,6 +35,6 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 
 
-**Weekly Update #2**&#x20;
+~~**Weekly Update #2**~~&#x20;
 
-I was able to complete all the Github project tracker tasks I set out to do last week as well as talk to the lab automation team to figure out what they need from us on the database.&#x20;
+~~I was able to complete all the Github project tracker tasks I set out to do last week as well as talk to the lab automation team to figure out what they need from us on the database.~~&#x20;
