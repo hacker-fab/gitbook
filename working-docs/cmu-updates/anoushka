@@ -1,0 +1,12 @@
+Week 1: Reviewed the design changes required from the last iteration of the tube furnace to create V3. 
+Identified a tentative bill of materials required for the update which is as follows:
+1. Firebrick : For insulation; safer to work with as compared to ceramic wool
+2. Kanthal Wire : Heating element; tested in F24 for high heat
+3. Thermocouple 
+
+Worked on designing the moving platform for the tube furnace to move in and out of the chip. Currently planning on using stepper motors attached to linear rails to move platform.
+
+For the next week:
+Finalize design and code for moving platform.
+Place order for all materials needed for the update.
+Begin machining of firebrick.
