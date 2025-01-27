@@ -25,6 +25,39 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 
 
+### Update 1
+
+#### Accomplishments
+
+* Saw and helped operate the sputtering chamber twice
+* Developed proposal with Melinda for what we are going to accomplish for the sputtering proccess this semester
+* Worked with Jay and Melinda to make our first samples
+* Requested AFM training, scheduled a meeting with Professor Sokalski to discuss XRR/XRD for thin films
+
+#### Roadblocks
+
+* Nothing aside from being out of town this past weekend, which just meant I didn't have time to do much work
+
+#### Plans
+
+* Start reading literature on how to characterize thin films with XRR, AFM, and other techniques
+* Perform more sputtering trials and get better at operating the chamber independently
+* Do the first lab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
