@@ -90,6 +90,7 @@
 
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CMU Updates](working-docs/cmu-updates/README.md)
+  * [Gina Seo](working-docs/cmu-updates/gina-seo.md)
   * [Serena Shih](working-docs/cmu-updates/serena-shih.md)
   * [Jessica Wen](working-docs/cmu-updates/jessica-wen.md)
   * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
