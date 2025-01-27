@@ -1,6 +1,32 @@
 # Eric Dubberstein
 
-Next week...
+Weekly updates for 1/26:
+
+My primary deliverable for this week was creating the plan for the rest of the semester for my role on the database team.&#x20;
+
+
+
+Here is the proposal document: [https://docs.google.com/document/d/1SrD66bqmS1xxs2jt\_WWSY7eLr6vyDJxIB4dbMdbxkws/edit?usp=drive\_link](https://docs.google.com/document/d/1SrD66bqmS1xxs2jt_WWSY7eLr6vyDJxIB4dbMdbxkws/edit?usp=drive_link)
+
+
+
+My roadblocks are as follows:&#x20;
+
+1. The parts from the BOM outlined in the proposal document need to be acquired. Most of the parts should be ready to use by the end of class on Tuesday
+2. I do not think there is a spot on the github documentation for the database team. I will ask my teammates on tuesday to get clarification on where to document how the system I am building works. Right now, all that documentation is done in the proposal document.&#x20;
+
+Next week, I will follow week 1 of the project proposal document. Specifically, this is: \
+
+
+Week 1: Hardware Setup
+
+* Assemble and configure the Raspberry Pi 5:
+* specifically:
+  * Install Raspberry Pi OS on the microSD card...
+  * Connect and test peripherals (monitor, keyboard, mouse).
+  * Ensure the Raspberry Pi can connect to CMU WiFi or Ethernet.
+* Prototype physical connections between the Raspberry Pi and the spin coater's microcontroller using the breadboard and jumper wires.
+* NOTE: there is an extra spin coater microcontroller that I will be able to interface with
 
 
 
