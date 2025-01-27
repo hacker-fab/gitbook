@@ -112,6 +112,7 @@
   * [Sky Bailey](working-docs/cmu-updates/sky-bailey.md)
   * [Haewon Uhm](working-docs/cmu-updates/haewon-uhm.md)
   * [James Lin](working-docs/cmu-updates/james-lin.md)
+  * [Ayan Ghosh](working-docs/cmu-updates/ayan-ghosh.md)
 
 ## 🔲 Templates (to do)
 
