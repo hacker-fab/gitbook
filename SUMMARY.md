@@ -115,6 +115,7 @@
   * [Haewon Uhm](working-docs/cmu-updates/haewon-uhm.md)
   * [James Lin](working-docs/cmu-updates/james-lin.md)
   * [Ayan Ghosh](working-docs/cmu-updates/ayan-ghosh.md)
+  * [Advaith Menon](working-docs/cmu-updates/advaith-menon.md)
 
 ## 🔲 Templates (to do)
 
