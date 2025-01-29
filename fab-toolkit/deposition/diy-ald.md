@@ -18,7 +18,7 @@ Our work thus far has been focused on machine design, largely drawing from two p
 
 This document will present the current proposed machine design plan  and the work completed to date for our vertically aligned, cold-walled reaction chamber ALD machine for the Hacker Fab.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGEA2ge76Ug5VYrrEUXQVPkmGxAkSsFNQRsP_ExbUplk3XmULc1PfGS7NXwYY04U56aEVdUGoV-Zj3FgiVi8JXVb9aOxFnSuCSNAWuBtcAAQdtQXW8V9VN45B9TP-sMSlerOVevQ?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 1: A schematic of a general system overview of the ALD machine’s subsystems and components</em></p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGEA2ge76Ug5VYrrEUXQVPkmGxAkSsFNQRsP_ExbUplk3XmULc1PfGS7NXwYY04U56aEVdUGoV-Zj3FgiVi8JXVb9aOxFnSuCSNAWuBtcAAQdtQXW8V9VN45B9TP-sMSlerOVevQ?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>A schematic of a general system overview of the ALD machine’s subsystems and components</em></p></figcaption></figure>
 
 ### Precursor Selection
 
@@ -26,14 +26,12 @@ This document will present the current proposed machine design plan  and the wor
 
 For the current system we aim to deposit Indium-Tin Oxide. Indium Tin Oxide (ITO) is a versatile material widely recognized for its excellent electrical conductivity and optical transparency. These properties make ITO a promising candidate for advanced applications, particularly as a channel material in thin-film transistors (TFTs). Its high carrier mobility and tunable electrical characteristics offer significant potential for improving TFT performance in display technologies and flexible electronics. Additionally, ITO thin films are of great interest in materials and thin-film research due to their unique combination of metallic and semiconducting properties. This makes them an ideal system for exploring novel deposition techniques, optimizing film uniformity, and investigating structure-property relationships.&#x20;
 
-The precursors for the metals were chosen based on their feasibility to react with water vapor as the oxidizer. The precursors chosen are Trimethyl Indium (TMIn) for Indium and Tetrakis(dimethylamino) Tin (TDMASn) for Tin with Nitrogen carrier gas. They have been shown to be used for ALD and CVD processes with water as the oxidizer in literature. As a starting point our aim would be to reproduce the results achieved in \[Zhang et al.]. The process parameters highlighted in the paper are as follows:
+The precursors for the metals were chosen based on their feasibility to react with water vapor as the oxidizer. The precursors chosen are Trimethyl Indium (TMIn) for Indium and Tetrakis(dimethylamino) Tin (TDMASn) for Tin with Nitrogen carrier gas. They have been shown to be used for ALD and CVD processes with water as the oxidizer in literature. As a starting point our aim would be to reproduce the results achieved in \[Zhang et al.]. The process parameters highlighted in the paper are as follows _(substrate temperature: -225C)_:
 
 | Oxide | Bubbler temperature | Pulse time | Co-reactant pulse time | Process pressure | Purge time |
 | ----- | ------------------- | ---------- | ---------------------- | ---------------- | ---------- |
 | In2O3 | 60oC                | 0.625s     | 0.75s                  | 100 mTorr        | 10s        |
 | SnO2  | 60oC                | 2s         | 1s                     | 100 mTorr        | 30s        |
-
-(Substrate temperature: -225C)
 
 **Safety Considerations**
 
@@ -83,15 +81,15 @@ The goal of the DIY substrate heater is to develop a cost-effective, replicable 
 
 * Gradually increase the voltage on the DC power supply to heat the nichrome wire. Use the thermocouple reading to fine-tune the voltage for achieving the desired temperature.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe7lVhMLKh3p5izu4gLIUJTsyg3Xyjw_QrdcRln8zImAotdejRleuLOD-xiQKs2eRqYFJ1JjbuelsZkOVlvY8IziyKIOeduSbqEwMBDjsbs2YSOKGv5S-KxfdtMQa-R9fJeG-A_jg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 1: Heating module assembly</em></p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe7lVhMLKh3p5izu4gLIUJTsyg3Xyjw_QrdcRln8zImAotdejRleuLOD-xiQKs2eRqYFJ1JjbuelsZkOVlvY8IziyKIOeduSbqEwMBDjsbs2YSOKGv5S-KxfdtMQa-R9fJeG-A_jg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Heating module assembly</em></p></figcaption></figure>
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc0DOH6CyCsV3sTOFFfHrlR9ZIMuBLaqE5DKScqaDxYpO7_J4e3Sq1UdhulC0SYaxcrISo_TQetwS662BfKlzOmgXcY8T3S-eYQ9dsAx7Nwe_leySEKapkY7deeNd6GLILxu_lHzQ?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 2: Annotated view of Heating module assembly</em> </p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc0DOH6CyCsV3sTOFFfHrlR9ZIMuBLaqE5DKScqaDxYpO7_J4e3Sq1UdhulC0SYaxcrISo_TQetwS662BfKlzOmgXcY8T3S-eYQ9dsAx7Nwe_leySEKapkY7deeNd6GLILxu_lHzQ?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Annotated view of Heating module assembly</em> </p></figcaption></figure>
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpZo--YVLrQo3yTTFC1nby9rU4btGze-sFXk6ZnC017E1b3k_ZemJD3Ogs-_wGx3Hs_d4bZVLfh6NIgQX34fmsgBG4N4b5YdhQCxBFL_usb-fmbFxqeSQRfmuSPfCR8sm9qgCr6A?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 3: Exploded view of module assembly</em></p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpZo--YVLrQo3yTTFC1nby9rU4btGze-sFXk6ZnC017E1b3k_ZemJD3Ogs-_wGx3Hs_d4bZVLfh6NIgQX34fmsgBG4N4b5YdhQCxBFL_usb-fmbFxqeSQRfmuSPfCR8sm9qgCr6A?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Exploded view of module assembly</em></p></figcaption></figure>
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXd__mqaPMEScdSTVWxWaKrWHplI9OI45FWdY8OdjrQF5v5EIbs-QnJyqavKFqQPeJZr0RUCABxKsbPKpAJZ__oL0FjKJgJ10f93XLF56SjFZbKn7mYtsy-UNeCLHtX_8nfH9sUg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 4: Drawings for Aluminum and Boron Plate( Both have the same dimensions, change size of hole to ¼”)</em></p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXd__mqaPMEScdSTVWxWaKrWHplI9OI45FWdY8OdjrQF5v5EIbs-QnJyqavKFqQPeJZr0RUCABxKsbPKpAJZ__oL0FjKJgJ10f93XLF56SjFZbKn7mYtsy-UNeCLHtX_8nfH9sUg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Drawings for Aluminum and Boron Plate( Both have the same dimensions, change size of hole to ¼”)</em></p></figcaption></figure>
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXezZleO0gYHcW_12v8zzlngz8-e-bp2BgzGgMpCH1kca8l5UGRcvOSSTb3_aU8GSFfyhxzuwQWX0VNT11cX-5GZ65V_F4BeXXapQs_DxOJibHqFrvK-mElDq-m4rhGhNeLZ2WbSCw?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Figure 5: Heating test set-up</em></p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXezZleO0gYHcW_12v8zzlngz8-e-bp2BgzGgMpCH1kca8l5UGRcvOSSTb3_aU8GSFfyhxzuwQWX0VNT11cX-5GZ65V_F4BeXXapQs_DxOJibHqFrvK-mElDq-m4rhGhNeLZ2WbSCw?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Heating test set-up</em></p></figcaption></figure>
 
 **Specifications**
 
@@ -144,7 +142,7 @@ Feedthroughs are available from companies such as:
 * Conax Technologies
 * Allectra
 
-Mounting the Feedthrough
+Mounting the Feedthrough:
 
 * Install the feedthrough into a flange on the vacuum chamber (e.g., CF, KF, or ISO flange systems).
 * Use O-ring seals (Viton or Buna-N) for lower vacuum applications or indium gaskets for ultra-high vacuum.
@@ -281,13 +279,13 @@ RaspberryPi is  great for handling low-level hardware tasks, such as controlling
 
 **Progress**
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfauhthmggH_y41SS73I-caP7vORjznIlCywQuamnsVmJ1QDvsMTT9-HwrWi6-I9yTU0dQa56qV7W4sBYR1dEiwK8EixRUYqJ-HBhZYjP-DvOAkcCgWCyduQy6iLod8NhjeoI0P?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p>Block diagram of ALD valve control</p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfauhthmggH_y41SS73I-caP7vORjznIlCywQuamnsVmJ1QDvsMTT9-HwrWi6-I9yTU0dQa56qV7W4sBYR1dEiwK8EixRUYqJ-HBhZYjP-DvOAkcCgWCyduQy6iLod8NhjeoI0P?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Block diagram of ALD valve control</em></p></figcaption></figure>
 
 The ALD valves are controlled based on their status in a truth table, where each row corresponds to a specific step of the ALD cycle. The truth table defines the ON/OFF state of each valve, with True indicating the valve is ON and False indicating it is OFF. The appropriate row of the table is accessed dynamically, depending on the current step of the cycle.
 
 To implement this control, a relay board is used to interface the ALD valves with a 24V DC wall adapter. The relay board switches the power supply to the valves according to the truth table commands, ensuring precise timing and coordination for each step of the ALD process. For depositing Indium Tin Oxide (ITO), which requires two metal precursors, the ALD valve operation is determined by the desired ratio of the two precursors. To achieve this, a sequential block is used to calculate the current cycle number in the ALD process. Based on the cycle number and the specified precursor ratio, the sequential logic selects which metal precursor valve to open. This setup allows for reliable and automated control of the gas delivery system during operation.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcodqYWYt4aiSAGRbD2mjnS_PShX1_BWeYazb56mBapXfJyGPyIDVjaTd9ua5Rq_GXmakT-l50uP0W-x7fYPEe79Cti7DWLRF9VByud8YPl1nQ_OKOLrl5IEiKNFjSYXGDLx3zLeg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p>Block diagram of PID control for heating elements</p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcodqYWYt4aiSAGRbD2mjnS_PShX1_BWeYazb56mBapXfJyGPyIDVjaTd9ua5Rq_GXmakT-l50uP0W-x7fYPEe79Cti7DWLRF9VByud8YPl1nQ_OKOLrl5IEiKNFjSYXGDLx3zLeg?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>Block diagram of PID control for heating elements</em></p></figcaption></figure>
 
 To control the heating elements, temperature data is collected from thermocouples at a specified sampling rate and frequency using a DAQ (Data Acquisition) system. The measured temperature readings are averaged to calculate a mean temperature, which provides a stable input for feedback control. The mean measured temperature and the target temperature are then fed into a PID (Proportional-Integral-Derivative) controller. The PID computes the required voltage adjustment to maintain the target temperature by supplying the appropriate voltage to the resistive heating elements. This feedback loop ensures precise temperature control, critical for maintaining process stability and uniformity during operation.
 
@@ -314,7 +312,7 @@ The vacuum chamber and the vacuum pump are the foundation of the ALD machine, pr
 
 With the technical requirements in mind and once the precursors were selected (and ITO was decided upon), the design process for the vacuum pump and vacuum chamber evolved quickly over the first half of the semester. Originally, the vacuum chamber had a technical requirement of being made of only stainless steel, avoiding aluminum due to concerns about compatibility with the gases. Eventually, aluminum was reconsidered to be a vacuum chamber material option, after double-checking its compatibility with the gases.&#x20;
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXccZoJb-46YV0jOLcTOV4TMc7_VKmQGq0E968iQRac8t1be4oz5pQ77m-dXgVDTxVIDJK_PU5Rf9YmSCRNE2S1lMaqySY9yI_1P2qZR5h89qMauANbgmdj68REjtkKhLXSlUmQ7iA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p>Figure 2: A conceptual sketch of the vacuum chamber when a cooling system for a successful cold-walled reactor was considered</p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXccZoJb-46YV0jOLcTOV4TMc7_VKmQGq0E968iQRac8t1be4oz5pQ77m-dXgVDTxVIDJK_PU5Rf9YmSCRNE2S1lMaqySY9yI_1P2qZR5h89qMauANbgmdj68REjtkKhLXSlUmQ7iA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>A conceptual sketch of the vacuum chamber when a cooling system for a successful cold-walled reactor was considered</em></p></figcaption></figure>
 
 **Vacuum Pump Selection + Design Choices**
 
@@ -328,12 +326,12 @@ As shown in the BOM for vacuum chamber components, the 6 sides to the modular va
 
 1. One (1) plate with a viewing window and door hinge, to easily place and remove the 4” diameter wafer.
 2. One (1) plate with four (4) KF16 inlets  in order to connect the pressure gauge, temperature probe, and electrical lead. Each of those three components connected to the ALD account for one KF16 inlet, leaving a single KF16 inlet covered by a blank flange, and reserved for if future leads are needed.
-3. Two (2) plates with single, centered KF25 inlets, to be placed on the top and bottom of the cube, with the top inlet being the gas inlet, or the gas entering the vacuum chamber, and the bottom outlet being the vacuum chamber’s connection to the dry scroll vacuum pump and throttle, or where the gas will exit the chamber. This top-to-bottom placement is to prompt laminar flow of the gases and increase chances of even deposition throughout the wafer. The gas flow is depicted in Figure 3 below.
+3. Two (2) plates with single, centered KF25 inlets, to be placed on the top and bottom of the cube, with the top inlet being the gas inlet, or the gas entering the vacuum chamber, and the bottom outlet being the vacuum chamber’s connection to the dry scroll vacuum pump and throttle, or where the gas will exit the chamber. This top-to-bottom placement is to prompt laminar flow of the gases and increase chances of even deposition throughout the wafer. The gas flow is depicted below.
 4. Two (2) blank plates
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCvlkA0lPDdDVvXsHjMHB_fUTBLDvXmBFOKkjtAn0cT5F9u7V9eCqWpW4lC-zDQPH4t1AsP2MAdH2Ax2GN3lNTpDJHVZ4hPKg3ssR6sFEPdO0XBUo3tmrMhLCia5Ub0LdItbJsYw?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p>Figure 3: A picture of the fully assembled Ideal Vacuum 9x9x9 chamber</p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCvlkA0lPDdDVvXsHjMHB_fUTBLDvXmBFOKkjtAn0cT5F9u7V9eCqWpW4lC-zDQPH4t1AsP2MAdH2Ax2GN3lNTpDJHVZ4hPKg3ssR6sFEPdO0XBUo3tmrMhLCia5Ub0LdItbJsYw?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>A picture of the fully assembled Ideal Vacuum 9x9x9 chamber</em></p></figcaption></figure>
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHBVvyOo3ELsfFn8j_VPQBubjNw9vcnnFTmEYm6Wg3FkuuA6dheREu5H1s2Lnov0RanFHFuQCAO7zCQFGVVZhmrQhlD-WjP0Ju35IN1T0LQTJBZegfhYG8K_gNYIaTmRpf8HkqhA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p>Figure 4: A schematic displaying the laminar, top-to-bottom gas flow and even dispersion on the wafer in the vacuum chamber, and feedthrough port connections</p></figcaption></figure>
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHBVvyOo3ELsfFn8j_VPQBubjNw9vcnnFTmEYm6Wg3FkuuA6dheREu5H1s2Lnov0RanFHFuQCAO7zCQFGVVZhmrQhlD-WjP0Ju35IN1T0LQTJBZegfhYG8K_gNYIaTmRpf8HkqhA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>A schematic displaying the laminar, top-to-bottom gas flow and even dispersion on the wafer in the vacuum chamber, and feedthrough port connections</em></p></figcaption></figure>
 
 &#x20;**Vacuum Chamber + Vacuum Pump Baseline Test**
 
@@ -374,7 +372,7 @@ The precursor storage design process began by defining the requirements for safe
 
 [Precursor Case Ideation Document](https://docs.google.com/document/d/1jIJHOCpGwz2Hahb5p47Cp-PXYGIF3fCqiWKc2BtbcpE/edit?usp=drive_link): This document explains the initial thought and design process for this delivery storage.
 
-The initial design concepts, shown below in Figure 5, were sketched to visualize how the ampoules would be held and integrated into the vacuum chamber setup. These sketches evolved into more detailed CAD models (shown below in Figure 6), created in SolidWorks, with a focus on designing for sheet metal fabrication, since that would be the most cost effective. The flat pattern designs incorporated fold lines for easy assembly, allowing the components to be cut using waterjet or manual machining methods.&#x20;
+The initial design concepts, shown below, were sketched to visualize how the ampoules would be held and integrated into the vacuum chamber setup. These sketches evolved into more detailed CAD models (shown below), created in SolidWorks, with a focus on designing for sheet metal fabrication, since that would be the most cost effective. The flat pattern designs incorporated fold lines for easy assembly, allowing the components to be cut using waterjet or manual machining methods.&#x20;
 
 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQ_TAJxkY4NI5xt9XmzJbEW5TqOAFFguI7r3Ew5djgCKe0qC8lQOvOTHf6jVOrGxzxGSWmEHybB3QehfZTY6M9_FPhrv8B0iwlstRpYvnIW0Le4XH-2YhXf--0-bb7YCPYvq8ZhA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt="" data-size="original"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd9YrcTMsMqX2pVEVjKROOzLbMoNdvkUqV4lCbsLm5tozHUW0v-CS4MBz6C2xg3n6i_RUg0OPYJT-1dnABNybVnTS6rZlOnxDiAMIyX6mjPi_sUNFQg2hVsEhBuhAOJKgQQiUpGKA?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt="" data-size="original">
 
@@ -391,7 +389,7 @@ Since the TechSpark makerspace's water jet was out of order, we considered outso
 
 _Images of the fabrication and assembly process of the first few components of the storage assembly_
 
-Due to time constraints, we weren't able to complete the entire assembly, but believe that this is for the best, as I’m sure many design improvements will be implemented next semester. One example of this is for redesigning the shelf which holds the manifold and ampoules. Next semester’s ALD team should consider whether or not the heating block is either usable (we don’t know if it’s programmable currently), or if heating tape would suffice. Due to the heating block’s heft (it’s made out of solid metal), it would be beneficial to consider removing it if possible. Figure 8 shows a few quick sketches of possible shelf redesigns depending on if the manifold’s heater block is incorporated or not.
+Due to time constraints, we weren't able to complete the entire assembly, but believe that this is for the best, as I’m sure many design improvements will be implemented next semester. One example of this is for redesigning the shelf which holds the manifold and ampoules. Next semester’s ALD team should consider whether or not the heating block is either usable (we don’t know if it’s programmable currently), or if heating tape would suffice. Due to the heating block’s heft (it’s made out of solid metal), it would be beneficial to consider removing it if possible. Shown below are a few quick sketches of possible shelf redesigns depending on if the manifold’s heater block is incorporated or not.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXceOa2nRJU3reB39mj8Txp0lOhvo2QkLKeNLriYjNXgNnyCA7LTzr4g7J0cG1SHPEAqAln569pUrdSNnatEAc7FBD_1-IN0sp94N3bZz-eGT-BDqSY5TT3GnQsvVTJ_6HcvYBbUcw?key=QQPBc4Ozd0oiz1Y6TLHcAr9d)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeqiKOf_aXDBzr__zJGxIghjDicZRjXdMJBmj1EIbdx74NIrGDy2OHu7TwWzEjqNlb0_CE3h8tgMM1WOwYtIb30ZsCs2c3gf-RT-MWPt4lErUxF44Dzq0ZgyD4j7hT6K07lnEPV?key=QQPBc4Ozd0oiz1Y6TLHcAr9d)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5ly0qd-TPI5jI4dOcIUO8vfv4Vrd7Tlx842yMEste8qQ-KZEnOxg7hDwXnYuCfOo-jgijIbiUq8YHxghilako71zfVUbCxzcBOzDzr2QB68mdonwMo1zdQ_3ve7LztcfnSRvm?key=QQPBc4Ozd0oiz1Y6TLHcAr9d)
 
