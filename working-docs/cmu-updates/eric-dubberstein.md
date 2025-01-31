@@ -1,5 +1,25 @@
 # Eric Dubberstein
 
+
+
+Weekly updates for 2/2:
+
+
+
+Mid week update 1/30:&#x20;
+
+I got a basic test script running on the raspberry pi to turn a GPIO pin on and off
+
+Roadblocks: There is no mini hdmi to mini hdmi cable to plug the raspberry pi directly into the portable monitor
+
+I need headers to be able to connect the wires to the raspberry pi and the arduino (for the spincoater).
+
+
+
+
+
+
+
 Weekly updates for 1/26:
 
 My primary deliverable for this week was creating the plan for the rest of the semester for my role on the database team.&#x20;
