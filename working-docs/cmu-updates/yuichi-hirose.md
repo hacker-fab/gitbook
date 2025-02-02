@@ -4,7 +4,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 # Yuichi Hirose
 
-**Weekly Update #0&1 (1/13 - 1/26)**
+### **Weekly Update #0&1 (1/13 - 1/26)**
 
 #### Accomplishments
 
@@ -35,6 +35,35 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 
 
-~~**Weekly Update #2**~~&#x20;
+### **Weekly Update #2 (1/27 - 2/2)**
 
-~~I was able to complete all the Github project tracker tasks I set out to do last week as well as talk to the lab automation team to figure out what they need from us on the database.~~&#x20;
+#### Accomplishments
+
+* I made drawings for the designs of the base.\
+  ![](../../.gitbook/assets/probe-station-base.jpg)
+* I looked up metalic boards which might work as the base. If they work, we don't have to make something like the ones above.\
+  [https://a.co/d/2TJwnC9](https://a.co/d/2TJwnC9)\
+  [https://a.co/d/78COEFO](https://a.co/d/78COEFO)
+*   In order to set the state where the positioners are placed higher than the chip (the probes usually go downward from the positioners), we should either
+
+    1. elevate some parts of the stage for the positioners like this:\
+       ![](../../.gitbook/assets/silicon-testing-rf-probe-station.webp)\
+       [https://www.ossila.com/pages/what-is-a-probe-station](https://www.ossila.com/pages/what-is-a-probe-station)
+    2. or elevate the positioners themselves like this:\
+       ![](../../.gitbook/assets/F9uVQ18XcAAf_Wd.jpeg)\
+       [https://x.com/BreakingTaps/status/1719132030972182728](https://x.com/BreakingTaps/status/1719132030972182728)
+
+    I assume the design 2 will cost less and will be much easier to make. I can't find any downsides of this design. So we decided to go with the design 2.
+* Anirud and I decided to procure and try [the Amazon $125 XYZ stage](https://a.co/d/9o7FYxc) instead of [the $700 positioner](https://www.quater-research.com/all-products/XYZ-300-TEST-Micro-Positioners-p132789603) first, refering to [this design](https://x.com/BreakingTaps/status/1719132030972182728).
+* I made drawings for the designs of the attachement to connect the Amazon XYZ stage with the [probe holder](https://www.quater-research.com/all-products/20249-Test-Arm-Holder-p136536837).\
+  ![](../../.gitbook/assets/probe-station-xyz-positioner-probe-holder-connector.jpg)
+* I discussed with Anirud about his idea on the auto-Z implementation using a piezo vibration sensor like [this](https://a.co/d/aGbvlkL). He drilled a hole in the center of the sensor, which is for the vacuum chuck, and it sill worked. He told me that the burrs around the hole can be a problem. I think putting a backup board (sacrificial board) under it when drilling might reduce the burrs. Or we can put a conductive spacer, with a larger hole avoiding the burrs, between the sensor and the chuck.
+
+#### Roadblocks
+
+* Camera selection
+
+#### Plans for next week
+
+* Design of an attachment to put magets to the bottom og the Amazon XYZ stage
+* Design of the vacuum chuck
