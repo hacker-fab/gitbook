@@ -14,18 +14,14 @@ layout:
 
 # 🎥 Patterning
 
+**For a description of what the team at CMU is working on in Spring 2025, check out** [**this document**](https://docs.google.com/document/d/1cksUbf5onK4FIIpE_ZZxUgtdfJ7OKFyU2kt76BniGkw/edit?usp=sharing)**!**
 
-
-concise explanation and context&#x20;
+Goals of this page:
 
 * Not to try and cover theory or industry standard, but to break the problem into first principles just enough to give context to the quantifiable parameters
 * Also an opportunity to frame the problem wide enough to set the tone of thinking of these machines from the ground up (aligned with goal, don't think of industry as immutable)
-
-exhaustive list of industry methods and examples
-
-quantifiable end user parameters with descriptions + standardized tests
-
-
+* Exhaustive list of industry methods and examples
+* Quantifiable end user parameters with descriptions + standardized tests
 
 ***
 

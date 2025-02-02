@@ -1,5 +1,7 @@
 # Lithography Stepper V2 Build
 
+**If you already have a stepper built and you're looking for information on how to operate the tool, check out our** [**SOP**](../../standard-operating-procedures/patterning-sop-stepper-v2/)**!**
+
 ## Hardware Specs
 
 <table><thead><tr><th width="279">Cost</th><th>$3,062.03</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>6 hours</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>1.5 µm</td></tr><tr><td>Mechanical Repeatability</td><td>5 µm (to verify)</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>

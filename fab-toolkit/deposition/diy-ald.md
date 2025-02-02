@@ -6,6 +6,8 @@ description: HackerFab DIY Low-Cost Atomic Layer Deposition Tool - Progress as o
 
 {% @github-files/github-code-block url="https://github.com/hacker-fab/ald" %}
 
+**For a description of what the team at CMU is working on in Spring 2025, check out** [**this document**](https://docs.google.com/document/d/1hN6o0-Mjtj6w6XVKbcjDsQGZm-uqVoWmuRubTbs2fYQ/edit?usp=sharing)**!**
+
 ## Bill of Materials
 
 A complete list of parts and components used in making the DIY ALD system can be found [here](https://docs.google.com/spreadsheets/d/197pMBbWlABzj44jjp_owc5-I_hZhAVBunhPJlZiwtF0/edit?usp=sharing).
