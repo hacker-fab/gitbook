@@ -54,6 +54,8 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 
 * Place your chip on the yellow tape, and use tweezers to gently press down on the corners of the chip.
 * Double check that the metal sheet at the back is not bent and still covering the vacuum.
+* Double check that the wire and barrel connectors are suspended and not touching anything conductive as to short them.
+* Use a multimeter to ensure no continuity between the power and ground wire going into the chamber.
 * Close the blue lid and screw the black knobs all the way.
 * Close the vent all the way (hand tight)
 * Turn on the pump.
