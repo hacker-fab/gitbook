@@ -37,3 +37,26 @@
 * Get trained on XRR next Thursday
 * Continue literature review&#x20;
 * Sputtering trials with Aluminum target --> Try sparking using high flow rate to create dense plasma then lowering pressure to increase amount of sputtered particles that reach the substrate
+
+### Update 2 (1/20-2/2)
+
+#### Accomplishments
+
+* Met with Professor Sokalski to discuss XRR&#x20;
+* Assisted chamber modifications for RF sputtering
+* RF Sputtering trial with Aluminum target
+  * learned how to use RF sputtering equipment and fundamentals behind impedance matching
+* Chamber bias literature review
+* Completed AFM online training and reached out to MCF contact for in-person training
+
+#### Roadblocks
+
+* Main roadblock is still sputtering chamber not working - will continue to look into specific reasons why target seems completely unscathed after a few hours of being near plasma
+* Some of the RF sputtering electronics are cooked
+
+#### Plans
+
+* AFM in-person training
+* Continue sputtering chamber debugging - both literature review and in-person tests
+* Ideally also XRR in-person training, depends on how fast MCF contact responds.
+
