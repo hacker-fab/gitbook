@@ -93,6 +93,9 @@
 
 ## 🟢 WORKING DOCS
 
+* [CMOS Source/Drain Metal Contact Optimization](working-docs/cmos-source-drain-metal-contact-optimization.md)
+* [CMOS Doping Process Development](working-docs/cmos-doping-process-development.md)
+* [Sputtering Gate Oxides + Metal Gate Contacts](working-docs/sputtering-gate-oxides-+-metal-gate-contacts.md)
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
 * [CMU Updates](working-docs/cmu-updates/README.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
