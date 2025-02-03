@@ -125,6 +125,7 @@
   * [James Lin](working-docs/cmu-updates/james-lin.md)
   * [Ayan Ghosh](working-docs/cmu-updates/ayan-ghosh.md)
   * [Advaith Menon](working-docs/cmu-updates/advaith-menon.md)
+  * [Adwoa Asare](working-docs/cmu-updates/adwoa-asare.md)
 
 ## 🔲 Templates (to do)
 
