@@ -4,6 +4,35 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 2:
+
+Progress Update:
+
+* Did research on performing an RCA clean and wrote the SOP of the RCA clean we will conduct here: [https://docs.google.com/document/d/1EJc17dcLvwOp3yGAgUv3rpoIKi2gON022oEVz9VkTkE/edit?usp=sharing](https://docs.google.com/document/d/1EJc17dcLvwOp3yGAgUv3rpoIKi2gON022oEVz9VkTkE/edit?usp=sharing)
+* Added initial notes for RCA clean to the CMOS process dev master doc: [https://docs.google.com/document/d/1566Sux3ALGOfexcq4ajqJ6XRDOvNgEnyw1Al20tyuYY/edit?tab=t.0](https://docs.google.com/document/d/1566Sux3ALGOfexcq4ajqJ6XRDOvNgEnyw1Al20tyuYY/edit?tab=t.0)
+* Built a FabuBlocks process for the p-type MOScap fabrication here + got feedback from Cesely : [https://www.fabublox.com/process-editor/b12fd11e-5a87-4d3f-ad97-d2f436606290](https://www.fabublox.com/process-editor/b12fd11e-5a87-4d3f-ad97-d2f436606290)
+* Created the solutions for SC-1 and SC-2 we will be using for the RCA clean within the fume hood
+* Completed phase 1 of the Resistor lab&#x20;
+* Got HF training done&#x20;
+* Got Evaporator training done&#x20;
+* Got Fume Hood training done&#x20;
+
+
+
+Roadblocks:&#x20;
+
+* No current roadblocks, tube furnace seemed to have died so couldn't make the p-type MOScap last week but it seems to have been fixed so I can do that next week
+
+
+
+Plans:&#x20;
+
+* Conduct an RCA clean following my SOP
+* Fab a p-type MOScap
+* Read through chapters 4 and 5 of Modern Semiconductor devices for Integrated circuits again in detail and read through dopant profiles to help with CV testing.
+
+
+
 ## Update 1:
 
 Progress Update:
