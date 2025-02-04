@@ -126,6 +126,7 @@
   * [Ayan Ghosh](working-docs/cmu-updates/ayan-ghosh.md)
   * [Advaith Menon](working-docs/cmu-updates/advaith-menon.md)
   * [Adwoa Asare](working-docs/cmu-updates/adwoa-asare.md)
+  * [Qirui (Ridge) Da Updates - Database](working-docs/cmu-updates/qirui-ridge-da-updates-database.md)
 
 ## 🔲 Templates (to do)
 
