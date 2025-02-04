@@ -4,6 +4,35 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #2
+
+**What was accomplished:**
+
+1. Researched design constraints and rules for layout (e.g., spacing, layers). Created [notes](https://docs.google.com/document/d/16lfnap98lBZeHyBsATZmRs21-E8JmfMBYN84W-XPA0I/edit?usp=sharing) for future reference.&#x20;
+2. Figured out aspect ratio that reflects Stepper GUI (16:9)
+3. Sandra and I recreated the current code as well as the new implementation of critical functions using phidl package tutorial. &#x20;
+4. Sandra and I created masks on [Google Colab](https://colab.research.google.com/drive/1Ails5DASIdUd1btmyHOf2_QSz4EHi1vM?usp=sharing) with rectangles of various sizes to test the scale factor of phidl grid units to micrometers.
+
+&#x20;![](<../../.gitbook/assets/rectangles (1).png>)
+
+4. Went to lab for scale factor on Sunday 1/3, followed SOP for patterning with Kent and learned how to use the stepper.
+5. Discussed to the stepper team and Icey, decided to use cross with 1 elongated side as the marker shape of choice for now.&#x20;
+   1. This is because team only cares about rotating 90 degrees.&#x20;
+6. Successfully generated script that turns gds files into a png files.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-03 at 12.09.02 AM.png" alt=""><figcaption></figcaption></figure>
+
+**Roadblocks:**
+
+1. Sandra and I were not able to complete patterning to find the scale factor because the spin coater didn't work (the vacuum was too weak so the chip kept falling off during spin).&#x20;
+   1. But, we understood the process of SOP so we believe we can do it once the spin coater is fixed!
+
+**Plans for next week:**
+
+1. Attempt to pattern a chip with the mask above; take measurements of different rectangles to decide the scale factor.&#x20;
+2. Research Magic VLSI tool.
+3. Learn more about the phidl package section: [Layers](https://phidl.readthedocs.io/en/latest/tutorials/layers.html), and how to implement them for more complex masks.
+
 ## Update #1&#x20;
 
 #### **What was accomplished:**
