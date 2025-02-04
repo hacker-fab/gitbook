@@ -4,6 +4,8 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+
+
 ## Update #2
 
 **What was accomplished:**
@@ -13,7 +15,7 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 3. Sandra and I recreated the current code as well as the new implementation of critical functions using phidl package tutorial. &#x20;
 4. Sandra and I created masks on [Google Colab](https://colab.research.google.com/drive/1Ails5DASIdUd1btmyHOf2_QSz4EHi1vM?usp=sharing) with rectangles of various sizes to test the scale factor of phidl grid units to micrometers.
 
-&#x20;![](<../../.gitbook/assets/rectangles (1).png>)
+&#x20;![](<../../.gitbook/assets/rectangles (1) (1).png>)
 
 4. Went to lab for scale factor on Sunday 1/3, followed SOP for patterning with Kent and learned how to use the stepper.
 5. Discussed to the stepper team and Icey, decided to use cross with 1 elongated side as the marker shape of choice for now.&#x20;
@@ -51,7 +53,7 @@ c. Then, I reviewed the existing codebase and documentation for mask generation 
 
 **Roadblocks:**
 
-a. Sandra and I need to learn how to fabricate single layers to analyze the aspect ratios used in the current mask generation code. Since we haven't started our labs, it holds us back from kickstarting this portion of our project. However, we anticipate learning the required fabrication knowledge starting with Lab 1 this  upcoming Thursday.&#x20;
+a. Sandra and I need to learn how to fabricate single layers to analyze the aspect ratios used in the current mask generation code. Since we haven't started our labs, it holds us back from kickstarting this portion of our project. However, we anticipate learning the required fabrication knowledge starting with Lab 1 this upcoming Thursday.&#x20;
 
 **Plans for next week:**
 
