@@ -2,7 +2,47 @@
 
 
 
-Weekly updates for 2/2:
+_**Weekly updates for 2/2:**_
+
+Tasks I accomplished:&#x20;
+
+Physical hardware is set up. Raspberry PI is connected to spin coater microcontroller. I am able to send data to microcontroller using the Raspberry PI GPIO pins. I checked off these tasks in github progress tracker.&#x20;
+
+
+
+See database section of gitbook for documentation.
+
+
+
+Weekly demo:
+
+[https://drive.google.com/file/d/1g-vEBh8HtQuMvDOqQpFuI3LrrTV60lJq/view?usp=drive\_link](https://drive.google.com/file/d/1g-vEBh8HtQuMvDOqQpFuI3LrrTV60lJq/view?usp=drive_link)
+
+
+
+Roadblocks:&#x20;
+
+I do not have a micro hdmi to mini hdmi cable needed to plug the portable monitor into the raspberry pi. Solution: This has been ordered on AMAZON and will arrive within the next week or so. For the meantime, I can just connec the cable to the monitor at my desk.&#x20;
+
+
+
+Plans for next week:&#x20;
+
+Set up AWS resources: Create DynamoDB tables for the job queue and logs.&#x20;
+
+Configure S3 bucket (if needed) for job-related resources. Implement basic API Gateway endpoints using Lambda:&#x20;
+
+`POST /jobs: Enqueue new jobs.`&#x20;
+
+`GET /jobs/next: Fetch the next job.`&#x20;
+
+`POST /jobs/completio`n: Update job completion status.
+
+Deliverable: Can enqueue a job from POSTMAN on any computer to turn on the led (or change voltage on multimeter) connected to the GPIO pin on the raspberry PI.
+
+
+
+
 
 
 
@@ -20,7 +60,7 @@ I need headers to be able to connect the wires to the raspberry pi and the ardui
 
 
 
-Weekly updates for 1/26:
+_**Weekly updates for 1/26:**_
 
 My primary deliverable for this week was creating the plan for the rest of the semester for my role on the database team.&#x20;
 
@@ -50,7 +90,7 @@ Week 1: Hardware Setup
 
 
 
-Weekly updates for 1/19:
+_Weekly updates for 1/19:_
 
 On thursday after class, I met with the rest of the database team. We got the repo cloned on all of our machines and we outlined what we need to accomplish by the end of the week (1/19). Our task was to browse through the current working version of the website running locally on our machines and make a list (here in gitbook) about what could be improved as a new user that has not used the website before. My list is as follows:&#x20;
 

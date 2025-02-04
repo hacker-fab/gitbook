@@ -60,3 +60,23 @@ System Architecture
 Data Flow Job Creation: The primary way that jobs will be created is through the hacker fab website. The hacker fab website will call the appropriate API call to manage the jobs database. The implementation of this is out of the initial scope for my project. For testing purposes for this semester, I will use POSTMAN to send API calls to the AWS jobs database. Users can also create new jobs directly via the Raspberry Pi UI. This allows for redundancy in the case that the machine needs to be controlled without the database. There will be an option to run the job immediately or to send it to the database to be added to the queue. Job Queue Management: The AWS server maintains a centralized queue of jobs. The Raspberry Pi fetches and dequeues jobs by querying the API. Only jobs for the specific machine are dequeued. Job Execution: The Raspberry Pi receives the job and displays it on the connected UI. Upon user interaction (manual start) or automatically (if set), the job is run on the spin coater (or other device in the future) Job Completion: After execution, the Raspberry Pi sends the success/failure status to the AWS server, updating the job's record in the database.
 
 Technical Details AWS Backend API Gateway Endpoints from AWS for raspberry PI: GET /jobs/next: Fetch the next job from the queue. POST /jobs/completion: Update job completion details. API Gateway Endpoints from AWS for web application: POST /jobs: Enqueue a new job. The request has the machine name, input parameters, priority. The response will have the job\_id of the newly created job, or error. GET /jobs\_by\_id: The request includes the job\_id(s) for which you will get details. All data for that row of the table will then be returned. NOTE: you can pass a list of job\_ids to get multiple rows of data at the same time. GET /jobs\_by\_machine: The request includes the machine name. All jobs that are in the database (regardless of status) will be returned. Job Queue Table Schema: job\_id (Primary Key) machine (the machine to run the job on. E.g. spin coater) status (Pending/In Progress/Completed/Failed) input\_parameters (JSON for variable parameters) output\_parameters (JSON for results from the machine) timestamp (Queued timestamp) priority (Optional for prioritized execution) Raspberry Pi Software Language: Python for compatibility with Pi and microcontroller communication. UI Framework: Tkinter. Lightweight GUI API Client: Fetches jobs and sends completion status using requests library. Microcontroller Interface This will vary significantly depending on the tool we are attempting to automate. This code will be modularized and will be one of the only things that will need to be modified when adding a new tool to the system. Job Execution Commands: Defined in a simple protocol (e.g., JSON commands). These commands are then parsed and used to control the microcontroller. For example, for the spin coater, the output from the I/O ports of the raspberry pi can be connected to where the buttons are on the spin coater microcontroller and simulate the button presses. There might also be an even simpler way to connect the raspberry pi to the spin coater microcontroller after talking to someone familiar with the spin coater.
+
+
+
+**Basic raspberry PI hardware setup:**
+
+Raspberry PI 5 with case and heatsink. Jumper wires connect GPIO pins to external device. See image attached.&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_7608.JPG" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+To control the Raspberry PI 5 GPIO ports, use the gpiod python package (see screenshot below). It is critical to use gpiochip4.&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_7609.JPG" alt=""><figcaption></figcaption></figure>
+
+AWS Configuration for jobs queue:
+
+This is the jobs queue that the tools (right now only the spincoater) pull from. Jobs are enqueued from the primary web application.&#x20;
+
+TBD...
