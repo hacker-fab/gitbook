@@ -42,6 +42,12 @@ Deliverable: Can enqueue a job from POSTMAN on any computer to turn on the led (
 
 
 
+> Good work. I think the cable should arrive by tomorrow or so, I will let you know. If you are stuck on AWS stuff let me know. I would say just create a free account, if not I can also give you access to the HackerFab account if needed.\
+> \
+> I like the weekly demo thing, I am going to suggest that to others as well. Now that the GPIO pins can be used to send data to the microcontroller, maybe you can even try modifying the microcontrollers spin-coater script actions based off the data received to the microcontroller from the raspberry pi. If this is the next step u are working on, that's great.
+
+
+
 
 
 
