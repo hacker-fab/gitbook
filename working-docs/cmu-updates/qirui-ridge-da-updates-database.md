@@ -44,3 +44,15 @@ The first draft of my project proposal.
 * Nginx reverse proxy is working. Support HTTP/1.1, HTTP/2, and experimentally HTTP/3 (QUIC).
 * Tested a basic Flask "Hello World" app successfully. Gunicorn WSGI middleware is working great.
 
+
+
+> Good to hear that the setup worked out. I would love to take a look at the automatic scheduled data backup pipeline, the MyAdmin data management panel, and the ACME setup. I would also like to better understand the Gnunicorn middleware when we next meet (I have not used it before).\
+> \
+> Looks like you are on track. Keep updating here and as always, feel free to reach out with questions.\
+> \
+> P.S. for the future, I would suggest adding new updates to the top of this file, that way you don't have to scroll down to add a new update, and I don't have to scroll to read the latest stuff :)
+
+
+
+
+
