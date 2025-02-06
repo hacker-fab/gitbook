@@ -33,6 +33,14 @@ Plans:&#x20;
 
 
 
+Great work this week! Your documentation looks very good and professional.
+
+It will be imperative that you start fabricating this week as you learned last week things in the lab can take much longer than expected.
+
+How do you intend to measure the effectiveness of the RCA clean? Will you be comparing the results of the RCA clean by having a baseline chip with no RCA clean?
+
+Also, will need to make patterns for your MOS Caps. I can review how to do this with you.
+
 ## Update 1:
 
 Progress Update:
