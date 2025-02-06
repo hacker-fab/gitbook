@@ -62,3 +62,11 @@ Fabrication this week could have been better. Started with 3 chips but lost 2 in
 * In parallel, I would like to start doing some research on possible differences in metal-Si contact behavior for both p type and n type Si and assess the viability of introducing these in further testings
 
 ***
+
+Great work this week!
+
+The spin coater can be difficult to work with. In the past I have tried ensuring that photoresist is prohibiting the vacuum or that the o-rings are clean. Another, parameter that affects its effectiveness is the size of the chip- try to keep your chips to 1 cm^2 so that they stay on. Additionally, you can try using double sided tape.
+
+Where are you in the fabrication process for your baseline chip? Are you varying any parameters between your three baseline chips (cleaning process, dopant concentration, etc.)? If you are varying any parameters I would make sure to deposit the aluminum at the same time on all three chips if you haven't already deposited.
+
+If you want you can attempt to perform a baseline p-type chip using B154. The Filmtronics Data Sheet provides good detail about junction depth/sheet resistance for their B154 SOG, which makes it easy to gauge the carrier concentration.
