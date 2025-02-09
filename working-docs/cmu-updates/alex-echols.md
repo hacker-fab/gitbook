@@ -4,6 +4,85 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 3 (02/09/2025)
+
+### Progress Updates
+
+* Constructed\*\* substrate heater and began uniformity characterization
+
+\*\* The hardware used (i.e. screws, nuts, washers) is not the same as those that will be used for the final assembly, but it should not make a significant difference for the tests that we are doing
+
+I was able to cut the top and bottom sheets for the substrate heater on the Techspark waterjet, and complete all of the required post-processing steps. By Thursday (2/6) I was able to begin testing on the fully assembled substrate heater.
+
+<figure><img src="../../.gitbook/assets/IMG_8102.JPEG" alt=""><figcaption><p>Full test setup with power supply, datalogger, and heater</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/IMG_8103.JPEG" alt=""><figcaption><p>Heater with grid and thermocouples during a measurement</p></figcaption></figure>
+
+As detailed in my project proposal, temperature readings are being taken on 0.5" intervals across the heater surface. I am also measuring the temperature at the "main" thermocouple (the one which will be in the final assembly) as a point of comparison. Due to the length of the testing, I was not able to do more than one run, but this week I will continue this testing and hopefully finish by Friday. Due to long test times, I have slightly revised my testing procedure from that in the project proposal:
+
+#### Setup
+
+1. Draw a 0.5" grid on the heater surface, using the center of the disk as the origin. Ideally this grid lines up with the direction of the heating wire "zig-zags".
+2. Ensure that the datalogger is working for all four probes. My initial test plan involved an arduino being used for datalogging, but my tests are being conducted using a [THE-373](https://gainexpress-dealer.com/products/the-373) thermometer for simplicity.
+
+#### Trial
+
+1. Tape 3 of the thermocouples to points on the grid and record their positions (#4 is the center of the grid). Kapton tape or a similarly rated adhesive should be used. Electrical tape is pictured above and is not suitable.
+2. Turn on datalogging and power supply (7V, constant voltage mode) for 20 minutes. The heater will reach approximately 100C by this time, which is lower than our operating temperatures, but should be suitable to notice any differences in the heating curves over time.
+3. Turn off the power supply and allow the heater to cool down to room temperature. This will take approximately 50 minutes.
+4. Move thermocouples to a new location and test again. Due to the long duration of each test trial (\~70 minutes), it is likely not advisable to probe at every single point on the surface of the heater. 1-2 trails per quadrant should be sufficient to notice any problem areas, assuming that the thermocouples are evenly spaced.
+
+#### Analysis
+
+This is still WIP, but my current notes are:
+
+* Temperatures at each probe point should be compared to the center thermocouple. This is a better choice than comparing to mean temperature or similar because we will eventually be using the thermocouple at the center of the heater as the sole point of measurement, so the uniformity matters relative to that point.
+* It is important to remember that K-type thermocouples (used here) have an accuracy of ±2.2 C, so any deviations within that range are not reason for concern. At the maximum operating temperature of our heater (600 C), this goes up to ±4.5 C
+
+***
+
+* Researched passthroughs for QCM and substrate heater
+
+#### Substrate Heater
+
+The substrate heater requires lines for power and the center thermocouple. We have two primary options for these needs, either use two seperate feedthroughs for power and the thermocouples or use a single power + thermocouple feedthrough. Upon examining prices, it is apparent that it is much more economical to purchase a single power + thermocouple feedthrough, and many vendors sell feedthroughs which are rated for our power needs.
+
+
+
+| Vendor         | Price   | Lead Time                                               | Link                                                                                                                                                 |
+| -------------- | ------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IdealVac       | $465.26 | Ships Now                                               | [IdealVac P108066](https://www.idealvac.com/en-us/Electrical-Thermocouple-and-Power-Feedthrough-Type-K-5KV-30A-UHV-Rated-118-in-dia-KF16/pp/P108066) |
+| Kurt J. Lesker | $315.00 | KJLC will contact you                                   | [KJL TFT1KY2N308](https://www.lesker.com/feedthroughs/thermocouple-feedthroughs-typek-miniplugpower-singleend/part/tft1ky2c308)                      |
+| MDC Precision  | $321.00 | 6 weeks                                                 | [MDC 9393015](https://www.mdcprecision.com/9393015-thermocouple-powerfeedthrough-typek-1pair-5kv-30amps-k075-nw16-kwik-flangeisokf-quickflange)      |
+| Allectra       | $301.37 | On Request (I emailed but have not received a response) | [Allectra 263-TCK-1-CU30-2-K16](https://www.allectra.com/products/263-tck-1-cu30-2-k16/)                                                             |
+
+My recommendation for our project is to order from IdealVac, simply due to lead times. The other products on this list should be equivalent and could be ordered by another fab looking to replicate our device. Since we are concerned with getting the chamber working by spring break, purchasing the only option which we know can ship now makes the most sense to me.
+
+#### QCM Passthrough
+
+I am in the process of speaking to Matt about options for this sensor. Options for mounts/passthroughs are summarized [here](https://docs.google.com/document/d/1vYA7lyjGNZSNSQZndPqWmFKoCta1pJbzlKMnsrJxT94/edit?tab=t.0#heading=h.tuhjetsx3rhg).
+
+While talking to Matt, we discussed the idea of either directly connecting a CF 2.75" flange to the chamber, or using a KF40 to CF 2.75" adapter to allow the sensor mounts to connect to the chamber. I did some quick cost analysis and it seems that both options are roughly price equivalent.
+
+**CF on Chamber (No Adapter) | Total Cost (Est.): $1,329.47**
+
+<table><thead><tr><th width="268">Item</th><th>Qty</th><th>Cost (Est.)</th><th>Source</th></tr></thead><tbody><tr><td>IdealVac 9x9 Plate (CF 2.75)</td><td>1</td><td>$258.15</td><td><a href="https://www.idealvac.com/en-us/Ideal-Vacuum-Cube-9-x-9-Vacuum-Chamber-Plate-With-One-Conflat-CF-275-in-Port/pp/P1010678">IdealVac</a></td></tr><tr><td>Aflas Sheet</td><td>1</td><td>$39.03</td><td><a href="https://www.mcmaster.com/5499T14/">McMaster</a></td></tr><tr><td>Gasket Cutter</td><td>1</td><td>$32.29</td><td><a href="https://www.mcmaster.com/36795A11/">McMaster</a></td></tr><tr><td>Sensor/Passthrough Assembly</td><td>1</td><td>$1,000.00</td><td>INFICON</td></tr></tbody></table>
+
+**KF on Chamber (Adapter) | Total Cost (Est.): $1,396.90**
+
+<table><thead><tr><th width="270">Item</th><th>Qty</th><th>Cost (Est.)</th><th>Source</th></tr></thead><tbody><tr><td>IdealVac 9x9 Plate (KF40)</td><td>1</td><td>$210.70</td><td><a href="https://www.idealvac.com/en-us/Ideal-Vacuum-Cube-9-x-9-Vacuum-Chamber-Plate-With-One-KF-40-(NW-40)-Port/pp/P109594">IdealVac</a></td></tr><tr><td>KF40 Centering Ring</td><td>1</td><td>$10.05</td><td><a href="https://www.lesker.com/newweb/flanges/hardware_kf_centeringrings.cfm?pgid=al">Kurt J Lesker</a></td></tr><tr><td>KF40 Bulkead Clamp</td><td>1</td><td>$36.10</td><td><a href="https://www.lesker.com/newweb/flanges/hardware_kf_clamps_bulkhead.cfm?pgid=al">Kurt J Lesker</a></td></tr><tr><td>KF40 to CF 2.75 Adapter</td><td>1</td><td>$105.65</td><td><a href="https://www.lesker.com/newweb/flanges/adapters_flanged_1.cfm?pgid=cfkf">Kurt J Lesker</a></td></tr><tr><td>Copper Gasket</td><td>1</td><td>$34.40</td><td><a href="https://www.lesker.com/newweb/flanges/hardware_cf_gaskets.cfm?pgid=ofhc">Kurt J Lesker</a></td></tr><tr><td>Sensor/Passthrough Assembly</td><td>1</td><td>$1,000.00</td><td>INFICON</td></tr></tbody></table>
+
+### Roadblocks
+
+* Not exactly a roadblock, but the Boron Nitride disks cracked during the initial testing of the heater. I will be looking into potential causes for this and potentially thinking of other options
+* The heater testing takes much longer than I expected per trial, but I have planned around this as mentioned above. I will take measurements on a limited subset of points rather than all (49) points on the grid
+
+### Plans
+
+* Finish substrate heater uniformity testing and gather/analyze data
+* Finalize feedthrough plans and order them ASAP. Matt is currently not responding to my email, but I will follow up with him on Tuesday if he has not responded by then
+* Look into the Boron Nitride cracking
+
 ## Update 2 (02/02/2025)
 
 ### Progress Updates
@@ -111,5 +190,5 @@ In addition to the substrate heater modifications, a mounting bracket was design
   * Ensure heater uniformity
 * Draft project proposal
 
-##
+
 
