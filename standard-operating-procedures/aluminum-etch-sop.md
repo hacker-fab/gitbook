@@ -50,6 +50,8 @@ If under etching occurs, then all contacts will be shorted to each other. Over e
 
 Aluminum etch has proven difficult to keep consistent. There are many problems with peeling and bad adhesion of both photoresist on top and aluminum to the layers below.
 
+Best practice is to calculate how long you should etch for, then etch for 30 seconds greater than that amount of time, then inspect, then etch longer if the etch looks incomplete.
+
 ***
 
 ## Tools
