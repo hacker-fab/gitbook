@@ -36,6 +36,8 @@ No roadblocks at the time.
 
 Will have the first training in the lab with the team.  Will receive feedback from the project proposal and define concrete first steps and determine what changes need to be made to the initial plan.
 
+
+
 ***
 
 ### <mark style="background-color:blue;">Weekly Update #2 (Feb 2)</mark>
@@ -70,3 +72,32 @@ The spin coater can be difficult to work with. In the past I have tried ensuring
 Where are you in the fabrication process for your baseline chip? Are you varying any parameters between your three baseline chips (cleaning process, dopant concentration, etc.)? If you are varying any parameters I would make sure to deposit the aluminum at the same time on all three chips if you haven't already deposited.
 
 If you want you can attempt to perform a baseline p-type chip using B154. The Filmtronics Data Sheet provides good detail about junction depth/sheet resistance for their B154 SOG, which makes it easy to gauge the carrier concentration.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #3 (Feb 9)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* We decided to fabricate 4 chips for the baseline testing: 2 with Aluminum and 2 with Nickel, and within those 1 p-doped and 1 n-doped ([https://docs.google.com/document/d/1ySbER2cQHFqWkUeQs8Q9j2Xhx4sTrYl5xfo5lC\_T\_s0/edit?tab=t.0](https://docs.google.com/document/d/1ySbER2cQHFqWkUeQs8Q9j2Xhx4sTrYl5xfo5lC_T_s0/edit?tab=t.0)). This way we ensure the baseline testing covers several parameters and chip variations.&#x20;
+* I have fabricated the 4 chips side by side, according to the Fabublox process ([https://www.fabublox.com/process-editor/2b1a8f1f-8915-4e10-83a6-1cb50809dc19](https://www.fabublox.com/process-editor/2b1a8f1f-8915-4e10-83a6-1cb50809dc19)). The fabrication was not a smooth process. I learned that a lot of things can and will go wrong, creating several stepbacks and delays in the fabrication process.
+* The 2 Al chips are finalized and ready to test.
+* The 2 Ni chips are currently stuck on the Nickel etching step.
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+The major roadblock right now is Nickel etching. According to the deposited thickness and the etch rate, the etch time should be around 4 minutes at 40C. We used a thermistor to ensure that temperature was reached, and the Nickel was nowhere near being etched. We decided to increase the etch time, but still no luck. I plan to do some reading on this and try to find the problem.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Make IV and CV testing on the 2 fabricated Al chips
+* Research Nickel etching to find the problem with our current process
+* If I am successful in etching the Nickel, I also plan to do IV and CV testing on those chips, in hopes of having the full baseline testing ready for the first demo
+* I have been making daily logs with the inputs of fabrication progress, including everything that was accomplished, what went wrong, calculations, parameters, and weird things observed. I plan on going through all of these and joining them in a public document.&#x20;
+
