@@ -41,6 +41,12 @@ Although it is officially scheduled for week 4 on the project proposal, I will m
 
 
 
+> Good work, I am wondering how this would work beyond the API get/post and postman interface? As in how does it connect to a low-level machine, I am assuming since it's a HTTP request it can be handled by something running on a port on the local machine somehow, but I am curious to find out more about how this is done.
+
+
+
+
+
 _**Weekly updates for 2/2:**_
 
 Tasks I accomplished:&#x20;
