@@ -22,7 +22,7 @@ layout:
 
 #### For More Detailed Process Parameters:
 
-[Patterning Process Sheet](https://docs.google.com/spreadsheets/d/1JrOyISOwiZrRkdBT3utiHOze-yCluFcrFgd6\_dhLPMw/edit#gid=38181110)
+[Patterning Process Sheet](https://docs.google.com/spreadsheets/d/1JrOyISOwiZrRkdBT3utiHOze-yCluFcrFgd6_dhLPMw/edit#gid=38181110)
 
 ***
 
@@ -44,13 +44,13 @@ See the appendix for useful resources about spin coating, our resist, and develo
 ## Tools
 
 1. [Spin Coater](https://docs.google.com/document/d/16tg5COz3QADQcWTJfgbuTBRsJrYIF2IFitKL2VLnr3I/edit?usp=sharing)
-2. [Hot Plate](https://docs.google.com/document/d/14IZRb\_CLO6zwDDNvO9dSkzYD5jisfbr-6na2exCk-T0/edit?usp=sharing)
+2. [Hot Plate](https://docs.google.com/document/d/14IZRb_CLO6zwDDNvO9dSkzYD5jisfbr-6na2exCk-T0/edit?usp=sharing)
 3. Flashlight Jig or Maskless Lithography Stepper
 
 ## Materials
 
 1. [Hexamethyldisilazane (HMDS) adhesion promoter](https://docs.google.com/document/d/1Wtk8l1dXzwlhdUSQaCBSIJ00-sB0tanP0AOklIOY0Ik/edit?usp=sharing)
-2. AZ-4210 positive photoresist ([specsheet](https://www.microchemicals.com/micro/tds\_az\_p4000\_series.pdf))
+2. AZ-4210 positive photoresist ([specsheet](https://www.microchemicals.com/micro/tds_az_p4000_series.pdf))
 3. AZ-400K Developer
 4. Acetone
 5. Isopropanol
@@ -64,7 +64,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 ### Preparation
 
 1. If you have already claimed a chip number, and opened its specific chip view data sheet, record your patterning data into that sheet. If you have NOT claimed a chip number, and have NOT begun recording data in a chip specific sheet, open this [central chip count](https://docs.google.com/spreadsheets/d/1MrqtnkHcNr5hekHpQHusBZJG4nrdcxDz7Yg5Emn9BMQ/edit#gid=0) sheet, claim the next available chip number, open the blank chip view sheet for that specific chip number and record all subsequent process data into it.
-2. [Cleave](https://docs.google.com/document/d/1UWZ\_X2TpRqdOWOC8YGubfD7xW-dz4nRNzJk5c\_mo4w0/edit?usp=sharing) the Si wafer into a \~1 cm x 1 cm square.
+2. [Cleave](https://docs.google.com/document/d/1UWZ_X2TpRqdOWOC8YGubfD7xW-dz4nRNzJk5c_mo4w0/edit?usp=sharing) the Si wafer into a \~1 cm x 1 cm square.
 3. Dust off the wafer with the nitrogen gun
 
 ### Wafer Cleaning
@@ -84,13 +84,13 @@ See the appendix for useful resources about spin coating, our resist, and develo
 5. See the [Vacuum Spin Coater SOP](https://hacker-fab.gitbook.io/hacker-fab-space/standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop). Remember to pipette an appropriate amount, close the lid, and turn on the vacuum.
 6. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
 7. If patterning on silicon or glass, spin coat 2-3 drops of HMDS. Otherwise skip to 7.
-   1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
+   1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
 8. HMDS bake on the hot plate at 100°C for 60 seconds.
 9. Spin coat as much photoresist as needed to mostly cover the chip, normally 3-4 drops.
-   1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
+   1. Choose Time and RPM from [patterning data sheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit#gid=0)
    2.  If chip is having trouble sticking on o-ring either: try pressing top of chip while vacuum is on with some pressure to make a better seal (use plastic tweezers)
 
-       ![](https://lh7-us.googleusercontent.com/BciCSAplFhLYkyUqJh4kPKxU3ONYgSHvfXDoACU\_73Z-xF\_lqWpIHO5CPtZGyt3n-I2zkU4y8P\_jjom\_DykU0BANy6GmklaMhCM\_sEptYzvwVZ\_GXsdCKMdNSUenD\_o\_2e8Nrk9LY7WXKRp42rtfLiU)
+       ![](https://lh7-us.googleusercontent.com/BciCSAplFhLYkyUqJh4kPKxU3ONYgSHvfXDoACU_73Z-xF_lqWpIHO5CPtZGyt3n-I2zkU4y8P_jjom_DykU0BANy6GmklaMhCM_sEptYzvwVZ_GXsdCKMdNSUenD_o_2e8Nrk9LY7WXKRp42rtfLiU)
    3. Or, take o-ring off and clean then re-install.
 10. Soft bake on the hot plate at 100°C for 90 seconds.
 
@@ -127,7 +127,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 2. LYFT and move the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
@@ -135,7 +135,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
-![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG\_6036 (1).jpg>)
+![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG_6036 (1).jpg>)
 
 5. LYFT and move the projector back into place. Ensure it is touching all four bolts. Be careful about not scratching the chip.
 
@@ -186,9 +186,9 @@ If you're doing this for the first time, it is recommended to read through the f
 
 <figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
 
-![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0001.jpg) ![](../../.gitbook/assets/274\_40x\_annotated0002.jpg)
+![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274_40x_annotated0001.jpg) ![](../../.gitbook/assets/274_40x_annotated0002.jpg)
 
-4. In order to measure the developed pattern resolution, expose [this resolution test pattern](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv\_O2MjYu2rck/edit?usp=sharing). The resolution is equal to the line pitch that is resolved in both light and dark field. Use AmScope to measure. The pitch is the distance between the center of two lines.
+4. In order to measure the developed pattern resolution, expose [this resolution test pattern](https://docs.google.com/presentation/d/16IsbOxES9O-imGjrv0Toe71-hkYhzWTv_O2MjYu2rck/edit?usp=sharing). The resolution is equal to the line pitch that is resolved in both light and dark field. Use AmScope to measure. The pitch is the distance between the center of two lines.
 5. For each chip, batch save with the chip number as the first three characters in the file prefix. Do not change the folder. A script will upload to [drive](https://drive.google.com/drive/u/1/folders/1ySfcQiROhOYFecQzDvk9XBO2B2KqJLy6) every 5 min.
 6. Paste a link to the folder in the last column of the chip sheet.
 7. Put the chip away in a plastic box and label it with a serial number.
@@ -209,9 +209,9 @@ Right side: thicker lines and blurry edges. Left side: thin lines and sharp edge
 
 See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us/pages/spin-coating](https://www.ossila.com/en-us/pages/spin-coating)
 
-[AZ-P4210 techsheet](https://www.microchemicals.com/micro/tds\_az\_p4000\_series.pdf)
+[AZ-P4210 techsheet](https://www.microchemicals.com/micro/tds_az_p4000_series.pdf)
 
-[AZ 400K developer](https://www.microchemicals.com/micro/info\_az\_400k\_421k\_Developer.pdf)
+[AZ 400K developer](https://www.microchemicals.com/micro/info_az_400k_421k_Developer.pdf)
 
 ### Alternative Exposure Technique: 365nm Flashlight
 
@@ -225,7 +225,7 @@ See this webpage for in depth spin coating theory: [https://www.ossila.com/en-us
    2. Try not to slide the mask on the wafer because you’ll damage the photoresist.
 6. Place the cap with the wafer and mask on top of the UV sensor.
 7. Turn on the flashlight for the desired exposure time.
-8. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh\_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
+8. Record the measured exposure time in the [spreadsheet](https://docs.google.com/spreadsheets/d/1T9-kXXxdD9c6KZh_iy1LGt8I8wGlmeVlIZmvBrkVQ2g/edit?usp=sharing)
    1. Dose should be automatically calculated in the sheet based on exposure option used
 
 ## Troubleshooting

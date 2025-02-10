@@ -16,7 +16,7 @@ layout:
 
 
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Etch (Aluminum Metal in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Etch (Aluminum Metal in Blue)</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>After Etch</p></figcaption></figure>
 
@@ -73,7 +73,7 @@ Aluminum etch has proven difficult to keep consistent. There are many problems w
 
 ### Etching
 
-![](https://lh6.googleusercontent.com/zeiSTdg1kLUn1G-eaC7Oafi2tNJ2TT8Mo2LWnE3KS3UWau9GNRlrRmdMcOJPsxxw9ExBYt1anuAaPwWdTfR2g7rauznhIm4NyDTsz\_2TuCkdb4dsWI62MZny8mcd3UCaGKRuLOr5P64rY\_QCxRtQ5nc)
+![](https://lh6.googleusercontent.com/zeiSTdg1kLUn1G-eaC7Oafi2tNJ2TT8Mo2LWnE3KS3UWau9GNRlrRmdMcOJPsxxw9ExBYt1anuAaPwWdTfR2g7rauznhIm4NyDTsz_2TuCkdb4dsWI62MZny8mcd3UCaGKRuLOr5P64rY_QCxRtQ5nc)
 
 8. After the acid has had a few minutes to come to temperature, use the tweezers labeled “acid” to pick up the chip and put it in the dish on the opposite side from the stirrer.
 9. Start the timer.
