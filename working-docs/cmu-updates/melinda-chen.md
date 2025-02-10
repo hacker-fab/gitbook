@@ -60,3 +60,22 @@
 * Continue sputtering chamber debugging - both literature review and in-person tests
 * Ideally also XRR in-person training, depends on how fast MCF contact responds.
 
+### Update 3 (2/2-2/9)
+
+#### Accomplishments
+
+* Completed XRR training with Besty
+* Completed AFM training
+* Contacted Andrew to ask about correct AFM tips
+* Helped perform sputtering tests on Thursday and Saturday to try to debug chamber
+
+#### Roadblocks
+
+* Sputtering chamber still not working - blocking capacitor seems like promising solution
+
+#### Plans
+
+* Perform sputtering test with Aluminum Oxide/Insulating material to test blocking capacitor theory
+* Perform XRR on sample similar to expected sputtering chamber output
+* Start writing SOPs + Drawing out schematic of characterization pipeline
+
