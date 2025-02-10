@@ -112,7 +112,24 @@ This week’s work has brought significant progress in:
 * Comparing key properties like heat resistance, impact strength, and machinability to optimize design choices.
 * Beginning research into a linear slide system to improve precision in the coating process.
 
-####
+***
+
+## Week 3
+
+This week, I made significant progress on the CAD design for the automated spin coater system. A major focus was refining the structural framework, ensuring that it is both rigid and modular. The design utilizes aluminum extrusions, which provide a strong yet lightweight foundation while allowing for easy adjustments and scalability.
+
+One of the key developments this week was the integration of a linear rail system at the base of the structure. This rail serves as the foundation for the horizontal motion of the spin coater platform. To achieve this, I designed a custom carriage system that allows the spin coater to move smoothly along the rail with minimal friction, ensuring the liquid on it isn’t affected by the motion. The carriage is designed to accommodate precise linear motion, which is essential for avoiding uneven coating application.&#x20;
+
+Additionally, I incorporated an infrared distance sensor into the design. This sensor will play a crucial role in detecting and monitoring the position of the spin coater platform, ensuring precise control over its movements. By providing real-time feedback, the sensor will help maintain consistency in the coating process, an essential factor for achieving reproducible results. The placement of the sensor was carefully chosen to maximize accuracy while minimizing interference from other components.
+
+Beyond the core structural and motion system, I also worked on establishing a system for the CAD, including redesigning the 80/20 rail to be a bit simpler and work better in Onshape assemblies. While small, these changes make it monumentally easier for the team to design, and provide a standard that can be used in the future.
+
+Moving forwards, my tasks will include designing the belting system used to drive the linear slides, as well as helping to design the element going on top of the cage, including the liquid handling system and the heat gun. Once these are accomplished, I have to test the spin-coater on the linear slides to determine what acceleration/ ramp-up is required to avoid messing up the liquid on the ASC.&#x20;
+
+<div><figure><img src="../../.gitbook/assets/Screenshot 2025-02-10 at 2.11.36 AM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-02-10 at 2.21.12 AM.png" alt=""><figcaption></figcaption></figure></div>
+
+\
+
 
 
 
