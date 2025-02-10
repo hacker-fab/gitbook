@@ -21,3 +21,10 @@ So to get started I need some thin aluminum sheets, a couple thin nuts and bolts
 Just a quick note, I've been finding it a little annoying to trawl through the documentation to find the relevant info; the documents are rather long and often I scroll so long I forget what I'm looking for. This was part of the motivation for making the CAD. (I just kept measuring stuff on the chamber.)
 
 Goals for this week are to order the materials and waterjet, I think it'll be possible to get this shielding issue done around Saturday, but we'll see.
+
+_Update 1 feedback:_
+
+_Thanks for the update. For the future, it would be great if you can add some more detail in what progress you have made as well as list specific tasks you plan on working on in the next week so we can ensure we are staying on track. Please also include if you have any setbacks (or mention that there are none) in your updates._
+
+_For any CADs or diagrams, it's fine if you just include a screenshot or link to a drive or something just so we can see what you're working on. Thanks_
+
