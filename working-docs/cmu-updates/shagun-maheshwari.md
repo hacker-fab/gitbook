@@ -4,6 +4,32 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 3:
+
+Progress Update:
+
+* Fabricated a p-type MOScap&#x20;
+  * Completed oxide growth&#x20;
+  * Completed aluminium evaporation&#x20;
+  * Created patterns&#x20;
+  * Patterned&#x20;
+  * Applied photoresist&#x20;
+  * Figured out correct procedure for aluminum etching&#x20;
+  * Learned and used the probe station to see if there was ohmic contact and optimized the aluminum etching process accordingly&#x20;
+  * HF etched the oxide&#x20;
+  * Aluminum evaporated again with new pattern&#x20;
+
+
+
+Roadblocks:
+
+* Main roadblock was the long time it took to fabricate and improving the aluminum etching process
+* Also had an issue with the evaporator on the second round of aluminum evaporation where the pressure wouldn't drop below 1e-4 hPa&#x20;
+
+Next Steps:
+
+* Learn more about CV testing and the procedure we want to follow + understand how to interpret the different results we could see and what that tells us about the device&#x20;
+
 ## Update 2:
 
 Progress Update:
