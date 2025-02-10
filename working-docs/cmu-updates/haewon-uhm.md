@@ -119,5 +119,8 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 **Future Plans**&#x20;
 
+* Look into how to run both ALD valves and the PID temperature LabVIEWs simultaneously once LabVIEW is downloaded onto the mini PC&#x20;
+* Find the python block on LabVIEW and see if the python script runs on LabVIEW&#x20;
+* Make python code that cycles through the thermocouples and averages the temperatures outputted, sending only one averaged value to LabVIEW&#x20;
 * Need to transfer the temperature readings from the Pi 4 to a mini pc that is running LabVIEW (Pi 4 is quite slow).&#x20;
 * Learn more about the adafruit library and code to accomplish the main task.&#x20;
