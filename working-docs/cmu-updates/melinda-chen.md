@@ -38,6 +38,15 @@
 * Continue literature review&#x20;
 * Sputtering trials with Aluminum target --> Try sparking using high flow rate to create dense plasma then lowering pressure to increase amount of sputtered particles that reach the substrate
 
+#### Responses
+
+* From Jay
+  *   For the progress update, be sure to link to the document(s) that show evidence of your progress. this week that would be a link to you project proposal
+
+      For roadblocks, this is an opportunity to request help, or clarify what you need from us to keep moving forward. I would argue training on certain equipment to be roadblock for you.
+
+      For plans, there should be more detail in how you're going to proceed, or link to your working doc that demonstrates your plans in more detail. For example, link what literature you plan to read first, this helps me guide your research. What do you want to learn form theses trials? why is it useful in working towards the end goal. For example you could discuss the methodology for DC al sputtering and how that informs the development of reactive DC AL2O3 sputtering. Being specific helps me evaluate if your plans for the week will actually end up being productive. Based on Fridays session, ik that you have more specific well justified plans, so be sure to articulate them here, or better yet, direct me to a document that articulates your plans.
+
 ### Update 2 (1/20-2/2)
 
 #### Accomplishments
@@ -60,6 +69,11 @@
 * Continue sputtering chamber debugging - both literature review and in-person tests
 * Ideally also XRR in-person training, depends on how fast MCF contact responds.
 
+#### Responses
+
+* make sure to link working notes, and updated project tracker
+* Good job finalizing choice of XRR for characterization
+
 ### Update 3 (2/2-2/9)
 
 #### Accomplishments
@@ -79,3 +93,11 @@
 * Perform XRR on sample similar to expected sputtering chamber output
 * Start writing SOPs + Drawing out schematic of characterization pipeline
 
+#### Responses
+
+* From Jay
+  * Good job completing both AFM and XRR training, good job helping with sputter chamber debugging.
+  * As discussed in person, RF sputtering test wont be fruitful until we implement a blocking capacitor. So I would prioritize XRR practice on oxide and evaporated Al samples.
+  * Based on: [https://www.lesker.com/newweb/ped/rateuniformity.cfm](https://www.lesker.com/newweb/ped/rateuniformity.cfm) I worry that the oxide sputter test (hoping oxide acts a blocking cap itself) may not be a good use of time, since we may have to sputter for ridiculous amounts of time to see anything). Which is also another good reason to do Reactive Al Rf sputtering instead of Al2O3 target sputtering.
+  * DC Al sputter tests may still be interesting this week.
+  * Please make sure to links to working docs, and an updated github project tracker.
