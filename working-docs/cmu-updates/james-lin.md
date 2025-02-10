@@ -104,11 +104,30 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ### ALD:
 
+* Ordering for sealing unused section:
 
+<table><thead><tr><th>Item</th><th data-type="number">Quantity</th><th>Cost</th></tr></thead><tbody><tr><td>1/2" VCR face seal metal gaskets</td><td>4</td><td>$ 8.80</td></tr><tr><td>1/2" Plug VCR Face Seal Fitting</td><td>1</td><td>$ 15.80</td></tr><tr><td>1/2" Cap VCR Face Seal Fitting</td><td>1</td><td>$ 33.60</td></tr></tbody></table>
+
+* Planned out rough cutout locations for delivery storage
+* Created rough CAD for delivery storage
+  * Have a rough concept for fixturing the manifold by holding onto the unused section
+  *
+
+      <figure><img src="../../.gitbook/assets/image (97).png" alt="" width="342"><figcaption></figcaption></figure>
+
+      <figure><img src="../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+* Had a rough week with school work so challenge has been to get good progress on CAD :(
+* Planning to get the design to have finalized dimensions and complete for manufacturing this week
+  * Need to add concept for holding the bottom of ampules as well&#x20;
+    * will have to think a lot about how tool access will be like given limited space
+  * Really hoping to make the Friday ordering deadline for SendCutSend
+  * Also need to double check dimensions of hardware and communicate with Viswesh to make sure that routing will be successful
 
 ### Packaging:
 
-
+* meeting soon, will finish typing this up after meeting, sorry Joel :(
 
 
 
