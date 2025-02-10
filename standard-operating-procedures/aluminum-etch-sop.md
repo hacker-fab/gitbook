@@ -70,7 +70,10 @@ Best practice is to calculate how long you should etch for, then etch for 30 sec
 ## Materials
 
 1. Aluminum etchant (16:1:1:2 phosphoric, nitric, acetic, DI water)
-2. DI water
+
+<figure><img src="../.gitbook/assets/image (94).png" alt="" width="188"><figcaption></figcaption></figure>
+
+1. DI water
 
 ## Procedure
 
