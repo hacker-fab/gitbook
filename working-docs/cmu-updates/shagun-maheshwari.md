@@ -30,6 +30,19 @@ Next Steps:
 
 * Learn more about CV testing and the procedure we want to follow + understand how to interpret the different results we could see and what that tells us about the device&#x20;
 
+#### Responses
+
+* From Jay
+  * Please make sure to link to the notes/documentation form the fabbing process, ie pics of surface between steps, notes of errors, new findings (like Al etch rate witht eh new ethcant) etc.&#x20;
+  * Make sure task tracker is updated (as per the update rubric)
+  * Good job working hard to get a clean moscap fabed and working through difficulties of microfabrication
+  * Next steps is a little lacking I would rec
+    * perform CV testing on fabed p type moscap
+    * Interpret results to attain threshhold voltage, flatband voltage, and dopant profile vs depth.
+    * determine doping process for CMOS represntative MOSCaps to be used based on Cesely's code from F24, and make relevant SOPs
+    * Begin fabing of CMOS representative MOSCaps (this may be out of scope for the next week)
+  * BTW I have the new tubes and push rod for the tube furnace
+
 ## Update 2:
 
 Progress Update:
@@ -59,13 +72,19 @@ Plans:&#x20;
 
 
 
-Great work this week! Your documentation looks very good and professional.
+#### Responses
 
-It will be imperative that you start fabricating this week as you learned last week things in the lab can take much longer than expected.
+* From Cesely
+  *   Great work this week! Your documentation looks very good and professional.
 
-How do you intend to measure the effectiveness of the RCA clean? Will you be comparing the results of the RCA clean by having a baseline chip with no RCA clean?
+      It will be imperative that you start fabricating this week as you learned last week things in the lab can take much longer than expected.
 
-Also, will need to make patterns for your MOS Caps. I can review how to do this with you.
+      How do you intend to measure the effectiveness of the RCA clean? Will you be comparing the results of the RCA clean by having a baseline chip with no RCA clean?
+
+      Also, will need to make patterns for your MOS Caps. I can review how to do this with you.
+* From Jay
+  * Good job getting familiar with the fume hoof and setting up the RCA clean.&#x20;
+  * I gave feedback on fabublox process via discord, but here is what I recommended instead (to ensure we have a surface bulk contact that can be used for testing MOSCaps doped wells too): [https://www.fabublox.com/process-editor/4f8374e9-d89c-4486-b54f-716cac33802e](https://www.fabublox.com/process-editor/4f8374e9-d89c-4486-b54f-716cac33802e)
 
 ## Update 1:
 
@@ -82,15 +101,26 @@ Roadblocks:&#x20;
 
 * No major roadblocks to report&#x20;
 
-
-
 Plans:&#x20;
 
 * Fab a p-type substrate&#x20;
 * Look more into the specific experiments we should conduct for CV characterization&#x20;
 * Lab next week&#x20;
 
+#### Responses
 
+* From Jay
+  *   Critiques: For the progress update, be sure to link to the document(s) that show evidence of your progress. this week that would be a link to you project proposal
+
+      For roadblocks, this is an opportunity to request help, or clarify what you need from us to keep moving forward. I would argue training on certain equipment to be roadblock for you.
+
+      For plans, there should be more detail in how you're going to proceed, or link to your working doc that demonstrates your plans in more detail. For example, Fabing a p type MOSCap will require designing a fabublox process and reviewing it with someone, creating the patterns you're going to use for lithography, etc.
+
+      For CV testing, I understand you will research specific experiments we what to do, but you should include a tentative plan of what readings youre going to look at first. This can help us guide your research more concretely.
+
+      Overall good job!
+* From Cesely
+  * Great work this week. I would continue to understand and devise a plant to extract specifically the carrier concentration vs junction depth. Also, this week you should begin to fabricate MOS Caps with a p-type substrate. This will be tentative as we are waiting for a power supply for the Thermal Evaporator. In the meantime you should use Fabublox (link below) to create a fabrication process for the MOS Cap.
 
 ## Update 0:
 
