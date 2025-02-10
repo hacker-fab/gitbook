@@ -65,5 +65,26 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 #### Plans for next week
 
-* Design of an attachment to put magets to the bottom og the Amazon XYZ stage
-* Design of the vacuum chuck
+* Design an attachment to put magets to the bottom of the Amazon XYZ stage
+* Design a vacuum chuck
+
+### **Weekly Update #3 (2/3 - 2/9)**
+
+#### Accomplishments
+
+* Anirud and I procured [the Amazon XYZ stage](https://a.co/d/aHYNNB5), [Quater Research's needle and test arm](https://www.quater-research.com/all-products/20235-Needle-and-Test-Arm-p136536804), and [test arm holder (probe holder)](https://www.quater-research.com/all-products/20240-Test-Arm-Holder-p136536825). \
+  ![](../../.gitbook/assets/PXL_20250210_000956698.jpg)
+* I created [CAD models of the needle and test arm, and the test arm holder](https://cad.onshape.com/documents/fee12d8a7495391c1cc1a75e/w/288c070f2db1c77a6048584a/e/e1ec7cdf2dc20b8eaae96cf2?renderMode=0\&uiState=67a97e6692577636febb3fc3). I found a CAD model of [a similar XYZ stage on Misumi](https://us.misumi-ec.com/vona2/detail/221000831513/?HissuCode=LT-4047-S1), which has the same key dimensions as the one from Amazon.\
+  ![](<../../.gitbook/assets/image (84).png>)
+* I added constraints ("mates") to the XYZ stage model to simulate the range of motion.\
+  ![](<../../.gitbook/assets/image (85).png>) ![](<../../.gitbook/assets/image (88).png>)
+
+#### Roadblocks
+
+* Camera selection
+
+#### Plans for next week
+
+* Create a CAD model of an attachment for the probe holder
+* Design an attachment to put magets to the bottom of the Amazon XYZ stage
+* Design or procure a vacuum chuck

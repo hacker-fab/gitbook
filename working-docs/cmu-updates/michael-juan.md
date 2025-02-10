@@ -184,13 +184,93 @@ even though the surface of the wafer is almost atomically flat. the bottom and t
 
 The 3d vacuum wafer holder is tilted significantly.
 
-&#x20;
+
+
+***
 
 &#x20;
 
 
 
+**Update 3 (2/9/2025)**\
 
+
+
+
+
+### Accomplishments
+
+_**I**mportant Notes_
+
+_The stepper components and axis orientation were changed between the last measurement and the tests performed on 2/8/2025._
+
+
+
+* Worked on documentation on test procedures for measuring stepper.
+* finished positional repeatability measurements of x and y axis.
+* finished repeatability testing of homing switches.
+*   Attempted CAM (Computer Aided Manufacturing) on open source piezo nano-positioner.
+
+    * There were some DFM (Design for manufacturing) issues that makes the design unnecessarily complicated. &#x20;
+
+
+* Worked on a modified design for a single axis nanopositioner, (modified from [https://www.sciencedirect.com/science/article/pii/S2468067222000621](https://www.sciencedirect.com/science/article/pii/S2468067222000621)).
+*
+
+    <figure><img src="../../.gitbook/assets/476067494_1326439928602424_710075398491036667_n.png" alt=""><figcaption></figcaption></figure>
+* read papers on friction drive nanopositioning.
+* 3d printed the stl of nanopositioner. (printing it feb 10 morning)
+
+### Roadblocks
+
+**Problem 1**
+
+Did not order some tooling and material for nanopositioner.&#x20;
+
+**Proposed Solutions**
+
+add items to purchase sheet before tuesday.
+
+**Problem 2**
+
+The  parts specified on nanopositioner have micron level tolerances. Therefore the nano positioner when stacked on top of each other might not be anywhere close volumetrically to nanometer accuracy.
+
+**Proposed Solutions**
+
+talk to team about it. Should not be a big problem.
+
+**Problem 3**
+
+Have big due date for major courses. Have to set up things on thursday for design school career fair.
+
+**Proposed Solution**
+
+Let leads know on tuesday meeting.
+
+### Next Steps
+
+**Measurements:**
+
+* Check with team on proposed positional accuracy of redesigned nano-positioner.
+* Check with team on proposed redesign of piezo nano-positioner.&#x20;
+
+**Machining:**
+
+* Add spotting drill, drills, taps, chamfer mills,ball endmill, roughing endmill, and collets to purchase sheet.
+
+
+
+**Nano Positioner:**
+
+* Add pre-ground aluminum bar to purchase sheet
+* Machine bottom plate part when end mills arrive.
+  * Will be a lot of work.&#x20;
+  * Probably going to use sacrificial workholding instead of making custom workholding.
+* Add mechanical and electrical part for nanopositioner to purchase sheet.&#x20;
+  * screws
+  * linear slide (replace nippon bearing with thk because of availability)
+  * connectors and wires
+  * ICs
 
 
 

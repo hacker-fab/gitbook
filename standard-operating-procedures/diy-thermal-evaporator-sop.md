@@ -11,7 +11,7 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
 
 ### Materials
 
@@ -36,13 +36,13 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 * Wait until the pressure is at 1E3 hPa or greater (pressure is given by parameter 340).
 * Unskrew the two black knobs pictured below (B), then lift the chamber lid.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Turn the two black knobs on the top of the blue box as shown in Figure 1, and open the lid.
 * Make sure youre wearing nitrile goves.
 * The tungsten filament is secured with two barrel connectors piuctured below (B). The filament can be removed by slightly loosening the screws closest to the filamnet.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><em>Inside of thermal evaporator. A (red circle) indicates the Tungsten coil, B (blue circles) screw the coil in place, and C (yellow circle) is the metal sheet blocking the vacuum.</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p><em>Inside of thermal evaporator. A (red circle) indicates the Tungsten coil, B (blue circles) screw the coil in place, and C (yellow circle) is the metal sheet blocking the vacuum.</em></p></figcaption></figure>
 
 * Tightly wrap aluminum around the Tungsten coil. The filament becomes brittle after evaporation, so be careful not to break it. if you do break it, use a new filament
 * Place the tungsten filament back and screw it in. Make sure it is straight.
