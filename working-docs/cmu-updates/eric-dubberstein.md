@@ -2,6 +2,45 @@
 
 
 
+_**Weekly updates for 2/9:**_
+
+Tasks I accomplished:
+
+Database is set up and configured for api endpoints that are needed for the first demo. These are POST /jobs, GET /jobs/next, and POST /job\_completion. Full details of the implementation can be found in the database section of the documentation
+
+
+
+Demo: Just photos for this week of sucessful api calls.
+
+<figure><img src="../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+
+
+
+Roadblocks:
+
+No significant roadblocks. I just need to pick up the cable that got delivered before using the monitor
+
+
+
+Plans for next week:
+
+From schedule:
+
+* Use Postman to test all API endpoints for job management.
+* Populate DynamoDB with test jobs and verify the job lifecycle (enqueue → in progress → completion).
+* Create a few basic automated tests
+* Justification: Automated testing is extremely important for future reliability.
+
+Additional tasks:
+
+Although it is officially scheduled for week 4 on the project proposal, I will make sure I get a basic API fetch working on the raspberry pi to support my demo. My demo will have me sending an API request to postman on my computer that then turns on an LED (or changes the voltage on a multimeter).&#x20;
+
+
+
 _**Weekly updates for 2/2:**_
 
 Tasks I accomplished:&#x20;
