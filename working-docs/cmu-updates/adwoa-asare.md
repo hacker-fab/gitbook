@@ -47,3 +47,37 @@ Our project objective has changed to a single integrated design for spin coater 
 * Look into how we can order the fittings and valves.
 
 ***
+
+## Update 2
+
+### Progress
+
+We can order propylene fittings and valves from:
+
+* John Guest Push-to-Connect Fittings
+* Jaco Kynar Compression Tube Union Tees
+* SP Bel-Art T Shaped Tubing Connectors
+
+I worked on CADfor holding the tubes over the frames. It is parameterized and you can change the number of tubes.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-09 220735.png" alt=""><figcaption></figcaption></figure>
+
+I looked into position sensing methods for determining the location of the spin coater (ultrasonic, infrared, laser). We settled on infrared for the design.
+
+Unrelated to automated spin coater, I investigated some ideas for Joshna regarding the automatic dicer. She brought to my attention that we could use fiber laser to cut the wafer to increase precision. The idea here is that with diamond scribing or even diamond cutting you get microcracking, microchipping, and lost material from klerf-loss. When you use laser to cut fully through a wafer there are micro warps from the melting and but not cracks and chips. You can avoid this warping by laser pulsing (see this article: [https://www.gmp.ch/htmlarea/pdf/GSI/JK100P\_app\_note.pdf](https://www.gmp.ch/htmlarea/pdf/GSI/JK100P_app_note.pdf)).&#x20;
+
+To successfully laser cut a wafer we would need high powered lasers (100 W to 200W) depending on if we are using a fiber laser or Nd: YAG Laser. This would cost thousands of dollars just for the appropriate laser, so I don't think it will be worth it for our purposes. Also, a fume hood is not proper ventilation for laser cutting a wafer, so we would need to make a ventilation solution as well.&#x20;
+
+We could get a weaker and cheaper laser and only use it for wafer scribing (in which case we would still separate the wafer using clean cut pliers). However, I think this would still result in kerf-loss. I think for our purposes (1 cm \* 1 cm chips), diamond scribing is good enough especially for a V1, but I would be curios to hear what other's think.
+
+### Roadblocks
+
+* The pump CAD was not finished this week, and our motor did not arrive yet.
+
+
+
+### Plans
+
+* I am working on a CAD to hold the heat gun, should be done by EOD Monday.
+* Work on presentation and assembly with team.
+* Hopefully motor will be here. If it is, Matthew and I will test the pump.
