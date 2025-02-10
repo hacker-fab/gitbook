@@ -116,6 +116,7 @@
   * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates/README.md)
     * [Week 2 Updates](working-docs/cmu-updates/matthew-chois-updates/week-2-updates.md)
     * [Week 3 Updates](working-docs/cmu-updates/matthew-chois-updates/week-3-updates.md)
+    * [Week 4 Updates](working-docs/cmu-updates/matthew-chois-updates/week-4-updates.md)
   * [Sandra You](working-docs/cmu-updates/sandra-you.md)
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
