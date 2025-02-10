@@ -28,3 +28,16 @@ _Thanks for the update. For the future, it would be great if you can add some mo
 
 _For any CADs or diagrams, it's fine if you just include a screenshot or link to a drive or something just so we can see what you're working on. Thanks_
 
+
+
+
+
+Update 3:
+
+In general, I'm making some pivots. We'll be making minor upgrades to the sputter chamber version 1, but the more important task is designing and building version 2.
+
+For the minor upgrades to the V1 chamber, we're ordering some new components. This includes a new feedthrough (using a double-ended MHV connector), a new RG400 cable, and a ring of aluminum to surround the cathode (for better shielding). However, these were made less important due to some modifications made by Jay, such as adding viton spacers around the cathode, as those reduced the excess plasma formation. (We probably will still implement the upgrades this coming week.)
+
+I am approximately \~85% on CAD for chamber version 2; I should be done by around Tuesday and will ask others on the sputtering team for feedback. This is important to hit so that we can order components for V2. I'm hoping to already start ordering some components for V2 as early as tomorrow. Besides this, the big goal for this week is to implement the V1 upgrades.
+
+Also, please let me know if I'm doing these wrong.
