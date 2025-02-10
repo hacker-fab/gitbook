@@ -32,6 +32,14 @@ Next Steps:
 
 #### Responses
 
+• From Cesely
+
+Good work getting a MOSCap fabricated. This week we should perform a CV test on the chip and seeing if we can get the dopant concentration vs. depth and using this to compare with the model I had from last semester. We should also begin fabricating/developing a process to fabricate MOSCaps more akin to the CMOS process we hope to generate.
+
+Also, it is not clear to me which chips you have fabricated. Did you fabricate a chip with or without the RCA clean? Or both?  If you only fabricated one chip, then variations in the Al deposition might affect our observed CV results between chips and may not be related to the RCA clean.
+
+Issues with the Al evaporator are likely caused by the chamber not being clean, since it was used this week for labs.
+
 * From Jay
   * Please make sure to link to the notes/documentation form the fabbing process, ie pics of surface between steps, notes of errors, new findings (like Al etch rate witht eh new ethcant) etc.&#x20;
   * Make sure task tracker is updated (as per the update rubric)
