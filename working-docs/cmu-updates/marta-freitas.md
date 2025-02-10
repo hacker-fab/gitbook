@@ -124,7 +124,21 @@ The major roadblock right now is Nickel etching. According to the deposited thic
 
 #### Responses
 
+• From Cesely\
+\
+Accomplishing the fabrication this week is a big step forward. This week you should prioritize testing the Al chips and troubleshooting the Nickle chips.
+
+Probing the Al chips should be straight forward. I can perform training with you on Friday or Saturday.
+
+The electroless Nickle process and etching was a new process researched last semester, so I am not fully aware/familiar with the process. I’d recommend working with Daniel and meeting with him as he developed that process. Based on the issues encountered, it might be wise to fabricate some back up chips with n and p doped regions: that way once you identify the issue with the plating/etching you have chips you can quickly continue fabricating.
+
+Additionally, as you wrap up the fabrication of our baseline chips, it will be important to finalize how we want to improve the contacts once you have collected the data. One way of doing this is by annealing the Al contacts. I would recommend that you start finalizing a fabrication and testing process.
+
+Lastly, where are you documenting your daily logs? I do not see them in your folder.
+
 * From Jay
   * Make sure to document what worked in terms of plating Ni, and what didn't work in terms of etching Ni (link your logs). Also make sure github tracker is up to date!
   * I would remake the p type and n type chips for testing Ni contact. But I recommend using a lift off process (now that we know the Ni may unexpectedly plate the entire surface). To do this, you would keep the photoresist on after using HF to etch the 700B SOG, then do Ni plating with the photoresist still on, then strip the photoresist. This works well with electrodeposits because they deposits because they deposit incoherent spherical particles. you may find this interesting (Shaun and I did this before): [https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV\_890MjevvU/edit#slide=id.g2d1d23487f0\_1\_5](https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV_890MjevvU/edit#slide=id.g2d1d23487f0_1_50), and [https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c\_0\_110](https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c_0_110). My hope would be to compare to results Shaun and I got, then also test Schottky barrier and annealing effects.
   * After probing the Al contact, you should anneal them and reprobe.
+*
+*
