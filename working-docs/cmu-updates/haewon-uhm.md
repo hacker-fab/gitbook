@@ -108,6 +108,9 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 * Connected the Pi 4 and tested the thermocouple relays with the python library and code provided by the adafruit: [https://learn.adafruit.com/thermocouple/python-circuitpython](https://learn.adafruit.com/thermocouple/python-circuitpython)
 * Looked over the manual for the throttle valve software: [https://www.idealvac.com/files/manuals/CommandValve\_Generation\_II\_User\_Manual.p](https://www.idealvac.com/files/manuals/CommandValve_Generation_II_User_Manual.pdf)
+  * DirectVac software only runs on windows
+  * Open and close fully or open incrementally by 1º&#x20;
+  * Any device capable of running a USB host and can communicate serial commands can precisely operate the CommandValve
 
 **Challenges**&#x20;
 
@@ -116,5 +119,5 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 **Future Plans**&#x20;
 
-* Need to transfer the temperature readings on the python to LabVIEW or to the PI 4 (PI 4 is quite slow).&#x20;
+* Need to transfer the temperature readings from the Pi 4 to a mini pc that is running LabVIEW (Pi 4 is quite slow).&#x20;
 * Learn more about the adafruit library and code to accomplish the main task.&#x20;
