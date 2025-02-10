@@ -22,11 +22,11 @@ layout:
 
 ## Parameters
 
-|           |         |
-| --------- | ------- |
-| Etch Rate | >1 nm/s |
-| Etch Temp | 40C     |
-| Stir RPM  | 350     |
+|           |              |
+| --------- | ------------ |
+| Etch Rate | \~ .1 um/min |
+| Etch Temp | 40C          |
+| Stir RPM  | 350          |
 
 ***
 
@@ -34,25 +34,36 @@ layout:
 
 Before reading further, please see the [Safety ](aluminum-etch-sop.md#safety)section for more information.&#x20;
 
-Thermal evaporation deposits aluminum over the entire chip. We want to etch away specific areas, and leave aluminum only to act as contacts for the source, drain, and gate. These aluminum contacts will allow us to probe or package the chip and apply a voltage to the doped semiconductor underneath.&#x20;
+After thin films of Aluminum are deposited (whether it be Thermal Evaporation, sputtering, etc) onto the chip, we want to define isolated contacts to certain pats of the device, and define interconnects between those contact. To do this, the contacts and interconnects are patterned on top of the Aluminum surface with photoresist, and then wet etched. The contact pads that are left allow us to probe the device, or package it.
 
-If etching aluminum is unsuccessful, then portions of the chip can be shorted and the device won’t function as we intended.&#x20;
+## How It Works
 
-Aluminum etch has proven difficult to keep consistent. There are many problems with peeling and bad adhesion of both photoresist on top and aluminum to silicon below. Proper cleaning of the chip before evaporation, evaporation parameters, photoresist developing parameters, and etching parameters are necessary to have a successful aluminum etch run.
+Alumina etchant contains Phosphoric Acid, Nitric Acid, and Acetic Acid (all in one solution). The Nitric Acid Oxidizes the Aluminum, then the Phosphoric Acid etches the Aluminum Oxide, and the acetic acid lowers surface tension to help the etchant wet the surface.
+
+## Disclaimers
+
+Phosphoric and Nitric Acid are extremely Hazardous, be sure to review the SDS for the Al etchant, and wear the proper PPE (Lab Coat, Splash Apron, Nitrile gloves (under), Neoprene gloves (over), Face shield)
+
+SDS: [https://www.sigmaaldrich.com/US/en/sds/aldrich/901539?userType=anonymous](https://www.sigmaaldrich.com/US/en/sds/aldrich/901539?userType=anonymous)
+
+If under etching occurs, then all contacts will be shorted to each other. Over etching could result in less feature resolution, or Aluminum peeling off the chip.
+
+Aluminum etch has proven difficult to keep consistent. There are many problems with peeling and bad adhesion of both photoresist on top and aluminum to the layers below.
 
 ***
 
 ## Tools
 
 1. Fume hood
-2. Hot plate with spinner
+2. Hot plate with magnetic spinner
 3. Magnetic stirrer
 4. Glass beaker
 5. Appropriate container for acid (polypropylene)
 6. Nitrile Gloves (under)
 7. Neoprene Gloves (over)
 8. Nitrile Splash Apron
-9. Spill kit and [all other required safety equipment, disposal equipment, and building utilities](https://www.cmu.edu/ehs/Laboratory-Safety/chemical-safety/documents/sop-for-the-use-of-hydrofluoric-acid.pdf)
+9. Face shield
+10. Spill kit and [all other required safety equipment, disposal equipment, and building utilities](https://www.cmu.edu/ehs/Laboratory-Safety/chemical-safety/documents/sop-for-the-use-of-hydrofluoric-acid.pdf)
 
 ## Materials
 
@@ -63,30 +74,32 @@ Aluminum etch has proven difficult to keep consistent. There are many problems w
 
 ### Preparation
 
-1. Place your chip on the cleanroom wipe taped to the inside of the acid hood. Do not leave the tweezers inside the fume hood.
-2. Put on nitrile gloves
+1. Put on nitrile gloves
+2. Place your chip on the cleanroom wipe taped to the inside of the acid hood. Do not leave the tweezers inside the fume hood.
 3. Put on a splash gown.
 4. Put on a face shield.
 5. Put on the neoprene gloves. Avoid touching the outside of the gloves.
 6. Pre-heat the hot plate.
-7. Place the evaporating dish on the hot plate slightly off center so that the magnetic stirrer is on one side.
+7. Fill the beaker to about 1 cm with Aluminum etchant
+8. Once the hot plate has reached the desired temperature, place the evaporating dish on the hot plate slightly off center so that the magnetic stirrer is on one side. turn on the stirrer.
 
 ### Etching
 
 ![](https://lh6.googleusercontent.com/zeiSTdg1kLUn1G-eaC7Oafi2tNJ2TT8Mo2LWnE3KS3UWau9GNRlrRmdMcOJPsxxw9ExBYt1anuAaPwWdTfR2g7rauznhIm4NyDTsz_2TuCkdb4dsWI62MZny8mcd3UCaGKRuLOr5P64rY_QCxRtQ5nc)
 
-8. After the acid has had a few minutes to come to temperature, use the tweezers labeled “acid” to pick up the chip and put it in the dish on the opposite side from the stirrer.
-9. Start the timer.
-10. Turn on the stirrer. Make sure the chip sits face up on the bottom of the dish and doesn’t get sucked up by the stirrer.
-11. Prepare to take the chip out 30 seconds before the timer is up. It can be tricky to grab the chip, so start early and drop it into the DI water when the timer expires.
-12. Swish the chip around a couple of times and then take it out and let it dry on the wipe.
-13. Turn off the hot plate.
-14. Take off the PPE.
-15. Use your outside tweezers to pick up the chip and dry it off with the nitrogen gun.
+8. After the acid has had 5 minutes to come to temperature, use DI water to rinse the black plastic tweezers and pick up the chip, then put it in the dish on the opposite side from the stirrer, then start the timer.
+9. Rinse tweezers with DI water after.
+10. Prepare to take the chip out 30 seconds before the timer is up. It can be tricky to grab the chip, so start early and drop it into the DI water when the timer expires.
+11. Swish the chip around a couple of times and then take it and rinse further with the DI squirt bottle out and let it dry on the wipe.
+12. Turn off the hot plate.
+13. Take off the Neoprene gloves, Splash apron, and face shield.
+14. Use your outside tweezers to pick up the chip and dry it off with the nitrogen gun.
 
 ### Inspection
 
 Incomplete aluminum etch looks black and rough.
+
+Complete etch should look like the layer you were trying to etch down to
 
 Peeling is very obvious as well.
 
