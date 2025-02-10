@@ -31,3 +31,19 @@ Plans for the week:
 * check and merge the automated photo collection PR
 * refactor the CV code as described above
 * experiment with cross-correlation-based detection of crosses (fiduciary markers)
+
+
+
+### Week 3
+
+I had my above PR reviewed and then merged it, and fixed a subsequent issue.
+
+Now we have autocapture, along with features in the UI for configuring it.
+
+This week I also collected some chip image data. I ran initial tests of a few approaches — edge detection, template matching, and skeleton-based shape analysis. I haven't had good results with these but I think it is worth spending more time trying to get them to work before considering other options. In particular, I just need to take the time to try different settings and hyperparameters. I pushed the code to a [dev branch](https://github.com/hacker-fab/stepper/tree/auto-align).
+
+The roadblock has just been time, as I have been in a busy season these past weeks, which should hopefully end after this week. I will have more time after this coming week — and I will make sure we have a working solution that is in use at least by the end of the semester.
+
+This week:
+
+* continue to experiment with detection + get something good enough to demo
