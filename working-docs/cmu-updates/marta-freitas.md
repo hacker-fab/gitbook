@@ -38,6 +38,17 @@ Will have the first training in the lab with the team.  Will receive feedback fr
 
 
 
+#### Responses
+
+* From Jay
+  *   For the progress update, be sure to link to the document(s) that show evidence of your progress. this week that would be a link to you project proposal
+
+      For roadblocks, this is an opportunity to request help, or clarify what you need from us to keep moving forward. I would argue training on certain equipment to be roadblock for you.
+
+      For plans, include more detail, or a working doc with more detail that we can look at to help give concrete advice. For example, clarify which trainings youre prioritizing to help you start fabing test devices. As for determining what changes need to be made, be specific, are we going to update the order of experiments? which experiments we will prioritize (thermal processing vs surface cleaning vs Ni contacts etc)? creating fabublox process flows for the test devices you want to make? Adding detail in you plan helps us give you advice. The more concrete plans you provide, the better we can help. These plans can be reflected in a working doc instead of typing it in the update, but be sure to link that doc and direct us on what part we should read over.
+* From Cesely
+  * Great work this week! I think that for the next couple of weeks the work is very well outlined for getting baseline contact resistance measurements using the transmission line method as expanded upon in your proposal. This week you should focus on making a Fabublox (link below) for the baseline testing and annealing testing as well as aim to start fabricating. https://www.fabublox.com/?code=tjb5YB9SR-N0rRKGmp6otki2udn6CikvKoSqdh\_Xza4uW\&state=cTBYYUpKUW4yMjZBZVFSQ2pYMm5lUlVKZC1iUHZGYkpxRnhodUJ0d2pfaQ%3D%3D
+
 ***
 
 ### <mark style="background-color:blue;">Weekly Update #2 (Feb 2)</mark>
@@ -65,13 +76,23 @@ Fabrication this week could have been better. Started with 3 chips but lost 2 in
 
 ***
 
-Great work this week!
+#### Responses
 
-The spin coater can be difficult to work with. In the past I have tried ensuring that photoresist is prohibiting the vacuum or that the o-rings are clean. Another, parameter that affects its effectiveness is the size of the chip- try to keep your chips to 1 cm^2 so that they stay on. Additionally, you can try using double sided tape.
+* From Cesely
+  *   Great work this week!
 
-Where are you in the fabrication process for your baseline chip? Are you varying any parameters between your three baseline chips (cleaning process, dopant concentration, etc.)? If you are varying any parameters I would make sure to deposit the aluminum at the same time on all three chips if you haven't already deposited.
+      The spin coater can be difficult to work with. In the past I have tried ensuring that photoresist is prohibiting the vacuum or that the o-rings are clean. Another, parameter that affects its effectiveness is the size of the chip- try to keep your chips to 1 cm^2 so that they stay on. Additionally, you can try using double sided tape.
 
-If you want you can attempt to perform a baseline p-type chip using B154. The Filmtronics Data Sheet provides good detail about junction depth/sheet resistance for their B154 SOG, which makes it easy to gauge the carrier concentration.
+      Where are you in the fabrication process for your baseline chip? Are you varying any parameters between your three baseline chips (cleaning process, dopant concentration, etc.)? If you are varying any parameters I would make sure to deposit the aluminum at the same time on all three chips if you haven't already deposited.
+
+      If you want you can attempt to perform a baseline p-type chip using B154. The Filmtronics Data Sheet provides good detail about junction depth/sheet resistance for their B154 SOG, which makes it easy to gauge the carrier concentration.
+*   From Jay
+
+    * Good job getting trained, getting used to the fab, and beginning some chips for TLM.
+    * Make sure to link updated github project tracker
+    * make sure to link your notes/documentation from fabing the TLM chips
+
+
 
 
 
@@ -101,3 +122,9 @@ The major roadblock right now is Nickel etching. According to the deposited thic
 * If I am successful in etching the Nickel, I also plan to do IV and CV testing on those chips, in hopes of having the full baseline testing ready for the first demo
 * I have been making daily logs with the inputs of fabrication progress, including everything that was accomplished, what went wrong, calculations, parameters, and weird things observed. I plan on going through all of these and joining them in a public document.&#x20;
 
+#### Responses
+
+* From Jay
+  * Make sure to document what worked in terms of plating Ni, and what didn't work in terms of etching Ni (link your logs). Also make sure github tracker is up to date!
+  * I would remake the p type and n type chips for testing Ni contact. But I recommend using a lift off process (now that we know the Ni may unexpectedly plate the entire surface). To do this, you would keep the photoresist on after using HF to etch the 700B SOG, then do Ni plating with the photoresist still on, then strip the photoresist. This works well with electrodeposits because they deposits because they deposit incoherent spherical particles. you may find this interesting (Shaun and I did this before): [https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV\_890MjevvU/edit#slide=id.g2d1d23487f0\_1\_5](https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV_890MjevvU/edit#slide=id.g2d1d23487f0_1_50), and [https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c\_0\_110](https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c_0_110). My hope would be to compare to results Shaun and I got, then also test Schottky barrier and annealing effects.
+  * After probing the Al contact, you should anneal them and reprobe.
