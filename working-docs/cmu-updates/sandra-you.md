@@ -1,5 +1,24 @@
 # Sandra You
 
+**Weekly Update #3**&#x20;
+
+1. **What was accomplished:**
+   1.  Patterned chip following the [Patterning SOP](https://docs.hackerfab.org/home/standard-operating-procedures/patterning-sop-stepper-v2) with mask created from Update #2 on Thursday work session.&#x20;
+
+       1. Were not able to calibrate the microscope to take accurate measurements of sizing because calibration slider wasn't available.&#x20;
+       2. Best fit line suggests 1 unit in phidl is equal to 1.21 um for the microscope, with 0.144 um as the y-intercept, but the microscope is not calibrated.
+
+       <figure><img src="../../.gitbook/assets/Screenshot 2025-02-09 at 3.41.49 PM.png" alt=""><figcaption></figcaption></figure>
+   2. Created functions that can generate the cross alignment pattern on a mask, and generate NMOS masks at different locations on the mask.
+      1. [https://colab.research.google.com/drive/1bXM5GX\_AE7WAsoSxQLe35XEuIYxSi\_KF?usp=sharing](https://colab.research.google.com/drive/1bXM5GX_AE7WAsoSxQLe35XEuIYxSi_KF?usp=sharing)
+   3. Created [notes](https://docs.google.com/document/d/1OxRwDAGWQshovCu0T7od8k_w8QDzJhXd8bczofuO1x4/edit?usp=sharing) on Magic VLSI Tool; Found promising information for possible integration with Hacker Fab processes.
+2. **Roadblocks:**
+   1. Calibration slider for microscope seems to have been lost, so we don't know the exact measurements of our masks on the chip and therefore cannot get the scale factor. For now, we will use the scale factor estimation from Kent and the measurements we've taken.&#x20;
+3. **Plans for next week:**
+   1. Will work with the Metrology/Packaging team to deliver Resistor lab pattern but with pads added on at the peripheral
+   2. Look more into Magic VLSI, complete tutorials, and discuss with Icey to see if this is a promising path to go down.
+   3. Determine a good method/formula to generate resistors (single segment vs. multiple), function to size NMOS differently, and learn the masks/patterns for a capacitor.
+
 **Weekly Update #2**
 
 1. **What was accomplished:**
