@@ -49,6 +49,16 @@ Created project proposal and started reading Alicat and Pfieffer manuals to unde
 1. I created a library to interface with Pffiefer vaccum pump and finished most of the formatting for the control system. However, the code and the library is untested. Code is uploaded to Github/hacker-fab/Sputtering-Controls, but is also linked here: [https://github.com/hacker-fab/Sputtering-Controls](https://github.com/hacker-fab/Sputtering-Controls). Much of the raw numbers have been left out such as valid pump temperature and addresses.
 2. The biggest roadblock was that the converters I ordered came on Friday. This made me unable to test the previous test scripts that I had written earlier.
 3. Now that the RS485 to TTL have arrived I hope to get control over Pffiefer vaccum pump working. Once this is done and if the RS232 has not arrived I hope to establish some sort of communication with Yaesu radio. I have found an CAT arduino library that should hopefully help with this. Additionally, I will write tests for my library functions and all the free functions&#x20;
+
+> **Feedback**
+>
+> Good work this week, and understandable that plans for hardware were delayed. Nice job pivoting to software and linking your repository. We talked on Monday, and I've updated the task tracker to reflect the new tasks (vacuum+gas pressure routine, gas set routine). You can ignore the Yaesu for now unless you finish the others early. Memory management might not be necessary, but I'll do a more thorough code review when more code is written. Tests are still important, but experimentation is supreme.
+>
+> Next time, please update the Github Project Tracker and Dev Log with progress you made and tasks you've updated. Repository should also be linked on Master Doc.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
+
+
 {% endstep %}
 {% endstepper %}
 
