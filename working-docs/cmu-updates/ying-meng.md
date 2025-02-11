@@ -29,3 +29,19 @@ One roadblock I had was that there is few documentation with enough detailed inf
 #### **Plans for next week:**
 
 Next week, I will collaborate with Gongwei to finish developing the parameter extraction method for all parameters for level 1 simulation. I will keep working on level 2 simulation documentation if I have time.
+
+
+
+### **Weekly Update #3**
+
+#### **What was accomplished:**
+
+Our team learned how to use the probe station to measure I-V curves for MOSFETs. Because of the roadblock described below, we designed two chip masks, one for probe station testing and one for packaged testing, and planned to do parameter extraction based on them after fabrication. I wrote a test plan based on my documentation on MOSFET level 1 SPICE simulation [https://docs.google.com/document/d/1wRFp3ccW5n\_bPLZD3rvi\_6JWFzY\_\_D2YDD\_fRpHgOsE/edit?tab=t.0](https://docs.google.com/document/d/1wRFp3ccW5n_bPLZD3rvi_6JWFzY__D2YDD_fRpHgOsE/edit?tab=t.0). By measuring ID vs. VGS and ID vs. VDS, we should be able to get the four required parameters for level 1 simulation.
+
+#### **Roadblocks:**
+
+One roadblock our team had was that chip 613, the one with the best experimental result from last semester, disappeared from lab. We were planning on measuring more data with that chip for parameter extraction, but now we have to fabricate a new one, which could delay our progress by a long time.
+
+#### **Plans for next week:**
+
+Next week, we will collaborate with Gina and Sandra to acquire the masks for the chips and start fabricating. I will keep working on level 2 simulation documentation if I have time.
