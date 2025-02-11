@@ -104,7 +104,7 @@
   * [Jessica Wen](working-docs/cmu-updates/jessica-wen.md)
   * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
   * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
-  * [Gongwei Wang's updates](working-docs/cmu-updates/gongwei-wangs-updates.md)
+  * [Gongwei Wang](working-docs/cmu-updates/gongwei-wang.md)
   * [Ying Meng](working-docs/cmu-updates/ying-meng.md)
   * [Shagun Maheshwari](working-docs/cmu-updates/shagun-maheshwari.md)
   * [Yuichi Hirose](working-docs/cmu-updates/yuichi-hirose.md)

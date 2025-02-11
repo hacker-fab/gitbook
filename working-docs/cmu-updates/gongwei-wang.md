@@ -1,4 +1,4 @@
-# Gongwei Wang's updates
+# Gongwei Wang
 
 My name is Gongwei and I will be working on the EDA device modeling this semester
 
@@ -38,4 +38,21 @@ Created GitBook page.
    1. Collaborate with Ying to: classify accuracy levels for device parameter extraction and attempt extraction on existing chip 613
    2. Collect more data on Chip 613, most likely using the probe station under a larger range of Vds and Vgs
    3. Continue writeup on the parameter extraction doc of equations and different methods of extracting gm, lambda (Vth is ok).
+
+
+
+**Weekly Update #3**
+
+1. **What was accomplished:**&#x20;
+   1. Learned during Tuesday's extra training session details on how to use the probe station and parametric analyzer equipment to prepare for later work measuring and extracting parameters from our fabricated NMOS chips.
+   2. Added details to parameter extraction document to have plan of analysis for our necessary SPICE Level 1 MOSFET parameters for simulation.&#x20;
+   3. Designed and hand-drafted a mask for our 16 I/O pad chip that we have planned, with 5 MOSFETs and 1 PSUB body connection. [https://drive.google.com/file/d/163fGV8PKwP8sKIzO7hwD44xELJJviuWa/view?usp=sharing](https://drive.google.com/file/d/163fGV8PKwP8sKIzO7hwD44xELJJviuWa/view?usp=sharing)
+2. **Roadblocks:**
+   1. A significant unexpected roadblock was that Chip 613 which we had high hopes of using for performing parameter extraction and further testing with higher V\_GS values was nowhere to be found in the lab.
+   2. Unfortunately, Chip 516 and 588/587 from Wentao last semester are also missing, which is a major setback where we must now take a step back and perform re-fabrication to have a functional chip to work with.
+3. **Plans for next week:**
+   1. Collaborate with Sandra and Gina to finalize the mask I drew for our test chip with 16 I/O pads, make appropriate adjustments to the Length and Width parameters, and settle on a final mask/layout.
+   2. Finalize on testing plans and work with Ying and Felicia to decide on some reasonable DRC estimates for the spacing distances between the MOSFETs on the test chip and the minimum gate extension.
+
+
 
