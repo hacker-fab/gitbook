@@ -4,91 +4,9 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
-### Update 3
+### <mark style="color:purple;">Update 3 - 2/9/2025</mark>
 
-### Update 2
-
-#### Accomplishments
-
-* Met with Professor Sokalski to learn more about XRR and how it works. It seems like it will be the best tool to determine sample thickness and potentially density. I took notes during the meeting that can be found here: [https://docs.google.com/document/d/11MBv83tX0nFboJv7nk2iF1xpBTiB1wlXRQb5I7Rys-I/edit?tab=t.0](https://docs.google.com/document/d/11MBv83tX0nFboJv7nk2iF1xpBTiB1wlXRQb5I7Rys-I/edit?tab=t.0)
-* Ran an RF trial on the sputtering chamber with Jay, Melinda, Rahim, and Ayan. We tested several different parameter combinations, starting by changing the frequency, then altering the argon pressure and thus chamber pressure. Unfortunately, nothing was sputtered onto the slide and a piece of the system broke during our test. I recorded observations and the parameters tested, which can be found here: [https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0](https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0)
-* I did the first lab! (And only dropped the chip like three (?) times)
-
-#### Roadblocks
-
-* The main roadblock is that so far we haven't got the chamber to sputter an observable layer. Jay, Melinda, and I are going to scour the literature to try and determine the problem (maybe DC bias on the target, maybe something else) and find a solution.&#x20;
-
-#### Plans
-
-* Do AFM training with Melinda this Thursday (it can complement XRR so I think it's worth having the option)
-* Read more literature to try and find a solution to the lack of sputtered material
-* Perform more RF trials and try to get samples to use for XRR/AFM so we can start developing a protocol
-* Do the next part of the lab
-
-### Update 1
-
-#### Accomplishments
-
-* Saw and helped operate the sputtering chamber twice
-* Developed proposal with Melinda for what we are going to accomplish for the sputtering proccess this semester
-* Worked with Jay and Melinda to make our first samples
-* Requested AFM training, scheduled a meeting with Professor Sokalski to discuss XRR/XRD for thin films
-
-#### Roadblocks
-
-* Nothing aside from being out of town this past weekend, which just meant I didn't have time to do much work
-
-#### Plans
-
-* Start reading literature on how to characterize thin films with XRR, AFM, and other techniques
-* Perform more sputtering trials and get better at operating the chamber independently
-* Do the first lab
-
-### Update 0
-
-### Weekly Update 2 (02/02/2025)
-
-#### Accomplishments
-
-* Did a run of the sputtering chamber with RF while varying parameters like frequency and chamber pressure. Although nothing actually sputtered we did get the plasma to strike and got to see the impact of several different parameters. We also tried doing higher frequencies (up to 52 MHz) for the first time and had great success striking plasma. I took notes summarizing the trial that can be found here: [https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0](https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0)
-* We met with Professor Sokalski (an XRD/XRR expert in the MSE department) and he explained the theory behind XRR and how we could use it to characterize our thin films once we get the sputter chamber working. We decided it will be a very useful tool to characterize things like thickness of the film and density. I took notes during the meeting that can be found here: [https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0](https://docs.google.com/document/d/1djYb2jFaWNsHtIddbWhw9eNRoR0uh7QR40o2pBkO11E/edit?tab=t.0)
-* I did the first part of the lab! (and only dropped the chip like. three times.)
-
-#### Roadblocks
-
-* We have not successfully sputtered any films yet which will slightly push back our schedule to start characterizing films this week. However, with all of us looking into the issues I am confident we can find a solution soon. Jay, Melinda, and I are going to continue our literature review to look into issues with potential DC bias at the target and brainstorm how to fix it.
-
-#### Plans
-
-* Melinda and I are going to do AFM training in the MCF this week
-* Continue literature review to come up with theories as to why the sputter rates are so low even when testing a variety of parameters.
-* Do more tests of the sputtering chamber later this week
-* Perform the next section of the lab
-
-
-
-### Weekly Update 1 (01/26/2025)
-
-#### Accomplishments
-
-* Saw and helped operate the sputtering chamber twice
-* Developed proposal with Melinda for what we are going to accomplish for the sputtering proccess this semester
-* Worked with Jay and Melinda to make our first samples
-* Requested AFM training, scheduled a meeting with Professor Sokalski to discuss XRR/XRD for thin films
-
-#### Roadblocks
-
-* Nothing aside from being out of town this past weekend, which just meant I didn't have time to do much work
-
-#### Plans
-
-* Start reading literature on how to characterize thin films with XRR, AFM, and other techniques
-* Perform more sputtering trials and get better at operating the chamber independently
-* Do the first lab
-
-### Weekly Update 0 (01/19/2025)
-
-#### Accomplishments
+Accomplishments
 
 This week, I:
 
@@ -123,7 +41,7 @@ This week, I:
   * Even if we can't get samples, I'd like to take some chips with either spin on glass or some kind of patterning to practice looking at under AFM and getting rid of image artifacts.
 * Read more about RF sputtering and how it works so I can solidify my understanding of the system and why we need a blocking capacitor.
 
-### Update 2
+### <mark style="color:purple;">Update 2 (02/02/2025)</mark>
 
 **Accomplishments**
 
@@ -142,7 +60,26 @@ This week, I:
 * Perform more RF trials and try to get samples to use for XRR/AFM so we can start developing a protocol
 * Do the next part of the lab
 
-### Update 0
+### <mark style="color:purple;">Update 1 (01/26/2025)</mark>
+
+#### Accomplishments
+
+* Saw and helped operate the sputtering chamber twice
+* Developed proposal with Melinda for what we are going to accomplish for the sputtering process this semester
+* Worked with Jay and Melinda to make our first samples
+* Requested AFM training, scheduled a meeting with Professor Sokalski to discuss XRR/XRD for thin films
+
+#### Roadblocks
+
+* Nothing aside from being out of town this past weekend, which just meant I didn't have time to do much work
+
+#### Plans
+
+* Start reading literature on how to characterize thin films with XRR, AFM, and other techniques
+* Perform more sputtering trials and get better at operating the chamber independently
+* Do the first lab
+
+### <mark style="color:purple;">Update 0 (01/19/2025)</mark>
 
 #### Accomplishments
 
@@ -160,22 +97,4 @@ This week, I:
 * Review external literature to prepare for project proposal
 * Meet with Melinda to discuss our plans and split up responsibilities
 * Draft project proposal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
