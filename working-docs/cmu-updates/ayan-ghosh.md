@@ -41,3 +41,9 @@ For the minor upgrades to the V1 chamber, we're ordering some new components. Th
 I am approximately \~85% on CAD for chamber version 2; I should be done by around Tuesday and will ask others on the sputtering team for feedback. This is important to hit so that we can order components for V2. I'm hoping to already start ordering some components for V2 as early as tomorrow. Besides this, the big goal for this week is to implement the V1 upgrades.
 
 Also, please let me know if I'm doing these wrong.
+
+
+
+_Feedback:_
+
+_Thanks for the update! I know we've made a lot of changes to our chamber subgroup's plan for the rest of the semester, so some shifts have been made to make sure we are on track to complete v2 by the end of this semester. For the updates, please do mention if you have encountered any setbacks (or mention if there are none), and include any diagrams or CAD (a screenshot is fine), even if it's incomplete/imperfect, so we can see your progress. Also, please remember to update any progress on our devlog (masterdoc) and github progress tracker!_
