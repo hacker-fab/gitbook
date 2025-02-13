@@ -41,6 +41,16 @@ This week, I:
   * Even if we can't get samples, I'd like to take some chips with either spin on glass or some kind of patterning to practice looking at under AFM and getting rid of image artifacts.
 * Read more about RF sputtering and how it works so I can solidify my understanding of the system and why we need a blocking capacitor.
 
+
+
+#### Response - Jay
+
+* Good job completing both AFM and XRR training, good job helping with sputter chamber debugging.Comment
+* As discussed in person, RF sputtering test wont be fruitful until we implement a blocking capacitor. So I would prioritize XRR practice on oxide and evaporated Al samples.Comment
+* Based on: [https://www.lesker.com/newweb/ped/rateuniformity.cfm](https://www.lesker.com/newweb/ped/rateuniformity.cfm) I worry that the oxide sputter test (hoping oxide acts a blocking cap itself) may not be a good use of time, since we may have to sputter for ridiculous amounts of time to see anything). Which is also another good reason to do Reactive Al Rf sputtering instead of Al2O3 target sputtering.Comment
+* DC Al sputter tests may still be interesting this week.
+* Please make sure github project tracker is accurate and updated
+
 ### <mark style="color:purple;">Update 2 (02/02/2025)</mark>
 
 **Accomplishments**
@@ -59,6 +69,13 @@ This week, I:
 * Read more literature to try and find a solution to the lack of sputtered material
 * Perform more RF trials and try to get samples to use for XRR/AFM so we can start developing a protocol
 * Do the next part of the lab
+
+
+
+#### Responses - Jay
+
+* make ssure youre updating project tracker
+* Good job finalizing choice of XRR for characterization
 
 ### <mark style="color:purple;">Update 1 (01/26/2025)</mark>
 
