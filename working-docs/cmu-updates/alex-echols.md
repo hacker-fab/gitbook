@@ -4,6 +4,55 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 4 (02/16/2025)
+
+### Progress Updates
+
+* Updated substrate heater testing plans
+
+I continued to test the substrate heater this week, with an updated testing plan following the ALD project meeting on Monday, 2/10. Instead of focusing on generating a heatmap of the entire heater surface, the new testing methodology aims to profile the time it will take the substrate heater to reach steady state given a desired temperature.
+
+#### Methodology
+
+1. Tape 2 of the thermocouples to the substrate heater, using the rough placement of the heating element as a guide. One thermocouple should be approximately over the heating wire, while another should be approximately centered in the largest gap in the heating element. The 0.5" grid as marked in the previous procedure provides a good way to record where the measurements were taken.&#x20;
+2. Run datalogging for the two surface thermocouples and the center (reference) thermocouple for a given voltage. I started at 5V, aiming to prevent the cracking issues that happened last week. Gradually ramp up the voltage over the course of the run (I incremented in 1.5V increments every 20 minutes)&#x20;
+3. Note difference between the reference point and each of the test points, as well as the difference between the two test points. A K-Type thermocouple only has an accuracy of  ±2.2 C, and they are highly sensitive to the quality of contact with the surface.
+
+Based on my testing, I feel that the Boron Nitride disks which we are using are not suitable for our purposes, partly due to cracking concerns, and partly due to low thermal conductivity. Jay suggested the use of Aluminum Nitride instead, which seems to fit our criteria a bit better. I reached out to a few vendors regarding custom AlN disks, but have not heard back yet.
+
+
+
+* Updated CAD for QCM mount
+
+Though it was agreed both in our team meeting on 2/10, and when speaking to Matt on 2/11 that the QCM is not necessary for the initial deposition, I still feel that it is necessary to properly design the chamber such that it can be easily retrofitted.&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Chamber CAD with QCM mount</p></figcaption></figure>
+
+The only change which effects the current design revision is the movement of the substrate heater mount from the back face of the chamber to the left face of the chamber (when looking from the front). This should not change the chamber mechanics at all, and is mainly necessary to allow the precursor delivery system to sit close to the chamber, without needing to move if the QCM is added in the future.
+
+The QCM mount itself uses a CF 2.75" to KF40 adapter as mentioned in my previous update, and simply mounts to a replacement backplate which accepts a KF40 flange. The KF40 fitting is the smallest KF style flange which can adequately accommodate the QCM mount when building the device. The CAD model shows a collision between the substrate heater mount and the QCM mount, but this will not be an issue in reality, as we can bend the QCM mount to line up with the surface of the substrate heater. It may also be worthwhile to consider redesigning the substrate heater to mount directly to the QCM mount, simply so that the QCM will be known to be at the same temperature as the heater.
+
+
+
+* ALD stand is designed\*\*
+
+\*\* Waiting for final approval from James regarding the precursor delivery
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>ALD Chamber on ALD Stand. Precursor delivery not pictured.</p></figcaption></figure>
+
+There isn't a ton to say on this front, as the design is relatively simple: an Al extrusion frame with some custom sheet metal brackets to mount to the chamber itself. We should be able to cut the mounting brackets in techspark, but will need to order the extrusion and corner brackets. Once the precursor delivery design is sorted out, we can do a final design review and place part orders. Construction itself should not take more than a couple of hours at most.
+
+### Roadblocks
+
+* Not exactly a roadblock, but reconsidering the Boron Nitride this late into development is certainly far from ideal. I am working on some code to simulate the thermal performance of the device which can hopefully be used to inform design decisions, including whether or not to change the insulator material.
+* Awaiting approval from James regarding stand dimensions
+
+### Plans
+
+* Analyze trial data for substrate heater uniformity
+* Research alternative substrate heater designs, including part lead time and sourcing
+* Finalize stand dimensions and order parts
+
 ## Update 3 (02/09/2025)
 
 ### Progress Updates

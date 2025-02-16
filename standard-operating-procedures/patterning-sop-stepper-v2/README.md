@@ -127,7 +127,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 2. LYFT and move the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
