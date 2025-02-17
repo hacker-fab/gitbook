@@ -54,3 +54,19 @@ Plan for next week:
 
 The hand-drawn chip masks (one for NMOS characterization by me and one for packaging with I/O pads by Gongwei) need to be finalized with appropriate spacing between components and be transferred to real masks by the mask design group.
 
+**Weekly Update #4**
+
+Work done:
+
+I kept working on refining the chip mask for device characterization ([https://drive.google.com/file/d/1xJqtZhwv6ymNPnZKm5X7mc3w4kSNG3Up/view](https://drive.google.com/file/d/1xJqtZhwv6ymNPnZKm5X7mc3w4kSNG3Up/view)). Took advice from Icey to add metal pads and detail each layer in color. I referred to the relative ratio of Wentao's working chip mask ([https://docs.google.com/presentation/d/14-dpjaqdC6Muq3PNF8Y-pDv0M4lqNexc/edit#slide=id.p2](https://docs.google.com/presentation/d/14-dpjaqdC6Muq3PNF8Y-pDv0M4lqNexc/edit#slide=id.p2)) and came up with DRC width and spacing.
+
+I worked on the presentation slides ([https://docs.google.com/presentation/d/1mWdtFvuAhORBxkRAATjBBGgNKujUhzJt\_RSVCNwoCtw/edit#slide=id.g3354ac3a64a\_0\_278](https://docs.google.com/presentation/d/1mWdtFvuAhORBxkRAATjBBGgNKujUhzJt_RSVCNwoCtw/edit#slide=id.g3354ac3a64a_0_278)) for our first presentation next week.
+
+Roadblocks:
+
+Currently do not have any roadblocks, just waiting to circle back on the test chip mask design.
+
+Plan for next week:
+
+Finish up the presentation slides and present on Thursday. Collaborate with Gina and Sandra to convert the hand draft test chip design into actual masks. Plug in numbers Gongwei got from chip 493 into SPICE model to verify if the simulation aligns with experimental results.
+
