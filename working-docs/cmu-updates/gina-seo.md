@@ -4,7 +4,38 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #3&#x20;
 
+**What was accomplished:**
+
+1.  Patterned chip following the [Patterning SOP](https://docs.hackerfab.org/home/standard-operating-procedures/patterning-sop-stepper-v2) with mask created from Update #2 on Thursday work session.&#x20;
+
+    1. Spinner got fixed, so Sandra and I were able to fully work on end-to-end of this mini project. We got to project our mask onto the chip and observe it under the microscope.&#x20;
+    2. However, we were not able to calibrate the microscope to take accurate measurements of sizing because calibration slider wasn't available. Therefore, we've just took measurements using a ruler tool under the 10x microscope as shown below. Given the estimated aspect ratio, we see that it is pretty close.&#x20;
+
+
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-02-09 at 3.41.49 PM.png" alt=""><figcaption></figcaption></figure>
+2.  Learned functions/scripts for creating layers with phidl & created dictionary framework for organizing diff. layers (multi-layer for metal, poly, oxide, etc.)
+
+    1. Progress of examples is in [Colab Notebook](https://colab.research.google.com/drive/1Ails5DASIdUd1btmyHOf2_QSz4EHi1vM?usp=sharing) in Section "Layers - Learning"
+    2. Section "Layers - Organization" contains a structured layer set
+
+
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-02-09 at 5.50.25 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+3. Creates [notes](https://docs.google.com/document/d/1OxRwDAGWQshovCu0T7od8k_w8QDzJhXd8bczofuO1x4/edit?usp=sharing) on Magic VLSI Tool; Found promising information for possible integration with Hacker Fab processes&#x20;
+
+**Roadblocks**
+
+1. Because we couldn't find the calibrating slider to use to get measurements on our masks on the chip, we weren't able to execute our plan of using it to get the scale factor. We will wait until the new order comes in and confirm the scale factor. For now, we will use the scale factor estimation from Kent and the measurements we've taken.&#x20;
+2. I wasn't able to actually walk through the tutorials for Magic VLSI because I don't have a Linux/Windows. A work around may be to run this on ECE computers only, which is fine for the exploration phase.&#x20;
+
+**Plans for Next Week:**
+
+1. Sandra and I will focus on working with the Metrology/Packaging team to deliver Resistor lab pattern but with pads added on at the peripheral
+2. Look more into Magic VLSI and discuss with Icey to see if this is a promising path to go down.
+3. Work with Sandra to talk about how we plan on creating an initial Python framework for NMOS masks that adhere to design guidelines.
 
 ## Update #2
 
