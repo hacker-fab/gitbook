@@ -1,5 +1,37 @@
 # Sandra You
 
+**Weekly Update #4**&#x20;
+
+1. **What was accomplished:**
+   1.  Re-patterned chip with the mask created from Update #2.
+
+       1. Re-measured using the calibrated microscope measurements, but noticed large discrepancy between the 10x and 20x measurements, as shown below.&#x20;
+          1. Points at 45 units and 80 units were measured using the 10x magnification, while other points were measured using 20x magnification.&#x20;
+          2. May need to re-calibrate then re-measure.&#x20;
+
+       <figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+   2.  Patterned chip to try and test alignment using the below mask:
+
+       <figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+
+       1.  When patterning, it was difficult to align the masks exactly.&#x20;
+
+           <figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+   3. Completed [mask generation](https://colab.research.google.com/drive/1bXM5GX_AE7WAsoSxQLe35XEuIYxSi_KF?usp=sharing) for pad resistance/Metrology team collaboration (pending their approval).&#x20;
+      1.  Will be testing 4 different pad sizes with 4 different n-channel sizes. 250 um x 250 um pad size masks shown below.
+
+          <figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+   4. Explored Magic VLSI but Icey suggested [gdsCAD](https://pythonhosted.org/gdsCAD/) and [KLayout](https://www.klayout.de/intro.html) as more modern alternatives. Will summarize benefits and tradeoffs of each tool during demo.
+2. **Roadblocks:**
+   1. Alignment of masks for patterns that require multiple exposures is difficult: will discuss in demo.
+      1. Would be nice to have a way to place markers on the stepper or have exact distance tracking, but that's probably difficult to implement.&#x20;
+      2. Purpose of alignment tests is to discover whether overlap in exposures causes unexpected behavior when photoresist is developed, which would create the need for certain DRC rules.&#x20;
+3. **Plans for next week:**
+   1. Finalize and present demo slides on demo day.
+   2. Incorporate feedback from demo day and collaborate with the Metrology and Stepper team to determine next steps.
+   3. Select one tool from the explored options (gdsCAD, KLayout, etc.) to focus on and deepen understanding.
+   4. Calibrate and re-measure the scale factor test to ensure proper calculation.
+
 **Weekly Update #3**&#x20;
 
 1. **What was accomplished:**
