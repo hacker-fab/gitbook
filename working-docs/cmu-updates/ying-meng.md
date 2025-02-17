@@ -45,3 +45,19 @@ One roadblock our team had was that chip 613, the one with the best experimental
 #### **Plans for next week:**
 
 Next week, we will collaborate with Gina and Sandra to acquire the masks for the chips and start fabricating. I will keep working on level 2 simulation documentation if I have time.
+
+
+
+### **Weekly Update #4**
+
+#### **What was accomplished:**
+
+Our team revised the initial draft of two chip masks and the testing plan to better interface with Gina and Sandra's mask generation. I learned the requirements of hand-drawn masks, such as layers, dimensions, DRC rules, etc. I also researched the SPICE level 2 model (Grove-Frohman model) and tried to understand it (reference [https://km2000.us/franklinduan/articles/hspice/hspice\_2001\_2-155.html](https://km2000.us/franklinduan/articles/hspice/hspice_2001_2-155.html)).
+
+#### **Roadblocks:**
+
+One roadblock for drawing masks is that there are no existing DRC rules for this process. Since we want to derive parameters for device modeling, we want the chip to give consistent curves, so we followed the dimensions from previous successful chips. Another roadblock I encountered is the lack of detailed documentation for SPICE level 2 model.
+
+#### **Plans for next week:**
+
+Next week, we will prepare for the presentation on Thursday. I will mainly present on the SPICE simulation levels and focus on explaining the level 1 model.
