@@ -4,6 +4,34 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #4
+
+* Sandra and I patterned again and remeasured the mask design from last week to get the scale factor and graphed with [best line of fit](https://docs.google.com/spreadsheets/d/1S0PKdll-URsYSo6UDCH_Mvkxb_JvEbNxG_ppyP4zowQ/edit?usp=sharing).&#x20;
+*   Completed the mask design for the resistor lab pattern for the metrology team ([code](https://colab.research.google.com/drive/1bXM5GX_AE7WAsoSxQLe35XEuIYxSi_KF?usp=sharing)).&#x20;
+
+    *
+
+        <figure><img src="../../.gitbook/assets/Screenshot 2025-02-16 at 8.34.04 PM.png" alt=""><figcaption></figcaption></figure>
+    * Sandra and I fabricated a trial to test alignment between two masks, but the alignment was not very successful. Further trials or a method to precisely locate and overlap previous alignment marks with the next mask's alignment are needed.
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-02-16 at 8.39.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+* Started [outlining](https://docs.google.com/document/d/1ms_NNO3NvQOPkmE-wFOXnD66nyvhvo0O9vYwE2OGiyo/edit?usp=sharing) the demo and preparing slides, aiming to complete them early next week.
+* Explored Magic VLSI but found it too outdated; also looked into [gdsCAD](https://pythonhosted.org/gdsCAD/) and [KLayout](https://www.klayout.de/intro.html) as potential alternatives. Will summarize benefits and tradeoffs of each tool during demo.&#x20;
+
+**Roadblocks:**
+
+* Will bring up alignment issues during the demo—currently uncertain about the necessary overlap between masks or whether a patch should be used to connect two diffused areas. Exploring different approaches to solve this issue.
+
+**Plans for Next Week:**
+
+* Finalize and present demo slides on demo day.
+* Incorporate feedback from demo day and collaborate with the Metrology and Stepper team to determine next steps.
+* Select one tool from the explored options (gdsCAD, KLayout, etc.) to focus on and deepen understanding.
+
+
+
 ## Update #3&#x20;
 
 **What was accomplished:**

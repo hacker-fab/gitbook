@@ -12,6 +12,30 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #4:
+
+### ALD:
+
+* Grinded out design for delivery storage, some major design elements and specs:
+  * Box made of 3 piece 1.6mm thick sheetmetal
+    * Bolted together with M3 screws
+  * Manifold supported by ALD valve collar with 3/8"-16 U bolts mounted to box ceiling
+  * Single hinge and latch using #6 screws
+  * Mounts to 8020 stand with M5 screws
+  * Cutouts for:
+    * Inlet and outlet for carrier gas and precursors&#x20;
+      * 1/4" steel tubes wrapped with heat tape
+    * 3 sets of heat tape and thermocouple
+      * 1 for manifold and outlet line
+      * 2 for TMIn and TDMSn ampules
+    * ALD Valves power and control wires
+    * ALD Valve N2 supply
+    * Exhaust for KF40 bulkhead flange
+    * Vent holes on 2 sides for exhaust airflow
+*
+
+***
+
 ## Weekly Update #3:
 
 ### ALD:
