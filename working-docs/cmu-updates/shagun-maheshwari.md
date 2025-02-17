@@ -4,6 +4,47 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 4:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:&#x20;
+
+* Successfully used the Keithley 4200 to conduct CV tests for the fabed p-type MOSCap. [https://docs.hackerfab.org/home/standard-operating-procedures/probe-station-sop](https://docs.hackerfab.org/home/standard-operating-procedures/probe-station-sop)
+  * Ran high and low frequency CV tests and compared it to target CV curves for the accumulation, depletion, and inversion regions for a p-type MOSCap. Stored the data for 4 patterns on the chip
+  * Debugged the Keithley 4200 controls&#x20;
+  * Read/skimmed through the Keithley 4200 CV test manual [https://download.tek.com/document/4200%20CV%20ApplicationsGuide.pdf](https://download.tek.com/document/4200%20CV%20ApplicationsGuide.pdf)
+  * Watched Sam Zeloof's CV testing video [https://www.youtube.com/watch?v=v6Mb7J6c6og](https://www.youtube.com/watch?v=v6Mb7J6c6og)
+  * Read through these two documents on CV testing Sam Zeloof linked&#x20;
+    * [http://sam.zeloof.xyz/wp-content/uploads/2021/01/CV-resource1.pdf](http://sam.zeloof.xyz/wp-content/uploads/2021/01/CV-resource1.pdf)
+    * [http://sam.zeloof.xyz/wp-content/uploads/2021/01/CV-resource2.pdf](http://sam.zeloof.xyz/wp-content/uploads/2021/01/CV-resource2.pdf)
+* Did a code walkthrough with Cesely for the diffusion model and loaded/ran it in google colab [https://colab.research.google.com/drive/1cJ8WHxEa8jF9vQnLNw5twRnWye24PjPx](https://colab.research.google.com/drive/1cJ8WHxEa8jF9vQnLNw5twRnWye24PjPx)
+
+Roadblocks:
+
+* Chatted with Cesely and she mentioned it may not make sense to edit the diffusion model code and use that to inform fabing the next set of chips as it is not accurate + a lot of assumptions were made in that model. Her suggestion was to just go ahead with fabing the next set of chips, conduct CV tests, and use those results to inform the parameter changes within the diffusion model. Beleive Jay, Cesely, and I would need to align on this path.&#x20;
+
+Next Steps:&#x20;
+
+* Work on first presentation for Hacker Fab&#x20;
+* Analyze results from the CV tests&#x20;
+* Create fabublocks for next set of chips to be fabed&#x20;
+* Start fabing next set of chips&#x20;
+
+Feedback
+
+• Cesely\
+Great job on getting your first set of results from a chip! Do you have these results documented, and have you started interpreting them? It's important to begin analyzing your data as soon as possible, as this will be crucial for your presentation and will also help guide the next set of chip fabrications.
+
+_Next Steps for CV Testing:_ One key aspect I want to determine from the CV testing is whether we can back-calculate carrier concentration and junction depth. These parameters will be essential for refining our understanding of the device characteristics.
+
+_Future Experiments & Model Refinement:_ For the next batch of chips, I suggest performing SOG diffusion while varying the drive-in diffusion parameters, specifically time and temperature. The goal is to use these variations to improve the accuracy of the current model. I have concerns about the reliability of my model due to the assumptions and experimental methods used for verification, so updating it with more accurate CV data is a priority.
+
+&#x20;Action Items:\
+1\. Outline an experimental plan detailing how you will use CV characterization to refine the model.\
+2\. Identify which parameters you will vary and how this will contribute to improving the accuracy of the model.\
+3\. Once the model is updated, we can use it to make informed predictions for optimal doping levels in n-well and CMOS processes.
+
 ## Update 3:
 
 Progress Update:
