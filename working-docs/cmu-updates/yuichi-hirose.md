@@ -88,3 +88,40 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Create a CAD model of an attachment for the probe holder
 * Design an attachment to put magets to the bottom of the Amazon XYZ stage
 * Design or procure a vacuum chuck
+
+### **Weekly Update #4 (2/10 - 2/16)**
+
+#### Accomplishments
+
+* I designed an attachment for the probe holder, a magnetic base for the XYZ stage, and created their CAD models.
+
+<figure><img src="../../.gitbook/assets/image (104).png" alt="" width="563"><figcaption><p>Probe station design</p></figcaption></figure>
+
+* I looked up and selected [a magnet](https://a.co/d/fau0k1t) and [a magnetic board](https://a.co/d/cXXv0Iq) on Amazon.
+* I checked [the lab-made patterning stepper device](https://docs.hackerfab.org/home/archive/patterning-sop-stepper-v1), which our probe station would have a similar structure to. I found that this design is based on the idea that the micrometer handle of the XYZ stage is rigidly connected to the motor, without something springy such as couplers, while the motor is connected to the stage flexibly using a long, thin 3D-printed beam (the motor axis and the micrometer axis cannot be aligned perfectly, so either of them needs to be flexible). I guess, this is also because, for the patterning stepper we need to attach a motor for every X/Y/Z-axis and there is not so much space for it, so the beam needed to be thin. For the probe staion, we need automate only the Z-axis, so I think I would go with the opposite way (rigidly fix the motor to the stage, and flexibly connect the motor and the micrometer). I anticipate that this contributes to the overall stability of the positioner, because the motor would not wobble in that case (it still needs to slide in 1 DoF along with the micrometer handle).
+
+<figure><img src="../../.gitbook/assets/PXL_20250212_190025175.jpg" alt="" width="375"><figcaption><p>Lab-made patterning stepper</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/PXL_20250212_185927252 (4).jpg" alt="" width="375"><figcaption><p>Lab-made patterning stepper</p></figcaption></figure>
+
+* I checked [the motor](https://www.canadarobotix.com/products/2682?srsltid=AfmBOooUm0NnSnAPh-sQfM5d7ajIlJsF4AItUQzzjvZxIG14Fq03K1So) of the patterning stepper. It has 200 steps/rev resolution. If we use the same motor in the full step mode, and directly connect it to the micrometer without speed reduction, then the resolution of our device is 2.5 um. I discussed with Joel and confirmed that this is sufficient resolution for the probe station, because the pad size length and width will both be >100um.
+* I discussed with Anirud and Joel whether our probe station needs proximity sensors like the patterning stepper. Because it does not need absolute positioning, we concluded that the sensors are not necessary.
+* I had a discussion with Anirud and Joel about how to hold a chip on the XY stage. We are planning to use the piezo vibration sensor to detect the touch by the probe needle to the chip, for the auto Z-zero setting function. Also, the surface where a chip is put needs to be conductive for testing purposes. The problem is the piezo sensor is larger than regular chips and its face and back sides are not electrically connected. One idea is, if we use a vacuum chuck, to attach conductive tapes on the piezo sensor avoiding the vacuum suction hole so that the chip is positioned on top of the tape, and the bottom of the chip and the tape are electrically connected. Another idea is to use a double-sided conductive tape, instead of a vacuum chuck. In this case, we should fix the piezo vibration sensor using a regular tape, and attach the double-sided conductive tape on top of the regular tape, so the sensor will not be damaged when we replace the double-sided tape.
+
+<figure><img src="../../.gitbook/assets/000.png" alt="" width="375"><figcaption><p>Sketch for the chip holding idea (vacuum chuck)</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/001.png" alt="" width="375"><figcaption><p>Sketch for the chip holding idea (double-sided tape)</p></figcaption></figure>
+
+* By checking the patterning stepper, I realized the vacuum chuck can be 3D printed. It doesn't have to be a machined aluminum part.
+* I had a discussion with Anirud and Joel about the camera. A cheap USB microscope like [this](https://amscope.com/products/utp200x003mp) seems sufficient.
+
+#### Roadblocks
+
+* How to hold a chip on the XY stage (details above)
+
+#### Plan
+
+* 3D print the attachment for the probe holder and assemble
+* 3D print the magnetic base for the XYZ stage and assemble
+* Procure magnets
+* Design a vacuum chuck / test double-sided conductive tape for holding a chip on the XY stage
