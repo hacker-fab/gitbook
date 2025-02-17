@@ -123,4 +123,83 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Find the python block on LabVIEW and see if the python script runs on LabVIEW&#x20;
 * Make python code that cycles through the thermocouples and averages the temperatures outputted, sending only one averaged value to LabVIEW&#x20;
 * Need to transfer the temperature readings from the Pi 4 to a mini pc that is running LabVIEW (Pi 4 is quite slow).&#x20;
-* Learn more about the adafruit library and code to accomplish the main task.&#x20;
+* Learn more about the adafruit library and code to accomplish the main task.
+
+## Update 4 (SOG)
+
+**Accomplishments**&#x20;
+
+* Tested the ProjectsInFlight recipe with the exclusion of ethanol in place of IPA.
+  * Recipes for each test can be found in the following doc: [https://docs.google.com/spreadsheets/d/11cc8vFxX2Cdq87uaElUpQxJZl3V7WWIpoaZI9dVXeNA/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/11cc8vFxX2Cdq87uaElUpQxJZl3V7WWIpoaZI9dVXeNA/edit?gid=0#gid=0)
+* Direct heat of 175ºC for 30 minutes on 2/13/25.
+
+<figure><img src="../../.gitbook/assets/2-13-25DIYSOG.png" alt="" width="188"><figcaption><p>Before diffusing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/2-13-25PostDiffuse.png" alt="" width="188"><figcaption><p>After diffusing</p></figcaption></figure>
+
+* Direct heat of 100ºC for 15 minutes on 2/14/25.
+
+<figure><img src="../../.gitbook/assets/2-14-25DIYSOG.png" alt="" width="188"><figcaption><p>Before diffusing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/2-14-25PostDiffuse.png" alt="" width="188"><figcaption><p>After diffusing</p></figcaption></figure>
+
+* Diffused the first sample made on 2/5/25.
+
+<figure><img src="../../.gitbook/assets/2-5-25DIYSOG (183.33 eexposure).jpg" alt="" width="188"><figcaption><p>Before diffusing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/2-5-25PostDiffuse.png" alt="" width="188"><figcaption><p>After diffusing</p></figcaption></figure>
+
+**Roadblocks**&#x20;
+
+* No stir bar was used on 2/13/25 and might have been the reason for excessive residue at the bottom of the flask (need to order).&#x20;
+
+<figure><img src="../../.gitbook/assets/B45D43F0-110D-4F53-9596-3ABC2276964B.heic" alt="" width="188"><figcaption><p>Residue left at the bottom of flask</p></figcaption></figure>
+
+* There was a good amount of residue at the bottom of the flask that turned into a crystal-like powder after being left out in the flask for one day.&#x20;
+  * The silica solid residue collapsed due to the dehydration of the solvent since it was left out (DI water and IPA).&#x20;
+* Still not reaching the reflux apparatus (might be too little liquid for the size of the flask and the reflux apparatus).&#x20;
+  * This shouldn't be an issue since there is condensation visible within the flask.&#x20;
+* The leftover solution from the first sample (2/5/25) solidified into a gel consistency after a week in its container.
+  * The SOG is not sustainable and has a short shelf life, which might be due to the speed of the reaction.&#x20;
+
+**Future Plans**
+
+* Continue to test the temperature and time&#x20;
+  * Direct heat of 100ºC for 25 minutes.&#x20;
+* Since I could not get to it last week, vary the amount of 85% phosphoric acid by adding and subtracting 0.25 mL from the original 0.5 mL.&#x20;
+  * Increasing the phosphoric acid increases viscosity, and decreasing is okay as long as the pH is within the range that minimizes the reaction speed or else the shelf life of the dopant will tank (pH of 3-4)
+* HF etch the previous chips and test the conductivity using the probe station.&#x20;
+  * Look into how you know the dopant is successful and the range of all the components.&#x20;
+* Grasp a better understanding of why the results are turning out the way they did, especially the test from 2/13/25
+
+## Update 4 (ALD)
+
+**Accomplishments**
+
+* Found the python node on LabView.
+  * Functions palette, connectivity, python.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-02-16 at 8.26.48 PM.png" alt=""><figcaption><p>Python node on LabVIEW</p></figcaption></figure>
+
+*   Instead of working and testing the python code all at once, I focused on writing the code to average the temperatures read from one thermocouple on the Raspberry Pi.&#x20;
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-02-16 at 8.42.39 PM.png" alt="" width="187"><figcaption><p>Python script added to the Raspberry Pi</p></figcaption></figure>
+* Able to run multiple VIs through a primary VI by calling multiple subVIs through the primary VIs:&#x20;
+  * [https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YHyLCAW\&l=en-US](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YHyLCAW\&l=en-US) (use to get started in the future).
+  * [https://forums.ni.com/t5/LabVIEW/How-do-I-run-2-or-more-VIs-simultaneously/td-p/276636](https://forums.ni.com/t5/LabVIEW/How-do-I-run-2-or-more-VIs-simultaneously/td-p/276636) (helpful if there are issues).
+
+**Roadblocks**
+
+* Could not run the python script on LabView since it is incomplete.&#x20;
+  * With the absence of a mini PC, would it be reasonable to figure out how to run the script through the PI instead of from the mini PC?&#x20;
+* Had difficulty analyzing whether the code was averaging different temperatures due to the fact that the same number was repeatedly being outputted
+  * Would it be possible to check with a wider range of temperatures to see if the output changes in that case?
+
+**Future Plans**
+
+* Confirm whether my python script is averaging the temperatures correctly.&#x20;
+  * Could attempt to make a list of random values to average, importing the random library to do so.
+* With the use of serial ports, run the python script on more than one thermocouple breakout.&#x20;
+* Work on the section of the main function code where the data will be sent.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (100).png" alt="" width="188"><figcaption><p>Format of the main function</p></figcaption></figure>
