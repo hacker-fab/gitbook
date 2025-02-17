@@ -266,15 +266,65 @@ Let leads know on tuesday meeting.
 * Machine bottom plate part when end mills arrive.
   * Will be a lot of work.&#x20;
   * Probably going to use sacrificial workholding instead of making custom workholding.
-* Add mechanical and electrical part for nanopositioner to purchase sheet.&#x20;
-  * screws
-  * linear slide (replace nippon bearing with thk because of availability)
-  * connectors and wires
-  * ICs
+*   Add mechanical and electrical part for nanopositioner to purchase sheet.&#x20;
+
+    * screws
+    * linear slide (replace nippon bearing with thk because of availability)
+    * connectors and wires
+    * ICs
+
+    ## **Update 4 (2/16/2025)**
+
+### Accomplishments
+
+* Worked on CAD for redesigned nano-positioner
+* Worked on test procedures for positional accuracy.
+* ran test cuts on scrap aluminum
 
 
 
+<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
+### Roadblocks
+
+**Problem 1**
+
+Tooling for machining did not arrive.
+
+**Proposed Solutions**
+
+Machine the week of feb 17
+
+**Problem 2**
+
+Did not complete CAD for nanopositioner to a suitable state to machine.
+
+**Proposed Solutions**
+
+Work on cad before presentation date.
+
+**Problem 3**
+
+NanoPositioner linear rail out of stock
+
+**Proposed Solutions**
+
+Design around an alternative THK bearing slide.&#x20;
+
+### Next Steps
+
+**General**
+
+Prepare presentation.
+
+**Measurements**\
+Finish up documentation for positional repeatability, step accuracy. and backlash measurement testing.
+
+Bought an LVDT probe that "should" be able to measure double digit nanometers across very short distances. If time allows will redo some measurements.&#x20;
+
+NanoPositioner
+
+should be able to make all the parts for one axis of nanopositioner **IF** tooling arrives.&#x20;
 
 
 
