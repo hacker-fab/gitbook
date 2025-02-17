@@ -136,9 +136,49 @@ Additionally, as you wrap up the fabrication of our baseline chips, it will be i
 
 Lastly, where are you documenting your daily logs? I do not see them in your folder.
 
-* From Jay
-  * Make sure to document what worked in terms of plating Ni, and what didn't work in terms of etching Ni (link your logs). Also make sure github tracker is up to date!
-  * I would remake the p type and n type chips for testing Ni contact. But I recommend using a lift off process (now that we know the Ni may unexpectedly plate the entire surface). To do this, you would keep the photoresist on after using HF to etch the 700B SOG, then do Ni plating with the photoresist still on, then strip the photoresist. This works well with electrodeposits because they deposits because they deposit incoherent spherical particles. you may find this interesting (Shaun and I did this before): [https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV\_890MjevvU/edit#slide=id.g2d1d23487f0\_1\_5](https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV_890MjevvU/edit#slide=id.g2d1d23487f0_1_50), and [https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c\_0\_110](https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c_0_110). My hope would be to compare to results Shaun and I got, then also test Schottky barrier and annealing effects.
-  * After probing the Al contact, you should anneal them and reprobe.
-*
-*
+*   From Jay
+
+    * Make sure to document what worked in terms of plating Ni, and what didn't work in terms of etching Ni (link your logs). Also make sure github tracker is up to date!
+    * I would remake the p type and n type chips for testing Ni contact. But I recommend using a lift off process (now that we know the Ni may unexpectedly plate the entire surface). To do this, you would keep the photoresist on after using HF to etch the 700B SOG, then do Ni plating with the photoresist still on, then strip the photoresist. This works well with electrodeposits because they deposits because they deposit incoherent spherical particles. you may find this interesting (Shaun and I did this before): [https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV\_890MjevvU/edit#slide=id.g2d1d23487f0\_1\_5](https://docs.google.com/presentation/d/1bSWTTT-sIEubeuqaU07rOFuCD53CE3sTV_890MjevvU/edit#slide=id.g2d1d23487f0_1_50), and [https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c\_0\_110](https://docs.google.com/presentation/d/1oSqJersLTUbzyhDs-7WHrj79tlpNNgWxgJMDRFjoSxc/edit#slide=id.g2bcd2c5f16c_0_110). My hope would be to compare to results Shaun and I got, then also test Schottky barrier and annealing effects.
+    * After probing the Al contact, you should anneal them and reprobe.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #4 (Feb 16)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* This week I was out of town for most of the days so the accomplishments were not too focused on fabrication, but more on computer work.
+* Did the IV testing of the 2 Al-Si chips before annealing ([https://drive.google.com/drive/u/0/folders/1xUAGCG\_4qKMOKwY4XnZI6zqIe8Cj1hDt](https://drive.google.com/drive/u/0/folders/1xUAGCG_4qKMOKwY4XnZI6zqIe8Cj1hDt)).
+* Annealed the chips at 250C for 15 minutes and reprobed.
+* I drafted a doc with the results and interpretation of the IV testing of the chips ([https://docs.google.com/document/d/1trwQnbqlPfQ9Eh84AGdTB\_nJhIKhLQ6Lg6GDPYc7yvs/edit?tab=t.0](https://docs.google.com/document/d/1trwQnbqlPfQ9Eh84AGdTB_nJhIKhLQ6Lg6GDPYc7yvs/edit?tab=t.0)).
+* I have made some superficial research on what could be the Nickel etching problem but I put a pause on that research because we decided to just redo the fabrication, this time leaving the photoresist on upon Nickel deposition.
+* My previous daily logs were private in my Notion app. This week I made sure to put them all together in a single public doc in the drive ([https://docs.google.com/document/d/1p4lcY1\_Jr3aeueYAerozEAqLVf2e0bBO/edit](https://docs.google.com/document/d/1p4lcY1_Jr3aeueYAerozEAqLVf2e0bBO/edit)).
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I don't believe I have any roadblocks at the moment.&#x20;
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* The IV testing doc right now is simply a draft with some results pasted there. This week I want to finalize the doc with a more thorough interpretation with the resistance calculations and complete report.
+* Last week I did not yet know how to perform CV testing, but I want to go through with that this week on the 2 fabricated Al chips.
+* Fabricate 2 Ni-Si chips for baseline testing, this time with the photoresist on when depositing the Nickel.
+* Prepare presentation 1.
+* Prepare lab report 1.
+* Conduct literature review on Nickel etching processes and identify potential improvements for future fabrication attempts.
+
+Feedback
+
+• Cesely\
+This week you should prioritize interpreting your results from the Al contacts for presentation 1 and fabricating chips to test the nickel contacts.
+
+Interpreting your results will be important for deciding our next steps forward. It’s not completely clear to me based on your results document which graphs correlate to the n-doped and p-doped chips as well as which graphs correspond to before and after annealing. If am understanding it correctly, it appears that annealing made the contacts more ohmic, which is a good result. You only annealed for 15 minutes at 250°C. It may be worthwhile to evaluate the effect of varying time and temperature on the quality of the ohmic contacts.
+
+Under roadblocks you should have put that you could not perform the CV testing. The Keithley is already set up to perform CV measurements, and we simply only have to change the probe leads. I can go over CV testing during our weekly CMOS meeting and we can get some results for you to include in your first presentation.
