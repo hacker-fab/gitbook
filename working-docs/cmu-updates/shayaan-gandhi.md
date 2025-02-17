@@ -66,7 +66,65 @@ Created project proposal and started reading Alicat and Pfieffer manuals to unde
 
 1. Most of the week was spend trying to get Modbus RTU communicating with Alicat sensor. Efforts to receive information through Modbus was unsuccessful, but sending information eventually was. I am not sure why this is the case because it should be relatively simple. I now have contacts with both Alicat and Pfieffer to try and debug communication protocols.  I used multiple libraries to try and communicate including ArduinoModbus and ModbusMaster. Interesting the bit packets observed by oscilliscope are different sizes which is odd (Video will be attached to master doc). I also formalized and debugged the pfieffer inteface into arduino library with .h and .cpp file (Check github).
 2. I am struggling to figure out why the communication is not working. I briefly attempted Pfieffer communication as well which was unsuccessful. I can see bit packets on the TX. but I never see the RX line being driven. Interesting note is that in Alicat\_ModbusMaster\_test.c (check github) the code passes the success if statement, but no data is read. I had Carson help me debug some of the transmitting this week and I hope he can help this week as well.&#x20;
-3. The plans for the next week are to get stuff communicating. Steps to this are seeing movement on the RX line. People that could possible help are alicat engineers and hopefully Carson.   &#x20;
+3. The plans for the next week are to get stuff communicating. Steps to this are seeing movement on the RX line. People that could possible help are alicat engineers and hopefully Carson.
+
+> **Feedback**
+>
+> Good work this week trying to get the communication established. A big accomplishment is having those Alicat and Pfieffer numbers for debugging help down the line. I asked ChatGPT why that if statement was passing without data being read, and the only suggestions it gave me were to assign the node to the result variable so that result reflects the actual result. I'm unsure whether the library automatically looks for that variable though kinda like an errno. Since it's local I kinda doubt it. The attached code below will probably resolve the error to agree with the scope but not make it function as we want unfortunately.
+>
+> I've looked at these references:
+>
+> * [https://documents.alicat.com/manuals/DOC-MANUAL-MODBUS.pdf](https://documents.alicat.com/manuals/DOC-MANUAL-MODBUS.pdf)
+> * [https://documents.alicat.com/Alicat-Serial-Primer.pdf](https://documents.alicat.com/Alicat-Serial-Primer.pdf)
+> * [https://www.alicat.com/support/communication-options-for-alicat-instruments/](https://www.alicat.com/support/communication-options-for-alicat-instruments/)
+>
+> and think the problem could be due to the baud rate needing to be 19200. The Alicat should list the baud rate on its screen so it's probably not that. Another thing I saw was the error code of 4 being an unsupported command (if that's what's being received). This was in the Alicat modbus reference not the library documentation. To verify the error code is being sent, I will try to secure and ALDM for you since scopy is superior for digital oscilloscoping.
+>
+> Also you should try communicating with the Alicat over Alicat's custom serial terminal, like this: [https://www.youtube.com/watch?v=sLaUxEmOlj0](https://www.youtube.com/watch?v=sLaUxEmOlj0). You will probably need a USB-serial adapter though which I'm not sure we have, but I can order. If you can also cutup a USB cable and wire it yourself, but communication like this will probably work before demos.
+>
+> I also recommend not using a library, and using the command uint\_id reference in the serial communications primer and modbus libraries to send bytes directly and see if you get a response. I recommend Blink Display as the test command.
+>
+> I will revise the GitHub project tracker, but please create a new entry in the dev log of Master Doc for progress made (even if it's relinking your "How to connect stuff" doc with a brief recap).
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
+
+<pre class="language-cpp" data-full-width="false"><code class="lang-cpp"><strong>#include &#x3C;ModbusMaster.h>
+</strong>#include &#x3C;SoftwareSerial.h>
+
+const uint8_t TX_pin = 11;
+const uint8_t RX_pin = 10;
+
+SoftwareSerial mySerial(RX_pin, TX_pin); // RX, TX
+ModbusMaster node;
+
+void setup() {
+  Serial.begin(9600);
+  mySerial.begin(9600);
+  node.begin(1, mySerial);
+}
+
+void loop() {
+  uint8_t result = node.readHoldingRegisters(0, 5); // Store the result
+
+  if (result == node.ku8MBSuccess) {
+    Serial.print("ReadHoldingRegisters: ");
+    for (uint8_t i = 0; i &#x3C; 5; i++) {
+      Serial.print(node.getResponseBuffer(i));
+      Serial.print(" ");
+    }
+    Serial.println();
+  } else {
+    Serial.print("Modbus Error: ");
+    Serial.println(result, HEX);
+  }
+
+  delay(1000);
+}
+</code></pre>
+
+
+
+
 {% endstep %}
 {% endstepper %}
 
