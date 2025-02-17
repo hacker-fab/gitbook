@@ -16,8 +16,15 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ### ALD:
 
+Progress:
+
+<figure><img src="../../.gitbook/assets/image (113).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (115).png" alt="" width="563"><figcaption></figcaption></figure>
+
 * Grinded out design for delivery storage, some major design elements and specs:
-  * Box made of 3 piece 1.6mm thick sheetmetal
+  * Previously unused 1/2" section removed to prevent precursor mixing
+  * Box made of 4 piece 1.6mm thick bent sheet metal
     * Bolted together with M3 screws
   * Manifold supported by ALD valve collar with 3/8"-16 U bolts mounted to box ceiling
   * Single hinge and latch using #6 screws
@@ -32,7 +39,50 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
     * ALD Valve N2 supply
     * Exhaust for KF40 bulkhead flange
     * Vent holes on 2 sides for exhaust airflow
-*
+* Submitted safety review of earlier prototype to Matt
+* BOM:
+
+<table><thead><tr><th>Item</th><th>Supplier</th><th width="217">Link</th><th width="56">Quantity</th><th width="137">Price</th><th data-type="checkbox">Ordered</th></tr></thead><tbody><tr><td>Sheet metal</td><td>Send Cut Send</td><td></td><td>1</td><td></td><td>false</td></tr><tr><td>1/4" VCR Caps</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting">https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting</a></td><td>4</td><td>$63.60</td><td>false</td></tr><tr><td>1/4" VCR Plug</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/plugs/p/SS-4-VCR-P?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting">https://products.swagelok.com/en/c/plugs/p/SS-4-VCR-P?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting</a></td><td>1</td><td>$9.30</td><td>false</td></tr><tr><td>1/4" FVCR to 1/4" Tube</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400">https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400</a></td><td>1</td><td>$50.60</td><td>false</td></tr><tr><td>U bolts, 1-1/8" ID</td><td>McMaster</td><td><a href="https://www.mcmaster.com/8880T955/">https://www.mcmaster.com/8880T955/</a></td><td>3</td><td>$5.64</td><td>false</td></tr><tr><td>Hinge</td><td>McMaster</td><td><a href="https://www.mcmaster.com/1586A34/">https://www.mcmaster.com/1586A34/</a></td><td>1</td><td>$7.15</td><td>false</td></tr><tr><td>Latch</td><td>McMaster</td><td></td><td>1</td><td>$15.20</td><td>true</td></tr><tr><td>10-32 Screws, 3/8" long</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A340/">https://www.mcmaster.com/91251A340/</a></td><td>6</td><td><p>$14.86 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>10-32 Drop in T nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/4976N25/">https://www.mcmaster.com/4976N25/</a></td><td>6</td><td><p>$7.78 </p><p>(2 packs x4)</p></td><td>false</td></tr><tr><td>M3 screws</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91290A113/">https://www.mcmaster.com/91290A113/</a></td><td>46</td><td><p>$12.52 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>M3 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90576A102/">https://www.mcmaster.com/90576A102/</a></td><td>46</td><td><p>$4.82 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>#6 screws, countersunk</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91263A514/">https://www.mcmaster.com/91263A514/</a></td><td>6</td><td><p>$8.26 </p><p>(1 pack x25)</p></td><td>false</td></tr><tr><td>#6 screws, flat head</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A146/">https://www.mcmaster.com/91251A146/</a></td><td>6</td><td><p>$11.90 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>#6 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90631A007/">https://www.mcmaster.com/90631A007/</a></td><td>12</td><td><p>$3.93 </p><p>(1 pack x100)</p></td><td>false</td></tr></tbody></table>
+
+Struggles:
+
+* balancing time with school work to get design finished
+* we planned to order last Friday but wasn't able to get that ready in time
+
+To do for this week:
+
+* Confirm inlet and outlet configuration&#x20;
+* Make any final adjustments to sheet metal
+* Finalize BOM and order everything before Tuesday&#x20;
+  * still need to set up a Send Cut Send Quote
+* Work on presentation
+
+### Packaging
+
+Progress:
+
+* Informed Icey about the recommended 3 micron AL pad thickness from this article
+  * [https://lnf-wiki.eecs.umich.edu/wiki/Wire\_bonding#Design\_considerations](https://lnf-wiki.eecs.umich.edu/wiki/Wire_bonding#Design_considerations)
+* Also got registered to work in MEMS lab&#x20;
+
+<figure><img src="../../.gitbook/assets/image (116).png" alt="" width="563"><figcaption><p>Email reply from Fan</p></figcaption></figure>
+
+* Joel and I have been thinking that jumping to chip on PCB packaging will be much eaiser to implement bc we can reduce the complexity and number of process steps in packaging manufacturing
+* we should be able to cover up the chip with lower risk of contamination by 3D printing a cap that is much larger than the chip itself and screw mount to through holes on the board
+* I don't think this will change anything on EDA's side but ran it by Icey to check
+
+Struggles:
+
+* making enough time for packaging due to time spent on school work and trying to make ALD deadlines
+
+To do this week:
+
+* work on presentation
+* should be able to start PCB design once we get the thumbs up from Icey and EDA team
+  * need to get footprint of analyzer connector
+  * create footprint for wire bond pad pattern
+  * consider things like decaps for the board...?
+* hoping to mill the board this weekend and be ready for resistor lab chip to be made
 
 ***
 
