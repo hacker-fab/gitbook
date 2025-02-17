@@ -44,3 +44,16 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
    \
    The CAD I have done this week has all been in FreeCAD. It works pretty well - the workflow is similar to Fusion. Stability needs improvement though. I have not made all that much progress, though, so if somehow some other option sorts itself out and people think I should switch, I don't have an issue with that.
 3. Next week, I'm going to continue on the CAD and figure out a solution to how to actually mount the optics on the frame.
+
+### Weekly Update 4
+
+1.  This week I did a lot more planning and work on the CAD for my frame design. I had a couple important realizations:
+
+    * Most experimental optical setups make use of an optical table or breadboard... although I want to design this stepper to not use a full optical table because of price, I can still use ours for prototyping (and especially for following the design of using a 1-inch grid.
+    * Experimental optical setups also tend to use thick rods to offset planes. As long as the plates they're attached to are reasonably rigid, there shouldn't be shear problems with this. I'm going to do a bit more research into how to source these.
+    * ^ Those 2 things also really help make the design process easier: now, rather than some custom frame arrangement with laser cut&#x20;
+
+    Currently the design looks like this. It's still in FreeCAD, but I think now that I'm getting a better idea of how it's going to go together I will transition over to Onshape to be able to use their much better assembly environment. Also, I'm still working on how I will hold the weight of the projector: some of it will go through the optics setups which I've figured out how to secure well, but I don't think it's a good idea to have the optics support \*all\* of the projector's weight. I believe that since I've made sure the optics are the main focus of mounting, I should be able to be a lot less precise with the projector mounting, which should allow for using different types of projectors using i.e. a sliding plate.\
+    ![](../../.gitbook/assets/image.png)
+2. Somehow, the Thorlabs order that I put in originally had several parts missing and some parts arrived that I didn't order... I'm not sure what happened there, but I'm going to have to wait for another order to go through to get the missing parts.
+3. Plan for this week is to get ready for the progress presentation! I'm happy with my progress so far but I need to actually condense this into slides to present. After that, I'll hopefully be able to finalize my frame design and order parts for it. Hopefully later this week I'll also have some more of my previously ordered parts arrive: mainly, I want to get access to the projector so I can figure out how I'm mounting it.

@@ -11,7 +11,7 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 
 <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
 
 ### Materials
 
@@ -36,7 +36,7 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 * Wait until the pressure is at 1E3 hPa or greater (pressure is given by parameter 340).
 * Unskrew the two black knobs pictured below (B), then lift the chamber lid.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Turn the two black knobs on the top of the blue box as shown in Figure 1, and open the lid.
 * Make sure youre wearing nitrile goves.
