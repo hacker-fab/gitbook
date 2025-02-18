@@ -71,3 +71,11 @@ I am starting to think that a convolutional-based detector that we finetune migh
 We made big improvements this week but we're not there yet. I want to have reliable detection by the end of the week. I'll be experimenting more with template matching and also YOLOv11, which is a real-time object detector that performs well in a wide variety of settings.
 
 The only roadblack has been time, but this should be mostly unblocked after Tuesday for me.
+
+
+
+**Week 4 Feedback (Kent Wirant):**
+
+* These are some great results! Looking forward to seeing improved accuracy over a wider range of patterns as well.
+* In the future, please make sure the GitHub repository is up to date with the changes you make to the code. Also be wary of documenting your process and thinking in the Development Log in the Master Document and task status in the GitHub project tracker (finer-grained tasks make this easier).&#x20;
+* For future planning, convolutional based fiducial mark detection is worth considering, but some more detail and justification as to why and how you are implementing this is necessary.
