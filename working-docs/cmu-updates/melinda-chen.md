@@ -101,3 +101,28 @@
   * Based on: [https://www.lesker.com/newweb/ped/rateuniformity.cfm](https://www.lesker.com/newweb/ped/rateuniformity.cfm) I worry that the oxide sputter test (hoping oxide acts a blocking cap itself) may not be a good use of time, since we may have to sputter for ridiculous amounts of time to see anything). Which is also another good reason to do Reactive Al Rf sputtering instead of Al2O3 target sputtering.
   * DC Al sputter tests may still be interesting this week.
   * Please make sure to links to working docs, and an updated github project tracker.
+
+### Update 4 (2/9-2/16)
+
+#### Accomplishments
+
+* Created Aluminum thin layer samples using the thermal evaporation chamber
+* Attemped XRR on samples
+  * Seemed to be unsuccessful - potentially issues with surface roughness, or sample size.
+* Helped perform sputtering tests on Thursday with the blocking capacitor to try to debug chamber
+* Placed order for AFM tips - turns out Joel has some
+
+#### Roadblocks
+
+* Sputtering chamber still not working : (
+
+#### Plans
+
+* Perform XRR on thermally grown oxide -> hopefully better surface roughness and larger sample size will result in visible results
+* Track down AFM tips and try to perform AFM on thermally evaporated Al samples to get rough idea of surface roughness
+* Continue literature review/researching potential causes for sputtering chamber not working.
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+
+
