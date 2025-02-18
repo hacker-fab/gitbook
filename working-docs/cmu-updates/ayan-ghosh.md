@@ -1,16 +1,16 @@
 # Ayan Ghosh
 
-Update 0
+**Update 0**
 
 
 
-Update 1:
+**Update 1:**
 
 I have taken the measurements of the build plate and started CAD for the cable fixture. Unfortunately I can't figure out how to attach it here but it is waterjetted aluminum. I will in the coming week look for stock in TechSpark and fabricate it.
 
 
 
-Update 2:
+**Update 2:**
 
 Not part of my core work but will be helpful in the future: I have made CAD of the chamber. I will post the drawings in the Discord, unless there's a better place to put them.&#x20;
 
@@ -32,7 +32,7 @@ _For any CADs or diagrams, it's fine if you just include a screenshot or link to
 
 
 
-Update 3:
+**Update 3:**
 
 In general, I'm making some pivots. We'll be making minor upgrades to the sputter chamber version 1, but the more important task is designing and building version 2.
 
@@ -41,6 +41,36 @@ For the minor upgrades to the V1 chamber, we're ordering some new components. Th
 I am approximately \~85% on CAD for chamber version 2; I should be done by around Tuesday and will ask others on the sputtering team for feedback. This is important to hit so that we can order components for V2. I'm hoping to already start ordering some components for V2 as early as tomorrow. Besides this, the big goal for this week is to implement the V1 upgrades.
 
 Also, please let me know if I'm doing these wrong.
+
+
+
+
+
+**Update 4:**
+
+So, it has been a bit difficult to find a cylinder of glass without the bases as needed for our new form factor. There's of course good old McMaster-Carr ([https://www.mcmaster.com/1176K312/](https://www.mcmaster.com/1176K312/)), but it only has diameters up to a maximum of 5 inches. There are similar things that are meant as glass vases and the like (https://www.amazon.com/WGV-Cylinder-Glassware-Container-Terrarium/dp/B07YN9CSJW/) but these seem like a bad idea for our application. There are some acrylic chambers (https://www.amazon.com/BACOENG-Chamber-Acrylic-Degassing-Silicone/dp/B0CWLDKGVS, https://www.amazon.com/Acrylic-Stabilizing-Degassing-Silicones-Cylinder/dp/B0BNJQVSCP/) that would be large.
+
+Seemingly exactly what we're looking for can be found at https://jskindustrial.com/product/diameter-transparent-glass-cylinder-tube-high-quality-quartz-tube-orifice-type/; they go up to 400 mm diameter. Plus they're made in INDIA, which will make my grandparents happy. However, I couldn't figure out how to order from them?
+
+I also found a company called Greatglas Pyrex Cylinders; I called them and they said they can do 300 mm, 250 mm, and some lower diameters and would cut to the length we ask for. We can place an order at greatglas@greatglas.com; on th one hand they were very helpful but on the other hand they said an estimate of like $1000 or something very big like that with a 3-4 week lead time.
+
+Other than that, based on Professor Matt's recommendation I found some _really_ strong magnets for the magnetron, as a matter of fact we should be careful when we get them so as to not accidentally crush any fingers.
+
+There's also some other parts that are perfect for our purposes such as the ring clamp.
+
+However, I did see Jay made some purchases; I will have to ask for some clarification regarding these.
+
+I am a bit worried about timeline; on the purchase tracker the V1 upgrades have been marked as purchased but not arrived. I am currently feeling a bit under the weather so if this worsens then I might not be able to get the necessary work done on time.
+
+
+
+Here's some screenshots of the CAD; apologies it looks so terrible (you can't edit part appearance in an assembly for some reason):![](<../../.gitbook/assets/Screenshot 2025-02-17 at 12.23.08 AM.png>)
+
+![](<../../.gitbook/assets/Screenshot 2025-02-17 at 12.15.09 AM.png>)
+
+I will have to update this based on Jay's purchases.
+
+p.s. I may just be blind, but I think this is the first time I'm being able to see the feedback you all left?
 
 
 
