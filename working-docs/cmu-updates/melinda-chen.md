@@ -107,7 +107,7 @@
 #### Accomplishments
 
 * Created Aluminum thin layer samples using the thermal evaporation chamber
-* Attemped XRR on samples
+* Attempted XRR on samples
   * Seemed to be unsuccessful - potentially issues with surface roughness, or sample size.
 * Helped perform sputtering tests on Thursday with the blocking capacitor to try to debug chamber
 * Placed order for AFM tips - turns out Joel has some
@@ -125,4 +125,9 @@
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
 
 
+
+#### Responses - Jay
+
+* Given the chamber roadblocks, I think continuing to workout XRR with thermal oxide and sanity checking the evaporated Al samples with AFM techniques makes sense.
+* Rahim and I are working on upping the Vp-p of th rf supply in hopes that low Vp-p has been the issue. If this doesnt work, we will start doing reactive DC with V1 chamber.
 

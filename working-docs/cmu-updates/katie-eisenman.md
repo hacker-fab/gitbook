@@ -33,6 +33,12 @@ description: Katie's weekly updates (Sputtering Process Project)
 * Perform an AFM trial on evaporated Al chip samples
 * Grow some aluminum oxide in the furnace for further AFM/XRR testing
 
+#### Responses - Jay
+
+* Given the chamber roadblocks, I think continuing to workout XRR with thermal oxide and sanity checking the evaporated Al samples with AFM techniques makes sense.
+* Rahim and I are working on upping the Vp-p of th rf supply in hopes that low Vp-p has been the issue. If this doesnt work, we will start doing reactive DC with V1 chamber.
+* Overall thankyou for the well detailed update with pics!
+
 ### <mark style="color:purple;">Update 3 - 2/9/2025</mark>
 
 Accomplishments
