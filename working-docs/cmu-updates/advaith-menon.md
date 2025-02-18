@@ -128,8 +128,13 @@ Moving forwards, my tasks will include designing the belting system used to driv
 
 <div><figure><img src="../../.gitbook/assets/Screenshot 2025-02-10 at 2.11.36 AM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-02-10 at 2.21.12 AM.png" alt=""><figcaption></figcaption></figure></div>
 
+***
+
+## Week 4
+
 \
+This week, I focused primarily on the project presentation for Tuesday. However, I also tested the IR sensor using an Arduino. This involved setting up the hardware on a breadbaord, writing the necessary Arduino code, and debugging any issues that arose during the process. A few issues arose with random jumps appearing the return values, but I discovered that this was due to a bad soldering connection. Next week, I should have all the parts necessary to begin building a first prototype of the linear slide mechanism, which I can also test with the new infrared.
 
 
 
-
+<figure><img src="../../.gitbook/assets/Untitled design.png" alt=""><figcaption></figcaption></figure>
