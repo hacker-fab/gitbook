@@ -4,6 +4,35 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 4 - 2/16/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+* Evaporated Al onto two chips to use for XRR/AFM testing with Melinda. The final size from the QCM was around 1.6 k Angstroms, so slightly larger than what we were aiming for (1 k Angstrom), but still workable. If we evaporate again we need to remember to set the current to lower than 45A to start. We also had a bit of trouble getting the chips off the tape so they ended up a tad bit scratched, which may have contributed to rough XRR results. Hopefully this means we will have many observable features on AFM though.
+  *
+
+      <figure><img src="../../.gitbook/assets/PXL_20250212_023936387.jpg" alt=""><figcaption></figcaption></figure>
+* Observed/helped out with another RF sputtering trial at high pressure, but unfortunately nothing was deposited again :( There was a strange shiny-ness (see below, the almost blue tinted splotch near the top) observed on the Al target after, but really no other evidence of sputtering
+
+<figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+
+* Performed XRR trial with Jay and Melinda on one of the evaporated chips, took many pictures/videos to be used for SOP (see folder with pics/videos here: [https://drive.google.com/drive/folders/1gZTIkKDhvZFrmSh1t8Wdxa14xSfIIauH?usp=sharing](https://drive.google.com/drive/folders/1gZTIkKDhvZFrmSh1t8Wdxa14xSfIIauH?usp=sharing)
+  * Data from the test can be found here: [https://drive.google.com/drive/folders/1KTogftj\_zDFrn7nC8pkHbGv47KBVDxv9?usp=sharing](https://drive.google.com/drive/folders/1KTogftj_zDFrn7nC8pkHbGv47KBVDxv9?usp=sharing)
+
+#### Roadblocks
+
+* Obviously, the main roadblock right now is the fact that RF sputtering isn't working. I've been doing some researching and aside from being able to check the DC bias of the plates in the chamber (which to my understanding would be pretty difficult), I'm not really sure what else we can test with RF sputtering. I'd like to go back to DC sputtering to just double check that everything with the chamber is functional for that process. I think we will be able to narrow down the problem more efficiently regardless of the outcome of the DC sputtering trial, because at least we'll know it's either the chamber system itself or the RF system. Reproducibility of results is very important, as I have had to learn in my other research projects :) After that, we can eventually use the other power source (hopefully, if it works) from the Nanofab.&#x20;
+
+#### Plans
+
+* Finish presentation for presentation on Tuesday
+* Start writing SOP for AFM (Melinda is going to do XRR)
+* Perform DC sputtering trial as a sanity check, then start narrowing down what could be wrong with RF sputtering (assuming nothing is wrong with the chamber itself)
+* Get AFM tips from Joel
+* Perform an AFM trial on evaporated Al chip samples
+* Grow some aluminum oxide in the furnace for further AFM/XRR testing
+
 ### <mark style="color:purple;">Update 3 - 2/9/2025</mark>
 
 Accomplishments
