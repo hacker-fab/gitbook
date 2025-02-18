@@ -1,6 +1,6 @@
 # 💿 Spin Coater V1 Build (to do)
 
-
+Here is a [BOM](https://docs.google.com/spreadsheets/d/1n8dB-Vh3pZN99sLe7-j91mzc43uWQ1A1lQEvetoBo_8/edit?gid=0#gid=0) of our most recent spin coater V1 build. More info to come soon!
 
 * Collect all necessary measurements of the current spin-coater to create the new 3D mode.
 * Finalize an updated 3D model that includes the servo mount and any necessary adjustments to the lid design.

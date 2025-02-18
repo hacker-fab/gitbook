@@ -18,8 +18,6 @@ Plans for the week:
   * this will allow us to collect data automatically, which we can use when developing our approach to automatic alignment
 * refactor the computer vision code (don't run on every frame), if allows
 
-
-
 ### Week 2
 
 This week I opened a [PR](https://github.com/hacker-fab/stepper/pull/2) for automated photo collection when switching to UV mode. I still need to test how the change looks on the GUI on the laptop in the fab; Tkinter displays differently on my Mac.
@@ -31,8 +29,6 @@ Plans for the week:
 * check and merge the automated photo collection PR
 * refactor the CV code as described above
 * experiment with cross-correlation-based detection of crosses (fiduciary markers)
-
-
 
 ### Week 3
 
@@ -47,3 +43,31 @@ The roadblock has just been time, as I have been in a busy season these past wee
 This week:
 
 * continue to experiment with detection + get something good enough to demo
+
+### Week 4
+
+This week I got something good enough to demo!
+
+Building off of the work from last week, I achieved good results with thresholding and contour-based detection. For reference, here is the output of the detection code that was previously in the stepper repository (and still there) on a sample image:
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-16 at 11.12.17 PM.png" alt=""><figcaption><p>the output of the old code — this is bad, as you can see!</p></figcaption></figure>
+
+And here is output of the new code I wrote:
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-16 at 11.13.17 PM.png" alt=""><figcaption><p>the output of the new code!</p></figcaption></figure>
+
+Notice that we detect all four markers in this image.
+
+What we have now is good, but it can be improved.
+
+In particular, we still need to handle false positives better and output less of them. We also struggle when the markers are not as bright. Here's an example of a failure case:
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-16 at 11.15.08 PM.png" alt=""><figcaption></figcaption></figure>
+
+In this case, the markers appear darker (as can be easily seen in the thresholded image) and we miss them. We want to be more robust than this.
+
+I am starting to think that a convolutional-based detector that we finetune might be a better approach than using traditional techniques; although I think it's worth spending a bit more time trying to get template matching to work consistently, which I will do.
+
+We made big improvements this week but we're not there yet. I want to have reliable detection by the end of the week. I'll be experimenting more with template matching and also YOLOv11, which is a real-time object detector that performs well in a wide variety of settings.
+
+The only roadblack has been time, but this should be mostly unblocked after Tuesday for me.

@@ -45,6 +45,10 @@ _Future Experiments & Model Refinement:_ For the next batch of chips, I suggest 
 2\. Identify which parameters you will vary and how this will contribute to improving the accuracy of the model.\
 3\. Once the model is updated, we can use it to make informed predictions for optimal doping levels in n-well and CMOS processes.
 
+* Jay
+  * talked with Cesely to clarify, but absolutley use her code from last semester. You need to do this in order to figure out what doping parameters to use when making MOSCaps. The point is to use the model to get close to the desired doping parameters, then test with moscaps, then tune the model, then re iterate on moscap testing with updated model to finalize CMOS doping parameters.
+  * use ceselys model to determine what doping parameters you will use for the first set of moscaps, then fab them this week to stay on schedule.
+
 ## Update 3:
 
 Progress Update:

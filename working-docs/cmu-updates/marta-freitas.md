@@ -182,3 +182,9 @@ This week you should prioritize interpreting your results from the Al contacts f
 Interpreting your results will be important for deciding our next steps forward. It’s not completely clear to me based on your results document which graphs correlate to the n-doped and p-doped chips as well as which graphs correspond to before and after annealing. If am understanding it correctly, it appears that annealing made the contacts more ohmic, which is a good result. You only annealed for 15 minutes at 250°C. It may be worthwhile to evaluate the effect of varying time and temperature on the quality of the ohmic contacts.
 
 Under roadblocks you should have put that you could not perform the CV testing. The Keithley is already set up to perform CV measurements, and we simply only have to change the probe leads. I can go over CV testing during our weekly CMOS meeting and we can get some results for you to include in your first presentation.
+
+* Jay
+  * I agree with Cesely that higher temp anneal would be intersting. However, not worth making a second Aluminum chip to test this, so just reanneal the same chip at higher temps to see if there is any effect.
+  * I also agree that remaking the Ni contact chip with a "liftoff" is a priority
+  * Overall good job documenting preliminary results
+  * We need to get on the same page about how to interpret CV testing results, and whether or not the probes should each be on a metal pad, or one probe on the probe station chuck.
