@@ -58,13 +58,13 @@ We can order propylene fittings and valves from:
 * Jaco Kynar Compression Tube Union Tees
 * SP Bel-Art T Shaped Tubing Connectors
 
-I worked on CADfor holding the tubes over the frames. It is parameterized and you can change the number of tubes.
+I worked on CAD for holding the tubes over the frames. It is parameterized and you can change the number of tubes.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-02-09 220735.png" alt=""><figcaption></figcaption></figure>
 
 I looked into position sensing methods for determining the location of the spin coater (ultrasonic, infrared, laser). We settled on infrared for the design.
 
-Unrelated to automated spin coater, I investigated some ideas for Joshna regarding the automatic dicer. She brought to my attention that we could use fiber laser to cut the wafer to increase precision. The idea here is that with diamond scribing or even diamond cutting you get microcracking, microchipping, and lost material from klerf-loss. When you use laser to cut fully through a wafer there are micro warps from the melting and but not cracks and chips. You can avoid this warping by laser pulsing (see this article: [https://www.gmp.ch/htmlarea/pdf/GSI/JK100P\_app\_note.pdf](https://www.gmp.ch/htmlarea/pdf/GSI/JK100P_app_note.pdf)).&#x20;
+Unrelated to automated spin coater, I investigated some ideas for Joshna regarding the automatic dicer. She brought to my attention that we could use fiber laser to cut the wafer to increase precision. The idea here is that with diamond scribing or even diamond cutting you get microcracking, microchipping, and lost material from kerf-loss. When you use laser to cut fully through a wafer there are micro warps from the melting and but not cracks and chips. You can avoid this warping by laser pulsing (see this article: [https://www.gmp.ch/htmlarea/pdf/GSI/JK100P\_app\_note.pdf](https://www.gmp.ch/htmlarea/pdf/GSI/JK100P_app_note.pdf)).&#x20;
 
 To successfully laser cut a wafer we would need high powered lasers (100 W to 200W) depending on if we are using a fiber laser or Nd: YAG Laser. This would cost thousands of dollars just for the appropriate laser, so I don't think it will be worth it for our purposes. Also, a fume hood is not proper ventilation for laser cutting a wafer, so we would need to make a ventilation solution as well.&#x20;
 
@@ -81,3 +81,34 @@ We could get a weaker and cheaper laser and only use it for wafer scribing (in w
 * I am working on a CAD to hold the heat gun, should be done by EOD Monday.
 * Work on presentation and assembly with team.
 * Hopefully motor will be here. If it is, Matthew and I will test the pump.
+
+
+
+***
+
+## Update 3
+
+### Progress
+
+* Found a peristaltic pump in Ideate, took it apart and reconstructed it with our tubing. I haven't gotten it to work yet, so I will trouble shoot it to see if the motor even works.
+*
+
+    <figure><img src="../../.gitbook/assets/IMG_2159.JPG" alt=""><figcaption></figcaption></figure>
+* 3D printed, built, and tested custom peristaltic pump with Matthew. Took a while to debug but it works, need to test with water now. Wired Nema 17 with 27:1 gear box to motor controller and an Arduino Nano Every and a 24 volt power supply.
+*
+
+    <figure><img src="../../.gitbook/assets/IMG_2163.JPG" alt=""><figcaption></figcaption></figure>
+* Finished CAD for holding heat gun with set screws.
+*
+
+    <figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+* Custom peristaltic pump switches directions when I increase the speed too much, so I need to investigate the limits so we can have predictable operation.
+
+### Plans
+
+* Test peristaltic pump with water
+* Electrical diagram
+* Demo 1 Presentation
