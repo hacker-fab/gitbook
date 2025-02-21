@@ -283,7 +283,7 @@ Let leads know on tuesday meeting.
 
 
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (106) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Roadblocks
 
