@@ -69,6 +69,47 @@ The minimum feature size in transistors, often referred to as the "technology no
 
 </details>
 
+<details>
+
+<summary>OPU Architecture</summary>
+
+![](../../../.gitbook/assets/se-2018-00340w_0002.jpg)
+
+
+
+Note: It is recommended to keep the cover layer, whose thickness depends on the operation wavelength, in front of the OPU objective lens to guarantee optimal laser focusing. Microscopy cover glasses provide a similar refractive index (1.47 to 1.5) as the cover layer or one can simply use the disc hard-coat polycarbonate cover layer. Furthermore, the cover layer can be used for sealing microfluidic channels. OPU-based imaging or sensing through different media, such as liquid or gas, demands the optimization of the distance between the cover layer and measurement target
+
+### Source
+
+[https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/)
+
+</details>
+
+<details>
+
+<summary>Photo-diode Auto-focus</summary>
+
+Optical pickups focus on disc using the so called astigmatic method. This method is based on the deformation of the roundness of the laser beam when it is unfocused. The pickup has a series of lenses that lead the reflected ray to a photodiode array which generates four signals (A,B,C,D). Using them it is possible to deduct if the laser is unfocused and move the lens to focus it correctly.
+
+![](../../../.gitbook/assets/image028.jpg)
+
+\
+Once you know the A,B,C,D signal pins, implementing the auto-focus algorithm is easy: just add A+C and subtract B+D from the result. The pickup returns those signals in the form of minimum current variations that depend on the laser light received by each photodiode. The photodiodes are arranged in a square (see following figure).
+
+As you can see, it is possible to infer the focus level checking if the result is less than 0 (too close) equal to zero (focused) or greater than zero (too far) and with this information move the lens until the laser is focused.
+
+![](../../../.gitbook/assets/image031.jpg)
+
+\
+![](../../../.gitbook/assets/se-2018-00340w_0003.jpg)
+
+### Sources
+
+[http://www.diyouware.com/node/161](http://www.diyouware.com/node/161)\
+[https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/)
+
+</details>
+
 ## Mechanical
 
 <details>
@@ -251,9 +292,23 @@ Functional walk through of laser head assembly
 
 [https://www.youtube.com/watch?v=Fw8r5FBaPTI\&t=1281s](https://www.youtube.com/watch?v=Fw8r5FBaPTI\&t=1281s)
 
+### Hacking CD/DVD/Blu-ray Optical Pickup Unit (OPU) for Fun and Scientific Research
+
+[https://www.youtube.com/watch?v=5bqujaldaCQ](https://www.youtube.com/watch?v=5bqujaldaCQ)
+
+### Hacking CD/DVD/Blu-ray for Biosensing
+
+[https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/)
+
 </details>
 
+<details>
 
+<summary>Tear-down of PHR-803T Laser Module (diyouware)</summary>
+
+
+
+</details>
 
 ## Future Improvements&#x20;
 
@@ -268,8 +323,10 @@ Functional walk through of laser head assembly
 3. Super-resolved critical dimensions in far-field I-line photolithography\
    \
    [https://www.spiedigitallibrary.org/journals/journal-of-micro-nanolithography-mems-and-moems/volume-18/issue-1/013505/Super-resolved-critical-dimensions-in-far-field-I-line-photolithography/10.1117/1.JMM.18.1.013505.short](https://www.spiedigitallibrary.org/journals/journal-of-micro-nanolithography-mems-and-moems/volume-18/issue-1/013505/Super-resolved-critical-dimensions-in-far-field-I-line-photolithography/10.1117/1.JMM.18.1.013505.short)
-
-
+4. Possible STED Architecture\
+   ![](../../../.gitbook/assets/se-2018-00340w_0015.jpg)\
+   \
+   Diagram of BSM. The fluorescence signal passes through multimode fiber B7 and is collimated by collimator lens B8 and narrowband emission filter B9. D1, laser diode; D2, beam splitter; D3, collimator lens; D4, dichroic filter; D5, photodiode; D6, objective lens (NA: 0.6); D7, Al-coated address pattern; B1, blue laser diode; B2, B3, beam splitters; B4, collimator lens; B5, dichroic filter; B6, 4.34 mm focal lens; B10, objective lens (NA: 0.85); B11, lens holder. B12, cover glass; B13, collimator astigmatic plate; B14, photodetector. ([https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6066758/))
 
 </details>
 
