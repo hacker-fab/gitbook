@@ -41,7 +41,7 @@ Good work this week on the detailed update and the deep dive into CV testing, th
 
 **Documentation:**
 
-* Please ensure that you update the mid-semester documentation. Document the experiments you have run to date with clear sections on theory, fabrication/process, and results. For instance:
+* The mid-semester documentation is due this week. Document the experiments you have run to date covering theory, fabrication/process, and results.
   * **Theory:** Describe the type of device you plan to fabricate, the testing methods, and the expected outcomes.
   * **Fabrication/Process:** Detail how the device is made.
   * **Results:** Summarize the data collected and provide an interpretation of that data.
