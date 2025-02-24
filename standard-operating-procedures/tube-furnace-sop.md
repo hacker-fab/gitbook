@@ -64,7 +64,7 @@ Our process uses spin on glass containing phosphorus for N doping and boron for 
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Differentiating Quartz from Borosilicate</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Differentiating Quartz from Borosilicate</p></figcaption></figure>
 
 ![](<../.gitbook/assets/melted chip in tube furnace.jpg>)
 

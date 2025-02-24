@@ -59,7 +59,7 @@ Based on my testing, I feel that the Boron Nitride disks which we are using are 
 
 Though it was agreed both in our team meeting on 2/10, and when speaking to Matt on 2/11 that the QCM is not necessary for the initial deposition, I still feel that it is necessary to properly design the chamber such that it can be easily retrofitted.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Chamber CAD with QCM mount</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Chamber CAD with QCM mount</p></figcaption></figure>
 
 The only change which effects the current design revision is the movement of the substrate heater mount from the back face of the chamber to the left face of the chamber (when looking from the front). This should not change the chamber mechanics at all, and is mainly necessary to allow the precursor delivery system to sit close to the chamber, without needing to move if the QCM is added in the future.
 
@@ -71,7 +71,7 @@ The QCM mount itself uses a CF 2.75" to KF40 adapter as mentioned in my previous
 
 \*\* Waiting for final approval from James regarding the precursor delivery
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>ALD Chamber on ALD Stand. Precursor delivery not pictured.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>ALD Chamber on ALD Stand. Precursor delivery not pictured.</p></figcaption></figure>
 
 There isn't a ton to say on this front, as the design is relatively simple: an Al extrusion frame with some custom sheet metal brackets to mount to the chamber itself. We should be able to cut the mounting brackets in techspark, but will need to order the extrusion and corner brackets. Once the precursor delivery design is sorted out, we can do a final design review and place part orders. Construction itself should not take more than a couple of hours at most.
 
