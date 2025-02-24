@@ -112,3 +112,89 @@ We could get a weaker and cheaper laser and only use it for wafer scribing (in w
 * Test peristaltic pump with water
 * Electrical diagram
 * Demo 1 Presentation
+
+***
+
+## Update 4
+
+
+
+### Progress
+
+* New code that should allow us to switch from Arduino Nano to Raspberry Pi for pump controls
+
+
+
+````
+```python
+#install RpiMotorLib https://github.com/gavinlyonsrepo/RpiMotorLib
+#sudo sudo pip3 install RpiMotorLib
+
+'''
+Will need to test if DM320T is compatible w/ RpiMotorLib. Adjust certain parameters.
+pulse width = 0.003 (3ms)
+delay = 0.05 (50ms)
+signal level is typically 5V but see if RPi 3.3V is enough
+'''
+
+from time import sleep
+from RPi import GPIO
+from RpiMotorLib import RpiMotorLib
+
+# Define GPIO pins
+DIR_PIN = 20
+STEP_PIN = 21
+ENABLE_PIN = 16
+BUTTON_PIN = 18
+
+# Set up GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(ENABLE_PIN, GPIO.OUT)
+GPIO.setup(BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Configure button with pull-up resistor
+
+# Create an instance of RpiMotorLib
+stepper = RpiMotorLib.A4988Nema(DIR_PIN, STEP_PIN, (21, 21, 21), "DRV8825")
+
+# Enable the motor
+GPIO.output(ENABLE_PIN, GPIO.LOW)
+
+try:
+    while True:
+        # Wait for button press
+        button_state = GPIO.input(BUTTON_PIN)
+        if button_state == GPIO.LOW:  # Button pressed
+            # Move the motor with adjusted delay for pulse width
+            #True = clockwise, False = counter-clockwise
+            #Full = full step mode
+            #200 = steps
+            stepper.motor_go(True, "Full", 200, .003, False, .05)  # Adjusted delay for DM320T
+            
+            # Wait before accepting another button press
+            sleep(0.5)
+
+except KeyboardInterrupt:
+    pass
+
+# Disable the motor
+GPIO.output(ENABLE_PIN, GPIO.HIGH)
+
+# Clean up GPIO
+GPIO.cleanup()
+
+```
+````
+
+* Electrical Diagram
+
+### Roadblocks
+
+* None really, but I think we should discuss our design based on the feedback from peers during demos. Specifically, about the why not just elevate the liquid containers and let gravity do the work while we open and close a valve? Although we may need specific flow rate control for things like a wash station, that is needed for Automated Spin Coater, so we could be able to really simplify things.
+
+
+
+### Plans
+
+* Also, our motor drivers may or not be compatible with the RPi library I found. I will test this week.
+* Depending on how much there is for me to do on ASC, I may start working on Auto Cleaver more, I want to CAD a design for it soon.
+
+***
