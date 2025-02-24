@@ -79,3 +79,50 @@ The only roadblack has been time, but this should be mostly unblocked after Tues
 * These are some great results! Looking forward to seeing improved accuracy over a wider range of patterns as well.
 * In the future, please make sure the GitHub repository is up to date with the changes you make to the code. Also be wary of documenting your process and thinking in the Development Log in the Master Document and task status in the GitHub project tracker (finer-grained tasks make this easier).&#x20;
 * For future planning, convolutional based fiducial mark detection is worth considering, but some more detail and justification as to why and how you are implementing this is necessary.
+
+### Week 5
+
+This week we got good detection performance using a deep learning model.
+
+I presented my initial work on Tuesday. I described how we could get decent results — much better than previous results — with the new work I had done. But we still had problems with false positives and in other cases, like when alignment markers were darker. As a result, I suggested that we try to use a more modern approach, i.e. training a DL model.
+
+I trained a model and it seems to work great so far. Here's what I did:
+
+I first used Roboflow to label the data that I had collected.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-23 at 10.20.12 PM.png" alt=""><figcaption><p>labeling data in Roboflow</p></figcaption></figure>
+
+Roboflow has a good free tier, which is why I chose it, but there are other options for data labeling as well.
+
+I then augmented our dataset using standard image augmentation techniques, i.e. varying brightness and adding noise, to create a larger dataset that we could use for training.
+
+Then I finetuned a 2.6M parameter YOLOv11 model on the dataset. This is a powerful and fast object detector that I expected to perform well in our setting. In particular, this is the smallest pretrained YOLOv11 release.
+
+Below are some performance metrics. The most relevant is mAP. We see that the model is almost always correct after training for 100 epochs, which took less than 5 minutes on GPU.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-23 at 10.25.46 PM.png" alt=""><figcaption><p>performance results</p></figcaption></figure>
+
+The next image shows results on a batch from the train set. We always get the markers when they are in frame. In particular, it doesn't matter if the markers are bright, dark, straight, or slightly misshaped. The model has learned a representation that lets it generalize to the different looking alignment markers. In particular (I also noted this in my presentation), with this approach we have a much easier process to improve our performance, which is just: if we're doing poorly on some samples, add them to the train set. This removes the need to pattern match to specifics, which can vary and be hard to pattern match to.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-23 at 10.27.20 PM.png" alt=""><figcaption><p>train set predictions</p></figcaption></figure>
+
+The below image shows predictions on some validation images. Note that we have high confidence and no false positives, as in the train set images. The model does fail to detect the marker in the bottom left corner of the bottom image, which I suspect is due to the marker being out of focus. The solution here, if this we expect input like this, is to add more such images to the training set.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-02-23 at 10.30.37 PM.png" alt=""><figcaption><p>validation predictions</p></figcaption></figure>
+
+After training the model, I started writing code that shows the predicted markers in real-time in the GUI. I think this is a good first sanity check before we start aligning to the predictions. I pushed code to the [rt-detect branch](https://github.com/hacker-fab/stepper/tree/rt-detect).
+
+I also made some small PRs ([1](https://github.com/hacker-fab/stepper/pull/8), [2](https://github.com/hacker-fab/stepper/pull/9)) that I think will make working with the codebase more pleasant, now that I am beginning to work on integrating the detection into the GUI.
+
+This coming week, I want to have the real-time detection integrated. Then, if we're seeing good results, I'll be working on alignment! I think we are in a good place — we're ahead of the schedule we outlined and I am looking forward to seeing how this approach performs.
+
+
+
+**Week 5 Feedback (Kent Wirant):**
+
+* Amazing progress this week! It's really exciting to see how well this model is performing.&#x20;
+* Integrating real-time fiducial mark detection is a great next step and follows a good pace.&#x20;
+* It is okay if the out of focus example of the alignment mark isn't detected. When patterning, the image should be clear anyway, and we don't want to significantly increase the chance of false positives.
+* Nice work on the PRs that improve the code quality.&#x20;
+* The information you have about the model training methodology (e.g. training/validation/evaluation sets) and their respective performances (false/true positive/negative rates) would be great to include in the next demo.
+* Looking forward to your next developments!
