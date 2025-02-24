@@ -28,6 +28,18 @@ There should be some control over the types of data that can be entered for the 
 
 I think I forgot to request a review for my previous updates, so I've written them up to the best of my ability below.
 
+
+
+> Good work! I am curious to see if we can make something simpler in the "new step" category, since it does not have to be a table with crossed out columns :)&#x20;
+>
+> Other than that, I think I get the idea overall, and it does make sense to have all these steps visible on the left hand side. I think the insight u put in shows thru, with the "In Development" marker, really good specific details. I wonder if it's a dropdown or a status selection.&#x20;
+>
+> Overall nice to see this progressing, let's discuss this week in class. Also let me know if you want to have a demo, I mentioned this to Ridge as well but either of you can reach out to me whenever you would like to demo, we can have you up there right before lecture and I think the class would find your work to be very cool!
+
+
+
+
+
 ## 2025-02-11 Update
 
 Database structure version 2: after getting feedback from TAs and implementing the structure for processes. Got feedback on the naming - process > step and umbrella\_process > process in v3.
