@@ -4,6 +4,39 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 5 (02/23/2025)
+
+### Progress Updates
+
+* Sourced Aluminum Nitride plates as a replacement for the Boron Nitride disks (which are cracking)
+
+To lower costs, relative to getting a part custom made, the aluminum nitride is being sourced as a solid disk which will fit between the screws.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (124).png" alt=""><figcaption><p>Proposed disk size (4")</p></figcaption></figure>
+
+I received several quotes for 4" x 0.1" AlN disks. The cheapest option was from [Heeger Materials](https://heegermaterials.com/aluminum-nitride-aln-products/1914-aluminum-nitride-aln-ceramic-substrate.html), at $440. These disks would be a relatively simple, drop-in replacement for the current BN disks. A potentially cheaper alternative is these [AlN sheets from Amazon](https://a.co/d/5kcxq4Z). These sheets are comparatively quite thin, and due to their square shape, would likely require a modification to the structural plates. This could coincide with creating a new plate to mount the QCM.&#x20;
+
+I am concerned about the amount of wasted effort that continuing to profile the substrate heater using BN disks (considering that we are moving away from them). I briefly spoke to Jay on Friday (02/21) and it seems that the sputtering team has an extra 2.5" diameter AlN disk which could be used for profiling. In particular, determining the equilibration time should be possible with the smaller disk, as long as the wire spacing is the same. I will continue to communicate the the sputtering team, and see if I can create a small test setup to profile uniformity before the custom disks arrive.
+
+* Finalized ALD stand dimensions and ordered components
+
+This is following up on the work done last week, but the dimensions and interactions of the precursor delivery and the chamber were finalized, meaning that the stand itself had its dimensions finalized. All parts have been ordered, and if they arrive by the end of the week, I can assemble the stand. If not, it can be a first priority after break, as it will be quite useful to have and should not be difficult.
+
+* Substrate heater is mounted in the chamber!!!
+
+Oops, I forgot to take a picture :( BUT the heater is mounted and fits well (as in the CAD) in the chamber!!! It seems that I made a minor error in my part dimensions and the center of the heater is about 0.5" off center relative to the chamber. This can be fixed in V2 of the heater or just ignored because it likely will not functionally change the device at all. The CAD has been updated so that if anyone plans to make a similar device in the future, they will not have this issue.
+
+### Roadblocks
+
+* The Techspark waterjet is broken again. I don't think that we will incur a ton of lost time to this, but it may cause problems with cutting the mounting brackets for the stand (I went to cut them earlier in the week and was unable to).
+* Aluminum Nitride lead times are very long. I am working on getting a finalized quote from Heeger Materials Inc. to move forward into the purchasing phase.
+* Not exactly a roadblock, but this week was quite busy for me including the presentations so I have not made as much progress as I would have liked to.
+
+### Plans
+
+* I am pretty sure that we now have all of the components to assemble the line from the chamber to the pump. Because of this, I am going to begin setting up a temporary stand (before the real stand parts arrive) and beginning pump down tests. Hopefully this can move into the Aflas testing later in the week.
+* Substrate heater? I mention this above but would love to talk about it during the ALD team meeting on 02/24
+
 ## Update 4 (02/16/2025)
 
 ### Progress Updates
