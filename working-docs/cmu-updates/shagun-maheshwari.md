@@ -4,6 +4,50 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 5:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:
+
+* Did an in depth deep dive into CV testing and extracting dopant concentration, dopant profile, junction depth from CV measurements. Notes: [https://docs.google.com/document/d/1rfdL9Ypr3\_JzwIx1Obn2l71P70NSGfTt9WlnXYr3Q34/edit?tab=t.0#heading=h.t1vhkaq9dye0](https://docs.google.com/document/d/1rfdL9Ypr3_JzwIx1Obn2l71P70NSGfTt9WlnXYr3Q34/edit?tab=t.0#heading=h.t1vhkaq9dye0)
+* Put together the Demo 1 presentation for Hacker Fab and presented it: [https://docs.google.com/presentation/d/1sbkR2R6tLvjAYCmGAw-rUHeOSoS4zhoQOcE0l\_GfS\_Q/edit#slide=id.g3373c10cf4b\_0\_288](https://docs.google.com/presentation/d/1sbkR2R6tLvjAYCmGAw-rUHeOSoS4zhoQOcE0l_GfS_Q/edit#slide=id.g3373c10cf4b_0_288)
+* Finished all testing for the resistor lab and collected pictures
+* Did an in depth code walkthrough with Cesely for the Diffusion Model to understand its limitations and capabilities (1.5 hours) [https://colab.research.google.com/drive/1\_KY15QEsGiW\_qM6DI9G2ryNJ\_q8Hdyiz#scrollTo=6ivcaIbc3fLF](https://colab.research.google.com/drive/1_KY15QEsGiW_qM6DI9G2ryNJ_q8Hdyiz#scrollTo=6ivcaIbc3fLF)
+* Had an in depth discussion on the patterns + experiments for the N-well MOSCAP we will fab next. The goal is to fab 3 chips at the same time with a CV test and transmission line test on each chip. Each chip will have different constant source diffusion times to test. [https://docs.google.com/document/d/1UUBJwmIzOASs8iViaeoWSC-DHOq\_JzK7mthqLg3Q0M8/edit?tab=t.0](https://docs.google.com/document/d/1UUBJwmIzOASs8iViaeoWSC-DHOq_JzK7mthqLg3Q0M8/edit?tab=t.0)
+
+Roadblocks:
+
+* Was a bit sick this weekend so wasn't able to complete the full analysis for CV testing&#x20;
+* Have a midterm heavy upcoming week but will aim to push as much progress&#x20;
+
+Next Steps:
+
+* With Cesely's updated code, figure out the constant source diffusion (SOG) diffusion times we will fab on our 3 N-well MOSCAP chips&#x20;
+* CV testing analysis&#x20;
+* Resistor Lab report&#x20;
+* Fabrication&#x20;
+
+Feedback
+
+• Cesely
+
+Good work this week on the detailed update and the deep dive into CV testing, the demo presentation, and the extensive discussions on the upcoming fab process.
+
+**Priorities for This Week:**
+
+* **CV Analysis:** The analysis was not completed and should be the top priority. While I understand that preparing demos and discussing the fab process can be time-consuming, completing the CV analysis is a critical next step.
+* **Fab Process & Fabrication:** We need to finalize the fab process for the upcoming chips and start fabrication in the coming weeks. I'm fine with postponing fabrication until next week due to midterms, but it will be our top priority then. If you can begin earlier, that would be an added bonus.
+
+**Documentation:**
+
+* Please ensure that you update the mid-semester documentation. Document the experiments you have run to date with clear sections on theory, fabrication/process, and results. For instance:
+  * **Theory:** Describe the type of device you plan to fabricate, the testing methods, and the expected outcomes.
+  * **Fabrication/Process:** Detail how the device is made.
+  * **Results:** Summarize the data collected and provide an interpretation of that data.
+
+You aren’t required to follow this format , but I hope it gives you insight into what we are looking for.
+
 ## Update 4:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
