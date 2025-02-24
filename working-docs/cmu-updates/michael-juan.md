@@ -328,7 +328,49 @@ should be able to make all the parts for one axis of nanopositioner **IF** tooli
 
 
 
+**Update 3 (2/23/2025)**\
 
 
 
+### Accomplishments
+
+micron motion on piezo actuator!!!
+
+<figure><img src="../../.gitbook/assets/IMG_2599.JPEG" alt=""><figcaption><p>hot glued lvdt probe to block of metal, sandwiched piezo with another piece of metal.</p></figcaption></figure>
+
+Used a function generator to output a 12v square wave to piezo.&#x20;
+
+{% embed url="https://youtube.com/shorts/Q14w8rwOy_o?feature=share" %}
+
+
+
+
+
+### Roadblocks
+
+**Problem 1:**
+
+Did not get anything else done other than measuring motion with piezo element.
+
+**Solution:**
+
+**revaluate timeline.**
+
+**Problem 2:**
+
+Got scammed by ebay seller. The lvdt was not the high precision version.&#x20;
+
+**Solution:**
+
+Buy another lvdt probe off of ebay.
+
+
+
+### Next Steps
+
+Try to measure movement accuracy of previous years piezo actuator.
+
+NanoPositioner
+
+if pcbs arrive start assembly.
 
