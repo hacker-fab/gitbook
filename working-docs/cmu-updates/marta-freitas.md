@@ -183,8 +183,58 @@ Interpreting your results will be important for deciding our next steps forward.
 
 Under roadblocks you should have put that you could not perform the CV testing. The Keithley is already set up to perform CV measurements, and we simply only have to change the probe leads. I can go over CV testing during our weekly CMOS meeting and we can get some results for you to include in your first presentation.
 
-* Jay
-  * I agree with Cesely that higher temp anneal would be intersting. However, not worth making a second Aluminum chip to test this, so just reanneal the same chip at higher temps to see if there is any effect.
-  * I also agree that remaking the Ni contact chip with a "liftoff" is a priority
-  * Overall good job documenting preliminary results
-  * We need to get on the same page about how to interpret CV testing results, and whether or not the probes should each be on a metal pad, or one probe on the probe station chuck.
+*   Jay
+
+    * I agree with Cesely that higher temp anneal would be intersting. However, not worth making a second Aluminum chip to test this, so just reanneal the same chip at higher temps to see if there is any effect.
+    * I also agree that remaking the Ni contact chip with a "liftoff" is a priority
+    * Overall good job documenting preliminary results
+    * We need to get on the same page about how to interpret CV testing results, and whether or not the probes should each be on a metal pad, or one probe on the probe station chuck.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #5 (Feb 23)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* Did the CV testing of the 2 Al-Si chips after annealing ([https://drive.google.com/drive/u/0/folders/1OtfSeHiOk9\_0VzbUJs\_QtlfJ4iF9OcPx](https://drive.google.com/drive/u/0/folders/1OtfSeHiOk9_0VzbUJs_QtlfJ4iF9OcPx))
+* Interpreted and reported the IV and CV testing of the Al chips before and after annealing ([https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit#heading=h.gjdgxs](https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit#heading=h.gjdgxs)).
+* Prepared demo 1 ([https://docs.google.com/presentation/d/1YVpjbd\_4WD9iAc4TRs4-pJ2zuRISwatKMxx0omEiaQU/edit#slide=id.g2d99bb64625\_0\_786](https://docs.google.com/presentation/d/1YVpjbd_4WD9iAc4TRs4-pJ2zuRISwatKMxx0omEiaQU/edit#slide=id.g2d99bb64625_0_786))
+* Fabricated the 2 Nickel chips for baseline testing (1 n-doped and 1 p-doped):
+
+<div><figure><img src="../../.gitbook/assets/641_final.jpg" alt="" width="375"><figcaption><p>641 Ni-Si (n-doped)</p></figcaption></figure> <figure><img src="../../.gitbook/assets/642_final.jpg" alt="" width="375"><figcaption><p>642 Ni-Si (p-doped)</p></figcaption></figure></div>
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+CV testing might be a roadblock at the moment in terms of interpretation. I have made it on the Al chips only after annealing and the interpretation of the results is very limited. I will do the CV testing on the Ni chips before and after annealing and try to figure out the curves.
+
+I also have a feeling that the Nickel deposition did not go as well as expected and I am suspicious the Nickel was not well deposited. I will confirm this when I probe the chips.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Perform IV and CV testing on the fabricated Ni chips
+* Anneal Ni chips and reprobe
+* Anneal Al chips at higher temperatures and reprobe
+* Prepare lab report 1
+* Prepare mid semester documentation
+
+Feedback
+
+• Cesely
+
+You're on track with everything. Based on the images, it looks like the nickel deposition went well, so you’re good to proceed with fabrication/testing. Your goals and plans for this week are spot on. The data you collect will guide our fabrication and testing in the coming weeks. Wrapping up this baseline is crucial, and you’re in a great position to get it completed. Additionally, the results from this week will help us refine our annealing conditions and may inform us about silicide formation for future fab processes. It will also give us insight into whether we need to explore different annealing parameters for aluminum.
+
+Also the mid-semester documentation is due this week. Document the experiments you have run to date covering theory, fabrication/process, and results.
+
+·      Theory: Describe the type of device you plan to fabricate, the testing    methods, and the expected outcomes.
+
+·      Fabrication/Process: Detail how the device is made.
+
+·      Results: Summarize the data collected and provide an interpretation of that data.
+
+You aren’t required to follow this format exactly, but I hope it gives you insight into what we are looking for.
