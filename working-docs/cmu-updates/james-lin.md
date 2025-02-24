@@ -12,6 +12,53 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #5:
+
+### ALD:
+
+Progress:
+
+* Delivery storage design finalized
+* All delivery system fittings are ordered&#x20;
+* All hardware in tracking sheet, unfortunately sheetmetal wont be here by start of spring break
+
+<figure><img src="../../.gitbook/assets/image (135).png" alt="" width="563"><figcaption><p>Onshape Screenshot of Latest Design</p></figcaption></figure>
+
+Plans:
+
+* get retaining plate for U bolts designed in CAD, planning on water jetting the 0.1" AL left over from substrate heater right after spring break, aim to have design finished by end of week
+* need to also order LED strips for delivery storage
+* also need to get the empty ampule ordered :sob:
+
+Struggles:
+
+* school work is keeping me really busy and I'm pretty exhausted in general
+* should've gotten the orders in sooner, but given that sheetmetal won't arrive on time, we should be ok
+
+### Packaging
+
+Progress:
+
+* Finally decided on doing chip on board packaging
+
+<figure><img src="../../.gitbook/assets/image (133).png" alt="" width="563"><figcaption><p>18-469D/669D - S25 - Presentation 1</p></figcaption></figure>
+
+* I have a finally made a design concept for the packaging in CAD
+
+<figure><img src="../../.gitbook/assets/image (134).png" alt="" width="563"><figcaption><p>18-469D/669D - S25 - Presentation 1</p></figcaption></figure>
+
+Plans:
+
+* find time to make the Altium design for package
+* To Joel: is Thursday ok to do PCB mill?
+* work on getting the mother board and encapsulation ready over spring break
+
+Struggles:
+
+* school work is pretty bad this week, not sure how much time I can put into this but will try
+
+***
+
 ## Weekly Update #4:
 
 ### ALD:
@@ -42,7 +89,7 @@ Progress:
 * Submitted safety review of earlier prototype to Matt
 * BOM:
 
-<table><thead><tr><th>Item</th><th>Supplier</th><th width="217">Link</th><th width="56">Quantity</th><th width="137">Price</th><th data-type="checkbox">Ordered</th></tr></thead><tbody><tr><td>Sheet metal</td><td>Send Cut Send</td><td></td><td>1</td><td></td><td>false</td></tr><tr><td>1/4" VCR Caps</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting">https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting</a></td><td>3</td><td>$47.7</td><td>false</td></tr><tr><td>1/4" VCR Gasket</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2">https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2</a></td><td>20</td><td>$38.00</td><td>false</td></tr><tr><td>1/4" FVCR to 1/4" Tube</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400">https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400</a></td><td>1</td><td>$50.60</td><td>false</td></tr><tr><td>U bolts, 1-1/8" ID</td><td>McMaster</td><td><a href="https://www.mcmaster.com/8880T955/">https://www.mcmaster.com/8880T955/</a></td><td>3</td><td>$5.64</td><td>false</td></tr><tr><td>Hinge</td><td>McMaster</td><td><a href="https://www.mcmaster.com/1586A34/">https://www.mcmaster.com/1586A34/</a></td><td>1</td><td>$7.15</td><td>false</td></tr><tr><td>Latch</td><td>McMaster</td><td><a href="https://www.mcmaster.com/1766A2/">https://www.mcmaster.com/1766A2/</a></td><td>1</td><td>$15.20</td><td>true</td></tr><tr><td>10-32 Screws, 3/8" long</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A340/">https://www.mcmaster.com/91251A340/</a></td><td>6</td><td><p>$14.86 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>10-32 Drop in T nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/4976N25/">https://www.mcmaster.com/4976N25/</a></td><td>6</td><td><p>$4.88 </p><p>(2 packs x10)</p></td><td>false</td></tr><tr><td>M3 screws</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91290A113/">https://www.mcmaster.com/91290A113/</a></td><td>46</td><td><p>$12.52 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>M3 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90576A102/">https://www.mcmaster.com/90576A102/</a></td><td>46</td><td><p>$4.82 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>#6 screws, countersunk</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91263A514/">https://www.mcmaster.com/91263A514/</a></td><td>6</td><td><p>$8.26 </p><p>(1 pack x25)</p></td><td>false</td></tr><tr><td>#6 screws, flat head</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A146/">https://www.mcmaster.com/91251A146/</a></td><td>6</td><td><p>$11.90 </p><p>(1 pack x100)</p></td><td>false</td></tr><tr><td>#6 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90631A007/">https://www.mcmaster.com/90631A007/</a></td><td>12</td><td><p>$3.93 </p><p>(1 pack x100)</p></td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Supplier</th><th width="217">Link</th><th width="56">Quantity</th><th width="137">Price</th><th data-type="checkbox">Ordered</th></tr></thead><tbody><tr><td>Sheet metal</td><td>Send Cut Send</td><td><a href="https://cart.sendcutsend.com/d1ktsjxjut64">https://cart.sendcutsend.com/d1ktsjxjut64</a></td><td>1</td><td>$319.00</td><td>true</td></tr><tr><td>1/4" VCR Caps</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting">https://products.swagelok.com/en/c/caps/p/SS-4-VCR-CP?q=:relevance:connection1Size:1%2F4+in.:connection1Type:VCR%C2%AE+Metal+Gasket+Face+Seal+Fitting</a></td><td>3</td><td>$47.7</td><td>true</td></tr><tr><td>1/4" VCR Gasket</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2">https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2</a></td><td>20</td><td>$38.00</td><td>true</td></tr><tr><td>1/4" FVCR to 1/4" Tube</td><td>Swagelok</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400">https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400</a></td><td>1</td><td>$50.60</td><td>true</td></tr><tr><td>U bolts, 1-1/8" ID</td><td>McMaster</td><td><a href="https://www.mcmaster.com/8880T955/">https://www.mcmaster.com/8880T955/</a></td><td>3</td><td>$5.64</td><td>true</td></tr><tr><td>Hinge</td><td>McMaster</td><td><a href="https://www.mcmaster.com/1586A34/">https://www.mcmaster.com/1586A34/</a></td><td>1</td><td>$7.15</td><td>true</td></tr><tr><td>Latch</td><td>McMaster</td><td><a href="https://www.mcmaster.com/1766A2/">https://www.mcmaster.com/1766A2/</a></td><td>1</td><td>$15.20</td><td>true</td></tr><tr><td>10-32 Screws, 3/8" long</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A340/">https://www.mcmaster.com/91251A340/</a></td><td>6</td><td><p>$14.86 </p><p>(1 pack x100)</p></td><td>true</td></tr><tr><td>10-32 Drop in T nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/4976N25/">https://www.mcmaster.com/4976N25/</a></td><td>6</td><td><p>$4.88 </p><p>(2 packs x10)</p></td><td>true</td></tr><tr><td>M3 screws</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91290A113/">https://www.mcmaster.com/91290A113/</a></td><td>46</td><td><p>$12.52 </p><p>(1 pack x100)</p></td><td>true</td></tr><tr><td>M3 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90576A102/">https://www.mcmaster.com/90576A102/</a></td><td>46</td><td><p>$4.82 </p><p>(1 pack x100)</p></td><td>true</td></tr><tr><td>#6 screws, countersunk</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91263A514/">https://www.mcmaster.com/91263A514/</a></td><td>6</td><td><p>$8.26 </p><p>(1 pack x25)</p></td><td>true</td></tr><tr><td>#6 screws, flat head</td><td>McMaster</td><td><a href="https://www.mcmaster.com/91251A146/">https://www.mcmaster.com/91251A146/</a></td><td>6</td><td><p>$11.90 </p><p>(1 pack x100)</p></td><td>true</td></tr><tr><td>#6 nylon lock nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90631A007/">https://www.mcmaster.com/90631A007/</a></td><td>12</td><td><p>$3.93 </p><p>(1 pack x100)</p></td><td>true</td></tr><tr><td>3/8" Lock Nuts</td><td>McMaster</td><td><a href="https://www.mcmaster.com/90630A121/">https://www.mcmaster.com/90630A121/</a></td><td>1</td><td>$4.5<br>(1 pack x20)</td><td>true</td></tr></tbody></table>
 
 Struggles:
 
