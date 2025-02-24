@@ -138,3 +138,11 @@ This week, I focused primarily on the project presentation for Tuesday. However,
 
 
 <figure><img src="../../.gitbook/assets/Untitled design.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## Week 5
+
+This week, I focused on refining the CAD model, making sure everything fits together properly and functions as intended. I also spent a lot of time researching different ways to move the linear slide system, looking into lead screws, rack and pinion setups, chain drives, and even pneumatic and hydraulic options. Each method had its own advantages and trade-offs, so I considered factors like precision, load capacity, ease of assembly, and long-term maintenance.
+
+After comparing all the options, I decided on a belt system because it’s the most practical choice. We already have the necessary parts and experience working with belts, which makes implementation much easier. Belts also provide smooth and reliable movement without adding unnecessary complexity. With this decision finalized, I can now focus on optimizing the design and moving forward with the project.
