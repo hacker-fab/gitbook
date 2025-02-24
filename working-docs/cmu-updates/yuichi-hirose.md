@@ -125,3 +125,52 @@ description: My name is Yuichi and I will be working on the probe station this s
 * 3D print the magnetic base for the XYZ stage and assemble
 * Procure magnets
 * Design a vacuum chuck / test double-sided conductive tape for holding a chip on the XY stage
+
+### **Weekly Update #5 (2/17 - 2/23)**
+
+#### Accomplishments
+
+<figure><img src="../../.gitbook/assets/update-wk5.jpg" alt=""><figcaption></figcaption></figure>
+
+* 3D printed the attachment for the probe holder and assembled
+  * It looks fine. No problem with assembly. We need to check if the tip of the probe needle moves correctly using a microscope (one of the probes of the probe station we currently use doesn't look moving orthogonally when we rotate the handles for X and Y axis, which makes manipulation difficult and annoying. We need to check if the one I just assembled does not move like that).
+  * (forgot to take a photo of the 3d printed part and the assembled device. I'll add it on Monday)
+* 3D printed the magnetic base for the XYZ stage, procured magnets and assembled
+  * It looks fine. No problem with assembly. We need to check if the magnets are too weak or too strong on the magnetic board like [this](https://www.amazon.com/dp/B007UHG7KI).
+  * I used [this magnet](https://a.co/d/aqNHS0h).
+  * The base felt a bit too close to the micrometer handle and it was a little hard to rotate. I will probably modify the design.\
+    ![](../../.gitbook/assets/update-wk5_stage-positioner.jpg)
+  * (forgot to take a photo of the 3d printed part and the assembled device. I'll add it on Monday)
+* Designed the chip fixture (vacuum chuck)
+  * I designed the chip fixture. While I temporarily prepared a hole for a vacuum chuck, we are now leaning towards using double-sided conductive tape for chip holding instead. This is because we need to put conductive tapes on the piezo vibration sensor anyway to test the bottom of the chip, and we want to avoid a situation where the sensor is also sensitive to the vibration caused by the pump for the vacuum chuck, macaking it difficult to isolate the vibrations when the probe needle touches the chip surface. Also since double-sided tape is easier to test with than a vacuum chuck, we will start with double-sided tape.\
+    ![](<../../.gitbook/assets/image (127).png>)
+* Ordered [double-sided conductive tape](https://discord.com/channels/1143959339179200562/1329845066033922069/1342269476732665999) and [camera (USB microscope)](https://amscope.com/collections/digital-microscopes-hand-held-microscope/products/utp200x003mp).
+* Tested the piezo vibration sensor for multiple touches by probe needles
+  * I had a concern on whether the sensor works well with a touch by a needle when another needle is already touching (there are four probe positioners). I conducted [a rough test](https://drive.google.com/file/d/1WGoAcgL6_hh3nQNotX5qRmlBqKc43kJo/view?usp=sharing). It seems working fine, but we need to test in an actual setting.
+* Considered the motor attachment design for the auto Z-zeroing function.\
+  ![](<../../.gitbook/assets/image (128).png>)
+* Modified [the project proposal](https://docs.google.com/document/d/1mPezRVWu7PNa3ggTOlxjDEdb9D6B84CEXgIU-5ACNHs/edit?usp=sharing) in accordance with the fixed schedule.
+* Created [the 1st checkpoint slides](https://docs.google.com/presentation/d/1tlnXbdm_S4oZerqLOZx2ODcKvoIJ7EftKB4GgxjC8XI/edit?usp=sharing).
+  * Feedback from the 1st checkpoint presentation:
+    * Is the focusing distance of the USB microscope sufficient to allow it to be positioned above the probe needles while still maintaining focus?\
+      -> The webpage says "the digital microscope can work from varying distances," sounding it would be fine (I can't find detailed information).
+    * Does the pump for the vacuum chuck affect the piezo vibration sensor?\
+      -> We should try the double-sided conductive tape first.
+    * If the chip is tilted, the probe needle might accidentaly contact it while moving in the X or Y axis. How can we prevent this?\
+      -> We should probably implement a function to sound a buzzer in such cases.
+    * We should probably test the piezo vibration sensor on the off-the-shelf probe station we currently use to check if it works well.
+
+#### Roadbl
+
+* None in particular
+
+#### Plan
+
+* After we procure the USB microscope, check if we need to design additional parts (since it originally comes with a stand, I don't expect anything else will be needed).
+* Select and order a magnetic board for the base of the probe station, like [this](https://www.amazon.com/dp/B007UHG7KI).
+* Order [the measurement device](https://digilent.com/shop/analog-discovery-3/).
+* Modify the design of the magnetic base for the positioners.
+* Prepare 2 sets of the probe positioners and and 1 stage positioner (chip fixture) and test with the measurement device / a micrometer.
+
+
+
