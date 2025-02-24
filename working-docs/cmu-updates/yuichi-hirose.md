@@ -132,10 +132,11 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 <figure><img src="../../.gitbook/assets/update-wk5.jpg" alt=""><figcaption></figcaption></figure>
 
-* 3D printed the attachment for the probe holder and assembled
+* 3D printed the attachment for the probe holder and assembled\
+  ![](../../.gitbook/assets/PXL_20250224_190441020.jpg) ![](../../.gitbook/assets/PXL_20250224_190603633.jpg)
   * It looks fine. No problem with assembly. We need to check if the tip of the probe needle moves correctly using a microscope (one of the probes of the probe station we currently use doesn't look moving orthogonally when we rotate the handles for X and Y axis, which makes manipulation difficult and annoying. We need to check if the one I just assembled does not move like that).
-  * (forgot to take a photo of the 3d printed part and the assembled device. I'll add it on Monday)
-* 3D printed the magnetic base for the XYZ stage, procured magnets and assembled
+* 3D printed the magnetic base for the XYZ stage, procured magnets and assembled\
+  ![](../../.gitbook/assets/PXL_20250224_190543702.jpg) ![](../../.gitbook/assets/PXL_20250224_190553222.jpg)
   * It looks fine. No problem with assembly. We need to check if the magnets are too weak or too strong on the magnetic board like [this](https://www.amazon.com/dp/B007UHG7KI).
   * I used [this magnet](https://a.co/d/aqNHS0h).
   * The base felt a bit too close to the micrometer handle and it was a little hard to rotate. I will probably modify the design.\
