@@ -143,12 +143,12 @@ description: My name is Yuichi and I will be working on the probe station this s
   * (forgot to take a photo of the 3d printed part and the assembled device. I'll add it on Monday)
 * Designed the chip fixture (vacuum chuck)
   * I designed the chip fixture. While I temporarily prepared a hole for a vacuum chuck, we are now leaning towards using double-sided conductive tape for chip holding instead. This is because we need to put conductive tapes on the piezo vibration sensor anyway to test the bottom of the chip, and we want to avoid a situation where the sensor is also sensitive to the vibration caused by the pump for the vacuum chuck, macaking it difficult to isolate the vibrations when the probe needle touches the chip surface. Also since double-sided tape is easier to test with than a vacuum chuck, we will start with double-sided tape.\
-    ![](<../../.gitbook/assets/image (127).png>)
+    ![](<../../.gitbook/assets/image (127) (1).png>)
 * Ordered [double-sided conductive tape](https://discord.com/channels/1143959339179200562/1329845066033922069/1342269476732665999) and [camera (USB microscope)](https://amscope.com/collections/digital-microscopes-hand-held-microscope/products/utp200x003mp).
 * Tested the piezo vibration sensor for multiple touches by probe needles
   * I had a concern on whether the sensor works well with a touch by a needle when another needle is already touching (there are four probe positioners). I conducted [a rough test](https://drive.google.com/file/d/1WGoAcgL6_hh3nQNotX5qRmlBqKc43kJo/view?usp=sharing). It seems working fine, but we need to test in an actual setting.
 * Considered the motor attachment design for the auto Z-zeroing function.\
-  ![](<../../.gitbook/assets/image (128).png>)
+  ![](<../../.gitbook/assets/image (128) (1).png>)
 * Modified [the project proposal](https://docs.google.com/document/d/1mPezRVWu7PNa3ggTOlxjDEdb9D6B84CEXgIU-5ACNHs/edit?usp=sharing) in accordance with the fixed schedule.
 * Created [the 1st checkpoint slides](https://docs.google.com/presentation/d/1tlnXbdm_S4oZerqLOZx2ODcKvoIJ7EftKB4GgxjC8XI/edit?usp=sharing).
   * Feedback from the 1st checkpoint presentation:

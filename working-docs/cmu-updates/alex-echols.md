@@ -12,7 +12,7 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 To lower costs, relative to getting a part custom made, the aluminum nitride is being sourced as a solid disk which will fit between the screws.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (124).png" alt=""><figcaption><p>Proposed disk size (4")</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (124) (1).png" alt=""><figcaption><p>Proposed disk size (4")</p></figcaption></figure>
 
 I received several quotes for 4" x 0.1" AlN disks. The cheapest option was from [Heeger Materials](https://heegermaterials.com/aluminum-nitride-aln-products/1914-aluminum-nitride-aln-ceramic-substrate.html), at $440. These disks would be a relatively simple, drop-in replacement for the current BN disks. A potentially cheaper alternative is these [AlN sheets from Amazon](https://a.co/d/5kcxq4Z). These sheets are comparatively quite thin, and due to their square shape, would likely require a modification to the structural plates. This could coincide with creating a new plate to mount the QCM.&#x20;
 

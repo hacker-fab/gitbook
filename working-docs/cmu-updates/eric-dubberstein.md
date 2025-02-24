@@ -290,7 +290,7 @@ W**eekly updates for 2/16:**
 
 The first thing I did this week was get a basic API test script written. See below. This script will be useful to ensure that the api is working if we make modifications in the future. It follows the standard job lifecycle.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (129) (1).png" alt=""><figcaption></figcaption></figure>
 
 As you can see, it is currently passing.
 

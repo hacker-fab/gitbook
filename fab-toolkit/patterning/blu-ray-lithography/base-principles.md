@@ -22,7 +22,7 @@ where:
 
 -
 
-    <figure><img src="../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (119) (1).png" alt=""><figcaption></figcaption></figure>
 
 For blu-ray the wavelength is 405nm and the NA is 0.85 resulting in a spot size of 290nm.
 
@@ -134,7 +134,7 @@ Assuming a 290nm spot size:
 * For the largest radius (58mm) the number of steps is 1.256M
 * For the smallest radius (23mm) the number of steps is 498k
 
-![](<../../../.gitbook/assets/image (120).png>)
+![](<../../../.gitbook/assets/image (120) (1).png>)
 
 </details>
 
@@ -144,7 +144,7 @@ Assuming a 290nm spot size:
 
 The planned approach for repeatability is closed loop control. Since the blu-ray system works on reading concentric circles each disc will have a pattern written along the ring perimeter that identifies what is the current ring radius. It will also be used to help identify the start position on the perimeter.
 
-![](<../../../.gitbook/assets/image (121).png>)
+![](<../../../.gitbook/assets/image (121) (1).png>)
 
 </details>
 
@@ -167,7 +167,7 @@ Therefore the writing radius is about 35mm.
 
 5x Symmetrical dies can fit on a disc assuming 30mm x 30mm  (900mm^2)&#x20;
 
-![](<../../../.gitbook/assets/image (122).png>)
+![](<../../../.gitbook/assets/image (122) (1).png>)
 
 
 
@@ -175,7 +175,7 @@ Therefore the writing radius is about 35mm.
 
 4x Asymmetrical dies can fit on a disc assuming 25mm x 50mm ( 1,250mm^2 )
 
-![](<../../../.gitbook/assets/image (123).png>)
+![](<../../../.gitbook/assets/image (123) (1).png>)
 
 </details>
 
