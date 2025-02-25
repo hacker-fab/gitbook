@@ -54,5 +54,27 @@ Created GitBook page.
    1. Collaborate with Sandra and Gina to finalize the mask I drew for our test chip with 16 I/O pads, make appropriate adjustments to the Length and Width parameters, and settle on a final mask/layout.
    2. Finalize on testing plans and work with Ying and Felicia to decide on some reasonable DRC estimates for the spacing distances between the MOSFETs on the test chip and the minimum gate extension.
 
+\
+**Weekly Update 4**&#x20;
 
+1. **What was accomplished:**
+   1. &#x20;Redrew a new layout for our 16 I/O pad test chip with exact to-scale dimensions for each layer and updated pad component requirements from the Metrology team. (Pads now 300 x 300 um, Stepper frame 1920by1080 pixels) [https://drive.google.com/file/d/163fGV8PKwP8sKIzO7hwD44xELJJviuWa/view?usp=sharing](https://drive.google.com/file/d/163fGV8PKwP8sKIzO7hwD44xELJJviuWa/view?usp=sharing)
+   2. Probe tested Chip 493 to get data for Id-Vds and Id-Vgs (at many different Vd bias voltages of 1V, 1.5V, 2V, 3V, 4V, 5V, 6V, 7V, 8V) to use in our parameter extraction flow. [https://drive.google.com/drive/folders/1MjFysxUzDzQmJ1Hy9QC1mP7D4bGZa5St?usp=drive\_link](https://drive.google.com/drive/folders/1MjFysxUzDzQmJ1Hy9QC1mP7D4bGZa5St?usp=drive_link)
+2. **Roadblocks:**&#x20;
+   1. Chip 493 exhibits large deviations from the theoretical MOSFET behaviors of Id-Vds curves expected. This is likely due to manufacturing defects in chip 493, for example, having a significant source/drain resistance (i.e. high resistance between Al pad and source/drain doped region, or insufficient doping at source/drain to reach Ohmic connection)&#x20;
+   2. The threshold voltage derived from Id-Vgs curves varies at different bias voltages, which has multiple possible causes such as S/D resistance, or inconsistent doping.
+3. **Plans for next week:**
+   1. Begin manufacturing of a higher quality NMOS using the test mask that Felicia drew with 2 rows of MOSFETs for further testing and do probe station data extraction instead of using the old Chip 493.
+   2. Continue analysis of non-ideal data collected from Chip 493 testing and research potential causes.
+   3. Present on current project progress in Demo 1
 
+\
+\
+**Weekly Update 5**
+
+1. **What was accomplished:**
+   1. Presented to the class on Thursday our current progress and I demonstrated the testing plan and preliminary test results I gathered from chip 493 using the probe station. I also showed the 16-pad test chip to-scale layout I created for our wire bonding and packaging collab with Metrology. Also, performed further analysis of the unusual data I had collected from Chip 493 to figure out possible reasons for the non-ideal behavior, and presented them (e.g. S/D doping, body effect, Schottky contact) to the class on Demo day for feedback.&#x20;
+2. **Roadblocks:**
+   1. The main bottleneck for our whole team is having chips to test and obtain data, thus we need masks generated to use in the stepper for fabricating the new test chip. Currently, Gina and Sandra are re-measuring their scale factor mask so that our final MOSFET dimensions (length/width) are accurate for the mask generation.
+3. Plans for next week:
+   1. Work on learning and mastering the chip fabrication flow to produce high-quality chips while waiting for the mask generation scale-factor to be resolved. Possibly get hands-on safety training in the lab, for example HF handling procedures.
