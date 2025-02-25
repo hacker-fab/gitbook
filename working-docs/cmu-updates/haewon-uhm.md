@@ -203,3 +203,58 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Work on the section of the main function code where the data will be sent.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (100).png" alt="" width="188"><figcaption><p>Format of the main function</p></figcaption></figure>
+
+## Update 5 (SOG)
+
+**Accomplishments**
+
+* Tested the resistivity of chips 637 and 639 (got rid of 640)
+  * 637: around 20 ohms
+  * 639: around 25 ohms&#x20;
+* Replaced the tubing for the water supply that reaches the drain
+* [https://webbut.unitbv.ro/index.php/Series\_I/article/view/6140/4712](https://webbut.unitbv.ro/index.php/Series_I/article/view/6140/4712)
+  * Increasing TEOS concentration will increase viscosity
+  * If the particles grow too large, precipitation takes places
+  * The time of gelation decreases for low water ratio
+  * Heating at relatively high temperatures (100-500ºC) will accelerate the hydrolysis and condensation, removes the organic species, and forms SiO2 bonds
+
+**Roadblocks**
+
+* Didn’t have a sample with the commercial SOG
+* Does the precipitate that is formed actually impact anything
+
+**Future Plans**&#x20;
+
+* Characterize and compare whether the resistivity is in the general range of a commercial SOG
+  * Make a chip sample with P504
+* Try the p-doped SOG using boric acid
+* Do more research on sol gel components
+
+## Update 5 (ALD)
+
+**Accomplishments**
+
+* Found out how to localize the python on the Raspberry Pi
+  * [https://roboticsbackend.com/raspberry-pi-run-python-script-in-the-terminal/#Run\_Python\_code\_directly\_on\_the\_terminal](https://roboticsbackend.com/raspberry-pi-run-python-script-in-the-terminal/#Run_Python_code_directly_on_the_terminal)
+  * Using a nano terminal
+  * Need to localize on the PC since LabVIEW can't connect to the Pi directly
+* Integrated the thermocouple DAQ onto the physical Pi
+* Tested the code to test the thermocouple DAQ but threading is not needed&#x20;
+
+**Roadblocks**
+
+* Still working on LabVIEW connection
+
+**Future Plans**
+
+* Using the new libraries for the thermocouple DAQ, make a new code that will average the data and send to LabVIEW
+  * Replace the libraries that are for the thermocouple DAQ
+  * Multiple thermocouple connections
+* LabVIEW connection
+  * Return value: [https://forums.ni.com/t5/LabVIEW/Specifying-Return-Type-for-Python-Node/td-p/3932556](https://forums.ni.com/t5/LabVIEW/Specifying-Return-Type-for-Python-Node/td-p/3932556)
+    * Resolved issue from NI for the return value
+    * Control of type double
+  * Module block:
+    * Test a sample code on the local PC and run on LabVIEW
+  * Look into SSH commands&#x20;
+    * [https://bitbucket.org/ChrisCilino/raspberry-pi/src/master/](https://bitbucket.org/ChrisCilino/raspberry-pi/src/master/)
