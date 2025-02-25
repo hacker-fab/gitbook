@@ -77,3 +77,15 @@ p.s. I may just be blind, but I think this is the first time I'm being able to s
 _Feedback:_
 
 _Thanks for the update! I know we've made a lot of changes to our chamber subgroup's plan for the rest of the semester, so some shifts have been made to make sure we are on track to complete v2 by the end of this semester. For the updates, please do mention if you have encountered any setbacks (or mention if there are none), and include any diagrams or CAD (a screenshot is fine), even if it's incomplete/imperfect, so we can see your progress. Also, please remember to update any progress on our devlog (masterdoc) and github progress tracker!_
+
+
+
+**Update 5**:
+
+I've been talking to Tom and Ed regarding the machining to do. Using the manual mill is a bit difficult for two reasons: one, it is difficult to clamp our piece and two, it is quite difficult to edge find. This is due to the size and circular shape of the base plates. For this reason, I decided to instead machine it on the CNC. This helps eliminate some difficult and potentially erroneous manual work. All operations used are simple drilling operations; a picture of the CAM verification can be seen below (apologies for the low quality). Besides programming the CNC, I got some training on edgefinding for this piece; unfortunately it is a bit of a tedious process and there's no way around it. While doing this I also dial indicated the plates for a vague idea of surface roughness; it actually isn't too bad. I wasn't able to get to machining last week, but that's probably actually for the best so that we can discuss the plan of action as a group. Unfortunately I am kind of cooked tomorrow and Tuesday so just for safety I'm going to say that I'll target having machining done by Wednesday with assembly on Thursday. I also worked on designing a mechanical feedthrough similar to Jay's idea; again, see image below.
+
+<figure><img src="../../.gitbook/assets/IMG_5788.HEIC" alt=""><figcaption></figcaption></figure>
+
+_Feedback:_
+
+_Thanks for the update! Now that parts have arrived, it's time to get machining. CNC is perfectly fine for machining our parts just to make our lives easier (none of this seems too difficult to do manually). This CAD looks fine, and Jay just sent the dimensions to be added ASAP. Please make sure to share the CAD if possible (onshape should have sharing options), and let us know if you need any help machining!_&#x20;

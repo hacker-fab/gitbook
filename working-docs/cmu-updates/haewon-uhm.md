@@ -230,6 +230,14 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Try the p-doped SOG using boric acid
 * Do more research on sol gel components
 
+### Feedback
+
+* important distinction - what we measured on the chips is corner-to-corner surface resistance, which is not very consistent. We want to do a proper resistivity test using resistor patterns to properly measure it with the probe station
+* The source on sol-gel is interesting- if we can better understand how to avoid the residue that would be great :thumbsup:&#x20;
+* I think all the chemicals we'll need are here! let's make more samples to test :)
+
+— Daniel
+
 ## Update 5 (ALD)
 
 **Accomplishments**
