@@ -131,3 +131,39 @@ Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https:
 * Given the chamber roadblocks, I think continuing to workout XRR with thermal oxide and sanity checking the evaporated Al samples with AFM techniques makes sense.
 * Rahim and I are working on upping the Vp-p of th rf supply in hopes that low Vp-p has been the issue. If this doesnt work, we will start doing reactive DC with V1 chamber.
 
+### Update 5 (2/16-2/23)
+
+#### Accomplishments
+
+* Created presentation + video tutorial for XRR setup + SOP for XRR (linked in presentation slides and in drive: [https://drive.google.com/drive/folders/1C9F45\_9w07ARenv4gUgpu121mef5XScS](https://drive.google.com/drive/folders/1C9F45_9w07ARenv4gUgpu121mef5XScS)) to present to HackerFab class
+* Performed XRR on thermally grown oxide (see image below)
+  * Scan provided reasonable outputs with visible peaks&#x20;
+  * Peaks were shallower than typical XRR data --> not crippling issue for thickness characterization but good thing to look into to see if we can improve the test setup
+
+<figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption><p>XRR Data from thermally grown oxide showing thickness of 47.3 nm</p></figcaption></figure>
+
+*   Cleaved thermally evaporated sample from a few weeks back and mounted in epoxy + polished for SEM and EDS
+
+    * Goal was to identify if SEM was a viable alternative for characterizing thicknesses that are slightly too high for XRR
+    * Was able to identify aluminum layer with EDS but extremely difficult to focus image&#x20;
+    * Also very difficult to capture images due to extremely high amount of drift at the level of magnification
+    * Ultimately, characterizing thicknesses less than a micron without serious drift using the undergrad lab SEM will be difficult, thicknesses above 5 microns should be reasonable though
+
+    <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>Cleaved chip set in epoxy and polished to 0.05 micron alumina </p></figcaption></figure>
+
+    &#x20;
+
+    <figure><img src="../../.gitbook/assets/Screen Shot 2025-02-23 at 3.56.56 PM.png" alt=""><figcaption><p>EDS of top surface of cleaved sample showing aluminum layer thickness of around 1.5 microns (consistent with QCM readout)</p></figcaption></figure>
+
+#### Roadblocks
+
+* Sputtering chamber still not working : (
+
+#### Plans
+
+* Continue literature review/researching potential causes for sputtering chamber not working.
+* Performing AFM on thermally grown oxide to see if surface roughness is a contributing factor to shallow XRR peaks
+* More detailed plan for CV testing now that both Katie and I have done the probing lab
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
