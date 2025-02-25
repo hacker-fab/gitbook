@@ -30,6 +30,14 @@ description: Katie's weekly updates (Sputtering Process Project)
 * Make a new cheater pin and run a DC sputtering trial
 * Maybe do another XRR trial if time permits
 
+#### Response - Jay
+
+* l'm curious to see how cross sections look on the MSEUG benchtop SEM. If they look good, I want to look at cross sections of Martas metal contacts to characterize Al spiking.
+* lmk if u need help with the DC cheater plug
+* Rahim and I have been working to setup an old donated sputtering RF power supply. We tried to use it in the past but the associated matching network was broken, so it couldn't strike any plasma. Now we are retrying it, buy using our 300W antenna tuner as the matching network. This should be ready sometime his week, ideally tn (Tuesday). The idea is that this power supply will have much higher Vp-p. This will help us determine if the chamber is the problem or the the low Vp-p on our radio power supply is the problem. Regardless, this may let you start doing RF process dev soon.
+
+
+
 ### <mark style="color:purple;">Update 4 - 2/16/2025</mark>
 
 #### Accomplishments
