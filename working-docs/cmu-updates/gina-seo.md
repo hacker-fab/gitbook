@@ -4,7 +4,38 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #5
+
+**What was accomplished:**&#x20;
+
+* Sandra and I completed our demo slides and presented them on Thursday. It went very well as we were able to explain in detail our sub-projects, progress, and justification on decisions we made (i.e. new alignment mark design).&#x20;
+* Sandra and I also prepared a separate demo on Google Colab that included new features of [code](https://colab.research.google.com/drive/1Ihz8MFp59NgdUhTNkJPlqDkgh7zhsC7x?usp=sharing):&#x20;
+  * Can generate resistor with parametrized number of segments and size of segments
+  * Can export all pngs of multi-mask device into each layer for ease
+* We started collaborating with the Device Modeling team to help them translate the hand-drawn draft to actual masks using our code base. The new adjustments are made [here](https://colab.research.google.com/drive/1XhXm_uumourmU2MWrl_YJQnlEl-nG5eg?usp=sharing).
+  * Edited our scale in the code so units to um ratio is now 1 to 1 based on our scale factor measurements
+  * Added diffusion width and gate size adjustments&#x20;
+  * Finalized dictionary for layers&#x20;
+* Sandra and I selected one tool: [KLayout](https://www.klayout.de/intro.html) and we determined this by creating a comparison table (also featured in our demo presentation)
+  *   It will help with future DRC/LVS implementation and is GUI-based.&#x20;
+
+      <figure><img src="../../.gitbook/assets/Screenshot 2025-02-23 at 10.38.06 PM.png" alt=""><figcaption></figcaption></figure>
+
+**Roadblocks:**
+
+* Wasn't able to hold a discussion with stepper team this week on alignment, but will follow up with them on this next week; We also didn't really receive a lot of suggestions for alignment during demo day.&#x20;
+* HF training is not available, so cannot fabricate full devices to test. Will need Icey or another TA who is HF certified to help fab for Metrology resistors in near future.&#x20;
+
+**Plans for Next Week:**
+
+* Remeasure scale factor under microscope (was off from last time) and fix in code and definition.
+* Fabricate more attempts of resistor pattern on stepper to present to Metrology.
+* Download KLayout, create playbook, and experiment with designing a simple mask & exporting files.&#x20;
+* Create plan for moving forward for DRC rule setting
+
 ## Update #4
+
+**What** **was** **accomplished**:
 
 * Sandra and I patterned again and remeasured the mask design from last week to get the scale factor and graphed with [best line of fit](https://docs.google.com/spreadsheets/d/1S0PKdll-URsYSo6UDCH_Mvkxb_JvEbNxG_ppyP4zowQ/edit?usp=sharing).&#x20;
 *   Completed the mask design for the resistor lab pattern for the metrology team ([code](https://colab.research.google.com/drive/1bXM5GX_AE7WAsoSxQLe35XEuIYxSi_KF?usp=sharing)).&#x20;
