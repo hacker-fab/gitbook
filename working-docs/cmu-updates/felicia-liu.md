@@ -60,7 +60,7 @@ Work done:
 
 I kept working on refining the chip mask for device characterization ([https://drive.google.com/file/d/1xJqtZhwv6ymNPnZKm5X7mc3w4kSNG3Up/view](https://drive.google.com/file/d/1xJqtZhwv6ymNPnZKm5X7mc3w4kSNG3Up/view)). Took advice from Icey to add metal pads and detail each layer in color. I referred to the relative ratio of Wentao's working chip mask ([https://docs.google.com/presentation/d/14-dpjaqdC6Muq3PNF8Y-pDv0M4lqNexc/edit#slide=id.p2](https://docs.google.com/presentation/d/14-dpjaqdC6Muq3PNF8Y-pDv0M4lqNexc/edit#slide=id.p2)) and came up with DRC width and spacing.
 
-I worked on the presentation slides ([https://docs.google.com/presentation/d/1mWdtFvuAhORBxkRAATjBBGgNKujUhzJt\_RSVCNwoCtw/edit#slide=id.g3354ac3a64a\_0\_278](https://docs.google.com/presentation/d/1mWdtFvuAhORBxkRAATjBBGgNKujUhzJt_RSVCNwoCtw/edit#slide=id.g3354ac3a64a_0_278)) for our first presentation next week.
+I worked on the presentation slides for our first presentation next week.
 
 Roadblocks:
 
@@ -70,3 +70,25 @@ Plan for next week:
 
 Finish up the presentation slides and present on Thursday. Collaborate with Gina and Sandra to convert the hand draft test chip design into actual masks. Plug in numbers Gongwei got from chip 493 into SPICE model to verify if the simulation aligns with experimental results.
 
+**Weekly Update #5**
+
+Work done:
+
+I finished the presentation slides ([https://docs.google.com/presentation/d/1tlnXbdm\_S4oZerqLOZx2ODcKvoIJ7EftKB4GgxjC8XI/edit](https://docs.google.com/presentation/d/1tlnXbdm_S4oZerqLOZx2ODcKvoIJ7EftKB4GgxjC8XI/edit)) and presented with the group on Thursday. During Q\&A, I got feedback on widening contact width for lower contact resistance which is better for NMOS characterization. I made the changes and looked into Sandra and Gina's mask generation codebase to try translating the hand-drawn draft to actual masks ([https://colab.research.google.com/drive/1Ihz8MFp59NgdUhTNkJPlqDkgh7zhsC7x?usp=sharing#scrollTo=bWKgX7jIjWGu](https://colab.research.google.com/drive/1Ihz8MFp59NgdUhTNkJPlqDkgh7zhsC7x?usp=sharing#scrollTo=bWKgX7jIjWGu)). Below is the initial result I have. There are a couple of issues:
+
+1. &#x20;The codebase does not yet support custom MOSFET length and width.
+2. The exact spacing is unclear.&#x20;
+   1. The scale factor needs to be re-measured (Sandra and Gina working on it).
+   2. It is hard to determine the spacing between components on the plotted diagram. Would be helpful if we could work out some sort of reference such as a live ruler tool.
+3. The current design exceeds the area of a single exposure. However, whether or not the final design will exceed depends on the scale factor.
+4. Need to define which layer P+ resides.
+
+<figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>NMOS Characterization chip WIP</p></figcaption></figure>
+
+Roadblocks:
+
+Waiting for Gina and Sandra to retrieve the accurate scale factor and implement MOSFET W/L customization.
+
+Plan for next week:
+
+Collaborate with Gina and Sandra to solve the above-mentioned issues and work out an initial working mask. Hopefully we can start fabricating soon.
