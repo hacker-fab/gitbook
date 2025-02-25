@@ -4,6 +4,32 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 5 - 2/23/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+* I worked with Melinda to develop our presentation for last Tuesday. We worked through a few drafts and rehearsed it together several times. We also got a lot of interesting questions afterwards that gave me a lot to think about (will discuss more below in plans)
+*   I also helped Melinda collect XRR data on the thermally grown aluminum oxide chip. We experimented with some XRR data processing software to try and determine the thickness. It has a lot of cool tools that I want to learn how to use.
+
+    <figure><img src="../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+* Melinda and I also prepared the chamber for DC sputtering by cleaning every surface and remaking the Teflon spacers. However, we ran out of time and couldn't find the cheat pin so we weren't able to run a DC trial.&#x20;
+
+#### Roadblocks
+
+* Aside from the RF sputtering still not working, I think my personal biggest roadblock is it's hard to find big chunks of time (like 3 hours or so) to be able to do everything like collecting data or sputtering trials. Running sputtering trials takes so long in terms of setup and then actually being present to run the test. I was also super busy this past week because I had another midterm presentation and a lot of stuff to do for other classes/research. But this week, I have a lot more blocks of free time so I should be able to schedule plenty of time to do the longer tasks.
+
+#### Plans
+
+* Based on the questions we got from the presentation, there are a few more things I want us to look into:
+  * I want to find the resolution limit of the EDS on the SEM in the MSE undergrad lab
+  * I want to do a deeper literature review on how we can quantify roughness of the whole sample based on some small sections of it under AFM. I also think we should look more into calculating the density and porosity of the films
+* Actually get AFM tips from Joel this week (didn't have time to do AFM last week)
+* Perform an AFM trial on thermally grown aluminum oxide
+* Continue updating AFM SOP
+* Make a new cheater pin and run a DC sputtering trial
+* Maybe do another XRR trial if time permits
+
 ### <mark style="color:purple;">Update 4 - 2/16/2025</mark>
 
 #### Accomplishments
