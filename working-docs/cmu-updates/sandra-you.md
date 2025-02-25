@@ -1,5 +1,24 @@
 # Sandra You
 
+**Weekly Update #5**&#x20;
+
+1. **What was accomplished:**
+   1. Added [parametrization ](https://colab.research.google.com/drive/1XhXm_uumourmU2MWrl_YJQnlEl-nG5eg?usp=sharing)for resistor generation and MOSFET generation
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+
+          ii. Looked into open-source layout tools and decided that KLayout is promising.
+
+          1. Has built-in LVS and DRC support and good GUI for drawing layouts.&#x20;
+2. **Roadblocks:**
+   1. HF training session isn't until mid-March, which makes it difficult to fabricate full devices, e.g. MOSFETs for testing or the Metrology pad resistance chip.&#x20;
+3. **Plans for next week:**
+   1. Set up KLayout and create a mask with it to compare to PHIDL.&#x20;
+   2. Maybe begin fabricating the Metrology resistor chip using the masks previously created.
+   3. Devise a testing plan for DRC rule development.
+      1. Which layers to test, which patterns to use, etc.&#x20;
+
 **Weekly Update #4**&#x20;
 
 1. **What was accomplished:**
