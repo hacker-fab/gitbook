@@ -36,7 +36,7 @@ Good work this week on the detailed update and the deep dive into CV testing, th
 
 **Priorities for This Week:**
 
-* **CV Analysis:** The analysis was not completed and should be the top priority. While I understand that preparing demos and discussing the fab process can be time-consuming, completing the CV analysis is a critical next step.
+* **CV Analysis:** The analysis was not completed and should be the top priority. Make sure to probe more of the chip to see how much variation there is in our results. While I understand that preparing demos and discussing the fab process can be time-consuming, completing the CV analysis is a critical next step.
 * **Fab Process & Fabrication:** We need to finalize the fab process for the upcoming chips and start fabrication in the coming weeks. I'm fine with postponing fabrication until next week due to midterms, but it will be our top priority then. If you can begin earlier, that would be an added bonus.
 
 **Documentation:**
