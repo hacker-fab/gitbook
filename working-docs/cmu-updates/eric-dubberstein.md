@@ -282,6 +282,12 @@ Week 6 tasks (Some of these may bleed into week 7, but this is planned for in th
 * Integrate the POST /job\_completion  API call to report job results to AWS (this is already complete at the start of the week!!)
 * Justification: this is the setup week for week 7. I will also try to start those tasks if I have time as those could be time consuming.
 
+> Nice work. As I mentioned on discord, feel free to create a folder for the files you write, and then just put that link in the update so that everything is more concise and you don't have to paste your script in multiple places, like here, db documentation, etc.
+>
+> By the way great work keeping the documentation updated. I would say add some more explanation of how the code works, maybe some pseudocode or some high level explanation that tells people what is going on with each new step.
+
+
+
 
 
 
