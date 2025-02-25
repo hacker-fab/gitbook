@@ -61,3 +61,19 @@ One roadblock for drawing masks is that there are no existing DRC rules for this
 #### **Plans for next week:**
 
 Next week, we will prepare for the presentation on Thursday. I will mainly present on the SPICE simulation levels and focus on explaining the level 1 model.
+
+
+
+### **Weekly Update #5**
+
+#### **What was accomplished:**
+
+Our team did the first demo/presentation on Thursday. I made the slides about SPICE parameters and testing procedures in the shared google slide. I also continued the research on SPICE level 2 model and updated the document with some additional parameters and calculations.
+
+#### **Roadblocks:**
+
+The main roadblock for our team is fabricating the designed chips. We need to coordinate with Gina and Sandra to generate the mask to give to the stepper team. One roadblock I'm having for the level 2 model is the complexity of the calculations. I need to decide whether it is needed to decode all the equations to figure out how to derive the required parameters.
+
+#### **Plans for next week:**
+
+Next week, we can start learning how to fabricate the designed chips while waiting for the mask generation.
