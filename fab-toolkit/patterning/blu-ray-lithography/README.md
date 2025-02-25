@@ -4,7 +4,9 @@
 
 This is the project page for a lithography system based on repurposing Blu-Ray drives. The initial goal is to reach a feature size of at least 500nm (2x the Blu-ray laser spot size). As a stretch goal, we would like to also use the sled and spindle motors as high speed nano-positioners and to spin coat and cure photo-resin.
 
+## Safety
 
+Wear [UV-blocking glasses](https://www.amazon.com/Tool-Klean-Safety-Glasses-Protection/dp/B081BHTJT8/ref=sr_1_5?crid=38LVX5C7MIN2M\&keywords=uv+protection+glasses\&qid=1674228429\&sprefix=uv+protection+%2Caps%2C96\&sr=8-5) whenever light leakage from the device is possible.
 
 ## Project Status
 

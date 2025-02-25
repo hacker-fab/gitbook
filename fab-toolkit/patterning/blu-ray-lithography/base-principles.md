@@ -306,7 +306,7 @@ Functional walk through of laser head assembly
 
 <summary>Tear-down of PHR-803T Laser Module (diyouware)</summary>
 
-
+[http://www.diyouware.com/node/161](http://www.diyouware.com/node/161)
 
 </details>
 

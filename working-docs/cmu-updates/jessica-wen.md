@@ -14,7 +14,7 @@ Updated dashboard design: side menu has a button to take you to all chips, proce
 
 Clicking the 'Processes' button takes you to the Processes and Steps library: would ideally like another page to detail each step/process, but for now it is sufficient to keep it as a list.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Processes and Steps Library</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Processes and Steps Library</p></figcaption></figure>
 
 'Create New Step' takes you to a page where you can create a new step with different parameters. These new steps would ideally be approved by an admin before it gets added to the list.
 
