@@ -126,5 +126,13 @@ void loop() {
 
 
 {% endstep %}
+
+{% step %}
+### Weekly Update 5
+
+1. I was pretty busy this week so I was not able to accomplish much. Presentations on Tuesdays went well and I tried to debug with Anirud. Ordered a different RS232 and RS485 shield and converter respectively to test because tests are not working. I found this pfieffer tubro pump tutorial [http://brendansweeny.com/posts/pump-readout.html ](http://brendansweeny.com/posts/pump-readout.html)which I copied the code excluding the LCD screen and treid, but it didn't working. I might send the guy an email tomorrow.&#x20;
+2. I am dealing with the same roadblock as last week. I have ordered some different converters to try and hopefully they will help. I also tried using the Alicat software for the alicat devices, but that wouldn't work either. I want to try and hop on a zoom call with the Alicat help center this week.
+3. The plans of this week are pretty much the same as last week because all efforts are currently unsuccessful. I really want to get some stuff working before I leave for spring break
+{% endstep %}
 {% endstepper %}
 
