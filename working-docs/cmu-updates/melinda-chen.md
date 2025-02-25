@@ -167,3 +167,13 @@ Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https:
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
 
+#### Response - Jay
+
+* lmk if u need help with the DC cheater plug issue.&#x20;
+* Rahim and I have been working to setup an old donated sputtering RF power supply. We tried to use it in the past but the associated matching network was broken, so it couldn't strike any plasma. Now we are retrying it, buy using our 300W antenna tuner as the matching network. This should be ready sometime his week, ideally tn (Tuesday). The idea is that this power supply will have much higher Vp-p. This will help us determine if the chamber is the problem or the the low Vp-p on our radio power supply is the problem. Regardless, this may let you start doing RF process dev soon.
+* SEM image is very intersting. unfortunate that the feaure sizes we care about are a bit outside teh benchtop SEM resolution. However, based on your results. The benchtop SEM may be useful for some of Marta's work, ty!
+
+
+
+
+
