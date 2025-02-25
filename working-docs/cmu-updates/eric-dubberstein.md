@@ -2,6 +2,16 @@
 
 **Weekly updates for 2/23:**
 
+
+
+> Nice work. I am def interested in using the GUI, although I don't have a linux machine on me so I might have to borrow the RPi from u haha. As we discussed on discord, feel free to create a folder for the files you write, and then just put that link in this update and the documentation, so that everything is more concise and you don't have to paste your script in multiple places, like here, db documentation, etc.
+>
+> By the way great work keeping the documentation updated. I would say add some more explanation of how the code works, maybe some pseudocode or some high level explanation that tells people what is going on with each new step.
+
+
+
+
+
 Progress for this week: I wrote a Tkinter GUI for the raspberry PI. Here is a demo video:
 
 [https://drive.google.com/file/d/1urpoj3qYbh18Ti-hXBs-8LBYLlDNa4fD/view?usp=drive\_link](https://drive.google.com/file/d/1urpoj3qYbh18Ti-hXBs-8LBYLlDNa4fD/view?usp=drive_link)
@@ -281,12 +291,6 @@ Week 6 tasks (Some of these may bleed into week 7, but this is planned for in th
   * i.e. store the status of the current job locally before sending to AWS.
 * Integrate the POST /job\_completion  API call to report job results to AWS (this is already complete at the start of the week!!)
 * Justification: this is the setup week for week 7. I will also try to start those tasks if I have time as those could be time consuming.
-
-> Nice work. As I mentioned on discord, feel free to create a folder for the files you write, and then just put that link in the update so that everything is more concise and you don't have to paste your script in multiple places, like here, db documentation, etc.
->
-> By the way great work keeping the documentation updated. I would say add some more explanation of how the code works, maybe some pseudocode or some high level explanation that tells people what is going on with each new step.
-
-
 
 
 
