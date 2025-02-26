@@ -133,6 +133,19 @@ void loop() {
 1. I was pretty busy this week so I was not able to accomplish much. Presentations on Tuesdays went well and I tried to debug with Anirud. Ordered a different RS232 and RS485 shield and converter respectively to test because tests are not working. I found this pfieffer tubro pump tutorial [http://brendansweeny.com/posts/pump-readout.html ](http://brendansweeny.com/posts/pump-readout.html)which I copied the code excluding the LCD screen and treid, but it didn't working. I might send the guy an email tomorrow.&#x20;
 2. I am dealing with the same roadblock as last week. I have ordered some different converters to try and hopefully they will help. I also tried using the Alicat software for the alicat devices, but that wouldn't work either. I want to try and hop on a zoom call with the Alicat help center this week.
 3. The plans of this week are pretty much the same as last week because all efforts are currently unsuccessful. I really want to get some stuff working before I leave for spring break
+
+> **Feedback**
+>
+> Good effort this week. I wasn't able to watch your demo, but the other TAs should give you feedback on it once it's graded. I'm writing this after you established Alicat communication with serial terminal but not with Arduino despite the Arduino sending the bits. I talked to Anirud and we believe it's an Alicat invisible padding associated with their shell. Going forward, if the new shield and converters don't work, you should pivot to:
+>
+> * running the Alicat shell on a Raspberry Pi and having that double as the MCU for closed loop communication.
+> * You could also have an Arduino connected to a laptop connected to the Alicat and use pipes to foward the shell. It would be less elegant but we might need a computer anyway for sputtering automation.&#x20;
+>
+> Both could be done with existing equipment in the lab. I would confront Alicat about why only their shell and not an MCU outputting the same bitstream works.
+>
+> Remember to indicate in the master doc what tests you ran and debugging you attempted. If you're using a separate doc, make sure it reads like a proper development log with dated entries that could easily be merged into a final dev log. Also, spell check these updates and use proper grammar. This is an informal documentation assignment that you should not be rushing.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
