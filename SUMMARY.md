@@ -75,7 +75,9 @@
 * [🏘️ Submodules](fab-toolkit/submodules/README.md)
   * [Piezo Nanopositioner (Stick Slip)](fab-toolkit/submodules/piezo-nanopositioner-stick-slip.md)
   * [Interferometer](fab-toolkit/submodules/interferometer.md)
-* [📚 Database](fab-toolkit/digital-twins/database-build.md)
+* [📚 Database](fab-toolkit/database-build/README.md)
+  * [Machine Integration](fab-toolkit/database-build/machine-integration.md)
+  * [Steps and Processes](fab-toolkit/database-build/steps-and-processes.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
