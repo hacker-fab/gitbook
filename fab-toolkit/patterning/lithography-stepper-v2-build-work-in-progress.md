@@ -88,7 +88,9 @@ The PCB Gerber files for our UV LED can be found [here](https://drive.google.com
 
 ![](<../../.gitbook/assets/image (6) (1) (1).png>)
 
-You can order it through your PCB manufacturer of choice (we used JLCPCB). However, note that the PCB is [**copper core**](https://jlcpcb.com/blog/62-JLCPCB-Direct-Heatsink-Copper-Cored-PCBs-Available-Now!). This is because the LEDs draw several amps of current in operation. To ensure that the PCB doesn't melt, you should use copper core to facilitate better heat flow.
+You can order it through your PCB manufacturer of choice (we used JLCPCB). However, note that the PCB is [**copper core**](https://jlcpcb.com/blog/62-JLCPCB-Direct-Heatsink-Copper-Cored-PCBs-Available-Now!). This is because the LEDs draw several amps of current in operation. To ensure that the PCB doesn't melt, you should use copper core to facilitate better heat flow.\
+\
+When ordering the PCB, the manufacturer might send you an email asking about a missing heatsink file. In this case, please respond that this project does not include a direct heatsink, as the copper core PCB itself is designed to handle the thermal management.
 
 We used 410 nm UV LEDs on this PCB. We found that two LEDs in series is sufficient to produce enough UV light for patterning. We also found connectors that are compatible with the cable in the TI DLP dev kit.
 
