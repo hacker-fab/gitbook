@@ -12,7 +12,7 @@ description: Katie's weekly updates (Sputtering Process Project)
 * I worked with Melinda to develop our presentation for last Tuesday. We worked through a few drafts and rehearsed it together several times. We also got a lot of interesting questions afterwards that gave me a lot to think about (will discuss more below in plans)
 *   I also helped Melinda collect XRR data on the thermally grown aluminum oxide chip. We experimented with some XRR data processing software to try and determine the thickness. It has a lot of cool tools that I want to learn how to use.
 
-    <figure><img src="../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (136) (1).png" alt=""><figcaption></figcaption></figure>
 * Melinda and I also prepared the chamber for DC sputtering by cleaning every surface and remaking the Teflon spacers. However, we ran out of time and couldn't find the cheat pin so we weren't able to run a DC trial.&#x20;
 
 #### Roadblocks
