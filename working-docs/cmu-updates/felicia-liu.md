@@ -92,3 +92,21 @@ Waiting for Gina and Sandra to retrieve the accurate scale factor and implement 
 Plan for next week:
 
 Collaborate with Gina and Sandra to solve the above-mentioned issues and work out an initial working mask. Hopefully we can start fabricating soon.
+
+**Weekly Update #6**
+
+Work done:
+
+I redid the mask design for the NMOS characterization chip. We realized that the scaling on the previous design version was incorrect, and one exposure can fit 5 patterns as shown below without interfering with the focus marks. Metal contact is added onto the MOSFET diffusion. I also collaborated with Sandra to help making the mask generation code more user friendly.
+
+<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption><p>NMOS Characterization chip: exposure</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption><p>NMOS Characterization chip: single pattern</p></figcaption></figure>
+
+Roadblocks:
+
+Waiting on finalizing the fabrication steps to start fabricating the chip. Also need to finish the HF safety training.&#x20;
+
+Plan for next week:
+
+Review the mask design with Icey and make any final adjustments. Keep collaborating with Sandra and Gina to think of any other functionalities we should add/brainstorming LVS/DRC design and implementation. Complete HF training and start fabricating test chips.

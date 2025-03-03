@@ -76,5 +76,34 @@ Created GitBook page.
    1. Presented to the class on Thursday our current progress and I demonstrated the testing plan and preliminary test results I gathered from chip 493 using the probe station. I also showed the 16-pad test chip to-scale layout I created for our wire bonding and packaging collab with Metrology. Also, performed further analysis of the unusual data I had collected from Chip 493 to figure out possible reasons for the non-ideal behavior, and presented them (e.g. S/D doping, body effect, Schottky contact) to the class on Demo day for feedback.&#x20;
 2. **Roadblocks:**
    1. The main bottleneck for our whole team is having chips to test and obtain data, thus we need masks generated to use in the stepper for fabricating the new test chip. Currently, Gina and Sandra are re-measuring their scale factor mask so that our final MOSFET dimensions (length/width) are accurate for the mask generation.
-3. Plans for next week:
-   1. Work on learning and mastering the chip fabrication flow to produce high-quality chips while waiting for the mask generation scale-factor to be resolved. Possibly get hands-on safety training in the lab, for example HF handling procedures.
+3.  Plans for next week:
+
+    1. Work on learning and mastering the chip fabrication flow to produce high-quality chips while waiting for the mask generation scale-factor to be resolved. Possibly get hands-on safety training in the lab, for example HF handling procedures.\
+       \
+
+
+
+
+**Weekly Update 6**
+
+**What was accomplished:**
+
+Further refined my hand-drawn mask for our 16-pad test chip and finalized on alignment metal patch sizing and width of wires. [https://app.diagrams.net/#G163fGV8PKwP8sKIzO7hwD44xELJJviuWa#%7B%22pageId%22%3A%22GMjX7zHhpJls\_Crg95KZ%22%7D](https://app.diagrams.net/#G163fGV8PKwP8sKIzO7hwD44xELJJviuWa#%7B%22pageId%22%3A%22GMjX7zHhpJls_Crg95KZ%22%7D)
+
+Learned how to use Gina and Sandra's mask generation Python tool on Google Colab, and then coded it to generate masks for our 16-pad test chip with metal pads of 300um x 300um and metal\_psub contact, to be well-prepared for starting manufacturing.\
+[https://colab.research.google.com/drive/1Mg7M8bjttieN\_uWDLnfcpidyplpPdlc9#scrollTo=\_IbcqxEdlzUq](https://colab.research.google.com/drive/1Mg7M8bjttieN_uWDLnfcpidyplpPdlc9#scrollTo=_IbcqxEdlzUq)
+
+<figure><img src="../../.gitbook/assets/image (153).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (154).png" alt="" width="375"><figcaption></figcaption></figure>
+
+**Roadblocks:**
+
+None currently
+
+**Plans for new week:**
+
+\~ Mon - Thurs: Work on fabricating the chip, and most likely will need to debug issues with alignment with multiple exposures and stepper frames. Possibly iterate on design based on practical results and create new masks.
+
+\~ Fri - Sun: Probe-station testing the fabricated chip to confirm quality of manufacturing and collect data for validation (Id-Vds, Id-Vgs curves).
+
