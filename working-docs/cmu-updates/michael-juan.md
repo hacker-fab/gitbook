@@ -328,7 +328,7 @@ should be able to make all the parts for one axis of nanopositioner **IF** tooli
 
 
 
-**Update 3 (2/23/2025)**\
+**Update 5 (2/23/2025)**\
 
 
 
@@ -373,4 +373,65 @@ Try to measure movement accuracy of previous years piezo actuator.
 NanoPositioner
 
 if pcbs arrive start assembly.
+
+## **Update 6 (2/16/2025)**&#x20;
+
+### Accomplishments
+
+{% embed url="https://drive.google.com/drive/folders/1nOdKtKDnOEkslMUcOBMTf1-ErH6uORQs?usp=sharing" %}
+
+<figure><img src="../../.gitbook/assets/gsfdkljhsgfdhlkj.png" alt=""><figcaption></figcaption></figure>
+
+* Started soldering circuitboards for piezo driver.
+
+<figure><img src="../../.gitbook/assets/ED025ADC-CA1C-4075-B06F-05D33505F279.JPEG" alt="" width="188"><figcaption></figcaption></figure>
+
+*   Worked on a design for a single axis piezo actuator. Below are some design considerations and criteria.
+
+    * Design has to be easily machinable.
+    * uses bellville washers for preload (simple to adjust when compared to coil springs)
+    * for tight tolerance portions uses premade bushings loctited into bearing block.
+    * &#x20;tries to minimize multiple machining operations.
+    * reduce/eliminate the number of machined flexures.
+    * Let precision be dictated by the stage side. Basically have the actuator be accurate and precise only constrained to one axis and let whatever stage its actuating against dictate the precision of the rest of the axes.
+    *
+
+        <figure><img src="../../.gitbook/assets/IMG_0572.PNG" alt="" width="188"><figcaption><p>belleville washer</p></figcaption></figure>
+
+    <figure><img src="../../.gitbook/assets/gulkguklgukl.png" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+**Problem 1:**&#x20;
+
+Mcmaster Carr materials did not arrive
+
+**Proposed Solutions**
+
+Reorder.
+
+**Problem 2:**&#x20;
+
+Don't know if its possible to have piezo element with friction element in this configuration.
+
+
+
+<figure><img src="../../.gitbook/assets/IMG_0570.PNG" alt="" width="375"><figcaption></figcaption></figure>
+
+This puts a shear load on the glue interface between the piezo and the friction element. &#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_0571.PNG" alt="" width="188"><figcaption></figcaption></figure>
+
+In a standard configuration there is no shear load on the glue joint between the ceramic friction element and the piezo.&#x20;
+
+### Next Step
+
+* Reorder mcmaster material.
+* Order mcmaster materials personally.
+* Solder surface mount components on piezo driver pcb.
+* work on a design with a square actuator shaft rather than the cylindrical one in the above design.
+  * There might be tigher machining tolerance requirements
+  * might be easier to attach actuator to stage.
+* Work on consolidating information for measurements into one spreadsheet. Currently its spread across multiple spreadsheets.
+* Prepare mid semester documentation.
 
