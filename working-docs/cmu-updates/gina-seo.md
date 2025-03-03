@@ -4,6 +4,43 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #6
+
+**What was accomplished:**&#x20;
+
+*   Sandra and I collaborated with Felicia to enhance component generation usability and integrated metal contacts/vias into MOSFET masks.&#x20;
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-03-02 at 11.33.06 PM.png" alt="" width="250"><figcaption></figcaption></figure>
+* Remeasured scale factor, and we were slightly off as expected because microscope was not calibrated last time. These are the following measurements:&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-02 at 11.50.43 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Discussed collaboration 2 sub-projects with Stepper team of training new alignment marks on Justin's deep learning algorithm.
+  * We are able to modify existing alignment mark detector model with new data instead of creating a new model entirely.&#x20;
+  * Deliverable: EDA team will collect 25-30 images of the new alignment mark under the microscope for sufficient training&#x20;
+  * 2nd Deliverable: Do as many attempts of alignment on stepper by changing angle of stepper to be leveled within tool and shift in x direction only and take note of the number of stepper units it took to get to close alignment. Report to Stepper team.&#x20;
+* Created [Fabublox](https://www.fabublox.com/process-editor/f1b8ffe9-878d-4551-b070-a26cd98f6f1a) process for the Metrology Resistor test chip; This will be used for next week's fabrication deliverables for Metrology team.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-02 at 11.38.06 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Downloaded KLayout and followed tutorials on Youtube to learn the shortcuts and tools faster.&#x20;
+  *   A particular video that helped a lot was this [one](https://www.youtube.com/watch?v=5wvRE4HFbuw) on Cell Hierarchy and alignment of masks.&#x20;
+
+      <figure><img src="../../.gitbook/assets/Screenshot 2025-03-02 at 11.45.18 PM.png" alt=""><figcaption><p>High-level cell view</p></figcaption></figure>
+
+      <figure><img src="../../.gitbook/assets/Screenshot 2025-03-02 at 11.46.24 PM.png" alt=""><figcaption><p>Can now create many layers </p></figcaption></figure>
+
+**Roadblocks:**
+
+* Fabricating chips for Metrology will be slow as Sandra and I need someone to do HF process for us.&#x20;
+
+**Plans for Next Week:**
+
+* Do as many attempts of alignment on stepper by changing angle of stepper to be leveled within tool and shift in x direction only and take note of the number of stepper units it took to get to close alignment. Report to Stepper team.&#x20;
+* Collect 25-30 images of the new alignment mark under the microscope for sufficient training&#x20;
+* Continue practicing and creating masks on KLayout during break.&#x20;
+* Begin fabrication for Metrology resistors with Icey and Sandra.&#x20;
+
 ## Update #5
 
 **What was accomplished:**&#x20;
