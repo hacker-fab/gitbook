@@ -4,6 +4,34 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 6 (03/02/2025)
+
+### Progress Updates
+
+* Ordered AlN Parts
+
+Not much to update here, options for the Aluminum Nitride disks were ordered from both amazon (cheaper but potentially less viable option) and Heeger Materials. Ideally it will be possible to construct the new heater module after spring break. The Techspark waterjet will be down for a while, so the plan to re-cut the heater plates may need to be sidelined. I will also be working on a version which can be manually cut on a bandsaw and drill press.
+
+* Vacuum Pressure Test
+
+The line from the chamber to the pump was constructed and the chamber was pumped down to check if it can reach pressure. Our target is \~20 mTorr, though the meter only reads down to 50 mTorr, so that is our target for the test. Unfortunately, the test only made it down to 58.9 mTorr (overnight), and after tightening bolts, a second test was run and did not perform better. Debugging is in progress.
+
+&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_8123.JPEG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/IMG_8122.JPEG" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+* The Techspark waterjet will be broken for "a very long time". This is unfortunate and we should move forward as if it is not an option for us.
+
+### Plans
+
+* Clean up my documentation for midsemester
+* Redesign chamber/stand brackets to be 3D printed (no waterjet)
+* Test AlN performance with sputtering disk
+
 ## Update 5 (02/23/2025)
 
 ### Progress Updates
