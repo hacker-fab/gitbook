@@ -161,17 +161,52 @@ description: My name is Yuichi and I will be working on the probe station this s
       -> We should probably implement a function to sound a buzzer in such cases.
     * We should probably test the piezo vibration sensor on the off-the-shelf probe station we currently use to check if it works well.
 
-#### Roadbl
+#### Roadblocks
 
 * None in particular
 
 #### Plan
 
-* After we procure the USB microscope, check if we need to design additional parts (since it originally comes with a stand, I don't expect anything else will be needed).
+* After we procure the USB microscope, check if we need to design additional parts (since it originally comes with a stand, I don't expect anything else will be needed).\
+
 * Select and order a magnetic board for the base of the probe station, like [this](https://www.amazon.com/dp/B007UHG7KI).
 * Order [the measurement device](https://digilent.com/shop/analog-discovery-3/).
 * Modify the design of the magnetic base for the positioners.
 * Prepare 2 sets of the probe positioners and and 1 stage positioner (chip fixture) and test with the measurement device / a micrometer.
 
+### **Weekly Update #6 (2/24 - 3/2)**
 
+#### Accomplishments
 
+* I modified the design of the magnetic base to make it easier to rotate the micrometer handle.\
+  ![](<../../.gitbook/assets/image (141).png>) \
+  previous design\
+  ![](<../../.gitbook/assets/image (143).png>)\
+  new design
+* I modified the design of the stage positioner to fit the vacuum pump tube (we are not sure yet whether to go with the vacuum chuck or the double-sided tape for chip holding, but adding the extrusion does not hurt anything).\
+  ![](<../../.gitbook/assets/image (144).png>) \
+  previous design\
+  ![](<../../.gitbook/assets/image (145).png>)\
+  new design
+* I printed parts for one probe positioner and one stage positioner. Since I have already assembled one probe positioner, we can test a chip after assembling them.\
+  ![](../../.gitbook/assets/PXL_20250303_024427149.jpg)
+* I tested the procured USB microscope.
+  * ![](<../../.gitbook/assets/スクリーンショット 2025-03-02 午後3.59.57.png>)\
+    The display is colored red even when hue is set 0, and a little dim even when the light is on. I'll try to figure out how to fix them next week.
+  * &#x20;![](../../.gitbook/assets/PXL_20250302_204114132.jpg)\
+    I found the microsope stand to be a little cheaply made. Although it seems okay for testing, it tilts and wobbles, which might affect measurement. We need to design a fixture to hold the microscope ourselves in that case.
+* I selected [a magnetic board](https://a.co/d/1YdDGTl) by checking the size of the USB microscope and positioners.\
+  ![](../../.gitbook/assets/PXL_20250302_210708702.jpg)
+
+#### Roadblocks
+
+* None in particular
+
+#### Plan
+
+* Fix the hue and brightness isses on the USB microscope.
+* Test how stably the probe needles move in X and Y- axis using the USB microscope.
+* Assemble 1 probe positioner and 1 stage positioner.
+* Measure an actual chip, the one I made in the resistor lab session, using the measurement device or a multimeter to check if our probe station works as well as the one we currently use (compare measured values between them).
+* Test the piezo vibration sensor for the auto Z zeroing function. Manually rotate the Z-axis micrometer handle and check if it can detect the touch.
+* Consider attaching a rotational stage to the stage positioner (I discussed with Icey and Joel that it could be more convenient to enable the stage positioner rotate).

@@ -12,6 +12,72 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #6:
+
+### ALD:
+
+Progress:
+
+* Some more orders for valves gas line assembly
+
+<figure><img src="../../.gitbook/assets/image (148).png" alt="" width="563"><figcaption><p>ALD Valve Gas Schematic</p></figcaption></figure>
+
+* got quote from Swagelok that offers cylinder assembly for half of STREMS price
+  * $800 -> $400 yay
+  * assembly is 2.6" too long and unsure if the cleaning standard matches&#x20;
+  * sent email back to check if can shorten by 1"
+
+<figure><img src="../../.gitbook/assets/image (149).png" alt="" width="563"><figcaption></figcaption></figure>
+
+* Also made retaining plates for clamping down manifold
+
+<figure><img src="../../.gitbook/assets/image (146).png" alt="" width="563"><figcaption><p>Retaining Plate</p></figcaption></figure>
+
+Struggles:
+
+* Possible problem with waterjets, but can use CMR waterjet as a backup if techspark is still not up
+* Possible inconvenient design changes may be needed due to the water ampule being too long
+  * we either move manifold up: requiring making two holes bigger, redesigning chamber tube, and cutting extrusions shorter
+  * or we cut a hole under the water ampule
+
+Plans:
+
+* Continue to communicate with Zach from Swagelok and figure out the plans for water ampule
+* Waterjet the retainer plates when come back to school
+* Documentation
+
+### Packaging:
+
+Progress:
+
+* Learned a lot from Prof. Radway's packaging guest lecture
+* Found some documents talking about IO pad design:
+  * [https://www.we-online.com/files/pdf1/design-rules-wire-bonding-cbt-en.pdf](https://www.we-online.com/files/pdf1/design-rules-wire-bonding-cbt-en.pdf)
+  * [https://nrf.aux.eng.ufl.edu/\_files/documents/3201.pdf](https://nrf.aux.eng.ufl.edu/_files/documents/3201.pdf)
+  * [https://www.edaboard.com/threads/information-about-designing-io-pads.186647/](https://www.edaboard.com/threads/information-about-designing-io-pads.186647/)
+* Meeting with Icey to discuss plans for IO pads
+  * Plan to use first resistor testing chip as a trial to identity possible failure modes for wire bonding
+  * We will do regular aluminum IO pads and see how well it works&#x20;
+  * Did some math to figure out that chip cannot exceed 14mm x 14mm for wire bond clearance
+
+<figure><img src="../../.gitbook/assets/image (150).png" alt="" width="563"><figcaption><p>Meeting Note</p></figcaption></figure>
+
+* Joel and I also found out that the MEMS lab PCB mill doesn't work, but we can try to use the one that has been sitting in Techspark for a long time
+
+Struggles:
+
+* there are lots of uncertainties about how our wire bonds and IO pads will perform, so will need to have a well researched set of failure modes to look out for
+
+Plans:
+
+* do more research on IO pads and wire bonding failures
+* aim to have PCBs designed by Monday 3/10
+* PCB mill the week of school starting
+* Wire bonding around 1.5 weeks after school starts again
+* Documentation&#x20;
+
+***
+
 ## Weekly Update #5:
 
 ### ALD:
