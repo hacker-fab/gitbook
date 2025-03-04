@@ -126,3 +126,19 @@ This coming week, I want to have the real-time detection integrated. Then, if we
 * Nice work on the PRs that improve the code quality.&#x20;
 * The information you have about the model training methodology (e.g. training/validation/evaluation sets) and their respective performances (false/true positive/negative rates) would be great to include in the next demo.
 * Looking forward to your next developments!
+
+### Week 6
+
+This week I merged and tested the PRs I mentioned earlier. I also wrote and opened a [new PR](https://github.com/hacker-fab/stepper/pull/11) that lints and formats the current GUI code. I think that this PR makes the code much easier to understand and work with. I used ruff for linting and formatting and made a few manual changes as I saw fit.
+
+I had discussions about adapting our model to the new alignment markers — I think that we will be able to use the same object detector model, trained on both types of markers. We forwarded our recommendation of collecting \~30 samples for an initial proof of concept.
+
+I unfortunately didn't finish implementing real-time detection, but hope to do so next week. I found (and find) it harder than I would like to make changes in the GUI code, and I hope that incorporating the style changes in the new PR will make it easier.
+
+
+
+**Week 6 Feedback (Kent Wirant):**
+
+* Testing the PRs was good to do (thank you for finding a couple pre-existing bugs along the way!), and linting the existing code is also good to see.
+* Real-time detection in the GUI is still a good target. Let's make sure we have that implemented and evaluated for next week.
+* Please keep the [GitHub Project Tracker](https://github.com/orgs/hacker-fab/projects/21) and [Stepper Development Log](https://docs.google.com/document/d/1lmj-RURCDAT1qwImlVe1WH-Jx4YZXjfJlRWllqi0GPk/edit?tab=t.0#heading=h.cbgl0vcggmd4) up to date. It is also important to push any software progress, even if unfinished, to a development branch (labeling the commit as a WIP) for these weekly updates so we can accurately gauge progress.

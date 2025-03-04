@@ -1,5 +1,30 @@
 # Sandra You
 
+**Weekly Update #6**&#x20;
+
+1. **What was accomplished:**
+   1. Worked with Felicia to improve component generation usability and added metal contacts/vias to MOSFET masks.
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+
+
+   2. Created a Fabublox process for Metrology Resistor test chip.
+      1. [https://www.fabublox.com/process-editor/f1b8ffe9-878d-4551-b070-a26cd98f6f1a](https://www.fabublox.com/process-editor/f1b8ffe9-878d-4551-b070-a26cd98f6f1a)
+   3. Went through KLayout Primer ([https://docs.google.com/document/d/1GanXvxod2aYAZPX2OrjSmS0aSQVmM4hP6QFkcA0LCBk/edit?usp=sharing](https://docs.google.com/document/d/1GanXvxod2aYAZPX2OrjSmS0aSQVmM4hP6QFkcA0LCBk/edit?usp=sharing)) and created the simple layout shown:
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+
+
+      2. Had a lot of trouble figuring out layers, and still wasn't able to include all the layers needed. When inputting the initial layers, several aren't translated to actual layers, and using "Edit" -> "Layers" -> "Add Layers" also doesn't add the layers to the sidebar. Will work on this later.
+2. **Roadblocks:**
+   1. Not having HF training bottlenecks our ability to fabricate the Metrology resistor testing chip.
+3. **Plans for next week:**
+   1. Begin fabrication of Metrology resistor testing chip.
+   2. Look more into KLayout DRC and LVS capabilities.
+   3. Determine possibility of importing already existing GDSII files into KLayout and editing those.&#x20;
+
 **Weekly Update #5**&#x20;
 
 1. **What was accomplished:**
