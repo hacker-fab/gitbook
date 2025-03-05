@@ -77,3 +77,19 @@ The main roadblock for our team is fabricating the designed chips. We need to co
 #### **Plans for next week:**
 
 Next week, we can start learning how to fabricate the designed chips while waiting for the mask generation.
+
+
+
+### **Weekly Update #6**
+
+#### **What was accomplished:**
+
+Icey and I discussed the fabrication process for P+ doping for the NMOS body. We thought of two different methods, using photoresistance or using sacrificial glass, and decided to first proceed with photoresistance because it needs less steps. I then created the new process (link: [https://www.fabublox.com/process-editor/a551eacd-cafd-4e2c-a3ba-c0c9e2418fc1](https://www.fabublox.com/process-editor/a551eacd-cafd-4e2c-a3ba-c0c9e2418fc1)), adding steps of body diffusion after step 15 and before source/drain diffusion. I then changed some photoresistance mask patterns for the future steps to adapt the changes.
+
+#### **Roadblocks:**
+
+The main roadblock now is that I don't know what exact parameters to use for P+ doping processes, such as the heating temperature and time. I need to refer to CMOS process team since they are creating P+ doping process for PMOS.
+
+#### **Plans for next week:**
+
+Next week after sping break, I will add the parameter details for the body diffusion fabrication process referring to PMOS fabrication process. Hopefully they can add a session for HF safety training and we can start fabricating the chip.
