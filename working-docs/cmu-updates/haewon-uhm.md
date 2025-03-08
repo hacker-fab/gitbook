@@ -266,3 +266,52 @@ description: Haewon's weekly updates for the ALD and SOG.
     * Test a sample code on the local PC and run on LabVIEW
   * Look into SSH commands&#x20;
     * [https://bitbucket.org/ChrisCilino/raspberry-pi/src/master/](https://bitbucket.org/ChrisCilino/raspberry-pi/src/master/)
+
+## Update 6 (SOG)
+
+**Accomplishments**
+
+* Tested the recipe for p-doped SOG
+* Made an n-doped control using P504
+
+**Roadblocks**
+
+* Residue on the chip after annealing the chip on the hot plate for 15 mins at 350ºC
+  * If the ratio of vitrifying agent to boric acid is greater than about 2 to 1, a crystalline residue is formed upon drying: [https://patents.google.com/patent/US20080305351A1/en#:\~:text=Generally%2C%20if%20the%20vitrifying%20agent,drying%20of%20the%20aqueous%20mixture.](https://patents.google.com/patent/US20080305351A1/en)
+
+**Future Plans**
+
+* Pattern previous chips and test resistivity properly with the probe station
+* Manipulate the p-doped recipe to prevent the crystallization and formation of boric acid residue
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="188"><figcaption><p>Ratios of moles of amino/methyl/propanol to moles of boric acid</p></figcaption></figure>
+
+* Try the 700B concentrations from the Filmtronics SDS
+
+## Update 6 (ALD)
+
+**Accomplishments**
+
+* Locally connected a “Hello, World!” python code to LabVIEW
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOwKWsJhQK42oVitr4MhdSrmf93S4U8NGf9subyuvx7khPCbsLNcR1XTeKanI8rlxAo9bxHjC2u0rXTI0XV_VypA2tAc0wFT2w0gS9WLTQX229dAbEmBU99WKFhI33JVc_Xkwj?key=sK8xJtTrbIwZAN8g1FuMjUko" alt=""><figcaption><p>Dummy test for the LabVIEW connection</p></figcaption></figure>
+
+* Integrated the new library for the thermocouple DAQ into the python script&#x20;
+  *   Calls a specific channel (1 or 2) to initiate averaging temperatures continuously
+
+      <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHqN9j0g5j5r7dPmPvYfQn5o7-6XMwpROTIanoGfiXrjbGAua1cNiCqL4AXcE9vw5Xy6LyqcCCH5eHtJlz1Gh2BoJlE5pjn6mKWGBrMaOubD5WhW-p-QngfmxTIM8WwE0PLWgsag?key=sK8xJtTrbIwZAN8g1FuMjUko" alt="" width="188"><figcaption><p>Integrated into previous python code</p></figcaption></figure>
+
+      <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXckZZDbB53P3CzL0ZnqwbwrraJRge8bA4CIQBOhSJjRk5P4aCY805qjIwMqzVlauKLyt3ACdDDPTjrH7V1GE6sXU2CVB9NtBES92U2QkBSuYjSAMfTPZCcLkttUwe5-GyergzUVgg?key=sK8xJtTrbIwZAN8g1FuMjUko" alt="" width="188"><figcaption><p>Attempted to alter for multiple thermocouples</p></figcaption></figure>
+*   SSH commands are not necessary since we are calling the python script to LabVIEW from the mini PC locally
+
+    \
+    **Roadblocks**
+* Have to discuss how we will call a specific channel of the four channels that will be used through LabVIEW and python script (string, boolean, integer)
+  * All four channels simultaneously?&#x20;
+  * Continuous loop or stop at a certain point?
+* Question whether a main function is still necessary
+
+**Future Plans**
+
+* Make a python script that can be called from LabVIEW based on a certain channel based on discussion
+* Use multiple thermocouples and test the python script

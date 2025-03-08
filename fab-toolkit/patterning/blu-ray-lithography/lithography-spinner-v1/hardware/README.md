@@ -8,4 +8,4 @@ The HW needed to drive the OPU can be broken into 3 sections:
 2. PMIC
 3. Laser Diode
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>

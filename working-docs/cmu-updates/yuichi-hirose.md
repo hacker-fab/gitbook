@@ -179,7 +179,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 #### Accomplishments
 
 * I modified the design of the magnetic base to make it easier to rotate the micrometer handle.\
-  ![](<../../.gitbook/assets/image (141).png>) \
+  ![](<../../.gitbook/assets/image (141) (1).png>) \
   previous design\
   ![](<../../.gitbook/assets/image (143).png>)\
   new design
