@@ -238,3 +238,37 @@ Also the mid-semester documentation is due this week. Document the experiments y
 ·      Results: Summarize the data collected and provide an interpretation of that data.
 
 You aren’t required to follow this format exactly, but I hope it gives you insight into what we are looking for.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #6 (Mar 2)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* Performed IV and CV testing on the fabricated Ni chips ([https://docs.google.com/document/d/1z\_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs](https://docs.google.com/document/d/1z_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs))
+* Annealed the 2 Al chips at 450C for 15min
+* Wrote lab report 1&#x20;
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+My current roadblock is related to the probe station and IV testing in particular. At the beginning of the week, I performed IV and CV testing on the Nickel chips with no problem, but then, when I went to reprobe some days later, I couldn't obtain any plausible curves, like there was something wrong with the setup and the testing. I switched the cables and the probing tips, but it did not solve the problem, so that is a current roadblock that impeded me from completing all the tasks I had planned for this week.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Troubleshoot probe station testing issues
+* Reprobe annealed Ni chips
+* Reprobe annealed Al chips
+* Prepare mid-semester documentation
+
+Feedback
+
+• Cesely\
+I am not sure what is causing the issue with the probe station. It will be best to investigate the station together in person. It was good of you to check both the cable connections and the probing needles.
+
+Your plans for the coming week are good, but you should also put together a plan to optimize silicide formation to lower contact resistance by varying temperature and time. Then you should start fabricating another round of chips according to your new plan.
