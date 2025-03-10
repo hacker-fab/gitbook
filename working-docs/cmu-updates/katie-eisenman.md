@@ -4,6 +4,31 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 6 - 3/2/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+*   Ran a DC sputtering test with Melinda on Tuesday - 44.29 total minutes before we switched to an RF power supply
+
+    * No visible material deposited but it wasn't run for that long
+    * Decent plasma confinement, but there was some arcing and it looked like it was arcing to the coax cable, possibly to the shielding (see below, blue stuff is arcing)
+
+    ![](../../.gitbook/assets/Screenshot_20250302-184243.png)
+* Did AFM with Melinda on Wednesday - but got bad results :( Getting a good AFM image is hard (I have plans to overcome this, see Plans section) but I did take lots of notes and helpful pictures for my SOP. I feel a lot more confident now about setting up the machine (the tips are annoying to work with and also making sure everything is centered is difficult) and will be adding detailed notes to my SOP by next Sunday: [https://docs.google.com/document/d/1Om9A9HU8gnEE8mBFWFuM3S4So36rKFXuMusyGv7xwBE/edit?tab=t.0](https://docs.google.com/document/d/1Om9A9HU8gnEE8mBFWFuM3S4So36rKFXuMusyGv7xwBE/edit?tab=t.0)
+
+#### Roadblocks
+
+* The main roadblock is not actually having real sputtered samples to characterize, but Melinda and I talked to Matt in class on Thursday, and he said he had some old sputtered samples we could use. We are going to talk to him and get some that we can work with and see how the results from the thermally grown oxides differ so we know what we should be looking for.
+
+#### Plans
+
+* I'm doing AFM with Joel over Spring Break (this Wednesday)! He has a lot of experience and I think getting more practice with his help will ensure we can get much better images.&#x20;
+* Get sputtered samples from Matt and perform XRR and AFM trials and compare results to those from oxide samples
+* Do more DC sputtering trials after break, also do more RF trials with the new power source system
+* Do more literature review on calculating roughness from AFM
+* Finish SOPs by next Sunday, finish other documentation of previous sputtering trials
+
 ### <mark style="color:purple;">Update 5 - 2/23/2025</mark>
 
 #### Accomplishments
