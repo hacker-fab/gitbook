@@ -147,5 +147,13 @@ void loop() {
 >
 > [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
+
+{% step %}
+### Weekly Update 6
+
+1. Significant process was made this week as communication with Alicat from arduino is complete. Couple things to note on why it was difficult. Firstly, alicat does not use a standard db9 pinout for their models. This means the connector was connecting to the wrong pins. Secondly, Alicat uses RS232 but has modified it to have multiple devices on the bus. Lastly, though Alicat says they use Modbus, this did not work. Instead I am using there Serial ASCII protocol. I am not sure why modbus didn't work, but the ASCII protocol is very simple as it mainly just involves sending the unit ID and a couple more characters. Next to complete is Pfeiffer
+2. This week I was able to overcome the really big roadblock of communicating with Alicat. Communication with Pfeiffer is still not complete, but I found that Sky knows a lot about these communication protocols so he might be able to help.
+3. The following week is spring break so I don't think I will be able to do any work because I am not in Pittsburgh. The week after, I hope to figure out Pfeiffer. I talked to Jay and he said we could use the Pfeiffer pressure gauge on sputtering which should have the same protocol making the pressure gauge part easier
+{% endstep %}
 {% endstepper %}
 
