@@ -173,7 +173,47 @@ Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https:
 * Rahim and I have been working to setup an old donated sputtering RF power supply. We tried to use it in the past but the associated matching network was broken, so it couldn't strike any plasma. Now we are retrying it, buy using our 300W antenna tuner as the matching network. This should be ready sometime his week, ideally tn (Tuesday). The idea is that this power supply will have much higher Vp-p. This will help us determine if the chamber is the problem or the the low Vp-p on our radio power supply is the problem. Regardless, this may let you start doing RF process dev soon.
 * SEM image is very intersting. unfortunate that the feaure sizes we care about are a bit outside teh benchtop SEM resolution. However, based on your results. The benchtop SEM may be useful for some of Marta's work, ty!
 
+### Update 6 (2/23-3/1)
+
+#### Accomplishments
+
+*   Remade cheater plug + Re-attempted DC sputtering trials
+
+    * Was able to get the power to 10W using high pressure (100 sccm, \~200 mtorr) but still no sputtering observed
+    * Changing the chamber configuration (i.e. number of teflon layers + adding in a smaller radius teflon spacer next to the target to prevent shorting) drastically changed quality of plasma confinement
 
 
 
+    <figure><img src="../../.gitbook/assets/IMG_0079.jpg" alt=""><figcaption><p>DC Sputtering re-trial, Power above 0.1W was achieved, but no sputtering observed</p></figcaption></figure>
+* RF sputtering trial with power supply from the MCF
+  * Power supply was able to provide reasonable forward voltage (although impedance matching was a bit difficult), however no sputtering was observed
+  * Plasma confinement was poor in this trial as well, with the plasma mostly consolidated near the edge of the target.
+*   Literature Review for CV testing/electrical properties
 
+    * Found a couple of papers on CV testing setups for semiconductor oxides (linked in literature review spreadsheet)
+    * Notably, Sarah Brown's Cornell thesis has some good background information on electrical properties as well as a very interesting setup they used for probing capacitance across a sample:
+
+    <figure><img src="../../.gitbook/assets/Screen Shot 2025-03-02 at 12.09.53 PM.png" alt=""><figcaption><p>Setup for testing across whole surface of capacitor </p></figcaption></figure>
+
+    * Currently reading up on Mott-Schottky analysis theory to better understand if/how we can pull oxide properties out of it
+* Performed AFM on thermally grown oxide with the goal of getting surface roughness and correlating that information to XRR results from last week
+  * AFM is hard to do
+  * Ended up getting an image but lots of artifacts - ran out of time so will have to go back and tune gains + amplitude setpoint to get a cleaner image
+
+#### Roadblocks
+
+* Sputtering chamber still not working : (
+
+#### Plans
+
+* RF sputtering trial using MCF's matching network
+  * Should be able to read out DC bias with it attached which will at least give us some info on if the DC bias buildup is the issue
+  * Basically:&#x20;
+    * Good DC Bias readout + sputtering --> Our RF power setup has an issue
+    * Good DC Bias readout + no sputtering --> Our sputtering geometry has an issue (MFP potentially too low)
+    * No DC Bias readout --> (cry?) and check grounding/connectivity
+* Re-do AFM, focusing on tuning gains to get clearer image
+* Reach out to Matt to ask for samples of different reference thicknesses to run XRR on + practice analysis&#x20;
+* Continue CV testing literature review, come up with plan to fabricate electrode array
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
