@@ -284,7 +284,7 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Pattern previous chips and test resistivity properly with the probe station
 * Manipulate the p-doped recipe to prevent the crystallization and formation of boric acid residue
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="188"><figcaption><p>Ratios of moles of amino/methyl/propanol to moles of boric acid</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="188"><figcaption><p>Ratios of moles of amino/methyl/propanol to moles of boric acid</p></figcaption></figure>
 
 * Try the 700B concentrations from the Filmtronics SDS
 

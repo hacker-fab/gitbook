@@ -22,6 +22,7 @@
 ## Fab Toolkit
 
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
+  * [Lithography Stepper V2.1](fab-toolkit/patterning/lithography-stepper-v2.1.md)
   * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
   * [Getting started with Klayout](fab-toolkit/patterning/getting-started-with-klayout.md)
