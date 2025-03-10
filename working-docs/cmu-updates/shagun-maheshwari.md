@@ -4,6 +4,40 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 6:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:&#x20;
+
+* Conducted an additional CV measurement to gain more datapoints. Noticed that the starting Capacitance values were very different than the measurements we got from CV testing previously (80E-12 vs -5E12). This is a concern and may indicate the need to CV test right after fabrication. Double checked these measurements across different patterns on the chip and got the same results (-5E12) and an unsual pattern. Ensured that the right wires were conducted with Cesely as well. [https://drive.google.com/file/d/1xmuh6REhugHDBq0zxFUj4Al5GOF4CdKl/view?usp=drive\_link](https://drive.google.com/file/d/1xmuh6REhugHDBq0zxFUj4Al5GOF4CdKl/view?usp=drive_link)
+* Completed the resistor lab report due this past Thursday [https://docs.google.com/document/d/1RwM0FQTVCdrgQPGWhVTY6jXz1YTKiDIETPxuRRbStMo/edit?tab=t.0#heading=h.z0d3bcf842i](https://docs.google.com/document/d/1RwM0FQTVCdrgQPGWhVTY6jXz1YTKiDIETPxuRRbStMo/edit?tab=t.0#heading=h.z0d3bcf842i)
+* Wrote a python script to extract doping profile plots from the CV measurements I took (CV analysis code). [https://colab.research.google.com/drive/1E--WX9qcv\_Ggp\_nPVyZ8kAjMGIo1RbDY#scrollTo=Xbv80AJHPoTQ](https://colab.research.google.com/drive/1E--WX9qcv_Ggp_nPVyZ8kAjMGIo1RbDY#scrollTo=Xbv80AJHPoTQ)
+  * I believe that the initial noise showcased is due to the depletion region not properly being isolated within my script so it is something I will be playing around with / editing.&#x20;
+* Did a rough calculation with Jay to understand what is our ideal oxide capacitance value based on the variables we have. Noticed it was 20x greater than our first measured oxide capacitance values. Talked to Matt and discussed how it was likely due to contaminants in our oxide due to our fabrication process.&#x20;
+* Measured the dimensions of the patterns on my p-type moscap to be used in my CV analysis code.&#x20;
+
+Roadblocks:
+
+* Unsure about the disparity in CV testing measurements on the same patterns / chips, this will be an area to continuously monitor&#x20;
+* As it is spring break and last week was midterms, I will get a larger chunk of time to fabricate between the 7th-10th&#x20;
+
+Next Steps:&#x20;
+
+* RCA clean + fabricate the next set of 3 N-well Moscaps. Each N-well Moscap will have a different SOG/Constant source diffusion time to evaluate which is the idea diffusion time for our P504 dopant. This is will occur between March 7th-9th when I get back to Pittsburgh from Spring Break travel.&#x20;
+* Complete mid-semester documentation by March 9th.&#x20;
+* Play around further with my Dopant Profile analysis code in order to improve the accuracy of the parameters we are extracting [https://colab.research.google.com/drive/1E--WX9qcv\_Ggp\_nPVyZ8kAjMGIo1RbDY#scrollTo=Xbv80AJHPoTQ](https://colab.research.google.com/drive/1E--WX9qcv_Ggp_nPVyZ8kAjMGIo1RbDY#scrollTo=Xbv80AJHPoTQ)
+
+Feedback
+
+• Cesely
+
+Well done this week.
+
+A likely cause of the change in capacitance is just exposure to more contaminants. Based on some quick research humidity (due to condensation or water absorption) and ionic contamination (from body oils, salts, etc.) can reduce the insulation resistance of test fixtures dramatically. This then can alter our measured results.
+
+This week your goal should be to finish fabricating the test chips completely, which you have a good plan for. That way next week you can focus on probing and analyzing results as well putting together presentation #2.
+
 ## Update 5:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
