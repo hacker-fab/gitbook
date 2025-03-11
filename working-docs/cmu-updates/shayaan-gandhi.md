@@ -154,6 +154,16 @@ void loop() {
 1. Significant process was made this week as communication with Alicat from arduino is complete. Couple things to note on why it was difficult. Firstly, alicat does not use a standard db9 pinout for their models. This means the connector was connecting to the wrong pins. Secondly, Alicat uses RS232 but has modified it to have multiple devices on the bus. Lastly, though Alicat says they use Modbus, this did not work. Instead I am using there Serial ASCII protocol. I am not sure why modbus didn't work, but the ASCII protocol is very simple as it mainly just involves sending the unit ID and a couple more characters. Next to complete is Pfeiffer
 2. This week I was able to overcome the really big roadblock of communicating with Alicat. Communication with Pfeiffer is still not complete, but I found that Sky knows a lot about these communication protocols so he might be able to help.
 3. The following week is spring break so I don't think I will be able to do any work because I am not in Pittsburgh. The week after, I hope to figure out Pfeiffer. I talked to Jay and he said we could use the Pfeiffer pressure gauge on sputtering which should have the same protocol making the pressure gauge part easier
+
+> **Feedback**
+>
+> Great work finally getting Alicat to work! This week I'd work to establish the control loop we've been needing for gas control—essentially, the completed and tested routine the Arduino can run based on a gas pressure value input. Talk to Jay for more details on what parameters he wants for that routine. I imagine it would be a quick refactor of the existing code you wrote in the sputtering-controls repository. In parallel, work on the Pfeiffer serial communication. Sky can figure it out but, like Anirud said in lab yesterday, it's important you learn to do this work too since it's the entirety of the engineering process.
+>
+> In terms of the weekly update structure, again, indicate in the master doc what tests you ran and what debugging you attempted. If you're using a separate doc, make sure it reads like a proper development log with dated entries that could easily be merged into a final dev log. Your weekly update needs to be much more detailed. Simply saying "RS232 but has modified it to have multiple devices on the bus" or "the ASCII protocol is very simple as it mainly just involves sending the unit ID and a couple more characters" or "the connector was connecting to the wrong pins" is not enough. If you didn't link a doc in this update or in a recent entry in the master doc, you must provide exactly which pins are swapped, what the RS232 problem is, how to use the ASCII protocol, etc here. This is not documented well enough for anyone to replicate or use to debug.
+>
+> Also, spell check these updates and use proper grammar. This is an informal documentation assignment that you should not be rushing. I don't like taking off points for something that plugging into ChatGPT or Grammarly could solve instantly.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
