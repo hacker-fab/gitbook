@@ -4,13 +4,13 @@
 
 ## Hardware Specs
 
-<table><thead><tr><th width="279">Cost</th><th>$3,062.03</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>6 hours</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Exposure Size (Diagonal)</td><td>1.2 mm</td></tr><tr><td>Exposure Time</td><td>9 seconds</td></tr><tr><td>Mechanical Step Size</td><td>1.5 µm</td></tr><tr><td>Mechanical Repeatability</td><td>5 µm (to verify)</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
+<table><thead><tr><th width="279">Cost</th><th>$3,015.44</th></tr></thead><tbody><tr><td>Approximate Build Time</td><td>6 hours</td></tr><tr><td>Optical Resolution</td><td>2 µm</td></tr><tr><td>Developed Resolution</td><td>2 µm</td></tr><tr><td>Tiling Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Overlay Alignment Accuracy</td><td>5 µm</td></tr><tr><td>Reticle (Exposure) Dimensions </td><td>1.04mm by 0.58mm</td></tr><tr><td>Exposure Time</td><td>8 seconds</td></tr><tr><td>Mechanical Step Size</td><td>1.5 µm</td></tr><tr><td>Mechanical Repeatability</td><td>5 µm (to verify)</td></tr><tr><td>Maximum Wafer Size</td><td>2 cm by 2 cm</td></tr><tr><td>Tool Size</td><td>30 cm x 36 cm x 20 cm</td></tr></tbody></table>
 
 ## Hardware Description
 
 Our design was based on [Sam Zeloof](http://sam.zeloof.xyz/maskless-photolithography/) and [Huygens Optics](https://www.youtube.com/watch?v=_w0Z2Y5vaAQ)’ versions of this tool, which is essentially a projector connected to a microscope. We use a 10x objective for demagnification and a mechanical XYZ stage for positioning.
 
-Stepper version 2 has greatly improved mechanical performance over V1 while using the same DLP chip from Texas Instruments. Several factors led to this improvement:
+Stepper version 2 has greatly improved optical and mechanical performance over V1 while using the same DLP chip from Texas Instruments. Several factors led to this improvement:
 
 1. Instead of an off the shelf projector with a flimsy plastic housing, we switched to the [TI DLPDLCR471TPEVM evaluation board](https://www.ti.com/tool/DLPDLCR471TPEVM). This allows for a more robust physical connection to the projector housing, thus eliminating vibrations. It also has much better documentation.
 2. By swapping to a finite conjugate microscope objective, the optical path length is reduced from \~250 to 160 mm. This reduces the moment of inertia of the optics subassembly, therefore also reducing vibration.
@@ -23,38 +23,32 @@ Stepper version 2 has greatly improved mechanical performance over V1 while usin
 
 * M3 and M4 taps
 * 3D printer
-* Pick-and-place machine
-* Reflow oven
 * Solder paste (preferably a syringe)
+* Tweezers or pick and place machine
+* Reflow oven
 * Calipers
 
 ## Bill of Materials
 
-Total Cost: $3,062.28 (doesn't include computer and peripherals)
+Total Cost: $3,015.44 or\*\* $3106.44 (excluding computer & peripherals) (last updated March 16, 2025)
 
-<table><thead><tr><th width="337">Name</th><th width="64">Qty</th><th width="128">Total</th><th>Link</th></tr></thead><tbody><tr><td>TI DLP Evaluation Module</td><td>1</td><td>$999</td><td><a href="https://www.ti.com/tool/DLPDLCR471TPEVM">TI</a></td></tr><tr><td>Assorted Optics</td><td>1</td><td>$736.52</td><td><a href="https://www.thorlabs.com/uploadcart/">Thorlabs</a>*</td></tr><tr><td>10X Din Plan Objective</td><td>1</td><td>$150</td><td><a href="https://www.edmundoptics.com/p/10x-din-plan-commercial-grade-objective/5386/">Edmunds</a></td></tr><tr><td>FLIR Blackfly S Camera w/ Sony IMX183</td><td>1</td><td>$699</td><td><a href="https://www.edmundoptics.com/p/bfs-u3-200s6c-c-usb3-blackflyreg-s-color-camera/40178/">Edmunds</a></td></tr><tr><td>USB Type A to Micro B locking cable</td><td>1</td><td>$24.6</td><td><a href="https://www.edmundoptics.com/p/usb-30-locking-cable-3m-length/29172/">Edmunds</a></td></tr><tr><td>19V 4.74A Projector Power Supply</td><td>1</td><td>$17.99</td><td><a href="https://www.amazon.com/Nobsound-Adapter-Universal-Charger-100-240V/dp/B074J81XRB/ref=sr_1_9?keywords=19v+power+supply&#x26;qid=1685981984&#x26;sr=8-9">Amazon</a></td></tr><tr><td>XYZ Stage 40mm</td><td>1</td><td>$125</td><td><a href="https://www.amazon.com/Pricision-40x40mm-Trimming-Bearing-Platform/dp/B07D7N9GT6/ref=sr_1_4?crid=32WSW494CE1YE&#x26;keywords=30mm+xyz+stage&#x26;qid=1706559232&#x26;sprefix=30mm+xyz+stage%2Caps%2C80&#x26;sr=8-4&#x26;ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Amazon</a></td></tr><tr><td>Rotation Stage</td><td>1</td><td>$58.99</td><td><a href="https://www.amazon.com/Displacement-Platform-FineTuning-Production-Machinery/dp/B0972XB4NW/ref=sr_1_3?crid=2M0YGWAA27LQA&#x26;keywords=60mm+rotation+stage&#x26;qid=1706559352&#x26;sprefix=60mm+rotation+stage%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>NEMA 28 Steppers</td><td>4</td><td>$71.96</td><td><a href="https://www.amazon.com/gp/product/B07PNV7RBW/ref=ox_sc_act_title_1?smid=A3HCJ70Z0RHBT6&#x26;th=1">Amazon</a></td></tr><tr><td>Arduino Uno (Elegoo)</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_6?crid=25HW74RSV1WUQ&#x26;keywords=arduino&#x26;qid=1706561234&#x26;sprefix=arduino%2Caps%2C115&#x26;sr=8-6">Amazon</a></td></tr><tr><td>CNC Shield for Arduino V3.0</td><td>1</td><td>$10.99</td><td><a href="https://www.amazon.com/Organizer-Expansion-Stepper-Heatsink-Arduino/dp/B07TT3C3HB/ref=sr_1_1?crid=3U63T1GH2IYGH&#x26;keywords=arduino+stepper+shield&#x26;qid=1706561169&#x26;sprefix=arduino+stepper+shield%2Caps%2C104&#x26;sr=8-1">Amazon</a></td></tr><tr><td>Stepper Motor Drivers</td><td>1</td><td>$22.99</td><td><a href="https://www.amazon.com/BIGTREETECH-Direct-TMC2208-TMC2209-TMC5160/dp/B07ZPYKL46?th=1">Amazon</a></td></tr><tr><td>Flexible Shaft 1/8"</td><td>1</td><td>$6.49</td><td><a href="https://www.amazon.com/uxcell-Flexible-Attachment-Grinder-Extension/dp/B07PLCKQMQ/ref=sr_1_2?crid=3BUQUGXE0CYTJ&#x26;keywords=Flexible+Shaft+Inner+Core&#x26;qid=1699635781&#x26;sprefix=flexible+shaft+inner+core%2Caps%2C176&#x26;sr=8-2">Amazon</a></td></tr><tr><td>Shield Power Supply 12V</td><td>2</td><td>$23.98</td><td><a href="https://www.amazon.com/ALITOVE-Adapter-Converter-100-240V-5-5x2-1mm/dp/B01GEA8PQA/ref=sr_1_4?keywords=12v+power+supply&#x26;qid=1706561572&#x26;sr=8-4">Amazon</a></td></tr><tr><td>2.5mm Barrel Connector</td><td>1</td><td>$8.99</td><td><a href="https://www.amazon.com/Fancasee-Replacement-Degree-Pigtail-Supply/dp/B081TXY6ML/ref=sr_1_3?crid=1LPRM16V3EL0T&#x26;keywords=2.5mm+dc+plug+pigtail&#x26;qid=1706561706&#x26;sprefix=2.5mm+dc+plug+pigtail%2Caps%2C94&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Vacuum pump for chuck</td><td>1</td><td>$26.99</td><td><a href="https://www.amazon.com/Vacuum-Pump-Diaphragm-Compressor-Silicone/dp/B071GL3XXQ/ref=pd_day0fbt_vft_none_img_sccl_1/144-6072015-7453507?pd_rd_w=PBVUD&#x26;content-id=amzn1.sym.740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_p=740603ef-5416-4c6c-8609-ceb99d2a0eaf&#x26;pf_rd_r=9VDFX53S60MBXC13MG3J&#x26;pd_rd_wg=Nw0MD&#x26;pd_rd_r=886a99a9-24db-410f-b398-69cd16cf50f2&#x26;pd_rd_i=B071GL3XXQ&#x26;psc=1">Amazon</a></td></tr><tr><td>M2.5 Screw Assortment</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/VIGRUE-Button-Washers-Assortment-Storage/dp/B08VHVB4H5/ref=sr_1_3?crid=24MVS2UJSXWC&#x26;keywords=m2.5&#x26;qid=1695828225&#x26;sprefix=m2.5%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Collapsible Magnetic Tray for Vibration</td><td>1</td><td>$11.99</td><td><a href="https://www.amazon.com/Collapsible-Magnetic-Foldable-Silicone-Organizes/dp/B0B7JBHK2N">Amazon</a></td></tr><tr><td>410nm Lumiled LED</td><td>4</td><td>$27.96</td><td><a href="https://www.digikey.com/en/products/detail/lumileds/L1F3-U400200012000/7389568">Digikey</a></td></tr><tr><td>Pico-spox 10pos Vertical Connector</td><td>2</td><td>$1.86</td><td><a href="https://www.digikey.com/en/products/detail/molex/0874371043/717647">Digikey</a></td></tr></tbody></table>
+<table><thead><tr><th width="337">Name</th><th width="64">Qty</th><th width="128">Total</th><th>Link</th></tr></thead><tbody><tr><td>TI DLP Evaluation Module</td><td>1</td><td>$999</td><td><a href="https://www.ti.com/tool/DLPDLCR471TPEVM">TI</a></td></tr><tr><td>Assorted Optics</td><td>1</td><td>$736.52</td><td><a href="https://www.thorlabs.com/uploadcart/">Thorlabs</a>*</td></tr><tr><td>10X Din Plan Objective</td><td>1</td><td>$159</td><td><a href="https://www.edmundoptics.com/p/10x-din-plan-commercial-grade-objective/5386/">Edmunds</a></td></tr><tr><td>Basler acA1920-40uc w/ Sony IMX249 <br>(recommended), or**<br>FLIR Blackfly S Camera w/ Sony IMX183</td><td>1</td><td>$609.00<br>or**<br>$700.00</td><td><a href="https://www.baslerweb.com/en-us/shop/aca1920-40uc/">Basler</a><br>or**<br><a href="https://www.edmundoptics.com/p/bfs-u3-200s6c-c-usb3-blackflyreg-s-color-camera/40178/">Edmunds</a></td></tr><tr><td>USB Type A to Micro B locking cable</td><td>1</td><td>$25</td><td><a href="https://www.edmundoptics.com/p/usb-30-locking-cable-3m-length/29172/">Edmunds</a></td></tr><tr><td>19V 4.74A Projector Power Supply</td><td>1</td><td>$17.99</td><td><a href="https://www.amazon.com/Nobsound-Adapter-Universal-Charger-100-240V/dp/B074J81XRB/ref=sr_1_9?keywords=19v+power+supply&#x26;qid=1685981984&#x26;sr=8-9">Amazon</a></td></tr><tr><td>XYZ Stage 40mm</td><td>1</td><td>$125</td><td><a href="https://www.amazon.com/Pricision-40x40mm-Trimming-Bearing-Platform/dp/B07D7N9GT6/ref=sr_1_4?crid=32WSW494CE1YE&#x26;keywords=30mm+xyz+stage&#x26;qid=1706559232&#x26;sprefix=30mm+xyz+stage%2Caps%2C80&#x26;sr=8-4&#x26;ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0">Amazon</a></td></tr><tr><td>Rotation Stage</td><td>1</td><td>$69.34</td><td><a href="https://www.amazon.com/Displacement-Platform-FineTuning-Production-Machinery/dp/B0972XB4NW/ref=sr_1_3?crid=2M0YGWAA27LQA&#x26;keywords=60mm+rotation+stage&#x26;qid=1706559352&#x26;sprefix=60mm+rotation+stage%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>NEMA 28 Steppers</td><td>4</td><td>$71.96</td><td><a href="https://www.amazon.com/gp/product/B07PNV7RBW/ref=ox_sc_act_title_1?smid=A3HCJ70Z0RHBT6&#x26;th=1">Amazon</a></td></tr><tr><td>Arduino Uno (Elegoo)</td><td>1</td><td>$16.99</td><td><a href="https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU/ref=sr_1_6?crid=25HW74RSV1WUQ&#x26;keywords=arduino&#x26;qid=1706561234&#x26;sprefix=arduino%2Caps%2C115&#x26;sr=8-6">Amazon</a></td></tr><tr><td>CNC Shield for Arduino V3.0</td><td>1</td><td>$9.99</td><td><a href="https://www.amazon.com/Organizer-Expansion-Stepper-Heatsink-Arduino/dp/B07TT3C3HB/ref=sr_1_1?crid=3U63T1GH2IYGH&#x26;keywords=arduino+stepper+shield&#x26;qid=1706561169&#x26;sprefix=arduino+stepper+shield%2Caps%2C104&#x26;sr=8-1">Amazon</a></td></tr><tr><td>Stepper Motor Drivers</td><td>1</td><td>$22.99</td><td><a href="https://www.amazon.com/BIGTREETECH-Direct-TMC2208-TMC2209-TMC5160/dp/B07ZPYKL46?th=1">Amazon</a></td></tr><tr><td>Shield Power Supply 12V</td><td>2</td><td>$23.98</td><td><a href="https://www.amazon.com/ALITOVE-Adapter-Converter-100-240V-5-5x2-1mm/dp/B01GEA8PQA/ref=sr_1_4?keywords=12v+power+supply&#x26;qid=1706561572&#x26;sr=8-4">Amazon</a></td></tr><tr><td>2.5mm Barrel Connector</td><td>1</td><td>$7.99</td><td><a href="https://www.amazon.com/Fancasee-Replacement-Degree-Pigtail-Supply/dp/B081TXY6ML/ref=sr_1_3?crid=1LPRM16V3EL0T&#x26;keywords=2.5mm+dc+plug+pigtail&#x26;qid=1706561706&#x26;sprefix=2.5mm+dc+plug+pigtail%2Caps%2C94&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Vacuum pump for chuck</td><td>1</td><td>$26.52</td><td><a href="https://www.amazon.com/Vacuum-diaphragm-compressor-75KPA-vacuum/dp/B08RCRJH9M">Amazon</a></td></tr><tr><td>M2.5 Screw Assortment</td><td>1</td><td>$30.56</td><td><a href="https://www.amazon.com/VIGRUE-Button-Washers-Assortment-Storage/dp/B08VHVB4H5/ref=sr_1_3?crid=24MVS2UJSXWC&#x26;keywords=m2.5&#x26;qid=1695828225&#x26;sprefix=m2.5%2Caps%2C112&#x26;sr=8-3">Amazon</a></td></tr><tr><td>Collapsible Magnetic Tray for Vibration</td><td>1</td><td>$21.99</td><td><a href="https://www.amazon.com/Collapsible-Magnetic-Foldable-Silicone-Organizes/dp/B0B7JBHK2N">Amazon</a></td></tr><tr><td>410nm Lumiled LED</td><td>4</td><td>$40.20</td><td><a href="https://www.digikey.com/en/products/detail/lumileds/L1F3-U400200012000/7389568">Digikey</a></td></tr><tr><td>Pico-spox 10pos Vertical Connector</td><td>2</td><td>$1.42</td><td><a href="https://www.digikey.com/en/products/detail/molex/0874371043/717647">Digikey</a></td></tr></tbody></table>
 
 \*Upload this CSV file to Thorlabs for all the optomechanical parts + beamsplitter.
 
 {% file src="../../.gitbook/assets/StepperV2_Thorlabs_BOM.csv" %}
 
+\*\*The Basler camera and FLIR camera are mechanically interchangeable, but our software implementation for the Basler camera is more reliable and freely accessible (FLIR code distribution is restricted). For software installation simplicity, we recommend using the Basler camera.
+
 ## Design File Summary
 
 Note: the OnShape folder is organized poorly because it was our first time using it. Won't happen again, we promise!
 
-<table><thead><tr><th width="216">File Name w/ link</th><th width="315">Description</th><th width="69">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Referance for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://drive.google.com/drive/u/1/folders/179fKzkOVRPVE_OXGE6WHWXImXfUCj_XX">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft.</td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/stepper">Stepper Software</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
+<table><thead><tr><th width="216">File Name w/ link</th><th width="315">Description</th><th width="69">QTY</th><th>Tools Used</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">Stepper V2 Assembly</a></td><td>Reference for assembling optical components</td><td>1</td><td>Driver kit</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/v/b7cf6897006e1bbfe46b354b/e/0e8c1f104c4c4708545e72bb">Adapter plate</a></td><td>Connects the optics to the projector. Matches hole pattern on DLP housing and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1A53">Thorlabs flange</a>.</td><td>1</td><td>Water jet/<br>Online CNC shop/<br>3D print</td></tr><tr><td><a href="https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc">Base Plate</a></td><td>Structural base for aligning the micropositioning stage to the projector and optics.</td><td>1</td><td>Manual mill/<br>Online CNC shop/<br>Water jet</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://drive.google.com/drive/u/1/folders/179fKzkOVRPVE_OXGE6WHWXImXfUCj_XX">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft.</td><td>3</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td><td>3D printed</td></tr><tr><td><a href="https://github.com/hacker-fab/stepper">Stepper Software</a></td><td>Python script for controlling the projector. Check for recent version.</td><td></td><td>Laptop</td></tr><tr><td><a href="https://github.com/gnea/grbl">GRBL Arduino CNC firmware</a></td><td>Firmware for stage microcontroller.</td><td></td><td>Arduino Uno, IDE, Laptop</td></tr></tbody></table>
 
 ## Build Instructions
 
-Provide detailed, step-by-step construction instructions for the submitted hardware:
-
-* Include all necessary information for reproducing it.
-* Explain and (when possible) characterize design decisions. Include any design alternatives you created.
-* Use visual instructions such as schematics, images and videos.
-* Clearly reference design files and component parts described in the Design file summary and the Bill of materials summary
-* Highlight any potential safety concerns.
-* Tips and tricks to simplify the assembly process
-* Possible errors that might occur during assembly and how to rectify them
+Building the Stepper V2 requires some simple CNC machining, PCB soldering, 3D printing, and other assembly steps, followed by software installation.
 
 ### Get the Metal Parts Made
 
@@ -78,7 +72,7 @@ When downloading the Adapter Plate DXF for water jetting, go to Config > Water j
 
 Base Plate: [Click here](https://cad.onshape.com/documents/052936cc5219e79ce8b1d191/w/decf2990870bd6e2bca78fa2/e/bd3bd601a477f0977cdc93cc) for a drawing to have open while drilling all the holes. Start with a center drill then use an appropriately sized drill bit for M4 and M6 holes. You may also switch to 8-32 and 1/4-20 if you already have the taps for those, and no other parts will change if you do so.
 
-Adapter plate: This should be manually machineable but we haven't tried.
+Adapter plate: This should be manually machinable but we haven't tried.
 
 ### Solder the UV LED PCB
 
@@ -94,9 +88,9 @@ When ordering the PCB, the manufacturer might send you an email asking about a m
 
 We used 410 nm UV LEDs on this PCB. We found that two LEDs in series is sufficient to produce enough UV light for patterning. We also found connectors that are compatible with the cable in the TI DLP dev kit.
 
-When assembling the UV LED PCB, it is easiest to use a solder syringe to carefully deposit the paste onto the LED pads and connector pads. If you try to use a stencil mask, it is very easy to smear the paste, so this is not recommended.
+When assembling the UV LED PCB, it is easiest to use a solder syringe to carefully deposit the paste onto the LED pads and connector pads. If you try to use a stencil mask, it is very easy to smear the paste, so this is not recommended.&#x20;
 
-Once the paste is applied, you can use a pick and place machine to align the components with their pads. Keep in mind that you need to use a nozzle that is small enough to pick up the LEDs. Finally, you can put the PCB into a reflow oven to solder the components to the board.
+Once the paste is applied, align the components with their pads (i.e. using tweezers or a pick and place machine). Keep in mind that you need to use a nozzle that is small enough to pick up the LEDs. Finally, you can put the PCB into a reflow oven to solder the components to the board.
 
 Below is a completed version of the PCB - **note the polarity!** This image shows the correct orientation of the LEDs (credit to University of Utah for the photo). If you have it flipped, then the projector will project an image briefly before shutting itself off:\
 ![](<../../.gitbook/assets/image (1) (1) (1) (1) (1).png>)
@@ -169,7 +163,7 @@ See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336
 
 5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamplsitter cube should be parallel.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
@@ -187,7 +181,7 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 <table><thead><tr><th width="315">File Name w/ link</th><th width="362">Description</th><th width="224">QTY</th></tr></thead><tbody><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/e2e1e76eaab599d9a1c4501e">40mm Stepper Mount</a> (link to <a href="https://drive.google.com/drive/u/1/folders/179fKzkOVRPVE_OXGE6WHWXImXfUCj_XX">SW</a>)</td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/3f7d616dea69d10f46394ab8/w/89eaec6dabe956215608e0d5/e/7d51357363ef098a886662ee">Sliding Shaft Coupler</a></td><td>Press fits onto micrometer and slides on motor D-shaft.</td><td>3</td></tr><tr><td><a href="https://cad.onshape.com/documents/7046af5f6b7e48bd4bd933bb/w/60cbad214f94f1caf8b51a12/e/fa5e024aa8cfe72d30af884d">Spacer</a></td><td>Tiny part for offsetting micrometer stop on Y axis</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/ffd5f395bec2204af40685e2">60mm Theta to 40mm XYZ Bracket</a></td><td>Mounts the theta stage at a right angle to the rest of the stage.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/f6235112d9655ce90371982d/w/a0efdc80157be57df12af66d/e/fe48a0682c07d2cebc332aac">Vacuum Chuck</a></td><td>Connects to a vacuum hose to hold the chip. Corner jig aids alignment.</td><td>1</td></tr></tbody></table>
 
-1. Unscrew all the, micrometers, L-stops and stage locks from the micrometer stage. Separate the X, Y and Z axes. Throughout the assmebly process we will be replacing the stock screws with \~4mm longer ones as we reattach the various components to the stage. All 3d printed mounts are 4mm thick at the screw holes. Have your M2.5 screw kit handy!
+1. Unscrew all the, micrometers, L-stops and stage locks from the micrometer stage. Separate the X, Y and Z axes. Throughout the assembly process we will be replacing the stock screws with \~4mm longer ones as we reattach the various components to the stage. All 3d printed mounts are 4mm thick at the screw holes. Have your M2.5 screw kit handy!
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="338"><figcaption></figcaption></figure>
 
@@ -195,7 +189,7 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-3. The shaft couplers should slide on the motor shafts with zero slop. Modify dimensions and re-print if this is not the case. Graphite lubricant may help decrese sliding friction, and the fit will get looser after repeated axial movement as the steel deforms and smooths the plastic.
+3. The shaft couplers should slide on the motor shafts with zero slop. Modify dimensions and re-print if this is not the case. Graphite lubricant may help decrease sliding friction, and the fit will get looser after repeated axial movement as the steel deforms and smooths the plastic.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -272,9 +266,9 @@ To install and run the software, you will need a Windows system that has two USB
 
 1. Arduino GRBL firmware
 2. Python version 3.10 and Python libraries
-3. FLIR Blackfly S Camera Drivers & Viewer
+3. Basler camera _or_ FLIR Blackfly S Camera Drivers & Viewer
 
-After these are installed, you may clone and instantiate the stepper repository on your device. Optionally, you can develop your own driver for the Flir camera to allow a GUI-integrated live camera preview of the stage. Instructions for such are included below as well.
+After these are installed, you may clone and instantiate the stepper repository on your device. Our GUI supports a live camera preview of the stage when using the Basler camera. Optionally, you can develop your own driver for using the FLIR camera instead. Instructions for such are included below as well.
 
 #### Arduino GRBL Installation
 
@@ -287,59 +281,57 @@ After these are installed, you may clone and instantiate the stepper repository 
 
 3. To test that the installation was successful, open Arduino IDE and open the serial monitor. You should see text indicating that a version of GRBL is running on your Arduino.
 
-#### Python Version 3.10
+#### Python Version 3.10 (if using FLIR camera)
 
-At the time of development the latest Python version the Flir Spinnaker SDK supports is version 3.10. As such, you must install libraries and run the software for/from this version.
+If you are using the FLIR camera, you must install Python version 3.10. This is because at the time of development, the latest Python version the Flir Spinnaker SDK supports is version 3.10. As such, you must install libraries and run the software for/from this version. If you are using the Basler camera, later versions of Python should be compatible with the GUI software.
 
 1. We highly recommend using a Linux-based terminal on your Windows system for installation. One option is the [official git terminal](https://gitforwindows.org/). The following instructions assume you are using this terminal environment.
 2. Open git terminal. Check if you have Python 3.10 already installed on your system by running `py -3.10 -V`. If no installation is present, download and install Python 3.10 from the [official download link](https://www.python.org/downloads/release/python-3100/).
-3. Import necessary libraries with pip
-   * `pip install pillow, serial, opencv-python`
-   * TKinter should be bundled with the 3.10 download, but if not found, it must be installed with local package manager: not pip
-   * PIL / Pillow -> `pip install pillow`
-   * Serial -> `pip install serial`
-   * cv2 -> `pip install opencv-python`
-   * Do not install `camera` library with pip, as it will conflict with the Flir python library
+3. Install necessary software dependencies. Follow the instructions on the [GitHub repository](https://github.com/hacker-fab/stepper) for instructions on how to set up a Python virtual environment for this purpose.
 
-#### FLIR Blackfly S Drivers & Viewer Installation
+#### Basler Camera Drivers & Viewer Installation (WIP)
 
-(WIP)
+If you are using the Basler camera, install its necessary drivers and its GUI for live camera output.&#x20;
+
+#### FLIR Blackfly S Drivers & Viewer Installation (WIP)
+
+If you are using the FLIR camera, install FLIR camera drivers. Also install the FLIR Spinview GUI to view camera output. For integrating this within the GUI, follow the instructions in [Optional: FLIR Spinnaker SDK (for software developers)](lithography-stepper-v2-build-work-in-progress.md#optional-flir-spinnaker-sdk-for-software-developers)
 
 #### Stepper GUI Installation
 
 {% @github-files/github-code-block url="https://github.com/hacker-fab/stepper" %}
 
-1. Open git terminal to the location where you want the Stepper GUI software to be downloaded. Then, run the following commands:
+Follow the steps outlined in the linked repository (recommended). Alternatively, follow the steps below.
+
+1. pen git terminal to the location where you want the Stepper GUI software to be downloaded. Then, run the following commands:
 
 * `git clone https://github.com/hacker-fab/stepper .`
 * `cd stepper`
 
-2. If you have access to the private Flir camera submodule repository, then also enter the following commands:
+2. Install software dependencies listed in the `requirements.txt` file
+3. If you are using the FLIR camera and have access to the private FLIR camera submodule repository, then also enter the following commands:
 
 * `git submodule init`
 *   `git submodule update`
 
 
 
-    Otherwise, disable the camera in the software. To do this, go to the stepper/litho/scripts/config.py file and toggle the necessary flags at the top (i.e. RUN\_WITH\_CAMERA = False). (Or, if are using a different camera, update config.py to select your camera instead. The camera must implement the CameraModule interface.)
+    Otherwise, go to the stepper/config.toml file and toggle the necessary flags to select your camera (or disable it).
 
-3. Run the software.
-
-* `py -3.10 ./litho/scripts/Lithographer.py`
-
-4. Run lithographer.py with Python 3.10:
-   * `py -3.10 ./litho/scripts/Lithographer.py`
+3. Configure `config.toml` with the settings most appropriate for your Stepper build and camera configuration.
+4. Run gui.py with Python 3.10:
+   * `py -3.10 ./src/gui.py`
 5. For instructions on how to use the Stepper GUI software (including troubleshooting), please see the [Standard Operating Procedures](../../standard-operating-procedures/patterning-sop-stepper-v2/).
 
-#### Optional: Flir Spinnaker SDK (for software developers)
+#### Optional: FLIR Spinnaker SDK (for software developers)
 
 The Stepper V2 build uses a Teledyne Flir camera and custom software written for it. The Stepper software uses the Flir Spinnaker SDK to integrate a live camera preview of the stepper's stage. Since the SDK and its derivative software are closed-source components, we currently do not possess the legal authority to grant access to our custom Flir camera driver to third parties. The following steps describe how to install the Flir Spinnaker SDK and how to develop your own driver. Please carefully review all terms, agreements, and licensing requirements. Follow the steps below.
 
 1. Create an account on the Flir website ([https://www.flir.com/](https://www.flir.com/)), or, if you already have one, sign in.&#x20;
 2. Download the Flir Spinnaker SDK ([https://www.flir.com/products/spinnaker-sdk/](https://www.flir.com/products/spinnaker-sdk/)) for Windows.
 3. Decompress your download if necessary. Open the README.txt file in the (decompressed) download and follow the installation instructions inside.&#x20;
-4. Test that the installation was successful by running an example program. To do this, first make sure your Flir camera is connected. Then, open git terminal in the "Examples" folder. Then, choose any example .py script and run it by entering `py -3.10 NameOfYourScript.py`. Ensure that the program output reports connection and communication with your Flir camera.
-5.  To write a Flir camera driver compatible with the rest of the software, you must conform to the stepper's [CameraModule API](https://github.com/hacker-fab/stepper/blob/main/src/camera/camera_module.py). Within your custom "FlirCamera" class, which should be defined as a subclass of CameraModule and a Flir event handler, we recommend implementing at least the following functions:
+4. Test that the installation was successful by running an example program. To do this, first make sure your Flir camera is connected. Then, open git terminal in the "Examples" folder. Then, choose any example .py script and run it by entering `py -3.10 NameOfYourScript.py`. Ensure that the program output reports connection and communication with your FLIR camera.
+5.  To write a Flir camera driver compatible with the rest of the software, you must conform to the stepper's [CameraModule API](https://github.com/hacker-fab/stepper/blob/main/src/camera/camera_module.py). Within your custom "FlirCamera" class, which should be defined as a subclass of CameraModule and a Flir event handler, we recommend implementing the following functions:
 
     * def \_\_init\_\_(self)
     * def setStreamCaptureCallback(self, callback)
@@ -353,17 +345,7 @@ The Stepper V2 build uses a Teledyne Flir camera and custom software written for
     * a Flir image event handler
 
     We also suggest optimizing live preview performance by selecting a low-overhead color processing scheme and by displaying only the most recently acquired image (i.e. newest first). The Flir SDK code examples show how you might do this.
-6. In config.py, assign "camera" to an instance of your FlirCamera class. For instance:
-
-```python
-RUN_WITH_CAMERA: bool = True # set to True to test camera preview 
-RUN_WITH_STAGE: bool = False # set to True if controlling the stage from GUI
-if(RUN_WITH_CAMERA):
-  # ...
-  import camera.flir.flir_camera as flir # in camera/flir/flir_camera.py...
-  camera = flir.FlirCamera() # instantiate a FlirCamera
-  # the camera variable is imported and used by the remaining stepper code.
-```
+6. In config.toml, select the FLIR camera. to an instance of your FlirCamera class.
 
 ### Final Alignment (WIP)
 
