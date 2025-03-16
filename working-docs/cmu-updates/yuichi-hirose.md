@@ -204,9 +204,62 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 #### Plan
 
-* Fix the hue and brightness isses on the USB microscope.
+* Fix the hue and brightness issue on the USB microscope.
 * Test how stably the probe needles move in X and Y- axis using the USB microscope.
 * Assemble 1 probe positioner and 1 stage positioner.
-* Measure an actual chip, the one I made in the resistor lab session, using the measurement device or a multimeter to check if our probe station works as well as the one we currently use (compare measured values between them).
+* Measure an actual chip, the one we made in the resistor lab session, using the measurement device or a multimeter to check if our probe station works as well as the one we currently use (compare measured values between them).
 * Test the piezo vibration sensor for the auto Z zeroing function. Manually rotate the Z-axis micrometer handle and check if it can detect the touch.
 * Consider attaching a rotational stage to the stage positioner (I discussed with Icey and Joel that it could be more convenient to enable the stage positioner rotate).
+
+### **Weekly Update #7 (3/10 - 3/16)**
+
+#### Accomplishments
+
+* I fixed the hue and brightnesss issue on the USB microscope. I downloaded and installed [the software](https://amscope.com/pages/software-downloads) (AmScopeAmLite for Mac, Microsope model #: UTP200X003MP) again then that just fixed the issue. The problem is that the magnification, 10X (and up to 200X digital zoom), is not sufficient for our chip (one pad: 181.48 μm \* 76.25 μm). Additionally, the LED lights reflect straight, which worsened the visibility of the pads. We should prepare a much better microsope.\
+  ![](<../../.gitbook/assets/スクリーンショット 2025-03-14 午後7.44.15.png>) ![](<../../.gitbook/assets/スクリーンショット 2025-03-11 午後8.35.37.png>)\
+  \
+  ![](<../../.gitbook/assets/image (159).png>)\
+  (^ This picture was taken using the better microsope in our lab.)
+* I chatted with Sky about the microscope and he told me that the lab already has a spare C-mount camera (AmScope MU1603) and several lenses.\
+  ![](../../.gitbook/assets/PXL_20250315_010057109.jpg)\
+  I also found a lens and a camera(?) connected to it from previous semesters in the probe station box.\
+  ![](../../.gitbook/assets/PXL_20250315_011359637.jpg) ![](<../../.gitbook/assets/PXL_20250315_011412336 (2).jpg>)\
+  I will look into them up to prepare for a better microscope setup.
+* I checked the stability of the X- and Y-axes movement of the stage (using the 10X USB camera for now). It looks working well. The X- and Y- axes look diagonal to each other.\
+  [video](https://photos.app.goo.gl/BHYFQcSj3QxZCXi79)
+* I assembled one probe positioner. The new design of the magnetic base, notched around the micrometer handle which was discussed in the prevous update, made it easier to manipulate the handle. The magnetic force felt just right, although it is much weaker compared to the one for the current probe station. I think this one is better since it makes it easier to move the positioners while still preventing them from moving too easily (Opinions from others should also be considered).\
+  As for the stage positioner (chip positioner), which I originally planned to finish assembling this week, I found that we needed to order one more XYZ stage for it. Since we are discussing adding the rotational axis to the stage positioner as discribed in the previous weekly update, I'll order [the XYZR stage](https://a.co/d/4oJKznA) and modify the entire design. This week I assembled other part of the stage positioner for testing\
+  ![](../../.gitbook/assets/PXL_20250314_235707990.jpg)\
+  I tested a chip without XY stage for the stage positioner this week.
+* I measured the actual chip we made in the resistor lab session using the 10X USB microscope and a multimeter. There seems no problem with probe positioners. The thing is that the chip was not stable and shaky. When the probe needle touches the chip surface while the other probe needle is already in contact, it seems that the second touch tilts the chip, causing the first needle to lose contact. I was using a multimeter to measure the resistance, and it showed a resistance very breifly and went overload. The shown values seem fine.\
+  [video](https://photos.app.goo.gl/wNMgwTrKKmYp2jdN9)\
+  Shown values: 100.7 ohms, 96.5 ohms, 107.3 ohms, 183.5 ohms, 132.3 ohms\
+  Actual values (measured with the current probe station): 149 ohms\
+  \
+  Possible causes for the unstability are\
+  1\. the surface of the 3D printed chip stage is not flat enough,\
+  2\. the chip is not flat enough, and/or\
+  3\. the entire testing setup is too unstable (the O-ring box was not stable at all).\
+  I will order the XYZR stage anyway. I'll test with it and see whether it can imrove the stability. I'll also look into the current probe station and check how it allows chips to be placed stably.
+* I tested the piezo vibration sensor on the chip stage part. It is working fine.\
+  [video](https://photos.app.goo.gl/xVAVTerKq3uzjD4U9)
+* I tested a vacuum pump with the chip stage. It's working well. This might improve the stability discussed above. I will test the resistance measurement using it next week.\
+  ![](../../.gitbook/assets/PXL_20250314_224058600.jpg)\
+  But with the piezo vibration sensor, the chip was unstable and shaking.\
+  [video](https://photos.app.goo.gl/eD4Hwfh7nqAuAfRj7)\
+  This must be because of the dents around the hole and maybe also because of the original flatness of the sensor. It would be difficult not to have the dent when drilling, we need to come up with some design to avoid this issue, such as attahcing some parts on the sensor, and placing the chip on these parts. We need to check if the sensor still works well in this setup. We are now prioritizing finishing the probe station without the auto Z-axis zerong function, so I'll give this issue a lower priority (but also I started thinking that it is really helpful to have the sensor with a buzzer or something even if we can't finish the auto Z function this semester).\
+  ![](../../.gitbook/assets/PXL_20250314_230410427.jpg) ![](../../.gitbook/assets/PXL_20250314_230359830.MP.jpg)
+* I found [a nice AmScope manual](https://mmrc.caltech.edu/Microscope_Camera_AmScope/Software/AmScopeSetup_v3/AmScope_enhelp.pdf) (haven't read through everything).
+
+#### Roadblocks
+
+* [The double-sided conductive tape](https://www.amazon.com/dp/B097JQQ7SC) we ordered 3 weeks ago (#205 of the [purchase tracker](https://docs.google.com/spreadsheets/d/1q8bCldE8gXcriELmI92WnKogdQQfaplEABGx0QJ8EXE/edit?usp=sharing)) has not arrived yet.
+
+#### Plan
+
+* Research cameras and lenses for a better microscope setup.
+* Order XYZR stage and modify the stage positioner design to be attached to the R-axis stage.
+* Conduct the chip measurement test using the vacuum chuck to see if it improves the chip placement stability.
+* Modify the stage positioner design for chip to be placed more stably (if necessary).
+* Conduct the piezo vibration sensor test using the vacuum chuck to see if the vibration from the vacuum pump affects the result.
+
