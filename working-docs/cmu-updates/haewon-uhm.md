@@ -302,10 +302,10 @@ description: Haewon's weekly updates for the ALD and SOG.
       <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHqN9j0g5j5r7dPmPvYfQn5o7-6XMwpROTIanoGfiXrjbGAua1cNiCqL4AXcE9vw5Xy6LyqcCCH5eHtJlz1Gh2BoJlE5pjn6mKWGBrMaOubD5WhW-p-QngfmxTIM8WwE0PLWgsag?key=sK8xJtTrbIwZAN8g1FuMjUko" alt="" width="188"><figcaption><p>Integrated into previous python code</p></figcaption></figure>
 
       <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXckZZDbB53P3CzL0ZnqwbwrraJRge8bA4CIQBOhSJjRk5P4aCY805qjIwMqzVlauKLyt3ACdDDPTjrH7V1GE6sXU2CVB9NtBES92U2QkBSuYjSAMfTPZCcLkttUwe5-GyergzUVgg?key=sK8xJtTrbIwZAN8g1FuMjUko" alt="" width="188"><figcaption><p>Attempted to alter for multiple thermocouples</p></figcaption></figure>
-*   SSH commands are not necessary since we are calling the python script to LabVIEW from the mini PC locally
+* SSH commands are not necessary since we are calling the python script to LabVIEW from the mini PC locally
 
-    \
-    **Roadblocks**
+**Roadblocks**
+
 * Have to discuss how we will call a specific channel of the four channels that will be used through LabVIEW and python script (string, boolean, integer)
   * All four channels simultaneously?&#x20;
   * Continuous loop or stop at a certain point?
@@ -315,3 +315,54 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 * Make a python script that can be called from LabVIEW based on a certain channel based on discussion
 * Use multiple thermocouples and test the python script
+
+## Update 7 (SOG)
+
+**Accomplishments**&#x20;
+
+* Discussed possible changes to the project
+  * Concentration of phosphoric acid should be diluted but causes an imbalance in pH (not acidic enough, but nitric and sulfuric acid might be too risky to use in lab)
+  * P-dopant is not acidic enough but same issue as mentioned above&#x20;
+  * Trimethyl borate in replacement of boric acid had better results according to the comments of the ProjectsInFlight video
+* Annealed p-type chip and P504 (P504 turned out very bad, have to redo)
+
+<figure><img src="../../.gitbook/assets/post diffuse 2 (1).png" alt="" width="188"><figcaption><p>P504 post-diffusing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/post diffuse 2 (1) (2).png" alt="" width="188"><figcaption><p>P-type post-diffusing</p></figcaption></figure>
+
+**Roadblocks**
+
+* Couldn't thermally evaporate or pattern in order to probe the chips properly for the resistivity
+  * Hopefully fixed for the next week
+  * Preventing us from moving forward with testing P-type and N-type due to the uncertainty in concentration and pH
+
+**Future Plans**
+
+* Start testing the 700B recipe since all the chemicals came in
+* Probe all the chips and calculate resistivity and dopant concentration&#x20;
+* Remake controls (P504, B152, and 700B)
+
+## Update 7 (ALD)
+
+**Accomplishments**&#x20;
+
+* Discussed changes for the Python script (updated to Github
+  * Change back to a running average
+  * Return a new value every five seconds (still appending new values every one second)
+  * Four inputs and four outputs
+* Created a LabVIEW to test the Python script with four channels involved
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-16 at 11.39.20 PM.png" alt=""><figcaption><p>LabVIEW to test the new script</p></figcaption></figure>
+
+**Roadblocks**
+
+* Unsure if the script will run smoothly based on the LabVIEW
+  * Will test as soon as possible
+* The Python node includes a return value and type, but there might be complications on whether LabVIEW can differentiate the four return values
+  * Using a cluster on LabVIEW might not be the best or have to make the script more specific to LabVIEW
+
+**Future Plans**
+
+* Test the LabVIEW
+  * Research and make changes based on the results
+* Discuss with Viswesh and Joel about the next steps for controls
