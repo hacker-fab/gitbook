@@ -4,6 +4,58 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 7 (03/16/2025)
+
+### Progress Updates
+
+* Aluminum extrusion stand is built!!!
+
+<figure><img src="../../.gitbook/assets/img_9882_720.png" alt=""><figcaption><p>Chamber and Precursor Delivery on the ALD Stand</p></figcaption></figure>
+
+Since the aluminum extrusion came in over spring break, I was able to tap the holes and construct the stand. I also 3D printed the mounting brackets for the chamber, so on the chamber side of things, the mounting is done.
+
+* Chamber reaches pressure
+
+I tested a few things to get the chamber to hold pressure:
+
+1. Tighten all of the bolts on the chamber, recording change in leak rate after each one. This did not change anything
+2. Remove and examine all centering rings for flaws. Aside from some dust, there were none.
+3. Clean the door seal. As mentioned via discord, there was a hair between the face and the seal, creating a small leak path. This allowed the chamber to reach pressure!!
+
+Currently the chamber can reach pressure, but holds it rather poorly. We are targeting a pressure loss rate of 0.5 mTorr per minute or lower, though currently we are losing \~6 mTorr per minute. I am hoping that cleaning the seals and sealing surfaces will lower this rate, but I have been waiting for the new O-rings before doing that, as I don't think it's a good use of time to take it apart and reassemble it when it will need to be done again shortly.
+
+Besides getting the current seals functioning well enough for now, I also sourced and ordered new Alfas O-Rings for all sealing surfaces:
+
+| Part No. / Description       |
+| ---------------------------- |
+| Aflas-268 O-Ring (L1000-268) |
+| Aflas-314 O-Ring (L1000-314) |
+| Aflas-320 O-ring (L1000-320) |
+| Aflas-208 O-Ring (L1000-208) |
+
+* Substrate heater testing is going well
+
+<figure><img src="../../.gitbook/assets/IMG_8142 (1).JPEG" alt="" width="375"><figcaption><p>Substrate heater uniformity probe points</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Figure_1.png" alt=""><figcaption><p>Uniformity test data (in atmosphere)</p></figcaption></figure>
+
+I worked on profiling the substrate heater, both uniformity and the voltage/temperature relationship. Above is a plot of a run in atmosphere, measuring the difference in temperature between various points on the surface. We see divergence as the temperature increases (this is expected, the points directly above the heating element will be hotter initially), but that once the temperature levels out, we see a convergence. Based on this trial, I estimate that leaving the heater running for approximately an hour after reaching temperature will be sufficient to allow the surface to even out. An important note is that the convective losses are very high for this system, meaning that it is very likely that the surface temperature profile will be different in vacuum. Since we only have one feedthrough for a thermocouple, testing this will be difficult. I am currently planning on doing independent trials with the probe location changing, the assumption being that the data will be able to be combined as if it were done in a single trial.
+
+<figure><img src="../../.gitbook/assets/hackerfab_temp.png" alt=""><figcaption><p>Measured probe temperature and fit exponential functions</p></figcaption></figure>
+
+I have also been working on the voltage responses (in vacuum). I have currently taken data at 5v and 6v, and fit exponential functions to the data (an exponential function is the expectation for a fixed heater temperature). I will be taking more data to establish a trend for the initial heating rate, time to temperature, and the reached temperature. All of these tests were done with the newly acquired AlN plates, which have been working great so far!
+
+### Roadblocks
+
+* None to report
+
+### Plans
+
+* Continue profiling the substrate heater
+  * The main issue at the moment is that I need to take data for several hours at a time, meaning that I need stretches where I can be in the lab or leave my computer in there (I feel better about leaving the heater now that we know it works and it's fully enclosed in the vacuum chamber at pressure). I was wondering if there would be a way to set up the mini PC to work as a datalogger in place of my computer? The software that comes with the thermocouple logger only works on windows, and I put a bit of time into examining the serial data to try to communicate directly with the device but did not have much luck.
+  * I plan to run trials at 4V, 4.5V, 5.5V, 6.5V, and 7V to get an idea of the voltage relationship and then 2 trials at 4 locations on the heater surface for a total of 8 additional uniformity tests. The idea is to get multiple runs at each location to get some sense of the variance between runs which will hopefully be quite low.
+* If the O-Rings come in (doubtful this week), I will tear down the chamber and rebuild it with the new parts. This will hopefully happen the week of the 24th instead (based on shipping times).
+
 ## Update 6 (03/02/2025)
 
 ### Progress Updates
