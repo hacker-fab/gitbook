@@ -272,3 +272,48 @@ Feedback
 I am not sure what is causing the issue with the probe station. It will be best to investigate the station together in person. It was good of you to check both the cable connections and the probing needles.
 
 Your plans for the coming week are good, but you should also put together a plan to optimize silicide formation to lower contact resistance by varying temperature and time. Then you should start fabricating another round of chips according to your new plan.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #7 (Mar 16)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* Prepared mid-semester documentation
+* Reprobed Ni chips using the individual distances (option 1) and not the previous cumulative alternative (option 2), and analyzed the results for any differences between these methods
+
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/tlm.PNG" alt="" width="375"><figcaption></figcaption></figure></div>
+
+* Annealed Ni chips at 250C for 15 min and reprobed
+* Reprobed Al chips after annealing at 450C for 15 min
+* Data interpretation ([https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit](https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit)) and ([https://docs.google.com/document/d/1z\_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs](https://docs.google.com/document/d/1z_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs))
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I wouldn't say I have any roadblocks at the moment. There is just something on my mind regarding the wafers used. We found out that the wafers used for lab 1 were not the correct ones, and that was around the same time I started fabricating my baseline chips. I find it odd that I got a much higher specific contact resistance compared with the previous studies and I am suspicious there is the possibility that I also used the wrong wafers. I remember taking them from a box labeled p type 5-10ohm but I also think that was the same one we used for lab 1. So if that box was mislabeled then my wafers were also the wrong ones. I have no way of confirming this now so I am thinking if I should find the time to redo them or just entirely move on to the silicide formation phase.
+
+One current "challenge" is the behavior of the Al chips after annealing at 450C. Both chips had bubbles formed on the surface, suggesting possible Al spiking. However only the n doped chip changed from ohmic to rectifying, the p doped chip remained ohmic. I am not 100% sure on why this happens but I believe that since aluminum is a p type dopant, the spiking will have different effects on the contacts based on the doping type.  More discussion here: [https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit](https://docs.google.com/document/d/1LWW8GRc6YJ19bA5i7fVkmBhBC39hiSN-/edit)
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Anneal Ni chips at 450C for 15 min and reprobe
+* Investigate possible unintended silicide formation with this annealing
+* Fabricate new chips with intended silicide formation using Ni interconnects and Al contacts ([https://www.fabublox.com/process-editor/dd27629e-aa67-4ec5-8450-e68649ff62fc](https://www.fabublox.com/process-editor/dd27629e-aa67-4ec5-8450-e68649ff62fc))
+
+Feedback
+
+• Cesely
+
+Great work this week. You have a good plan for fabrication this week. Don’t forget that this following week will be Demo 2, you will also need to prepare a presentation.
+
+As far as using the wrong wafers, the difference between the wafers is a slight difference in the p-doping concentration, but more importantly, if there is a small oxide layer on the surface of the substrate. The oxide layer may have affected doping slightly, but this would have been the case uniformly for the set of chips tested. I am also not as concerned about the oxide layer: since we used a 700B mask for both Aluminum and nickel this extra oxide layer likely got removed during HF etching as it is very small. When looking at the baseline results, the chips became ohmic after annealing. If the oxide layer was affecting results, the contacts would remain non-ohmic after annealing. While this likely did impact results, I think it is best to keep moving forward with the silicide formation and testing process.
+
+There may be a few issues with the Al on n-type Si and your analysis of potential errors is correct. Al spiking occurs when annealing at 450°C, so in the future the process should be performed at a lower temperature. Additionally, since Aluminum is a p-type dopant it is affecting the n-type regions doping concentration which is causing non-ohmic contacts. Additionally, though, it is suggests that pure Al contacts should not be used with junctions depths less than 2-3µm. The change from ohmic to rectifying behavior can help give insights into our current junction depth for our n-channels.
+
+LINK: https://web.stanford.edu/class/ee311/NOTES/Ohmic\_Contacts.pdf
