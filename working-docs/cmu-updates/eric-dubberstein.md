@@ -192,6 +192,12 @@ NOTES: This will not involve the actual spincoater, but rather the arduino progr
 
 
 
+> Hmm, the shift to USB should be fine, and lmk I can order some more USB cables if needed. I think USB switch is good, since we need to have a standard and using GPIO might have been less accessible than UART. But the arduino control through postman requests is big, looking forward to seeing the spin coater work with the full end-to-end system! Also as we spoke, I will see how we can best put this up on the website, whether it's a new Django page or interfacing w Ridge's prototype.
+
+
+
+
+
 **Weekly updates for 2/23:**
 
 
