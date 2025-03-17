@@ -4,6 +4,51 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 7:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:
+
+* Completed Mid-semester report [https://docs.google.com/document/d/1odQKf4WDqPkViEFZeu7Q-SG1CqEAVUaEjF3\_BqbSfB0/edit?usp=sharing](https://docs.google.com/document/d/1odQKf4WDqPkViEFZeu7Q-SG1CqEAVUaEjF3_BqbSfB0/edit?usp=sharing)
+* Edited doping model further [https://colab.research.google.com/drive/1bQZgRnmR86xbTDP\_NhUrbLdB4IEHjxcc#scrollTo=oWfJk6abFTMl](https://colab.research.google.com/drive/1bQZgRnmR86xbTDP_NhUrbLdB4IEHjxcc#scrollTo=oWfJk6abFTMl)
+* Created Fabublocks of the N-well process [https://www.fabublox.com/process-editor/482ebf89-52fb-4ae1-a684-64f448e9f30d](https://www.fabublox.com/process-editor/482ebf89-52fb-4ae1-a684-64f448e9f30d)
+* Created the N-well pattern slides [https://docs.google.com/presentation/d/1hVJ81RGv6qtCSJhDALb0VnskNpjEpFspkuzATtNKD18/edit?usp=sharing](https://docs.google.com/presentation/d/1hVJ81RGv6qtCSJhDALb0VnskNpjEpFspkuzATtNKD18/edit?usp=sharing)
+* 50% done fabrication for the N-well Moscaps (3 chips with varying SOG diffusion times)
+  * Chip 1 (5 min SOG diffusion)
+    * Finished: SOG diffusion, HF etch, Drive-in diffusion, HF etch, RCA clean, oxide growth, evaporation
+  * Chip 2 (10 min SOG diffusion)
+    * Finished: SOG diffusion, HF etch, Drive-in diffusion
+    * Note: This chip was lost in the fume hood and then found later on, which is why it is at an earlier stage in fabrication than Chip 1 and 3
+  * Chip 3 (15 min SOG diffusion)
+    * Finished: SOG diffusion, HF etch, Drive-in diffusion, HF etch, RCA clean, oxide growth, evaporation
+
+Roadblocks:
+
+* Some major roadblocks occurred this weekend when I went for fabrication due to the stepper borking 2x due to a new software update from the stepper team. Went in to manually change some of the code when it didn't work the second time. As a result my fabrication process on Saturday was halted at the patterning step at 2pm (when I was with Cesely) and then at 6pm (when I was with Jay). Fortunately we resolved the stepper issue at 7pm that Saturday.
+* Once the stepper started working, the developer ran out and based on Jay and I's hypothesis, the little bit of developer left was not diluted and as a result when I tried patterning when the stepper was finally fixed at 7pm on Saturday, the developer reacted with the alumnium and the patterns wouldn't come off with Acetone and IPA. Since the developer ran out we couldn't create new developer and I had to unfortunately put patterning on pause until we get new developer from the nanofab on Monday.&#x20;
+
+Next Steps:&#x20;
+
+Fabrication Heavy:
+
+* Chip 1 & 3:
+  * pattern (once the new developer comes), Al etch, HF etch, evaporate, pattern, Al etch, CV test&#x20;
+* Chip 2:
+  * HF etch, RCA clean, oxide growth, evaporation, pattern, Al etch, HF etch, evaporate, pattern, Al etch, CV test&#x20;
+* CV testing the N-well chips&#x20;
+* Data Analysis on the CV testing results with my parameter extraction code.&#x20;
+* Put together the Demo 2 presentation
+
+Feedback
+
+• Cesely\
+This past week a lot of effort was put to fabrication and good progress was made towards it. Unfortunately, with experimental work when equipment is not working or we don’t have the right materials it can seriously stall progress. This week you definitely should prioritize finishing fabrication and extracting results.
+
+Your next steps for this week are spot on. Once we have the data we will be able to determine if we need to continue refining the n-well process or if we can move to incorporating p-channels.
+
+Lastly, last week’s code for CV analysis has some errors in the x-axis. We should not be getting doping depths of thousands of centimeters.  When performing analysis this week, please ensure that we are getting realistic results either by correcting the code or analysis process. The reason this may have occurred for the p-substrate is that it is uniform throughout. However, this might not be an issue with the n-well process as it is not doping the entire substrate and will not be uniform.
+
 ## Update 6:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
