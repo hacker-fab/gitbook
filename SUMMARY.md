@@ -112,7 +112,6 @@
 * [CMU Updates](working-docs/cmu-updates/README.md)
   * [Example Student](working-docs/cmu-updates/example-student.md)
   * [Gina Seo](working-docs/cmu-updates/gina-seo.md)
-  * [Serena Shih](working-docs/cmu-updates/serena-shih.md)
   * [Jessica Wen](working-docs/cmu-updates/jessica-wen.md)
   * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
   * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
