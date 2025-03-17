@@ -1,5 +1,197 @@
 # Eric Dubberstein
 
+**Weekly updates for 3/2:**
+
+Progress for the week: Arduino connected to full system. In other words, we can now control the arduino via AWS requests.&#x20;
+
+
+
+Important details:&#x20;
+
+I spent 5+ hours attempting to get the raspberry PI to arduino connection to work using the GPIO uart TX and RX on the rasberry pi. Ultimately, I was unsuccessful and realized that it would be much easier (and scalable in the future because we have multiple USB ports) to simply connect the arduino via USB and use the UART through the USB cable.&#x20;
+
+
+
+Here are the reasons why we are using UART over USB instead of using the GPIO TX and RX on the rasperry PI and arduino. (Also included in documentation).&#x20;
+
+The raspberry PI runs on 3.3V while the arduino runs on 5V. This presents a problem for the signal from the arduino to the RPI. We have to use either a level shifter or a voltage divider. I didn't have a level shifter on hand, so I tried building a voltage divider using a 20k and 10k resistor. This divided the voltage as needed, but it's possible this was part of the issue. Here is an image of the basic voltage divider I tried.&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_7754 (1).JPG" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+I also attempted to bitbang a UART connection between the RPI and arduino. This was also unsuccessful. After a bit of research, it looks like this is because Raspberry PI OS is not a RTOS (real time operating system), so the timing is not precise enough to bitbang a UART connection.&#x20;
+
+
+
+At this point I was pretty stumped, so I searched around the internet a bit. I then realized it would be MUCH MUCH easier to simply use UART over the USB connection between the two devices. The reasons why I settled with this approach are as follows:
+
+1. I was able to get UART over USB from RPI to arduino working, but I was not able to get it working using the GPIO UART module.&#x20;
+2. This solution is more scalable as we can have multiple arduinos that control individual devices plugged into one raspberry PI as the RPI only has one UART TX/RX vs multiple usb ports.&#x20;
+3. We can leverage existing consumer grade USB extension cables and hubs
+4. The USB cable is physically studier than the multiple thin GPIO cables. Also, there is only one cable to deal with.&#x20;
+
+
+
+Here is the code that runs on the arduino:&#x20;
+
+NOTE: This code will eventually be integrated into the existing spincoater firmware to control the spincoater instead of just turn the LED on and off.
+
+It does the following things:&#x20;
+
+On startup, it sets the baud rate (speed of UART connection) to 115200 and sets up the LED pin output
+
+It reads an entire command from the RPI
+
+It parses the integer number of seconds to run the LED from the command
+
+It turns on the LED for that amount of time
+
+```cpp
+#define LED_PIN 13  // Built-in LED
+
+void setup() {
+    // Initialize USB Serial (Communication with Raspberry Pi)
+    Serial.begin(115200);
+    Serial.println("[DEBUG] USB Serial Initialized. Waiting for command...");
+    
+    pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    if (Serial.available()) {
+        String command = Serial.readStringUntil('\n');  // Read full command
+
+        // Print received command to Serial Monitor (Debugging)
+        Serial.print("[DEBUG] Received: ");
+        Serial.println(command);
+
+        if (command.startsWith("LED:")) {
+            int seconds = command.substring(4).toInt();  // Extract the integer
+
+            Serial.print("[DEBUG] Parsed LED duration: ");
+            Serial.print(seconds);
+            Serial.println(" seconds.");
+
+            Serial.println("[DEBUG] Turning LED ON...");
+            digitalWrite(LED_PIN, HIGH);
+
+            for (int i = 0; i < seconds; i++) {
+                Serial.print("[DEBUG] Remaining time: ");
+                Serial.print(seconds - i);
+                Serial.println(" seconds...");
+                delay(1000);  // 1-second delay per loop
+            }
+
+            digitalWrite(LED_PIN, LOW);
+            Serial.println("[DEBUG] LED OFF.");
+        } else {
+            Serial.println("[DEBUG] Invalid command received.");
+        }
+    }
+}
+
+```
+
+Here is the updated lab\_com\_gui (running on RPI):&#x20;
+
+I've only included the part of the code that changed.&#x20;
+
+The first portion that changed just opens the UART port to communicate with the arduino.&#x20;
+
+```python
+########################## PERIPHERAL CONFIGURATION ##########################
+#### UART OVER USB SERIAL TO ARDUINO ####
+# This may be different on a different RPI
+USB_PORT = "/dev/ttyACM0"  # Adjust this based on your device
+BAUD_RATE = 115200  # Must match Arduino
+
+# Open Serial Connection
+try:
+    ser = serial.Serial(USB_PORT, BAUD_RATE, timeout=1)
+    time.sleep(2)  # Allow time for connection to stabilize
+    print("Connected to Arduino over USB Serial!")
+
+except serial.SerialException:
+    print("ERROR: Could not open serial port. Check USB connection!")
+    exit()
+
+
+###################################################################################
+```
+
+The second portion sends the command to the arduino. Note that it is a self-contained method for this new device. To add this device to the code, all we needed to do was add the peripheral config and write this method.&#x20;
+
+This method also reads out the debugging messages from the arduino. Once we actually get the spincoater working, this could be messages if the spincoater is malfunctioning.&#x20;
+
+```python
+def run_spincoater(self, job_input_parameters):
+        
+        ### This is where you write the firmware code to run the job. ##
+        duration = job_input_parameters.get("time", 5)
+        
+        command = f"LED:{duration}\n"
+        print(f"Sending: {command.strip()}")
+
+        ser.write(command.encode())  # Send data over USB Serial
+
+        # Read response from Arduino
+        while True:
+            response = ser.readline().decode('utf-8').strip()
+            if response:
+                print(f"Arduino: {response}")
+            else:
+                break  # Stop reading when no more data
+
+        ### End of firmware code. ###
+
+
+        ## Gather the user response [Optional]##
+        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
+
+        self.get_user_output_response()
+
+        ## Submit the data back to the server ##
+        final_output_parameters = {"response": self.output_text}
+
+        self.submit_completed_response_to_server(final_output_parameters)
+```
+
+
+
+
+
+Video demo:&#x20;
+
+{% embed url="https://drive.google.com/file/d/1uk_OOovLhDsRJ_EdZQi1aF-RhFq1CBGd/view?usp=drive_link" %}
+
+The documentation is updated.
+
+Github progress tracker updated.
+
+Roadblocks:&#x20;
+
+1. I need to reach out to anirud to make sure that it is ok that we are interfacing with the spin coater arduino via USB. I am assuming this will be fine, but I still need to check with him.&#x20;
+2. Permission to test on the spincoater or a duplicate spincoater. I will talk to anirud about this once I get the code working on the test arduino.&#x20;
+3. We need more USB cables for the arduinos. I had to search through hackerfab until I found one, but I am afraid someone else might need it eventually.
+
+
+
+Plans for next week (spring break + week after):
+
+Week 7: Microcontroller Integration
+
+1. Complete mid semester documentation.&#x20;
+
+* Finalize the physical connection between the Raspberry Pi and spin coater.
+* Write and test code on the Raspberry Pi to interface with the microcontroller:
+  * Ensure commands (e.g., start, stop) are executed reliably.
+* Justification: This is crucial for automating the spin coater.
+
+NOTES: This will not involve the actual spincoater, but rather the arduino programmed with the spincoater's firmware. Anirud is building a new spincoater which we will test on later in the semester.&#x20;
+
+
+
 **Weekly updates for 2/23:**
 
 
