@@ -77,3 +77,27 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
    I also talked some more with John/Coin at UoU about the custom projector PCB plan, and he managed to talk to the connector manufacturer and get a small engineering sample that he'll send us a few connectors from - this is great news because it means I can actually target the DLP301s chipset for the projector PCB, which we were previously limited from because of the lack of availability of the connectors.
 2. Current blockers is still just waiting for the Thorlabs parts, and the fact that eCTF is still very high workload...
 3. I'm on break now, but I do plan on porting the CAD for my stepper 2.1 frame over to Onshape and doing some more research on the custom projector plan. When I get back from break the remaining Stepper 2.1 parts should be here, so I can actually put that thing together and hopefully have it all ready for the expo/conference thing that Joel and Kent mentioned.
+
+### Weekly Update 7
+
+1.  Finally done with my dry spell of progress! The rods for my frame arrived over break so I was able to put together a first version of the frame, and my god it is far more rigid than I had even anticipated. This thing is not going _anywhere_! If you try to shake it, the whole table shakes before you get any movement relative to the table. The is fantastic - it should reduce the vibration .
+
+    Also note that this first version is laser-cut acrylic for prototyping - it might be rigid enough as-is but I'm not ruling out the possibility of switching to an aluminum plate.
+
+    <figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+
+    I'm still waiting on the final optics parts to arrive from Thorlabs (Joel said my previous attempt to get these never actually got ordered, but it's actually going through now....) but in the meantime I have assembled the parts I've received thus far to form the 3 branches of the optics setup:
+
+    <figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Objective side</p></figcaption></figure>
+
+    <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>Camera side</p></figcaption></figure></div>
+
+    <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>Projector side</p></figcaption></figure>
+
+    I also started on the projector modifications. One thing I always found odd about our previous steppers was that they kept the cases on the projectors after modifications despite the fact that they make mounting the projectors a massive pain. For Stepper V2.1, I removed the case from the projector to reveal 3 fantastic standoffs to mount to, which should allow me to fulfill my goal of rigidly mounting the projector: I'll just have another laser cut plate (less likely to need to be aluminum than the main plate) that these standoffs bolt to, which then sits on top of the main plate.
+
+    <figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    Aside from working on the new stepper, I worked with Carson on getting the new Basler camera set up with the stepper software (it took like 10 minutes and it was working flawlessly) - it's been (hopefully temporarily) yoinked to be be part of the existing Stepper V2 due to overall just being _nicer_.
+2. Still waiting on the Thorlabs parts.... other than that, no blockers.
+3. Next week hopefully this last Thorlabs order should come in, and that'll let me finally assemble the whole optics setup! The only remaining design task is the projector mounting (I think it'll just be a vertical plate that notches into the main plate at a certain position) and the only remaining fabrication tasks are the same mounting and also the optics adapter plate (along with the 3d printed parts for the stage, but that's easy). All the rest is just assembly! I could see the whole thing being ready by next update, but no guarantee on that of course.

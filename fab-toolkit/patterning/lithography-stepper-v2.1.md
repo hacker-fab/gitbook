@@ -37,7 +37,7 @@ Total cost as currently specified: $2,945.40
 
 Currently the CAD for Stepper 2.1 is all in FreeCAD, with the files stored in [this repo](https://github.com/hacker-fab/stepper_cad), but will be ported to Onshape soon for consistency.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Stepper V2.1</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption><p>Stepper V2.1</p></figcaption></figure>
 
 Several parts from Stepper V2's CAD are used on 2.1:
 

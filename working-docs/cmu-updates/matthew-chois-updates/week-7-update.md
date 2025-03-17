@@ -10,7 +10,7 @@ What was accomplished:&#x20;
 * designed the syringe liquid handling design CAD on onshape, as well as ordering components for them
 * Wrote down the hackerfab midsemester documentation
 
-<figure><img src="../../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (157) (1).png" alt=""><figcaption></figcaption></figure>
 
 Roadblocks/issues:
 
