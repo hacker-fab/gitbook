@@ -374,7 +374,7 @@ NanoPositioner
 
 if pcbs arrive start assembly.
 
-## **Update 6 (2/16/2025)**&#x20;
+## **Update 6 (3/6/2025)**&#x20;
 
 ### Accomplishments
 
@@ -434,4 +434,62 @@ In a standard configuration there is no shear load on the glue joint between the
   * might be easier to attach actuator to stage.
 * Work on consolidating information for measurements into one spreadsheet. Currently its spread across multiple spreadsheets.
 * Prepare mid semester documentation.
+
+
+
+## **Update 7 (3/16/2025)**&#x20;
+
+### Accomplishments
+
+*   100 nm back and forth motion
+
+    * 85v output from piezo driver  (pdu 150) correlated with \~100nm of motion.
+
+    [https://youtube.com/shorts/gdKaye5rmxI?feature=share](https://youtube.com/shorts/gdKaye5rmxI?feature=share)
+* 2 micron back and forth motion
+  * 7 volt input and 150 output resulted in 2 micron motion.
+* followed test procedures from pdu 150 datasheet. [https://www.piezodrive.com/wp-content/uploads/2023/08/PDu150-V6-Datasheet-R1.pdf](https://www.piezodrive.com/wp-content/uploads/2023/08/PDu150-V6-Datasheet-R1.pdf)
+
+<figure><img src="../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+Roadblock 1:
+
+Trying to output a sawtooth wave through pwm did not result in translational motion. I'm not sure if this is due the piezo needing a higher duty cycle pwm signal than what an arduino can provide or some mechanical issue.
+
+Potential Solution:
+
+Get an arduino that has a dac.
+
+Roadblock 2:
+
+not a big roadblock but measurement resolution might be an issue going forward since we know that the piezo can move sub 100nm.&#x20;
+
+### Next Step
+
+* Order an arduino that has a built in DAC.
+* Try to test out my theory that inconsistent motion that people have seen when trying to replicate [this pape](https://www.sciencedirect.com/science/article/pii/S2468067222000621)r is due to a magnet based preload.
+
+<figure><img src="../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+
+* As a simple first step I could swap out the magnet in the system with a weight to provide more preload. This could validate my spring based preload design without actually machining parts.
+* A second step would be replacing contact point with a ball bearing. These can be prototyped before thorlab parts arrive.
+* Salvage piezo actuators off of previous years nanopositioner.&#x20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
