@@ -24,6 +24,13 @@ description: Katie's weekly updates (Sputtering Process Project)
 * Assist with fixing the V1 sputtering chamber and try to get some sputtered aluminum oxide films!!
 * Do more XRR with Melinda (may not be possible this week since MCF is doing some construction)
 
+
+
+Response - Jay
+
+* Recap of meeting 3/17
+  * Next steps are to assess the viability of reactive Al evaporations, and/or cyles of Al evaporation followed by oxidation.
+
 ### <mark style="color:purple;">Update 6 - 3/2/2025</mark>
 
 #### Accomplishments
