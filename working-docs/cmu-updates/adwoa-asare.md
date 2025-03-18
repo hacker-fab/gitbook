@@ -198,3 +198,33 @@ GPIO.cleanup()
 * Depending on how much there is for me to do on ASC, I may start working on Auto Cleaver more, I want to CAD a design for it soon.
 
 ***
+
+## Update 5
+
+3/16/2025
+
+### Progress
+
+* Tested peristaltic pump with water. It was able to turn but the rollers were too small so it could not push the water
+* Made bigger rollers to better squeeze the tube. I reassembled and retested.
+  * the rollers could no longer spin, at first, I thought it was because the tube was too hard to squeeze but further testing & analysis showed that it was actually the lid clamping down on the rollers making them unable to move. (see pic below) It is able to spin when you lift the lit a little.
+  *
+
+      <figure><img src="../../.gitbook/assets/IMG_2214 (1).JPG" alt=""><figcaption></figcaption></figure>
+* So, I went back to our initial pump design on fusion360 since the rollers on that design are free spinning and edited to fit with the gear box on the Nema17. I will reprint and test this first thing this week to get final idea of if persitaltic pump can work or not.
+* For automated dicer, I did some research into actuators that would be appropriate for moving the scribe tip up and down, landed on just doing simple rotation with a servo like they do in this ruling machine.
+  *
+
+      <figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+* waiting for some parts to make frame for auto dicer
+
+### Plans
+
+* reprint peristaltic pump so the rollers fit in under the lid properly and can free-spin
+* make any necessary modifications to the motor & idler holders needed to make sure it fits with our frame
+* CAD holder/actuator for the scribe point.
+
+***
