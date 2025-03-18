@@ -93,3 +93,23 @@ The main roadblock now is that I don't know what exact parameters to use for P+ 
 #### **Plans for next week:**
 
 Next week after sping break, I will add the parameter details for the body diffusion fabrication process referring to PMOS fabrication process. Hopefully they can add a session for HF safety training and we can start fabricating the chip.
+
+
+
+### **Weekly Update #7**
+
+#### **What was accomplished:**
+
+Cesely, Icey, and I discussed the fabrication process for P+ doping for the NMOS body again, and revised the process (link: [https://www.fabublox.com/process-editor/b51bc6cb-1617-4a62-a48c-5fe91185c57d](https://www.fabublox.com/process-editor/b51bc6cb-1617-4a62-a48c-5fe91185c57d)). The process now starts with a 700B glass layer, then etch the pattern for body and dope with P+, next etch the pattern for source and drain and dope with N+. In this way, P+ is diffused twice (1h in total) while N+ is only diffused once (30 min), because the material needs at least 30 minutes to harden and we want the P+ doping to be deeper than the N+ doping.
+
+Gongwei, Felicia, and I finished HF training and started fabricating our chips. We have 4 chips in total, 2 with packaging and 2 without. We finished doping N+ on the poly layer and etching it out (step 1-5).
+
+#### **Roadblocks:**
+
+One roadblock for developing the process is we do not have previous successful data to back up our thoughts, so we would have to rely on intuition and hope it works.
+
+One roadblock for fabricating is the spin coater broke on the night we went to fabricate, and it was temporarily fixed with a workaround solution.
+
+#### **Plans for next week:**
+
+Next week we will continue to fabricate the chips. We should be able to patten the mosfet gates and finish etching it (step 6-15). If we have more time, we can continue to dope P+ and N+.
