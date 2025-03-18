@@ -4,6 +4,29 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #7
+
+**What was accomplished:**
+
+* Edited and re-did [Fabublox](https://www.fabublox.com/process-editor/d5b2b494-f6bb-4923-b171-58ff32c34690) for resistor fabrication after Icey's review
+* Completed HF training in class!! (finally)&#x20;
+* Wrote the [mid-semester documentation ](https://docs.google.com/document/d/1suNQFwdelT2aFOMVPs0k_rZuyxtQMbGNVL8z_3UOaV4/edit?usp=sharing)with Sandra, updating our progress on our goals.&#x20;
+* Supported Device Modelling team on debugging code issue for exporting files
+* Attempted to fabricate resistors but ran into multiple issues in the fab. &#x20;
+
+**Roadblocks:**
+
+* Sandra and I tried to fabricate resistors last Thursday and Sunday but wasn't able to because 1. stepper broke down on Thursday and 2. no developer on Sunday.&#x20;
+  * Delayed with our expected timeline for completing fabrication
+
+**Plans for this week:**
+
+* Fabrication with Sandra and Icey: Wait for developer to be restocked to do resistor fabrication
+  * Take stepper pictures for alignment mark prints for Justin while patterning
+* Look forward to HF tutorial/walkthrough on Tuesday to be able to use HF properly and safely
+* Explore KLayout and play around with tool's functionality more
+* Look through our Fabublox again to make sure each step aligns with SOP standards (i.e. [HMDS](../../standard-operating-procedures/patterning-sop-stepper-v2/) steps require pre-baking as well)
+
 ## Update #6
 
 **What was accomplished:**&#x20;
