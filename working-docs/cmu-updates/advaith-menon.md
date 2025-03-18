@@ -139,10 +139,37 @@ This week, I focused primarily on the project presentation for Tuesday. However,
 
 <figure><img src="../../.gitbook/assets/Untitled design.png" alt=""><figcaption></figcaption></figure>
 
-***
+{% include "../../.gitbook/includes/line.md" %}
 
 ## Week 5
 
 This week, I focused on refining the CAD model, making sure everything fits together properly and functions as intended. I also spent a lot of time researching different ways to move the linear slide system, looking into lead screws, rack and pinion setups, chain drives, and even pneumatic and hydraulic options. Each method had its own advantages and trade-offs, so I considered factors like precision, load capacity, ease of assembly, and long-term maintenance.
 
 After comparing all the options, I decided on a belt system because it’s the most practical choice. We already have the necessary parts and experience working with belts, which makes implementation much easier. Belts also provide smooth and reliable movement without adding unnecessary complexity. With this decision finalized, I can now focus on optimizing the design and moving forward with the project.
+
+***
+
+## Week 6
+
+This week, my primary focus was designing the belting system for the automated spin coater, a crucial component that will allow for smooth and controlled rotation of the sample during the spin coating process. Since the system needs to be both precise and reliable, I spent a significant amount of time brainstorming potential configurations and sketching out different layouts to determine the most efficient design. One of my key challenges in this phase was deciding whether to use a belt or a string for transmitting motion from the motor to the rotating stage. Initially, I was uncertain about the benefits of using a belt over a string, particularly regarding factors such as tension management, durability, and especially slippage. However, after discussing the pros and cons with others and considering the mechanical implications, I gained a much clearer understanding of why a belt would work just as well as a string, if not better. Belts generally provide more consistent force transmission, reduce the chances of slippage, and are easier to control in terms of tensioning and alignment.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcFxEyJ71yNgYeSGsi5wAHLNiPpwXyDA1UbVUoVvkhc1kpcV9gckCFNQqsBMeH7rPayDY0bFqQjvSbiFEwmzT9q4d486_6z8vFWvg1T3gttd0KUsx-BMfbh-tnkTu01AiFTRLRmLA?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
+
+Once I had settled on the belt-driven approach, I began thinking about how best to integrate this system into the existing spin coater design. Initially, my plan was to incorporate the entire CAD model of the belting mechanism directly into the current spin coater CAD assembly. However, after further analysis, I realized that doing so might not be necessary and could even make modifications and testing more cumbersome. Instead, I opted to design a set of modular, custom parts specifically for the belt system, which would allow for easier adjustments and refinements. Some of these custom components include a motor holder to securely mount the motor in the correct position relative to the belt and stage, as well as other structural supports to ensure proper belt alignment and tensioning. By keeping these components separate from the main CAD model, I will have more flexibility when iterating on the design, making it easier to test different configurations and troubleshoot any issues that arise.
+
+\
+
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9yM1aBTuPecIVHAQ6WHaBY2HChqVkqF9pR69nNBSwnP86FlbE7K-Phf2qnx8tGCHyyIDgBqGbWJeQSqvPg-aJ1jDerrRG4DvHPFjKQGK2dt96nXhjLnwsv7he4fm5iKImFVTqHw?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
+
+The above is one of the potential configurations for the belting system, which I believe would be the most effective. This is primarily because the belts are centered on the plate, helping to ensure the movement is smooth. Additionally, it takes up less space, because the motor goes under the cage, so there is less strain on the feet. Finally, the system is relatively simple compared to other solutions, which would require flipping the axis of the belt or angled gears.
+
+Beyond the technical aspects of the belting system, I also completed my required lab safety training, which is essential for working in an environment that involves hazardous materials. This week, I finished the hazardous waste training as well as the hydrofluoric acid (HF) safety training, both of which are critical for safely handling chemicals in the lab. I have another safety training session scheduled for next week, specifically covering general lab safety procedures, which will help to ensure that I am fully prepared to work in a HackerFAB lab without unnecessary risks.
+
+Looking ahead, my next steps will involve moving from the design phase to the fabrication and assembly phase of the belting system. This means sourcing the necessary materials, machining or 3D-printing the custom parts, and carefully assembling the entire mechanism to ensure proper fit and function. I believe we should have a majority of the required parts required, so this shouldn’t be an issue. Once assembled, I plan to conduct some tests to evaluate the performance of the belting system, focusing on factors such as smoothness of operation, consistency of rotation, and overall stability. One of the critical aspects to assess will be whether the belt maintains a firm grip without excessive tension, which could cause unnecessary strain on the motor or lead to premature wear. Additionally, I will need to verify that the belt-driven system does not introduce unwanted vibrations or inconsistencies that could affect the uniformity of the spin coating process.
+
+If any issues arise during testing, I have already identified a few potential improvements to explore. One option would be revisiting the idea of using a string instead of a belt if the belt proves too rigid or difficult to maintain at optimal tension. Another possible improvement would be refining the mounting system to create a more secure and adjustable connection between the belt and the motor-driven components. This might involve adding more tensioning mechanisms, such as adjustable pulleys or idlers, to fine-tune the belt's position and force distribution. Additionally, I will be considering different belt materials to see if alternative options provide better flexibility, durability, or grip.
+
+This phase of the project is particularly important because the reliability of the belting system directly impacts the overall functionality of the automated spin coater. If the belt-driven mechanism fails to operate smoothly, it could lead to inconsistent spin speeds, affecting the quality and reproducibility of the coated films, as well as potentially causing the liquids on the chip to fall off before being annealed. Since automation is a key goal of this project, I need to ensure that the belting system is not only effective but also robust enough to handle repeated use without frequent maintenance or manual adjustments.
+
+\
