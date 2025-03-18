@@ -217,3 +217,38 @@ Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https:
 * Continue CV testing literature review, come up with plan to fabricate electrode array
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+### Update 7 (3/9-3/16)
+
+#### Accomplishments
+
+*   Attempted to set up RF power supply and matching network provided by MCF to run sputtering trials&#x20;
+
+    * Configuration is modeled after this video showing the same model power supply: [https://www.youtube.com/watch?v=33CPbqC-K8U](https://www.youtube.com/watch?v=33CPbqC-K8U)
+    * power --> RFX-600 --> ATX-600 --> matching network (large yellow box) --> output (verified by Matt)
+    * RFX-600 turns on, but ATX-600 does not turn on&#x20;
+      * Substituting in a different ATX unit did not appear to change anything
+    * Manual doesn't have any obvious leads on causes (link: [https://www.nanofab.utah.edu/wp-content/uploads/2022/10/AdvancedEnergy-RFX600generator-manual.pdf](https://www.nanofab.utah.edu/wp-content/uploads/2022/10/AdvancedEnergy-RFX600generator-manual.pdf)), only that both displays are supposed to turn on at the same time&#x20;
+
+    <figure><img src="../../.gitbook/assets/Screen Shot 2025-03-16 at 5.55.42 PM.png" alt=""><figcaption><p>RF power supply setup with instruments from MCF</p></figcaption></figure>
+* Joined Chamber Build for a day to make parts for Sputter V2, worked on drill-pressing holes in a steel plate and sacriligeously cutting through a heat sink
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-03-16 at 6.39.44 PM.png" alt=""><figcaption><p>heat sink, bandsaw-ed to fit on steel plate</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-03-16 at 6.39.55 PM.png" alt=""><figcaption><p>steel plate with holes drilled</p></figcaption></figure>
+
+#### Roadblocks
+
+* Sputtering chamber still not working : (
+* Waiting on AFM tips (have been ordered) since the last batch was apparently all broken
+* X-ray lab closed between March 17 - March 21
+
+#### Plans
+
+* Since XRR development and sputtering trials are both gated next week, main focus will be on getting practice with CV testing pipeline
+* Fabricate chip using thermally grown oxide w/MOScap fabublox procedure
+  * Ideally also run gauntlet of tests on chip if no roadblocks in fabrication
+* Arrange meeting with Katie + mentors/instructors to discuss project direction since most process development tasks (figuring out sputtering chamber parameters, times, pressures etc... ) are gated by chamber development
+* Continue to help out with available chamber build + power supply tasks
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
