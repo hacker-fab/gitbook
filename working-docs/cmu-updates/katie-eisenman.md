@@ -4,6 +4,26 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 7 - 3/16/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+* Did another session of AFM with Joel, and we came to the conclusion that the AFM tips he had given us were all broken because no matter what we tried we couldn't get images. I feel slightly vindicated because I wasn't sure if it was my inexperience with the machine the first time. Joel has since ordered us more AFM tips and they will hopefully be delivered soon.
+* Finished the AFM SOP and wrote up our midsemester documentation with Melinda
+
+#### Roadblocks
+
+* I was pretty sick for several days so I missed class and work times :( I am feeling better now so this week I should be able to do a lot more.
+* No sputtered samples :( I am optimistic the build/power supply teams will be able to figure out RF sputtering soon. I do not have a lot of ECE/MechE skills but I'm happy to help where I can.
+
+#### Plans
+
+* Talk to Matt and get sputtered film samples
+* Perform AFM once tips arrive on sputtered films from Matt
+* Assist with fixing the V1 sputtering chamber and try to get some sputtered aluminum oxide films!!
+* Do more XRR with Melinda (may not be possible this week since MCF is doing some construction)
+
 ### <mark style="color:purple;">Update 6 - 3/2/2025</mark>
 
 #### Accomplishments
