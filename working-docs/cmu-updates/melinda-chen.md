@@ -252,3 +252,9 @@ Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https:
 * Continue to help out with available chamber build + power supply tasks
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+Response - Jay
+
+* Recap of meeting 3/17
+  * Next steps are to assess the viability of reactive Al evaporations, and/or cycles of Al evaporation followed by oxidation.
+* Overall good job helping out with setting up rf supply and moving chamber build forward

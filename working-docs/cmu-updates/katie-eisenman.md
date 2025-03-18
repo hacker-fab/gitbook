@@ -29,7 +29,7 @@ description: Katie's weekly updates (Sputtering Process Project)
 Response - Jay
 
 * Recap of meeting 3/17
-  * Next steps are to assess the viability of reactive Al evaporations, and/or cyles of Al evaporation followed by oxidation.
+  * Next steps are to assess the viability of reactive Al evaporations, and/or cycles of Al evaporation followed by oxidation.
 
 ### <mark style="color:purple;">Update 6 - 3/2/2025</mark>
 
