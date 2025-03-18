@@ -89,3 +89,21 @@ I've been talking to Tom and Ed regarding the machining to do. Using the manual 
 _Feedback:_
 
 _Thanks for the update! Now that parts have arrived, it's time to get machining. CNC is perfectly fine for machining our parts just to make our lives easier (none of this seems too difficult to do manually). This CAD looks fine, and Jay just sent the dimensions to be added ASAP. Please make sure to share the CAD if possible (onshape should have sharing options), and let us know if you need any help machining!_&#x20;
+
+
+
+
+
+Update 7 (I guess):
+
+Big thing this week is that I got the top plate machined.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+
+Of course, because nothing could be that easy, it turns out the stock provided by McMaster-Carr is a little bit thicker than ½ in, so the through holes didn't punch all the way through. To rectify this, I will put it in a manual mill and shave off a little bit of material from the bottom; it shouldn't be too bad. I have adjusted the bottom plate G-code to avoid this issue for it. Of note is that on Ed's suggestion I increased the depth of the holes in order to have more length available for threads. I have also started tapping the threads on the top plate.
+
+I will still aim to have both plates done before class on Tuesday, but this may be a bit tricky; the TechSpark staff are rather occupied with flood-related issues as well as fixing the waterjet machine.
+
+I plan to have all other parts machined by Friday; there isn't too much more to do.
+
+Besides that, I did a bit of reading last week, especially on magnetron design. I found the articles which I posted on the Discord ([https://www.sciencedirect.com/science/article/pii/S0257897200009452](https://www.sciencedirect.com/science/article/pii/S0257897200009452), [https://iopscience.iop.org/article/10.7567/JJAP.53.088001/pdf](https://iopscience.iop.org/article/10.7567/JJAP.53.088001/pdf), [https://www.sciencedirect.com/science/article/pii/S0040609005013404](https://www.sciencedirect.com/science/article/pii/S0040609005013404), and [https://www.google.com/url?sa=t\&source=web\&rct=j\&opi=89978449\&url=https://pubs.aip.org/avs/jva/article-pdf/12/3/886/12059855/886\_1\_online.pdf\&ved=2ahUKEwiYgd2hr4KMAxVZEFkFHVSXLOEQFnoECBcQAQ\&usg=AOvVaw0Ny1ZoKMGYCqnpJtQ8jSWk](https://www.google.com/url?sa=t\&source=web\&rct=j\&opi=89978449\&url=https://pubs.aip.org/avs/jva/article-pdf/12/3/886/12059855/886_1_online.pdf\&ved=2ahUKEwiYgd2hr4KMAxVZEFkFHVSXLOEQFnoECBcQAQ\&usg=AOvVaw0Ny1ZoKMGYCqnpJtQ8jSWk)). I still have to digest these a little fully but they seem to have implications for magnet choice.
