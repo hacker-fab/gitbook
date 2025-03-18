@@ -142,3 +142,29 @@ I unfortunately didn't finish implementing real-time detection, but hope to do s
 * Testing the PRs was good to do (thank you for finding a couple pre-existing bugs along the way!), and linting the existing code is also good to see.
 * Real-time detection in the GUI is still a good target. Let's make sure we have that implemented and evaluated for next week.
 * Please keep the [GitHub Project Tracker](https://github.com/orgs/hacker-fab/projects/21) and [Stepper Development Log](https://docs.google.com/document/d/1lmj-RURCDAT1qwImlVe1WH-Jx4YZXjfJlRWllqi0GPk/edit?tab=t.0#heading=h.cbgl0vcggmd4) up to date. It is also important to push any software progress, even if unfinished, to a development branch (labeling the commit as a WIP) for these weekly updates so we can accurately gauge progress.
+
+### Week 7
+
+This week we:
+
+* disabled use of the green channel during autofocus (this improves performance)
+* fixed the problem of the GUI hanging when X'ing out
+* got a better sense for the bazler camera settings and set certion pyplon constants in the code (i.e. exposure time and frame rate)
+* linted, formatted, and improved the code
+
+We merged all of the above.
+
+We also completed the big tasked that we had set out to complete: getting real-time detection working in the GUI. This is implemented in the [rt-detect branch](https://github.com/hacker-fab/stepper/commits/rt-detect/).
+
+The videos that demonstrate this are in the discord. We detect the markers using the YOLO model previously trained, and use cv2 to display the predicted bounding boxes on screen.
+
+Now that we have the model trained and real-time detection implemented, our remaining goal is to use our predictions for alignment. In the coming weeks, I plan to get this working.
+
+This next week, I will be traveling from Wednesday to Sunday and, as a result, don't expect to make much progress. But I will be thinking about how to best implement alignment. After I'm back, I hope to implement a working solution within two weeks, leaving us the remaining time in the semester to make small improvements and tackle other problems.
+
+**Week 7 Feedback (Kent Wirant):**
+
+* Good enhancements for code quality and performance
+* Real time fiducial mark detection is a great milestone, and it is visibly working very well too!
+* Thank you for communicating your travel plans; since we've been maintaining a good pace, it is okay if there is a little bit less progress this week. A good target could be working out a theoretical approach/procedure for translating alignment mark positions into fine-grained alignment and/or tiling within a layer. It would be good to consider how many alignment marks are visible, where the projected image will land, and a convergence procedure for motor movement. Safe travels!
+
