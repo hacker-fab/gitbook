@@ -110,3 +110,25 @@ Waiting on finalizing the fabrication steps to start fabricating the chip. Also 
 Plan for next week:
 
 Review the mask design with Icey and make any final adjustments. Keep collaborating with Sandra and Gina to think of any other functionalities we should add/brainstorming LVS/DRC design and implementation. Complete HF training and start fabricating test chips.
+
+**Weekly Update #7**
+
+Work done:
+
+I updated the mask design for the NMOS characterization chip, specifically added Body-Source tie at layout level. This is because the probe station still has only 3 probes and we don't expect an upgrade very soon.
+
+We still plan to fabricate both versions of the chip, with and without BS connection, to ensure flexibility for potential upgrades and the study of body effects. The only difference between the two versions is the metal layer masks as shown below. The rest of the masks can be found in: [https://drive.google.com/drive/u/0/folders/1KTrhLrV\_Q7-Bw2zknYYuRV\_R\_0qcSj\_h?lfhs=2](https://drive.google.com/drive/u/0/folders/1KTrhLrV_Q7-Bw2zknYYuRV_R_0qcSj_h?lfhs=2)
+
+<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption><p>NMOS Characterization Chip w/ BS connection</p></figcaption></figure>
+
+<div><figure><img src="../../.gitbook/assets/NMOS_chip_BSconn_red.jpg_layer_metal_noBSconn.png" alt=""><figcaption><p>Metal layer w/o BS connection</p></figcaption></figure> <figure><img src="../../.gitbook/assets/NMOS_chip_BSconn_red.jpg_layer_metal_wBSconn.png" alt=""><figcaption><p>Metal layer w/ BS connection</p></figcaption></figure></div>
+
+We started test chip fabrication. We have 2 NMOS characterization chips and 2 packaging test chips (Gongwei's design). We finished P504 spin-on & diffusion and HF etching (4/4).
+
+Roadblocks:
+
+No roadblocks.
+
+Plan for next week:
+
+Continue to fabricate the chips.
