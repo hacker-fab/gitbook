@@ -107,3 +107,27 @@ None currently
 
 \~ Fri - Sun: Probe-station testing the fabricated chip to confirm quality of manufacturing and collect data for validation (Id-Vds, Id-Vgs curves).
 
+
+
+
+
+**Weekly Update 7**
+
+**What work was done:**
+
+* Completed HF training and started chip fabrication of 4 chips (2 nmos test chips designed by Felicia and 2 i/o pad test chips for my collab with James) and finished HF etching of all 4 chips following the doping step.
+*   Adjusted design of 16pad i/o test chip's mask to have greater redundancy for manufacturing process variations, especially in the drc of metal wires. Regenerated all 8 stepper frame masks (with alignment marks) to prepare for next manufacturing step of lithography for the 16 i/o pad test chip. The masks can be found here: [https://drive.google.com/drive/folders/1xMaYTnNSwelVHWlhKzDsOBqmKMoU9ssm?usp=drive\_link](https://drive.google.com/drive/folders/1xMaYTnNSwelVHWlhKzDsOBqmKMoU9ssm?usp=drive_link)
+
+
+
+    <figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+
+**Roadblocks:**&#x20;
+
+* Spin coater was found to be broken on Friday, and we were eventually able to fix it with a workaround.
+* The dopant was expired, but a new batch has already been ordered. Went ahead with the barely expired dopant. Slightly concerned about side effects of the expired chemical on our diffusion quality.
+
+**Next Steps:**
+
+* Continue with the fabrication process of the 4 chips, with patterning, etch, deposition. If we don't run into other unexpected roadblocks, will aim to start probe testing and verifying the manufacturing quality, and consider refab with unexpired dopant.
+
