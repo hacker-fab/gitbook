@@ -84,11 +84,11 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 
     Also note that this first version is laser-cut acrylic for prototyping - it might be rigid enough as-is but I'm not ruling out the possibility of switching to an aluminum plate.
 
-    <figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
     I'm still waiting on the final optics parts to arrive from Thorlabs (Joel said my previous attempt to get these never actually got ordered, but it's actually going through now....) but in the meantime I have assembled the parts I've received thus far to form the 3 branches of the optics setup:
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Objective side</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (5).png" alt="" width="375"><figcaption><p>Objective side</p></figcaption></figure>
 
     <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>Camera side</p></figcaption></figure></div>
 
