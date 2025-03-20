@@ -14,9 +14,7 @@ The HW needed to drive the OPU can be broken into 3 sections:
 
 OPU\_Driver\_rev0p1 PCB CAD capture has been completed and is up for review on github here:
 
-[https://github.com/offbyfour/OPU\_Driver/tree/main/Hardware/Kicad\_PCB](https://github.com/offbyfour/OPU_Driver/tree/main/Hardware/Kicad_PCB)
-
-
+{% @github-files/github-code-block url="https://github.com/offbyfour/OPU_Driver/tree/main/Hardware/Kicad_PCB" %}
 
 {% file src="../../../../../.gitbook/assets/OPU_Driver_rev0p1.pdf" %}
 
