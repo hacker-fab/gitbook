@@ -120,7 +120,7 @@ None currently
 
 
 
-    <figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (167) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Roadblocks:**&#x20;
 
