@@ -174,6 +174,12 @@ void loop() {
 1. This week, I tested communication with Pfeiffer devices, but it was unsuccessful. My debugging process involved connecting the converter to the DB9 RS485 pinout (pins 3 and 7) and sending `"Hello\n"` using CoolTerm. However, the signal was often corrupted, returning `"Hello"` followed by an unexpected character instead of a newline. Initially, I suspected the issue was due to poor soldering and tape, which might have been causing signal corruption. However, after resoldering using a different method, the problem persisted. I also attempted to read data using the converter, but this was unsuccessful. I believe the issue is related to my read enable configuration. Over winter break, I received new converters, but I haven’t been able to test them thoroughly yet. Unlike my previous converter, which had implicit enable control, these new ones have explicit enables.
 2. The biggest roadblock is the converter's inability to read incoming signals. It writes correctly for the most part, but when CoolTerm sends data, the converter does not detect it. My next step is to test the new converters, as they have more online documentation available for troubleshooting.
 3. For next week, my plan is to fully test the new converters to determine if they can properly read and write. I also double-checked the strings I was previously sending to the Pfeiffer device and corrected a few errors. If the new converter functions correctly, I should be able to finalize communication and focus on testing the control loop.
+
+> **Feedback**
+>
+> Good work this week! I'm writing this after our Monday meeting when we discussed wrapping your code into a script that runs in the serial monitor and seeing the final product. The completion of that is impressive and now there's only the vacuum gauge left to go.
+>
+> As for format, I appreciate your work to incorporate my past feedback for your weekly updates. Good work on readability and updating the master doc. Progress was a little light this week, but I understand it was malloc lab.
 {% endstep %}
 {% endstepper %}
 
