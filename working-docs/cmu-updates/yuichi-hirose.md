@@ -14,7 +14,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 * I created [a project proposal](https://docs.google.com/document/d/1_nHKy9RG0kd6QQrEui08GBJlWizaZtv6Z8CEiLkyzpo/edit?usp=sharing).
 * I had a discussion with Anirud, Joe, and Joel again to review my project proposal.
   * We decided to use off-the-shelf XYZ positioners and work on a DIY XYZ positioner develepment only if time allows.
-  * Because we are going to use off-the-shelf XYZ positioners, we can also use off-the-shelf probes. We don't have to design and DIY them.
+  * Because we are going to use off-the-shelf XYZ positioners, we catn also use off-the-shelf probes. We don't have to design and DIY them.
   * The camera can be replaced with a USB camera. Another team is also procuring one, so it might be good to obtain the same one for us. C-mount cameras might be benefitial for easy design and assembly.
   * Vacuum chuck is necessary. Lab already has a vacuum pump. We need to obtain a chuck (the one procured last semester is too large).
   * We would like to automate the Z-axis positioning. We need to attach a motor to the Z-axis of the off-the-shelf positioner.
@@ -263,3 +263,77 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Modify the stage positioner design for chip to be placed more stably (if necessary).
 * Conduct the piezo vibration sensor test using the vacuum chuck to see if the vibration from the vacuum pump affects the result.
 
+### **Weekly Update #8 (3/17 - 3/23)**
+
+#### Accomplishments
+
+* I researced cameras and lenses for a better microscope setup, especially the C-mount camera (AmScope MU1603) left in the drawer and the objective lens (Olympus E A10) left in the probestation box.\
+  ![](../../.gitbook/assets/PXL_20250315_010057109.jpg)\
+  ![](../../.gitbook/assets/PXL_20250315_011359637.jpg) ![](<../../.gitbook/assets/PXL_20250315_011412336 (2).jpg>)\
+  These are how I understand (please correct me if I'm wrong):
+  * 160 of  "160 / -" written on the objective lens is the tube length \[mm] of a tube placed between the lens and the camera (= the length between the mounting surfaces of the lens and the camera).\
+    ![](<../../.gitbook/assets/image (169).png>)\
+    [https://build.openflexure.org/openflexure-microscope/v7.0.0-beta1/info\_pages/imaging\_optics\_explanation.html](https://build.openflexure.org/openflexure-microscope/v7.0.0-beta1/info_pages/imaging_optics_explanation.html)\
+    -> Is it a common way to achieve this by buying several tubes like [this](https://a.co/d/eTDqlJl) and connecting them to be 160 mm as total (or 3D printing a 160 mm tube), and a [C-mount adaptor for objective lenses](https://a.co/d/j5VsfJK)? I'll ask the litho stepper team.\
+    ![](<../../.gitbook/assets/image (171).png>)\
+    ![](<../../.gitbook/assets/image (172).png>)\
+    [https://a.co/d/eL2YPvg](https://a.co/d/eL2YPvg) / [https://a.co/d/6nrxMbO](https://a.co/d/6nrxMbO)
+  * \- of "160 / -" written on the objective lens indicates that it is the lens used without a cover glass.\
+    If it says 0.17, it needs to be used with 0.17 mm thick cover glass.
+  * 0.25 written on the objective lens is numerical aperture. It affects the brightness and the resolution (the higher value, the brighter and higher resolution), and it's usually around 0.1 to 1.6. So 0.25 seems a low value, but I'm not sure whether it's sufficient for our purpose.
+  * [AmScope 1603](https://amscope.com/products/mu1603) has the 16MP resolution, which means \~16M pixels, e.g., 4608 × 3456 (aspect ratio 4:3), 4928 × 3264 (3:2), or 5120 × 2880 pixels (16:9). \
+    Because the sensor size of the camera is 6.18 x 4.66 mm, and the pixel size is 1.335 \[μm], so it should be 4629 × 3490 pixels.
+  *   (magnification) = (sensor size) / (field of view)\
+      ⇔ (field of view ) = (sensor size) / (magnification)\
+      If we use the camera, which does not magnify to( my understanding) and the 10x lens, the filed of view is:
+
+      Width: 6.18 mm / 10 = 0.618 mm = 618 μm\
+      Height: 4.55 mm / 10 = 0.455 mm = 455 μm\
+      And we will have the 4629 × 3490 pixels resolution in this field of view, which sounds very high.\
+      This is an example of the chip we want to observe:\
+      ![](<../../.gitbook/assets/Resistor Lab Contact Spacing and Dimensions.png>)\
+      The entire chip looks like \~900 x 450 μm. The 618 x 455 μm field of view is too small for this purpose (we need to observe not one pad but a whole chip for probe stations). We should use a lens with smaller magnification or a camera with a larger sensor size.
+  * Conclusion
+    * Ask the litho stepper team about the tube
+    * Ask the litho stepper team about the numerical aperture
+    * Find a lens with smaller magnification or a camera with a larger sensor size
+  * Reference: \
+    [https://www.microbehunter.com/about-the-numbers-on-the-objective/](https://www.microbehunter.com/about-the-numbers-on-the-objective/)
+* I ordered [the 60 x 60 mm (Ø60 mm) XYZR stage](https://a.co/d/8USxJmG). There are several 40 x 40 mm stages left in the lab, but I couldn't find a reasonable 40 x 40 mm (Ø40 mm) rotation stage on the Internet. They are as expensive as or more expensive than the 60 x 60 mm, like these:\
+  [https://www.msesupplies.com/products/mse-pro-precision-rotation-stages-countertop-size-o40mm](https://www.msesupplies.com/products/mse-pro-precision-rotation-stages-countertop-size-o40mm)\
+  [https://www.edmundoptics.com/p/40mm-metric-rotary-stage/11792](https://www.edmundoptics.com/p/40mm-metric-rotary-stage/11792)\
+  [https://www.edmundoptics.com/p/40mm-english-rotary-stage/21014/](https://www.edmundoptics.com/p/40mm-english-rotary-stage/21014/)\
+  So I just ordered the set of 60 x 60 mm XYZ stage and Ø60 mm R stage on Amazon.
+* I set up the vacuum chuck.\
+  ![](<../../.gitbook/assets/image (174).png>)
+* I conducted some tests to improve the chip placement stability.
+  * Press the magnetic board\
+    -> The board is not rigid enough, which clearly affects the stability. We need to replace it with a more rigid one.\
+    [video 1](https://photos.app.goo.gl/wRY5SFBSguRgEdKv8) [video 2](https://photos.app.goo.gl/3DmWa68w391o6Y1Q7)
+  * Use the vacuum chuck\
+    -> It improves the stability significantly. But the chip still tilts when the probe makes contact. I need to check with a better camera with a larger multiplication if it's already stable enough, but we should try making a flatter surface with a laser cutter etc.\
+    [video](https://photos.app.goo.gl/X4AHwotpQsj9SHqx7)
+* I conducted the piezo vibration sensor test using the vacuum chuck to see if the vibration from the vacuum pump affects the result.\
+  -> It affects but solvable. The problem is not the vacuum pump motor, but the flatness of the surface where chips are placed. Details: \
+  When the probe was in cotact with the piezo vibration sensor, the value kept changing ([video](https://photos.app.goo.gl/qm8ADWmCNBT7mjZbA)). This is a problem because we can't determine whether a change in the value is due to the vibration or due to the second touch, which we want to detect. When holding the pump motor in the air by hand, the value became stable ([video](https://photos.app.goo.gl/vpN7HM5MAgNWbwwr9)), but when the probe is in cotact with a chip, not the sensor, it didn't ([video](https://photos.app.goo.gl/VHRFKMoZALxjjWgQA)). Actually even with the vacuum off, the value kept changing when the probe was in contact with the chip ([video](https://photos.app.goo.gl/Ryfk6LnRPLurd1ot6)). This means that the chip kept vibrating on the piezo vibration sensor and that affected the value. It should be because of the burrs around the drilled hole of and the flatness of the sensor, discussed in the last update.\
+  -> The vibration caused by the pump motor is easy to avoid by placing it away from the probes and the chip, or on top of something cushiony. The flatness of the surface is a more important issue. I'm thinking of placing a board on top of the piezo sensor to avoid the burrs and to have a flatter surface (the hole of the board is larger than the hole of the sensor so it can avoid the burrs). We need to test whether the sensor still can work in this setup.\
+  ![](<../../.gitbook/assets/image (177).png>)\
+  \
+  I also though of making the surface itself cushiony to absorb the unflatness of the surface and the chip, but then it would be difficult to detect the vibration.\
+  \
+  ![](<../../.gitbook/assets/image (178).png>) \
+  This is the stage of the probe station we currently use. The chip was measured stably on this, which inferrs that there is no problem for the flatness of the chip. If we can have a flat surface, it would solve the issue, I believe.
+
+#### Roadblocks
+
+* [The double-sided conductive tape](https://www.amazon.com/dp/B097JQQ7SC) we ordered 4 weeks ago (#205 of the [purchase tracker](https://docs.google.com/spreadsheets/d/1q8bCldE8gXcriELmI92WnKogdQQfaplEABGx0QJ8EXE/edit?usp=sharing)) has not arrived yet.
+
+#### Plan
+
+* Ask the litho stepper team about the tube between the camera and the objective lens
+* Ask the litho stepper team about the numerical aperture of the objective lens
+* Find a lens with smaller magnification than 10x or a camera with a sensor size larger than 6.18 x 4.66 mm
+* Modify the stage positioner design to be attached to the R-axis stage
+* Modify the stage positioner design for chip to be placed more stably (place a board on top of the piezo vibration sensor)
+* Conduct the piezo vibration sensor test if the sensor still works when there is a board on top of it
+* Conduct the piezo vibration sensor test with something cushiony between the chip and the sensor (if necessary)\
