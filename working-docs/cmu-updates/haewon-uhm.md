@@ -346,7 +346,7 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 **Accomplishments**&#x20;
 
-* Discussed changes for the Python script (updated to Github
+* Discussed changes for the Python script (updated to Github)
   * Change back to a running average
   * Return a new value every five seconds (still appending new values every one second)
   * Four inputs and four outputs
@@ -366,3 +366,46 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Test the LabVIEW
   * Research and make changes based on the results
 * Discuss with Viswesh and Joel about the next steps for controls
+
+## Update 8 (SOG)
+
+**Accomplishments**
+
+* Attempted to pattern and probe four of the test chips, but it was unsuccessful and currently in the process of re-patterning and probing
+* Spun on P504 and B154 onto new chips to start the process of making the controls for the project
+
+**Roadblocks**
+
+* Over etched the aluminum on the chips, so had to etch everything off and start again&#x20;
+  * Just finished the Al evaporation&#x20;
+  * Scratched one of the chips pretty badly trying to take it off the thermal evaporator
+* Couldn't start testing the 700B recipe from Filmtronics (thought it would be better to finish testing the previous chips and make the controls for the project)
+
+**Future Plans**
+
+* Finish the P504 and B154 control chips and start the 700B control chip
+* Continue to pattern and probe the four chips&#x20;
+* Possibly start testing the 700B recipe!!
+
+## Update 8 (ALD)
+
+**Accomplishments**
+
+* Changed the python script to return a list instead of four separate values (updated to Github)
+  * Easier for LabVIEW
+* Replacing the Raspberry Pi 4 and thermocouple DAQ with Arduinos, MAX31855 thermocouples, and a relay shield to simplify the control system
+
+**Roadblocks**
+
+* The Raspberry Pi wasn't being responsive on Real VNC
+  * The 3.3V supply failed and therefore was not allowing the device to boot
+* Thermocouple DAQ was making a weird sound that it has not made before
+* Arduino IDE runs in C/C++
+  * Have to convert the Python Script or use an indirect application
+  * Cannot use the Python node on LabVIEW anymore since we need to read the thermocouple temperatures from a serial port
+
+**Future Plans**
+
+* Look into Arduinos and how they will work within the controls
+* Discuss with Viswesh and Joel what to do with the Python script from here and make changes based on that
+* Research how to read into a serial port from LabVIEW
