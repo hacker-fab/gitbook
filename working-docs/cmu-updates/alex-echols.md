@@ -4,6 +4,32 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 8 (03/23/2025)
+
+### Progress Updates
+
+* Substrate Heater Simulation
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-23 185403.png" alt=""><figcaption><p>Heatmap of the AlN before reaching temperature</p></figcaption></figure>
+
+I was able to get a transient thermal simulation of the substrate heater running in ANSYS (thanks CMU). So far I have been unable to export the spatial data to analyze the thermal stresses, but it's pretty clear that the process is limited by the heat flux out of the wire. Due to this, we see that the wire inside the heater is relatively similar in temperature to the rest of the heater, while the segments of wire that extend out of the heater are relatively hot, creating a region of very high local stress where the wire leaves the heater. This would explain the cracking that we saw for the Boron Nitride. Once I can export the data (hopefully tonight or tomorrow), I'll be able to analyze the peak thermal stress and figure out our maximum operating parameters for the heater.
+
+I will be validating that the data follows the correct trends based on experimental data, as some of my other simulation attempts this week have given unsatisfactory results. Once we know that the data is relatively trustworthy, it may also give a good insight into the surface temperature uniformity without having to take much more data.
+
+
+
+* Substrate Heater Characterization
+
+I've taken more data on the heater, this time at 5.5V. I haven't gotten a chance to do much analysis yet, but it should be helpful to add to the V vs T trend.
+
+### Roadblocks
+
+* I was unexpectedly extremely busy with school work this week so have not had much chance to actually do work, especially sitting in the lab taking data.
+
+### Plans
+
+* I think that I am very close to getting the simulation data that I need, which will then let me not only report the maximum operating parameters of the heater but also create a much more rigorous plan for testing V/T relationships and be able to create an ideal heating curve.
+
 ## Update 7 (03/16/2025)
 
 ### Progress Updates
