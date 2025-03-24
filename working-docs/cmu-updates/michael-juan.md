@@ -477,6 +477,90 @@ not a big roadblock but measurement resolution might be an issue going forward s
 * A second step would be replacing contact point with a ball bearing. These can be prototyped before thorlab parts arrive.
 * Salvage piezo actuators off of previous years nanopositioner.&#x20;
 
+## **Update 8 (3/23/2025)**&#x20;
+
+### Accomplishments
+
+{% embed url="https://youtube.com/shorts/WcqbPSL2rgM?feature=share" %}
+
+
+
+* semi controlled translation movement.
+* Motion was achieved through a 10khz 5v sawtooth wave.
+
+````c
+#include "analogWave.h" // Include the library for analog waveform generation
+
+analogWave wave(DAC);   // Create an instance of the analogWave class, using the DAC pin
+
+int freq = 10000;  // in hertz, change 
+int stepTime = 1000; // in milliseconds
+
+void setup() {
+  Serial.begin(115200);  // Initialize serial communication at a baud rate of 115200
+  wave.saw(freq);       // Generate a sawtooth wave with the initial frequency
+}
+
+void loop() {
+  wave.freq(freq);  // Set the frequency of the waveform generator to the updated value
+  delay(stepTime);      // Delay for steptime
+  wave.freq(0);
+  delay(5000); //stop for five seconds
+}
+```
+````
+
+* The load capacity of this stick slip mechanism was almost nonexistent. This is an issue because we have a stacked stage configuration where one stage is above another.
+* Swept through frequency to see if motion behaved linearly to frequency. Taking a slow motion video and counting frames seems to suggest that 10khz is twice as fast as 5khz.
+* Attempted to measure step accuracy. I was not able to use my dial indicators to check for accuracy because the spring loading on the measurement tools were too strong for the force of the actuation.
+
+### Roadblocks
+
+**Roadblock 1:**
+
+Did not get quantitative information on distance traveled per step.
+
+**Proposed Solution**
+
+Use a calibration slide on a microscope to measure travel distance.
+
+**Roadblock 2:**
+
+Thorlabs ceramic contact points and piezos have not arrive yet. I've tried to salvage existing piezos but the superglue mounting sometimes breaks the piezo.
+
+**Proposed Solution**
+
+* Try to get at least one working salvaged piezo.
+* Temporarily use a ball bearing instead of the ceramic contact points from Thorlabs.
+
+**Roadblock 3:**
+
+Adding more preload to the current flat contact point actuator just binds up the system.
+
+**Proposed Solution**
+
+When ball contact points are made or when thorlab parts arrive check to see the optimal amount of preload.&#x20;
+
+### Next Steps
+
+We have three things we have to test  and do for the upcoming week to have progress for presentation 2.
+
+1. test having a ball contact instead of the current surface contact&#x20;
+2. Test how much preload results in a usable load rating and consistent actuation.&#x20;
+   1. Using a scale and weights incrementally increase until we see a usable actuation force. Usable right now should be able to overcome the spring force on my measurement tools. A reasonable target to hit might be 750g on each axis.
+3. Test the effects of sawtooth wave frequency, amplitude and a combination of both on actuation with updated prototype.
+   1. Start off at 10khz and actuate for 500ms then measure distance.&#x20;
+   2. Decrement the frequency by 500ms and actuate and measure distance.
+   3. repeat until there is no measurable movement.
+   4. For measuring the effects of amplitude on motion. Set a frequency such as 5khz, and a actuation time of 500ms. Start off at 5v and decrement voltage by 0.1v and measure distance.
+   5. repeat until there is no measureable movement.
+
+Because shipping is outside of my control. these are things I can work on while thorlabs parts are in the mail. I think right now my time won't be best spent on doing CAD because there are a lot of variables we don't know yet that will end up influencing the mechanical design.
+
+* Write code to interface piezo actuator with our motion controller.&#x20;
+  * We use grbl for our motion controller. As far as I know grbl can only output step and direction.&#x20;
+  * The first step   would be to find a good ratio to map the step signals from the controller to a frequency of sawtooth waves.
+* Test the effects of sawtooth wave frequency, amplitude and a combination of both on actuation for the existing prototype. \
 
 
 
