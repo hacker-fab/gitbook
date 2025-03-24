@@ -12,6 +12,115 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #8
+
+### ALD:
+
+Progress:
+
+* Mid sem documentation finally done last week
+* ALD valve gas line sucessfully integrated into the lab, and we get  sufficient pressure without leaks!
+* Yippie delivery storage mostly assembled
+  * modifications on the floor made - 3 new holes were made
+  * retaining plates waterjetted - manifold is well secured now
+* Two stage regulator installed with Viswesh, need help with opening the cylinder to verify it actually works :sob:
+* Still waiting on empty cylinder but confirmed with Zach that they have started manufacturing
+
+<figure><img src="../../.gitbook/assets/image (183).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (184).png" alt="" width="375"><figcaption></figcaption></figure>
+
+Challenges:
+
+* Matt wasn't able to get us the tube bender before the conference, but shouldn't be a big deal for us
+* I anticipate that we will run into the most issues with routing tubing to the regulator and with wrapping the heating tape going forward
+* otherwise progress for delivery storage is in a pretty good place&#x20;
+
+Plans:
+
+* get tube bender and figure out how we will connect cylinder to MFC to manifold
+* work on presentation two
+* talk to Matt to move along plan with exhaust for overall ALD system (storage and vacuum)
+* not much else due to lead time on ampules
+
+### Packaging:
+
+Progress:
+
+* Again not much :(
+* Finished mid sem documentation as well last week
+* Heard from Joel that Jim Bain has some ideas for packaging
+
+Challenges:
+
+* been swamped with school work, but will be able to put more time into packaging now that a good chunk of physical work for ALD is finished
+
+Plans:
+
+* Get Altium chip on board package design to a good place this week
+* Dig into literature on wire bonding and start organizing research
+  * Need to create list of failure modes to look out for
+  * Create a much better supported justification for our wire bonding decisions
+* Talk to Matt and Joel on Tuesday about packaging ideas
+
+***
+
+## Weekly Update #7:
+
+### ALD:
+
+Progress:
+
+* Empty cylinder for H2O finally ordered today after the long saga
+  * The cylinder assembly ended up being \~1.75in longer than CAD, so we are going with the hole underneath the water ampule
+  * We were also able confirm SC-11 cleaning for the cylinder, but this is not promised as welding cannot be done in clean room
+  * The final price also increased to $483.52 and will arrive in 1-3 weeks
+
+<figure><img src="../../.gitbook/assets/image (181).png" alt="" width="375"><figcaption><p>Swagelok Quote</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (182).png" alt="" width="563"><figcaption><p>Swagelok Drawing</p></figcaption></figure>
+
+* Sheet metal parts arrived!&#x20;
+  * The parts seem to fit well with each other
+
+<figure><img src="../../.gitbook/assets/image (180).png" alt="" width="188"><figcaption></figcaption></figure>
+
+* Everything seems to fit&#x20;
+* otherwise not much
+
+Struggles:
+
+* Documentation is late, had less time over break than anticipated from family matters
+* Need try squeezing out time for fabrication and assembly work&#x20;
+* Relatively long lead time for the empty ampule may put a wrench in testing the overall ALD system
+
+Plans:
+
+* Finish documentation ASAP
+* Waterjet retainer plates in TechSpark or elsewhere
+* Cut hole in storage floor for water ampule
+* Storage assembly and test for interference
+* Work on integrating the N2 gas line for the ALD valves
+
+### Packaging:
+
+Progress:&#x20;
+
+* Unfortunately I was not able to get a lot done over break :(
+
+Struggles:
+
+* Same deal as ALD, documentation is behind, but since ALD is my main project I will be prioritizing that first
+* A lot of work for ALD will be done this week, but will try to make as much progress on Altium design as I can this week
+
+Plans:
+
+* Also documentation ASAP after ALD one is done
+* Altium Altium Altium, preferably in a good place by end of week
+* Get some spare time to compile some wire bonding failure modes that we should be looking out for and include in documentation
+
+***
+
 ## Weekly Update #6:
 
 ### ALD:
