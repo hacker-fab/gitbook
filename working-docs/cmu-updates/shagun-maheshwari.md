@@ -4,6 +4,39 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 8:&#x20;
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:&#x20;
+
+* 85% done fabrication (was in the fab Tuesday, Wed, Thurs, Fri, Sat)
+  * Got the second chip up to speed with the first and third (completed etching, RCA, oxide growth, and aluminum evaporation)
+  * Fixed the patterning issues with all 3 chips and etching&#x20;
+  * Overcame roadblocks with the stepper and etching&#x20;
+
+Roadblocks:
+
+* Had a lot of issues with patterning with the patterns being under developed and over developed. Also an issue with the developer seeming to react with the aluminum. There was also a few issues with the stepper and its updates. As a result I had to pattern and then clean them with acetone & IPA, then re-pattern. The evaporator was also not increasing in pressure so had to pause evaporation.
+
+Next Steps:&#x20;
+
+* Finish up fabrication:&#x20;
+  * Evaporation, Patterning, Etching for all 3 chips&#x20;
+* CV testing the N-well chips&#x20;
+* Data Analysis on the CV testing results with my parameter extraction code.&#x20;
+* Put together the Demo 2 presentation
+
+Feedback
+
+• Cesely
+
+It will be imperative that fabrication gets finished at the beginning of this week so that it leaves enough time for data analysis and probing. Marta will be switching to your project which should help expediate fabricating and probing- however, I don’t expect her to fully switch over until after Demo 2. If you let me know this week when you want to be in the lab, I will try to work my schedule to be there.
+
+As far as roadblocks, the evaporator was simply because the gasket for the vent screw came off, which Jay found. The developer may have been etching because the developer not being diluted enough- however, as far as I am aware this was fixed.
+
+When developing you both under and over developed? Did you make note of what times it was under developing and overdeveloping at? I have found that when I fabricate that developing for 1 min. on the dot tends to provide the most consistent and best results.
+
 ## Update 7:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
