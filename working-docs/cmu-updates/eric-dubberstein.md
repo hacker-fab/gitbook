@@ -1,5 +1,437 @@
 # Eric Dubberstein
 
+**Weekly updates for 3/23:**
+
+Gitbook has refused to save my work multiple times because there are too many open change requests. For now, I will be using google docs for my weekly update until A-V approves my change requests.&#x20;
+
+
+
+Read my gitbook update below (hopefully this saves)
+
+[https://docs.google.com/document/d/1t3JHU0V2qEjshk2x43ekmjDYdkZ4ChMUf5-mbo72TLA/edit?usp=sharing](https://docs.google.com/document/d/1t3JHU0V2qEjshk2x43ekmjDYdkZ4ChMUf5-mbo72TLA/edit?usp=sharing)
+
+
+
+I tried to paste the google doc below:
+
+Gitbook has discarded my work multiple times because there are too many change requests.&#x20;
+
+My update is going to be on google docs for now.&#x20;
+
+\
+
+
+Progress for this week:
+
+I got local job creation working on the arduino.
+
+\
+
+
+Here is a video demo:&#x20;
+
+Note that the job doesn’t actually do anything. Anirud is going to have the spincoater set up tomorrow, so I will be able to test it for the next week’s demo.&#x20;
+
+[https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive\_link](https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive_link)
+
+\
+
+
+All of the changes to the lab\_com\_gui.py file are in the repo (under the EricLabComV1 branch)
+
+\
+
+
+Here are the highlights of the changes:
+
+1. New GUI buttons added. Note that these buttons are NOT hardcoded.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeqYvBMux86FVt9pyPkwEwy7w0Tgg-Vb00bVL9l4dALU2LhHj06ESMZ2qW41cg19MsAgbbyCrzFTm7dNpBGDfcLxzkenRkwyxtAK_-h7cek4Z8392bx5cIMLgKRHLK_DbZejT0Aog?key=yy18A-W-EUDVk5VHIwu4Wik0)
+
+\
+
+
+2. Instead, the buttons are configured in one spot near other parameters that will be changed when a new tool is integrated. I am still improving this system. The documentation will be improved for this once it is finalized.&#x20;
+
+\
+
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfKG54Ln_7sPsRpACIITL28f88o4x3ntOMGu95xLnnGV5rERLngcUL2iMFRKxxbL-dB0Khf3z3H7FoXwfVUkrjsSgxG8AA5d4WdPsuv73x7cMuRKOIMZ-d2wAatPNViXAvIXdOhmw?key=yy18A-W-EUDVk5VHIwu4Wik0)
+
+\
+\
+
+
+Lastly, there is some logic to show and hide the UI elements as appropriate and complete the request after the user types in the details.&#x20;
+
+\
+
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcvYyrXkp5JSwOtyka7rrynCUtSW2YKFggc1d2RMppNkE-Lby-dTnV1OFz0DT366N_gcUl3c-8eRU_BOKhNdV2UDefPIXutFRAzRA-ti68JTDdhTZ-8CES-xC9CHDvNjURhjpGx?key=yy18A-W-EUDVk5VHIwu4Wik0)
+
+\
+\
+\
+\
+\
+
+
+Note that if the RPI is not connected to the database, the job will still be run locally.&#x20;
+
+\
+
+
+The documentation is up to date (although it will be improved once I have finalized the code structure).&#x20;
+
+\
+
+
+The gitbook project tracker is up to date.&#x20;
+
+\
+\
+\
+
+
+I am unable to complete the tasks from week 8 outlined below (testing the full system with the spincoater) because arinud did not finish making the mock spin coater yet. He said he will have it completed by tomorrow (3/24) and I will be able to test the full system then.
+
+Plan for next week:
+
+1. original tasks from week 8 since I will have the spincoater to test on:
+
+Week 8: End-to-End Testing
+
+* Test the full data flow:
+*
+  * Create a job using Postman.
+  * Fetch the job on the Raspberry Pi.
+  * Execute the job on the spin coater.
+  * Verify job completion status is updated in AWS.
+* Debug and address issues in data flow, timing, or physical connections.
+* Justification: This will be the first test of the whole system.
+
+1. Tasks from Week 10:
+
+Week 10: Optimization
+
+* Optimize the Raspberry Pi code for performance and reliability:
+*
+  * Handle API timeouts or failures gracefully.
+  * Add retry logic for API calls.
+* Refine the UI for user-friendliness based on feedback from initial users.
+* Justification: This will be important for future scalability.
+
+In addition, I will meet with stepper team on monday 3/24 to look into integrating this system with the spincoater.
+
+Feedback from documentation/presentation:
+
+The feedback for the documentation and presentation were positive, but there are a few things to work on moving forward:
+
+1. Improve communication with other teams, specifically regarding need for "real-time" data gathering. AV: Who should I meet with in the lab to discuss this?
+2. Improving documentation specifically related to how to implement a new machine into the framework: I will make sure to do this as part of the tasks in week 11.&#x20;
+
+Roadblocks:&#x20;
+
+1. Need access to spincoater (Anirud will have it done by EOD tomorrow, 3/24)
+2. Need to get in contact with other teams who want a continuous data stream (this is question for AV: who should I reach out to?)&#x20;
+3. Need to have gitbook changes accepted & cleaned up.
+
+
+
+
+
+
+
+
+
+**Weekly updates for 3/16:**&#x20;
+
+Progress for this week: Existing arduino code for spincoater firmware is integrated with the USB communication to the RPI.&#x20;
+
+
+
+Here is the updated driver code that runs on the RPI:
+
+This code is run on the RPI to control the spincoater. It simply sends messages over UART with the RPM value, the time value, and the start command.&#x20;
+
+```python
+def run_spincoater(self, job_input_parameters):
+        """Run the spincoater job."""
+
+        ### This is where you write the firmware code to run the job. ##
+        rpm = job_input_parameters.get("rpm", 1000)
+        duration = job_input_parameters.get("time", 5)
+
+        # Send RPM command
+        rpm_command = f"RPM:{rpm}\n"
+        print(f"Sending: {rpm_command.strip()}")
+        ser.write(rpm_command.encode())
+        time.sleep(0.5)  # Small delay to ensure command is processed
+
+        # Send Time command
+        time_command = f"TIME:{duration}\n"
+        print(f"Sending: {time_command.strip()}")
+        ser.write(time_command.encode())
+        time.sleep(0.5)  # Small delay to ensure command is processed
+
+        # Send Start command
+        start_command = "START\n"
+        print(f"Sending: {start_command.strip()}")
+        ser.write(start_command.encode())
+
+        # Read response from Arduino
+        while True:
+            response = ser.readline().decode('utf-8').strip()
+            if response:
+                print(f"Arduino: {response}")
+            else:
+                break  # Stop reading when no more data
+
+        ### End of firmware code. ###
+
+
+        ## Gather the user response [Optional]##
+        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
+
+        self.get_user_output_response()
+
+        ## Submit the data back to the server ##
+        final_output_parameters = {"response": self.output_text}
+
+        self.submit_completed_response_to_server(final_output_parameters)
+```
+
+
+
+Here is the code that will run on the arduino. Notice that only a section was added for the USB UART interface.&#x20;
+
+```cpp
+#include <LiquidCrystal.h>
+#include <Servo.h>
+
+
+#define PIN_RS 10
+#define PIN_RW 11
+#define PIN_E 12
+#define PIN_D4 2
+#define PIN_D5 3
+#define PIN_D6 4
+#define PIN_D7 5
+
+#define PIN_RPM_UP    15
+#define PIN_RPM_DOWN  14
+#define PIN_TIME_UP   21
+#define PIN_TIME_DOWN 20
+
+#define PIN_START 17
+
+#define PIN_MOTOR 9
+
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(PIN_RPM_UP, INPUT_PULLUP);
+  pinMode(PIN_RPM_DOWN, INPUT_PULLUP);
+  pinMode(PIN_TIME_UP, INPUT_PULLUP);
+  pinMode(PIN_TIME_DOWN, INPUT_PULLUP);
+  pinMode(PIN_START, INPUT_PULLUP);
+}
+
+void loop() {
+  
+  auto lcd = LiquidCrystal(PIN_RS, PIN_RW, PIN_E, PIN_D4, PIN_D5, PIN_D6, PIN_D7);
+
+  Servo servo;
+
+  servo.attach(PIN_MOTOR);
+  servo.writeMicroseconds(1000);
+
+  lcd.begin(16, 2);
+  lcd.clear();
+
+  bool prev_spinning = false;
+  long long prev_rpm = 3000;
+  long long prev_duration = 30;
+  long long prev_progress = 0;
+
+  long long rpm = 3000;
+  long long duration = 30;
+  long long progress = 0;
+  long long period = 1000;
+
+  lcd.setCursor(0, 0); lcd.print("RPM: "); lcd.print(rpm);
+  lcd.setCursor(0, 1); lcd.print("Duration: "); lcd.print(duration);
+
+  bool prev_button_states[5] = { false, false, false, false };
+  bool button_states[5] = { false, false, false, false };
+
+  long long start_time = 0;
+
+  bool spinning = false;
+
+  while (true) {
+    button_states[0] = digitalRead(PIN_RPM_UP);
+    button_states[1] = digitalRead(PIN_RPM_DOWN);
+    button_states[2] = digitalRead(PIN_TIME_UP);
+    button_states[3] = digitalRead(PIN_TIME_DOWN);
+    button_states[4] = digitalRead(PIN_START);
+
+    bool changed = false;
+
+    bool pushed[5] = { false, false, false, false };
+    for (int i = 0; i < 5; ++i) {
+      pushed[i] = !button_states[i] && prev_button_states[i];
+      if (pushed[i]) {
+        changed = true;
+        delay(100);
+      }
+    }
+
+    if (spinning) {
+      progress = (millis() - start_time) / 1000;
+      if ((millis() - start_time) > duration * 1000) {
+        spinning = false;
+      }
+      if (pushed[4]) {
+        spinning = false;
+        delay(100);
+      }
+    } 
+    else {
+      if (pushed[0]) {
+        rpm += 100;
+        delay(100);
+      } 
+      else if (pushed[1]) {
+        rpm -= 100;
+        delay(100);
+      }
+
+      if (pushed[2]) {
+        duration += 1;
+        delay(100);
+      }
+      else if (pushed[3]) {
+        duration -= 1;
+        delay(100);
+      }
+
+      if (pushed[4]) {
+        start_time = millis();
+        spinning = true;
+        delay(100);
+      }
+
+
+      // Now, read the USB UART serial input and parse the command
+      if (Serial.available()) {
+        String command = Serial.readStringUntil('\n');  // Read full command
+
+        // Print received command to Serial Monitor (Debugging)
+        Serial.print("[DEBUG] Received: ");
+        Serial.println(command);
+
+        if (command.startsWith("RPM:")) {
+          rpm = command.substring(4).toInt();  // Extract the integer
+
+          Serial.print("[DEBUG] Parsed RPM: ");
+          Serial.print(rpm);
+          Serial.println(" RPM.");
+        } 
+        else if (command.startsWith("TIME:")) {
+          duration = command.substring(5).toInt();  // Extract the integer
+
+          Serial.print("[DEBUG] Parsed Duration: ");
+          Serial.print(duration);
+          Serial.println(" seconds.");
+        } 
+        else if (command.startsWith("START")) {
+          start_time = millis();
+          spinning = true;
+
+          Serial.println("[DEBUG] Starting the spin...");
+        } 
+        else {
+          Serial.println("[DEBUG] Invalid command received.");
+        }
+      }
+
+    }
+
+    memcpy(prev_button_states, button_states, sizeof(button_states));
+
+    if (prev_spinning != spinning || prev_progress != progress || prev_rpm != rpm || prev_duration != duration) {
+      prev_spinning = spinning;
+      prev_rpm = rpm;
+      prev_duration = duration;
+      prev_progress = progress;
+
+      if (spinning) {
+        lcd.clear();
+        lcd.setCursor(0, 0); lcd.print("Spinning...");
+        lcd.setCursor(0, 1); lcd.print(progress); lcd.print(" / "); lcd.print(duration); lcd.print(" s");
+        period = map(rpm, 0, 12000, 1000, 2000);
+        servo.writeMicroseconds(period);
+      } 
+      else {
+        lcd.clear();
+        lcd.setCursor(0, 0); lcd.print("RPM: "); lcd.print(rpm);
+        lcd.setCursor(0, 1); lcd.print("Duration: "); lcd.print(duration);
+        servo.writeMicroseconds(1000);
+      }
+    }
+  }
+}
+```
+
+
+
+**ROADBLOCKS:**&#x20;
+
+1. **I need to get access to an additional spincoater to test my design. Arinud said he can rig one up quick. I will reach out to him this week to get this completed.**&#x20;
+
+
+
+**Plans for next week:**
+
+**The project is going pretty well (on schedule), so I am going to tackle two weeks this next week.**&#x20;
+
+
+
+Week 8: End-to-End Testing
+
+* Test the full data flow:
+*
+  * Create a job using Postman.
+  * Fetch the job on the Raspberry Pi.
+  * Execute the job on the spin coater.
+  * Verify job completion status is updated in AWS.
+* Debug and address issues in data flow, timing, or physical connections.
+* Justification: This will be the first test of the whole system.
+
+Week 9: Redundancy and Local Job Creation
+
+* Add functionality to the Raspberry Pi UI to:
+*
+  * Allow users to create jobs locally.
+  * Optionally enqueue these jobs in AWS.
+* Test the local job creation and execution workflow.
+* Justification: Local job creation is a nice feature to have but not absolutely necessary, so it is put towards the end of the schedule.
+
+
+
+**The goals in week 8 will be simple to accomplish because it just requires testing once I get access to the additional spincoater. I want to have these accomplished for the second demo.**&#x20;
+
+Thus, I will work on local job creation on the RPI in parallel.
+
+
+
+Documentation and project tracker is also updated.
+
+
+
+
+
 **Weekly updates for 3/2:**
 
 Progress for the week: Arduino connected to full system. In other words, we can now control the arduino via AWS requests.&#x20;

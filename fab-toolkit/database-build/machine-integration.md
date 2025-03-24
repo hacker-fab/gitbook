@@ -978,3 +978,261 @@ This code passes the majority of pylint/google code guidelines. The remaining is
 * Deploy the solution to fully automate the spin coater.
 
 **Justification:** This final phase ensures the system is robust and ready for production use.
+
+
+
+
+
+**New documentation after first submission:**
+
+Here is the updated driver code that runs on the RPI:
+
+This code is run on the RPI to control the spincoater. It simply send messages over UART with the RPM value, the time value, and the start command.&#x20;
+
+```python
+def run_spincoater(self, job_input_parameters):
+        """Run the spincoater job."""
+
+        ### This is where you write the firmware code to run the job. ##
+        rpm = job_input_parameters.get("rpm", 1000)
+        duration = job_input_parameters.get("time", 5)
+
+        # Send RPM command
+        rpm_command = f"RPM:{rpm}\n"
+        print(f"Sending: {rpm_command.strip()}")
+        ser.write(rpm_command.encode())
+        time.sleep(0.5)  # Small delay to ensure command is processed
+
+        # Send Time command
+        time_command = f"TIME:{duration}\n"
+        print(f"Sending: {time_command.strip()}")
+        ser.write(time_command.encode())
+        time.sleep(0.5)  # Small delay to ensure command is processed
+
+        # Send Start command
+        start_command = "START\n"
+        print(f"Sending: {start_command.strip()}")
+        ser.write(start_command.encode())
+
+        # Read response from Arduino
+        while True:
+            response = ser.readline().decode('utf-8').strip()
+            if response:
+                print(f"Arduino: {response}")
+            else:
+                break  # Stop reading when no more data
+
+        ### End of firmware code. ###
+
+
+        ## Gather the user response [Optional]##
+        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
+
+        self.get_user_output_response()
+
+        ## Submit the data back to the server ##
+        final_output_parameters = {"response": self.output_text}
+
+        self.submit_completed_response_to_server(final_output_parameters)
+```
+
+
+
+Here is the code that will run on the arduino. Notice that only a section was added for the USB UART interface.&#x20;
+
+```cpp
+#include <LiquidCrystal.h>
+#include <Servo.h>
+
+
+#define PIN_RS 10
+#define PIN_RW 11
+#define PIN_E 12
+#define PIN_D4 2
+#define PIN_D5 3
+#define PIN_D6 4
+#define PIN_D7 5
+
+#define PIN_RPM_UP    15
+#define PIN_RPM_DOWN  14
+#define PIN_TIME_UP   21
+#define PIN_TIME_DOWN 20
+
+#define PIN_START 17
+
+#define PIN_MOTOR 9
+
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(PIN_RPM_UP, INPUT_PULLUP);
+  pinMode(PIN_RPM_DOWN, INPUT_PULLUP);
+  pinMode(PIN_TIME_UP, INPUT_PULLUP);
+  pinMode(PIN_TIME_DOWN, INPUT_PULLUP);
+  pinMode(PIN_START, INPUT_PULLUP);
+}
+
+void loop() {
+  
+  auto lcd = LiquidCrystal(PIN_RS, PIN_RW, PIN_E, PIN_D4, PIN_D5, PIN_D6, PIN_D7);
+
+  Servo servo;
+
+  servo.attach(PIN_MOTOR);
+  servo.writeMicroseconds(1000);
+
+  lcd.begin(16, 2);
+  lcd.clear();
+
+  bool prev_spinning = false;
+  long long prev_rpm = 3000;
+  long long prev_duration = 30;
+  long long prev_progress = 0;
+
+  long long rpm = 3000;
+  long long duration = 30;
+  long long progress = 0;
+  long long period = 1000;
+
+  lcd.setCursor(0, 0); lcd.print("RPM: "); lcd.print(rpm);
+  lcd.setCursor(0, 1); lcd.print("Duration: "); lcd.print(duration);
+
+  bool prev_button_states[5] = { false, false, false, false };
+  bool button_states[5] = { false, false, false, false };
+
+  long long start_time = 0;
+
+  bool spinning = false;
+
+  while (true) {
+    button_states[0] = digitalRead(PIN_RPM_UP);
+    button_states[1] = digitalRead(PIN_RPM_DOWN);
+    button_states[2] = digitalRead(PIN_TIME_UP);
+    button_states[3] = digitalRead(PIN_TIME_DOWN);
+    button_states[4] = digitalRead(PIN_START);
+
+    bool changed = false;
+
+    bool pushed[5] = { false, false, false, false };
+    for (int i = 0; i < 5; ++i) {
+      pushed[i] = !button_states[i] && prev_button_states[i];
+      if (pushed[i]) {
+        changed = true;
+        delay(100);
+      }
+    }
+
+    if (spinning) {
+      progress = (millis() - start_time) / 1000;
+      if ((millis() - start_time) > duration * 1000) {
+        spinning = false;
+      }
+      if (pushed[4]) {
+        spinning = false;
+        delay(100);
+      }
+    } 
+    else {
+      if (pushed[0]) {
+        rpm += 100;
+        delay(100);
+      } 
+      else if (pushed[1]) {
+        rpm -= 100;
+        delay(100);
+      }
+
+      if (pushed[2]) {
+        duration += 1;
+        delay(100);
+      }
+      else if (pushed[3]) {
+        duration -= 1;
+        delay(100);
+      }
+
+      if (pushed[4]) {
+        start_time = millis();
+        spinning = true;
+        delay(100);
+      }
+
+
+      // Now, read the USB UART serial input and parse the command
+      if (Serial.available()) {
+        String command = Serial.readStringUntil('\n');  // Read full command
+
+        // Print received command to Serial Monitor (Debugging)
+        Serial.print("[DEBUG] Received: ");
+        Serial.println(command);
+
+        if (command.startsWith("RPM:")) {
+          rpm = command.substring(4).toInt();  // Extract the integer
+
+          Serial.print("[DEBUG] Parsed RPM: ");
+          Serial.print(rpm);
+          Serial.println(" RPM.");
+        } 
+        else if (command.startsWith("TIME:")) {
+          duration = command.substring(5).toInt();  // Extract the integer
+
+          Serial.print("[DEBUG] Parsed Duration: ");
+          Serial.print(duration);
+          Serial.println(" seconds.");
+        } 
+        else if (command.startsWith("START")) {
+          start_time = millis();
+          spinning = true;
+
+          Serial.println("[DEBUG] Starting the spin...");
+        } 
+        else {
+          Serial.println("[DEBUG] Invalid command received.");
+        }
+      }
+
+    }
+
+    memcpy(prev_button_states, button_states, sizeof(button_states));
+
+    if (prev_spinning != spinning || prev_progress != progress || prev_rpm != rpm || prev_duration != duration) {
+      prev_spinning = spinning;
+      prev_rpm = rpm;
+      prev_duration = duration;
+      prev_progress = progress;
+
+      if (spinning) {
+        lcd.clear();
+        lcd.setCursor(0, 0); lcd.print("Spinning...");
+        lcd.setCursor(0, 1); lcd.print(progress); lcd.print(" / "); lcd.print(duration); lcd.print(" s");
+        period = map(rpm, 0, 12000, 1000, 2000);
+        servo.writeMicroseconds(period);
+      } 
+      else {
+        lcd.clear();
+        lcd.setCursor(0, 0); lcd.print("RPM: "); lcd.print(rpm);
+        lcd.setCursor(0, 1); lcd.print("Duration: "); lcd.print(duration);
+        servo.writeMicroseconds(1000);
+      }
+    }
+  }
+}
+
+
+```
+
+The user also has the ability to create a job locally directly on the RPI. If the RPI is not connected to the internet, the job will just run locally. This is a redundancy feature.&#x20;
+
+See this feature in action here: [https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive\_link](https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive_link)
+
+
+
+Note that if the RPI is indeed able to connect to the AWS database, the job will be uploaded to the database for tracking purposes.&#x20;
+
+
+
+The specific fields are based on the template data when integrating the tool. No manual editing of the GUI code is required when integrating a new tool. You can see that the spincoater and LED connected to RPI IO are already implemented.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+
+More details about this will be provided once development is complete.&#x20;
