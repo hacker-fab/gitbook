@@ -180,6 +180,8 @@ void loop() {
 > Good work this week! I'm writing this after our Monday meeting when we discussed wrapping your code into a script that runs in the serial monitor and seeing the final product. The completion of that is impressive and now there's only the vacuum gauge left to go.
 >
 > As for format, I appreciate your work to incorporate my past feedback for your weekly updates. Good work on readability and updating the master doc. Progress was a little light this week, but I understand it was malloc lab.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 
 {% step %}
@@ -192,6 +194,12 @@ void loop() {
     Since I couldn't use the cable to test reading, I proceeded to check if Pfeiffer communication was working. I adapted code from **Brenden Sweeney's tutorial**, and communication was successful. However, while **writing** to the vacuum pump works, **reading** from it is still an issue. I expect ASCII characters in the **0x30–0x3A** range, but instead, I receive much higher values. I examined the hex values for patterns but found none. For example, all responses should end with **0x13**, but they end with **0x6A** instead. Initially, I suspected a shifted byte pattern, but that does not appear to be the case. I believe the issue might be with my wiring, but I haven't identified the exact cause yet.
 2. The main issue I’m facing is **reading from the vacuum pump**. I have already emailed Pfeiffer for assistance, but in the meantime, I plan to use a **logic analyzer** this week to determine which side of the communication is faulty. Since the signal is differential, I can manually decode the pump’s response to verify whether it matches my expectations. If it does not, then the issue lies with the pump.
 3. I aim to fully resolve Pfeiffer communication. Once this is complete, I can begin testing the **control loop for maintaining target pressures**. My goal is to have some control loop testing completed before **Presentation 2**.
+
+> **Feedback**
+>
+> Good work, Jay and I are happy with the gas controller routine and we will prob use it for the first sputter test on V2. If you have time it might be a good idea to clean up your wiring (color coding, soldering, etc) before that test. Writing to the vacuum pump is a huge deal, and my suspiscions for reading errors are probably not wiring but could be that you might need to flush the read buffer, add a delay before reading, and/or try different terminators. Using a waveform viewer is the best first step though. I would aim to complete that this week (with assistance from Pfieffer, Anirud if necessary) so that you can test PID/P loop the week before your Presentation 2. I have to debug this transformer and machine cooling for the ANT tuner, so I won't be that available to debug. After Presentation 2 and before Final, you should work on cleaning up the wiring, packaging the Arduino with buttons and a simple I2C/SPI text display, and optimizing control algorithms with emperical tests.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
