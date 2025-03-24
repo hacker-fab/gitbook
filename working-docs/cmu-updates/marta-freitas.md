@@ -317,3 +317,42 @@ As far as using the wrong wafers, the difference between the wafers is a slight 
 There may be a few issues with the Al on n-type Si and your analysis of potential errors is correct. Al spiking occurs when annealing at 450°C, so in the future the process should be performed at a lower temperature. Additionally, since Aluminum is a p-type dopant it is affecting the n-type regions doping concentration which is causing non-ohmic contacts. Additionally, though, it is suggests that pure Al contacts should not be used with junctions depths less than 2-3µm. The change from ohmic to rectifying behavior can help give insights into our current junction depth for our n-channels.
 
 LINK: https://web.stanford.edu/class/ee311/NOTES/Ohmic\_Contacts.pdf
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #8 (Mar 23)</mark>
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1](https://github.com/orgs/hacker-fab/projects/35/views/1)
+
+Folder: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* Annealed Ni chips at 450C for 15 min for silicide formation analysis
+* Reprobed Ni chips after annealing
+* Data interpretation on page 15 forward ([https://docs.google.com/document/d/1z\_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs](https://docs.google.com/document/d/1z_dYBMZVsaTxZiWfWMkpSNwPIkKBFdF-/edit#heading=h.gjdgxs))
+* Did some fabrication with Shagun as I am transitioning to her project
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I guess switching to the main project is a challenge since I have not been deeply involved in what is being done and the specific goals. I have to get myself familiarized with it in order to be of good help and to have a meaningful contribution to it, other than helping with fabrication.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Regarding this metal contacts project the only thing that I can think of that might be missing is some surface preparation techniques but I don't believe that is a priority or that it will be fruitful to pursue now. The main checkpoints we had set of getting a baseline and studying silicide formation have been completed. So,  I do not have any more plans to continue my project, except for a deeper data interpretation and final documentation writing.
+* Because of that, my main plans are to transition to Shagun's project, get acquainted with the goals, help with fabrication, and move forward with the main project.
+* Prepare the second lab report.
+
+Feedback
+
+• Cesely
+
+Great job wrapping up the metal contacts project. Since you have accomplished most of the goals for this project, it will be most helpful to have you start working on the doping project. While surface preparation could be improve our results, it will be more useful to demonstrate a working PMOS process by the end of this semester. It will likely take a couple of weeks to get caught up on the content of the doping project, but I am more than willing to meet up and discuss in depth what we are trying to accomplish. Additionally, you are joining Shagun’s project towards the end of her fabrication process- this means you can do data analysis with her new results which should quickly familiarize you with our theory/process.
+
+Don’t forget that this week you should prepare Demo 2 slides. Don’t worry about presenting anything related to the doping project- just focus on the contacts project and final conclusions.
+
+Lastly, I would agree that you are at a point to write up the final documentation for the contacts project.
+
+Also in the future, please specify what fabrication steps you completed with Shagun in the weekly update.
