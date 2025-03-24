@@ -181,5 +181,17 @@ void loop() {
 >
 > As for format, I appreciate your work to incorporate my past feedback for your weekly updates. Good work on readability and updating the master doc. Progress was a little light this week, but I understand it was malloc lab.
 {% endstep %}
+
+{% step %}
+### Weekly Update 8
+
+1.  I successfully established communication with Pfeiffer devices and wrote the serial command program. The program, **SetPoint\_Alicat.ino**, is located in the **Sputtering Controls** GitHub repository. If the Arduino wiring is correct, the program should work with a simple copy-paste and run. However, I recommend double-checking the unit ID and baud rate on the Alicat.
+
+    The signal corruption issue I encountered last week did not occur with the new RS485 converters I tested. I initially verified communication by writing bits to CoolTerm, which worked successfully. However, when I attempted to read bits from CoolTerm using the Arduino, it was unsuccessful. I later realized that the **DB9 cable** I was using contained only an **RS232 converter**, which was the root cause. Writing still worked because the **A+ line on RS485** corresponds to **TX on RS232**, but reading does not follow the same principle.
+
+    Since I couldn't use the cable to test reading, I proceeded to check if Pfeiffer communication was working. I adapted code from **Brenden Sweeney's tutorial**, and communication was successful. However, while **writing** to the vacuum pump works, **reading** from it is still an issue. I expect ASCII characters in the **0x30–0x3A** range, but instead, I receive much higher values. I examined the hex values for patterns but found none. For example, all responses should end with **0x13**, but they end with **0x6A** instead. Initially, I suspected a shifted byte pattern, but that does not appear to be the case. I believe the issue might be with my wiring, but I haven't identified the exact cause yet.
+2. The main issue I’m facing is **reading from the vacuum pump**. I have already emailed Pfeiffer for assistance, but in the meantime, I plan to use a **logic analyzer** this week to determine which side of the communication is faulty. Since the signal is differential, I can manually decode the pump’s response to verify whether it matches my expectations. If it does not, then the issue lies with the pump.
+3. I aim to fully resolve Pfeiffer communication. Once this is complete, I can begin testing the **control loop for maintaining target pressures**. My goal is to have some control loop testing completed before **Presentation 2**.
+{% endstep %}
 {% endstepper %}
 
