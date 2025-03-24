@@ -101,3 +101,19 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
     Aside from working on the new stepper, I worked with Carson on getting the new Basler camera set up with the stepper software (it took like 10 minutes and it was working flawlessly) - it's been (hopefully temporarily) yoinked to be be part of the existing Stepper V2 due to overall just being _nicer_.
 2. Still waiting on the Thorlabs parts.... other than that, no blockers.
 3. Next week hopefully this last Thorlabs order should come in, and that'll let me finally assemble the whole optics setup! The only remaining design task is the projector mounting (I think it'll just be a vertical plate that notches into the main plate at a certain position) and the only remaining fabrication tasks are the same mounting and also the optics adapter plate (along with the 3d printed parts for the stage, but that's easy). All the rest is just assembly! I could see the whole thing being ready by next update, but no guarantee on that of course.
+
+### Weekly Update 8
+
+1.  This week, I got Stepper V2.1 pretty much fully assembled! The Thorlabs parts arrived, so I was able to _finally_ put together the full optics setup:
+
+    <figure><img src="../../.gitbook/assets/image (185).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    With the projector mounted, this thing actually looks real now!
+
+    <figure><img src="../../.gitbook/assets/image (186).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    One goal for this week was to also get the setup able to be be transported to a conference that Joel was going to: in order to do that, I created an acrylic bottom plate with the same hole layout as our optic table, and mounted everything to that:
+
+    <figure><img src="../../.gitbook/assets/image (187).png" alt="" width="375"><figcaption></figcaption></figure>
+2. No current blockers!
+3. Next week will mainly consist of tuning: I need to line up the focal planes of the camera and DMD so that they are both 160mm away from the objective, in order to ensure that images that are in-focus on the chip's surface are in-focus to the camera. In addition, I also need to actually do the UV LED mod for the projector. Also, Joel reported that during the conference, the projector got VERY hot - I will probably need to figure out a better cooling solution for the LEDs than passive heatsinks, but I also noticed that they seem to be running much brighter than the LEDS on V2 so we can probably dim them down a bit too.
