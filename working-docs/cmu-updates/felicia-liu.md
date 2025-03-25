@@ -132,3 +132,19 @@ No roadblocks.
 Plan for next week:
 
 Continue to fabricate the chips.
+
+**Weekly Update #8**
+
+Work done:
+
+This week we discussed next steps we can take other than developing device models. We think we could start looking at open-sourced LVS check tools such as KLayout and brainstorm how they can be integrated with the schematic tool. We also agree that it is too early to develop standard cell library layouts since we are still transferring the layout toolchain and figuring out DRC. However, it is helpful to come up with a list of items we want to build and make constructive suggestions to the process team. Here ([https://docs.google.com/document/d/1q6OOcurhvERhzqmwrdqSNwqdjOpPjROsGMo\_t2sZ4uE/edit?tab=t.0](https://docs.google.com/document/d/1q6OOcurhvERhzqmwrdqSNwqdjOpPjROsGMo_t2sZ4uE/edit?tab=t.0)) I started a documentation.
+
+We continued to fabricate the NMOS characterization chip and the packaging test chip. We spun on HMDS (4/4) and patterned (2/4) our chip. However, the patterning was not successful.
+
+Roadblocks:
+
+The developer was out of stock until Thursday, so we could not fabricate for the first half of the week. The patterning of the two chips was not successful and we think the stepper was not focused properly.
+
+Plan for next week:
+
+Continue to fabricate. Debug the stepper and pattern the two other chips. Do research on KLayout, DRC,  and standard cell library options.
