@@ -113,3 +113,23 @@ One roadblock for fabricating is the spin coater broke on the night we went to f
 #### **Plans for next week:**
 
 Next week we will continue to fabricate the chips. We should be able to patten the mosfet gates and finish etching it (step 6-15). If we have more time, we can continue to dope P+ and N+.
+
+
+
+### **Weekly Update #8**
+
+#### **What was accomplished:**
+
+While waiting for the developer to be refilled, we discussed the potential of implementing LVS (layout versus schematic) check. We found an open-source tool called klayout, which has built-in LVS check, but we need to provide library files such as .lib, .lef, and qrcTechFile.
+
+Gongwei, Felicia, and I continued fabricating our chips after the developer was refilled. We spinned on HMDS and photoresist for all four chips. We uploaded the chip masks for the MOSFET gates to stepper software and patterned two chips (step 6-11).
+
+#### **Roadblocks:**
+
+One roadblock was the lack of developer until Thursday, so we fabricated only after Thursday.
+
+Another roadblock is the stepper not being able to focus well, especially when it switches to UV mode. So after the chip goes through the developer, we could only see the boundary of the pattern but not the detailed gates.
+
+#### **Plans for next week:**
+
+Next week we will continue to fabricate the chips. We need to figure out why stepper could not focus well and try to find a solution. We should continue patterning the MOSFET gates and finish etching them (step 6-15).
