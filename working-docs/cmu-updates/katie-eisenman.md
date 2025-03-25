@@ -4,6 +4,32 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 8 - 3/23/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+*   Did some literature review on the feasibility of reactive Al evaporation/ oxidation
+
+    * I first just checked if we could still do this in air at high temperatures without impurities like aluminum nitride by checking out the Ellingham diagrams. TLDR as long as we don't do it in a high nitrogen environment there will be no problem, which is very reassuring. Most of the articles I read about reactive Al evaporation did it in an oxygen environment anyway, but on the off chance we couldn't do that (I'm not sure if we have access to oxygen gas/what the safety concerns would be if we heated oxygen gas up) I just wanted to check.
+
+    <figure><img src="../../.gitbook/assets/image (188).png" alt=""><figcaption><p><a href="https://www.researchgate.net/figure/Nitrides-formation-Ellingham-diagram-The-figure-was-reproduced-from-Ref-7-courtesy-of_fig1_334187423">https://www.researchgate.net/figure/Nitrides-formation-Ellingham-diagram-The-figure-was-reproduced-from-Ref-7-courtesy-of_fig1_334187423</a></p></figcaption></figure>
+
+    * I also looked into pure thermal oxidation to see if we could use it to make films of reasonable sizes, and this study ([https://www.sciencedirect.com/science/article/pii/S0040609002007873](https://www.sciencedirect.com/science/article/pii/S0040609002007873)) is promising in terms of achieving an average Al2O3 film size of 30nm at a temperature of 500C under a PO2 of 1.33 \* 10^-4 Pa. They used XPS and HREM (High Resolution Electron Microscopy) to measure the size of the films. XPS isn't great for larger films but HREM (which is a type of TEM) can achieve a resolution of 0.2nm, which was used to measure the films. This study also observed that above 400C, after longer oxidation times, the amorphous Al2O3 eventually becomes gamma phase Al2O3, which is important to keep in mind.
+    * Read through other papers about reactive evaporation of aluminum [https://docs.google.com/spreadsheets/d/1TKB6aHW9vdk9iT3zZkKUyYFrIMQ4lUR3xLNAh300AFA/edit?gid=1637598523#gid=1637598523](https://docs.google.com/spreadsheets/d/1TKB6aHW9vdk9iT3zZkKUyYFrIMQ4lUR3xLNAh300AFA/edit?gid=1637598523#gid=1637598523) Some observations about the different studies are that the temperatures range greatly from 100 - 800 C, but many studies had success around 400 - 600C. Many also used pure oxygen gas flow into the system (either alone or combined with Argon) rather than using an air environment.&#x20;
+
+#### Roadblocks
+
+* Chamber V2 is still in the works - I'll see what I can contribute this week! (I can actually attend all classes/work times this week lol)
+* I am a little concerned about the fact that most of the sources we were looking at used oxygen gas flow, because it seems like kind of a hazard to flow it and heat up the system (explosions are bad). I'm wondering if EHS would be opposed, and also I'm not sure if either Hacker Fab or the MSE UG lab even has oxygen gas we could use to flow through something like a tube furnace. I know the MSE UG lab has a furnace that Melinda used in her capstone to flow Argon gas, so a setup does already exist to contain gas in a furnace.
+
+#### Plans
+
+* Coordinate with Matt once he gets back from the conference to get sputtered films from him
+* Characterize Matt's films with XRR and AFM (fingers crossed the tips get delivered this week!)
+* Look into feasibility of flowing oxygen for an oxidation/reactive evaporation test
+* Help with V2 build/setup however I can
+
 ### <mark style="color:purple;">Update 7 - 3/16/2025</mark>
 
 #### Accomplishments
