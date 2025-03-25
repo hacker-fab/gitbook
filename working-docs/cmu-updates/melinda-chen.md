@@ -258,3 +258,43 @@ Response - Jay
 * Recap of meeting 3/17
   * Next steps are to assess the viability of reactive Al evaporations, and/or cycles of Al evaporation followed by oxidation.
 * Overall good job helping out with setting up rf supply and moving chamber build forward
+
+### Update 7 (3/9-3/16)
+
+#### Accomplishments
+
+* Set up temporary goals w/Jay and Katie given that sputtering chamber is in an uncertain state
+  * Looking into reactive aluminum evaporation/alternative ways to make an aluminum oxide layer that don't involve
+    * Justification: Will allow us to proceed w/ironing out characterization methods and help set the groundwork for DC reactive sputtering by figuring out reasonable pressures/times
+* Literature review of both reactive evaporative aluminum and plasma oxidation techniques
+  * Major properties from papers are summarized in the sheet: [https://docs.google.com/spreadsheets/d/1TKB6aHW9vdk9iT3zZkKUyYFrIMQ4lUR3xLNAh300AFA/edit?gid=1637598523#gid=1637598523](https://docs.google.com/spreadsheets/d/1TKB6aHW9vdk9iT3zZkKUyYFrIMQ4lUR3xLNAh300AFA/edit?gid=1637598523#gid=1637598523) (Note: articles in rows 2-16 are ones that I looked into, remaining are Katie's)
+* Main takeaways from literature review:
+  * Potential options:
+    * Aluminum evaporation + Annealing under O2 atmosphere (seems to work decently above 550C w/thicknesses up to 100 nm level). Main roadblock is finding a furnace to do the annealing in. MSE undergrad lab tube furnace is one option, machining caps for the quartz tube in Hackerfab is another (something similar to the caps here: [https://labandfurnace.com/shop/tube-furnace/tube-furnace-with-gas-supply-system/1200c-600mm-w-3-controllers/250ltg-3-wg-1200c-large-diameter-3-zone-tube-furnace-w-gas-supply-system/?srsltid=AfmBOoqQ2F13fPdY\_bw6yLFLEMHXYy91TSmOKCwj9mBtqLsdc7qCYZ71](https://labandfurnace.com/shop/tube-furnace/tube-furnace-with-gas-supply-system/1200c-600mm-w-3-controllers/250ltg-3-wg-1200c-large-diameter-3-zone-tube-furnace-w-gas-supply-system/?srsltid=AfmBOoqQ2F13fPdY_bw6yLFLEMHXYy91TSmOKCwj9mBtqLsdc7qCYZ71))
+    * Plasma oxidation: Was difficult to find data on low-temperature oxidation of Aluminum. Out of the two closest papers, one opted to do "atmosphere-pressure plasma oxidation" with heating, while the other was performed in a Dielectric-Barrier-Discharge reactor. Seems like temperature is a much more important factor than pressure, anything below 550K (some sources say 550C, will need to hand-calc check which one it is) will max out at 1-2nm oxides.&#x20;
+  * Two mechanisms of oxidation: Cabrera-Mott (initial oxidation) --> Wagner (only relevant for high temp, slow growth after initial oxidation)
+  * Potential strategy I think might work not mentioned in papers: Cycles of evaporation + oxygen flowing in&#x20;
+    * Since the worry with flowing O2 into the evaporator is that the temp required to evaporate Al at higher pressures is not reachable, we can maybe cycle Al evaporation --> O2 flow (still at elevated temp?) --> pump back down to low pressure --> Al evaporation
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-03-23 at 9.36.17 PM.png" alt=""><figcaption><p>Literature review conducted on Reactive Alumina growth options</p></figcaption></figure>
+
+* Attempted to figure out how low the vacuum can pump w/oxygen flowing in
+  * MFC seems to be broken unfortunately
+
+Roadblocks
+
+* Sputtering chamber still not working : (
+* Waiting on AFM tips (have been ordered) since the last batch was apparently all broken
+* X-ray lab closed between March 17 - March 21
+* MFC potentially broken
+
+#### Plans
+
+* Evaporate Al chip on Polysilicon, run through the plasma etcher at highest possible O2 pressure (based on literature, 0.5 torr should be enough to see something)
+  * Not a lot of hope for this if the temperature is not sufficiently high
+* If MFC gets fixed, try the Al evaporation --> O2 flow cycle mentioned above
+* Continue lit review on reactive Al
+  * Also contact Jason to talk about potentially just annealing in tube furnace
+* Continue to help out with available chamber build + power supply tasks
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
