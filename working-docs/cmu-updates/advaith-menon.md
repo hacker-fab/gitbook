@@ -157,9 +157,6 @@ This week, my primary focus was designing the belting system for the automated s
 
 Once I had settled on the belt-driven approach, I began thinking about how best to integrate this system into the existing spin coater design. Initially, my plan was to incorporate the entire CAD model of the belting mechanism directly into the current spin coater CAD assembly. However, after further analysis, I realized that doing so might not be necessary and could even make modifications and testing more cumbersome. Instead, I opted to design a set of modular, custom parts specifically for the belt system, which would allow for easier adjustments and refinements. Some of these custom components include a motor holder to securely mount the motor in the correct position relative to the belt and stage, as well as other structural supports to ensure proper belt alignment and tensioning. By keeping these components separate from the main CAD model, I will have more flexibility when iterating on the design, making it easier to test different configurations and troubleshoot any issues that arise.
 
-\
-
-
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9yM1aBTuPecIVHAQ6WHaBY2HChqVkqF9pR69nNBSwnP86FlbE7K-Phf2qnx8tGCHyyIDgBqGbWJeQSqvPg-aJ1jDerrRG4DvHPFjKQGK2dt96nXhjLnwsv7he4fm5iKImFVTqHw?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
 
 The above is one of the potential configurations for the belting system, which I believe would be the most effective. This is primarily because the belts are centered on the plate, helping to ensure the movement is smooth. Additionally, it takes up less space, because the motor goes under the cage, so there is less strain on the feet. Finally, the system is relatively simple compared to other solutions, which would require flipping the axis of the belt or angled gears.
@@ -171,5 +168,34 @@ Looking ahead, my next steps will involve moving from the design phase to the fa
 If any issues arise during testing, I have already identified a few potential improvements to explore. One option would be revisiting the idea of using a string instead of a belt if the belt proves too rigid or difficult to maintain at optimal tension. Another possible improvement would be refining the mounting system to create a more secure and adjustable connection between the belt and the motor-driven components. This might involve adding more tensioning mechanisms, such as adjustable pulleys or idlers, to fine-tune the belt's position and force distribution. Additionally, I will be considering different belt materials to see if alternative options provide better flexibility, durability, or grip.
 
 This phase of the project is particularly important because the reliability of the belting system directly impacts the overall functionality of the automated spin coater. If the belt-driven mechanism fails to operate smoothly, it could lead to inconsistent spin speeds, affecting the quality and reproducibility of the coated films, as well as potentially causing the liquids on the chip to fall off before being annealed. Since automation is a key goal of this project, I need to ensure that the belting system is not only effective but also robust enough to handle repeated use without frequent maintenance or manual adjustments.
+
+
+
+***
+
+## Week 7
+
+After reviewing the design with my TA, we identified inefficiencies in the belt system that made it more complex than necessary. The initial design incorporated four to six idlers, which increased the system’s footprint and introduced additional mechanical challenges. This setup required precise alignment of multiple components, making assembly more difficult and increasing the potential for belt slippage or misalignment. To simplify the design and improve reliability, we decided to reduce the number of idlers to just two. However, this change required a complete reassessment of how the belt would be configured within the system.
+
+One of the main challenges was determining the best way to secure the belt while maintaining proper tension. The original approach relied on a more intricate path with multiple points of contact, which was no longer feasible with fewer idlers. After exploring different configurations, we ultimately decided to rotate the belt orientation and use belt clamps to secure it in place (1). This adjustment allowed us to maintain a stable and controlled belt path while reducing the number of moving parts. Additionally, this approach simplified both installation and future adjustments, as the belt can be more easily secured or repositioned if needed.
+
+Modifying the belt system also required adjustments to the spin coater carrier. Specifically, we had to increase its height to ensure the belt could pass underneath it without interference. Additionally, we designed holes to prevent the belt from hitting the pulley as it moved (2). These modifications ensured that the belt could operate smoothly while maintaining a compact and functional design.
+
+Finally, we had to design a motor holder that would work for this new system. Both me and my TA created differing designs, so we plan on testing each and figuring out which on works better.
+
+Since the parts for the revised design have not yet arrived, we have not been able to physically build and test the new configuration. However, based on initial design evaluations, the new approach is expected to improve both system efficiency and ease of assembly. The next step is to manufacture and assemble the updated components, at which point we will conduct testing to ensure that the belt remains stable under operational conditions. The goal for next week is to build and evaluate the new design, making any necessary refinements based on real-world performance.
+
+Image 1: Belt Drawings
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbQvDbT_iXKVs3GQTeEnRbjAlhJ1u5cNeCABDa3_ieCGrezimpzctP1aX7ID_VvB4B1pwZXy1sRT3x10QuqBYmA-QUwpQ5wrusoiQQ7zX6R4_UNs_5dfCuqiNFHCcbUlOn2g1L?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdKYYmz0LZkyfaWNMA28ZAGTrhudz_pNlHzz_E7w4WsploKALW8wriQbbxZgDIhXB0U1APMfem-9EYpTzcetgHjP9MWBG069X2MP9TSJDrbhNPKLRnim8RGiE-eneM4cHTTWAOPHA?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
+
+Image 2: New Spincoater Design
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfx9cqWl6bR9tdFc0ZbEsda3RmZFfN-Kke-PtVPbXdTN8Ql-dHHVssMtsmPlDpCmYbwStbky1GUMrKQUdyeR0X-OEHYt4tUXnVqghtEZvql0Y0zBZ0BxW_Qa1Y_cxNAy3712ofd7g?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
+
+Link to Onshape (individual parts can be seen in the folder): [https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461](https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461)\
+
 
 \
