@@ -4,6 +4,31 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 9 (03/30/2025)
+
+### Progress Updates
+
+* Substrate Heater Simulation
+
+I was able to continue my simulation efforts on the ANSYS hall computers which gives much faster times than what I could achieve on my computer (shoutout to James for the suggestion). I am currently running into an issue with memory on the computer (simulations on the relevant timescales are \~100 GB) when trying to load the thermal data into a structural simulation. Regardless, based on the thermal expansion after 1 hour of running, I can pretty conclusively determine that the cause of the Boron Nitride cracking was thermal stress concentrations around the screws. The particular BN disk that we were using was pressed into shape out of powder, so was relatively weak in the lateral direction, and the area of maximum thermal stress was at the screw holes, which caused crack formation and subsequent failure. I do not believe that the Aluminum Nitride is at risk of this same failure mode, largely due to the lack of holes. Because we chose a disk which is 4" in diameter, which fits inside of the screws with a bit of wiggle room, the stresses caused in the lateral direction are fairly minimal when compared to those experienced by the BN.
+
+I plan to continue my simulation efforts, but will be focusing more heavily on running the actual heater (once I get it hooked up again), as I do not feel concerned about the same failure mode. My suspicion based on some back of the napkin math is that we are not at risk of cracking the AlN in our temperature ranges, and will instead be constrained by our power supply.
+
+
+
+* O-Ring Replacement
+
+The new Aflas O-Rings arrived on 3/25. During the lab session that evening, I took apart the chamber, cleaned all of the sealing faces with IPA, and replaced the O-Rings with the Aflas ones. The latter half of the week was focused on confirming the quality of the chamber seals and ensuring the compatibility of all vacuum facing components. The Aflas seems to be sealing much better than the Viton, though I suspect that cleaning the sealing faces has something to do with it. Currently, with the pump running, the chamber reaches \~12 mTorr, and closing the throttle valve completely seals the chamber at pressure, with a leak rate of \~0.6 mTorr/min. It is worth noting that turning off the pump and venting the bellows does not allow the chamber to hold pressure. I believe that this is caused by improper orientation of the butterfly valve with respect to the pressure differential, the current arrangement would have the high pressure region pushing the O-Ring toward the chamber, away from the sealing surface. I will try flipping it around on Monday, but based on conversations with Viswesh, I feel like it may not matter all that much.
+
+### Roadblocks
+
+* Nothing solvable to report. It takes a while to run simulations and I don't have a ton of time to sit in ANSYS and babysit the computer, but I also think that we should be able to draw some useful conclusions from even very limited data.
+
+### Plans
+
+* Finish hooking up the substrate heater (had to be removed to replace the seals). The thermocouple is attached, so it's just the power lines now.
+* Continue analyzing the thermal sim data. Ideally, I will be able to draw some conclusions by the end of the week, but I am very busy with carnival things so I feel slightly unsure about my ability to commit a ton of time to it.
+
 ## Update 8 (03/23/2025)
 
 ### Progress Updates
