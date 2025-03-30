@@ -406,6 +406,59 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 **Future Plans**
 
-* Look into Arduinos and how they will work within the controls
+* Look into Arduino and how they will work within the controls
 * Discuss with Viswesh and Joel what to do with the Python script from here and make changes based on that
 * Research how to read into a serial port from LabVIEW
+
+## Update 9 (SOG)
+
+**Accomplishments**
+
+* Diffused the control chips for P504 and B154
+* Patterned the three chips (two n-doped and one p-doped, got rid of the fourth since we restarted the P504 control chip)&#x20;
+* Made a formula for 700B (undoped)
+
+| Chemical                | Amount       |
+| ----------------------- | ------------ |
+| Isopropyl alcohol (IPA) | 5 mL (42%)   |
+| Acetone                 | 2.5 mL (21%) |
+| Ethanol                 | 2.3 mL (19%) |
+| Silicic Acid            | 1.2 mL (10%) |
+| Deionized water         | 1 mL (8%)    |
+
+**Roadblocks**
+
+* Not trained to etch the chips, so could not move forward with AL etching and HF etching
+  * Possibly get trained?
+* Spin coater vacuum was not strong enough and had to use double sided tape which dragged the time longer than expected
+
+**Future plans**
+
+* Test the 700B formulation
+  * Different procedure from the doped SOG that involves no heat
+  * Silicic acid reacted faster than TEOS, so heat is not needed to somewhat speed up the reaction
+* Start the control for 700B
+* Al etch and probe the P504 and B154 chips&#x20;
+
+## Update 9 (ALD)
+
+**Accomplishments**
+
+* Made a basic LabVIEW VI that reads a string from a serial port, making it into an array that is able to be indexed into to get the four separate values
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-30 at 6.43.17 PM.png" alt=""><figcaption><p>Basic LabVIEW model</p></figcaption></figure>
+
+**Roadblocks**
+
+* Reading from SPI requires Windows since Linx is only compatible with Windows and Linux
+  * Need Linx or an outside source since LabVIEW alone does not supper reading SPI from an Arduino
+* Discussed to average the values on LabVIEW, but I am unsure if LabVIEW is able to store values once it reads in from the Arduino to average the values
+  * Could instead average on the Arduino script
+  * Have to make changes to the script
+* Which COM port is the Arduino and LabVIEW communicating with?
+
+**Future Plans**
+
+* Change the Arduino script to send values from the serial port and average the values that are read from the thermocouple
+  * Requires C/C++&#x20;
+* Discuss with Joel and Viswesh what would be best in terms of the taking the average and if we should continue with reading from a serial port
