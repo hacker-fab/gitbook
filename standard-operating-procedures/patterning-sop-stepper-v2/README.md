@@ -14,7 +14,7 @@ layout:
 
 # Patterning SOP - Stepper V2
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
 
 ## Parameters
 
@@ -131,11 +131,11 @@ If you're doing this for the first time, it is recommended to read through the f
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1) (1).png>)
 
 4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
-![](<../../.gitbook/assets/image (6) (1).png>) ![](<../../.gitbook/assets/IMG_6036 (1).jpg>)
+![](<../../.gitbook/assets/image (6) (1) (1).png>) ![](<../../.gitbook/assets/IMG_6036 (1).jpg>)
 
 5. LYFT and move the projector back into place. Ensure it is touching all four bolts. Be careful about not scratching the chip.
 

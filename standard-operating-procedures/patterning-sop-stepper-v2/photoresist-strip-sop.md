@@ -1,8 +1,8 @@
 # Photoresist Strip SOP
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="" width="256"><figcaption><p>Example of Photoresist on Surface of Chip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt="" width="256"><figcaption><p>Example of Photoresist on Surface of Chip</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="256"><figcaption><p>Photoresist Removed post-strip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt="" width="256"><figcaption><p>Photoresist Removed post-strip</p></figcaption></figure>
 
 ## Parameters
 

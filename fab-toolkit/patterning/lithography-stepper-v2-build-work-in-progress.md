@@ -80,7 +80,7 @@ The PCB Gerber files for our UV LED can be found [here](https://drive.google.com
 
 ![](<../../.gitbook/assets/image (3) (2).png>)
 
-![](<../../.gitbook/assets/image (6) (1) (1).png>)
+![](<../../.gitbook/assets/image (6) (1) (1) (1).png>)
 
 You can order it through your PCB manufacturer of choice (we used JLCPCB). However, note that the PCB is [**copper core**](https://jlcpcb.com/blog/62-JLCPCB-Direct-Heatsink-Copper-Cored-PCBs-Available-Now!). This is because the LEDs draw several amps of current in operation. To ensure that the PCB doesn't melt, you should use copper core to facilitate better heat flow.\
 \
@@ -195,33 +195,33 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 4. Screw the motor, coupler, and micrometer into the X axis motor mount as shown. Doing this step before attaching to the rest of the stage takes advantage of the slop in the micrometer mounting screws and aids alignment.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Slide the Y axis motor mount onto the Y axis. You will need to remove some screws and push the stage to allow it to slide on.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. Attach the motor. Don't screw down the micrometer mount yet.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 7. While pushing the stage so the micrometer isn't touching the stop, fasten the micrometer mount. This avoids preloading the micrometer/motor assembly and improves shaft alignment.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 7. Reattach the X axis micrometer stop as well. You may need to adjust the screw length to get it to fit.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 8. Insert the Z axis motor mount to the Z axis. The easiest way to do this is to insert it upside down from the opposite side, then flip it while pushing the stage up, then slide it back so the holes line up. Basically it takes some fiddling.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 9. As with the other stages, attach the motor first, then secure the mounts. Tighten the set screw at the green arrow. Make sure the micrometer is flush with the mount at the yellow arrow. Again pushing upwards at the red arrow eliminates prelaod from the spring inside the stage and helps alignment.
 

@@ -16,7 +16,7 @@ layout:
 
 
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
 
 ## Parameters
 

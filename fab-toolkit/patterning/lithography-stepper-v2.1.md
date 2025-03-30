@@ -74,7 +74,7 @@ To test the proximity switches, connect them to a 12V supply. The sensor output 
 
 The sensors should be connected through a pull-up resistor to the Arduino's 5V supply. 12V should be supplied externally.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Wiring diagram for the sensors</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Wiring diagram for the sensors</p></figcaption></figure>
 
 TODO: Add picture of CNC shield!
 

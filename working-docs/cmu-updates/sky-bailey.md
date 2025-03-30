@@ -84,19 +84,19 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 
     Also note that this first version is laser-cut acrylic for prototyping - it might be rigid enough as-is but I'm not ruling out the possibility of switching to an aluminum plate.
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (5).png" alt="" width="375"><figcaption></figcaption></figure>
 
     I'm still waiting on the final optics parts to arrive from Thorlabs (Joel said my previous attempt to get these never actually got ordered, but it's actually going through now....) but in the meantime I have assembled the parts I've received thus far to form the 3 branches of the optics setup:
 
-    <figure><img src="../../.gitbook/assets/image (1) (5).png" alt="" width="375"><figcaption><p>Objective side</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (5) (1).png" alt="" width="375"><figcaption><p>Objective side</p></figcaption></figure>
 
-    <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>Camera side</p></figcaption></figure></div>
+    <div data-full-width="false"><figure><img src="../../.gitbook/assets/image (2) (3).png" alt="" width="375"><figcaption><p>Camera side</p></figcaption></figure></div>
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>Projector side</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (3).png" alt="" width="375"><figcaption><p>Projector side</p></figcaption></figure>
 
     I also started on the projector modifications. One thing I always found odd about our previous steppers was that they kept the cases on the projectors after modifications despite the fact that they make mounting the projectors a massive pain. For Stepper V2.1, I removed the case from the projector to reveal 3 fantastic standoffs to mount to, which should allow me to fulfill my goal of rigidly mounting the projector: I'll just have another laser cut plate (less likely to need to be aluminum than the main plate) that these standoffs bolt to, which then sits on top of the main plate.
 
-    <figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
     Aside from working on the new stepper, I worked with Carson on getting the new Basler camera set up with the stepper software (it took like 10 minutes and it was working flawlessly) - it's been (hopefully temporarily) yoinked to be be part of the existing Stepper V2 due to overall just being _nicer_.
 2. Still waiting on the Thorlabs parts.... other than that, no blockers.

@@ -78,16 +78,16 @@ Our setup consists of two parts: the **crucible** and the **substrate heater.**
 
 The crucible is comprised of the following parts:
 
-* #### [Tungsten Filament](https://www.lesker.com/newweb/evaporation\_sources/basket-crucible-heaters.cfm)
-* #### [Alumina Thermal Crucible](https://www.lesker.com/newweb/evaporation\_sources/thermal-crucibles-alumina.cfm?highlight=EVC1AO)
-* #### [Insulating Bucket](https://www.lesker.com/newweb/evaporation\_sources/thermal-crucibles-alumina.cfm?highlight=EVC5AO\&highlight=EVC5AO)
+* #### [Tungsten Filament](https://www.lesker.com/newweb/evaporation_sources/basket-crucible-heaters.cfm)
+* #### [Alumina Thermal Crucible](https://www.lesker.com/newweb/evaporation_sources/thermal-crucibles-alumina.cfm?highlight=EVC1AO)
+* #### [Insulating Bucket](https://www.lesker.com/newweb/evaporation_sources/thermal-crucibles-alumina.cfm?highlight=EVC5AO\&highlight=EVC5AO)
 
 After assembling these parts together, connect the copper power feedthroughs to either end of the tungsten filament using an [inline barrel connector](https://www.lesker.com/feedthroughs/connectors-inlinebarrel/part/ftaibc094).
 
-[Ceramic beads](https://www.lesker.com/newweb/feedthroughs/ceramic\_fishsplinebeads.cfm?pgid=0) can be used to safely insulate the metal and prevent electrical misconnections.&#x20;
+[Ceramic beads](https://www.lesker.com/newweb/feedthroughs/ceramic_fishsplinebeads.cfm?pgid=0) can be used to safely insulate the metal and prevent electrical misconnections.&#x20;
 
 Next, connect a power supply to the external end of the power feedthroughs to heat up the crucible.
 
 Finally, attach the thermal  breakout board and arduino to the thermocouple to read the temperature values.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="" width="375"><figcaption><p>Crucible heated to evaporate aluminum and deposit over chip.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" width="375"><figcaption><p>Crucible heated to evaporate aluminum and deposit over chip.</p></figcaption></figure>

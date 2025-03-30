@@ -336,4 +336,63 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Modify the stage positioner design to be attached to the R-axis stage
 * Modify the stage positioner design for chip to be placed more stably (place a board on top of the piezo vibration sensor)
 * Conduct the piezo vibration sensor test if the sensor still works when there is a board on top of it
-* Conduct the piezo vibration sensor test with something cushiony between the chip and the sensor (if necessary)\
+* Conduct the piezo vibration sensor test with something cushiony between the chip and the sensor (if necessary)
+
+### **Weekly Update #9 (3/24 - 3/30)**
+
+#### Accomplishments
+
+* I asked Sky in the litho stepper team about the tube between camera and the objective lens.\
+  My question was if it is a common way to achieve the 160 mm length between a camera and an objective by buying a few of [this extension tube](https://a.co/d/eTDqlJl) and connecting them to be 160 mm as total, and a [C-mount adaptor for objective lenses](https://a.co/d/j5VsfJK). He told me that it would be an easier option to find something like [this](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/), which has the exact distance we need already. I noticed that the length of the tube is only 132.50 mm, or 136.50 mm including the thread, which is much shorter thatn 160 mm. He told me that part of this is because there is a 17.5 mm distance between the start of the threads on the camera side and the actual camera sensor (that's called the flange focal distance, which is specified by the spec for the C lens mount which the camera uses), which would lead to a total of 150 mm, not 160 mm. And the reason why this is 150 mm, not 160 mm, is that the actual image plane projected by the objective is 150mm, not 160mm - this means that if we're using a camera sensor instead of an eyepiece, our sensor needs to be at 150 mm not 160 mm.\
+  ![](../../.gitbook/assets/image.png)\
+  [https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/)\
+  ![](<../../.gitbook/assets/image (1).png>)\
+  [https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/)\
+  I plan to first try 3D printing a tube by modifying something like [this](https://creazilla.com/media/3d-model/7864622/c-cs-mount-adapter-for-din-threaded-microscope-objectives). If I can't make it work, I'll order [this](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/). To design the tube, I need to confirm these:\
+  \- To make sure the AmScope camera we use has the 17.5 mm distance between the start of the threads and the actual camera sensor.\
+  \-  Why does this tube have multiple sections with different diameters on the inside, indicated with the blue arrows? Are they necessary?\
+  ![](<../../.gitbook/assets/Screenshot 2025-03-30 at 2.48.27 PM.png>)
+* I asked Sky in the litho stepper team about the numerical aperture of the objective lens.\
+  He told me that it should't matter in this case. It matters when we care about specific brightness and resolution, but since the probe station is targetting large pads on the chip, he thinks it really isn't a worry. My understanding is that it matters when we try to observe nanoscale objects, when it comes to the resolution. For the brightness, it matters when we somehow can't have a light near the objects, I guess? Anyways, it seems like we don't have to care about the numerical aperture for our appication.
+* I found the lens with smaller magnification than 10x. Olympus E A4 (4x objective).\
+  ![](<../../.gitbook/assets/image (2).png>)
+* I made a board to be placed on top of the piezo vibration sensor to stabilize wobbling chips.![](<../../.gitbook/assets/image (3).png>) ![](<../../.gitbook/assets/image (6).png>)
+* I conducted the piezo vibration sensor test if the sensor still works when there is the board on top of it. I didn't work. The board significantly decreases the sensor's sensitivity.\
+  [video1](https://photos.app.goo.gl/NvgATJFFftdn53GX6) [video2](https://photos.app.goo.gl/Fae4d9VT4CcfbHfV7)
+* I found that the vacuum chuck does not work with the piezo vibration sensor. Even if I hold the vacuum pump motor in the air, the air or the vibration from the tube affects the sensor.\
+  [video](https://photos.app.goo.gl/6xV93jg58okfKhUGA)
+* Because [the double-sided conductive tape](https://www.amazon.com/dp/B097JQQ7SC) (double-sided conductive and double-sided adhesive) has arrived, I tested it. We thought this can be an alternative solution for the vacuum chuck. I found that it is NOT conductive.\
+  [video](https://photos.app.goo.gl/rAGHJ6wtj6fDF9po6) (The first touch was with an one-sided conductive tape, and the second one was with the double-sided conductive tape)
+* I then made one-sided adhesive conductive tape double-sided adhesive, by putting a double-sided tape on it. It worked well.\
+  ![](<../../.gitbook/assets/image (7).png>) ![](<../../.gitbook/assets/image (8).png>)\
+  [video](https://photos.app.goo.gl/NFBbWuAgZgs6JK6w7)
+* I tried how easily I could remove the chip from the tape. It was sticky, but I would say it's okay. \
+  [video](https://photos.app.goo.gl/pfJrZFvBUzup7EPF7)
+* I also tested whether I could peel off the tape without any problem. It seemed okay, but..\
+  ![](<../../.gitbook/assets/image (9).png>)
+* After I remove the tape, the sensor started showing noises with or without the tape on it (I tested it after removing it, and tested it again with a new tape thinking the sensor might be vibrating a little by the environmental factors such as AC air flows).\
+  [video1](https://photos.app.goo.gl/vwqMvoCkzutbV4288) [video2](https://photos.app.goo.gl/tMsDo4YayPrGcP7J8)\
+  I'm not sure if I broke the sensor when I was peeling off the tape. I'll dig into this problem next week by replacing the sensor with a new one. I'm thinking of placing another tape, probably [a polyimide film tape](https://a.co/d/g3PlaNK), between the sensor and the tape, so that we don't have to put and peel directly on and off the sensor.
+* I didn't check how stable the chip was on the tape by actually trying to touch it with two probes, like I did last week (last week, because it was not stable, the multimeter value was also not stable). This is because it is difficult to do so using the low-resolution USB camera and feel I scratch too much on the chip when I try to measure it with the camera. I'll do the actual measurement of resistance again when I have the better camera setup ready.
+* Last week, I found the magnetic board was too flimsy. I flipped it upside down this week like this below, but it was still not good.\
+  ![](<../../.gitbook/assets/image (10).png>)\
+  I used steel boards I made before for my research. I should design and order a sheet metal part like this.\
+  ![](<../../.gitbook/assets/image (11).png>)\
+
+
+#### Roadblocks
+
+* Need to better understand the camera, tube, and objective lens setup
+* Stabilize chip placement (need to check if the tape method actually works in terms of whether it doesn't break the sensor, and whether it actually stabilize it)
+
+#### Plan
+
+* Learn more about the tube between a camera and an objective lens.
+* Design, 3D print and test the tube.
+* Order the tube if the 3D printed tube does not work.
+* Test a new piezo sensor to check if it has noises.
+* Order several piezo sensors.
+* Design and order a magnetic base.
+* Modify the stage positioner design to be attached to the R-axis stage.
+* Modify the probe positioner design for the height of the new stage positioner design.
+
