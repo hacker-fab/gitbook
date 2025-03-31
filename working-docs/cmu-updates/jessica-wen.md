@@ -4,6 +4,249 @@ description: Weekly Update Page :)
 
 # Jessica Wen
 
+## 2025-03-18 Update
+
+Finalised the DB structure with DBML:
+
+<figure><img src="../../.gitbook/assets/HackerFab Process Database Structure (2).png" alt=""><figcaption><p>Database schema</p></figcaption></figure>
+
+```sql
+CREATE TABLE `affiliations` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `machines` integer,
+  `created_at` timestamp NOT NULL
+);
+
+CREATE TABLE `users` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `username` varchar(255) UNIQUE NOT NULL,
+  `affiliation_id` integer,
+  `created_at` timestamp NOT NULL
+);
+
+CREATE TABLE `chips` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `owner_id` integer,
+  `top_layer` varchar(255),
+  `created_at` timestamp NOT NULL
+);
+
+CREATE TABLE `machines` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL,
+  `affiliation` integer
+);
+
+CREATE TABLE `processes` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text,
+  `created_at` timestamp NOT NULL
+);
+
+CREATE TABLE `steps` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `machine_id` integer,
+  `involved_processes` integer,
+  `status` varchar(255) NOT NULL,
+  `parameter` integer,
+  `created_at` timestamp NOT NULL
+);
+
+CREATE TABLE `parameter_definitions` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `step_id` integer,
+  `name` varchar(255) NOT NULL,
+  `notes` varchar(255),
+  `unit` varchar(255),
+  `data_type` enum COMMENT 'float, integer, string, boolean',
+  `min_value` float,
+  `max_value` float,
+  `required` boolean NOT NULL,
+  `default_value` varchar(255)
+);
+
+CREATE TABLE `parameter_values` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `parameter_id` integer,
+  `value` varchar(255)
+);
+
+CREATE TABLE `runs` (
+  `id` integer PRIMARY KEY NOT NULL,
+  `chip_id` integer,
+  `user_id` integer NOT NULL,
+  `step_id` integer NOT NULL,
+  `notes` text,
+  `status` varchar(255) NOT NULL,
+  `characterisation_data` json,
+  `created_at` timestamp NOT NULL,
+  `completed_at` timestamp
+);
+
+ALTER TABLE `users` COMMENT = 'Core user information';
+
+ALTER TABLE `chips` COMMENT = 'Physical chips being processed';
+
+ALTER TABLE `machines` COMMENT = 'Processing equipment';
+
+ALTER TABLE `processes` COMMENT = 'High-level process categories';
+
+ALTER TABLE `steps` COMMENT = 'Specific manufacturing steps';
+
+ALTER TABLE `parameter_definitions` COMMENT = 'Defines available parameters for each process';
+
+ALTER TABLE `parameter_values` COMMENT = 'Actual parameter values used in runs';
+
+ALTER TABLE `runs` COMMENT = 'Process execution records';
+
+ALTER TABLE `users` ADD FOREIGN KEY (`affiliation_id`) REFERENCES `affiliations` (`id`);
+
+ALTER TABLE `chips` ADD FOREIGN KEY (`owner_id`) REFERENCES `users` (`id`);
+
+ALTER TABLE `machines` ADD FOREIGN KEY (`affiliation`) REFERENCES `affiliations` (`machines`);
+
+ALTER TABLE `steps` ADD FOREIGN KEY (`machine_id`) REFERENCES `machines` (`id`);
+
+CREATE TABLE `processes_steps` (
+  `processes_id` integer,
+  `steps_involved_processes` integer,
+  PRIMARY KEY (`processes_id`, `steps_involved_processes`)
+);
+
+ALTER TABLE `processes_steps` ADD FOREIGN KEY (`processes_id`) REFERENCES `processes` (`id`);
+
+ALTER TABLE `processes_steps` ADD FOREIGN KEY (`steps_involved_processes`) REFERENCES `steps` (`involved_processes`);
+
+
+ALTER TABLE `parameter_definitions` ADD FOREIGN KEY (`step_id`) REFERENCES `steps` (`parameter`);
+
+ALTER TABLE `parameter_values` ADD FOREIGN KEY (`parameter_id`) REFERENCES `parameter_definitions` (`id`);
+
+CREATE TABLE `chips_runs` (
+  `chips_id` integer,
+  `runs_chip_id` integer,
+  PRIMARY KEY (`chips_id`, `runs_chip_id`)
+);
+
+ALTER TABLE `chips_runs` ADD FOREIGN KEY (`chips_id`) REFERENCES `chips` (`id`);
+
+ALTER TABLE `chips_runs` ADD FOREIGN KEY (`runs_chip_id`) REFERENCES `runs` (`chip_id`);
+
+
+ALTER TABLE `runs` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+ALTER TABLE `runs` ADD FOREIGN KEY (`step_id`) REFERENCES `steps` (`id`);
+```
+
+```
+dbml
+// DBML docs: https://dbml.dbdiagram.io/docs
+
+Project HackerFabProcesses {
+  database_type: 'MySQL'
+  Note: 'Database structure for HackerFab process documentation'
+}
+
+Table affiliations {
+  id integer [primary key, not null]
+  name varchar [not null]
+  machines integer
+  created_at timestamp [not null]
+}
+
+Table users {
+  id integer [primary key, not null]
+  username varchar [not null, unique]
+  affiliation_id integer [ref: > affiliations.id]
+  created_at timestamp [not null]
+  Note: 'Core user information'
+}
+
+Table chips {
+  id integer [primary key, not null]
+  owner_id integer [ref: > users.id]
+  top_layer varchar
+  created_at timestamp [not null]
+  Note: 'Physical chips being processed'
+}
+
+Table machines {
+  id integer [primary key, not null]
+  name varchar [not null]
+  status varchar [not null]
+  created_at timestamp [not null]
+  affiliation integer [ref: > affiliations.machines]
+  Note: 'Processing equipment'
+}
+
+Table processes {
+  id integer [primary key, not null]
+  name varchar [not null]
+  description text
+  created_at timestamp [not null]
+  Note: 'High-level process categories'
+}
+
+Table steps {
+  id integer [primary key, not null]
+  name varchar [not null]
+  machine_id integer [ref: > machines.id]
+  involved_processes integer [ref: <> processes.id]
+  status varchar [not null]
+  parameter integer
+  created_at timestamp [not null]
+  Note: 'Specific manufacturing steps'
+}
+
+Table parameter_definitions {
+  id integer [primary key, not null]
+  step_id integer [ref: > steps.parameter]
+  name varchar [not null]
+  notes varchar
+  unit varchar
+  data_type enum [note: 'float, integer, string, boolean']
+  min_value float [null]
+  max_value float [null]
+  required boolean [not null]
+  default_value varchar [null]
+  Note: 'Defines available parameters for each process'
+}
+
+Table parameter_values {
+  id integer [primary key, not null]
+  parameter_id integer [ref: > parameter_definitions.id]
+  value varchar [null]
+  Note: 'Actual parameter values used in runs'
+}
+
+Table runs {
+  id integer [primary key, not null]
+  chip_id integer [ref: <> chips.id]
+  user_id integer [not null, ref: > users.id]
+  step_id integer [not null, ref: > steps.id]
+  notes text
+  status varchar [not null]
+  characterisation_data json
+  created_at timestamp [not null]
+  completed_at timestamp
+  Note: 'Process execution records'
+}
+```
+
+Other thoughts:
+
+* I'm not sure what the best data types are for all the different columns - will need to speak with Ridge/Akshunna
+* I removed the login credentials table - that's not my area of expertise
+* I haven't created the Machines page on Figma
+* Maybe it's time to start updating the website to match these updates? I think I'll need to sync with Ridge again to see what's been changed/what's in progress.
+* Next step:
+  * Front end without worrying about the back end :)
+
 ## 2025-02-18 Update
 
 Worked on [Figma](https://www.figma.com/design/2xo82x5s8gr8mwEhQCdJ0B/hackerfab-website-\(Copy\)?node-id=3-56\&t=ELuYPUsuZu1RlQ5Q-1) this week.
@@ -35,10 +278,6 @@ I think I forgot to request a review for my previous updates, so I've written th
 > Other than that, I think I get the idea overall, and it does make sense to have all these steps visible on the left hand side. I think the insight u put in shows thru, with the "In Development" marker, really good specific details. I wonder if it's a dropdown or a status selection.&#x20;
 >
 > Overall nice to see this progressing, let's discuss this week in class. Also let me know if you want to have a demo, I mentioned this to Ridge as well but either of you can reach out to me whenever you would like to demo, we can have you up there right before lecture and I think the class would find your work to be very cool!
-
-
-
-
 
 ## 2025-02-11 Update
 
