@@ -6,8 +6,6 @@
 
 Progress for this week:
 
-
-
 We are now able to control the spincoater from the API endpoint. This is the crux of the initial project proposal.&#x20;
 
 
@@ -16,7 +14,6 @@ Here is a video demo:&#x20;
 
 [https://drive.google.com/file/d/1p8djwfYRjVoW6D\_y8B1DaZZaasztiDXw/view?usp=drive\_link](https://drive.google.com/file/d/1p8djwfYRjVoW6D_y8B1DaZZaasztiDXw/view?usp=drive_link)&#x20;
 
-\
 
 
 NOTE: The spincoater will not run at 1000 RPM. This is too low and is cut off. Send 5000RPM at least as the test RPM value.\
@@ -60,7 +57,6 @@ These were the tasks from this week:
 Week 8: End-to-End Testing
 
 * Test the full data flow:
-*
   * Create a job using Postman.
   * Fetch the job on the Raspberry Pi.
   * Execute the job on the spin coater.
@@ -73,7 +69,6 @@ Week 8: End-to-End Testing
 Week 10: Optimization
 
 * Optimize the Raspberry Pi code for performance and reliability:
-*
   * Handle API timeouts or failures gracefully.
   * Add retry logic for API calls.
 * Refine the UI for user-friendliness based on feedback from initial users.
@@ -112,7 +107,12 @@ Github progress tracker is up to date
 
 Documentation is up to date&#x20;
 
-\
+
+
+> The spin coater one nearing full completion is amazing to see. Just writing down some of the stuff I remember from our discussion in class: for the stepper, we discussed that some sort of blob/object storage would be good as a permanent solution, and this way we can independently track which patterns were uploaded, store them in a hash table (so that repeating pattern images don't take up extra storage), etc. But for now, the best approach seems to be to have a temporary storage on the server which runs db.hackerfab.org, and this temporary storage will have a file endpoint from where the stepper can retrieve the pattern image. Maybe the storage of which pattern was used can be done on the stepper side, or again we can have a hash, and if the hash is new (new pattern image), we can store that image only. Since more than likely there will not be many new patterns, just repeats of existing ones for now.
+
+
+
 
 
 
