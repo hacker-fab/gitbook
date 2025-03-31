@@ -48,7 +48,9 @@ Currently, the stepper will not move in the x-direction. As such it will be diff
 
 Unfortunately with fabrication there can be alot of unseen errors that propogate through your process and make our chips unreliable. I would recommend for this next set of chips to make 2 chips both with 10 minute SOG that way we have a back up.
 
-Lastly don't forget that demo 2 is next week and to start preparing slides. Even if you don't have data yet you can begin outlining your presentation.
+Demo 2 is next week and to start preparing slides. Even if you don't have data yet you can begin outlining your presentation.
+
+Lastly don't forget to update the project tracker. &#x20;
 
 ## Update 8:&#x20;
 
