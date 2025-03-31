@@ -563,17 +563,67 @@ Because shipping is outside of my control. these are things I can work on while 
 * Test the effects of sawtooth wave frequency, amplitude and a combination of both on actuation for the existing prototype. \
 
 
+## **Update 9 (3/30/2025)**&#x20;
+
+### Accomplishments
 
 
 
+* Repeatable motion.
+  * Because the current piezo prototype does not have enough force to move a dial indicator we put it on a microscope and measure motion from the microscope.
+  * A rigid wire was glued on to use as a pointer.
+  * A dial indicator was set against the microscope stage and after each movement a measurement was made using a mahr supramess 0.5 micron indicator.
+  * with a 50ms step at 5khz we were able to get a repeatable 18.5 micron motion. repeatable to the half micron.
+  * Note that this is a comparative measurement because we are measuring the movement of the microscope stage rather than the piezo stage itself.&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_3373.JPEG" alt=""><figcaption></figcaption></figure>
 
 
 
+* Got cad to a good enough stage to machine. All parts for machining and assembly have arrived.
+  * Links to CAD Files [https://drive.google.com/drive/folders/1nOdKtKDnOEkslMUcOBMTf1-ErH6uORQs](https://drive.google.com/drive/folders/1nOdKtKDnOEkslMUcOBMTf1-ErH6uORQs)
+  * This iteration differs from previous designs through the use of a flexure.
+  * The carriage of the linear rail is rigidly attached to the stage. and the linear rail is the moving component.&#x20;
+  * Preload is done through spring washers.
+  * The piezo module chosen is a shear piezo from thorlabs. Even though a shear piezo is more expensive it makes machining and assembly easier. Having the glue surface normal to the preload direction means that the piezo is not under any shear loads.
+    * [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=10318](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10318)
+
+<figure><img src="../../.gitbook/assets/flexure based.png" alt=""><figcaption></figcaption></figure>
 
 
 
+<figure><img src="../../.gitbook/assets/flexure based (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
+* Sacrificial softjaws were made to facilitate machining operations. these jaws are meant to hold on to the flexure component of the actuator for second operation machining.
 
 
+
+<figure><img src="../../.gitbook/assets/IMG_3377.JPEG" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+**Roadblock 1:**
+
+Did not measure the effects of frequency on motion.
+
+**Proposed Solution**
+
+Ignore task for now because making a improved prototype is a higher priority.
+
+**Roadblock 2:**
+
+Did not get step and direction from grbl to interface with piezo driver.&#x20;
+
+**Proposed Solution**
+
+Like roadblock 1 ignore task for now because making a improved prototype is a higher priority.&#x20;
+
+### Next Steps
+
+The next steps to get a working piezo actuator include making the workholding to machine the backplate (see referenced 3d cad), flexure. And programming the machine to make the parts.&#x20;
+
+* The backplate workholding is relatively simple because the second operation does not require any sort of precision.
+* The flexure on the other hand is a relatively complex part. it requires machining very thin walls which can cause vibrations.&#x20;
+* Because I focused on CAD and CAM for this week I will need to work on software for converting step and direction to sawtooth waves as well as testing the effects of frequency and voltage on motion after machining the updated prototype.
