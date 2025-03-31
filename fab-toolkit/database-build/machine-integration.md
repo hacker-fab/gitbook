@@ -1236,3 +1236,59 @@ The specific fields are based on the template data when integrating the tool. No
 <figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 More details about this will be provided once development is complete.&#x20;
+
+
+
+The lab\_com software has successfully been used to integrate the lithostepper with limited functionality.&#x20;
+
+
+
+Carson was able to integrate the stepper when only given the following file (that demonstrates the use of the API):\
+\
+
+
+```python
+"""
+This module contains examples of a few endpoint calls
+"""
+import requests
+
+# Constants
+BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
+
+def test_jobqueue_api():
+    """
+    Test the job queue API endpoints.
+    """
+    # Step 1: POST /jobs - Enqueue a new job
+    job_data = {
+        "machine": "lithographer",
+        "input_parameters": {"x": 100.0, "y": 200.0, "image": "foo.png"},
+        "priority": 2
+    }
+    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
+    assert response.status_code == 200, "Failed to enqueue job"
+    job_id = response.json().get("job_id")
+    print(f"Job enqueued: {job_id}")
+
+   
+
+    # Step 4: GET /jobs/next - Fetch job from queue
+    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
+    assert response.status_code == 200, "Failed to fetch next job"
+    assert response.json().get("job_id") == job_id, "Fetched wrong job"
+    print("Job fetched successfully")
+    
+
+if __name__ == "__main__":
+    test_jobqueue_api()
+
+```
+
+
+
+Note that the get next jobs endpoint now also requires a machine name query param. This is needed to grab the job only for that machine.&#x20;
+
+
+
+More detailed documentation of file transfer protocol (for transfering images to the spincoater) will be provided next week.&#x20;

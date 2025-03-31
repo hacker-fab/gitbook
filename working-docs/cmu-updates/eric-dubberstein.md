@@ -1,5 +1,124 @@
 # Eric Dubberstein
 
+**Weekly update for 3/30:**
+
+
+
+Progress for this week:
+
+
+
+We are now able to control the spincoater from the API endpoint. This is the crux of the initial project proposal.&#x20;
+
+
+
+Here is a video demo:&#x20;
+
+[https://drive.google.com/file/d/1p8djwfYRjVoW6D\_y8B1DaZZaasztiDXw/view?usp=drive\_link](https://drive.google.com/file/d/1p8djwfYRjVoW6D_y8B1DaZZaasztiDXw/view?usp=drive_link)&#x20;
+
+\
+
+
+NOTE: The spincoater will not run at 1000 RPM. This is too low and is cut off. Send 5000RPM at least as the test RPM value.\
+
+
+The following changes were made to the codebase this week:&#x20;
+
+1. I updated the AWS lambda function to accept floating point numbers as inputs and to only fetch a certain machine’s job. The desired machine is added as a query parameter.
+
+\
+
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8Xe5eO5t3pMK954zwrK-KLGEWm_IJ9usjgEBX3Hu4jXyhQyIXVrYNnO7fK_FAXjOTGAEO-Qdd67lLEPOsUTyM5cYhd7DWjepBXLVbSXswoGeDg-GqAzodFBiLJBPGtEpVjWFS?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
+
+\
+
+
+2. I added more comments to the arduino code and added a message to communicate from the arduino to the RPI that says whether the spinning occurred successfully or not.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_D97NyxuCdNk6XSXCSbFcvsvCqo7AOQm6uNnowDdOQ1ZGaimkmFhWWjH7UCG1EiQh7JTsbbb-xgsKb3EbuuFc2T8jYuFy0VytxOW6-XfpnrmpVSjjV44grx8i48vYyj9lzyXaUQ?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
+
+\
+
+
+3. To accomplish the tasks that were originally outlined in week 10, I made the following modification: When the spin coater job finishes running, the arduino immediately sends a message to the RPI that the job was successfully completed instead of the user having to type in a completion message into the UI. The need to manually type in the completion status contributed to a poor user interface experience before. In addition, gentle failure logic is already present in the api requests, so there is no additional work to be done for that requirement.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXftH0YYWzY2qVcYcEVT5DUmhoBevBtcUCzogpTydLN0oQ33pWgHYPX2IpDzYJJx7UdEz8z6yJxit1k4JZYjgUbHSA01kMhg2Wv25mUMXJyen1qwBOgjAbXYomK9hoOloZE71nXb_g?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
+
+\
+
+
+4. Although it wasn’t originally outlined in my plan for this week, we also made significant progress by integrating the lithostepper to this framework. I was able to provide carson with the following snippet of code. He was easily able to add the stepper to this system with no major issues. This clearly demonstrates the robust design and extensibility of this lab communication framework.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdODCZSlGVQzFr5j2nPKkYNKW9nUQzIP9724AyEgNvZdbvTfMMPqO3qvp8vQjGt55eGEJHne-m4GSyKy5uPQJ0QZ8ojywGG3nCSzfgICDlNSBaVFmJpUBE2QOhVc81f6elpkrHPCg?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
+
+\
+
+
+These were the tasks from this week:
+
+Week 8: End-to-End Testing
+
+* Test the full data flow:
+*
+  * Create a job using Postman.
+  * Fetch the job on the Raspberry Pi.
+  * Execute the job on the spin coater.
+  * Verify job completion status is updated in AWS.
+* Debug and address issues in data flow, timing, or physical connections.
+* Justification: This will be the first test of the whole system.
+
+1. Tasks from Week 10:
+
+Week 10: Optimization
+
+* Optimize the Raspberry Pi code for performance and reliability:
+*
+  * Handle API timeouts or failures gracefully.
+  * Add retry logic for API calls.
+* Refine the UI for user-friendliness based on feedback from initial users.
+* Justification: This will be important for future scalability.
+
+\
+
+
+Plan for next week:
+
+The only two weeks left on the original plan are for documentation and training. It doesn’t make sense to complete these two steps while work is still being done, so I will leave that work until after demo #2.&#x20;
+
+1. To finish integrating the stepper, we need to have a way to communicate files alongside the job commands. For the stepper specifically, this will be the images of the patterns. We want to keep the overall system as general as possible, so it will work as follows:&#x20;
+
+* In the POST jobs endpoint, you’ll be able to specify the file you’d like to include. It will then be uploaded to the AWS server.&#x20;
+* I haven’t fully researched how the solution will work, but it may involve an additional API call.&#x20;
+* The machine will then receive the URL for the file in the input parameters list and can download the file to complete the job.&#x20;
+* The file will then be deleted on job completion to reduce storage usage.&#x20;
+* I will provide exact specifications in the documentation for how to use this system
+
+2. To better demonstrate the capabilities of the system that I have developed this semester, we need a way for people to use it from the web interface. So, I will create a basic page on the website that allows the user to control the spin coater. This webpage will allow the user to specify the time and the RPM. This webpage will call the API endpoints that have already been created. This will be done in time for the second demo
+3. I will start working on the presentation for the third demo
+
+\
+
+
+Roadblocks:&#x20;
+
+1. AWS expiring soon: Akshunna said he’d look into it.&#x20;
+2. I’ll need to discuss with Arinud if I will be allowed to hook my system into the actual spin coater before the end of the semester.&#x20;
+
+\
+
+
+Github progress tracker is up to date
+
+Documentation is up to date&#x20;
+
+\
+
+
+
+
+
+
 **Weekly updates for 3/23:**
 
 Gitbook has refused to save my work multiple times because there are too many open change requests. For now, I will be using google docs for my weekly update until A-V approves my change requests.&#x20;
