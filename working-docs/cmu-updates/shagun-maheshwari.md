@@ -4,6 +4,52 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 9:&#x20;
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)\
+Progress Update:&#x20;
+
+* Finished 100% fabrication for my 3 chips, however there were issues with fabrication among not knowing the wafer type (due to mislabeled boxes) and wrong patterns developed. That the team took an executive decision to "scrap" those chips and re-fabricate. Images can be found here: [https://drive.google.com/drive/u/0/folders/1WNCNLoeGwuEZROqqutANl3pbDY0UULO1](https://drive.google.com/drive/u/0/folders/1WNCNLoeGwuEZROqqutANl3pbDY0UULO1)
+* Outlined and built a very detailed fabrication process in fabublocks with Jay for the new chips [https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)
+* Finally was able to book and complete HF training
+* Worked on and finished Lab Report for the MOSCAP lab&#x20;
+
+Roadblocks:
+
+* Scrapping the chips and starting over was a major roadblock that set the project back, however I believe we have a good plan of attack for the next upcoming chips with a detailed process that should prevent errors. Also having seen the issues with wafers, patterning, and developing, it is good experience for the next set of chips. Another learning lesson was realizing that breaking up fabrication over a week causes more issues for the chips. The next set of chips will also have a n+ region in the n-well to prevent Schottky barriers.&#x20;
+
+Next steps:&#x20;
+
+Fabrication heavy:
+
+* Begin fabricating my new set of chips and align on SOG diffusion time with the team.&#x20;
+  * In order to maximize fabrication time at one-go the current plan is to come in majority of the day both Wednesday and Thursday to finish fabrication.&#x20;
+* Analyze CV data from an fully fabricated chips and run it through my code
+
+Feedback
+
+• Cesely
+
+This weekend Jay and I used a hot probe method to determine when our substrate went from being p-type to n-type to confirm some of our model assumptions. We tested a push through, 15 seconds, 30 seconds, and 1 minute chip and compared this to the bare p-type substrate. We found that the push through, 13s, and 30s did not dope enough to change it to n-type. However, the 1 minute did dope n-type.\
+\
+Due to this, Jay and I believe that we should make chips to test at SOG diffusion times of 30s, 45s, 1 minute, 5 minute, 10 minute, and 30 minutes.
+
+Currently this how we have distributed fabrication roles:
+
+• Jay: 45s and 5 minute
+
+• Ces: 30s and 1 minute
+
+• Shagun: 10 minute
+
+• Marta: 30 minute
+
+Currently, the stepper will not move in the x-direction. As such it will be difficult to fabricate after SOG diffusion (step 11 of the [Fabublox](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)). Hopefully this will be fixed before Wednesday so as to not delay fabrication progress.
+
+Unfortunately with fabrication there can be alot of unseen errors that propogate through your process and make our chips unreliable. I would recommend for this next set of chips to make 2 chips both with 10 minute SOG that way we have a back up.
+
+Lastly don't forget that demo 2 is next week and to start preparing slides. Even if you don't have data yet you can begin outlining your presentation.
+
 ## Update 8:&#x20;
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
