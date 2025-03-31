@@ -12,6 +12,68 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #9
+
+### ALD:
+
+Progress:
+
+* H2O ampule delivered from Swagelok!
+* The line is connected to both the chamber and the N2 cylinder
+* Final steps for ALD valve gas is still waiting on McMaster push to connect fitting
+* Viswesh did vacuum test with line connected today, we can reach 20 mTorr pressure but loses at 3 mTorr per minute
+
+
+
+Challenges:
+
+* Identifying leaks in the line will probably not be trivial
+
+Plans:
+
+* Will be working with Viswesh for vacuum stuff&#x20;
+* Look for/reorder push to connect to finish up the ALD valve gas line
+
+<figure><img src="../../.gitbook/assets/image (192).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (193).png" alt="" width="375"><figcaption></figcaption></figure>
+
+### Packaging
+
+Progress:
+
+* We were able to talk to Jim Bain after during his guest lecture:
+  * He basically gave approval of the chip on board concept for this semester, he also came to the conclusion that chip in package would be too finicky and hard to replicate for other people
+  * He strongly suggested that we just order the boards for packaging as opposed to making it ourselves, mainly due to wire bonding needing a specific coating on PCB pads to work reliably (prob something like this that Icey sent but need it for aluminum specfically: [https://www.protoexpress.com/kb/enig/](https://www.protoexpress.com/kb/enig/))
+  * he also seems fairly confident about our IO pads just being 3um thick AL pads, since AL is fairly reactive and prone to form oxides (good for adhesion) and its ductility will help prevent pad cracking and the wire from pushing beneath the pad
+* Made some progress with Altium schematics, got the connectors and netlists figured out
+  * need to figure out how to make the custom footprint for the wire bond pads
+* Also did a wire bonding test with my group's resistor lab chip, will get microscope pics in a few days but here are some main takeaways :
+  * The 0.48 um aluminum pads are way too small and lifts up fairly easily (though I was able to make first bond with one of them)
+  * the wire pulling is very scuffed, and the bonder can only pull in one direction
+    * we probably wont have problems with this, but the joint will snap super easily if ur wire bond is too short&#x20;
+    * the wire in general snaps super easily at the joint if the wire is dragged off axis during the bond
+  * if the pad comes off during bond, clogging the machine is likely, which may be painful to fix&#x20;
+  * also took a pic of some recommendations for bonding surfaces in the lab
+
+<figure><img src="../../.gitbook/assets/image (189).png" alt="" width="375"><figcaption><p>Manual in MEMS Lab</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (190).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (191).png" alt="" width="354"><figcaption></figcaption></figure>
+
+Challenges:
+
+* Thermal fluids experimentation continues to make me hate my life, but there will be less deadlines for me leading up to carnival, so I am really hoping to be more productive with packaging work for this coming week
+
+Plans:
+
+* take microscope pics of the resistor lab chip wire bond test
+* finish out the Altium schematics and layout to hopefully get some feedback by end of week
+* figure out the specific PCB pad finish that will be compatible with AL wire bonding
+
+***
+
 ## Weekly Update #8
 
 ### ALD:
