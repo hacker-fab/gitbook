@@ -356,3 +356,49 @@ Don’t forget that this week you should prepare Demo 2 slides. Don’t worry ab
 Lastly, I would agree that you are at a point to write up the final documentation for the contacts project.
 
 Also in the future, please specify what fabrication steps you completed with Shagun in the weekly update.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #9 (Mar 30)</mark>
+
+Folders: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72) ; [https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ](https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ)
+
+#### <mark style="color:blue;">Accomplished this week:</mark>
+
+* Working on the final documentation of the metal contacts project
+* Did around 4h of fabrication with Shagun: mainly etching, Al evaporation, patterning, up until the point where we decided we should give up on those chips
+* Since we decided to switch to a different testing, I started fabricating 2 chips with 30min SOG diffusion time ([https://drive.google.com/drive/u/0/folders/1grOltwBc3ErNZL6vpNOOD5sNX-y5\_ksN](https://drive.google.com/drive/u/0/folders/1grOltwBc3ErNZL6vpNOOD5sNX-y5_ksN)), and this fabrication was paused after the 2h drive in
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I am starting to get on track with Shagun's project, I don't believe there are any roadblocks at the moment.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Prepare demo 2.
+* Prepare lab report 2.
+* Finish fabrication. About 18 steps left [https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)
+
+Feedback
+
+• Cesely
+
+This weekend Jay and I used a hot probe method to determine when our substrate went from being p-type to n-type to confirm some of our model assumptions. We tested a push through, 15 seconds, 30 seconds, and 1 minute chip and compared this to the bare p-type substrate. We found that the push through, 13s, and 30s did not dope enough to change it to n-type. However, the 1 minute did dope n-type.\
+\
+Due to this, Jay and I believe that we should make chips to test at SOG diffusion times of 30s, 45s, 1 minute, 5 minute, 10 minute, and 30 minutes.
+
+Currently this how we have distributed fabrication roles:
+
+• Jay: 45s and 5 minute
+
+• Ces: 30s and 1 minute
+
+• Shagun: 10 minute
+
+• Marta: 30 minute
+
+Currently, the stepper will not move in the x-direction. As such it will be difficult to fabricate after SOG diffusion (step 11 of the [Fabublox](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)). Hopefully this will be fixed before Wenesday so as to not delay fabrication progress.
+
+Your goal is to have the MOSCaps fabricated by Friday provided that the stepper gets up and running again. Additionally, for demo 2 you only need to present on the contacts project. For demo 3, however, you will present with Shagun on the PMOS process.
