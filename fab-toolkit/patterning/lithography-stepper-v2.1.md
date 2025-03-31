@@ -82,5 +82,11 @@ TODO: Add picture of CNC shield!
 
 Instructions for installing and preparing the software are available on the [stepper software repository](https://github.com/hacker-fab/stepper).
 
+The video below descries the basic electronics setup and how to install GRBL and integrate the two. Make sure to cross reference this with the stepper instructions above.
+
+{% embed url="https://youtu.be/28XVv-WYPlE" %}
+
+
+
 
 
