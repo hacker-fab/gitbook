@@ -401,4 +401,6 @@ Currently this how we have distributed fabrication roles:
 
 Currently, the stepper will not move in the x-direction. As such it will be difficult to fabricate after SOG diffusion (step 11 of the [Fabublox](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)). Hopefully this will be fixed before Wenesday so as to not delay fabrication progress.
 
-Your goal is to have the MOSCaps fabricated by Friday provided that the stepper gets up and running again. Additionally, for demo 2 you only need to present on the contacts project. For demo 3, however, you will present with Shagun on the PMOS process.
+Your goal is to have the MOSCaps fabricated by Friday provided that the stepper gets up and running again. Additionally, for demo 2 you only need to present on the contacts project. For demo 3, however, you will present with Shagun on the CMOS/PMOS process.
+
+Lastly, make sure to update the project tracker for both the CMOS and contacts project.
