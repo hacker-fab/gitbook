@@ -4,7 +4,36 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
-## Update #7
+## Update #8
+
+**What was accomplished:**
+
+*   Created instances in KLayout for resistor and mosfet with adjustable parameters (i.e. segments). Code using Ruby.&#x20;
+
+    * User can call the instances onto their layout like you would on Cadence.\
+      &#x20;![](<../../.gitbook/assets/Screenshot 2025-03-29 at 8.24.30 PM.png>)
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2025-03-29 at 8.24.34 PM (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+* Uploaded code to [github](https://github.com/hacker-fab/Layout-tool-dev/blob/main/pcell_klayout), template can be used to extend with more instances like capacitors, etc.&#x20;
+* Researched general DRC parameters and how the script format is written when inputting into [KLayout](https://www.klayout.de/doc/manual/drc_basic.html#h2-44).&#x20;
+
+**Roadblocks**
+
+* Our first attempt after etching with plasma etch wasn't successful; no pattern showed up. So we had to erase and restart.&#x20;
+* When we started to fabricate again, the spinner stopped working due to a malfunction, which stopped us from restarting our fab progress.&#x20;
+  * Instead, we turned to looking at KLayout and spending more time there to create instances and start preparing a user manual for getting around KLayout tools.&#x20;
+
+**Plans for this week:**
+
+* Fabricate resistors, if possible.
+* If not, develop a mask from KLayout for the resistor and try exporting as GDSII ->convert to png.&#x20;
+* Create a list of parameters (industry-known + Hacker Fab specific) for DRC rules and create action items on how we can start collecting the data for parameters to integrate into DRC scripts as shown below for KLayout.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-03-29 at 8.42.15 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Update#7
 
 **What was accomplished:**
 
