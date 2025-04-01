@@ -216,6 +216,16 @@ void loop() {
     In addition to working on the project, I also troubleshot one of the Alicat devices. Its main screen was glitching, and it was unable to reach the setpoint. After consulting with Alicat IT, we determined the device was stuck in a **VOV error**, which occurs when the device attempts to output more mass than its configured limit. The solution was to perform a factory reset and then change the setpoint mode to digital, allowing the setpoint to be adjusted properly.
 2. The next major issue to address is determining why the Alicat does not work with the Arduino that successfully communicates with the other devices. Another potential concern is the number of available I/O pins. If the Arduino needs to communicate with additional devices, it may not have enough pins to support them all. One possible solution is to use multiple Arduinos in tandem. Currently, I am using two separate serial ports for each RS485 device, but I may also explore combining serial connections to free up additional pins.
 3. My goal is to have a fully functional control loop—capable of setting and maintaining pressure—ready by **Presentation 2**. This should be achievable as long as the Alicat issue is resolved quickly. Additionally, the wiring setup is becoming increasingly complex, so I plan to find a more organized way to arrange everything.
+
+> **Feedback**
+>
+> Great work resolving communication with the pressure gauge and pump. I suspected it was a delay issue. We talked about the following in person, but I'll rewrite them here for organization:
+>
+> * priority #1 - establishing a control loop, you'll likely need to experiment with P or PID with real gas pressure testing to see what is most reliable and fluctuates the least, modularize your P/PID loop it so you can easily tweak parameters for a different chamber (V2), you can also simplify your serial by reading the pressure gauge directly from the pump (if you use Pfeiffer pump and cable)
+> * priority #2 - packaging and wiring, 3D print a sled with heat inserts for an Arduino and protoboard, connect your converter to the protoboard, solder on header pins for jumper cables to the arduino
+> * priority #3 - PID loop for impedance matching network, you'll need to figure out how to read analog data from the VSWR meter on the tuner (easy way is to isolate the meter, apply a voltage, record what you observe, make a look up table or continuous function; then you'll need to control stepper motors on the capacitor in a PID loop to stabilize VSWR at 1
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
