@@ -168,3 +168,25 @@ This next week, I will be traveling from Wednesday to Sunday and, as a result, d
 * Real time fiducial mark detection is a great milestone, and it is visibly working very well too!
 * Thank you for communicating your travel plans; since we've been maintaining a good pace, it is okay if there is a little bit less progress this week. A good target could be working out a theoretical approach/procedure for translating alignment mark positions into fine-grained alignment and/or tiling within a layer. It would be good to consider how many alignment marks are visible, where the projected image will land, and a convergence procedure for motor movement. Safe travels!
 
+### Week 9
+
+This week we made progress implementing automatic alignment and also set up the new computer for the stepper.
+
+I re-added real-time detection on top of the previous linting and formatting changes. We have this in a new branch: [align](https://github.com/hacker-fab/stepper/tree/align). In the lab, Carson and I patterned a somewhat large chip a number of times with patterns that we could use to test automatic alignment. We followed the standard setup; there may have been problems with the exposure, however, because not all of the patterns were focused properly. However, we will still be able to use this chip for testing.
+
+After pushing the align branch and patterning this testing chip, we heard that the new computer arrived, so we picked that up and got it set up. We planned to install software sensibly and set up the computer so that installations and versioning requirements won't give us problems!
+
+We did not have time to finish getting alignment working, so this week's contributions are:
+
+* updating the real-time detection code so that we can easily merge it into main
+* patterning a chip that will allow us to test our alignment
+* setting up the new computer in the lab
+
+This week we hope to finish getting alignment working.
+
+**Week 9 Feedback (Kent Wirant):**
+
+* Code updates look good!
+* Thanks for helping out with setting up the new computer.
+* Patterning a test chip makes sense. It would be good to see some description of what testing this chip specifically supports over other previously fabricated designs. In the future, please also include photos of any patterning or machine build work you complete.
+* Looking forward to seeing alignment for Demo 2!
