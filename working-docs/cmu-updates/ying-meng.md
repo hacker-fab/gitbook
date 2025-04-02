@@ -133,3 +133,25 @@ Another roadblock is the stepper not being able to focus well, especially when i
 #### **Plans for next week:**
 
 Next week we will continue to fabricate the chips. We need to figure out why stepper could not focus well and try to find a solution. We should continue patterning the MOSFET gates and finish etching them (step 6-15).
+
+
+
+### **Weekly Update #9**
+
+#### **What was accomplished:**
+
+Gongwei, Felicia, and I continued fabricating our chips. We tried manual focus to solve the stepper issue from last week, and were able to pattern two chips successfully with several clear patterns for chip for packaging and for testing. We learned to use the plasma etcher but encountered some problems (explained in the roadblocks section). Most of our chips failed during fabrication, so we made four new ones, which are ready to be patterned.
+
+<figure><img src="../../.gitbook/assets/EDA_nmos_wireBond_post_pattern (1).jpg" alt="" width="375"><figcaption></figcaption></figure>
+
+**Roadblocks:**
+
+One roadblock was we didn't know what parameters to use for plasma O2 clean. Despite finding the plasma time from the SOP, we were not familiar with the software so we entered the wrong time and caused two patterned chips to be cleaned more than they should be, which led to the pattern disappearing. Another roadblock was the plasma etcher did not etch uniformly for our third chip. I believe our main issue was being not familiar with the fabrication process and tool, and did not have much experience, so we had to do everything several times before succeeding.
+
+<figure><img src="../../.gitbook/assets/EDA_o2_0005 (3).jpg" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/EDA_NMOS_post_plasma_PRstrip (2).jpg" alt="" width="375"><figcaption></figcaption></figure>
+
+**Plans for next week:**
+
+Next week we will continue to fabricate the new chips. With what we learned from the failed chips, hopefully we should be able to fabricate the gate of the new 4 chips smoothly and start developing source and drain.
