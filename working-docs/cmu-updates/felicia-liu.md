@@ -148,3 +148,29 @@ The developer was out of stock until Thursday, so we could not fabricate for the
 Plan for next week:
 
 Continue to fabricate. Debug the stepper and pattern the two other chips. Do research on KLayout, DRC,  and standard cell library options.
+
+**Weekly Update #9**
+
+Work done:
+
+This week, we continued to fabricate; however, for different reasons, our attempts were not successful.  We first patterned two chips but they failed later because we set the plasma O2 clean time too long, and the patterns were lost. We then patterned a new chip but the plasma etch was unsuccessful and left a bunch of residue. We did not realize that and proceeded to spin-on glass, and it is no longer usable.
+
+<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Chip that failed due to plasma etch residue</p></figcaption></figure>
+
+We started a couple of new chips and spun-on dopant. We HF-etched 2 of them and hope to retry patterning next week.
+
+Roadblocks:
+
+1. Stepper UV auto-focus was not accurate enough, so we had to manually fine-grain focus after hitting auto-focus for a coarse-grain focus.
+2. The plasma chamber didn't open after etching on Tuesday, but the TAs were able to fix it.
+3. Plasma O2 time duration was too long.
+4. Wasn't sure why plasma etching was not successful the second time.
+5. Only gate mask has the region we want to keep in black, all other layers have the opposite. Unsure if this is correct?
+
+<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption><p>Gate</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Metal</p></figcaption></figure>
+
+Plan for next week:
+
+Continue to fabricate. Hopefully, as we gain more experience the process can move forward more smoothly. :(
