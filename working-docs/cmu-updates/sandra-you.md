@@ -1,5 +1,25 @@
 # Sandra You
 
+**Weekly Update #9**&#x20;
+
+1. **What was accomplished:**
+   1. Tried to pattern alignment marks on chip + plasma etch, but plasma etching twice left no visible marks on the chip.
+      1. When we tried again, the spin coater was down :(
+   2. Created a resistor parametrized cell in KLayout and tried to create a transistor parametrized cell using Ruby ([https://drive.google.com/file/d/18690kAVgSaabBlJULtgOd2o3I7i-Q-fy/view?usp=sharing](https://drive.google.com/file/d/18690kAVgSaabBlJULtgOd2o3I7i-Q-fy/view?usp=sharing))
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+
+          <figure><img src="../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+
+
+
+2. **Roadblocks:**
+   1. Spin coater issues: was not spinning properly on Wednesday, vacuum wasn't strong enough on Thursday.
+3. **Plans for next week:**
+   1. Edit transistor PCell code for KLayout.
+   2. Continue fabrication of Metrology resistor chip if possible.
+
 **Weekly Update #6**&#x20;
 
 1. **What was accomplished:**
