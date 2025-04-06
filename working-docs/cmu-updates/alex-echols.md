@@ -4,6 +4,82 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 10 (04/06/2025)
+
+### Progress Updates
+
+* Substrate Heater Characterization
+
+I am making progress on the substrate heater characterization and am going to quickly summarize the testing plan, the expected results, and how the results are shaping up in reality.
+
+#### Motivation
+
+We wish to understand the operating characteristics of the substrate heater, with key results that we are looking for being:
+
+* If we wish to achieve a specific temperature on the surface, what input voltage/current should we supply?
+* What is the maximum temperature that the heater can safely operate at?
+* What is the maximum rate of change of temperature that the heater can safely withstand?
+* When initially testing the heater using Boron Nitride as an insulator, the disks cracked. Why did this occur and how can we prevent it from occurring again?
+
+#### Methodology
+
+A combination of experimental and computational methodologies are used. Transient thermal and structural simulations are done in ANSYS to determine the maximum thermal loading conditions for our current iteration of the heater plate. These results are then back converted to real world voltage inputs for use by the controls system.&#x20;
+
+Simulation Methodology
+
+Because ANSYS simulations are not the absolute cheapest to run, we want to minimize the amount of runtime that will need to be completed. This requires an expectation of our results, particularly how we might expect the thermal stresses to change with time, for a given simulation run.
+
+There are two primary failure modes that we are considering:
+
+1. Static thermal stress induced failure
+
+This mode is primarily caused by the differences in thermal expansion coefficients of the various materials of the system. As the entire heater is warmed, we expect some amount of stress formation, regardless of differences in local thermal profile. Since this behavior can be adequately described in the time limit (when the heater has reached steady state), I will refer to this as the "static" mode of failure. This mode determines the maximum operating temperature of the device.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Static thermal stress diagram. Depending on the CTEs of the materials, the AlN may expand more than the Al.</p></figcaption></figure>
+
+2. Dynamic thermal stress induced failure
+
+This mode is primarily caused by differences in the local temperature distributions within the insulator material.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Dynamic thermal stress diagram.</p></figcaption></figure>
+
+Because the relative lack of expansion of the "cold zone" with respect to the "hot zone", thermal stresses build up on the interface. This can then induce crack formation and propagation. This mode can only be described by short-timescale dynamic behavior, as it is concerned with the time dependence of temperature.
+
+An important note on both modes is that we expect the initial stress to be zero at room temperature because this is where the heater is being assembled. Based on this, we can create very rough guesses at the trends of the transient thermal behavior of our heater.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Potential maximum stress vs time for the AlN insulator disk.</p></figcaption></figure>
+
+In red, we see a system which is largely dominated by the static failure mode. This would asymptotically increase in maximum stress as time increases. Though we cannot evaluate the stress at infinite time, we can make estimates of the true maximum stress based on the plots we can generate. In blue, we see a system which is largely dominated by the dynamic failure mode. The maximum thermal stress quickly increases as time increases, and then settles back down once the system begins to equilibriate.
+
+#### Current Results
+
+One of the main things that I have focused on to this point is understanding what the expected failure mode is. Because the magnitude of the dynamic stresses will be proportional to the input heat flux, we can assume that the timescale of the peak dynamic stress will be on the order of the timescale that it takes for the wire to fully heat up from ambient. I took both experimental data and simulated data on the temperature of the wire based on input parameter.&#x20;
+
+In ANSYS, I am modeling the wire using a constant heat flux per unit volume, which seems like a reasonable model for a resistive heating element. A simple assumption of 100% of the input power being converted to output heat indicates that we would expect \~1E8 W/m^3 of internal heat generation based on the power draw of our wire and its size. This turns out to be incorrect, but is relatively similar as seen below.
+
+<figure><img src="../../.gitbook/assets/heater_sim_real.png" alt=""><figcaption></figcaption></figure>
+
+Because the purpose of the simulation is to just get a rough idea of the maximum operating parameters, I feel that applying a constant scaling factor is appropriate to calculate internal heat generation from input voltage. Here is the same data, scaled based on the ratio of the slopes of the lines of best fit:
+
+<figure><img src="../../.gitbook/assets/heater_sim_real_scaled.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;This data will be useful later when back-converting the simulated data to real control data.
+
+On the timescale side, I was able to measure the time to steady state (for the nichrome wire) using the same data. The following plot shows the general trend, which is that as the internal heat generation increases, we expect a decrease in the time to reach steady state.
+
+<figure><img src="../../.gitbook/assets/sim_time.png" alt=""><figcaption></figcaption></figure>
+
+Using this data, I can then tune simulations to run for lengths which are based on the equilibration time, saving runtime and allowing the gathering of useful data.
+
+### Roadblocks
+
+* As a member of S'n'S, carnival tends to be extremely busy for me. I was less able to get work done this week because of the amount of time I was spending on the carnival production.
+
+### Plans
+
+* Monday I have a relatively high amount of free time and am planning to basically run simulations whenever I can, now that the relevant timescales are understood. My current plan is to run a simulation at 1e8 W/m^3 for 5 (simulated) minutes and measure the stresses. I will continue increasing (or decreasing) the input until I find an upper and lower bound for the cracking, and then I can basically do a binary search to get within some margin of error.
+* Over the weekend I found out that I can actually run multiple jobs on multiple computers in the simulation labs, so I am also planning to run steady-state thermal and structural simulations to quantify the static stresses and determine a maximum from that. This is unfortunately always going to be an overestimate, but will at least provide some guidance on ballparking the upper and lowerbounds mentioned above.
+
 ## Update 9 (03/30/2025)
 
 ### Progress Updates
