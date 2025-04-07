@@ -370,7 +370,7 @@ description: My name is Yuichi and I will be working on the probe station this s
   [video](https://photos.app.goo.gl/pfJrZFvBUzup7EPF7)
 * I also tested whether I could peel off the tape without any problem. It seemed okay, but..\
   ![](<../../.gitbook/assets/image (9).png>)
-* After I remove the tape, the sensor started showing noises with or without the tape on it (I tested it after removing it, and tested it again with a new tape thinking the sensor might be vibrating a little by the environmental factors such as AC air flows).\
+* After I removed the tape, the sensor started showing noises with or without the tape on it (I tested it after removing it, and tested it again with a new tape thinking the sensor might be vibrating a little by the environmental factors such as AC air flows).\
   [video1](https://photos.app.goo.gl/vwqMvoCkzutbV4288) [video2](https://photos.app.goo.gl/tMsDo4YayPrGcP7J8)\
   I'm not sure if I broke the sensor when I was peeling off the tape. I'll dig into this problem next week by replacing the sensor with a new one. I'm thinking of placing another tape, probably [a polyimide film tape](https://a.co/d/g3PlaNK), between the sensor and the tape, so that we don't have to put and peel directly on and off the sensor.
 * I didn't check how stable the chip was on the tape by actually trying to touch it with two probes, like I did last week (last week, because it was not stable, the multimeter value was also not stable). This is because it is difficult to do so using the low-resolution USB camera and feel I scratch too much on the chip when I try to measure it with the camera. I'll do the actual measurement of resistance again when I have the better camera setup ready.
@@ -396,3 +396,48 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Modify the stage positioner design to be attached to the R-axis stage.
 * Modify the probe positioner design for the height of the new stage positioner design.
 
+### **Weekly Update #10 (3/31 - 4/6)**
+
+#### Accomplishments
+
+* Researched more about the tube between a camera and an objective lens.
+  * To make sure the AmScope camera we use has the 17.5 mm distance between the start of the threads and the actual camera sensor.\
+    -> Can't find the information and can't measure it by myself. But I believe it's fine, otherwise people cannot use this camera.
+  * Why does this tube have multiple sections with different diameters on the inside, indicated with the blue arrows? Are they necessary?\
+    ![](<../../.gitbook/assets/Screenshot 2025-03-30 at 2.48.27 PM.png>)\
+    -> I talked with Sky. We're not sure why. They shouldn't be necessary. Maybe manufacturing reasons?
+* Designed and 3D printed the tube.\
+  Camera went through all the way but objective not. Need adjustment.\
+  ![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUe8IiS7kwmVYuJ_JGPOvn_aUM5kO6C-VPXWdU2kFHE601sDD6lCSRlJdJ-5R5qhPWXG1fnbNtfVLTb_HzjySOAreiszyN6nhJjXonePizEPRQ3gvi6xGh3PvDxlvQLzwvDVH9hh=s2048?key=9LxcfCX8H4KHz_gVVDDC4xHY)![](<../../.gitbook/assets/tube C to RMS (1).png>)\
+  ![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUe_yX8IKY9-7srIpqrpS8Pn9hW90oIUBM7kAzyQ0_Cr3amJg9t1G7vuZqTpyZvodSM8XjVy1XCkQgMd5sxsf8IlW3T6pTv8egqrZBHpN-F9dWPmj6if7vZHHI2llHv8WUsYpPRe=s2048?key=9LxcfCX8H4KHz_gVVDDC4xHY)
+* Didn't test a new piezo sensor to check if it has noise because the original sensor stopped showing noise. It showed noise this week as well, but it was fixed after disconnecting and reconnecting the USB cable. Now I suspect the proximity of the sensor board and the magnet. Need to design a mount for the board to be securely fixed.\
+  ![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUelg84aH1Zj_wGTOnK8z3GQZ7ueeUQG_z5pXMLieoqvOe2xI8xvsqaBBNdA9Xv_SlQK0ojmYDRArbc7KddHI-iqSkStYXn8KHhvrnhgzsLkOV8nmqpgG2vdwagOnPPv4Ng_aBs-Gg=s2048?key=9LxcfCX8H4KHz_gVVDDC4xHY)
+* Didn't order several piezo sensors because now I confirmed peeling off the double-sided tape didn't break the sensor. Also we still have one more.
+* Checked if the current double-sides solution actually works. In  [#weekly-update-7-3-10-3-16](yuichi-hirose.md#weekly-update-7-3-10-3-16 "mention"), the multimeter value was not stable and I couldn't successfully measured the resistance ([video](https://photos.app.goo.gl/wNMgwTrKKmYp2jdN9)).\
+  -> Actually worked! Now the stabilizing chip placement issue is solved!\
+  ![](<../../.gitbook/assets/image (204).png>)
+  * (Restriction) The piezo sensor value changes when moving the second probe while the first is in contact, although we can still tell if it is touching or not by checking if the multimeter shows a value or not (it should show some value because it is the second touch).\
+    → Manual control + buzzer would be a better solution instead of auto Z-zeroing because it seems difficult to perfectly sort out the change from probe touches and changes from other factors.
+  * The resistance values were\
+    1.623 kΩ for the long spacing and\
+    12.96 kΩ for the medium spacing.\
+    The long one looks right, but I'm not sure about the medium one.\
+    ![](<../../.gitbook/assets/image (207).png>)\
+    ↓ Comparison to the values we measured for the resistor lab. I measured the same pads of the same chip.\
+    ![](<../../.gitbook/assets/image (208).png>)![](<../../.gitbook/assets/image (209).png>)\
+    The original measurement in the resistor lab also looked weird in that resistance for the medium spacing is larger than that for the long one. Also I'm using the very low-res USB microscope, I can't determine if the probes are touching the pads correctly.\
+    ![](<../../.gitbook/assets/image (210).png>)\
+    -> Need to finish a better camera setup. Also need to find chips with measured data. And test again.
+
+#### Roadblocks
+
+* Adjust the tube thread dimensions so the objective lens goes through it.
+
+#### Plan
+
+* Design a stand for the camera and the objective.
+* Adjust the tube thread dimensions so the objective lens goes through it.
+* Design and order a magnetic base.
+* Design a piezo sensor fixture.
+* (If time allows) Modify the stage positioner design to be attached to the R-axis stage.
+* (If time allows) Modify the probe positioner design for the height of the new stage positioner design.
