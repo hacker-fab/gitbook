@@ -462,3 +462,44 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Change the Arduino script to send values from the serial port and average the values that are read from the thermocouple
   * Requires C/C++&#x20;
 * Discuss with Joel and Viswesh what would be best in terms of the taking the average and if we should continue with reading from a serial port
+
+## Update 10 (SOG)
+
+**Accomplishments**
+
+* Tested a n-doped SOG recipe that replicates the ProjectsInFlight video with ethanol instead of the usual IPA that I have been using
+* Tested the 700B recipe
+
+**Roadblocks**
+
+* N-doped SOG would not spin on nicely but unsure if it is because of the spin coater or the SOG itself (will see further next week)
+* Have yet to spin the 700B test recipe because the spin coater is somewhat broken so still cautious to using it&#x20;
+* Still have yet to etch the previous chips (will ask to get the HF training)
+
+**Future Plans**
+
+* Etch the chips and probe the chips to test for the resistance/resistivity&#x20;
+* Spin the 700B recipe and control&#x20;
+* Start patterning and preparing to probe the 700B chips&#x20;
+* Make changes based on the results&#x20;
+
+## Update 10 (ALD)
+
+**Accomplishments**
+
+* Converted the previous Python script to work with the Arduino IDE in averageing the temperatures from four thermocouples (updated on the Github)
+  * Had to make a few changes
+  * Tested and works
+* Checked the current LabVIEW setup&#x20;
+
+**Roadblocks**
+
+* Thinking the current LabVIEW should work and will test on Monday&#x20;
+  * Concerned with how the string to array conversion will work in terms of syntax and whether that will change how LabVIEW indexes the different averaged temperatures
+* Wondering about the 4-Channel K-Type Thermocouple Sensor MAX31855 SPI Arduino Shield and whether the use of this will change anything
+
+**Future Plans**
+
+* Test the LabVIEW set up with the Arduino
+* Make changes based on any errors that might occur
+* Possibly install four thermocouples so we can vary the temperatures to see if they are actually averaging

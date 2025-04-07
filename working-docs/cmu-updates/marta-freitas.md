@@ -404,3 +404,52 @@ Currently, the stepper will not move in the x-direction. As such it will be diff
 Your goal is to have the MOSCaps fabricated by Friday provided that the stepper gets up and running again. Additionally, for demo 2 you only need to present on the contacts project. For demo 3, however, you will present with Shagun on the CMOS/PMOS process.
 
 Lastly, make sure to update the project tracker for both the CMOS and contacts project.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #10 (Apr 6)</mark>
+
+Folders: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72) ; [https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ](https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ)
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1the](https://github.com/orgs/hacker-fab/projects/35/views/1the)
+
+[https://github.com/orgs/hacker-fab/projects/34](https://github.com/orgs/hacker-fab/projects/34)
+
+Disclaimer: I have not touched the tasks on the doping project, since I was told that I would not fully switch to the project until demo 2, and I did not want to be messing Shagun's tasks without us having a concrete plan.
+
+<mark style="color:blue;">Accomplished this week:</mark>
+
+* Worked on lab report 2.
+* Prepared demo 2.
+* Finished the fabrication of the chips with 30min SOG diffusion time.
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I don't believe there are any roadblocks at the moment. Fabrication is finished, and the next steps are dependent on the CV results. I just didn't fully understand what my role in this interpretation of results will be, and what part I should take in Shagun's demo 2 presentation.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Finish demo 2.
+* I put a pause on the final documentation of the contacts project since it was not a priority, and fabrication needed to get done, but I might go back to it this week, depending on our next steps for the doping project.
+* In terms of fabrication I am not sure what will be our next steps. This week, I will be fully transitioning into the doping project after demo 2, and the next steps will be defined by the CV results from the chips we fabricated with different SOG diffusion times.
+
+Feedback
+
+• Cesely
+
+Do not worry about having your final documentation completely done this week. You won’t need to have that completed until the end of the semester. However, chipping away at it a little bit each week is wise so that at the end of the semester you won’t have to write documentation for both the metal contacts and doping project.
+
+As far as interpreting results, I am expecting Shagun to do the analysis early this week. Once she does the analysis, we can review the results as a group and that should hopefully get you caught up. Additionally, once we review the results, we will be able to determine what we do next which will either be more refinement of the n-well process or moving on to making PMOS devices.
+
+Lastly, as far as presenting with Shagun, I am not expecting you to really present much. Shagun should almost be exclusively presenting. You should be there to help inform or answer questions regarding the fabrication process, and Shagun should be able to handle questions more related to design choices and interpretation of results.
+
+As far as next steps this week I think our following plan should be:
+
+* Get you caught up on how we interpret results, which we can cover in the weekly meeting.
+* Upon review of our new results, determine if we refine our n-well process further or move on to fabricating PMOS devices.
+  * Formulate a fabrication process for either more n-well refinement or PMOS devices.
+    * Begin fabrication.
+* Based on the new results the model of our doping process should be updated to reflect our experimental results.
+* Continue to make progress on the metal contacts documentation, but it doesn’t have to be finalized until the end of the semester.
