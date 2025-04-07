@@ -105,38 +105,42 @@ Taking pictures after every step is key to ensuring you can put it back together
 
 1. Test the projector before we completely take it apart :)
 
+<figure><img src="../../.gitbook/assets/IMG20250325152348.jpg" alt="" width="375"><figcaption><p>LED current settings in the software</p></figcaption></figure>
+
+2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/DLPLCRD-GUI) to set the LED current to 150mA.
+
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
-2. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
+3. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt="" width="178"><figcaption></figcaption></figure>
 
-3. Remove the side PCB.
+4. Remove the side PCB.
 
 <figure><img src="../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption></figcaption></figure>
 
-4. Unscrew and remove the shroud by sliding it away from the rest of the optics.
+5. Unscrew and remove the shroud by sliding it away from the rest of the optics.
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt="" width="355"><figcaption></figcaption></figure>
 
-5. Unscrew and remove the heatsink for the front-most LED, which should be the blue one.
+6. Unscrew and remove the heatsink for the front-most LED, which should be the blue one.
 
 t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38).png>)
 
-6. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
-7. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
+7. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
+8. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt="" width="355"><figcaption></figcaption></figure>
 
-8. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
+9. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt="" width="375"><figcaption></figcaption></figure>
 
-9. Screw on the adapter plate with four countersunk M2 screws.
+10. Screw on the adapter plate with four countersunk M2 screws.
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt="" width="355"><figcaption></figcaption></figure>
 
-10. Reassemble the rest of the projector, including the shroud and the PCBs.
+11. Reassemble the rest of the projector, including the shroud and the PCBs.
 
 ### Assemble the Optics
 
@@ -161,7 +165,9 @@ See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336
 
 <figure><img src="../../.gitbook/assets/image (54).png" alt="" width="375"><figcaption></figcaption></figure>
 
-5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).
+5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).\
+   \
+   &#xNAN;**(NOTE:** The calculation here is done incorrectly, but we have successfully been using it without major issues. The correct back focal length is 150mm, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/))
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
 
