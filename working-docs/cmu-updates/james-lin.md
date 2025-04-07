@@ -12,6 +12,82 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #10
+
+### ALD:
+
+Progress:
+
+* wrapped 4ft heating tape around the manifold line and verified that 2ft heating tape works for our ampules
+  * turns out we ordered the wrong quantities for the two heating tape lengths lol
+  * new heating tape has been ordered
+* cylinder is fixed/replaced, carrier gas supply is fully integrated with system
+* Viswesh tested vacuum of the whole line, after some time with vacuum on, we were able to reach 3 mTorr/min of loss, which was decided to be acceptable during actual use
+
+Challenges:
+
+* we never found the last push to connect fitting to integrate N2 gas for ALD valves, had to order that as well
+* the heating tape and push to connect may not be ready by demo 2
+
+Plans:
+
+* secure heating tape more tightly
+* finish valves gas supply and troubleshoot
+* presentation 2
+
+<figure><img src="../../.gitbook/assets/image (213).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (214).png" alt="" width="563"><figcaption></figcaption></figure>
+
+### Packaging:
+
+Progress:
+
+* footprint for our 16 pin chip is created in altium!&#x20;
+  * specs:
+    * pink sq is the maximum allowed chip size (14mm x 14mm)
+    * yellow sq is the theoretical chip size (10mm x 10mm)
+    *   each pad is 1.5mm x 0.5mm with 0.5mm gap between each other
+
+        (reccomended pad width and spacing is \~0.38mm but i wanted to be safe)
+    * the two rows of pads are set to leave a 2mm gap to the pink sq
+
+<figure><img src="../../.gitbook/assets/image (215).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (216).png" alt="" width="372"><figcaption></figcaption></figure>
+
+* schematics are also mostly done
+  * need to add pull down resistor slots and decoupling capacitor slots and need help with understanding what best fits our chip testing application
+    * Pull up/down resistors: [https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#](https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/)
+    * Decaps: [https://resources.altium.com/p/what-size-decoupling-capacitor-should-i-use-my-digital-ics](https://resources.altium.com/p/what-size-decoupling-capacitor-should-i-use-my-digital-ics)
+* our pads will need to be ENIG plated&#x20;
+  * explanation of the plating here: [https://pcbtrace.com/enig-plating/#:\~:text=For%20Chip%20on%20Board%20(COB)%20assembly%2C%20manufacturers,protecting%20layer%20preventing%20the%20Nickel%20from%20oxidizing.](https://pcbtrace.com/enig-plating/)
+  * unsure how gold is conducive to a good electrical bond for AL wires, will need to look more
+* Also took pictures of wire bonds on my resistor lab chip
+  * was not able to make a fully successful bond, pads were too weak, and short bond distance lead to breaking at the joint
+
+<figure><img src="../../.gitbook/assets/Broken Pads.jpg" alt="" width="375"><figcaption><p>Broken pads and bonds</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Long Bond 5X.jpg" alt="" width="375"><figcaption><p>Longer bond on sheet aluminum</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Single Bond. 5Xjpg.jpg" alt="" width="375"><figcaption><p>Somewhat Successful Bond across pads</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Single Bond.jpg" alt="" width="375"><figcaption><p>Same bond with higher magnification</p></figcaption></figure>
+
+Challenges:
+
+* Carnival week meant not as much work was done was planned :<
+* lead time for PCBs might be too long :sob:
+* wire bonding will be very finicky to do
+
+Plans:
+
+* LOCK IN on Altium and get a workable file sent out as soon a possible
+* figure out how to specify ENIG finish to digikey
+* presentation 2
+
+***
+
 ## Weekly Update #9
 
 ### ALD:
