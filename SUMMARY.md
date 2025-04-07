@@ -43,6 +43,7 @@
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
   * [Electroless Nickel Plating](fab-toolkit/deposition/electroless-nickel-plating.md)
   * [⚛️DIY ALD](fab-toolkit/deposition/diy-ald.md)
+  * [⚡ Sputtering Chamber](fab-toolkit/deposition/sputtering-chamber.md)
 * [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
