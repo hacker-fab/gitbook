@@ -1,23 +1,30 @@
 # Eric Dubberstein
 
-Progress for this week:&#x20;
+Progress for this week (week up to 4/6/25) :&#x20;
 
-\
+
+
+> Hey, great progress, it looks like you will be able to demo this out to everyone this week, have the spin coater working from the website basically. Amazing to see. Hopefully the website edits were intuitive and the structure of how things are organized makes more sense now that you've added changes to it. I can push these changes to the main website if you want me to, but I wouldn't want people to open it up and start sending requests on the day of the demo to break stuff so I will only do it if you would like me to.
+>
+> A few small things of note: in your code I see that you have named the machine lithographer, I think to simplify it could be stepper, since that is the name their repo and stuff use. Not that big a deal though, since it's just a label and as long as its agreed upon everywhere it should be fine.&#x20;
+>
+> Also the part has been placed on the order sheet, I am not sure if it has actually been ordered but in any case should be here by next week or so. I think jumping to documentation should be ideal for next week, and the litho stepper testing can also happen, up to u how u wanna structure that. We can also meet up after the demos in case u wanted to discuss something about next steps. &#x20;
+>
+> \-- AV
+
+
+
 
 
 The spincoater can now be controlled from a temporary page on the website. When on the homepage, you can click on “Spincoater” to reach the page.&#x20;
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmRYu1NKST-QgDA4EvJrOw2-5cPgzDLaf_3UtKxelHwdfyd-6ZaZAcnEEgc8nkkTdwgyCY27MqwkTDlr1pNsyyrSF_NVHaafvA7hSkthodI6mOy62Lh7HXeLx6faW73u5Sx23RFw?key=8U3tCyUeEYyTlEkMhCB233gS)
-
-\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmRYu1NKST-QgDA4EvJrOw2-5cPgzDLaf_3UtKxelHwdfyd-6ZaZAcnEEgc8nkkTdwgyCY27MqwkTDlr1pNsyyrSF_NVHaafvA7hSkthodI6mOy62Lh7HXeLx6faW73u5Sx23RFw?key=8U3tCyUeEYyTlEkMhCB233gS)\
 
 
 You can then type in the RMP and time that you want:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXec3fTUUiEQc_yhZhaRl599d0N8oZceSrAMEqhNK78wKaTeM-7relq-D4i9LOjWYrjmhgp3itA8PEAULjfZleRHE7YQsqz8eYUOX_8mRgfHcMo7prmoJ84YgMitdPGAFvHJlyY1?key=8U3tCyUeEYyTlEkMhCB233gS)
 
-\
-\
 \
 
 
@@ -40,9 +47,7 @@ Spincoater.html is the HTML page that I added. It simply instructs the browser t
 
 On the server side, I added a function to views.py that handled rendering the webpage and forwarding the data onto the job queue when the submit button is clicked.&#x20;
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXZW2KmpE7vjqilKKABAq9dzmndCrvmD4AHS9AVc_AE_m6N3Phb7g1JbIVo-jmqd8szVxjJHBLUGHvFNo4kPWiMq13kxlE8cmcHgIJcQuWSRYl_lzf9NuUWTQMVG-94pCDhLvFzQ?key=8U3tCyUeEYyTlEkMhCB233gS)
-
-\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXZW2KmpE7vjqilKKABAq9dzmndCrvmD4AHS9AVc_AE_m6N3Phb7g1JbIVo-jmqd8szVxjJHBLUGHvFNo4kPWiMq13kxlE8cmcHgIJcQuWSRYl_lzf9NuUWTQMVG-94pCDhLvFzQ?key=8U3tCyUeEYyTlEkMhCB233gS)\
 \
 
 
@@ -192,17 +197,9 @@ if __name__ == "__main__":
     #test_jobqueue_api_no_file()
     test_upload_and_download_file()
 
+
+
 ```
-
-\
-\
-\
-\
-\
-\
-\
-\
-
 
 Here is a screenshot of the test running successfully.&#x20;
 
@@ -211,9 +208,8 @@ Here is a screenshot of the test running successfully.&#x20;
 \
 
 
-I sent the code over to Carson so he can get it working with the current spincoater setup.
+I sent the code over to Carson so he can get it working with the current ~~spincoater~~ lithostepper setup.
 
-\
 \
 
 
@@ -226,19 +222,12 @@ We will need to automate turning the power on and off for the compressor for the
 
 [https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr\_1\_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO\_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX\_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7\_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4\_s3pkjKSMenat\_ZYo3MOKz3C6NdbmD\_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5\_6foo\_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib\_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1](https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr_1_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4_s3pkjKSMenat_ZYo3MOKz3C6NdbmD_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5_6foo_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1)
 
-\
 
 
-This part has been ordered.&#x20;
-
-\
-\
+This part has been ordered. \
 
 
-I unfortunately was not able to get the documentation fully updated for the new file transfer system I developed. This will be accomplished next week. I got a brief outline added at the moment.&#x20;
-
-\
-\
+I unfortunately was not able to get the documentation fully updated for the new file transfer system I developed. This will be accomplished next week. I got a brief outline added at the moment. \
 \
 
 
@@ -252,7 +241,6 @@ I will first tackle the tasks that were originally outlined for week 11:
 Week 11: Documentation and Training
 
 * Write documentation for:
-*
   * Setting up the Raspberry Pi for a new tool.
   * Modifying microcontroller interface code for different devices.
   * AWS infrastructure setup and API details.
@@ -262,9 +250,7 @@ Week 11: Documentation and Training
 \
 
 
-I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point.&#x20;
-
-\
+I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. \
 
 
 Beyond that, I will give the second presentation demoing my progress up until this point.&#x20;
