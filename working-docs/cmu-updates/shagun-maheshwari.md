@@ -4,6 +4,45 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 10:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:
+
+* Made progress until step 29 on the fabrication for my 10min N-well [https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)
+
+Roadblocks:
+
+* No actual roadblocks, just haven't been able to fully finish fabrication mainly due to conflicting schedules for when I can be accompanied to lab.
+
+Next Steps:
+
+Fabrication:
+
+* Fully finish fabrication on Monday&#x20;
+* Finish CV testing my chip on Monday as well&#x20;
+
+Analysis:
+
+* Finish analysis of my, Jay, Cesely, and Marta's chips&#x20;
+
+Demo presentation:
+
+* Finish demo 2 presentation&#x20;
+
+Feedback
+
+• Cesely
+
+Although there were some fabrication challenges this week, the chip completion should have been achievable within the given timeframe. Additionally, my chips are ready for probing, as I mentioned earlier in the week. You're welcome to proceed with probing on your own; having another student present is not necessary. Looking ahead, I hope to see more consistent progress in fabrication, provided there are no major equipment issues.
+
+As far as next steps this week I think our following plan should be:
+
+* Finalize interpretation of our results.
+* Upon review of our new results, determine finalize our n-well process and move on to fabricating PMOS devices.
+* Based on the new results the model of our doping process should be updated to reflect our experimental results.
+
 ## Update 9:&#x20;
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)\
