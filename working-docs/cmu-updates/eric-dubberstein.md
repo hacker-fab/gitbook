@@ -1,5 +1,293 @@
 # Eric Dubberstein
 
+Progress for this week:&#x20;
+
+\
+
+
+The spincoater can now be controlled from a temporary page on the website. When on the homepage, you can click on “Spincoater” to reach the page.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmRYu1NKST-QgDA4EvJrOw2-5cPgzDLaf_3UtKxelHwdfyd-6ZaZAcnEEgc8nkkTdwgyCY27MqwkTDlr1pNsyyrSF_NVHaafvA7hSkthodI6mOy62Lh7HXeLx6faW73u5Sx23RFw?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+\
+
+
+You can then type in the RMP and time that you want:
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXec3fTUUiEQc_yhZhaRl599d0N8oZceSrAMEqhNK78wKaTeM-7relq-D4i9LOjWYrjmhgp3itA8PEAULjfZleRHE7YQsqz8eYUOX_8mRgfHcMo7prmoJ84YgMitdPGAFvHJlyY1?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+\
+\
+\
+
+
+After you hit submit, a message will appear if the data was successfully sent to the server:
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8hQf2NmuC9kXDTzuK4iQOTJWRaduJJSZzXJCSfqrRF92y7hljcrPXU26R0PjAhNzmNqpk5bTFELUKK-xR0Op7VU4viZfqpxLbEFq9m2MVG2aMRVdQxnrTFTY7MYfurHIR_y1KAg?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+
+
+Afterwards, you can confirm the data is present by making a postman call to the get\_next\_jobs endpoint. \
+
+
+Spincoater.html is the HTML page that I added. It simply instructs the browser to display the prompts, boxes, and submit button.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfB4oXPQp9-44VU8iVdqyPrKXv9FM4LMPRGPm9T61R_tgzgBN1RTy9jsghmv2-3I76m3-NGk7WCqAec40HrRRWzfV3zEx-kWAXvfq9jDNDoCMobNTt_iYm3uurwNNCohRgQNENz3g?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+\
+\
+
+
+On the server side, I added a function to views.py that handled rendering the webpage and forwarding the data onto the job queue when the submit button is clicked.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXZW2KmpE7vjqilKKABAq9dzmndCrvmD4AHS9AVc_AE_m6N3Phb7g1JbIVo-jmqd8szVxjJHBLUGHvFNo4kPWiMq13kxlE8cmcHgIJcQuWSRYl_lzf9NuUWTQMVG-94pCDhLvFzQ?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+\
+\
+
+
+Image uploading:&#x20;
+
+\
+
+
+Example code for how to use it is outlined in the python file below. In summary: you send a request to AWS to get an upload link, upload the image, send a key for that image as a parameter for the job. On the stepper, you'll get the job as usual, extract the image key from the param list, get a download link for that key, and then download the image.&#x20;
+
+\
+\
+\
+\
+
+
+\<code block, example\_endpoint\_calls.py in repo>
+
+```python
+"""
+This module contains examples of a few endpoint calls
+"""
+import requests
+
+# Constants
+BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
+
+def test_jobqueue_api_no_file():
+    """
+    Test the job queue API endpoints.
+    """
+    # Step 1: POST /jobs - Enqueue a new job
+    job_data = {
+        "machine": "lithographer",
+        "input_parameters": {"x": 100.0, "y": 200.0, "image": "foo.png"},
+        "priority": 2
+    }
+    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
+    assert response.status_code == 200, "Failed to enqueue job"
+    job_id = response.json().get("job_id")
+    print(f"Job enqueued: {job_id}")
+
+   
+
+    # Step 4: GET /jobs/next - Fetch job from queue
+    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
+    assert response.status_code == 200, "Failed to fetch next job"
+    assert response.json().get("job_id") == job_id, "Fetched wrong job"
+    print("Job fetched successfully")
+
+
+def get_file_upload_url_and_key(job_id):
+    """
+    Generate a presigned URL for uploading an image.
+    """
+    response = requests.post(f"{BASE_URL}/generate_upload_url", json={"job_id": job_id})
+    assert response.status_code == 200, "Failed to generate upload URL"
+    upload_url = response.json().get("upload_url")
+    s3_key = response.json().get("s3_key")
+    print(f"Upload URL: {upload_url}")
+    return upload_url, s3_key
+
+
+def upload_file(file_name, upload_url):
+    """
+    Upload a file to the presigned URL.
+    """
+    with open(file_name, "rb") as f:
+        response = requests.put(upload_url, data=f, headers={"Content-Type": "image/jpeg"})
+    if response.status_code != 200:
+        print(f"Upload failed. Status code: {response.status_code}, response: {response.text}")
+    assert response.status_code == 200, "Upload failed"
+    print("File uploaded successfully")
+
+
+
+def enqueue_job(machine, input_parameters, priority):
+    """
+    Enqueue a job with the specified parameters.
+    """
+    job_data = {
+        "machine": machine,
+        "input_parameters": input_parameters,
+        "priority": priority
+    }
+    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
+    assert response.status_code == 200, "Failed to enqueue job"
+    job_id = response.json().get("job_id")
+    print(f"Job enqueued: {job_id}")
+    return job_id
+
+def download_file(s3_key):
+    """
+    Download a file from S3 using the presigned URL.
+    """
+
+    # get the presigned URL for download
+    response = requests.post(f"{BASE_URL}/generate_download_url", json={"s3_key": s3_key})
+    assert response.status_code == 200, "Failed to generate download URL"
+    download_url = response.json().get("download_url")
+    print(f"Download URL: {download_url}")
+
+    # download the file using the presigned URL
+    response = requests.get(download_url)
+    if response.status_code != 200:
+        print(f"Failed to download file. Status code: {response.status_code}, Response text: {response.text}")
+    assert response.status_code == 200, "Failed to download file"
+    with open("downloaded_file_123.jpg", "wb") as f:
+        f.write(response.content)
+
+def test_upload_and_download_file():
+    """
+    Test uploading a file, providing the S3 key as a job parameter, fetching the job,
+    and then downloading the file using the presigned URLs.
+    """
+    # Step 1: Generate a presigned upload URL and S3 key
+    upload_url, s3_key = get_file_upload_url_and_key(None)  # Passing None as job_id since it's not required here
+    print(f"Generated upload URL: {upload_url}")
+    print(f"S3 Key: {s3_key}")
+
+    # Step 2: Upload a file
+    file_name = "The_Hacker.jpg"  # Replace with the path to your test file
+    upload_file(file_name, upload_url)
+    print(f"File uploaded successfully to S3 key: {s3_key}")
+
+    # Step 3: Enqueue a job with the S3 key as a parameter
+    job_id = enqueue_job(
+        machine="lithographer",
+        input_parameters={"x": 100.0, "y": 200.0, "image_s3_key": s3_key},
+        priority=2
+    )
+    print(f"Job enqueued: {job_id}")
+
+    # Step 4: Fetch the job from the queue
+    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
+    assert response.status_code == 200, "Failed to fetch next job"
+    fetched_job = response.json()
+    assert fetched_job.get("job_id") == job_id, "Fetched wrong job"
+    fetched_s3_key = fetched_job["input_parameters"]["image_s3_key"]
+    print(f"Fetched job successfully. S3 Key: {fetched_s3_key}")
+
+    # Step 5: Download the file using the fetched S3 key
+    download_file(fetched_s3_key)
+    print("File downloaded successfully.")
+
+if __name__ == "__main__":
+    #test_jobqueue_api_no_file()
+    test_upload_and_download_file()
+
+```
+
+\
+\
+\
+\
+\
+\
+\
+\
+
+
+Here is a screenshot of the test running successfully.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5lY0fVlGWPS4PuQ4jAJmuAyA4MYTvqVUlamN_m6Mgh7i1847IJCS3HAHl-z7p0B1Z8Bko6lsosuSTX449p7DaZjZUZl2BtxutijqEU9PzAqwvvdAhXZzSvvODTUEiE7vrPz9KNw?key=8U3tCyUeEYyTlEkMhCB233gS)
+
+\
+
+
+I sent the code over to Carson so he can get it working with the current spincoater setup.
+
+\
+\
+
+
+Other things I accomplished this week:&#x20;
+
+We will need to automate turning the power on and off for the compressor for the spincoater. The cleanest solution that we decided on was a relay that can be controlled via the output of the RPI.&#x20;
+
+\
+
+
+[https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr\_1\_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO\_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX\_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7\_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4\_s3pkjKSMenat\_ZYo3MOKz3C6NdbmD\_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5\_6foo\_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib\_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1](https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr_1_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4_s3pkjKSMenat_ZYo3MOKz3C6NdbmD_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5_6foo_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1)
+
+\
+
+
+This part has been ordered.&#x20;
+
+\
+\
+
+
+I unfortunately was not able to get the documentation fully updated for the new file transfer system I developed. This will be accomplished next week. I got a brief outline added at the moment.&#x20;
+
+\
+\
+\
+
+
+Plans for next week:&#x20;
+
+I will first tackle the tasks that were originally outlined for week 11:
+
+\
+
+
+Week 11: Documentation and Training
+
+* Write documentation for:
+*
+  * Setting up the Raspberry Pi for a new tool.
+  * Modifying microcontroller interface code for different devices.
+  * AWS infrastructure setup and API details.
+* Conduct training or create tutorials for others to replicate the system.
+* Justification: This will be important for future scalability.
+
+\
+
+
+I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point.&#x20;
+
+\
+
+
+Beyond that, I will give the second presentation demoing my progress up until this point.&#x20;
+
+If the second spincoater is completed (we’re still waiting for a part), I will test out the system with the full spincoater instead of just the motor (as I did last week).&#x20;
+
+If the RPI controlled relay for the air compressor arrives, I’ll get that connected to the system and tested.&#x20;
+
+I will help carson with any issues he has as he tries to implement uploading images for the stepper.&#x20;
+
+\
+
+
+Roadblocks:
+
+1. Relay controller hasn’t arrived yet (on its way)
+2. 2nd spincoater isn’t fully working (other team is working on it)
+
+\
+
+
+
+
 **Weekly update for 3/30:**
 
 
