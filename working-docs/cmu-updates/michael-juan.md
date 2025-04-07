@@ -627,3 +627,72 @@ The next steps to get a working piezo actuator include making the workholding to
 * The backplate workholding is relatively simple because the second operation does not require any sort of precision.
 * The flexure on the other hand is a relatively complex part. it requires machining very thin walls which can cause vibrations.&#x20;
 * Because I focused on CAD and CAM for this week I will need to work on software for converting step and direction to sawtooth waves as well as testing the effects of frequency and voltage on motion after machining the updated prototype.
+
+## **Update 10 (4/6/2025)**&#x20;
+
+### Accomplishments
+
+Links to CAD and CAM files
+
+* h[ttps://drive.google.com/drive/folders/1nOdKtKDnOEkslMUcOBMTf1-ErH6uORQs](https://drive.google.com/drive/folders/1nOdKtKDnOEkslMUcOBMTf1-ErH6uORQs)
+* Set up tooling on CNC machine as well as CAM (computer aided manufacturing) software. Each tool's height was measured to 10 microns and runout of the tool in the toolholder was dialed to <5 microns.
+* Programmed workholding to machine the backplate and flexure.
+
+<figure><img src="../../.gitbook/assets/image (219).png" alt=""><figcaption><p>tooling used in machining parts</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (217).png" alt=""><figcaption><p>the five separate setups for machining positioner</p></figcaption></figure>
+
+*   Machined backplate for positioner
+
+    * Backplate was machined in three operations from 6061 t6 aluminum. Aluminum is a good choice of material because its easy to machine and relatively strong.
+    * The first operation included all of the tight tolerance features. By designing all reference surfaces to be machined in one operations errors from removing and re-clamping part in a vise are reduced. &#x20;
+    * The second operation removed the part that was clamped in the vise. This operation has the part flipped and clamped lightly to reduce the effects of the clamping force of the vise on the final part dimension as well as allow for internal stresses in the material to relieve themselves.&#x20;
+
+    <figure><img src="../../.gitbook/assets/IMG_3453.JPEG" alt=""><figcaption></figcaption></figure>
+
+    note the area surrounding the part, it is not machinable in the first operation because it is clamped in a vise.
+
+    * The third operation drilled a hole to allow for a screw to hold preload springs.&#x20;
+    * Threaded holes were hand tapped.&#x20;
+* programmed and machined flexure piezo mount.
+  * machined from 1045 steel with a 0.4mm thick flexure. 1045 steel was chosen because aluminum is not a good material for flexures.
+  * The part was done in 4 operations. The first operation drilled and interpolated m5 holes for mounting onto the backplate and for work holding for the second operation.
+  *
+
+      <figure><img src="../../.gitbook/assets/IMG_3463 (1).JPEG" alt=""><figcaption><p>Before second op. mounted on a sacrificial aluminum block.</p></figcaption></figure>
+  * The second operation had the part mounted on a sacrificial aluminum block. This allowed the flexure part to be supported while being machined. To hit a tight tolerance on a thin part the flexure was machined with 0.1mm stepover and at a low 100mm/min feed rate.&#x20;
+  * The third operation drilled a tapped hole for spring preload.
+  * A piezo was glued onto the flexure and a sma connector soldered on.
+
+<figure><img src="../../.gitbook/assets/IMG_3475.JPEG" alt=""><figcaption><p>"dry assembly"</p></figcaption></figure>
+
+
+
+* By reducing the amount of tight tolerance features to two straight edges the cost of the actuator is significantly lower than that of the open source paper I originally referenced.
+* Each mounting hole is drilled to a clearance to allow for adjustability.
+* &#x20;Adjustment is made by using gauge blocks. By using a known standard, that has traceable length and parallelism. It reduces the need to machine to a tight tolerance therefore reducing cost.
+
+### Roadblocks
+
+**Roadblock 1:**
+
+The shear piezo I wanted to use did not move when tested. This is probably because shear piezos have a shorter travel distance. 1.3 micron movement was not enought to get translational motion.
+
+**Proposed Solution**
+
+Modify design to use standard piezos that have longer extension (6micron)
+
+**Roadblock 2:**
+
+Did not get to testing translational motion on new machined positioner.&#x20;
+
+**Proposed Solution**
+
+Test translational motion on 4/7. Calibrate distance traveled to number of waves similar to what I did in the previous update.&#x20;
+
+### Next Steps
+
+* &#x20;Test the effects of different spring loads on new positioner. this can be done by swapping out springs and or adding weights.
+* Test the effects of  frequency on travel distance and speed. Originally I was also going to test the amplitude of sawtooth wave but because of the resolution of my measurement equipment the effects of amplitude are not going to be measurable.&#x20;
+* Modify flexure to allow for a standard piezo [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=7563](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7563) versus the Shear piezos I tested [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=10318](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10318). This will require machining a new part to attach the friction element perpendicular to the axis of motion.&#x20;
+* Prepare presentation 2.
