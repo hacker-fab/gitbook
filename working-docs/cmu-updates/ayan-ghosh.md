@@ -153,3 +153,19 @@ In the end, we did sputter.
 Besides this, I've been looking at QCM & mechanical feedthrough. These should be relatively straightforward.
 
 I might make a scaffold to hold the magnets & whatnot more precisely in place. In this coming week, I hope to get some preliminary film characterization from Melinda & Katie; this will inform if we need to work on stuff like purity (there's a few sources of potential contamination, especially Fe) or deposition profile.
+
+
+
+**Update 9**:
+
+_First of all, I can't see my Update 8? Is this an error? I'm pretty sure that I submitted it..._
+
+Anyways, this week I finished the major machining of the bottom baseplate.
+
+<figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+
+This got done a little later than I intended because during the beginning of the week Ed was ill and throughout the entire week TechSpark and in particular the pro shop (where I've been machining the baseplates) have been oddly busy. It didn't matter too much because we're still waiting on the cylinder tho. The holes still need to be tapped; the holes for the vacuum pump are M8x1.25 which is a bit unusual but John said that TechSpark has taps for them, so I'll look again tomorrow. If not, we might have to order a tap.
+
+Besides that, I started reading a little about QCM and have been nailing down the design of the mechanical feedthrough. I also realized that the steel ring we're using to hold the target up might influence the magnetic field; I think that broadly this shouldn't affect whether it's balanced/unbalanced it might give more sputtering off the steel ring.
+
+Given Jay has received the polishing tools, the next step would be to polish the baseplates. This should be done by Tuesday night. After that, I'll focus on QCM.

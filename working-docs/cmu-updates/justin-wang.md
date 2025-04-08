@@ -190,3 +190,25 @@ This week we hope to finish getting alignment working.
 * Thanks for helping out with setting up the new computer.
 * Patterning a test chip makes sense. It would be good to see some description of what testing this chip specifically supports over other previously fabricated designs. In the future, please also include photos of any patterning or machine build work you complete.
 * Looking forward to seeing alignment for Demo 2!
+
+## Week 10
+
+I pushed work-in-progress code for automatic alignment to the [align-wip](https://github.com/hacker-fab/stepper/tree/align-wip) branch. I didn't get a chance to test this on the fab laptop; there are also improvements I still have to make in the code itself, e.g. figuring out how to define the target locations. I think the best approach is to start with fixed locations for testing, but eventually we might want to just detect the locations of the alignment markers in the png files themselves.
+
+I got a WiFi adapter so that we could connect the laptop to the internet after the internet stopped working but I didn't get significant development time with the fab computer itself.
+
+I also did more setup on the fab laptop, i.e. setting up Git.
+
+We do not have alignment working. I will be very happy if we get this working before Tuesday night demos, and I will be in the fab before demos trying to make this happen.
+
+If not, we have good material for the presentation anyway — our detection is fast and good!
+
+**Week 10 Feedback (Kent Wirant):**
+
+* Thank you for continuing desktop setup.
+* The code looks good so far. The stateful approach, including a spiraling search state, is a good one.&#x20;
+* You mentioned in this update and in your code comments most of the code improvements that are required for robust automated alignment. Of those you mentioned, consideration of multiple alignment marks, tuning of scale factors, and precise identification of alignment target positions are most important. I agree that detecting alignment mark positions in the pattern PNG files is a good way to do this. &#x20;
+  * For some of the scale factors that might differ based on stepper build, you might want to put these as items in the config file. Later on, assigning some default values associated with some known build combinations would be good so that someone downloading the Stepper repo doesn't have to fine tune these numbers themselves.
+* Theta error detection/correction can come after the other detection considerations. Since we don't have a way to correct theta via motors, it would be good to correct theta by first checking if the pattern image would be distorted via rotation (i.e. is there enough border space available). If distortion is unavoidable, the user should be prompted to manually correct the angle. If no distortion occurs as a result of digital image rotation, then this should be done instead.
+* Eventually, we would like to see some concrete performance metrics for the accuracy and reliability of automatic alignment. For different stage offsets/initial displacements, how close to perfect does the software align the next pattern? A potentially good way to automate this is to capture images of the pattern being projected after alignment, and measuring the offset between the projected alignment marks and the alignment marks on the chip. This flavor of data is important to have for the Final Presentation.
+* Please update the GitHub Project Tracker with finer-grained tasks for automated alignment. I look forward to seeing your preliminary testing results and further progress.

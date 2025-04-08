@@ -30,6 +30,40 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 ### <mark style="color:purple;">Update 8 - 3/23/2025</mark>
 
+<mark style="color:purple;">Update 10 - 4/6/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+*   Melinda and I made the capacitors as discussed in our meeting last week
+
+    * On Monday, we first deposited an aluminum layer and a theoretically aluminum oxide layer. We also made a chip with just aluminum oxide to test with XRR.
+
+    <figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+
+    * On Tuesday, we deposited another aluminum layer to finish the first set of capacitors. We then tried to create another, thicker layer of aluminum oxide for more XRR/AFM testing but it didn't work because we couldn't get to a low enough vacuum in the evaporation chamber. When we opened the chamber up we just saw unmelted aluminum (see picture below). There were also some really weird QCM readings (see second picture below).&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+* ![](<../../.gitbook/assets/image (235).png>)
+* Worked on our slides for our next presentation to the class
+* Made plans to do AFM/CV testing for the next week
+
+#### Roadblocks
+
+* The evaporation chamber hasn't been getting to as low a vacuum as before (\~10^-4 torr is the lowest we've been achieving even when re-tightening everything etc.). I think it may be time to do a deep clean, so maybe a task for this week. Also, the QCM has been giving us wacky readings. I guess it could be the fact that we are depositing both Al2O3 and Al that is confusing it?? The only other way to fix this I could think of is just replacing the crystal.
+
+#### Plans
+
+* Do AFM and CV testing on the evaporated capacitors we've made
+* Finish our presentation
+* Clean out the evaporator and see if we can get it down to a lower vacuum (\~10^-5 torr) again
+* Now that sputtering V2 is working... Sputter films and characterize them!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  * Maybe also make capacitors in the sputtering chamber if we can get Al2O3
+
+
+
+### <mark style="color:purple;">Update 8 - 3/23/2025</mark>
+
 #### Accomplishments
 
 * See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
