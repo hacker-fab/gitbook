@@ -94,7 +94,7 @@ _Thanks for the update! Now that parts have arrived, it's time to get machining.
 
 
 
-Update 7 (I guess):
+**Update 7** (I guess):
 
 Big thing this week is that I got the top plate machined.&#x20;
 
@@ -107,3 +107,19 @@ I will still aim to have both plates done before class on Tuesday, but this may 
 I plan to have all other parts machined by Friday; there isn't too much more to do.
 
 Besides that, I did a bit of reading last week, especially on magnetron design. I found the articles which I posted on the Discord ([https://www.sciencedirect.com/science/article/pii/S0257897200009452](https://www.sciencedirect.com/science/article/pii/S0257897200009452), [https://iopscience.iop.org/article/10.7567/JJAP.53.088001/pdf](https://iopscience.iop.org/article/10.7567/JJAP.53.088001/pdf), [https://www.sciencedirect.com/science/article/pii/S0040609005013404](https://www.sciencedirect.com/science/article/pii/S0040609005013404), and [https://www.google.com/url?sa=t\&source=web\&rct=j\&opi=89978449\&url=https://pubs.aip.org/avs/jva/article-pdf/12/3/886/12059855/886\_1\_online.pdf\&ved=2ahUKEwiYgd2hr4KMAxVZEFkFHVSXLOEQFnoECBcQAQ\&usg=AOvVaw0Ny1ZoKMGYCqnpJtQ8jSWk](https://www.google.com/url?sa=t\&source=web\&rct=j\&opi=89978449\&url=https://pubs.aip.org/avs/jva/article-pdf/12/3/886/12059855/886_1_online.pdf\&ved=2ahUKEwiYgd2hr4KMAxVZEFkFHVSXLOEQFnoECBcQAQ\&usg=AOvVaw0Ny1ZoKMGYCqnpJtQ8jSWk)). I still have to digest these a little fully but they seem to have implications for magnet choice.
+
+
+
+
+
+
+
+**Update 8**:
+
+This week, I faced off the top baseplate (resolving the issue of the thru holes not going all the way thru),  and did the holes on the other side manually (with an asterisk regarding this). I also did the same for the bottom plate; I would have done the CNC operations for the bottom plate as well but didn't get to it due to my and Ed's commitments on Friday running longer than expected. I'll probably do this Tuesday morning.
+
+&#x20;![](<../../.gitbook/assets/image (220).png>)![](<../../.gitbook/assets/image (221).png>)
+
+So, I did have some issues when manually adding holes on the top plate. The 4-40 holes use a very small drill bit and I went aggresively leading to the drill bit snapping, but I did not realize this until the end due to the cutting oil. This lead to most of the holes being rather mangled. This was my oversight, my apologies. It seems Jay has rebored these slightly larger. This shouldn't be an issue going forward, but I will be vigilant just in case.
+
+Besides machining the bottom plate, there are only a few more small things to machine. Those should be done by the end of the week. Right now, the big thing we're waiting for is the glass chamber. I think it may be a good idea to start wiring up as much as possible on, say, Friday in preparation for that to arrive; we can schedule this per other sputter team members' availability. I know Jay has ordered some equipment for polishing the parts, at the moment (if I understand correctly) we just are waiting for those to come. I may also start looking into the mechanical feedthrough and QCM this week, but most likely next week.
