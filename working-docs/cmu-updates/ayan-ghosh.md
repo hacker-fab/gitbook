@@ -123,3 +123,33 @@ This week, I faced off the top baseplate (resolving the issue of the thru holes 
 So, I did have some issues when manually adding holes on the top plate. The 4-40 holes use a very small drill bit and I went aggresively leading to the drill bit snapping, but I did not realize this until the end due to the cutting oil. This lead to most of the holes being rather mangled. This was my oversight, my apologies. It seems Jay has rebored these slightly larger. This shouldn't be an issue going forward, but I will be vigilant just in case.
 
 Besides machining the bottom plate, there are only a few more small things to machine. Those should be done by the end of the week. Right now, the big thing we're waiting for is the glass chamber. I think it may be a good idea to start wiring up as much as possible on, say, Friday in preparation for that to arrive; we can schedule this per other sputter team members' availability. I know Jay has ordered some equipment for polishing the parts, at the moment (if I understand correctly) we just are waiting for those to come. I may also start looking into the mechanical feedthrough and QCM this week, but most likely next week.
+
+
+
+
+
+
+
+**Update 10**????:
+
+OK so first of all, I can't see updates #6, #8, or #9. Please advise.
+
+At the beginning of the week, I tapped the the bottom plate holes. When I used the M8x1.25 tap in TechSpark, the tip was hitting the bottom of the holes, so I had to ask Tom to shave some of it off. This may have tilted the tap's bite, and in conjunction with the fact that I was in rather a rush to tap these, the taps ended up being a bit crooked. Accordign to Jay it's not too bad but just for my sense of pride I may end up fixing these.
+
+There was some mention of making a "Faraday cage" to keep in the EM radiation, but the wavelength (which is speed of light divided by frequency) for  stuff on the order of 10 MHz is in the 10s of meters.
+
+On Saturday Jay and I assembeled the chamber.&#x20;
+
+<figure><img src="../../.gitbook/assets/IMG_6055.HEIC" alt=""><figcaption></figcaption></figure>
+
+We couldn't find the shaft collars so we used wing nuts to support the scaffold plates. To attach the heat sink to the top of the magnetron assembly we used conductive tape. It was pretty easy to knock the target & whatnot out of place; this at one point led to a short which required re-centering everything.
+
+In the end, we did sputter.
+
+![](<../../.gitbook/assets/image (225).png>)
+
+<figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption><p>courtesy of Jay</p></figcaption></figure>
+
+Besides this, I've been looking at QCM & mechanical feedthrough. These should be relatively straightforward.
+
+I might make a scaffold to hold the magnets & whatnot more precisely in place. In this coming week, I hope to get some preliminary film characterization from Melinda & Katie; this will inform if we need to work on stuff like purity (there's a few sources of potential contamination, especially Fe) or deposition profile.
