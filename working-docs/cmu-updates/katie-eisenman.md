@@ -4,6 +4,30 @@ description: Katie's weekly updates (Sputtering Process Project)
 
 # Katie Eisenman
 
+### <mark style="color:purple;">Update 9 - 3/30/2025</mark>
+
+#### Accomplishments
+
+* See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
+* We replicated a previous paper's reactive evaporation procedure of aluminum oxide and saw what looks to be pretty good successes. Pics and videos of each trial can be found here: [https://drive.google.com/drive/folders/1PG48lTpIP-3RQL021rz6597xQAtxHhN4](https://drive.google.com/drive/folders/1PG48lTpIP-3RQL021rz6597xQAtxHhN4), and the parameters used for each trial can be found here [https://docs.google.com/spreadsheets/d/1O67ansNDFr7AUBcyVnXadPWayfpV0HPwh4IFn5GLq1o/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1O67ansNDFr7AUBcyVnXadPWayfpV0HPwh4IFn5GLq1o/edit?gid=0#gid=0)
+  * We did a first trial just to see if it was feasible and ended up with a film that was almost golden in color and definitely looked visually different than the normal evaporated aluminum
+  * ![](<../../.gitbook/assets/image (228).png>)
+  * We then did another trial to try and see the upper limit of oxygen we could put into the chamber and still get an evaporated sample. We started at 3 sccm oxygen, then went up to 5 sccm, then back down to 4 and then 3.5 sccm. The resulting films were more like dark silver in color than the previous test (see first pic below). We were getting some odd readings from the QCM, so we stopped the test, and when we opened the chamber door not all the aluminum was melted so Melinda stayed behind to do another test to use up the rest. She tested up to 30sccm oxygen, and the resulting film looked kind of burnt (in my opinion) and was very dark brown in color
+  * ![](<../../.gitbook/assets/image (231).png>)![](<../../.gitbook/assets/image (229).png>)
+  * We then made a plan to test the electrical properties of these types of films through CV testing, and then Melinda and I sputtered normal Al on two p doped silicon chips to prepare building our capacitor-esque setup next week
+
+#### Roadblocks
+
+* Honestly, none coming to mind. I guess Carnival being this week means we won't get anything done Thursday/Friday/Weekend, but Melinda and I have a plan to get stuff done earlier in the week. I'm also personally very excited that our experiment actually worked lol, it's nice to feel like I'm accomplishing something.
+
+#### Plans
+
+* Based on the paper I found (also sent it in discord, [https://www.sciencedirect.com/science/article/pii/0040609076906131](https://www.sciencedirect.com/science/article/pii/0040609076906131)) with the chart of film thicknesses of aluminum oxide with their corresponding colors, I think XRR is worth a shot because both films could plausibly be under 100nm given that their colors are golden brown and brown/violet (potentially) respectively
+* ![](<../../.gitbook/assets/image (230).png>)
+* I'd also like to do XRR of Matt's sputtered aluminum oxide film that is a similar color to our third film just to compare and see if they give similar results. This would be a nice sanity check.
+* Melinda and I are planning to create the aluminum/reactively evaporated aluminum oxide/aluminum layered setup on Monday as we discussed last Friday. Then we can do CV testing and see what the dielectric constant of the (potential) aluminum oxide film is compared to just an aluminum layer.&#x20;
+* Now that we have AFM tips, we can do more AFM practice!! I will probably practice on Matt's sputtered films
+
 ### <mark style="color:purple;">Update 8 - 3/23/2025</mark>
 
 #### Accomplishments
