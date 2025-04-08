@@ -107,7 +107,7 @@ Taking pictures after every step is key to ensuring you can put it back together
 
 <figure><img src="../../.gitbook/assets/IMG20250325152348.jpg" alt="" width="375"><figcaption><p>LED current settings in the software</p></figcaption></figure>
 
-2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/DLPLCRD-GUI) to set the LED current to 150mA.
+2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current to 150mA.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
