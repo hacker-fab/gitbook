@@ -259,7 +259,7 @@ Response - Jay
   * Next steps are to assess the viability of reactive Al evaporations, and/or cycles of Al evaporation followed by oxidation.
 * Overall good job helping out with setting up rf supply and moving chamber build forward
 
-### Update 7 (3/9-3/16)
+### Update 8 (3/9-3/16)
 
 #### Accomplishments
 
@@ -296,5 +296,40 @@ Roadblocks
 * Continue lit review on reactive Al
   * Also contact Jason to talk about potentially just annealing in tube furnace
 * Continue to help out with available chamber build + power supply tasks
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+
+
+### Update 10 (3/30 - 4/6)
+
+#### Accomplishments
+
+* Completed fabricating capacitor test sample using reactive aluminum evaporation strategy. Process is as follows:
+  * Deposited aluminum pads on 2 samples, masked off half the samples with polyamide tape
+  * deposited (potential) oxide on both samples as well as extra sample for XRR thickness characterization
+  * removed XRR sample
+  * deposited top aluminum electrode on the un-masked portion
+
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption><p>Setup for capacitor fabrication w/reactive evaporation. Large chip on the bottom is for XRR</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption><p>Capacitor samples with top electrode</p></figcaption></figure>
+
+* Performed XRR on evaporated sample, "oxide" was 16 nm thick and had noticeable density shift compared to the thermally grown silicon oxide sample
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2025-04-06 at 8.52.56 PM.png" alt=""><figcaption><p>XRR critical angle comparison between silicon oxide and evaporated aluminum oxide</p></figcaption></figure>
+
+Roadblocks
+
+* NOT THE SPUTTERING CHAMBER WOOHOO
+* QCM unreliability with unknown material
+
+#### Plans
+
+* Full send on sputtering trials now that the chamber is working
+  * Thickness characterization
+  * Power characterization
+  * XRR + AFM
+  * Capacitor using evaporation chamber masking technique
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
