@@ -142,16 +142,38 @@ Next week we will continue to fabricate the chips. We need to figure out why ste
 
 Gongwei, Felicia, and I continued fabricating our chips. We tried manual focus to solve the stepper issue from last week, and were able to pattern two chips successfully with several clear patterns for chip for packaging and for testing. We learned to use the plasma etcher but encountered some problems (explained in the roadblocks section). Most of our chips failed during fabrication, so we made four new ones, which are ready to be patterned.
 
-<figure><img src="../../.gitbook/assets/EDA_nmos_wireBond_post_pattern (1).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EDA_nmos_wireBond_post_pattern (1).jpg" alt="" width="375"><figcaption><p>clear patterns</p></figcaption></figure>
 
 **Roadblocks:**
 
 One roadblock was we didn't know what parameters to use for plasma O2 clean. Despite finding the plasma time from the SOP, we were not familiar with the software so we entered the wrong time and caused two patterned chips to be cleaned more than they should be, which led to the pattern disappearing. Another roadblock was the plasma etcher did not etch uniformly for our third chip. I believe our main issue was being not familiar with the fabrication process and tool, and did not have much experience, so we had to do everything several times before succeeding.
 
-<figure><img src="../../.gitbook/assets/EDA_o2_0005 (3).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EDA_o2_0005 (3).jpg" alt="" width="375"><figcaption><p>patterns disappeared after errorneous O2 clean</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/EDA_NMOS_post_plasma_PRstrip (2).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EDA_NMOS_post_plasma_PRstrip (2).jpg" alt="" width="375"><figcaption><p>weird result after plasma etch</p></figcaption></figure>
 
 **Plans for next week:**
 
 Next week we will continue to fabricate the new chips. With what we learned from the failed chips, hopefully we should be able to fabricate the gate of the new 4 chips smoothly and start developing source and drain.
+
+
+
+### **Weekly Update #10**
+
+#### **What was accomplished:**
+
+Gongwei, Felicia, and I continued fabricating our chips. We HF etched all four new chips and patterned them. This time we learned from previous mistakes and executed each step carefully. We were able to pattern four chips, and two of which displayed very clear results after development. The plasma etching process also went smoothly.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-06 at 20.19.28.png" alt="" width="375"><figcaption><p>patterns after plasma</p></figcaption></figure>
+
+**Roadblocks:**
+
+One roadblock was that stepper's x-axis motor wasn't working so we had to manually tune the stepper to pattern multiple ones along the x-axis, causing some patterns to overlap.
+
+Another roadblock was that two of the four new chips displayed rainbow-ish colors after development. They went through the exact same process as the two successful chips, so we couldn't figure out what caused the issue.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-06 at 20.26.35.png" alt="" width="375"><figcaption><p>patterns after developing</p></figcaption></figure>
+
+**Plans for next week:**
+
+Next week we will continue to fabricate the two successful chips. We will start developing body contact (P+) as the next step. We will also try to design some standard cell masks, such as inverter.
