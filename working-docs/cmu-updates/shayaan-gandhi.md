@@ -227,5 +227,28 @@ void loop() {
 >
 > [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
+
+{% step %}
+### Weekly Update 10
+
+The prototype control loop is now complete, and I began testing it this week. Progress  slowed due to the sputtering chamber being disassembled and rebuilt as Version 2.
+
+One key issue I resolved was the Alicat MFC not responding within the control loop. The root cause was improper handling of serial communication—specifically, I wasn’t telling the Arduino to actively listen to the Alicat serial port, which led to dropped messages.
+
+I also explored the idea of connecting the Pfeiffer pressure gauge directly to the vacuum pump to simplify wiring. However, this isn’t viable because the pressure gauge is designed to connect to the DCU, which we are bypassing. While I could share the same RS485 bus for both the gauge and the pump to reduce I/O usage, this isn't necessary at the moment since I have enough available pins.
+
+Another issue is powering the pressure gauge. Typically, it draws power from the DCU, but the DCU is powered off when the control loop is running. To address this, I need either a power cable that connects the gauge directly to a wall outlet or to see if the vacuum pump offers a dedicated power output for the gauge, similar to how it powers the DCU.
+
+The control loop itself accepts an input as a base and exponent—for example, a target pressure of 3.2 × 10⁻³ hPa would be entered as 3.2 and -3. During testing, the loop successfully approaches and holds the desired pressure briefly. However, after a short period, the measured pressure drifts, forcing the system to readjust. I believe this behavior is due to a lag in the chamber reaching its true equilibrium pressure after a new setpoint is applied.
+
+The current finite state machine (FSM) cycles through three states: vacuum, pressure, and MFC, with each state lasting 10 seconds. This means the loop writes a new setpoint every 30 seconds. That interval may be too short for the chamber to stabilize, so I may consider modifying the FSM to sample pressure more frequently but update the setpoint less often.
+
+My next priorities are:
+
+* **Improving control loop precision**, ideally to within 1 × 10⁻⁴ hPa. This will require tuning the control coefficients.
+* **Adding pressure visualization** to help analyze behavior and optimize PID tuning. I plan to use Arduino's Serial Plotter for real-time graphing.
+
+Now that chamber V2 is ready, I can resume testing. My goal is to have a fully functioning and precise control loop ready by next week. Feedback from Presentation 2 should also help me evaluate changes to the FSM and overall design.
+{% endstep %}
 {% endstepper %}
 
