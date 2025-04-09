@@ -249,6 +249,14 @@ My next priorities are:
 * **Adding pressure visualization** to help analyze behavior and optimize PID tuning. I plan to use Arduino's Serial Plotter for real-time graphing.
 
 Now that chamber V2 is ready, I can resume testing. My goal is to have a fully functioning and precise control loop ready by next week. Feedback from Presentation 2 should also help me evaluate changes to the FSM and overall design.
+
+> **Feedback**
+>
+> Good work on the Arduino active listen and prototype of PID. We talked on Monday about how to proceed with the PID (converting to a pressure change triggered model instead of a standard clock cycle), and metrics for assessing whether the PID meets standards during testing. I would talk with the process team and Jay to determine targets for settling time since I don't think overshoot time matters while power is not on.
+>
+> Going forward, your first priority should be a rigorously-tested PID completion, then a hardware package. No need for automatic impedance matching, power control, QCM, cooling, or mechanical feedthrough control.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
