@@ -174,3 +174,21 @@ Roadblocks:
 Plan for next week:
 
 Continue to fabricate. Hopefully, as we gain more experience the process can move forward more smoothly. :(
+
+**Weekly Update #10**
+
+Work done:
+
+This week we continued to fabricate. We produced 4 new chips with spin-on dopant and tried to pattern them. Two of them were successful. We then did plasma etch and got clean patterns for both of them. The two other chips had wired color and marks on them after the patterns were developed. We think they were not HF-etched properly in the previous stage. We are going to wipe out the photoresist and do HF-etching again on them.
+
+Ying and I discussed what the EDA team is doing with Professor Jim Bain, and he suggested that fabrication should not be our bottleneck. Instead, he proposed that we could develop a flow to produce device modeling parameters from synthetic data, and then plug the real data in when it is ready. He also looked at the data we collected from the less ideal chips and suggested that it is still usable if we manually rule out some fabrication imperfections.
+
+I continued to develop documentation for cell library: [https://docs.google.com/document/d/1q6OOcurhvERhzqmwrdqSNwqdjOpPjROsGMo\_t2sZ4uE/edit?tab=t.0](https://docs.google.com/document/d/1q6OOcurhvERhzqmwrdqSNwqdjOpPjROsGMo_t2sZ4uE/edit?tab=t.0)
+
+Roadblocks:
+
+Stepper auto-focus is still inaccurate, and we had to manually focus every time we pattern. We think HF-etching was not successful because the chips were not fully dipped into the solution.
+
+Plan for next week:
+
+Continue to fabricate. Continue to work on the standard cell library documentation. Try to develop a flow script to extract device parameters from synthetic data. Prepare for presentation 2 slides and present during class.
