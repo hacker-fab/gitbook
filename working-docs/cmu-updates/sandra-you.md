@@ -1,5 +1,22 @@
 # Sandra You
 
+**Weekly Update #10**&#x20;
+
+1. **What was accomplished:**
+   1. Added PMOS and NMOS parametrized cells to KLayout.
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+
+          <figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+2. **Roadblocks:**
+   1. Was out of town from Wednesday to Sunday for a tennis tournament, so was not able to work in lab.
+3. **Plans for next week:**
+   1. Determine a set of DRC rules to test for.
+   2. Create a sample DRC ruleset in KLayout.
+   3. Create a mask instance, including a "psub" block of the size of a mask with alignment crosses.
+   4. Figure out how to export KLayout files as GDSII files, and determine how to create pngs from them.
+
 **Weekly Update #9**&#x20;
 
 1. **What was accomplished:**
