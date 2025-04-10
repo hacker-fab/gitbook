@@ -198,4 +198,44 @@ Image 2: New Spincoater Design
 Link to Onshape (individual parts can be seen in the folder): [https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461](https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461)\
 
 
-\
+## Week 8
+
+This week, we finally got all of the parts required, so we decided to finish building the full base of the system. Since the new motor mount altered our design, we had to redesign the distance sensor to fit around it. I determined that the simplest and most effective solution was to create an arch and mount the distance sensor at the top. After finalizing the design in CAD, I 3D printed the part and attached it to the ASC. With this, the bottom half of the spin coater assembly is officially complete.
+
+Distance Sensor Mount:
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdcXH11KM6l4k96SBh2utw42lvWx2obA4kRfQ6Fg40TrSvdSVUOGvm_IZLHARip9qTTByNNyUKpdUTXt5sTuSoMlkd8Xtips33G8K6hruHPXvbmxIlTwmAlI5rWy25UYerKft37?key=FWIacl3KTLTfg-fEaG5lgXWM)
+
+Full System (I forgot to take actual pictures):\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXchFIaLdst8K7OpDbNxJIxeyE95Lhe-3hLg7sEiSXDzLpIRU2VWv9J4LLtYhDnfQnOFpCLw-LPhmAINBwVE0YURjeHJRrVtLi5xK92gK7kykjalxmvNO85qMvv8l7UnQdsml8uyIQ?key=FWIacl3KTLTfg-fEaG5lgXWM)
+
+Initial tests I did at home showed that the motor responded correctly and the sensor provided accurate readings. However, I still need to confirm that the sensor performs reliably under the actual operating conditions, particularly when exposed to rapid movements and a non-direct line of sight.
+
+For next week, I plan on coding the ASC to determine the required motor ticks needed to position the spin coater precisely under each of the liquid handling syringes and the heat gun. This requires calibrating the stepper motor movements to ensure accurate and repeatable positioning. I will write test scripts to determine the motor tick-to-distance ratio, accounting for any minor mechanical tolerances. Additionally, I will conduct extensive testing to ensure that everything functions correctly. This includes running trials with liquids of varying viscosities to analyze how the movements on the belt affect the distribution on the chip surface. I also plan to add logic that dynamically adjusts spin speed/acceleration based on viscosity inputs to improve coating uniformity.
+
+My primary project thus far has been the base of the ASC, and after this week (hopefully sooner), this part should be almost completely finished. If time permits, I can work on integrating basic user interface elements for controlling the system. This could include a simple menu system for selecting spin parameters or a real-time display of sensor feedback.&#x20;
+
+Onshape Link:
+
+https://cad.onshape.com/documents?nodeId=13a6fba93f1b40244f3af04c\&resourceType=folder
+
+## Week 9:
+
+This week, I focused on making progress with both the hardware setup and presentation preparation. I started by connecting the distance sensor to the Arduino and confirmed that it was still functioning correctly. After wiring everything up, I ran a few test scripts to ensure the sensor readings were consistent and that communication with the microcontroller was stable. It was reassuring to see that this key part of the system remained reliable even after changes in the setup.
+
+\[WILL TAKE PCITURE TOMORROW]
+
+After verifying the sensor, I turned my attention to the motor system. I attempted to run basic movement commands through the Arduino, but the motor did not respond as expected. After some debugging, I concluded that the issue was most likely due to an insufficient power supply. The motor I’m using is rated for 9V, but during this phase of testing, I was only able to supply it with 5V. As a result, the motor either did not run at all or behaved erratically.
+
+\[WILL TAKE PICTURE TOMORROW]
+
+Thankfully, I believe this issue will be resolved once the custom PCB arrives. The ordered PCB includes an onboard buck converter, which is designed to regulate a higher input voltage down to the necessary 9V for the motor. This should allow the system to deliver the correct voltage and current without requiring an external power setup. With proper voltage regulation in place, I expect the motor to operate reliably and consistently, which will allow for more advanced testing of the motor control logic and sensor-motor interaction.
+
+Ordered PCB:\
+
+
+<figure><img src="../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+
+In addition to the hardware work, I also spent time preparing for Presentation 2. I compiled the progress I’ve made so far, organized the technical developments, and clearly articulated the issues I’ve encountered and how I plan to address them. I aimed to structure the presentation to showcase not just the technical milestones, but also the problem-solving and iteration that have taken place along the way.
+
+Overall, this week marked another important step forward. Although I encountered some obstacles, they led to a deeper understanding of the system’s power requirements and helped shape the design decisions that went into the PCB. I’m looking forward to receiving the final board and moving closer to a fully functional prototype with stable sensor input and reliable motor control.
