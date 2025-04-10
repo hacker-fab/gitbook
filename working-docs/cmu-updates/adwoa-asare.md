@@ -228,3 +228,26 @@ GPIO.cleanup()
 * CAD holder/actuator for the scribe point.
 
 ***
+
+## Update 6
+
+3/23/2025
+
+### Progress
+
+* worked on actuator design for scribe point
+* reworked persistaltic pump design
+* reprinted & tested peristaltic pump design
+
+### Roadblocks
+
+* none
+
+### Plans
+
+* reprint pump with slightly more space between rollers and outer walls
+* construct auto-dicer frame
+
+
+
+<figure><img src="../../.gitbook/assets/IMG_2232.JPG" alt=""><figcaption></figcaption></figure>
