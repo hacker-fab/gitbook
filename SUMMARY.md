@@ -135,6 +135,7 @@
     * [Week 7 Update](working-docs/cmu-updates/matthew-chois-updates/week-7-update.md)
     * [Week 8 Update](working-docs/cmu-updates/matthew-chois-updates/week-8-update.md)
     * [Week 9 Update](working-docs/cmu-updates/matthew-chois-updates/week-9-update.md)
+    * [Week 11 Update](working-docs/cmu-updates/matthew-chois-updates/week-11-update.md)
   * [Sandra You](working-docs/cmu-updates/sandra-you.md)
   * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
   * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
