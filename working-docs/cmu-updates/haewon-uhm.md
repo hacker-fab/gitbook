@@ -503,3 +503,45 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Test the LabVIEW set up with the Arduino
 * Make changes based on any errors that might occur
 * Possibly install four thermocouples so we can vary the temperatures to see if they are actually averaging
+
+## Update 11 (SOG)
+
+**Accomplishments**
+
+* Started the control for 700B
+* Spun on and annealed the 700B test recipe
+
+<figure><img src="../../.gitbook/assets/654_700B_test_annealed.jpg" alt="" width="188"><figcaption><p>700B test recipe post-annealing</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/655_700B_control_annealed.jpg" alt="" width="188"><figcaption><p>700B control post-annealing</p></figcaption></figure>
+
+**Roadblocks**
+
+* Could not Al etch the chips because there is no more Al etch solution
+  * Ordered this week so do not know when it will come in
+* Had unusual results with the n-doped recipe that replaces the IPA for ethanol
+  * Was very uneven but might be because of the spin coater
+
+**Future Plans**
+
+* Possibly test the n-doped, ethanol test recipe again
+* Pattern the 700B control and test chip
+* Make new formulations and test
+
+## Update 11 (ALD)
+
+**Accomplishments**
+
+* Connected the thermocouple shield to the Arduino&#x20;
+* Changed the script and LabVIEW to read from the new thermocouple shield (both updated on Github)
+* Tested the LabVIEW and Arduino connection and it works
+
+**Roadblocks**
+
+* Worried about the possible lagging that occurs with the thermocouple readings onto LabVIEW
+
+**Future Plans**
+
+* Make sure everything is working properly in terms of the thermocouple controls
+* Test with Viswesh and James after integrating the process
+* Make changes if there are any errors
