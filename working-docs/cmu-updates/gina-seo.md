@@ -4,6 +4,29 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #9&#x20;
+
+**What was accomplished:**&#x20;
+
+* Conducted research and drafted a comprehensive [write-up on DRC methodology](https://docs.google.com/document/d/1DSXHdX0mfx_WKs53cKCCmKlRsX-9ngoYAvcdYDIZioQ/edit?usp=sharing), using PMOS fabrication blocks to identify process limitations and inform rule definitions.
+* Edited our MOSFET on KLayout to be accurate orientation; Pictured below is NMOS and PMOS with adjustable parameters (high level and detailed view)![Image](https://media.discordapp.net/attachments/1339041637803884594/1358624222565371995/image.png?ex=67f484e8\&is=67f33368\&hm=8113b59306b65dc89fadcb6946eb89b68f4cc4af1e84103d54b2df929f87a4e9&=\&format=webp\&quality=lossless\&width=1296\&height=942)![Image](https://media.discordapp.net/attachments/1339041637803884594/1358624139912413355/image.png?ex=67f484d4\&is=67f33354\&hm=2379b1bb6ad44ea352924abde7e80bd72052f2a9aaca38929e3ee62b48aa870d&=\&format=webp\&quality=lossless\&width=1296\&height=970)
+
+**Roadblocks:**
+
+* Time conflicts got in the way of syncing about DRC guidelines and methodology in detail with Icey and Sandra over Carnival.&#x20;
+
+**Plans for this week:**
+
+* Complete Demo slides and send to Icey for feedback Monday night.&#x20;
+* Figure out exporting masks as files, ideally before demo day.&#x20;
+* Create mask instance for cross alignment marks.
+* Create sample DRC script in KLayout.
+* Determine detailed methodology with theory + math for some DRC experiments.&#x20;
+
+
+
+
+
 ## Update #8
 
 **What was accomplished:**
