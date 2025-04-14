@@ -1,5 +1,103 @@
 # Eric Dubberstein
 
+Tasks accomplished week 11 (up to 4/13/2025):
+
+I presented demo two on Tuesday\
+
+
+I met with the automated spincoater team on Thursday to understand their design requirements. They will connect their automated spincoater to the lab com system.
+
+
+
+Plans For this week:&#x20;
+
+I will first tackle the tasks that were originally outlined for week 11:
+
+Week 11: Documentation and Training
+
+* Write documentation for:
+*
+  * Setting up the Raspberry Pi for a new tool.
+  * Modifying microcontroller interface code for different devices.
+  * AWS infrastructure setup and API details.
+* Conduct training or create tutorials for others to replicate the system.
+* Justification: This will be important for future scalability.
+
+\
+
+
+I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. \
+
+
+Beyond that, I will give the second presentation demoing my progress up until this point.&#x20;
+
+If the second spincoater is completed (we’re still waiting for a part), I will test out the system with the full spincoater instead of just the motor (as I did last week).&#x20;
+
+If the RPI controlled relay for the air compressor arrives, I’ll get that connected to the system and tested.&#x20;
+
+I will help carson with any issues he has as he tries to implement uploading images for the stepper.&#x20;
+
+\
+
+
+**Work accomplished for this week:**&#x20;
+
+I gave the second presentation on Tuesday.&#x20;
+
+Documentation for the full system is complete. I have sent the documentation to the automated spincoater team so they can start to integrate the automated spincoater with the system.&#x20;
+
+I made sure to update the documentation to include all of the new features as well as better background fundamentals so it’s easier for a future collaborator to get started with the project.&#x20;
+
+The code style checks are going to wait until the final documentation is due, as the code may still change.&#x20;
+
+\
+
+
+I tested out the IOT relay switch. See the video below. Make sure to turn the sound on.
+
+[https://drive.google.com/file/d/1VtVnRXSwdEkaFqVZ4crvYJgBhmmv24sa/view?usp=drive\_link](https://drive.google.com/file/d/1VtVnRXSwdEkaFqVZ4crvYJgBhmmv24sa/view?usp=drive_link)&#x20;
+
+\
+
+
+I also implemented I/O control so the switch can be controlled in software. Once the full spincoater is ready (hopefully this week), I will test this along with the rest of the system.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGU99QC0FOJfIzId4SLXnUa-tOw7rQSVTsOnFH1z2cXdOrjuxbfDLf9fU5i1nL_FCBReeRiM9W3FcejP-pr98XL71ACn4X51kcwrDQHtuVjBoHWad7s0vVyZdnAchMqeMso0JJaQ?key=uI8IayLPtlRHTjZ_6bQqOoG_)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdgpBvYg15UxBxXKqimD7RFGlkidIIqbtlsObDifB5BUvraiXRAjpCJ6wZYJ2JE3gL_N9E8mqGGHUxm-LlA4PZlx8EJItHiOM5kQ0NO3Wo-KsWnkEo53-XcpXNZYeKiEdGngCi2Hw?key=uI8IayLPtlRHTjZ_6bQqOoG_)
+
+\
+
+
+Roadblocks:&#x20;
+
+1. Arrival of the last part for the spincoater: Can’t complete final testing until this is done.&#x20;
+2. Carson to integrate image functionality for the stepper: just messaged him
+3. I need better wiring to connect the RPI to the IOT switch. We could probably figure this out during class on tuesday or thursday.&#x20;
+
+Plans for next week:
+
+The primary plan I have outlined is to complete integration with the spincoater. This is reliant on the last part of the spincoater arriving though. If this part arrives, we should have a fully-functional spincoater that can be controlled from the database.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcgdmeNQevs3BbU8I-5qr1KUescwbpjS-fFntkQ3U8oT_-IC3XfTaPcKr03I-r676g1v6B527GeBBtDK4ZhdXaCj7lCAN07XtmqTLhqL7Z5307ddPQtwcF4nsSFmUtqrEnzyajB5A?key=uI8IayLPtlRHTjZ_6bQqOoG_)
+
+\
+
+
+In addition to this, I will continue to improve the documentation as needed, including documenting the IOT relay connected to the RPI.&#x20;
+
+I will also assist the automated spincoater team and stepper team with integrating the labcom software as needed.&#x20;
+
+This is the wrapping up phase of the project, so please let me know if there are other things that I should be doing to finish the project on a high note.&#x20;
+
+\
+
+
+Documentation & Github progress tracker are up to date.
+
+\
+
+
 Progress for this week (week up to 4/6/25) :&#x20;
 
 

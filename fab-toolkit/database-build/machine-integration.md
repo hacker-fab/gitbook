@@ -1,10 +1,55 @@
+---
+description: >-
+  Lab communication system for interaction between database website and
+  individual tools
+---
+
 # Machine Integration
 
 The goal of the Machine Integration project is to develop an extensible interface that can be used to communicate between the primary web application and each individual machine in the hacker fab.&#x20;
 
 
 
-Here is an architecture diagram of the Full System.&#x20;
+## Background information
+
+The information in this section will explain some basics about web applicaiton design that will allow for a better understanding of the current machine integration system.&#x20;
+
+### API:
+
+<figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
+
+An API is an application programming interface. For the purposes of this project, it is the abstraction of the interface between the server and client devices. The client devices can invoke GET, POST, UPDATE and other HTTP (Hyper Text Transfer Protocol) endpoints for a specific URL. We can send test API requests easily using POSTMAN. For those more familiar with linux networking, you could also use a CURL command.
+
+
+
+### Postman:
+
+Postman is a user friendly way to send API requests to test endpoints. Note that in production, another program will call an API endpoint. Postman is just a way for us to easily test these endpoints. If you are familiar with the CURL linux command, you can use that instead.&#x20;
+
+Download POSTMAN from their website (do a google search). Below is a basic overview of the user interface.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+
+\
+
+
+<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
+
+### Database fundamentals:
+
+A **database** is a structured collection of data that enables efficient storage, retrieval, and management of information.&#x20;
+
+You can think of a single **Table** within the database as an excel spreadsheet. The entire database is like an excel workbook.&#x20;
+
+Each table has multiple column names (shown as the first row in the image below). One of these columns are dedicated to be the primary key. The primary key uniquely identifies a single row, or entry, in the database. The other columns are used to store information about that entry.&#x20;
+
+The entire structure of the database (names of all the tables, column names, etc) is referred to as the **schema**. &#x20;
+
+<figure><img src="../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
+
+## System Architecture Diagram:
+
+Now moving onto the details of this project, here is a system level architecture diagram of the system.&#x20;
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcXFEy5eu8qqub8VfT0DtOGANdlEVJ_8rg_pJXm70vyX_eaJHmDveBvXo2BWOT7YVaSzvHLU9m00Oulh7ZUKEUt__dG1V0hWEmV8ktRQiHB8FnVH2xi3JV30i4tdtipNq5f9kmI?key=sLvmXSFPn-LZd1TfxNYT9Cv3" alt=""><figcaption></figcaption></figure>
 
@@ -61,20 +106,26 @@ I will now go through the jobs queue and Raspberry PI mini computer in more deta
 
 ## **Jobs Queue on AWS:**&#x20;
 
-The jobs queue is where jobs that are requested by the web applicaiton are stored before they are fetched by the appropriate tool's raspberry PI. First, here are details about the Job Queue API interface:
+The jobs queue is where jobs that are requested by the web application are stored before they are fetched by the appropriate tool's raspberry PI.&#x20;
+
+Other programs (such as the web application and the RPI) interface/communicate with the jobs queue via API calls. These are HTTP requests.&#x20;
+
+### Job Queue API interface:
 
 #### API Gateway Endpoints from AWS for raspberry PI:
 
 * #### GET /jobs/next: Fetch the next job from the queue.
 * #### POST /job\_completion : Update job completion details.
+* #### POST /generate\_download\_url: Generates the download url for a file recently uploaded based on the s3 id key provided&#x20;
 
 **API Gateway Endpoints from AWS for web application:**
 
 * #### POST /jobs: Enqueue a new job. The request has the machine name, input parameters, priority. The response will have the job\_id of the newly created job, or error.&#x20;
 * #### GET /jobs\_by\_id: The request includes the job\_id(s) for which you will get details. All data for that row of the table will then be returned. NOTE: you can pass a list of job\_ids to get multiple rows of data at the same time.
 * #### GET /jobs\_by\_machine: The request includes the machine name. All jobs that are in the database (regardless of status) will be returned.&#x20;
+* #### POST /generate\_upload\_url: Generates the upload url to then upload a file to s3 storage. It also returns the s3 key, which can be used to retrieve the uploaded file.&#x20;
 
-#### Job Queue Table Schema:
+### Job Queue Table Schema:
 
 * #### job\_id (Primary Key)
 * #### machine (the machine to run the job on. E.g. spin coater)
@@ -84,7 +135,7 @@ The jobs queue is where jobs that are requested by the web applicaiton are store
 * #### timestamp (Queued timestamp)
 * #### priority (Optional for prioritized execution)
 
-#### Here are implementation details:
+### Job Queue implementation details:
 
 **AWS Configuration for jobs queue:**
 
@@ -92,7 +143,7 @@ This is the jobs queue that the tools (right now only the spincoater) pull from.
 
 The API gateway routes are configured as follows:
 
-<figure><img src="../../.gitbook/assets/image (92).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 The dynamo DB is configured with default settings. job\_id is the primary key.&#x20;
 
@@ -100,9 +151,8 @@ The dynamo DB is configured with default settings. job\_id is the primary key.&#
 
 I am currently using a free tier AWS account from hacker fab. This takes care of all licensing requirements for this project.&#x20;
 
-The majority of the logic is in the lambda function. The lambda function is the code that runs on AWS servers that processes API requests to the database. The python code is as follows (up to date as of 3/8/2025):
+The majority of the logic is in the lambda function. The lambda function is the code that runs on AWS servers that processes API requests to the database. The python code is as follows (up to date as of 4/10/2025):
 
-````python
 ```python
 """AWS Lambda handler module.
 
@@ -140,7 +190,7 @@ def lambda_handler(event, context):
 
     # Routing based on the request
     if route == "GET /jobs/next" and method == "GET":
-        return get_next_job()
+        return get_next_job(event)
     if route == "POST /job_completion" and method == "POST":   # Ensure correct endpoint
         return update_job_completion(body)
     if route == "POST /jobs" and method == "POST":
@@ -149,6 +199,10 @@ def lambda_handler(event, context):
         return get_jobs_by_id(event)
     if route == "GET /jobs_by_machine" and method == "GET":
         return get_jobs_by_machine(event)
+    if route == "POST /generate_upload_url" and method == "POST":
+        return generate_presigned_upload_url(body)
+    if route == "POST /generate_download_url" and method == "POST":
+        return generate_presigned_download_url(body)
     logger.warning("Invalid request received: %s", route)
     return {"statusCode": 400, "body": json.dumps({"message": "Invalid request"})}
 
@@ -211,11 +265,23 @@ def enqueue_job(body):
     timestamp = int(time.time())
     logger.info("Adding new job with ID: %s", job_id)
 
+    # Ensure input_parameters are serialized properly (convert floats to Decimal for DynamoDB)
+    def serialize_input_parameters(params):
+        if isinstance(params, dict):
+            return {k: serialize_input_parameters(v) for k, v in params.items()}
+        elif isinstance(params, list):
+            return [serialize_input_parameters(v) for v in params]
+        elif isinstance(params, float):
+            return Decimal(str(params))  # Convert float to Decimal
+        return params
+
+    serialized_input_parameters = serialize_input_parameters(input_parameters)
+
     table.put_item(Item={
         "job_id": job_id,
         "machine": machine,
         "status": "Pending",
-        "input_parameters": input_parameters,
+        "input_parameters": serialized_input_parameters,
         "output_parameters": {},
         "timestamp": timestamp,
         "priority": priority
@@ -223,26 +289,31 @@ def enqueue_job(body):
 
     return {"statusCode": 200, "body": json.dumps({"message": "Job added", "job_id": job_id})}
 
-# **Function to Get the Next Pending Job and Mark It "In Progress", Then Return Updated Data**
-def get_next_job():
+# **Function to Get the Next Pending Job for a Specific Machine and Mark It "In Progress", Then Return Updated Data**
+def get_next_job(event):
     """
-    Get the next pending job and mark it as "In Progress".
+    Get the next pending job for a specific machine and mark it as "In Progress".
     """
-    logger.info("Fetching next job from queue")
+    machine = event.get("queryStringParameters", {}).get("machine")
+    if not machine:
+        return {"statusCode": 400, "body": json.dumps({"message": "Missing machine parameter"})}
+
+    logger.info("Fetching next job for machine: %s", machine)
     response = table.scan(
-        FilterExpression="#s = :s",
-        ExpressionAttributeNames={"#s": "status"},
-        ExpressionAttributeValues={":s": "Pending"}
+        FilterExpression="#s = :s AND #m = :m",
+        ExpressionAttributeNames={"#s": "status", "#m": "machine"},
+        ExpressionAttributeValues={":s": "Pending", ":m": machine}
     )
 
     jobs = response.get("Items", [])
     if not jobs:
-        logger.warning("No pending jobs found")
-        return {"statusCode": 404, "body": json.dumps({"message": "No pending jobs found"})}
+        logger.warning("No pending jobs found for machine: %s", machine)
+        return {"statusCode": 404, "body": json.dumps({"message": "No pending jobs found for the specified machine"})}
 
-    jobs.sort(key=lambda x: x.get("priority", 1), reverse=True)
+    # Sort jobs by timestamp (oldest job first)
+    jobs.sort(key=lambda x: x.get("timestamp", float('inf')))
     next_job = jobs[0]
-    logger.info("Next job selected: %s", next_job["job_id"])
+    logger.info("Next job selected for machine %s: %s", machine, next_job["job_id"])
 
     table.update_item(
         Key={"job_id": next_job["job_id"]},
@@ -295,19 +366,90 @@ def get_jobs_by_machine(event):
 
     return {"statusCode": 200, "body": json.dumps(jobs, default=decimal_serializer)}
 
+def generate_presigned_upload_url(body):
+    s3 = boto3.client("s3")
+    BUCKET = "job-queue-files"  
+
+    filename = body.get("filename", f"{uuid.uuid4()}.jpg")
+    key = f"uploads/{filename}"
+
+    try:
+        presigned_url = s3.generate_presigned_url(
+            "put_object",
+            Params={"Bucket": BUCKET, "Key": key, "ContentType": "image/jpeg"},
+            ExpiresIn=600  # 10 minutes
+        )
+        return {
+            "statusCode": 200,
+            "body": json.dumps({
+                "upload_url": presigned_url,
+                "s3_key": key
+            })
+        }
+    except Exception as e:
+        logger.error("Failed to generate pre-signed URL: %s", str(e))
+        return {
+            "statusCode": 500,
+            "body": json.dumps({"message": "Failed to generate upload URL"})
+        }
+
+def generate_presigned_download_url(body):
+    s3 = boto3.client("s3")
+    BUCKET = "job-queue-files"
+    key = body.get("s3_key")
+
+    if not key:
+        return {"statusCode": 400, "body": json.dumps({"message": "Missing s3_key"})}
+
+    try:
+        url = s3.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": BUCKET, "Key": key},
+            ExpiresIn=600  # 10 minutes
+        )
+        return {"statusCode": 200, "body": json.dumps({"download_url": url})}
+    except Exception as e:
+        return {
+            "statusCode": 500,
+            "body": json.dumps({"message": "Failed to generate download URL"})
+        }
+
+
+
+```
+
+Other AWS resources:
+
+S3: S3 is amazon's blob storage service. When a file is uploaded to the upload link from the generate\_upload\_url, it is stored here. It is setup with default configurations.&#x20;
+
+IAM management policy. This policy must be added to allow the Lambda script to access the S3 data. This is needed to generate the upload and download URLs.&#x20;
+
+To add the policy, go to IAM from the AWS panel, then roles, then create role.&#x20;
+
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:PutObject",
+				"s3:GetObject"
+			],
+			"Resource": "arn:aws:s3:::job-queue-files/uploads/*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": "s3:ListBucket",
+			"Resource": "arn:aws:s3:::job-queue-files"
+		}
+	]
+}
 ```
 
 
-````
 
-The lambda code fully passes pylint/google code guidelines. The two errors shown are because the AWS specific modules aren't present when running pylint locally. \
-
-
-<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
-
-
-
-Here is an automated test script to run. Run this script locally on your PC. The script should pass if the AWS database is configured correctly. You may need to change the base URL.&#x20;
+Here is an automated test script to run that will test all endpoints except /generate\_download\_url and /generate\_upload\_url. Run this script locally on your PC. The script should pass if the AWS database is configured correctly. You may need to change the base URL.&#x20;
 
 ````python
 ```python
@@ -382,15 +524,127 @@ The test code passes pylint
 
 <figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
+The following python script tests the functionality of the s3 file upload and download system. Note you made need to change the base URL to the current AWS instance.&#x20;
+
+```python
+"""
+This module contains examples of a few endpoint calls
+"""
+import requests
+
+# Constants
+BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
+
+TEST_FILE_NAME = "Test_image.jpg"  # Replace with the path to your test file
+
+
+def get_file_upload_url_and_key(job_id):
+    """
+    Generate a presigned URL for uploading an image.
+    """
+    response = requests.post(f"{BASE_URL}/generate_upload_url", json={"job_id": job_id})
+    assert response.status_code == 200, "Failed to generate upload URL"
+    upload_url = response.json().get("upload_url")
+    s3_key = response.json().get("s3_key")
+    print(f"Upload URL: {upload_url}")
+    return upload_url, s3_key
+
+
+def upload_file(file_name, upload_url):
+    """
+    Upload a file to the presigned URL.
+    """
+    with open(file_name, "rb") as f:
+        response = requests.put(upload_url, data=f, headers={"Content-Type": "image/jpeg"})
+    if response.status_code != 200:
+        print(f"Upload failed. Status code: {response.status_code}, response: {response.text}")
+    assert response.status_code == 200, "Upload failed"
+    print("File uploaded successfully")
+
+
+
+def enqueue_job(machine, input_parameters, priority):
+    """
+    Enqueue a job with the specified parameters.
+    """
+    job_data = {
+        "machine": machine,
+        "input_parameters": input_parameters,
+        "priority": priority
+    }
+    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
+    assert response.status_code == 200, "Failed to enqueue job"
+    job_id = response.json().get("job_id")
+    print(f"Job enqueued: {job_id}")
+    return job_id
+
+def download_file(s3_key):
+    """
+    Download a file from S3 using the presigned URL.
+    """
+
+    # get the presigned URL for download
+    response = requests.post(f"{BASE_URL}/generate_download_url", json={"s3_key": s3_key})
+    assert response.status_code == 200, "Failed to generate download URL"
+    download_url = response.json().get("download_url")
+    print(f"Download URL: {download_url}")
+
+    # download the file using the presigned URL
+    response = requests.get(download_url)
+    if response.status_code != 200:
+        print(f"Failed to download file. Status code: {response.status_code}, Response text: {response.text}")
+    assert response.status_code == 200, "Failed to download file"
+    with open("downloaded_file_123.jpg", "wb") as f:
+        f.write(response.content)
+
+def test_upload_and_download_file():
+    """
+    Test uploading a file, providing the S3 key as a job parameter, fetching the job,
+    and then downloading the file using the presigned URLs.
+    """
+    # Step 1: Generate a presigned upload URL and S3 key
+    upload_url, s3_key = get_file_upload_url_and_key(None)  # Passing None as job_id since it's not required here
+    print(f"Generated upload URL: {upload_url}")
+    print(f"S3 Key: {s3_key}")
+
+    # Step 2: Upload a file
+    upload_file(TEST_FILE_NAME, upload_url)
+    print(f"File uploaded successfully to S3 key: {s3_key}")
+
+    # Step 3: Enqueue a job with the S3 key as a parameter
+    job_id = enqueue_job(
+        machine="lithographer",
+        input_parameters={"x": 100.0, "y": 200.0, "image_s3_key": s3_key},
+        priority=2
+    )
+    print(f"Job enqueued: {job_id}")
+
+    # Step 4: Fetch the job from the queue
+    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
+    assert response.status_code == 200, "Failed to fetch next job"
+    fetched_job = response.json()
+    assert fetched_job.get("job_id") == job_id, "Fetched wrong job"
+    fetched_s3_key = fetched_job["input_parameters"]["image_s3_key"]
+    print(f"Fetched job successfully. S3 Key: {fetched_s3_key}")
+
+    # Step 5: Download the file using the fetched S3 key
+    download_file(fetched_s3_key)
+    print("File downloaded successfully.")
+
+if __name__ == "__main__":
+    test_upload_and_download_file()
+
+```
+
 ## Raspberry PI mini computer
 
 The raspberry PI pulls job requests from the AWS jobs queue
 
 
 
-**Basic raspberry PI hardware setup:**
+### **Basic raspberry PI hardware setup:**
 
-Raspberry PI 5 with case and heatsink. Jumper wires connect GPIO pins to external device. See image attached. The device could also interface with the raspberry PI over one of the Raspberry PIs USB ports.&#x20;
+Raspberry PI 5 with case and heatsink. There are two ways the RPI can connect to tools to control. The first method is using jumper wires to connect GPIO pins to external device. See image attached. The device could also interface with the raspberry PI over one of the Raspberry PIs USB ports. This is the approach that is used for the spincoater&#x20;
 
 <figure><img src="../../.gitbook/assets/IMG_7608.JPG" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -419,71 +673,9 @@ At this point I was pretty stumped, so I searched around the internet a bit. I t
 
 
 
-For the first documentation checkpoint, the integration with the spincoater is not complete. Here is documentation for simply turning the LED on the Arduino on and off.&#x20;
+### lab\_com\_gui.py conceptual overview
 
-Here is the code that runs on the Arduino:&#x20;
-
-NOTE: This code will eventually be integrated into the existing spin coater firmware to control the spincoater instead of just turn the LED on and off.
-
-It does the following things:&#x20;
-
-On startup, it sets the baud rate (speed of UART connection) to 115200 and sets up the LED pin output
-
-It reads an entire command from the RPI
-
-It parses the integer number of seconds to run the LED from the command
-
-It turns on the LED for that amount of time
-
-```cpp
-#define LED_PIN 13  // Built-in LED
-
-void setup() {
-    // Initialize USB Serial (Communication with Raspberry Pi)
-    Serial.begin(115200);
-    Serial.println("[DEBUG] USB Serial Initialized. Waiting for command...");
-    
-    pinMode(LED_PIN, OUTPUT);
-}
-
-void loop() {
-    if (Serial.available()) {
-        String command = Serial.readStringUntil('\n');  // Read full command
-
-        // Print received command to Serial Monitor (Debugging)
-        Serial.print("[DEBUG] Received: ");
-        Serial.println(command);
-
-        if (command.startsWith("LED:")) {
-            int seconds = command.substring(4).toInt();  // Extract the integer
-
-            Serial.print("[DEBUG] Parsed LED duration: ");
-            Serial.print(seconds);
-            Serial.println(" seconds.");
-
-            Serial.println("[DEBUG] Turning LED ON...");
-            digitalWrite(LED_PIN, HIGH);
-
-            for (int i = 0; i < seconds; i++) {
-                Serial.print("[DEBUG] Remaining time: ");
-                Serial.print(seconds - i);
-                Serial.println(" seconds...");
-                delay(1000);  // 1-second delay per loop
-            }
-
-            digitalWrite(LED_PIN, LOW);
-            Serial.println("[DEBUG] LED OFF.");
-        } else {
-            Serial.println("[DEBUG] Invalid command received.");
-        }
-    }
-}
-
-```
-
-Here is the lab\_com\_gui. This is the code running on the raspberry PI:&#x20;
-
-
+This is the code running on the raspberry PI. I'll first show it from the user's perspective:&#x20;
 
 When the machine is IDLE, the monitor connected to the RPI just displays a message that we are waiting for the next job
 
@@ -501,103 +693,31 @@ Finally, the user can type in input for the final job status (this will vary bas
 
 <figure><img src="../../.gitbook/assets/waiting_for_user_response.png" alt=""><figcaption></figcaption></figure>
 
-I will first detail two important pieces of the code. These two parts should be the only parts of the code that you need to modify when integrating a new tool.&#x20;
+The user can also create a job from the RPI gui itself. If the RPI is connected to the internet, it will upload the job details to the database. Otherwise, the job will run completley offline. This is a intentional redundancy feature.&#x20;
+
+<figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUc-pZz69RBwhZSDFPcyWfNzWr9ox6CYuowotIDu8426eoQ_uHkVQ5LeyNI4lzxPyqbe96javhC_EuO8fQPtajaOE9Iv0DSEJWg-PIX7N3s9q6dTv0mweGsajURSq5OMKPsKGYGF2g=s2048?key=9LxcfCX8H4KHz_gVVDDC4xHY" alt=""><figcaption></figcaption></figure>
+
+The essential behavior of lab\_com\_gui.py can also be described in the following state machine:
+
+<figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
+
+### lab\_com\_gui.py implementation details:
+
+I will first detail three important pieces of the code. These three parts should be the only parts of the code that you need to modify when integrating a new tool.&#x20;
+
+Note that the three sections that you need to edit to integrate a new tool begin with the comment&#x20;
+
+```python
+########################## EDIT HERE: block name ##############################
+```
 
 The first portion is an initialization block. In this case, it just opens the UART port to communicate with the Arduino. In general though, put any code here that needs to run once when the raspberry PI starts up.&#x20;
 
 ```python
-########################## PERIPHERAL CONFIGURATION ##########################
-#### UART OVER USB SERIAL TO ARDUINO ####
-# This may be different on a different RPI
-USB_PORT = "/dev/ttyACM0"  # Adjust this based on your device
-BAUD_RATE = 115200  # Must match Arduino
+########################## EDIT HERE: PERIPHERAL CONFIGURATION ##########################
+#### INSTRUCTIONS: ######
+### Add whatever code you need here to inintialize your peripherals so that they can begin to accept jobs. ###
 
-# Open Serial Connection
-try:
-    ser = serial.Serial(USB_PORT, BAUD_RATE, timeout=1)
-    time.sleep(2)  # Allow time for connection to stabilize
-    print("Connected to Arduino over USB Serial!")
-
-except serial.SerialException:
-    print("ERROR: Could not open serial port. Check USB connection!")
-    exit()
-
-
-###################################################################################
-```
-
-The second portion sends the command to the arduino. Note that it is a self-contained method for this new device. To add this device to the code, all we needed to do was add the peripheral config and write this method.&#x20;
-
-This method also reads out the debugging messages from the arduino. Once we actually get the spincoater working, this could be messages if the spincoater is malfunctioning.&#x20;
-
-```python
-def run_spincoater(self, job_input_parameters):
-        
-        ### This is where you write the firmware code to run the job. ##
-        duration = job_input_parameters.get("time", 5)
-        
-        command = f"LED:{duration}\n"
-        print(f"Sending: {command.strip()}")
-
-        ser.write(command.encode())  # Send data over USB Serial
-
-        # Read response from Arduino
-        while True:
-            response = ser.readline().decode('utf-8').strip()
-            if response:
-                print(f"Arduino: {response}")
-            else:
-                break  # Stop reading when no more data
-
-        ### End of firmware code. ###
-
-
-        ## Gather the user response [Optional]##
-        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
-
-        self.get_user_output_response()
-
-        ## Submit the data back to the server ##
-        final_output_parameters = {"response": self.output_text}
-
-        self.submit_completed_response_to_server(final_output_parameters)
-```
-
-Finally, here is the full python code that runs on the raspberry PI:\
-\
-It does the following things:
-
-1. Fetches jobs from AWS jobs queue
-2. Displays the currently running job on the GUI. Also allows users to control whether jobs run automatically or require manual confirmation.&#x20;
-3. Runs the job on the device
-4. Sends completion details back to the AWS jobs queue.\
-
-
-````python
-```python
-"""
-This module contains the GUI for the job queue system.
-"""
-
-import time
-import threading
-import tkinter as tk
-from tkinter import ttk
-import sys
-import requests
-import gpiod
-import serial
-
-IO_PIN = 17  # Change to your GPIO pin number
-chip = gpiod.Chip('gpiochip4')
-line = chip.get_line(IO_PIN)
-
-# Request the GPIO line for output
-line.request(consumer="gpio_test", type=gpiod.LINE_REQ_DIR_OUT)
-
-BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
-
-########################## PERIPHERAL CONFIGURATION ##########################
 #### UART OVER USB SERIAL TO ARDUINO ####
 # This may be different on a different RPI
 USB_PORT = "/dev/ttyACM0"  # Adjust this based on your device
@@ -612,222 +732,35 @@ except serial.SerialException:
     print("ERROR: Could not open serial port. Check USB connection!")
     sys.exit()
 
-###################################################################################
+#########################################################################################
+```
 
+The second portion sends the command to the arduino. Note that it is a self-contained method for this new device. To add this device to the code, all we needed to do was add the peripheral config and write this method.&#x20;
 
+This method also reads out the debugging messages from the arduino. Once we actually get the spincoater working, this could be messages if the spincoater is malfunctioning.&#x20;
 
-def get_next_job():
-    """Fetch the next job from the queue."""
-    endpoint = f"{BASE_URL}/jobs/next"
-    try:
-        response = requests.get(endpoint)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as err:
-        print(f"Error fetching next job: {err}")
-        return None
+Note that I show two methods: one for run\_led and another for the spincoater. In the next section, you'll select which you want to run when a job is recieved.&#x20;
 
-def send_job_completion(job_id, output_parameters):
-    """Send job completion data to the server."""
-    endpoint = f"{BASE_URL}/job_completion"
-    data = {
-        "job_id": job_id,
-        "status": "completed",
-        "output_parameters": output_parameters
-    }
-    try:
-        response = requests.post(endpoint, json=data)
-        response.raise_for_status()
-        print("Job completion posted successfully.")
-    except requests.exceptions.RequestException as err:
-        print(f"Error posting job completion: {err}")
+```python
+ ########################## EDIT HERE: PERIPHERAL CONFIGURATION ##########################
+    ##### INSTRUCTIONS #######
 
-class JobGUI:
-    """Class to manage the GUI for the job queue system."""
-    def __init__(self, root):
-        """Initialize the JobGUI class."""
+    ### Write a function in this locaiton that will run the job. ###
+    ### This function will be called when the job is approved. ###
+    ### The function will be passed the job input parameters. ###
 
-        # Google code guidelines recommend fewer class variables
-        # (I have 17, they recommend 7 or fewer)
-        # However, I believe this is the most
-        # efficient way to manage the GUI
+    ### to get started, copy the run_led function and edit it to run your job. ###
+    ### only edit the code in between FIRMWARE START and FIRMWARE END ###
+    ### This is where you will write the code to run your job. ###
 
-        self.root = root
-        self.root.title("Job Monitor")
+    ### If you want the user to type in a response, leave the following two lines for gathering the response. ###
+    ### If you don't want the user to type in a response, remove the two lines. ###
 
-        self.auto_run = tk.BooleanVar(value=True)
-
-        self.auto_run_switch = ttk.Checkbutton(root, text="Auto-run Jobs",
-                                               variable=self.auto_run,
-                                               command=self.toggle_approve_deny_buttons)
-        self.auto_run_switch.pack()
-
-        self.job_id_label = ttk.Label(root, text="Current Job ID: ", font=("Arial", 14))
-        self.job_id_label.pack()
-        self.job_id_label.pack_forget()
-
-        self.system_status_label = ttk.Label(root,
-                                             text="System Status: Waiting for job...",
-                                             font=("Arial", 14))
-        self.system_status_label.pack()
-
-        self.input_param_label = ttk.Label(root, text="Input parameters: ",
-                                           font=("Arial", 14))
-        self.input_param_label.pack()
-        self.input_param_label.pack_forget()
-
-        self.job_status = ttk.Label(root, text="Job Status: LED OFF",
-                                    font=("Arial", 14))
-        self.job_status.pack()
-        self.job_status.pack_forget()
-
-        self.approve_button = ttk.Button(root, text="Approve Job",
-                                         command=self.run_job)
-        self.approve_button.pack()
-        self.approve_button.pack_forget()
-
-        self.deny_button = ttk.Button(root, text="Deny Job",
-                                      command=self.deny_job)
-        self.deny_button.pack()
-        self.deny_button.pack_forget()
-
-        self.input_label = ttk.Label(root, text="Enter response:",
-                                     font=("Arial", 14))
-        self.input_entry = ttk.Entry(root, font=("Arial", 14))
-        self.input_entry.bind("<Return>",
-                              lambda event: self.submit_textbox_response())
-        self.submit_button = ttk.Button(root, text="Submit",
-                                        command=self.submit_textbox_response)
-
-        self.input_label.pack_forget()
-        self.input_entry.pack_forget()
-        self.submit_button.pack_forget()
-
-        self.job = None
-        self.job_running_on_machine = False
-        self.running = True
-        self.output_text = None
-        self.output_text_avail_semaphore = threading.Semaphore(0)
-        self.check_for_jobs()
-
-    def check_for_jobs(self):
-        """Check for new jobs in the queue."""
-        if self.running:
-            job = get_next_job()
-            if job:
-                self.job = job
-                self.job_id_label.config(
-                    text=f"Current Job ID: {self.job.get('job_id', 'unknown')}")
-                self.job_id_label.pack()
-                self.input_param_label.config(
-                    text=f"Input Params: {self.job.get('input_parameters', {})}")
-                self.input_param_label.pack()
-                if self.auto_run.get():
-                    self.run_job()
-                else:
-                    self.system_status_label.config(
-                        text="System Status: Job available. Approve or Deny?")
-                    self.approve_button.pack()
-                    self.deny_button.pack()
-            else:
-                self.root.after(5000, self.check_for_jobs)
-
-    def toggle_approve_deny_buttons(self):
-        """Toggle the visibility of approve and deny buttons."""
-        if self.auto_run.get():
-            self.approve_button.pack_forget()
-            self.deny_button.pack_forget()
-
-            # we also want the job to run automatically if we just
-            # turned on auto-run and the job was already loaded into memory.
-            self.run_job()
-        elif self.job and not self.job_running_on_machine:
-            self.approve_button.pack()
-            self.deny_button.pack()
-
-    def run_job(self):
-        """Run the current job."""
-        if not self.job:
-            return
-
-        self.approve_button.pack_forget()
-        self.deny_button.pack_forget()
-
-        job_input_parameters = self.job.get("input_parameters", {})
-        self.system_status_label.config(text="System Status: Running job...")
-        self.job_running_on_machine = True
-
-        threading.Thread(target=self.run_spincoater,
-                         args=(job_input_parameters,), daemon=True).start()
-
-    def deny_job(self):
-        """Deny the current job."""
-        if self.job:
-            send_job_completion(self.job["job_id"], {"info": "job_skipped"})
-            self.system_status_label.config(
-                text="System Status: Job Denied. Waiting for next job...")
-            self.approve_button.pack_forget()
-            self.deny_button.pack_forget()
-            self.job_id_label.pack_forget()
-            self.input_param_label.pack_forget()
-            self.root.after(5000, self.check_for_jobs)
-
-    def submit_textbox_response(self):
-        """Submit the response from the textbox."""
-        user_input = self.input_entry.get()
-        self.input_entry.delete(0, tk.END)
-        self.input_label.pack_forget()
-        self.input_entry.pack_forget()
-        self.submit_button.pack_forget()
-        self.system_status_label.config(text="System Status: Text submitted...")
-        self.output_text = user_input
-        self.output_text_avail_semaphore.release()
-
-    def submit_completed_response_to_server(self, output_parameters):
-        """Submit the completed job response to the server."""
-        if self.job:
-            send_job_completion(self.job["job_id"], output_parameters)
-            self.job = None
-            self.job_id_label.pack_forget()
-            self.job_id_label.config(text="Current Job ID: ")
-            self.system_status_label.config(text="System Status: Waiting for job...")
-            self.input_param_label.pack_forget()
-            self.input_param_label.config(text="Input Parameters: ")
-            self.job_status.pack_forget()
-            self.job_status.config(text="Job Status:")
-            self.job_running_on_machine = False
-            self.toggle_approve_deny_buttons()
-            self.root.after(5000, self.check_for_jobs)
-
-    def stop(self):
-        """Stop the GUI and release resources."""
-        self.running = False
-        line.release()
-
-    def set_job_status_label(self, text):
-        """Set the job status label text."""
-        self.job_status.config(text=text)
-        self.job_status.pack()
-
-    def get_user_output_response(self):
-        """Get the user output response."""
-        self.input_label.pack()
-        self.input_entry.pack()
-        self.submit_button.pack()
-
-        # we need to wait until the user has submitted a response...
-
-        # this introduces a pylint warning, but it is necessary to
-        # format the program in this way for better readability
-        self.output_text_avail_semaphore.acquire()
-
-
-    ##### ONLY EDIT THIS FUNCTION IF INTEGRATING A NEW TOOL ##################
     #### This is the function that will be edited to integrate new tools #####
     def run_led(self, job_input_parameters):
         """Run the LED job."""
 
-        ### This is where you write the firmware code to run the job. ##
+        ### FIRMWARE START: This is where you write the firmware code to run the job. ##
         line.set_value(1)  # Turn on GPIO
         self.set_job_status_label("Job Status: GPIO: ON")
 
@@ -838,9 +771,9 @@ class JobGUI:
 
         line.set_value(0)  # Turn off GPIO
 
-        ### End of firmware code. ###
+        ### FIRMWARE END ###
 
-        ## Gather the user response [Optional]##
+        ## Gather the user response [Optional, you can remove]##
         self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
         self.get_user_output_response()
 
@@ -851,147 +784,7 @@ class JobGUI:
     def run_spincoater(self, job_input_parameters):
         """Run the spincoater job."""
 
-        ### This is where you write the firmware code to run the job. ##
-        duration = job_input_parameters.get("time", 5)
-        command = f"LED:{duration}\n"
-        print(f"Sending: {command.strip()}")
-        ser.write(command.encode())  # Send data over USB Serial
-
-        # Read response from Arduino
-        while True:
-            response = ser.readline().decode('utf-8').strip()
-            if response:
-                print(f"Arduino: {response}")
-            else:
-                break  # Stop reading when no more data
-
-        ### End of firmware code. ###
-
-
-        ## Gather the user response [Optional]##
-        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
-
-        self.get_user_output_response()
-
-        ## Submit the data back to the server ##
-        final_output_parameters = {"response": self.output_text}
-
-        self.submit_completed_response_to_server(final_output_parameters)
-
-
-    ###########################################################################
-
-
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    gui = JobGUI(root)
-    try:
-        root.mainloop()
-    except KeyboardInterrupt:
-        gui.stop()
-        ser.close()
-        line.release()
-        print("Exiting program")
-
-```
-
-````
-
-This code passes the majority of pylint/google code guidelines. The remaining issue are either due to my editor environment not having the raspberry pi libraries (not an issue on the actual PI) or other minor details. I have addressed why I made these design decisions in the comments.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
-
-##
-
-##
-
-## Roadmap to project completion
-
-**Weeks 7–9: System Integration and Spin Coater Automation**&#x20;
-
-#### **Week 7: Microcontroller Integration**
-
-* Finalize the physical connection between the Raspberry Pi and the spin coater.
-* Write and test code on the Raspberry Pi to interface with the microcontroller:
-  * Ensure commands (e.g., start, stop) are executed reliably.
-* This will be done on the arduino that is running the spincoater firmware, but not actually connected to the spincoater (we don't want to take our only spincoater offline).&#x20;
-
-**Justification:** This step is crucial for automating the spin coater.
-
-***
-
-#### **Week 8: End-to-End Testing**
-
-* Test the full data flow:
-  1. Create a job using Postman.
-  2. Fetch the job on the Raspberry Pi.
-  3. Execute the job on the spin coater.
-  4. Verify that the job completion status is updated in AWS.
-* Debug and address issues related to:
-  * Data flow
-  * Timing
-  * Physical connections
-
-**Justification:** This will be the first test of the entire system.
-
-***
-
-#### **Week 9: Redundancy and Local Job Creation**
-
-* Add functionality to the Raspberry Pi UI to:
-  * Allow users to create jobs locally.
-  * Optionally enqueue these jobs in AWS.
-* Test the local job creation and execution workflow.
-
-**Justification:** While local job creation is a useful feature, it is not essential, so it is scheduled toward the end.
-
-**Weeks 10–12: Optimization, Documentation, and Deployment**
-
-#### **Week 10: Optimization**
-
-* Optimize the Raspberry Pi code for performance and reliability:
-  * Handle API timeouts or failures gracefully.
-  * Add retry logic for API calls.
-* Refine the UI for user-friendliness based on feedback from initial users.
-
-**Justification:** Optimization is crucial for future scalability.
-
-***
-
-#### **Week 11: Documentation and Training**
-
-* Write documentation for:
-  * Setting up the Raspberry Pi for a new tool.
-  * Modifying microcontroller interface code for different devices.
-  * AWS infrastructure setup and API details.
-* Conduct training or create tutorials to help others replicate the system.
-
-**Justification:** Proper documentation ensures long-term maintainability and scalability.
-
-***
-
-#### **Week 12: Final Testing and Deployment**
-
-* Perform **stress testing** by enqueueing multiple jobs and running them sequentially.
-* Validate the system using real-world scenarios.
-* Deploy the solution to fully automate the spin coater.
-
-**Justification:** This final phase ensures the system is robust and ready for production use.
-
-
-
-
-
-**New documentation after first submission:**
-
-Here is the updated driver code that runs on the RPI:
-
-This code is run on the RPI to control the spincoater. It simply send messages over UART with the RPM value, the time value, and the start command.&#x20;
-
-```python
-def run_spincoater(self, job_input_parameters):
-        """Run the spincoater job."""
+        print("Job input parameters:", job_input_parameters)
 
         ### This is where you write the firmware code to run the job. ##
         rpm = job_input_parameters.get("rpm", 1000)
@@ -1014,31 +807,91 @@ def run_spincoater(self, job_input_parameters):
         print(f"Sending: {start_command.strip()}")
         ser.write(start_command.encode())
 
+        run_result = "JOB FAILED"
+
         # Read response from Arduino
         while True:
             response = ser.readline().decode('utf-8').strip()
             if response:
                 print(f"Arduino: {response}")
+                if ("**SPIN JOB COMPLETED SUCCESSFULLY**" in response):
+                    run_result = "JOB COMPLETED"
             else:
                 break  # Stop reading when no more data
 
         ### End of firmware code. ###
 
-
-        ## Gather the user response [Optional]##
-        self.set_job_status_label("Job Status: GPIO: OFF. Please type in response.")
-
-        self.get_user_output_response()
-
         ## Submit the data back to the server ##
-        final_output_parameters = {"response": self.output_text}
+        final_output_parameters = {"response": run_result}
 
         self.submit_completed_response_to_server(final_output_parameters)
+
+
+    ##########################################################################################
 ```
 
 
 
-Here is the code that will run on the arduino. Notice that only a section was added for the USB UART interface.&#x20;
+The last section that needs to be reconfigured when adding a new device sets parameters for the GUI and main action of the program.&#x20;
+
+The editor will specify a default job param template (needed to construct the GUI automatically), the name for the machine (so it knows what jobs to grab from the server) and the name of the function to run when a new job is fetched.&#x20;
+
+```python
+########################## EDIT HERE: JOB OBJECT FORMAT ######################################
+#### INSTRUCTIONS: ####
+### In this section, to integrate a new tool, you must create three new variables ###
+### These will be used to know which function to call when the job is run. ###
+### The variables are: ###
+### 1. JOB_PARAM_TEMPLATE: This is the template for the job parameters. ###
+###    It should be a dictionary with the same keys as the job parameters. ###
+###    The values should be the default values for the job parameters. ###
+### 2. JOB_NAME: This is the name of the job. ###
+###    It should be the same as the name of the job in the server. ###
+###    It will be used to identify which jobs to fetch from the server###
+### 3. JOB_FUNCTION: This is the function that will be called to run the job. ###
+###    It should be the function that you wrote to run the job. ###
+
+#### It is imperative that the job object format matches the server's object format ####
+
+#### SPINCOATER JOB ####
+SPINCOATER_JOB_PARAM_TEMPLATE = { "time": 12, "rpm": 1100 }
+SPINCOATER_JOB_NAME = "spincoater"
+SPINCOATER_FUNCTION = JobGUI.run_spincoater
+
+
+#### LED JOB ####
+LED_JOB_PARAM_TEMPLATE = { "time": 5 }
+LED_JOB_NAME = "led"
+LED_FUNCTION = JobGUI.run_led
+
+
+### Edit the following variables to match the job type you are integrating ###
+JOB_PARAM_TEMPLATE = SPINCOATER_JOB_PARAM_TEMPLATE
+JOB_NAME = SPINCOATER_JOB_NAME
+JOB_FUNCTION = SPINCOATER_FUNCTION
+
+###########################################################################################
+```
+
+Finally, here is the full python code that runs on the raspberry PI:\
+\
+It does the following things:
+
+1. Fetches jobs from AWS jobs queue
+2. Displays the currently running job on the GUI. Also allows users to control whether jobs run automatically or require manual confirmation.&#x20;
+3. Runs the job on the device
+4. Sends completion details back to the AWS jobs queue.\
+
+
+
+
+## Embedded Firmware
+
+Whoever is extending this software to a new tool will need to write firmware for the ardunio or other microcontroller that controls the final device. For example, the spincoater has an internal ardunio that acts as a microcontroller. The RPI talks to this microcontroller over UART.&#x20;
+
+
+
+Here is the code that will run on the arduino FOR THE SPINCOATER INTEGRATION. Notice that only a section was added for the USB UART interface.&#x20;
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -1221,215 +1074,7 @@ void loop() {
 
 ```
 
-The user also has the ability to create a job locally directly on the RPI. If the RPI is not connected to the internet, the job will just run locally. This is a redundancy feature.&#x20;
-
-See this feature in action here: [https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive\_link](https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive_link)
-
-
-
-Note that if the RPI is indeed able to connect to the AWS database, the job will be uploaded to the database for tracking purposes.&#x20;
-
-
-
-The specific fields are based on the template data when integrating the tool. No manual editing of the GUI code is required when integrating a new tool. You can see that the spincoater and LED connected to RPI IO are already implemented.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
-
-More details about this will be provided once development is complete.&#x20;
-
-
-
-The lab\_com software has successfully been used to integrate the lithostepper with limited functionality.&#x20;
-
-
-
-Carson was able to integrate the stepper when only given the following file (that demonstrates the use of the API):\
-\
 
 
 ```python
-"""
-This module contains examples of a few endpoint calls
-"""
-import requests
-
-# Constants
-BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
-
-def test_jobqueue_api():
-    """
-    Test the job queue API endpoints.
-    """
-    # Step 1: POST /jobs - Enqueue a new job
-    job_data = {
-        "machine": "lithographer",
-        "input_parameters": {"x": 100.0, "y": 200.0, "image": "foo.png"},
-        "priority": 2
-    }
-    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
-    assert response.status_code == 200, "Failed to enqueue job"
-    job_id = response.json().get("job_id")
-    print(f"Job enqueued: {job_id}")
-
-   
-
-    # Step 4: GET /jobs/next - Fetch job from queue
-    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
-    assert response.status_code == 200, "Failed to fetch next job"
-    assert response.json().get("job_id") == job_id, "Fetched wrong job"
-    print("Job fetched successfully")
-    
-
-if __name__ == "__main__":
-    test_jobqueue_api()
-
-```
-
-
-
-Note that the get next jobs endpoint now also requires a machine name query param. This is needed to grab the job only for that machine.&#x20;
-
-
-
-More detailed documentation of file transfer protocol (for transfering images to the spincoater) will be provided next week.&#x20;
-
-
-
-Example code for how to use it is outlined in the python file below. In summary: you send a request to AWS to get an upload link, upload the image, send a key for that image as a parameter for the job. On the stepper, you'll get the job as usual, extract the image key from the param list, get a download link for that key, and then download the image. More thorough documentation coming next week
-
-
-
-File transfer protocol:
-
-```python
-"""
-This module contains examples of a few endpoint calls
-"""
-import requests
-
-# Constants
-BASE_URL = "https://fbc4oam2we.execute-api.us-east-2.amazonaws.com/prod"
-
-def test_jobqueue_api_no_file():
-    """
-    Test the job queue API endpoints.
-    """
-    # Step 1: POST /jobs - Enqueue a new job
-    job_data = {
-        "machine": "lithographer",
-        "input_parameters": {"x": 100.0, "y": 200.0, "image": "foo.png"},
-        "priority": 2
-    }
-    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
-    assert response.status_code == 200, "Failed to enqueue job"
-    job_id = response.json().get("job_id")
-    print(f"Job enqueued: {job_id}")
-
-   
-
-    # Step 4: GET /jobs/next - Fetch job from queue
-    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
-    assert response.status_code == 200, "Failed to fetch next job"
-    assert response.json().get("job_id") == job_id, "Fetched wrong job"
-    print("Job fetched successfully")
-
-
-def get_file_upload_url_and_key(job_id):
-    """
-    Generate a presigned URL for uploading an image.
-    """
-    response = requests.post(f"{BASE_URL}/generate_upload_url", json={"job_id": job_id})
-    assert response.status_code == 200, "Failed to generate upload URL"
-    upload_url = response.json().get("upload_url")
-    s3_key = response.json().get("s3_key")
-    print(f"Upload URL: {upload_url}")
-    return upload_url, s3_key
-
-
-def upload_file(file_name, upload_url):
-    """
-    Upload a file to the presigned URL.
-    """
-    with open(file_name, "rb") as f:
-        response = requests.put(upload_url, data=f, headers={"Content-Type": "image/jpeg"})
-    if response.status_code != 200:
-        print(f"Upload failed. Status code: {response.status_code}, response: {response.text}")
-    assert response.status_code == 200, "Upload failed"
-    print("File uploaded successfully")
-
-
-
-def enqueue_job(machine, input_parameters, priority):
-    """
-    Enqueue a job with the specified parameters.
-    """
-    job_data = {
-        "machine": machine,
-        "input_parameters": input_parameters,
-        "priority": priority
-    }
-    response = requests.post(f"{BASE_URL}/jobs", json=job_data)
-    assert response.status_code == 200, "Failed to enqueue job"
-    job_id = response.json().get("job_id")
-    print(f"Job enqueued: {job_id}")
-    return job_id
-
-def download_file(s3_key):
-    """
-    Download a file from S3 using the presigned URL.
-    """
-
-    # get the presigned URL for download
-    response = requests.post(f"{BASE_URL}/generate_download_url", json={"s3_key": s3_key})
-    assert response.status_code == 200, "Failed to generate download URL"
-    download_url = response.json().get("download_url")
-    print(f"Download URL: {download_url}")
-
-    # download the file using the presigned URL
-    response = requests.get(download_url)
-    if response.status_code != 200:
-        print(f"Failed to download file. Status code: {response.status_code}, Response text: {response.text}")
-    assert response.status_code == 200, "Failed to download file"
-    with open("downloaded_file_123.jpg", "wb") as f:
-        f.write(response.content)
-
-def test_upload_and_download_file():
-    """
-    Test uploading a file, providing the S3 key as a job parameter, fetching the job,
-    and then downloading the file using the presigned URLs.
-    """
-    # Step 1: Generate a presigned upload URL and S3 key
-    upload_url, s3_key = get_file_upload_url_and_key(None)  # Passing None as job_id since it's not required here
-    print(f"Generated upload URL: {upload_url}")
-    print(f"S3 Key: {s3_key}")
-
-    # Step 2: Upload a file
-    file_name = "The_Hacker.jpg"  # Replace with the path to your test file
-    upload_file(file_name, upload_url)
-    print(f"File uploaded successfully to S3 key: {s3_key}")
-
-    # Step 3: Enqueue a job with the S3 key as a parameter
-    job_id = enqueue_job(
-        machine="lithographer",
-        input_parameters={"x": 100.0, "y": 200.0, "image_s3_key": s3_key},
-        priority=2
-    )
-    print(f"Job enqueued: {job_id}")
-
-    # Step 4: Fetch the job from the queue
-    response = requests.get(f"{BASE_URL}/jobs/next", params={"machine": "lithographer"})
-    assert response.status_code == 200, "Failed to fetch next job"
-    fetched_job = response.json()
-    assert fetched_job.get("job_id") == job_id, "Fetched wrong job"
-    fetched_s3_key = fetched_job["input_parameters"]["image_s3_key"]
-    print(f"Fetched job successfully. S3 Key: {fetched_s3_key}")
-
-    # Step 5: Download the file using the fetched S3 key
-    download_file(fetched_s3_key)
-    print("File downloaded successfully.")
-
-if __name__ == "__main__":
-    #test_jobqueue_api_no_file()
-    test_upload_and_download_file()
-
 ```
