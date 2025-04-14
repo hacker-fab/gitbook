@@ -169,3 +169,23 @@ This got done a little later than I intended because during the beginning of the
 Besides that, I started reading a little about QCM and have been nailing down the design of the mechanical feedthrough. I also realized that the steel ring we're using to hold the target up might influence the magnetic field; I think that broadly this shouldn't affect whether it's balanced/unbalanced it might give more sputtering off the steel ring.
 
 Given Jay has received the polishing tools, the next step would be to polish the baseplates. This should be done by Tuesday night. After that, I'll focus on QCM.
+
+
+
+
+
+
+
+**Update 11**:
+
+_Hey! I don't see feedback for the last one? Nor Update 9? I can see the others tho._
+
+I did a bunch of reading on deposition monitoring. From what I found ([https://iopscience.iop.org/article/10.1088/0034-4885/68/2/R04/meta](https://iopscience.iop.org/article/10.1088/0034-4885/68/2/R04/meta), [https://pubs.rsc.org/en/content/articlelanding/2006/jm/b506228d/unauth](https://pubs.rsc.org/en/content/articlelanding/2006/jm/b506228d/unauth)) it seems that QCM is the favored method for thin film deposition monitoring, with optical measurement also being possible. However, optical methods are best applied to thin film optical devices ([https://opg.optica.org/ao/abstract.cfm?uri=ao-14-4-962](https://opg.optica.org/ao/abstract.cfm?uri=ao-14-4-962)). Hence, I focused on reading up on QCM. It seems relatively straightforward? I just need to better understand why the cooling is necessary as that constrains things mechanically. The original paper  on QCMs ([https://pubs.acs.org/doi/abs/10.1021/ac60215a012](https://pubs.acs.org/doi/abs/10.1021/ac60215a012)) is actually from 1964!
+
+In addition, I worked on the overheating issue. Consensus seems to be that the temperature isn't so hot the magnets will immediately demagnetize but we still should fix this. I checked with the TechSpark people and it seemed that machining copper should be doable.
+
+![](<../../.gitbook/assets/Screenshot 2025-04-14 at 12.15.20 AM.png>)
+
+I found some copper blocks ([https://www.mcmaster.com/8312K72-8312K12/](https://www.mcmaster.com/8312K72-8312K12/), [https://www.mcmaster.com/2554T521/](https://www.mcmaster.com/2554T521/)) that we can machine holes for the magnets into. These are OFHC, hence they are rather pricey. I would recommend the sheet for cost-effectiveness and ease of fixturing for machining. I also did some back-of-the-napkin math and it seems like this should be able to fix the issue.
+
+This week I will work on nailing down the overheating issue. I will check my assumptions and do a more proper analysis on Monday and if that's all good I hope to order stuff and get it machined by the end of the week.
