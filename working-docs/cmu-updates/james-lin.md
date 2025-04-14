@@ -12,6 +12,88 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #11
+
+### ALD:
+
+Progress:
+
+* got the push to connect for valve gas and its connected to lab supply!
+
+<figure><img src="../../.gitbook/assets/image (255).png" alt="" width="301"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (256).png" alt="" width="375"><figcaption></figcaption></figure>
+
+Challenges:
+
+* nothing so far, just tight ish timeline for the rest of integration until end of sem
+
+Plans:
+
+* meet with Viswesh and Matt in the coming week to plan out exhaust for ALD
+* buy exhaust tubing
+* work out kinks with heating tape once test happens
+
+## Packaging
+
+Progress:
+
+* Altium for both resistor chip and motherboard done and will be ordered on Monday!!!
+* McMaster and Digikey parts on purchase tracker
+* Talked to Joel a bit about packaging for next sem and had a few areas of interest:
+  * Wafer cleaving solution:
+    * currently chip is very big and we dont have guarantees that we can cleave them very accurately by hand
+    * this increases parasitic resistance by making the bonding wires a lot longer than they should be
+    * Making a cleaving jig with small diamond disk attached to a high speed motor?
+    * Plasma etching to cut dies?
+  * Look into flip chip on board via reflow:
+    * would need updates on nickel plating and verification that we can grow tall aluminum pads
+    * we also have not verified that our chips can withstand reflow temps
+  * look into chip in package:
+    * if we can cleave chips accurately, then a we can size for chip in package with more certainty
+    * another possibility is copper/nickel plating onto 3D printed resin parts, which may be a solution to the lead frame problem
+* Brief summary of boards:
+  *   The packaging solution we have uses a chip on board approach and is separated in 2 parts:
+
+      1. the actually package that has the chip in the center of the board and uses aluminum wire bonding to connect IO pads to the PCB
+      2. a motherboard with 2 package slots that has IO for the Anolog Disovery 3 ([https://digilent.com/shop/analog-discovery-3/](https://digilent.com/shop/analog-discovery-3/)) we will be using for electrical characterization tests
+
+      The current resistor chip package is just 8 rows of doped Si resistors with varied widths to help us test for overall contact and parasitic resistances of our wire bonding connections. Each pin has a 0.1 uF decoupling capacitor as well The motherboard has a pull up or pull down resistor slot for each pin in the case that we will be doing toggling for logic circuits in the future, and I've also added decaps near the output pins
+* Board PDFs:
+
+{% file src="../../.gitbook/assets/Motherboard.pdf" %}
+
+{% file src="../../.gitbook/assets/ResistorChipPackage.pdf" %}
+
+<figure><img src="../../.gitbook/assets/image (257).png" alt="" width="563"><figcaption><p>2 Packages on Motherboard</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (258).png" alt="" width="563"><figcaption><p>Resistor Chip Package PCB Layout</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (259).png" alt="" width="375"><figcaption><p>Resistor Chip Package PCB Front</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (262).png" alt="" width="375"><figcaption><p>Resistor Chip Package PCB Back</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (263).png" alt="" width="563"><figcaption><p>Motherboard PCB Layout</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (260).png" alt="" width="375"><figcaption><p>Motherboard PCB Front</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (261).png" alt="" width="375"><figcaption><p>Motherboard PCB Back</p></figcaption></figure>
+
+Challenges:
+
+* boards took a longer than anticipated to do partially due to school work and partially due to wrestling with Altium
+* Had to keep pin labeling super vague since we expect to be putting different packages on this&#x20;
+
+Plans:
+
+* look into resin printing material and see if we can minimize the package cap melting if we need to put soldering iron near package to make modifications to passives
+* print package cap
+* maybe make a platform out of PLA to hold motherboard
+* wait for board and parts to arrive
+* add to metrology project description for next sem
+
+***
+
 ## Weekly Update #10
 
 ### ALD:
