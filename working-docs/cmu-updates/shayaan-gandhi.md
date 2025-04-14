@@ -282,6 +282,18 @@ I talked about adding a way to plot pressure vs time in my presentation and last
 
 **What are your plans for next week?**\
 Main goal is to keep testing and implementing my new FSM. I think I can have it done by the end of the week and then start working on the packaging. I also need some hardware for my packaging which I will make sure to order early this week.
+
+> **Feedback**
+>
+> Took a look at your code and agree with your two stage approach. For style and convenience though, you should replace the serial inputs like "0011001006111111015" with #define constants at the top. Also do the same for the stages, so instead of 1 and 2, use #define INIT 1 and SPUTTER 2. Or an enum for the stages. Basically no magic numbers.
+>
+> For this week focus on testing so you can wrap up PID by next update, and complete packaging before your final demo. Ping me when you have the parts in the purchase tracker.
+>
+> Feedback for presentation 2 should be out soon, but myself and the TAs were generally happy with your presentation. As for project specific feedback, I'd recommend sticking with just me and Jay since we are familiar with the process constraints, and maybe Carson or Sky since they do a lot with controls for stepper.
+>
+> Also please update the Master Doc.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
