@@ -696,3 +696,46 @@ Test translational motion on 4/7. Calibrate distance traveled to number of waves
 * Test the effects of  frequency on travel distance and speed. Originally I was also going to test the amplitude of sawtooth wave but because of the resolution of my measurement equipment the effects of amplitude are not going to be measurable.&#x20;
 * Modify flexure to allow for a standard piezo [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=7563](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7563) versus the Shear piezos I tested [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=10318](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10318). This will require machining a new part to attach the friction element perpendicular to the axis of motion.&#x20;
 * Prepare presentation 2.
+
+## **Update 11 (4/13/2025)**&#x20;
+
+### Accomplishments
+
+* Modified positioner to accept a standard 150v piezo from thorlabs. [https://www.thorlabs.com/newgrouppage9.cfm?objectgroup\_id=7563](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7563)
+* Tested different spring rates
+  * achieved through gradually reducing the flexure thickness by 50microns at a time until actuation was achieved.&#x20;
+  * because my cnc machine is not double digit micron accurate each reduction in flexure thickness had to be measured by hand using a dial indicator.&#x20;
+* Achieved sub 500nm actuation. [https://www.youtube.com/shorts/xMCp65zokQU](https://www.youtube.com/shorts/xMCp65zokQU)
+  * Two sawtooth waves per 500nm. \~250nm per actuation.
+  * Frequency of sawtooth waves were 10khz and voltage was at 100v.
+  * adjustment was made by stacking gauge blocks and moving the flexure down 10 microns at a time.
+* Tested non precise translational motion&#x20;
+  * [https://youtube.com/shorts/tP1\_hoBE2V8?feature=share](https://youtube.com/shorts/tP1_hoBE2V8?feature=share)
+
+### Roadblocks
+
+**Roadblock 1:**
+
+Linear rail surface was not a precision surface. Therefore actuation was only consistent in millimeter ranges.&#x20;
+
+**Proposed Solution**
+
+Choose a tigher tolerance bearing, most importantly having the surface that the piezo actuates upon to be a known precision surface.
+
+**Roadblock 2:**
+
+Wear from ceramic on the piezo rubbing back and forth on steel linear rail results in an unusable linear rail after a couple minutes of actuation.
+
+**Proposed Solution**
+
+Switch to a ceramic or tungsten carbide bearing.
+
+### Next Steps
+
+* The first thing to relatively easily prototype is having a two stage system. With course adjustment done with micrometer. and fine adjustment done with piezo. This would require the current stepper stage to have a slightly better movement resolution. We would need a +- <3micron resolution on the stepper to fit within the movement range of a piezo displacement.
+* A second idea that is worth exploring is using a piezo to rotate a micrometer. I think it would not be reasonable to get a working design of this by semester end but gathering literature on this might benefit future efforts. [https://www.youtube.com/watch?v=oVRv9fcx6AI](https://www.youtube.com/watch?v=oVRv9fcx6AI)
+* Assemble laser interferometer kit.&#x20;
+* Fix design flaws in current piezo positioner design. Change the bearing choice. Maybe design it so that preload can be adjusted without having to go through the multi hour long process of using gauge blocks.
+
+
+
