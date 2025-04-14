@@ -453,3 +453,47 @@ As far as next steps this week I think our following plan should be:
     * Begin fabrication.
 * Based on the new results the model of our doping process should be updated to reflect our experimental results.
 * Continue to make progress on the metal contacts documentation, but it doesn’t have to be finalized until the end of the semester.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #11 (Apr 13)</mark>
+
+Folders: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72) ; [https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ](https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ)
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1the](https://github.com/orgs/hacker-fab/projects/35/views/1the) ; [https://github.com/orgs/hacker-fab/projects/34](https://github.com/orgs/hacker-fab/projects/34)
+
+
+
+<mark style="color:blue;">Accomplished this week:</mark>
+
+* Prepared and presented demo 2.
+* Made the fabublox process for the next fabrication round: PMOS ([https://www.fabublox.com/process-editor/3bbfecfb-01dd-48de-8047-49a3c16b110f](https://www.fabublox.com/process-editor/3bbfecfb-01dd-48de-8047-49a3c16b110f)).
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+I don't believe there are any roadblocks at the moment.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Start PMOS fabrication once the diffusion time is defined
+* Working on the documentation in parallel
+
+Feedback
+
+• Cesely
+
+**Hot Probe Test:** Jay and I completed more hot probe tests this weekend. We believe that doping occurs as short as 25s. However, the tests are not the most conclusive. Instead of continuing with PMOS fabrication, we think that it might be better to fabricate more MOSCaps, diodes, and transmission line tests.
+
+**MOSCaps:** We will be fabricating two types of moscaps: one will be a n-well process MOSCap and the second will be p-substrate MOSCap to use as a reference.
+
+• _**N-Well MOSCap:**_ For the n-well MOSCap two 30 sec n-well MOSCaps should be fabricated. The reason two needs to be done is that the diffusion time is so short that any small variability can have a large impact on results.
+
+• _**P-Substrate MOSCap:**_ Another p-substrate MOSCap should be fabricated to compare as a reference. Unlike before, though, there should be a p+ contact fabricated as well. This will be used to compare results. Since Marta’s contacts found that annealing produces more reliable contacts, we would like the p-substrate contacts to be probed both before and annealing to analyze the effects.
+
+**Transmission Line:** The transmission line test will confirm if our p-channels are achieving an optimal carrier concentration within our fabricated n-wells. The process for this would be to follow or n-well process (short SOG diffusion 30s and 45s and 2-hour drive-in diffusion) followed by doping regions with B-154. In the B154 regions a transmission line can be fabricated. If the contacts are ohmic we have created a p-dope regions with optimal characteristics for p-channels. If the are non-ohmic than we need to increase the carrier concentration. Additionally, given Marta’s findings, you will likely have to anneal the contacts for p-doped region before getting ohmic behavior.
+
+Given the amount of fabrication I would split this between you and Shagun. I would  expect you to fabricate and test the p-substrate MOScap and transmission line tests. I would then expect Shagun to fabricate the two n-well MOSCaps.
+
+We have the chemicals to make our own Al etchant so that should no longer be a roadblock.
