@@ -239,3 +239,23 @@ Ordered PCB:\
 In addition to the hardware work, I also spent time preparing for Presentation 2. I compiled the progress I’ve made so far, organized the technical developments, and clearly articulated the issues I’ve encountered and how I plan to address them. I aimed to structure the presentation to showcase not just the technical milestones, but also the problem-solving and iteration that have taken place along the way.
 
 Overall, this week marked another important step forward. Although I encountered some obstacles, they led to a deeper understanding of the system’s power requirements and helped shape the design decisions that went into the PCB. I’m looking forward to receiving the final board and moving closer to a fully functional prototype with stable sensor input and reliable motor control.
+
+## Week 10
+
+This week, I focused heavily on thoroughly testing the spin coater base and documentation in anticipation of Thursday’s presentation. A significant portion of my time was spent working on getting the base to function reliably. This involved tuning the mechanics, verifying sensor responsiveness, and conducting repeated test runs to gather performance data. The goal was to obtain meaningful statistics that could help demonstrate the system’s consistency and precision, especially in belt positioning.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXemgYfVRlob3qCsbasblpSOsVqI5WSAbKQYUOPAwX3vXzjv5n_VR3_KrkMhAI7gpVRsplXvukxVXIhX6C0ttcZ9fuD4CnX6QiF1A5_M3hKUth2plQi3ggiUrxJMWr5GNWz-gk1Syw?key=MPhR32n5xjnBRr1q_h9LU1MJ" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdZfFkweBsUwwcg2Ch8-ouKHpDeCOLXayBKcKbbkREP6xyGPTdHreBO89IZhEtCYuw2M7PvC0sDcQSSl-Z0heJw8q6ZYHl7mc898vjf9Pkutxj8RSsIZrT4VhYq_0-mgOo-bwGf?key=MPhR32n5xjnBRr1q_h9LU1MJ" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe15dXRwQrriydeSCTIul6KEj8hDedziWQOymwZ5Z3pXGhGblWicJ3ELF2EcRGfZQW2lrr0cD27rhEfZ_Avlac1-fIOB4W-EFvBjpIGsa3SzclMLcdM7sqSIOcPgmVRLWRMoOyj?key=MPhR32n5xjnBRr1q_h9LU1MJ" alt=""><figcaption></figcaption></figure>
+
+In parallel with the testing, I also began consolidating and refining my documentation. I worked on capturing the design evolution, major technical decisions, and the challenges I’ve overcome throughout the project. This documentation includes what I consider to be a nearly finalized version of the spin coater base. It serves both as a record of progress and as supporting material for the presentation, ensuring that I can clearly communicate the system’s development to an external audience.
+
+On top of this, I worked on my presentation slides, ensuring they were an accurate representation of the progress of the spin coater since the first presentation.&#x20;
+
+Looking ahead, the next major step begins with the arrival of the custom PCB, which came in on Friday. With the board now in hand, I plan to start setting up the bottom half of the spin coater on the PCB. This will involve transferring control and power circuitry from the breadboard setup to the final hardware and beginning integration testing with the more permanent system. I’m optimistic that this transition to the PCB will unlock the full functionality of the spin coater as it was originally envisioned, allowing for more reliable operation and further refinement of the overall system.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdC6cdojWamUdWsZdGF5xzmMxGnNcMhmRPZlIwZPpqEkZdpKgQtpuYQRSvkXKD_ChfofEEF745zgSlAAOFRaq05CJdm0IYDLGn6tCqZTzeq11aAdAxFhxEiv0N2pmj6Re-8s-yQqA?key=MPhR32n5xjnBRr1q_h9LU1MJ" alt=""><figcaption></figcaption></figure>
+
+\
