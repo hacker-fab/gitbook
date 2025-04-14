@@ -4,6 +4,35 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 11 (04/13/2025)
+
+### Progress Updates
+
+* Simulation Success!!!
+
+I have successfully verified the cause of failure for the Boron Nitride disks, and can also verify that we should not be concerned about similar failure occurring in the AlN disks at our operating temperatures. The TLDR is that we would expect failure in the Boron Nitride system at or below \~270 C, and we expect failure in the Aluminum Nitride at \~1700 C (at which point we would have several other failures). I have prepared a report explaining my math which is attached to this update, it was easier to leave it in there because LaTeX makes the formatting much easier.
+
+{% file src="../../.gitbook/assets/critical_temp_derivation.pdf" %}
+
+On the simulation side of things, I believe that the above results are relevant within our operating temperature range because of trends in the maximum stress with time from simulations.&#x20;
+
+\[My data is currently locked up on an ANSYS computer but I will update my figures tomorrow when I can get in there]
+
+&#x20;We observe that the maximum stress is monotonically increasing, which indicates that the primary failure mode is static failure. Because of this, and the simulation runs that I have conducted, I am placing an arbitrary temperature cap at 400 C, corresponding to an input heat flux of approximately 6E7 W/m^3. I need to measure the wire resistance before converting back to an input voltage, but it is a trivial calculation.
+
+<figure><img src="../../.gitbook/assets/sim_input_temp.png" alt=""><figcaption></figcaption></figure>
+
+### Roadblocks
+
+* No major roadblocks to report
+
+### Plans
+
+* Finish the substrate heater stuff
+  * This can finally happen now that the simulation work is done. I will almost certainly be doing most of my testing on 4/14, with a goal to be completely finished by 4/16. I will conclude these with a report on the substrate heater, detailing the operating parameters and heating characteristics
+* Begin designing substrate heater V2
+  * Since the techspark waterjet is back up and running, I want to cut a second version of the heater which uses the square AlN plates from Amazon, and includes a space for the QCM to mount as a proof of concept. This is part of an ongoing effort to have plans available for updating the system to be QCM compatible by the end of the semester. Barring the waterjet breaking again (not off the table), I hope to have the sheets cut by the end of the week. This will not inhibit progress on deposition because I will only begin work on it after finishing V1.
+
 ## Update 10 (04/06/2025)
 
 ### Progress Updates
