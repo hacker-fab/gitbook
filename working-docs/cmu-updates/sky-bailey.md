@@ -138,3 +138,21 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 3. All that's left from the hardware side is to do the UV LED mod. Before I do that though, I'd like to test something: In discussions with Albert from UCI, it seems like other schools have had luck doing doing exposures with the stock blue LEDs, which is very interesting. The blue LEDs are most likely 465nm which should be just barely outside the usable range on our photoresist but it's possible they have a wider emission band or something that would lead to it working. I still think UV is the more correct solution but it's worth a test.\
    \
    After that though, V2.1 should be in theory all ready to use. I'll be sure to run some test patterns on it in order to characterize resolution in the current state.
+
+### Weekly Update 11
+
+1.  Stepper V2.1 is all set up now! I talked about this in my presentation but it should be totally good to use now - Carson and I ran a test and determined that the blue light is totally usable for patterning. Someone at the presentation said that it might be better to bring exposure times back down closer to 8 seconds, and talking with Carson there's 2 ways we could do this: we could just increase the brightness of the blue LEDs (they're dimmed to around 15% brightness, like on Stepper V2), or we could actually do the UV mod. As for the latter, it's probably easier to just swap in the projector from Stepper V2, since that one's not being used now.\
+    \
+    Some fun side adventures: this week I also did some testing with oil immersion. This was mainly for my intuition, but here's some images I captured comparing 10x, 100x dry, and 100x oil:\
+
+
+    <figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>10x</p></figcaption></figure>
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>100x dry</p></figcaption></figure>
+
+    <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>100x oil</p></figcaption></figure>
+
+    I was pretty astounded to see how detailed the 100x oil can get us in terms of microscopy, so I am absolutely interested to give this a try for immersion lithography to try to create some crazy small features.
+2. Current blockers is high workload for HRI, but that's about it. I ordered a 10x objective from Edmund Optics which seemingly didn't get added to the order with the 100x, but since we've basically decommissioned Stepper v2, that's not urgently needed.
+3. This week I hope to do some of the characterization I talked about in my presentation, and resolve the remaining question about the exposure time. After that, I think Stepper 2.1 should be considered basically done, so it'll pretty much be documentation from there. Currently, I plan for my final presentation to have a recap of Stepper 2.1 and the measurements I'm doing, but dedicate a lot of my time toward discussing future resolution and other stepper improvements that I think we should be able to make.
+

@@ -64,19 +64,19 @@ There are two primary failure modes that we are considering:
 
 This mode is primarily caused by the differences in thermal expansion coefficients of the various materials of the system. As the entire heater is warmed, we expect some amount of stress formation, regardless of differences in local thermal profile. Since this behavior can be adequately described in the time limit (when the heater has reached steady state), I will refer to this as the "static" mode of failure. This mode determines the maximum operating temperature of the device.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Static thermal stress diagram. Depending on the CTEs of the materials, the AlN may expand more than the Al.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Static thermal stress diagram. Depending on the CTEs of the materials, the AlN may expand more than the Al.</p></figcaption></figure>
 
 2. Dynamic thermal stress induced failure
 
 This mode is primarily caused by differences in the local temperature distributions within the insulator material.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Dynamic thermal stress diagram.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Dynamic thermal stress diagram.</p></figcaption></figure>
 
 Because the relative lack of expansion of the "cold zone" with respect to the "hot zone", thermal stresses build up on the interface. This can then induce crack formation and propagation. This mode can only be described by short-timescale dynamic behavior, as it is concerned with the time dependence of temperature.
 
 An important note on both modes is that we expect the initial stress to be zero at room temperature because this is where the heater is being assembled. Based on this, we can create very rough guesses at the trends of the transient thermal behavior of our heater.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Potential maximum stress vs time for the AlN insulator disk.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Potential maximum stress vs time for the AlN insulator disk.</p></figcaption></figure>
 
 In red, we see a system which is largely dominated by the static failure mode. This would asymptotically increase in maximum stress as time increases. Though we cannot evaluate the stress at infinite time, we can make estimates of the true maximum stress based on the plots we can generate. In blue, we see a system which is largely dominated by the dynamic failure mode. The maximum thermal stress quickly increases as time increases, and then settles back down once the system begins to equilibriate.
 
@@ -295,7 +295,7 @@ Based on my testing, I feel that the Boron Nitride disks which we are using are 
 
 Though it was agreed both in our team meeting on 2/10, and when speaking to Matt on 2/11 that the QCM is not necessary for the initial deposition, I still feel that it is necessary to properly design the chamber such that it can be easily retrofitted.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Chamber CAD with QCM mount</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Chamber CAD with QCM mount</p></figcaption></figure>
 
 The only change which effects the current design revision is the movement of the substrate heater mount from the back face of the chamber to the left face of the chamber (when looking from the front). This should not change the chamber mechanics at all, and is mainly necessary to allow the precursor delivery system to sit close to the chamber, without needing to move if the QCM is added in the future.
 
@@ -307,7 +307,7 @@ The QCM mount itself uses a CF 2.75" to KF40 adapter as mentioned in my previous
 
 \*\* Waiting for final approval from James regarding the precursor delivery
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>ALD Chamber on ALD Stand. Precursor delivery not pictured.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>ALD Chamber on ALD Stand. Precursor delivery not pictured.</p></figcaption></figure>
 
 There isn't a ton to say on this front, as the design is relatively simple: an Al extrusion frame with some custom sheet metal brackets to mount to the chamber itself. We should be able to cut the mounting brackets in techspark, but will need to order the extrusion and corner brackets. Once the precursor delivery design is sorted out, we can do a final design review and place part orders. Construction itself should not take more than a couple of hours at most.
 

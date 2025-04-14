@@ -16,9 +16,9 @@ layout:
 
 
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Etch (Aluminum Metal in Blue)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Etch (Aluminum Metal in Blue)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>After Etch</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>After Etch</p></figcaption></figure>
 
 ## Parameters
 
