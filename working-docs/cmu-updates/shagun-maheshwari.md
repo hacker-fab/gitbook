@@ -4,6 +4,59 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 11:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:
+
+* Finished fabricating the 10min SOG diffusion N-well chip
+  * Completed patterning, etching, evaporation, patterning, etching&#x20;
+* Conducted CV testing for the 10 min, 30 min, and 1 min chips and recorded the plots&#x20;
+  * 10 min [https://drive.google.com/drive/u/0/folders/1LDeWgmWCr8uOsOw2EWK1P1l1wuHOdZuB](https://drive.google.com/drive/u/0/folders/1LDeWgmWCr8uOsOw2EWK1P1l1wuHOdZuB)
+  * 30 min [https://drive.google.com/drive/u/0/folders/1AxacQ3NJp6DKVl2GkO-2RYRRFyBOioFW](https://drive.google.com/drive/u/0/folders/1AxacQ3NJp6DKVl2GkO-2RYRRFyBOioFW)
+  * Did not record the data for 1 min
+* Wrote the dopant profile code for each SOG diffusion time and debugged to correctly output the dopant profiles needed
+  * N-well [10 min](https://colab.research.google.com/drive/1W1z2cLoM-QTB_-KeQC3-8KpJ8Da_yM9m#scrollTo=8EaRXpcpgUWI)
+  * N-well [5 min](https://colab.research.google.com/drive/1y4v8QwYjZC5bc4KwQBaxmUXTWyhERQE8#scrollTo=KyUINvT7dD_F)
+  * N-well [45 sec](https://colab.research.google.com/drive/1N4DDmH1q9RoeRhHUND9fHzMXl9SpqGvB#scrollTo=KyUINvT7dD_F)
+  * [P-type](https://colab.research.google.com/drive/1XumHe4WDueVtgT6nc5DjDywdKaijvbjN#scrollTo=t30mn1b7V87p)
+* Wrote code to overlay the different plots for the Demo 2 presentation&#x20;
+* Created the Demo 2 presentation and presented it [https://docs.google.com/presentation/d/1CqeYZdM2g1QqTucKw-d7U5P6Chip01WgxQEHAwva4Rw/edit?slide=id.g3373c10cf4b\_0\_288#slide=id.g3373c10cf4b\_0\_288](https://docs.google.com/presentation/d/1CqeYZdM2g1QqTucKw-d7U5P6Chip01WgxQEHAwva4Rw/edit?slide=id.g3373c10cf4b_0_288#slide=id.g3373c10cf4b_0_288)
+* Discussed next times and worked through PMOS process development&#x20;
+
+
+
+Roadblocks:&#x20;
+
+* Not having the Aluminium Etchant come in time might be a big roadblock for PMOS (given the fact we are not able to get it from Matt from the nanofab)
+
+
+
+Next Steps:
+
+* Add time details for each step of the PMOS fabublocks process
+* Start fabricating PMOS transistors (Monday, Tuesday, Wednesday, Thursday etc)
+* Start putting together the poster and final documentation
+
+Feedback
+
+• Cesely
+
+**Hot Probe Test:** Jay and I completed more hot probe tests this weekend. We believe that doping occurs as short as 25s. However, the tests are not the most conclusive. Instead of continuing with PMOS fabrication, we think that it might be better to fabricate more MOSCaps, diodes, and transmission line tests.
+
+**MOSCaps:** We will be fabricating two types of moscaps: one will be a n-well process MOSCap and the second will be p-substrate MOSCap to use as a reference.
+
+_**• N-Well MOSCap:**_ For the n-well MOSCap two 30 sec n-well MOSCaps should be fabricated. The reason two needs to be done is that the diffusion time is so short that any small variability can have a large impact on results.
+
+_**• P-Substrate MOSCap:**_ Another p-substrate MOSCap should be fabricated to compare as a reference. Unlike before, though, there should be a p+ contact fabricated as well. This will be used to compare results. Since Marta’s contacts found that annealing produces more reliable contacts, we would like the p-substrate contacts to be probed both before and annealing to analyze the effects.&#x20;
+
+**Transmission Line:** The transmission line test will confirm if our p-channels are achieving an optimal carrier concentration within our fabricated n-wells. The process for this would be to follow or n-well process (short SOG diffusion 30s and 45s and 2-hour drive-in diffusion) followed by doping regions with B-154. In the B154 regions a transmission line can be fabricated. If the contacts are ohmic we have created a p-dope regions with optimal characteristics for p-channels. If the are non-ohmic than we need to increase the carrier concentration. Additionally, given Marta’s findings, you will likely have to anneal the contacts for p-doped region before getting ohmic behavior.
+
+Given the amount of fabrication I would split this between you and Marta. I would expect you to fabricate the two n-well MOSCaps. I would then expect Marta to fabricate and test the p-substrate MOScap and transmission line, since her contacts project primarily used this experimental set up.&#x20;
+
+We have the chemicals to make our own Al etchant so that should no longer be a roadblock.
+
 ## Update 10:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
