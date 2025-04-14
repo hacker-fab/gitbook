@@ -258,5 +258,30 @@ Now that chamber V2 is ready, I can resume testing. My goal is to have a fully f
 >
 > [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
+
+{% step %}
+### Weekly Update 11
+
+**What did you accomplish this week?**\
+This week, I implemented and modularized a FSM for pressure finding automation. The FSM is now cleanly organized across multiple files to separate logic, reduce complexity, and make future development easier. Specifically, I created `FSM.h` and `FSM.cpp` to contain the main `updateFSM()` logic and state handling. Supporting files handle tasks like pressure checking, serial communication, and transition timing. This structure should be easier for other people to understand and easier to made adjustments/additions. The FSM itself cycles through six states defined in an enum:
+
+* `TURN_ON`: Sends a command to power on the Pfeiffer vacuum system. Next state is `SPEED_SET`
+* `SPEED_SET`: Sets the rotational speed of the turbo pump to %25 percent. It is called Speed Set because there are 2 speed parameters in the vacuum pump (Set Speed, Stand-by speed). You can change each of these parameters and then activate each of them. Next state is `STANDBY_SET`
+* `STANDBY_SET`: Set rotational speed of turbo pump to %100
+* `EVAC`: Sets speed to standby\_speed and moves state to `GAUGE`
+* `SPUTTER_SPEED` : Sets speed to set speed and moves state to `GAUGE`
+* `GAUGE`: Requests current pressure readings from the gauge and check equilibrium. If evac flag is on, state goes to  `SPUTTER_SPEED`otherwise goes to `ALICAT`
+* `ALICAT`: Adjusts the Alicat mass flow controller setpoint to maintain or reach the desired pressure.
+
+The FSM also has 2 stages with different sampling rates. TURN\_ON, SPEED\_SET, EVAC, SPUTTER\_SPEED all occur at a slower interval (like every 10s). This is because it sometimes takes the pump a couple seconds to setup all the received commands and there is not need to bombard the pump with messages. GAUGE and ALICAT are in a faster interval because I want to measure pressure at a much faster rate. All changes have been added and pushed to the github under the PressureControl folder in SputteringControl. I am still testing everything, but I think the main issues are just modifying the PID coefficients.&#x20;
+
+I also had presentation 2 which I thought went well, but wish I got more feedback/questions from other individuals.&#x20;
+
+**What roadblocks are you dealing with and what is your plan to overcome these challenges?**\
+I talked about adding a way to plot pressure vs time in my presentation and last week update. I am currently using Serial Plotter, which works, but does not have all the graphing capabilites that I would like. I looked into other methods to graph, but I could not find any that are used on Arduino. I think I will keep with Serial Plotter for right now, but it might be worth it to pipe the data to something else to graph. Like maybe send the data to a python script on a computer that plots with matplot.lib
+
+**What are your plans for next week?**\
+Main goal is to keep testing and implementing my new FSM. I think I can have it done by the end of the week and then start working on the packaging. I also need some hardware for my packaging which I will make sure to order early this week.
+{% endstep %}
 {% endstepper %}
 
