@@ -4,6 +4,31 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #10
+
+**What was accomplished:**
+
+* Created mask instance PCell that creates a psub layer the size of an exposure with alignment crosses in each layer.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-13 at 10.38.14 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-13 at 10.34.10 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Attempting to develop scripts to export layout views as PNG images, with each "template" instance generating its own specific set of layers.&#x20;
+* Writing out detailed methodology with theory and math for testing minimum trench width.
+* Completed Demo Presentation.
+
+**Roadblocks:**\
+\- n/a
+
+**Plans for next week:**
+
+* Resume metrology chip fabrication.
+* Complete basic script for exporting layout views.
+* Discuss with Icey the final list of parameters and methodology.
+
+
+
 ## Update #9&#x20;
 
 **What was accomplished:**&#x20;
