@@ -1,5 +1,24 @@
 # Sandra You
 
+**Weekly Update #11**&#x20;
+
+1. **What was accomplished:**
+   1. Added mask instance PCell titled "template" that creates a psub layer the size of an exposure with alignment crosses in each layer.
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+
+          <figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+   2. Began looking into/writing scripts that allow layouts to be exported as pngs, with one set of layers exported for each "template" instance. STILL IN PROGRESS.
+      1.
+
+          <figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+2. **Roadblocks:**
+   1. None.
+3. **Plan next week:**
+   1. Continue to develop the script that exports layouts as pngs.
+   2. Restart fabrication of Metrology Resistor chip.
+
 **Weekly Update #10**&#x20;
 
 1. **What was accomplished:**
