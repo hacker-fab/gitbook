@@ -192,3 +192,23 @@ Stepper auto-focus is still inaccurate, and we had to manually focus every time 
 Plan for next week:
 
 Continue to fabricate. Continue to work on the standard cell library documentation. Try to develop a flow script to extract device parameters from synthetic data. Prepare for presentation 2 slides and present during class.
+
+**Weekly Update #11**
+
+Work done:
+
+This week we presented our progress during lecture. Our fabrication is moving slowly, but we realized that it does not need to be the bottleneck of our project. Ying and I started to work on a device model parameter extraction flow ([https://colab.research.google.com/drive/1Ku2WJjzzi1aM3aYvisd9LoYFHgV0zpth#scrollTo=c\_yRD\_uWDncJ](https://colab.research.google.com/drive/1Ku2WJjzzi1aM3aYvisd9LoYFHgV0zpth#scrollTo=c_yRD_uWDncJ)) with synthetic data created based on the best chip 613 which went missing. We got some preliminary results as shown in the diagram below. The dashed line is the original IV curve, and the filled line is the reconstructed curve. The initial result is promising but still has some issues, as we stated in the presentation 2 slides. We also caught some issues with our previous parameter extraction documentation and updated it as we developed the flow.
+
+<figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+
+We continued to fabricate the chip. Now we have two NMOS chips with good gate patterns and ready to fab the next layer, and Gongwei is working on another packaging chip.
+
+Roadblocks:
+
+1. The device model parameter extraction flow has some inaccuracy compared to the original data. We are still debugging why it is the case and whether it is due to the data itself being non-realistic or it is due to our algorithm.
+2. The stepper system has been updated. The exposure is 7% larger than the previous stepper. Since one of our good chips was patterned with the previous stepper, we need to adjust some settings manually to make the layer size match.
+3. We tried to align the second layer but could not figure out how to. We tried to align manually on red focus, but the alignment changed when we switched to UV mode.
+
+Plan for next week:
+
+Keep debugging the device model parameter extraction flow. Continue to fabricate.
