@@ -243,5 +243,32 @@ We observed some strange, colorful banding on our chip after plasma etch, which 
 \
 **Next steps:**\
 \
-Continue quick advancement in the fabrication process now that I am increasingly experienced with the tools and process. During the next meeting, will work with Ying and Icey to figure out the missing HF Etch times for the next steps in Fabublox. Also continue exploring standard cell development and pdk creation.&#x20;
+Continue quick advancement in the fabrication process now that I am increasingly experienced with the tools and process. During the next meeting, will work with Ying and Icey to figure out the missing HF Etch times for the next steps in Fabublox. Also continue exploring standard cell development and pdk creation. \
+\
+\
+**Week 11 Update**\
+\
+**Work done:** \
+\
+&#x20;We continued fabrication on our pipeline of different chips at various stages of the fabrication process. The packaging chip was completed: Spin-on P+ dopant, Dopant diffusion via tube furnace at 1100 °C for 35 minutes, Spin-on photoresist, and N+ region patterning (where a roadblock was encountered).  Currently, our packaging chip is at the furthest stage in the Fabublox process, before we hit a roadblock with the stepper's alignment of overlapping masks, and our NMOS characterization chips have been plasma-etched, HF-etched, survived O2 plasma clean, 700B spun-on & baked for 30 minutes, and are ready for P+ patterning. \
+\
+Post-plasma-O2:\
+![](<../../.gitbook/assets/image (277).png>)\
+\
+Post-non-resist:\
+![](<../../.gitbook/assets/image (279).png>)\
+\
+\
+**Roadblocks:**\
+\
+The stepper was updated to a new version, and the new version has a resulting pattern size that is approx. 7% larger, so the alignment marks do not exactly line up with the previous exposures I already did on the lower layers (e.g. the poly mask). \
+\
+We also ran into an issue where upon a mode switch the stepper moves it's x and y axis, even though all the checkboxes for autofocus and align stuff are deselected. So when we carefully aligned our n+ mask to overlap with the poly gate in red mode, as soon as switching to UV mode it would throw off the x/y position of the n+ diffusion regions, which made us unable to do the next step of n+ lithography and subsequent doping.  \
+![](<../../.gitbook/assets/image (275).png>)![](<../../.gitbook/assets/image (276).png>)
 
+\
+**Next steps:**\
+\
+Test out possible ways to adapt to the new stepper 7% size increase by either shrinking the mask in a photo editor, or calculating and then creating some borders using the stepper GUI.
+
+Continue with the few remaining steps in the fabrication, calculating multi-layer HF-etch times for the B154 and 700B based on their estimated thickness from spincoat RPM and time. Then just N+ doping and Aluminium evaporation, after which we can carry out probe station testing, but likely with the body contact tied to source, since our Probe station only has 3 voltage/current drivers.\
