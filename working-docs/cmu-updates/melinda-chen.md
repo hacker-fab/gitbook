@@ -299,7 +299,51 @@ Roadblocks
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
 
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
 
+
+
+### Update 9 (3/23-3/30)
+
+#### Accomplishments
+
+* Completed preliminary aluminum evaporation trials w/oxygen flowing in&#x20;
+  * Have well-fitted relationship between oxygen MFC SCCM settings and chamber pressure
+  * Conducted 3 aluminum evaporation trials:&#x20;
+    * Initial trial w/oxygen showed promising results due to visibily different color of evaporated material.&#x20;
+    * Additional trials to figure out the maximum O2 pressure possible while still being able to evaporate were difficult due to QCM readings&#x20;
+    * However based on what pressure the QCM stopped behaving weirdly (i.e. extreme amounts of oscillation) for, around 7.5 sccm might be the limit
+    * Resistivity is slightly higher than base aluminum, but not "insulating"
+  * Trial parameters are recorded here: [https://docs.google.com/spreadsheets/d/1O67ansNDFr7AUBcyVnXadPWayfpV0HPwh4IFn5GLq1o/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1O67ansNDFr7AUBcyVnXadPWayfpV0HPwh4IFn5GLq1o/edit?gid=0#gid=0)
+  *
+
+      <figure><img src="../../.gitbook/assets/Screen Shot 2025-03-30 at 9.54.24 PM.png" alt=""><figcaption><p>Image of evaporation chamber after test w/flowing oxygen in. There is a clear color difference between evaporated aluminum and the mysterious brown deposited material</p></figcaption></figure>
+
+      <figure><img src="../../.gitbook/assets/IMG_0310.HEIC" alt=""><figcaption></figcaption></figure>
+* Sample preparation for "oxide" capacitor
+  * Evaporated base layer, will do the oxide and top surface on Monday
+* Reserved XRR for next tuesday for evaporated "oxide" density characterization
+
+Roadblocks
+
+* Sputtering chamber still not working : (
+* QCM unreliability w/reactive evaporation --> will need to find other ways of characterizing rate
+
+#### Plans
+
+* Create a capacitor to test electrical properties + pure oxide evaporated for density characterization via XRR
+  * Base layer of aluminum is already evaporated
+  * Monday procedure:
+    * Mask off half the chip w/nonstick size of tape
+    * 1 evaporation cycle with oxygen (for both chips)&#x20;
+    * Remove the XRR chip
+    * 1 evaporation cycle with normal aluminum
+* Test the capacitor
+* XRR to probe density of evaporated chip
+* Evaporation + low temperatre annealing trial for densification of the oxide layer
+* Continue to help out with available chamber build + power supply tasks
+
+Udated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
 
 ### Update 10 (3/30 - 4/6)
 
@@ -333,3 +377,62 @@ Roadblocks
   * Capacitor using evaporation chamber masking technique
 
 Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+
+
+### Update 11 (4/6 - 4/13)
+
+#### Accomplishments
+
+* Attempted AFM on masked Al-evaporated chips to determine layer depth
+  * Was able to image the transition from silicon subtrate to Al layer but still had imaging artifacts/streaking
+  * Imaging only the Al portion for surface roughness yielded heavily aliased results - potentially small pinholes (smaller than AFM tip)&#x20;
+* Compiled slides for second presentation/demo
+* Conducted first sputtering trial with new chamber, used temperature tracking stickers to determine if magnets are getting too hot
+  * Sputtered aluminum at 100W
+  * magnetic field clearly less strong compared to previous trials
+  * Lots of small "sparks" on the substrate plate during the trial
+  * All four temperature stickers changed color --> sputtering process is cycling the magnets above recommended temperature
+  *
+
+      <figure><img src="../../.gitbook/assets/Screen Shot 2025-04-13 at 5.28.31 PM.png" alt=""><figcaption><p>Temperature stickers post sputtering</p></figcaption></figure>
+* Created 3D printed magnet aligning rig
+  *
+
+      <figure><img src="../../.gitbook/assets/Screen Shot 2025-04-13 at 5.24.27 PM.png" alt=""><figcaption><p>Magnet alignment rig in Bambu Slicer</p></figcaption></figure>
+* Attempted to change the configuration of magnets in the sputtering chamber to be on the outside to allow for more effective cooling
+  * Ran into a lot of issues w/fitting things under the aluminum casing and getting the magnets to stay still
+
+
+
+Roadblocks
+
+* Magnets weakening with sputtering temperature --> parameters will likely change over time
+
+#### Plans
+
+* Perform XRR on aluminum oxide chip that Jay sputtered
+* Run tests at lower powers w/temperature tracking stickers on both the outside and inside of chamber to see:
+  * If it is possible to stay below temperature with lower power
+  * If there is a significant temperature difference between the plate inside and outside the chamber --> if not, might be worth looking into cooling the plate, not just moving the magnets outside
+* Full send on sputtering trials now that the chamber is working
+  * Thickness characterization
+  * Power characterization
+  * XRR + AFM
+  * Capacitor using evaporation chamber masking technique
+
+Updated Project Tracker: [https://github.com/orgs/hacker-fab/projects/36](https://github.com/orgs/hacker-fab/projects/36)
+
+
+
+#### Response
+
+Thank you for bearing with me and helping out on the sputter magnetron changes.
+
+I endorse the plans to perform do rate testing on Al and Al2O3 using XRR for thickness measurement.
+
+After rate tests are finished, lets discuss prioritizinng surface roughness vs composition characterization. I'm leaning towards composition, since that may inform design changes related to the steel retaining ring.
+
+and Just for record: at the time of this response, weve returned to the original magnetron design sine we confirmed that magnet temp is at least below 180C.
+
+Finally, I copy and pasted update 9 into this merge bc it was having conflicts. So I'm just gonna deny the march 30th PR.
