@@ -4,6 +4,55 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 12 (04/20/2025)
+
+### Progress Updates
+
+* Substrate Heater Works Yay
+
+I mentioned this in our team meeting on 4/14, but I was able to get to heater re-attached to the chamber and run tests with it. Since then, I have also fixed the issues with the cables overheating, and tidied the wiring in the chamber. Though it does not look like we are going to deposit before my time in Hackerfab is up, I would like to make sure I am leaving my parts in as good a place as possible.
+
+I haven't gotten the chance to write up a formal document summarizing my experimental findings on the substrate heater, but I will put a preliminary version of that information in here for the sake of sharing information.
+
+#### Raw Data
+
+<figure><img src="../../.gitbook/assets/Figure_1.png" alt=""><figcaption></figcaption></figure>
+
+Above is a plot of the probe temperature vs time. This corresponded to an input current of 10A, which was drawing approximately 100W in total. The amount of time to reach various temperatures is present for the sake of clarity. With our current power supply, it is not possible to heat past approximately 480 C, though it is likely that more current would allow for the heater to become hotter. It's worth noting that if we were to use the INFICON ALD Sensor to monitor thickness, our maximum temperature would be 450 C, as the sensor is not rated for above that level.&#x20;
+
+#### Heater Operating Parameters
+
+| Parameter                     | Value                  |
+| ----------------------------- | ---------------------- |
+| Maximum Operating Temperature | 450 C                  |
+| Drive Current                 | 10A (Constant Current) |
+| Maximum Heating Rate          | 0.32 C/s \[19.2 C/min] |
+| Time to 225 C                 | 11 min                 |
+| Accuracy at Setpoint\*\*      | +/- 0.2 C              |
+
+\*\* Preliminary
+
+Controlling the heater is simple, as mentioned in the team meeting on 4/14. A simple Bang-Bang control scheme can be implemented with the following logic flow:
+
+Let T = Current Temperature
+
+**IF T >= SETPOINT:** Relay open
+
+**IF T < SETPOINT:** Relay closed
+
+I have written a simple arduino sketch on the miniPC which runs this logic using the actual relay board and thermocouples. Over the weekend I assembled a basic wiring harness to allow the relay to switch the power supply, and will be testing it out on 4/21.
+
+### Roadblocks
+
+* Techspark waterjet misbehaving :((((((&#x20;
+  * I tried to cut some pieces for the second version of the substrate heater but was running into issues with the waterjet. I am planning on trying again sometime this week but the machine is obviously quite fickle.
+
+### Plans
+
+* Cut parts for heater V2
+* Run control logic tests on heater and profile accuracy at temperature
+* I am lowkey out of things to do, though there is obviously not a lot of time left. I am planning on spending my time on the second version of the heater to verify that it does work (for cost reasons), but I am happy to work on anything else to get the system to a good place by the end of the semester.
+
 ## Update 11 (04/13/2025)
 
 ### Progress Updates
@@ -193,7 +242,7 @@ Besides getting the current seals functioning well enough for now, I also source
 
 <figure><img src="../../.gitbook/assets/IMG_8142 (1).JPEG" alt="" width="375"><figcaption><p>Substrate heater uniformity probe points</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Figure_1.png" alt=""><figcaption><p>Uniformity test data (in atmosphere)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Figure_1 (1).png" alt=""><figcaption><p>Uniformity test data (in atmosphere)</p></figcaption></figure>
 
 I worked on profiling the substrate heater, both uniformity and the voltage/temperature relationship. Above is a plot of a run in atmosphere, measuring the difference in temperature between various points on the surface. We see divergence as the temperature increases (this is expected, the points directly above the heating element will be hotter initially), but that once the temperature levels out, we see a convergence. Based on this trial, I estimate that leaving the heater running for approximately an hour after reaching temperature will be sufficient to allow the surface to even out. An important note is that the convective losses are very high for this system, meaning that it is very likely that the surface temperature profile will be different in vacuum. Since we only have one feedthrough for a thermocouple, testing this will be difficult. I am currently planning on doing independent trials with the probe location changing, the assumption being that the data will be able to be combined as if it were done in a single trial.
 
