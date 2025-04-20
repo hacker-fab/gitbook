@@ -12,6 +12,59 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #12
+
+### ALD:
+
+Progress:
+
+* Ordered tubing and KF connections for exhaust
+  * KF40 hose will hook from delivery storage straight up
+  * KF25 etcher and ALD vacuum will hook individually to either side of lab room
+  * need to also wait for Matt to give us the exhaust connections&#x20;
+* Ordered grommets to facility negative pressure inside of delivery storage, they come without hole so we can cut them to whatever size we want or keep as plug
+* Designed 3d printed covers for non circular holes as well, they have been installed
+  * printed out of ABS and should withstand heat tape temps&#x20;
+
+<figure><img src="../../.gitbook/assets/image (281).png" alt="" width="563"><figcaption><p>Updated Delivery Storage CAD</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (282).png" alt="" width="270"><figcaption><p>Outlet Cover</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (283).png" alt="" width="270"><figcaption><p>Inlet Cover</p></figcaption></figure>
+
+Challenges:
+
+* exhaust connections will not be likely to come before demo due to delivery times
+* mane
+
+Plans:
+
+* work on exhaust when parts arrive
+* erm Viswesh when do we wanna try filling the DI water into the ampule for our first pulse test
+* work on poster
+
+### Packaging:
+
+Progress:
+
+* waiting on PCBs, digikey and mcmaster parts arrived
+* printed encapsulation cap - used ABS
+* finished packaging BOM: [https://docs.google.com/spreadsheets/d/1h7u\_Eif3jr8CX-VDs7G6TskFq9B\_RoVnjoTQv3pn7rc/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1h7u_Eif3jr8CX-VDs7G6TskFq9B_RoVnjoTQv3pn7rc/edit?gid=0#gid=0)
+
+<figure><img src="../../.gitbook/assets/image (284).png" alt="" width="270"><figcaption><p>3D Printed Caps</p></figcaption></figure>
+
+Challenges:
+
+* Likely won't be able to show package by demo time due to PCB delivery, but if come early next week we will have something to show at least if i grind super hard
+* wire bonding success is still a big uncertainty, but cant test until we have board and chip
+
+Plans:
+
+* wait for PCB to arrive, if here early enough will need to bust my ass to solder and reflow everything before thursday
+* work on poster
+
+***
+
 ## Weekly Update #11
 
 ### ALD:

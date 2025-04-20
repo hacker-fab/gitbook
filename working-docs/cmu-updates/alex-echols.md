@@ -16,7 +16,7 @@ I haven't gotten the chance to write up a formal document summarizing my experim
 
 #### Raw Data
 
-<figure><img src="../../.gitbook/assets/Figure_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Figure_1 (1).png" alt=""><figcaption></figcaption></figure>
 
 Above is a plot of the probe temperature vs time. This corresponded to an input current of 10A, which was drawing approximately 100W in total. The amount of time to reach various temperatures is present for the sake of clarity. With our current power supply, it is not possible to heat past approximately 480 C, though it is likely that more current would allow for the heater to become hotter. It's worth noting that if we were to use the INFICON ALD Sensor to monitor thickness, our maximum temperature would be 450 C, as the sensor is not rated for above that level.&#x20;
 
@@ -242,7 +242,7 @@ Besides getting the current seals functioning well enough for now, I also source
 
 <figure><img src="../../.gitbook/assets/IMG_8142 (1).JPEG" alt="" width="375"><figcaption><p>Substrate heater uniformity probe points</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Figure_1 (1).png" alt=""><figcaption><p>Uniformity test data (in atmosphere)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Figure_1.png" alt=""><figcaption><p>Uniformity test data (in atmosphere)</p></figcaption></figure>
 
 I worked on profiling the substrate heater, both uniformity and the voltage/temperature relationship. Above is a plot of a run in atmosphere, measuring the difference in temperature between various points on the surface. We see divergence as the temperature increases (this is expected, the points directly above the heating element will be hotter initially), but that once the temperature levels out, we see a convergence. Based on this trial, I estimate that leaving the heater running for approximately an hour after reaching temperature will be sufficient to allow the surface to even out. An important note is that the convective losses are very high for this system, meaning that it is very likely that the surface temperature profile will be different in vacuum. Since we only have one feedthrough for a thermocouple, testing this will be difficult. I am currently planning on doing independent trials with the probe location changing, the assumption being that the data will be able to be combined as if it were done in a single trial.
 
