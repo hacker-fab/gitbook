@@ -4,7 +4,7 @@ description: I'm Michael, I will be working on the litho-stepper
 
 # Michael Juan
 
-## **Update 0**
+**Update 0**
 
 Focus for this week is to create a plan to quantify the errors in the current litho stepper. Work on my tormach 440 cnc machine to have "in house" machining capability.&#x20;
 
@@ -736,6 +736,53 @@ Switch to a ceramic or tungsten carbide bearing.
 * A second idea that is worth exploring is using a piezo to rotate a micrometer. I think it would not be reasonable to get a working design of this by semester end but gathering literature on this might benefit future efforts. [https://www.youtube.com/watch?v=oVRv9fcx6AI](https://www.youtube.com/watch?v=oVRv9fcx6AI)
 * Assemble laser interferometer kit.&#x20;
 * Fix design flaws in current piezo positioner design. Change the bearing choice. Maybe design it so that preload can be adjusted without having to go through the multi hour long process of using gauge blocks.
+
+## **Update 12 (4/20/2025)**&#x20;
+
+### Accomplishments
+
+Designed a fine positioning flexure stage
+
+* The stacked stage approach proposed in the previous update is relatively easy to implement. But the issue with having the piezo in line with the micrometer is that the errors of the micrometer stage are not insubstantial when attempting sub micron positioning.
+* Another issue with this approach is that there is slop in any sort of ball bearing based system like the cross roller bearings used in stepper v2. This slop takes away the already small displacement of a piezo chip. This may result in the piezo actuation not having enough travel to compensate for the limited resolution of the micrometer stage.
+* By using a flexure xy stage stacked on top of our stepper stage we can remove issues with bearing tolerance.  The image below is the initial design of  a flexure stage. Size is 75x75mm
+
+<figure><img src="../../.gitbook/assets/Untitled drawing (1).png" alt=""><figcaption><p>top view, flexure thickness is 0.35mm. Piezos are mounted on setscrews in the cutouts on the top and left side. </p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Untitled drawing (2).png" alt=""><figcaption><p>isometric view. showing setscrew locations and spring load location.</p></figcaption></figure>
+
+* This flexure is different from normal XY flexure such as the one below because it does not compensate for rotation when actuating. This should not be an issue because of the limited travel of the actuation. Without using FEA analysis and just treating the flexure centers as joints the rotational error should be less than 0.006 degree per 6 micron piezo displacement.
+
+<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption><p>traditional flexures that compensate for rotational error. Note that this is very complicated and hard to make.</p></figcaption></figure>
+
+### Roadblocks
+
+**Roadblock 1:**
+
+Only have one working 150v piezo chip. need 2 for each prototype (4total). Do not have the right type of steel to make flexure.&#x20;
+
+**Proposed Solution**
+
+added more piezo chips and materials to purchase sheet. hopefully they arrive before final presentation.&#x20;
+
+**Roadblock 2:**
+
+Hitting the limits of measurement resolution. The highest resolution indicator I have is 0.5 microns and you can interpolate it visually to 0.25 microns. But we know that piezos can have much smaller motion.
+
+**Proposed Solution**
+
+Show in documentation why I believe that the designed flexure stage can have double digit nanometer motion. Use non offgassing epoxy in assembly so that future groups can test it with
+
+### Next Steps
+
+* Program and machine flexure based piezo positioner.
+  * Wait for materials to arrive.
+  * Make fixtures for machining positioner. Because flexures are very thin its important to hold each part of it rigidly so as to not introduce vibrations.
+* Work on documentation for stick slip piezo design.
+  * Specify new bearings.
+  * Specify new wear surface
+  * document how I got from no actuation to having actuation.
+* Measure the difference between the piezo "dry" actuation and when its mounted in line with micrometer stage. (note that measurement tool resolution may be an issue)
 
 
 
