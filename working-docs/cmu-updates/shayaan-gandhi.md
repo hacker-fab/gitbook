@@ -295,5 +295,50 @@ Main goal is to keep testing and implementing my new FSM. I think I can have it 
 >
 > [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
+
+{% step %}
+### Weekly Update 12
+
+This week, I made several key improvements to the **pressure control system** across both software and hardware domains:
+
+1. **PID Loop Refinement**:\
+   I made major upgrades to the PID control logic. The loop is now a PI loop:
+   * Added **error normalization** so the controller scales proportionally with the magnitude of the desired pressure.
+   * Introduced a **dynamic `Kp`** that increases when the error is large and softens as the system converges, reducing overshoot.
+   * Implemented **conditional integral activation**: the integral term only activates when the proportional output is small, preventing windup and instability during large transitions.
+   * Began implementing a **rolling buffer for the integral term**, which will allow the system to sum only the last `n` errors for more stable and tunable control.
+2. **FSM Logic Update**:\
+   I added a new logic condition to the FSM: when the **measured pressure is still higher than the desired setpoint** and the **MFC setpoint is at 0**, the system **automatically increases the vacuum pump speed**. This allows the chamber to continue evacuating even when gas input is shut off.
+3. **Emergency Interrupt**:\
+   I implemented an **interrupt function** in the PID loop that can **instantly set the MFC setpoint to 0** and **turn off the vacuum pump**. This acts as an emergency stop or rapid shutdown feature, useful for fault recovery or safety interlocks.
+4. **Hardware Packaging**:\
+   I also created **CAD models and a 3D-printable enclosure** to house the Arduino, RS485 converters, and supporting electronics. This enclosure will clean up the testbench setup and prepare the system for permanent installation.
+5.  **Soldering for Packaging:**
+
+    I finished all the soldering for the packaging so I just need to heat insert holes and screw everything in.
+
+Check github for updated code
+
+***
+
+**What roadblocks are you dealing with and what is your plan to overcome these challenges?**
+
+The **biggest challenge** right now is that **RS485 communication with the vacuum pump suddenly stopped working**. The physical connections and transceiver wiring are unchanged, and other serial devices are still responsive. I didn't change anything so I am not sure what happened. I think I will have to use a logic analyzer and test the command on the other pump.
+
+***
+
+**What are your plans for next week?**
+
+For next week, my goals are:
+
+1. **Finish physical packaging**:\
+   Finalize the 3D-printed enclosure and permanently mount the Arduino and converters. Reroute wiring for easier debugging and improved airflow.
+2. **Integrate `PfiefferLib`**:\
+   Refactor the FSM to **replace raw ASCII commands with named function calls** using the `PfiefferLib` I wrote earlier this year. This will improve code readability, maintainability, and safety.
+3. **Make PID code more presentable**:\
+   Clean up the structure of the PID code and add documentation, comments, and formatting. I’ll also abstract tuning parameters.
+
+
+{% endstep %}
 {% endstepper %}
 
