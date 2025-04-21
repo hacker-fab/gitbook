@@ -545,3 +545,50 @@ description: Haewon's weekly updates for the ALD and SOG.
 * Make sure everything is working properly in terms of the thermocouple controls
 * Test with Viswesh and James after integrating the process
 * Make changes if there are any errors
+
+## Update 12 (SOG)
+
+**Accomplishments**
+
+* Researched the impact of heavily doped devices since the concentration of our n-doped might be too high
+  * The performance of a silicon solar cell can decrease due to the increase in the rates of Auger recombination, which is a process that recombines excess carriers without contributing to the electrical current ([https://www.sciencedirect.com/science/article/pii/037967878690058X](https://www.sciencedirect.com/science/article/pii/037967878690058X))
+  * Optimizing doping levels to balance conductivity and minimize efficiency loss in semiconductor devices ([https://www.sciencedirect.com/science/article/pii/0038110187900700](https://www.sciencedirect.com/science/article/pii/0038110187900700))&#x20;
+*   Attempted to find the doping concentrations of the current recipes
+
+    * Resistivity measurement (not able to do because we have not probed the chips)
+    * Hall effect measurement:&#x20;
+
+    <figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+
+**Roadblocks**
+
+* Al etch solution was made on Friday, so was unable to etch and probe the tested chips
+* Didn't make new formulations due to the fact that it might be counterproductive&#x20;
+  * Unsure of the doping concentration
+
+**Future Plans**
+
+* Etch and probe the chips&#x20;
+* Make an analysis based on the results of the probing
+* Possibly make another formulation or just possible recipes that could be made for the future
+
+## Update 12 (ALD)
+
+**Accomplishments**
+
+* Tested each of the thermocouple outputs separately and then together
+* Combined the temperature control LabVIEW that includes the PWM and the LabVIEW that reads the temperatures (updated on the GIthub)
+  * Four subVI's that read the averaged temperatures from the Arduino shield and the specific chip selects
+  * Made a subVI for the PWM that was copied four times for the four different subVI's that include the temperature readings
+* Made a general LabVIEW that reads from through SPI just in case reading through serial port does not work
+
+**Roadblocks**
+
+* The thermocouples continuously read the value "nan" and inconsistently kept doing this
+  * Had to change the Arduino code since there was an error (updated on the Github)
+  * One of the thermocouples were busted so that was replaced&#x20;
+
+**Future Plans**
+
+* Test the new LabVIEW with the subVI's
+* Run the process and make changes based on any errors&#x20;
