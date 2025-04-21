@@ -441,3 +441,70 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Design a piezo sensor fixture.
 * (If time allows) Modify the stage positioner design to be attached to the R-axis stage.
 * (If time allows) Modify the probe positioner design for the height of the new stage positioner design.
+
+
+
+### **Weekly Update #11 (4/7 - 4/13)**
+
+#### Accomplishments
+
+* I tried to find a thicker alternative for the magnetic base (because it was too flimsy), but I couldn't.
+* So I designed the sheet metal base.\
+  ![](<../../.gitbook/assets/sheet metal base.png>)
+  * The flanges might be unnecessary, but there is only \~$10 difference on sendcutsend, so I think adding flanges (to increase the rigidity) would be a better option.\
+    ![](<../../.gitbook/assets/Screenshot 2025-04-13 at 9.30.09 PM.png>)  ![](<../../.gitbook/assets/Screenshot 2025-04-13 at 9.31.02 PM.png>)
+  * Sendcutsend has 304 and 316 for stainless steel, which are nonmagnetic so we need to use steel sheets. When I was in Japan, I always used SECC, which is a galvanized steel sheet (it's cut after galvanized, so the cut sides of edges are corrosive, but it's reasonable and having corrosive sides  is not an issue in many cases). I believe G90 Galvanized steel is a similar material. Compared to the A36/1008 + finishing option, it's much cheaper. I think I should go with G90 (the design shown below is different from the flanged one).\
+    ![](<../../.gitbook/assets/Screenshot 2025-04-13 at 9.45.42 PM.png>) ![](<../../.gitbook/assets/Screenshot 2025-04-13 at 9.48.00 PM.png>)\
+    ![](<../../.gitbook/assets/Screenshot 2025-04-13 at 9.46.23 PM.png>)
+* I sketched a design for the camera, tube, and objective.\
+  ![](<../../.gitbook/assets/Probe station camera.png>)
+* I noticed that the adhesive side of the conductive tape might not be conductive, and checked it. It was not very conductive, which can be an issue when we want to test the bottom of a chip. I need to find a solution for this. What I'm currently thinking is to place a double-sided tape and a conductive tape close to each other so the chip is attached to both tapes.\
+  [video](https://photos.app.goo.gl/DewYELnKbHn6y7Tg6)
+
+#### Roadblocks
+
+* Need to adjust the tube thread dimensions so the objective lens goes through it.
+
+#### Plan
+
+* Consider a new method to fix a chip while maintaining the ability to test the bottom of a chip.
+* Design a stand for the camera and the objective.
+* Fabricate a stand for the camera and the objective.
+* Adjust the tube thread dimensions so the objective lens goes through it.
+* Order a magnetic base.
+* Design a piezo sensor board fixture.
+* (If time allows) Modify the stage positioner design to be attached to the R-axis stage.
+* (If time allows) Modify the probe positioner design for the height of the new stage positioner design.
+* Order probe needles, probe holders, and XYZ stages.
+
+
+
+### **Weekly Update #11 (4/14 - 4/20)**
+
+#### Accomplishments
+
+* Designed a stand for the camera and the objective.
+* Designed a piezo sensor board fixture.
+* Modified the stage positioner design to be attached to the R-axis stage.
+* (I made all the three components above into one)\
+  ![](<../../.gitbook/assets/Screenshot 2025-04-20 at 10.29.48 PM.png>)[\
+  CAD](https://cad.onshape.com/documents/c0b5a3eb5eb0059801d7da4d/w/57682c497502562ccab84428/e/1c2293d2007d5f64bc9bab5d?renderMode=0\&uiState=6805ae7998032d76349f65cb)
+* Adjusted the tube thread dimensions so the objective lens goes through it (not tested yet).[\
+  CAD](https://cad.onshape.com/documents/3180b48aed4026e6f50f044d/w/b588188e57a5d6bc01f8ec77/e/08116197ddcb62dfedf0f246?renderMode=0\&uiState=6805ad0f16208c54fe871f7e) (tab tube C to RMS)
+* Checked we don't have to modify the probe positioner design for the height of the new stage positioner design.
+* Ordered probe needles, probe holders, and XYZ stages.
+
+#### Roadblocks
+
+* Need to estabilish a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.
+* Need to make sure that the tube thread dimensions are adjusted well so the objective lens goes through it.
+
+#### Plan
+
+* 3D print the new components.
+* Test the camera and the objective.
+* Order a magnetic base.
+* Test a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.
+* Create a program to make sounds when probes are in contact.
+* Documentation.
+
