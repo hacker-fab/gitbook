@@ -338,7 +338,11 @@ For next week, my goals are:
 3. **Make PID code more presentable**:\
    Clean up the structure of the PID code and add documentation, comments, and formatting. I’ll also abstract tuning parameters.
 
-
+> **Feedback**
+>
+> Excellent progress this week, I'm impressed you're tackling both software and hardware at once and how much improvement the PI loop has undergone. Do you have any testing results, or metrics you are using for testing? Also can you link your CADs for packaging? Also I agree prioritizing reestablishing communication with the pump is essential, and debugging against the other pump seems like the best strategy. Let me know when you are ready for heat inserts and need any help.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
