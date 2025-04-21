@@ -258,4 +258,16 @@ Looking ahead, the next major step begins with the arrival of the custom PCB, wh
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdC6cdojWamUdWsZdGF5xzmMxGnNcMhmRPZlIwZPpqEkZdpKgQtpuYQRSvkXKD_ChfofEEF745zgSlAAOFRaq05CJdm0IYDLGn6tCqZTzeq11aAdAxFhxEiv0N2pmj6Re-8s-yQqA?key=MPhR32n5xjnBRr1q_h9LU1MJ" alt=""><figcaption></figcaption></figure>
 
-\
+## Week 11
+
+This week, I made significant progress on both the software and documentation aspects of the project. On the software side, I successfully wrote the code needed for the command line interface to connect to the Arduino. To accomplish this, I utilized the Arduino CLI (Command Line Interface) module, which allows users to interact with Arduino boards directly from the terminal without needing to open the Arduino IDE. I set up the CLI by installing it through the official Arduino website and configuring it to recognize my board. After that, I scripted the necessary commands to compile the Arduino sketch and upload it to the board automatically. This included defining the board type, setting the correct COM port, and creating a streamlined sequence so that users can easily deploy new code versions to the hardware. By automating this process, I improved the efficiency and reliability of the development workflow, which is crucial as we move into testing phases.
+
+\[WILL ADD CODE HERE AFTER MAKING SURE IT WORKS]
+
+
+
+In addition to the coding work, I also dedicated time to developing the project poster. I started laying out the core sections, including the project overview, technical specifications, challenges encountered, and the solutions implemented. I focused on making the poster visually appealing while ensuring that the technical content remains clear and accessible.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-21 at 12.49.00 AM.png" alt=""><figcaption></figcaption></figure>
+
+Looking ahead to next week, I plan to focus primarily on testing. I intend to test not only the code I wrote but also the spin coater as a complete system. Since next week marks the project's winding-down phase, my goal is to ensure that everything functions smoothly and to make any necessary final adjustments based on the test results.
