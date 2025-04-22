@@ -1,6 +1,106 @@
 # Eric Dubberstein
 
-Tasks accomplished week 11 (up to 4/13/2025):
+## Tasks accomplished week 12 (up to 4/20/2025):
+
+> Good work. It is very nice to see that everything of the spin coater, including the pump, is now able to be controlled remotely. I think for next steps, maybe alongside documentation, there can be an integration with what Jess worked on, she had a list of important machine controls and parameters which the DB needs to accommodate, maybe we can see how/what sensors would be needed in the future to add the wide variety of machines that we have. I think the lab auto team can be a good resource here as well. Basically jump-start the next person's work on the machine integration project. Since you have set a baseline, I think future students would have to build upon this work by integrating multiple machines a semester using ur current implementation, I'm thinking like 1 machine per demo or something. So, it seems like if we have some time we can conceptualize what machine would require which sensors, what parameters, what devices, etc. Feel free to reach out anytime with any questions, will def be able to meet sometime this week.
+>
+> &#x20;\- AV
+
+Plans for this week:
+
+The primary plan I have outlined is to complete integration with the spincoater. This is reliant on the last part of the spincoater arriving though. If this part arrives, we should have a fully-functional spincoater that can be controlled from the database.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe49uGLlQ6MmNe-BvFM6dCouYoMO30W1Z_Fs13Zv4_tUM7OQ-v2oL5HmssDmhLPBq0h-SxnABu0sOJcHnf1Srt1od3syZbQ4C6Y0YGvUuw44t6T-Oiky5la6_xWcTzyCpsG8AsD?key=l8lg4tMwnhDPjauU_wkJUQsi)
+
+\
+
+
+In addition to this, I will continue to improve the documentation as needed, including documenting the IOT relay connected to the RPI.&#x20;
+
+I will also assist the automated spincoater team and stepper team with integrating the labcom software as needed.&#x20;
+
+This is the wrapping up phase of the project, so please let me know if there are other things that I should be doing to finish the project on a high note.&#x20;
+
+\
+
+
+Work accomplished this week:&#x20;
+
+The first thing I accomplished this week was updating the lambda API python code on AWS to allow support for PNG uploads. The stepper needs uploads of PNG, not just JPG. The solution was to remove a filter that required a JPG file. This involved modifying a few lines of AWS\_lambda.py and then uploading the file to AWS. See changes on github.&#x20;
+
+\
+
+
+The second thing I accomplished this week was running a full system test (as much as possible). The new addition for this week was the relay switch for the spincoater vacuum pump and motor. I have updated the documentation with this additional component.&#x20;
+
+Slight code changes were needed in the firmware for the spincoater. This can be seen in the repository if you look at lab\_com\_gui.py. I set GPIO pin 17 to 1 when we want to turn the spincoater motor power and vacuum pump on (a couple of seconds before starting the spin). The power is then cut (set GPIO pin 17 to 0) a couple of seconds after the spin is completed.&#x20;
+
+See the demo here:\
+[https://drive.google.com/file/d/1kHcRXPFEUFg3CpuVjimmSSaYmVx57AP5/view?usp=drive\_link](https://drive.google.com/file/d/1kHcRXPFEUFg3CpuVjimmSSaYmVx57AP5/view?usp=drive_link)&#x20;
+
+I also make collapsible code block sections in the documentation. Paste the following into the gitbook:\
+\<details>
+
+&#x20; \<summary>Show code snippet\</summary>
+
+\
+
+
+&#x20; \`\`\`python
+
+&#x20; def hello():
+
+&#x20;     print("Hello, GitBook!")
+
+\</details> \`\`\`
+
+\
+
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQSYpS--A2NV7mIh4C09x6k42G8iX0juV1uG_mPsaCvZSquknaTUf6q19UqqtTfJH3AdI3GfcB8K1RzBYr-h7AQaZrSN7G_qqIEBZF9dQZbUAlJr6tDEmPGftStOBzx0niaaLl1A?key=l8lg4tMwnhDPjauU_wkJUQsi)
+
+The third item I accomplished this week was creating a temporary test frontend for the stepper. Carson got the image upload feature of the stepper working. I built this test page to better demonstrate the functionality of the lab\_com system. The modifications mirror those performed to add the spincoater test page. I pushed the changes to github. The bulk of the code changed is in stepper.html and views.py. I also added some helper methods in utils.py
+
+Here is a quick demo of how it works:
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcq6TeenA0HhYzgptPjYcsxwvQ8wqVKVhM1Bqb2hA1ascWZy-OSAatvrtqjHKzxK7Yaq5VWKhuayja3gJa4axhZ5a8F02GgX7RxdV20YkeQBvkNMUhknzGOgpkl_p9MsEUtmqxj?key=l8lg4tMwnhDPjauU_wkJUQsi)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXei_aNKC6zuWV-n-YrIQpPIWZ-MaGi1KdZCiy9hNLia5CpoMag47uSYfJ9lKVNh8fAsDPV-MkYxNwGyYw5v0is2-zJktybACV83ffJHZYKw4FoJOiQGRF8A3jUlQx5pMjvD7TVMVg?key=l8lg4tMwnhDPjauU_wkJUQsi)
+
+\
+
+
+The final item I accomplished this week was completing the poster to present on Thurday. I linked the poster below.&#x20;
+
+[https://docs.google.com/presentation/d/1bYjEL6R-I\_\_ucyDy-0xwlRl1eu8PsiPh/edit?slide=id.p1#slide=id.p1](https://docs.google.com/presentation/d/1bYjEL6R-I__ucyDy-0xwlRl1eu8PsiPh/edit?slide=id.p1#slide=id.p1)&#x20;
+
+\
+
+
+I am meeting with Carson tomorrow to test the entire lab\_com system with the stepper (web UI-> patterning chip).&#x20;
+
+\
+
+
+Roadblocks:&#x20;
+
+* Spincoater still under construction: I am still waiting for the last part of the spincoater to arrive before I can test the full system with an actual chip. There is not anything I can do. Anirud says the person in charge of making this part might not be able to get it working. We should talk about this on Tuesday during class.&#x20;
+* Is there detailed feedback about the last presentation available (comments?). I can use this to improve for the final presentation.&#x20;
+
+Github project tracker up to date
+
+\
+
+
+Plan for next week:&#x20;
+
+1. Test out the full lithostepper solution
+2. Document Lithostepper solution. Submit documentation for review
+3. Test out the spincoater solution with a chip if the final part of the spincoater arrives
+4. Present poster on Thursday
+5. Start working on the final presentation.&#x20;
+
+## Tasks accomplished week 11 (up to 4/13/2025):
 
 I presented demo two on Tuesday\
 

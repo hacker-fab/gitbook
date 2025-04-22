@@ -11,7 +11,7 @@ description: Katie's weekly updates (Sputtering Process Project)
 * See project tracker here: [https://github.com/orgs/hacker-fab/projects/36/views/1](https://github.com/orgs/hacker-fab/projects/36/views/1)
 * Melinda and I gave our presentation! I think it went pretty well overall.
 * Melinda and I learned how to use the new chamber :sunglasses: We ran a test at 100W and determined that when on the inside, the magnets definitely get hotter than 218C according to the temperature sticker.
-* &#x20;![](<../../.gitbook/assets/image (280).png>)
+* &#x20;![](<../../.gitbook/assets/image (280) (1).png>)
 * Melinda, Jay, and I tried to set up a test with the magnets on the outside and were unfortunately foiled by the magnets being stupid and not having a piece of steel the right size. I did get to see a new saw in the MSE UG lab though so that's a win.
 
 #### Roadblocks
