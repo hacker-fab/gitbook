@@ -262,9 +262,158 @@ Looking ahead, the next major step begins with the arrival of the custom PCB, wh
 
 This week, I made significant progress on both the software and documentation aspects of the project. On the software side, I successfully wrote the code needed for the command line interface to connect to the Arduino. To accomplish this, I utilized the Arduino CLI (Command Line Interface) module, which allows users to interact with Arduino boards directly from the terminal without needing to open the Arduino IDE. I set up the CLI by installing it through the official Arduino website and configuring it to recognize my board. After that, I scripted the necessary commands to compile the Arduino sketch and upload it to the board automatically. This included defining the board type, setting the correct COM port, and creating a streamlined sequence so that users can easily deploy new code versions to the hardware. By automating this process, I improved the efficiency and reliability of the development workflow, which is crucial as we move into testing phases.
 
-\[WILL ADD CODE HERE AFTER MAKING SURE IT WORKS]
+Code:
 
+```
+#include <AccelStepper.h>
 
+// --- CNC Shield Pin Assignments ---
+#define stepPin 9
+#define dirPin  10
+#define enPin   11
+#define sensorPin A0
+
+// --- Motor and Mechanics Parameters --- NEED TO CHANGE DEPENDING ON WHATS THERE
+const int motorFullStepsPerRev = 200;
+const int microstepping = 16;
+const float beltPitch = 2.0;
+const int pulleyTeeth = 20;
+
+// Derived constants
+const int stepsPerRev = motorFullStepsPerRev * microstepping;
+const float pulleyCircumferenceMM = beltPitch * pulleyTeeth;
+const float stepsPerMM = stepsPerRev / pulleyCircumferenceMM;
+
+// --- Homing Parameters ---
+const float homingSpeed = 100.0;
+const float homingAcceleration = 50.0;
+const float homingThresholdCM = 1.0;
+
+// --- Normal Motion Parameters ---
+const float normalSpeed = 800.0;
+const float normalAcceleration = 400.0;
+
+AccelStepper stepper(AccelStepper::DRIVER, stepPin, dirPin);
+
+// --- Position Tracking (in mm) ---
+float currentPositionMM = 0.0;
+
+bool running = true; // Keeps track if user is still entering moves
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(enPin, OUTPUT);
+  digitalWrite(enPin, LOW);
+
+  stepper.setMaxSpeed(normalSpeed);
+  stepper.setAcceleration(normalAcceleration);
+
+  performHoming();
+
+  Serial.println("Ready! Enter a distance in mm, or type STOP to end:");
+}
+
+void loop() {
+  // Keep moving until user types STOP
+  if (running) {
+    // Check if there is incoming serial data
+    if (Serial.available() > 0) {
+      String input = Serial.readStringUntil('\n'); // Read input until newline
+      input.trim(); // Remove extra spaces and newlines
+
+      if (input.equalsIgnoreCase("STOP")) {
+        Serial.println("Stopping command loop. Goodbye!");
+        running = false;
+        return;
+      }
+
+      // Otherwise treat input as a target distance
+      float targetDistance = input.toFloat();
+
+      Serial.print("Received command to move to: ");
+      Serial.print(targetDistance);
+      Serial.println(" mm");
+
+      moveToPositionMM(targetDistance);
+      waitForMotion();
+
+      Serial.println("Move complete. Enter next distance or type STOP:");
+    }
+  }
+
+  stepper.run(); // Always call run() even when waiting
+}
+
+// --- Perform Homing Using Distance Sensor ---
+void performHoming() {
+  Serial.println("Starting homing procedure...");
+
+  float lastDistance = readDistanceCM();
+  float currentDistance = lastDistance;
+
+  stepper.setMaxSpeed(homingSpeed);
+  stepper.setAcceleration(homingAcceleration);
+  stepper.moveTo(-10000);
+
+  while (true) {
+    stepper.run();
+
+    currentDistance = readDistanceCM();
+
+    if ((currentDistance - lastDistance) < homingThresholdCM) {
+      stepper.stop();
+      break;
+    }
+
+    lastDistance = currentDistance;
+  }
+
+  stepper.setCurrentPosition(0);
+  currentPositionMM = 0.0;
+
+  Serial.println("Homing complete. Current position set to 0 mm.");
+
+  stepper.setMaxSpeed(normalSpeed);
+  stepper.setAcceleration(normalAcceleration);
+}
+
+// --- Move to a target position (in mm) ---
+void moveToPositionMM(float targetPositionMM) {
+  long targetSteps = targetPositionMM * stepsPerMM;
+  stepper.moveTo(targetSteps);
+  currentPositionMM = targetPositionMM;
+}
+
+// --- Wait until motor stops moving ---
+void waitForMotion() {
+  while (stepper.distanceToGo() != 0) {
+    stepper.run();
+  }
+}
+
+// --- Read Sharp Distance Sensor ---
+float readDistanceCM() {
+  int sensorValue = analogRead(sensorPin);
+  float distanceCM = 10650.08 * pow(sensorValue,-0.935) - 10;
+  distanceCM = roundf(distanceCM);
+
+  if (distanceCM < 10) distanceCM = 10;
+  if (distanceCM > 80) distanceCM = 80;
+
+  return distanceCM;
+}
+
+```
+
+The Arduino code is designed to:
+
+1. Move a NEMA-17 stepper motor (controlled through a CNC shield) along a belt system to a specific distance, based on input from a user
+2. Read distance measurements from a Sharp distance sensor connected to the analog pin A0
+3. Convert the sensor readings into meaningful distances (in cm) based on calibration
+4. Zero the motor to its farthest position using the sensor reading at startup
+5. Allow continuous user control through the terminal, where the user can input distances (in cm) and the system will move the motor to the specified position
+6. The program will also allow the user to stop the motion by typing "STOP" in the terminal
 
 In addition to the coding work, I also dedicated time to developing the project poster. I started laying out the core sections, including the project overview, technical specifications, challenges encountered, and the solutions implemented. I focused on making the poster visually appealing while ensuring that the technical content remains clear and accessible.
 
