@@ -177,3 +177,29 @@ Another roadblock was that two of the four new chips displayed rainbow-ish color
 **Plans for next week:**
 
 Next week we will continue to fabricate the two successful chips. We will start developing body contact (P+) as the next step. We will also try to design some standard cell masks, such as inverter.
+
+
+
+### **Weekly Update #12**
+
+#### **What was accomplished:**
+
+Due to the lack of good synthetic data for device modeling flow, I used Cadence 45nm process and Virtuoso simulator to generate IDS vs. VDS and IDS vs. VGS data. I drew a nmos connected to a 1k ohm resistor schematic, adjusted the nmos length and width to both 10um to match with our process (10um is the largest value it can take), and I also adjusted some other physical parameters such as source-drain width.
+
+<figure><img src="../../.gitbook/assets/image (288).png" alt="" width="223"><figcaption><p>Cadence Schematic</p></figcaption></figure>
+
+I swept VGS and VDS from 0-5V and plotted the current and exported the data into csv file.
+
+<figure><img src="../../.gitbook/assets/image (289).png" alt=""><figcaption><p>IDS vs. VDS</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (290).png" alt=""><figcaption><p>IDS vs. VGS</p></figcaption></figure>
+
+**Roadblocks:**
+
+I found out that cadence 45nm gives results that are very similar to the real chip’s data, but are not close to what we expected as ideal. So we cannot use this data to approach modeling SPICE level 1.
+
+**Plans for next week:**
+
+We can try to use KiCad with some synthetic SPICE level 1 parameters to generate a graph and plug that graph back into our device modeling flow to fine-tune the script.
+
+We should also think about how to process the more realistic data. Either we process the data so they seem more ideal and plug in model 1, or we research higher-level SPICE models.
