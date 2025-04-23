@@ -272,3 +272,26 @@ We also ran into an issue where upon a mode switch the stepper moves it's x and 
 Test out possible ways to adapt to the new stepper 7% size increase by either shrinking the mask in a photo editor, or calculating and then creating some borders using the stepper GUI.
 
 Continue with the few remaining steps in the fabrication, calculating multi-layer HF-etch times for the B154 and 700B based on their estimated thickness from spincoat RPM and time. Then just N+ doping and Aluminium evaporation, after which we can carry out probe station testing, but likely with the body contact tied to source, since our Probe station only has 3 voltage/current drivers.\
+\
+\
+\
+**Week 12 Update**\
+\
+**Work done:**\
+\
+**-**&#x43;aught up on Ying and Felicia's initial work on device modelling python program, and ran various device modelling flows to test out the procedure and accuracy. \
+-Ran simulations in Cadence Virtuoso using some nmos models that industry standard to gather data for information on I\_ds - Vds curves at various V\_g values.
+
+<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption><p>Y-axis is I_d and X-axis is V_ds. </p></figcaption></figure>
+
+-Using the SPICE data, further validated our device\_model python script for device parameter extractions, while the non-ideal semi-realistic data gives us a better idea of our program.
+
+**Roadblocks:**&#x20;
+
+The data gathered from Virtuoso turned out to have strange curves and turns as seen above which is not ideal. This is likely due to some limitations in the modelling accuracy. \
+a\
+**Next steps:**\
+\
+Further explore KiCad SPICE modelling and the parameters' effects on those simulation results.\
+Continue investigating and developing the extraction procedure and parameters for LEVEL 2 mosfet modelling.\
+\
