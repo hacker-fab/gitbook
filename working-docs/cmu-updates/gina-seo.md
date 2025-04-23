@@ -4,6 +4,32 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #11&#x20;
+
+**What was accomplished:**&#x20;
+
+* Worked on fabrication of Metrology Resistor chips from Friday-Sunday&#x20;
+  * First chip had issues with etching (as shown on left), so we re-did patterning on it on Sunday and left it in for longer (as shown on right).\
+
+
+<figure><img src="../../.gitbook/assets/IMG_5C2E0E76BFCC-1.jpeg" alt="" width="351"><figcaption><p>After P504 glass on chip#1, chip#2. Overlapping channel region seen above. </p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-20 at 11.34.58 AM.png" alt="" width="375"><figcaption><p>chip#1: HF etch time was too short (10s) so did not etch all the way. Redid process below. </p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/IMG_3E919202BFE7-1.jpeg" alt="" width="375"><figcaption><p>chip#1 after patterning and developer again. </p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-20 at 12.13.03 PM.png" alt="" width="375"><figcaption><p>chip#2 after patterning and developer</p></figcaption></figure>
+
+* Completed EDA Bonus credit poster.&#x20;
+
+**Roadblocks:**\
+**-** we were able to get through these roadblocks, but it was mostly about uncertainty of etching time, tool error margins, human mistakes, etc. that delayed our fabrication process. But, we were able to do iterations with feedback from Jay and Icey to figure it out.&#x20;
+
+**Plans for next week:**
+
+* Present bonus poster on Thursday!
+* Discuss simulation methodology in more specific with Icey to complete before final demos.&#x20;
+
 ## Update #10
 
 **What was accomplished:**
