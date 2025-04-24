@@ -212,3 +212,16 @@ If not, we have good material for the presentation anyway — our detection is f
 * Theta error detection/correction can come after the other detection considerations. Since we don't have a way to correct theta via motors, it would be good to correct theta by first checking if the pattern image would be distorted via rotation (i.e. is there enough border space available). If distortion is unavoidable, the user should be prompted to manually correct the angle. If no distortion occurs as a result of digital image rotation, then this should be done instead.
 * Eventually, we would like to see some concrete performance metrics for the accuracy and reliability of automatic alignment. For different stage offsets/initial displacements, how close to perfect does the software align the next pattern? A potentially good way to automate this is to capture images of the pattern being projected after alignment, and measuring the offset between the projected alignment marks and the alignment marks on the chip. This flavor of data is important to have for the Final Presentation.
 * Please update the GitHub Project Tracker with finer-grained tasks for automated alignment. I look forward to seeing your preliminary testing results and further progress.
+
+## Week 11
+
+This week we got automatic alignment working — a first pass. I also presented my progress in our [second presentation.](https://docs.google.com/presentation/d/127lCM4W7PZj7Ds1In-xbA3Q1wI3e4-fx4tTDdlLWYCk/edit?usp=sharing) See the presentation slides for a live demo.
+
+The code changes are in the [align branch](https://github.com/hacker-fab/stepper/tree/align). We also tested the real-time detection code after the linting and formatting changes were merged.
+
+This new code is simpler. It also takes into account multiple markers. We are also able to detection positions of the markers by running detection on the projected image from the PNG files, so long as there are no actual markers on the chip in frame (which would confuse detection).
+
+This has been our big goal and we made great progress this week.
+
+In the upcoming week, we'll be doing more testing. We can get more metrics and also think about rotation.
+
