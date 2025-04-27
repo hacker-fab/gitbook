@@ -203,7 +203,7 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 <figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Slide the Y axis motor mount onto the Y axis. You will need to remove some screws and push the stage to allow it to slide on.
 

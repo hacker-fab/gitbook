@@ -9,7 +9,7 @@ coverY: 0
 
 Deposit thin films of Aluminum onto the chip so that we can make electrical contact with doped Si and make interconnects between those contacts.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Before Evaporation </p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="256"><figcaption><p>Post Evaporation (Aluminum in Blue)</p></figcaption></figure>
 
@@ -63,7 +63,7 @@ Deposit thin films of Aluminum onto the chip so that we can make electrical cont
 * Wait for the pressure to reach at least 6E-5 hPa. This will take 10+ minutes depending on how clean the inside of the chamber is, and how well it is sealed.
 * Turn on the power source as shown below (A)
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p><em>Program on computer next to thermal evaporator. Note green start button to begin, rate (A/s) in the table, and thickness (Angstroms) in the table on the computer program. A (yellow circle) indicates the power supply on bottom and B (red circle) indicates the knob for adjusting current.</em></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p><em>Program on computer next to thermal evaporator. Note green start button to begin, rate (A/s) in the table, and thickness (Angstroms) in the table on the computer program. A (yellow circle) indicates the power supply on bottom and B (red circle) indicates the knob for adjusting current.</em></p></figcaption></figure>
 
 * Press start on the STM software
 * Slowly turn up the current on the power source until \~30 Angstrom/s is reached (do not exceed 45 amps). Keep adjusting the current to keep the rate between around 30 Angstrom/second until the thickness hits 5 kÅ, or you can no longer sustain the rate.

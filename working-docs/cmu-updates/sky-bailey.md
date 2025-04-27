@@ -146,11 +146,11 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
     Some fun side adventures: this week I also did some testing with oil immersion. This was mainly for my intuition, but here's some images I captured comparing 10x, 100x dry, and 100x oil:\
 
 
-    <figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>10x</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (253).png" alt="" width="375"><figcaption><p>10x</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>100x dry</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (5).png" alt="" width="375"><figcaption><p>100x dry</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>100x oil</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (5).png" alt="" width="375"><figcaption><p>100x oil</p></figcaption></figure>
 
     I was pretty astounded to see how detailed the 100x oil can get us in terms of microscopy, so I am absolutely interested to give this a try for immersion lithography to try to create some crazy small features.
 2. Current blockers is high workload for HRI, but that's about it. I ordered a 10x objective from Edmund Optics which seemingly didn't get added to the order with the 100x, but since we've basically decommissioned Stepper v2, that's not urgently needed.

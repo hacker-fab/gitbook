@@ -129,7 +129,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 17. Press \[clear] to project a black screen.
 18. Move the Z stage by 1800 steps in +Z. This will switch from focusing in red to approximately focusing in UV.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
 
 19. Turn the exposure time to 200-300ms and the gain all the way up on AmScope.
 20. &#x20;Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.

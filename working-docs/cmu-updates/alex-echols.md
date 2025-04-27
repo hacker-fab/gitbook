@@ -113,7 +113,7 @@ There are two primary failure modes that we are considering:
 
 This mode is primarily caused by the differences in thermal expansion coefficients of the various materials of the system. As the entire heater is warmed, we expect some amount of stress formation, regardless of differences in local thermal profile. Since this behavior can be adequately described in the time limit (when the heater has reached steady state), I will refer to this as the "static" mode of failure. This mode determines the maximum operating temperature of the device.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Static thermal stress diagram. Depending on the CTEs of the materials, the AlN may expand more than the Al.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Static thermal stress diagram. Depending on the CTEs of the materials, the AlN may expand more than the Al.</p></figcaption></figure>
 
 2. Dynamic thermal stress induced failure
 
@@ -125,7 +125,7 @@ Because the relative lack of expansion of the "cold zone" with respect to the "h
 
 An important note on both modes is that we expect the initial stress to be zero at room temperature because this is where the heater is being assembled. Based on this, we can create very rough guesses at the trends of the transient thermal behavior of our heater.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Potential maximum stress vs time for the AlN insulator disk.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Potential maximum stress vs time for the AlN insulator disk.</p></figcaption></figure>
 
 In red, we see a system which is largely dominated by the static failure mode. This would asymptotically increase in maximum stress as time increases. Though we cannot evaluate the stress at infinite time, we can make estimates of the true maximum stress based on the plots we can generate. In blue, we see a system which is largely dominated by the dynamic failure mode. The maximum thermal stress quickly increases as time increases, and then settles back down once the system begins to equilibriate.
 

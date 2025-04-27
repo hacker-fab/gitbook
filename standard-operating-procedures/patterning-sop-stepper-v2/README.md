@@ -131,7 +131,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1) (1).png>)
 
 4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 

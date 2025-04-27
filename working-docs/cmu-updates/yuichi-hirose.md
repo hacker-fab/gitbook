@@ -344,7 +344,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 * I asked Sky in the litho stepper team about the tube between camera and the objective lens.\
   My question was if it is a common way to achieve the 160 mm length between a camera and an objective by buying a few of [this extension tube](https://a.co/d/eTDqlJl) and connecting them to be 160 mm as total, and a [C-mount adaptor for objective lenses](https://a.co/d/j5VsfJK). He told me that it would be an easier option to find something like [this](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/), which has the exact distance we need already. I noticed that the length of the tube is only 132.50 mm, or 136.50 mm including the thread, which is much shorter thatn 160 mm. He told me that part of this is because there is a 17.5 mm distance between the start of the threads on the camera side and the actual camera sensor (that's called the flange focal distance, which is specified by the spec for the C lens mount which the camera uses), which would lead to a total of 150 mm, not 160 mm. And the reason why this is 150 mm, not 160 mm, is that the actual image plane projected by the objective is 150mm, not 160mm - this means that if we're using a camera sensor instead of an eyepiece, our sensor needs to be at 150 mm not 160 mm.\
-  ![](<../../.gitbook/assets/image (5).png>)\
+  ![](<../../.gitbook/assets/image (5) (2).png>)\
   [https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/)\
   ![](<../../.gitbook/assets/image (1) (6).png>)\
   [https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/)\
@@ -356,7 +356,7 @@ description: My name is Yuichi and I will be working on the probe station this s
   He told me that it should't matter in this case. It matters when we care about specific brightness and resolution, but since the probe station is targetting large pads on the chip, he thinks it really isn't a worry. My understanding is that it matters when we try to observe nanoscale objects, when it comes to the resolution. For the brightness, it matters when we somehow can't have a light near the objects, I guess? Anyways, it seems like we don't have to care about the numerical aperture for our appication.
 * I found the lens with smaller magnification than 10x. Olympus E A4 (4x objective).\
   ![](<../../.gitbook/assets/image (2) (4).png>)
-* I made a board to be placed on top of the piezo vibration sensor to stabilize wobbling chips.![](<../../.gitbook/assets/image (3) (4).png>) ![](<../../.gitbook/assets/image (6).png>)
+* I made a board to be placed on top of the piezo vibration sensor to stabilize wobbling chips.![](<../../.gitbook/assets/image (3) (4).png>) ![](<../../.gitbook/assets/image (6) (2).png>)
 * I conducted the piezo vibration sensor test if the sensor still works when there is the board on top of it. I didn't work. The board significantly decreases the sensor's sensitivity.\
   [video1](https://photos.app.goo.gl/NvgATJFFftdn53GX6) [video2](https://photos.app.goo.gl/Fae4d9VT4CcfbHfV7)
 * I found that the vacuum chuck does not work with the piezo vibration sensor. Even if I hold the vacuum pump motor in the air, the air or the vibration from the tube affects the sensor.\
@@ -479,7 +479,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 
 
-### **Weekly Update #11 (4/14 - 4/20)**
+### **Weekly Update #12 (4/14 - 4/20)**
 
 #### Accomplishments
 
@@ -507,4 +507,32 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Test a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.
 * Create a program to make sounds when probes are in contact.
 * Documentation.
+
+
+
+### **Weekly Update #13 (4/21 - 4/27)**
+
+#### Accomplishments
+
+* 3D printed the new components and assembled them. I assembled the camera + stage positioner unit. I also modifed the design of the probe positioner a bit and assembled one probe positioner.\
+  ![](<../../.gitbook/assets/image (2).png>)\
+  \
+  For the tube connecting the camera and the objective, I gave several tries to 3D print the RMS thread but failed (the objective didn't go all the way). So I ended up adding a slit and it worked. However, this means dust particles can enter inside the tube. How strictly should we be carefule about this? \
+  ![](<../../.gitbook/assets/image (3).png>)\
+  \
+  For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
+  ![](<../../.gitbook/assets/image (5).png>)\
+
+* Tested the camera and the objective. I couldn't get the pattern very visible but it was sufficient (the patten part looks black and silver when I look at the chip with naked eyes, but why does this happen? Other objects like the piezo vibration sensor or the electric wire look as they are on the camera as well).\
+  ![](<../../.gitbook/assets/image (6).png>)\
+  ![](<../../.gitbook/assets/image (1).png>)\
+  [video](https://photos.app.goo.gl/bdJTNxEfWmi7zdPx6)
+* I didn't order a magnetic base because I want to finalize everything before ordering it, and we can use the sheet metal boards I have for now.
+* Tested a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.\
+  The situation is that our first plan using the adhesive side of the conductive tape ([weekly update #9](yuichi-hirose.md#weekly-update-9-3-24-3-30) ) was found not very conductive ([video](https://photos.app.goo.gl/DewYELnKbHn6y7Tg6)). So I tried applying the conductive tape and a regular double-sided tape next to each other.\
+  ![](<../../.gitbook/assets/image (4).png>)\
+  Then, I found the piezo vibration sensor doesn't work with this setup, which means that the adhesive side of the conductive tape is conductive enough to short the white part and the copper part of the sensor. So now I think it might be sufficiently conductive for the chip measurement purposes. We need to do actual chip tests that requires probing the bottom of the chip to check if it works.&#x20;
+* Created a program to make sounds when probes are in contact.\
+  Now I am in Japan for a conference and I didn't bring the Arduino and the piezo vibration sensor, so I temporarily use keyboard input values instead of sensor values for now.\
+  [code](https://github.com/yuichirose/probe-station-beep.git) / [video](https://photos.app.goo.gl/HswURpdx6Pax8VUh6)
 
