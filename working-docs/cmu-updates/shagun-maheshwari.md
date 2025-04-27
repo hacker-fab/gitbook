@@ -4,6 +4,32 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 12:
+
+Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+Progress Update:
+
+* Finished fabricating 33/37 steps of the n-well process for my 30 second SOG diffusion N-well chip [https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)
+  * Came in on Tue, Wed, Thurd, Fri, Sat for fabrication
+* Created and submitted the CMOS process development poster [https://drive.google.com/file/d/1-kFiMzNgtymITPpHvGWgkEAeREEfwg9t/view?usp=drive\_link](https://drive.google.com/file/d/1-kFiMzNgtymITPpHvGWgkEAeREEfwg9t/view?usp=drive_link)
+
+
+
+Roadblocks:
+
+* None as of now&#x20;
+
+
+
+Next steps:
+
+* Finish fabricating the remaining steps (patterning + Al etching)
+* CV testing&#x20;
+* Dopant Profile Analysis
+* Poster presentation
+* Final documentation draft
+
 ## Update 11:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
