@@ -592,3 +592,50 @@ description: Haewon's weekly updates for the ALD and SOG.
 
 * Test the new LabVIEW with the subVI's
 * Run the process and make changes based on any errors&#x20;
+
+## Update 13 (SOG)
+
+**Accomplishments**
+
+* Probed the two control chips (P504 and B154), two n-doped chips, and one p-doped chip
+
+<figure><img src="../../.gitbook/assets/IMG_1576.jpeg" alt="" width="139"><figcaption><p>Resistance measurements</p></figcaption></figure>
+
+* Controls have good resistance measurements, n-doped chips measured around the same number for all distances, and the p-doped read an order of 10^6 for muliple patterns&#x20;
+
+**Roadblocks**
+
+* Struggled using the probe machine but got the hang of it after the help of Daniel
+* Need to find out why the chips are reading unusual resistances&#x20;
+
+**Future Plans**
+
+* Research why the probe testing came out the way it did
+* Compare the 700B control and test chip
+* Prepare for the final demonstration on Friday&#x20;
+
+## Update 13 (ALD)
+
+**Accomplishments**
+
+* Tested the LabVIEW with the subVI's but made changes
+  * Only one subVI for the PWM but running multiple instances on the mainVI
+  * Fixed the problem with the stop button (original stop button made it unclear weather it was reading True or False, so I changed it to the switch that clearly shows that)
+  * Changed the Arduino code to read only one print statement instead of multiple at a time
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-04-27 at 5.59.20 PM.png" alt="" width="188"><figcaption><p>Updated LabVIEW</p></figcaption></figure>
+
+* Jumper cables were added
+
+**Roadblocks**
+
+* Arduino code reads temperatures ranging from 100 to 600 and unsure as to why this is happening
+* I think the Arduino code is only reading from the first thermocouple and unsure how to change it so that it reads from all of them
+* Jumper cables caused a detection issue on the Arduino IDE that was not allowing the temperatures to be read
+
+**Future Plans**
+
+* Check with Viswesh if the LabVIEW is properly running
+* Figure out what to do about the jumper cables
+* Change the Arduino code to read all four thermocouples values&#x20;
+* Prepare for the final demonstration&#x20;
