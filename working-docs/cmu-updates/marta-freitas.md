@@ -497,3 +497,34 @@ Feedback
 Given the amount of fabrication I would split this between you and Shagun. I would  expect you to fabricate and test the p-substrate MOScap and transmission line tests. I would then expect Shagun to fabricate the two n-well MOSCaps.
 
 We have the chemicals to make our own Al etchant so that should no longer be a roadblock.
+
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #12 (Apr 20)</mark>
+
+Folders: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72) ; [https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ](https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ)
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1the](https://github.com/orgs/hacker-fab/projects/35/views/1the) ; [https://github.com/orgs/hacker-fab/projects/34](https://github.com/orgs/hacker-fab/projects/34)
+
+
+
+<mark style="color:blue;">Accomplished this week:</mark>
+
+* Made the fabublox process for p-type MOSCap ([https://www.fabublox.com/process-editor/748beca7-ce50-4455-9266-4f1fa0d2e588](https://www.fabublox.com/process-editor/748beca7-ce50-4455-9266-4f1fa0d2e588)).
+* Started fabrication of 2 chips with p-type MOSCap (went until step 26 of the process):
+
+<figure><img src="../../.gitbook/assets/p-moscap after diffusion - 2.jpg" alt="" width="375"><figcaption><p>Step 23, after dopant diffusion and before Al deposition</p></figcaption></figure>
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+There are no roadblocks at the moment.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Finish fabrication of the p-type MOSCap (14 steps to go \~2h).
+* Probe and interpret the results.
+* Work on the transmission line chips.
+* Work on the final documentation of both projects.
+
