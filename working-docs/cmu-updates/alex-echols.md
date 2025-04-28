@@ -4,6 +4,37 @@ description: Weekly Updates for Alex Echols (ALD Project)
 
 # Alex Echols
 
+## Update 13 (04/27/2025)
+
+### Progress Updates
+
+* Heater V2
+
+I was able to cut the plates for heater V2 this week, though it was out of 1/16" aluminum, rather than the 1/8" used for V1. Though the cutting was successful, the lower thickness is unfortunately not suitable without standoffs between the layers, which currently do not exist. I will be checking the aluminum scrap in techspark to see if there are sufficiently sized pieces of thicker material that could be used, but obviously this depends pretty heavily on luck. In terms of characterization, I would not expect this iteration to behave substantially differently than the initial one, so it is very likely that the same controls can be used without issue.
+
+* Heater controls
+
+<figure><img src="../../.gitbook/assets/controls.png" alt=""><figcaption></figcaption></figure>
+
+Above is a plot of the real temperature vs time for various control schemes. Measurements were taken over 10 minutes, starting from the first time that the temperature of the heater exceeds the setpoint.&#x20;
+
+In blue is the temperature from Bang-Bang control. Over some sections of this data, it is the most stable control scheme, achieving an error of a few tents off of the setpoint for several minutes. Later in the data, we see large spikes in the temperature which I currently do not have an explanation for. I plan to do additional testing, as this may be caused by a code error in my control software, or a hardware issue in the electronics or physical heater assembly. I would like to examine how factors like lightly bumping the chamber change the temperature, as if a correlation can be drawn between an external event and an issue with the controls, we may be able to either account for that with our process or code.
+
+In orange is the temperature from Proportional control. When testing the bang-bang controls, I noticed that the average temperature was a bit higher than the setpoint (0.1 degrees or so). My best guess for the cause of this error is a lag effect, where we notice that the temperature goes below the setpoint, turn the power on to max, and by the time the temperature goes above the setpoint again, there is already some "thermal velocity" which needs to be damped. I figured that the use of a controller which is proportional to the difference in temperature could lower the amount of overshooting. I tried various values for the constant of proportionality (not a full tuning, but enough to get a rule of thumb), and am showing the best of the constants that I tested. Though the amplitude of the oscillations is much larger, it is still within an acceptable level, and the average temperature is much more comfortably placed relative to the setpoint.
+
+In green is the temperature from PID control, though I found the I term to be always detrimental, and so this plot is technically only a PD controller. It might be interesting to consider why the behavior is different than the P controller, but for our purposes it just matters that this is worse than proportional control alone. Again, I did not do a full tuning process, and it is certainly possible that there are other sets of constants which perform better, however I do not think that it is worth the effort to go through this process.
+
+My recommendation is that we use Bang-Bang control for our process. I believe that with a small amount of additional work, we will be able to trace the issue with the temperature spiking. I would like to examine how the offset from the setpoint to the mean temperature changes when we set the temperature to different values, as it may be as simple as hard coding an offset into our control code.
+
+### Roadblocks
+
+* No major roadblocks to report
+
+### Plans
+
+* Finish up documentation
+* I would like to conduct some more rigorous testing for stability, perhaps over multiple hours. If bang-bang control proves to be unworkable, I plan to write a PID tuning code in Python which can interface with the Arduino via serial.
+
 ## Update 12 (04/20/2025)
 
 ### Progress Updates
