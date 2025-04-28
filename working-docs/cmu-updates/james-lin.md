@@ -12,6 +12,54 @@ Packaging Project Proposal: [https://docs.google.com/document/d/1mPezRVWu7PNa3gg
 
 ***
 
+## Weekly Update #13
+
+### ALD:
+
+Progress:
+
+* all exhaust fittings arrived except for 1" tubing
+* sent email to Matt asking about water ampule and exhaust installation
+* added grommets to delivery storage
+
+<figure><img src="../../.gitbook/assets/image (293).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (295).png" alt="" width="375"><figcaption></figcaption></figure>
+
+Challenges:
+
+* we tried to fill water ampule, did not succeed, opening was too small and air inside prevented water from flowing in
+* we are very tight on time to get the system to deposit before school ends, major hold up being the exhaust
+
+Plans:
+
+* install exhaust
+* fill water ampule
+* work on final presentation and documentation
+
+### Packaging:
+
+Progress:
+
+* Soldered all components for two packages and motherboard!!!!
+  * was able to test fit everything successfully
+
+<figure><img src="../../.gitbook/assets/image (292).png" alt="" width="375"><figcaption><p>Package</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (291).png" alt="" width="375"><figcaption><p>Package on top of motherboard</p></figcaption></figure>
+
+Challenges:
+
+* will be a bit short on time to do wire bonds and testing before final presentation
+
+Plans:
+
+* wire bond on Tuesday&#x20;
+* IV curves before final presentation?
+* work on final presentation and documentation
+
+***
+
 ## Weekly Update #12
 
 ### ALD:
