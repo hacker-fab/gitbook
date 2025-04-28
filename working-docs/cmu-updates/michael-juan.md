@@ -797,7 +797,7 @@ Programmed the CAM file for machining for the flexure.
     * Machined off 50 microns at a time until a working thickness of 0.35mm.
     * tested aluminum flexure on the previous stick slip stage.
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 * Measured a piezo without gluing it onto a flexure it behaves linearly at least with the available measuring tools.
 
 ### Roadblocks

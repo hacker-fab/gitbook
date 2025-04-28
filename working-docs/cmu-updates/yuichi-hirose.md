@@ -515,10 +515,10 @@ description: My name is Yuichi and I will be working on the probe station this s
 #### Accomplishments
 
 * 3D printed the new components and assembled them. I assembled the camera + stage positioner unit. I also modifed the design of the probe positioner a bit and assembled one probe positioner.\
-  ![](<../../.gitbook/assets/image (2).png>)\
+  ![](<../../.gitbook/assets/image (2) (1).png>)\
   \
   For the tube connecting the camera and the objective, I gave several tries to 3D print the RMS thread but failed (the objective didn't go all the way). So I ended up adding a slit and it worked. However, this means dust particles can enter inside the tube. How strictly should we be carefule about this? \
-  ![](<../../.gitbook/assets/image (3).png>)\
+  ![](<../../.gitbook/assets/image (3) (1).png>)\
   \
   For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
   ![](<../../.gitbook/assets/image (5).png>)\
@@ -530,7 +530,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 * I didn't order a magnetic base because I want to finalize everything before ordering it, and we can use the sheet metal boards I have for now.
 * Tested a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.\
   The situation is that our first plan using the adhesive side of the conductive tape ([weekly update #9](yuichi-hirose.md#weekly-update-9-3-24-3-30) ) was found not very conductive ([video](https://photos.app.goo.gl/DewYELnKbHn6y7Tg6)). So I tried applying the conductive tape and a regular double-sided tape next to each other.\
-  ![](<../../.gitbook/assets/image (4).png>)\
+  ![](<../../.gitbook/assets/image (4) (1).png>)\
   Then, I found the piezo vibration sensor doesn't work with this setup, which means that the adhesive side of the conductive tape is conductive enough to short the white part and the copper part of the sensor. So now I think it might be sufficiently conductive for the chip measurement purposes. We need to do actual chip tests that requires probing the bottom of the chip to check if it works.&#x20;
 * Created a program to make sounds when probes are in contact.\
   Now I am in Japan for a conference and I didn't bring the Arduino and the piezo vibration sensor, so I temporarily use keyboard input values instead of sensor values for now.\

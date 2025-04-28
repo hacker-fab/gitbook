@@ -22,9 +22,9 @@ Progress:
 * sent email to Matt asking about water ampule and exhaust installation
 * added grommets to delivery storage
 
-<figure><img src="../../.gitbook/assets/image (293).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (295).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Challenges:
 
@@ -44,9 +44,9 @@ Progress:
 * Soldered all components for two packages and motherboard!!!!
   * was able to test fit everything successfully
 
-<figure><img src="../../.gitbook/assets/image (292).png" alt="" width="375"><figcaption><p>Package</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Package</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (291).png" alt="" width="375"><figcaption><p>Package on top of motherboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Package on top of motherboard</p></figcaption></figure>
 
 Challenges:
 

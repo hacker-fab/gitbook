@@ -161,3 +161,13 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 1. This week, I got a nasty cold that lasted all week, so I wasn't able to do the characterization I planned. :(
 2. The big blocker this past week was of course being sick, but that's cleared up now. Now the blocker is my HRI class, which thankfully should be all done by Monday night and after that point I should be in the clear to finish everything else up for Hackerfab.
 3. Current plans for characterization are the same, and I have some more concrete plans for documentation to add on to what I said last week. The big thing is that I need to make the new V2.1 docs subsume the V2 docs: mainly, this will consist of moving over the assembly instructions from the V2 page and making the changes for V2.1, probably including updating photos along the way. Along with this, this week I'll also help with updating the project poster for the stepper, but I won't be able to present it (eCTF awards ceremony conflicts with it unfortunately)
+
+### Weekly Update 13
+
+1. Final update! Unfortunately, I was swamped with both HRI work (which was extended to Wednesday, and I needed all that time) and then traveled to Boston for eCTF, but now that I'm back... I should be all clear to finish up my testing, docs, and presentation.
+2. No more blockers! Other classes are done (except HRI which has just a chill take-home final).
+3. I think since I have been mostly absent from Hackerfab work for the past while I should write out a full list of tasks that I have on my plate for this week:
+   * V2.1 Characterization: I intend to do vibration characterization based on the method I described in my presentation (recording a video with the camera and measuring the movement of features)
+   * Finish V2.1 docs: they will be fully standalone from the V2 docs, and so will include all of the instructions that are currently in V2 docs.
+   * Finalize CAD: It's time for me to actually do the thing that I said basically every week of the first half of the semester, that is moving all of the V2.1 CAD into one place (Onshape)
+   * Prep final presentation: I intend to only briefly discuss V2.1 (mainly the design choices and the results), and then continue on to discussing future things that could become Stepper V3 (custom projector, immersion optics, pulsed light, etc)
