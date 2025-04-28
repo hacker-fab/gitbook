@@ -786,3 +786,45 @@ Show in documentation why I believe that the designed flexure stage can have dou
 
 
 
+## **Update 12 (4/20/2025)**&#x20;
+
+Programmed the CAM file for machining for the flexure.
+
+* Redesigned the flexure to use aluminum rather than steel. Because materials did not arrive.
+*   Tested the flexure dimensions for aluminum.
+
+    * Did the same thing as the previous flexure design. By gradually reducing flexure thickness until I get the largest usable flexure thickness. (this took 4-5 hours)
+    * Machined off 50 microns at a time until a working thickness of 0.35mm.
+    * tested aluminum flexure on the previous stick slip stage.
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+* Measured a piezo without gluing it onto a flexure it behaves linearly at least with the available measuring tools.
+
+### Roadblocks
+
+**Roadblock 1:**
+
+Materials did not arrive. Don't have material to make flexure positioner nor do I have enough piezos.
+
+**Proposed Solution**
+
+Work on documention for piezo stick slip design.&#x20;
+
+**Roadblock 2:**
+
+Had to work on other courses because took a week off from my other classes to work on hackerfab things.
+
+**Proposed Solution**
+
+finish hackerfab documentation on wednesday.
+
+### Next Steps
+
+* Program and machine flexure based piezo positioner.
+  * test flexure positioner
+* work on final documentation
+* upload cad in a universal format to git repo.
+* work on 2d dimensioned drawings with critical dimensions and notes.
+
+
+

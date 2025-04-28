@@ -525,7 +525,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 * Tested the camera and the objective. I couldn't get the pattern very visible but it was sufficient (the patten part looks black and silver when I look at the chip with naked eyes, but why does this happen? Other objects like the piezo vibration sensor or the electric wire look as they are on the camera as well).\
   ![](<../../.gitbook/assets/image (6).png>)\
-  ![](<../../.gitbook/assets/image (1).png>)\
+  ![](<../../.gitbook/assets/image (1) (8).png>)\
   [video](https://photos.app.goo.gl/bdJTNxEfWmi7zdPx6)
 * I didn't order a magnetic base because I want to finalize everything before ordering it, and we can use the sheet metal boards I have for now.
 * Tested a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.\
