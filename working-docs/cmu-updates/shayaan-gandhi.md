@@ -380,6 +380,14 @@ This is also the link to the CAD: [https://cad.onshape.com/documents/1eb610edda8
   Prepare a clear, visual demonstration showing how the PI loop behaves in real-time using the plotting tool.
 * **3. Final cleanup:**\
   Minor code cleanups and documentation updates to make sure the final project is presentable and organized.
+
+> **Feedback**
+>
+> Good progress this week. I'm not seeing the updated library, codebase, help menu, or plotting script in your GitHub repositor though, could you push the changes?&#x20;
+>
+> For your presentation, I'd focus more on the actual PI testing and communicating the metrics you are using for what successful control over gas flow and pressure looks like, rather than just the plotting of your PI loop. It's extremely important the audience knows that the control system works within the constraints the process team requires rather than know the control system can be actively plotted. The plots should join your metrics and benchmarks to establish why you were successful. The hardware package you can show will put you over the edge.
+>
+> [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
 {% endstepper %}
 
