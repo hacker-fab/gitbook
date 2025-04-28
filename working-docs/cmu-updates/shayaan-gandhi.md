@@ -344,5 +344,42 @@ For next week, my goals are:
 >
 > [Rubric](https://docs.google.com/document/d/1VIL6_VEkJ3WJWSxd1Ij3GuT30xgoiurXHgvJoFRKE7c/edit?tab=t.0#heading=h.8paefix4wysk)
 {% endstep %}
+
+{% step %}
+### Weekly Update 13
+
+#### What did you accomplish this week?
+
+This week was mostly focused on **wrapping up tasks for the final presentation**:
+
+* **Integrated the Pfeiffer library:**\
+  I fully implemented the `ArduinoPfiefferVacuum` library I created earlier this semester into the main codebase. This replaced hardcoded ASCII commands with cleaner, formatted function calls.
+* **Added help functionality:**\
+  I wrote a **help feature** for the program to make it easier for users to understand how to interact with the system.
+* **Created a live data plotting script:**\
+  I wrote a **Python script** that connects to the Arduino over the serial port, listens for pressure data, and **plots the data live using Matplotlib**.\
+  The script continuously monitors the Arduino’s serial output and updates the graph in real-time, showing both the desired and measured pressures. This will provide a **visual demonstration of the PI loop behavior** during the final presentation.
+
+This is also the link to the CAD: [https://cad.onshape.com/documents/1eb610edda8e5842b27a1322/w/dbc61868c30d3fae3044ff35/e/27c46d794bbc0f7f06439be1?renderMode=0\&uiState=680ed13d8b51db61358e7524](https://cad.onshape.com/documents/1eb610edda8e5842b27a1322/w/dbc61868c30d3fae3044ff35/e/27c46d794bbc0f7f06439be1?renderMode=0\&uiState=680ed13d8b51db61358e7524)
+
+***
+
+#### What roadblocks are you dealing with and what is your plan to overcome these challenges?
+
+* **Presentation preparation:**\
+  Making sure that the live plotting setup is reliable for the final presentation.
+* I also created an outline for final project documentation.
+
+***
+
+#### What are your plans for next week?
+
+* **1. Final testing of Arduino and Python integration:**\
+  Fully test the live plotting script with the Arduino in presentation conditions to make sure the data flow is stable.
+* **2. Polish the final presentation:**\
+  Prepare a clear, visual demonstration showing how the PI loop behaves in real-time using the plotting tool.
+* **3. Final cleanup:**\
+  Minor code cleanups and documentation updates to make sure the final project is presentable and organized.
+{% endstep %}
 {% endstepper %}
 
