@@ -4,6 +4,41 @@ description: Weekly Updates for Shagun Maheshwari (CMOS Project)
 
 # Shagun Maheshwari
 
+## Update 13;
+
+* Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
+
+
+
+Progress Update:
+
+* Presented CMOS poster for prospective students
+* Finished fabricating the N-well 30 sec SOG diffusion chip ✅
+* Finished CV testing and collecting the data for the N-well 30 sec SOG diffusion chip ✅
+  * [https://drive.google.com/drive/u/0/folders/1RNpdCVm5meYRnYINpBoOkNxqnXUKgdME](https://drive.google.com/drive/u/0/folders/1RNpdCVm5meYRnYINpBoOkNxqnXUKgdME)
+* Finished conducting dopant profile analysis for the N-well 30 sec SOG diffusion chip ✅
+  * [https://colab.research.google.com/drive/1jARkFnI-nRwYMhjLWBM665vilQ\_ycgv0](https://colab.research.google.com/drive/1jARkFnI-nRwYMhjLWBM665vilQ_ycgv0)
+* Finished the Final Documentation Rough Draft for the CMOS project, translated my mid-semester documentation to Latex, implemented the feedback from the mid-semester documentation, then added new experiments/results/progress to turn it into the Final Documentation Rough Draft ✅
+  * [https://drive.google.com/file/d/16coQyslU-gNrRUhqgcRUijC9ORrxTCwR/view?usp=drive\_link](https://drive.google.com/file/d/16coQyslU-gNrRUhqgcRUijC9ORrxTCwR/view?usp=drive_link)
+
+
+
+Roadblocks:
+
+* Would be great to get feedback on the N-well 30 sec SOG diffusion chip dopant profile analysis as it looks similar to the 45 second in terms of dopant concentration. Would like to discuss conclusions from this and next steps (for purposes of final documentation, final presentation, and next semesters goals)
+
+
+
+Next Steps:
+
+* Complete Final Presentation slides for CMOS (Due May 2nd)
+* Complete implementing feedback from Final Documentation Rough Draft to create the Final Documentation for submission (Due May 4th)
+
+Feedback
+
+• Cesely\
+Awesome work this semester! Since the 30 sec looks similar to the 45 second I would suggest that we might need to use a lower dopant concentration in our spin on glass. However, as far as I am aware the dopant concentration doesn't get low enough to purchase from Filmtronics. So I would suggest that we might need to look finding ways to redistribute dopant concentration that don't require high temperatures or introduce other impurities into our chips.&#x20;
+
 ## Update 12:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
@@ -11,7 +46,7 @@ Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https
 Progress Update:
 
 * Finished fabricating 33/37 steps of the n-well process for my 30 second SOG diffusion N-well chip [https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae](https://www.fabublox.com/process-editor/3d70d63d-8222-437a-bcf8-b71b8b61e8ae)
-  * Came in on Tue, Wed, Thurd, Fri, Sat for fabrication
+  * Came in on Tue, Wed, Thurs, Fri, Sat for fabrication
 * Created and submitted the CMOS process development poster [https://drive.google.com/file/d/1-kFiMzNgtymITPpHvGWgkEAeREEfwg9t/view?usp=drive\_link](https://drive.google.com/file/d/1-kFiMzNgtymITPpHvGWgkEAeREEfwg9t/view?usp=drive_link)
 
 
