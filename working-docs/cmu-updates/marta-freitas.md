@@ -4,8 +4,6 @@ description: Weekly Updates for CMOS Process Dev - Metal-Si Contacts Project
 
 # Marta Freitas
 
-***
-
 ### <mark style="background-color:blue;">Weekly Update #0 (Jan 18)</mark>
 
 #### <mark style="color:blue;">Accomplished this week</mark>
@@ -528,3 +526,39 @@ There are no roadblocks at the moment.
 * Work on the transmission line chips.
 * Work on the final documentation of both projects.
 
+
+
+***
+
+### <mark style="background-color:blue;">Weekly Update #13 (Apr 27)</mark>
+
+Folders: [https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI\_14apNio72](https://drive.google.com/drive/u/0/folders/1qafBxH8luKwNSnPRmJxCRI_14apNio72) ; [https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ](https://drive.google.com/drive/u/0/folders/1bnJyeBcbssFuE7fQBo4J-6Roz3mHzRwJ)
+
+Tasks: [https://github.com/orgs/hacker-fab/projects/35/views/1the](https://github.com/orgs/hacker-fab/projects/35/views/1the) ; [https://github.com/orgs/hacker-fab/projects/34](https://github.com/orgs/hacker-fab/projects/34)
+
+
+
+<mark style="color:blue;">Accomplished this week:</mark>
+
+* Worked on the final documentation of both projects.&#x20;
+* Continued the fabrication of the p-type MOSCaps.
+
+#### <mark style="color:blue;">Roadblocks/Challenges:</mark>
+
+The fabrication of both p-type MOSCaps should have been completed this week, but there was an issue with the patterning and developing and the fabrication was paused until we figured out how to proceed. We agreed on continuing the fabrication of one of the chips and discarding the other one.&#x20;
+
+However, now there is a problem with the spin coater, so that will be a roadblock since next step is re-patterning and we need to spin the resist.
+
+#### <mark style="color:blue;">Plans for next week:</mark>
+
+* Finish fabrication of the p-type MOSCap.
+* Probe and interpret the results.
+* Work on the transmission line chips.
+* Prepare final presentation.
+* Prepare final documentation.
+
+Feedback
+
+* Cesely
+
+With the spin coater down I do not think that you will be able to proceed with fabrication. I tried fabricating the TLM chips this weekend and ran into major issues with the spin coater as well. As far as I am aware the spin coater will not be functional until later this week. As such you should just focus on just finalizing documentation and presentation. Great work this semester!
