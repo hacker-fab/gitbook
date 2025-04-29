@@ -225,3 +225,15 @@ This has been our big goal and we made great progress this week.
 
 In the upcoming week, we'll be doing more testing. We can get more metrics and also think about rotation.
 
+## Week 13
+
+This week I enabled full configuration of the alignment parameters via the TOML configuration file. I made a [pull request](https://github.com/hacker-fab/stepper/pull/23) for the updated code, which introduces real-time alignment marker detection and the align button in the GUI. This is almost ready to merge — there is an issue with the GUI loading, so the align branch is currently checked out to commit 760daad, but once I fix the issue we should be ready to merge into main.
+
+Before the final presentation, I plan to do some more testing. After fixing the GUI loading issue, I'll add the final touches that we want before the semester ends. If time allows, I want to get more precise metrics as well. And then I'll update all our documentation to make it easy to use the same ML pipeline that we used to train our model. This will allow anyone to follow our instructions to get models that perform well on their specific data.
+
+**Week 13 Feedback (Kent Wirant):**
+
+* The PR request looks good so far. Configurable alignment parameters is a good step forward.&#x20;
+* Good plan for including detailed directions and metrics in your final documentation. Make sure to include descriptions also in your software about any important organization details, design decisions, or algorithms.
+* Looking forward to seeing the finished product!
+
