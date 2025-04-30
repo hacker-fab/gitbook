@@ -6,6 +6,8 @@ description: >-
 
 # Machine Integration
 
+_NOTE: Some parts of the documentation (the collapsable code blocks) will only work if you view the live webpage instead of a PDF export of this page_
+
 The goal of the Machine Integration project is to develop an extensible interface that can be used to communicate between the primary web application and each individual machine in the hacker fab.&#x20;
 
 
@@ -423,7 +425,7 @@ def generate_presigned_download_url(body):
 
 
 
-Other AWS resources:
+Other AWS resources (File Transfer):
 
 S3: S3 is amazon's blob storage service. When a file is uploaded to the upload link from the generate\_upload\_url, it is stored here. It is setup with default configurations.&#x20;
 
@@ -1610,5 +1612,51 @@ The AC power to the air compressor and the spin coater are connected to the "nor
 
 ### Example embedded firmware: Stepper
 
-This section will be completed once integration with the stepper is completed next week.&#x20;
+In this section, I will explain how the lab communication system was used to successfully connect the stepper to the database website with minimal changes to the system architecture.&#x20;
+
+There are two main differences between the spincoater and stepper when considering their integration with the lab com system.&#x20;
+
+1. The stepper solution already has a control PC. This eliminates the need for the RPI, as we can just run the lab\_com software directly on the control PC.&#x20;
+2. The stepper needs to have an image sent from the website to describe the image to pattern. Although it is theoretically possible to encode this within the existing input\_params JSON, this is not a robust solution. We will need to develop a file transfer system to transmit images from the website to the stepper. This file transfer system will be soley used for images here, but it can be used with other types of files when connecting other devices to the lab\_com system.&#x20;
+
+The diagram below shows the overall dataflow for the interaction between the website and the stepper.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+
+The existing control PC does not need to run the entire lab\_com\_gui software. Carson, the current project lead, was simply able to incorperate a series of API calls to the database into his existing python code for the stepper GUI. The details of the stepper GUI are out of scope of this project (see that section of the doucmentation on gitbook). He directly copied the code from auto\_test\_file\_endpoints.py. This file is linked above.&#x20;
+
+The website first adds a job to the job queue to start the spincoater. For testing purposes, we will use a simple web gui as shown in the image below.&#x20;
+
+<figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUebePyn-cfqu2_z5cO2ApylxE-NuzeqddAyIKIgsv56xFTJnzvWKqIY9jEk6So1__TO-rkofoTCFSYUWA9JSRlh4ePbYuFT9qZ3j2uH7PT2HpcxeI8UZfnjavgsm_bOipHOIFgH=s2048?key=SBRH_U3NEKrRbGU23rrT0jT2" alt=""><figcaption></figcaption></figure>
+
+After the user hits submit, the image is uploaded to AWS S3 blob storage. AWS S3 blob storage is a service that allows shorter-term storage of files as part of a web application.&#x20;
+
+See get\_file\_upload\_url\_and\_key and upload\_file functions in auto\_test\_file\_endpoints.py for the details on this process. After the upload is complete, the web application gets back a s3\_key. This is a string that uniquely identifies the image that was just uploaded. The web application then POSTs to the jobs endpoint. The request will have the machine name field set to stepper and the input\_parameters will include the image\_s3\_key.&#x20;
+
+As a result, the jobs queue database will then have the following entry added. It is shown here in JSON where the keys are the column names and the values are the values within this specific row of the table.&#x20;
+
+```json
+{"input_parameters": {"x": "9000", "image_s3_key": "uploads/129f420c-ac04-46af-a935-a1ded153de1c", "y": "8000"}, 
+"machine": "stepper", 
+"status": "In Progress", 
+"timestamp": 1745800143, 
+"output_parameters": {}, 
+"priority": 2, 
+"job_id": "3891b3b4-9cca-476d-b55e-874b92cdf663"}
+
+```
+
+Note that the table schema (names of the columns) did not change for the stepper. It is the same as the table schema for the spincoater. All jobs are stored in the same table. We are able to differentiate between jobs for each type of machine by the "machine" column (as seen above).&#x20;
+
+The file that stores the pattern to image is not stored directly in the jobs queue database, but is instead stored in AWS S3 storage. Within the jobs queue database table, the input parameter stores a key to access the specific file uploaded for this job. For the job above, the key is:  "image\_s3\_key": "uploads/129f420c-ac04-46af-a935-a1ded153de1c"
+
+
+
+The job is now stores in the queue and ready to be fetched and run by the stepper.&#x20;
+
+The control PC for the stepper will poll the jobs queue by repeatedly calling the jobs/next endpoint. Eventually, the json object shown above will be received. The control PC for the stepper will then download the image from AWS S3 storage using the image\_s3\_key in the input parameters. See the download\_file() method of auto\_test\_file\_endpoints.py for details on how this work. The implementation details are not important. This method can be reused when automating other machines.&#x20;
+
+At this point, the stepper has all of the data needed to complete the patterning job. The patterning job is run, and the job\_completion endpoint is called on success.&#x20;
+
+
 

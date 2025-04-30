@@ -1,5 +1,72 @@
 # Eric Dubberstein
 
+## Week 13 (up to 4/27/2025):
+
+Plan for this week:&#x20;
+
+1. Test out the full lithostepper solution DONE&#x20;
+2. Document Lithostepper solution. DONE
+3. Submit documentation for review&#x20;
+4. Test out the spincoater solution with a chip if the final part of the spincoater arrives N/A
+5. Present poster on Thursday DONE&#x20;
+6. Start working on the final presentation DONE
+
+\
+
+
+Notes on progress I made:&#x20;
+
+Carson was able to get the stepper fully working using my software. Here is a link to the demo that I will include for the final presentation:&#x20;
+
+[https://drive.google.com/file/d/1kTs-zAPap5i9pNg2NpVZhbvd98Qfe4p6/view?usp=drive\_link](https://drive.google.com/file/d/1kTs-zAPap5i9pNg2NpVZhbvd98Qfe4p6/view?usp=drive_link)&#x20;
+
+I added detailed documentation on this process in the documentation page.&#x20;
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVaJbFyjS3xkOcZ0AvMWREt5R7ZSW8OQNf-eyQHLD-xPH40taJm9-n2gRIZUp2bnCMPmth8KxTb20_ftMYiwrR_dKAw7uqYz4FzHh-GWWP7NJnNQVWknQNfCzsRoGloIDdg2XwOw?key=BI_pZv2f-H2LIWbBcdMfNubI)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfETMMwTxAyaJ3_oDlIU2VNsFzyfVa_Q4lq03bGsw-R9qaw4o9Rh8njYZ0m7sEYU5_CqkyzN2vsNxeqTwnJ6pmXnmWonbmhABelcHmv-kQLPJBE6ZEl2ZWMdmw6Gr6YzfUpk45bBw?key=BI_pZv2f-H2LIWbBcdMfNubI)
+
+…
+
+I submitted the documentation to canvas for review. I know the deadline for 18-725 is on Tuesday, so it’s totally ok if you have to wait until after that to review the documentation.&#x20;
+
+\
+
+
+I was unable to test the full spincoater setup as the part still is not complete. It is possible that the part will be complete before the final demo, but it doesn’t look likely.&#x20;
+
+\
+
+
+I attended the open house session and presented my poster. One individual was very interested in how a similar system could be implemented in the nanofab to improve workflows through automation.&#x20;
+
+\
+
+
+Last, I started working on the final presentation. For the final presentation, I will include video demos of the spincoater (website -> spincoater motor + vacuum pump) and the stepper (website -> pattern). See the video linked above. I will also go into a bit more detail on how the image upload works for the stepper.&#x20;
+
+Last, I will include a bit of detail of how this will be used in the frontend, hopefully setting the stage for this project to continue in the fall.&#x20;
+
+\
+
+
+Roadblocks: Final part for spin coater. Hopefully this will be available so the demo can include an actual chip spinning. Otherwise, the demo with only the motor spinning will have to do.&#x20;
+
+\
+
+
+Github progress tracker is up to date.
+
+\
+
+
+Plan for next week:&#x20;
+
+1. Finish presentation. Present presentation
+2. Revise documentation as needed based on feedback.&#x20;
+3. Ensure all code written follows code guidelines.&#x20;
+4. Plan possible ways this system could be used by a more advanced web-front end (leverage work that jessica wen has already done in figma).
+
 ## Tasks accomplished week 12 (up to 4/20/2025):
 
 > Good work. It is very nice to see that everything of the spin coater, including the pump, is now able to be controlled remotely. I think for next steps, maybe alongside documentation, there can be an integration with what Jess worked on, she had a list of important machine controls and parameters which the DB needs to accommodate, maybe we can see how/what sensors would be needed in the future to add the wide variety of machines that we have. I think the lab auto team can be a good resource here as well. Basically jump-start the next person's work on the machine integration project. Since you have set a baseline, I think future students would have to build upon this work by integrating multiple machines a semester using ur current implementation, I'm thinking like 1 machine per demo or something. So, it seems like if we have some time we can conceptualize what machine would require which sensors, what parameters, what devices, etc. Feel free to reach out anytime with any questions, will def be able to meet sometime this week.
