@@ -65,6 +65,12 @@ Next steps:
 * Poster presentation
 * Final documentation draft
 
+Response:
+
+submitted >24 hrs late.
+
+Good job making fab progress, and thankyou for participating in the showcase!
+
 ## Update 11:
 
 Progress tracker: [https://github.com/orgs/hacker-fab/projects/34/views/1](https://github.com/orgs/hacker-fab/projects/34/views/1)
