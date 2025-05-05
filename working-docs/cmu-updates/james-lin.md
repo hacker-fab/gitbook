@@ -44,9 +44,9 @@ Progress:
 * Soldered all components for two packages and motherboard!!!!
   * was able to test fit everything successfully
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Package</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (9).png" alt="" width="375"><figcaption><p>Package</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Package on top of motherboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Package on top of motherboard</p></figcaption></figure>
 
 Challenges:
 
