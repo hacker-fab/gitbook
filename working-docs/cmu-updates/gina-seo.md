@@ -4,6 +4,42 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 
 # Gina Seo
 
+## Update #12
+
+**What was accomplished:**
+
+* Learning DRC scripting language through KLayout tutorials and developing DRC scripting sample for KLayout
+  *   Parameters are up to change as script/code contains variables.&#x20;
+
+      * Running a few basic checks in this [script](https://colab.research.google.com/drive/1DKCP90hcyaqyOAtfUKxzUDLc9L5deInP?usp=sharing):
+        * **Minimum trench width** (like small etched areas)
+        * **Minimum feature width** (for general lines)
+        * **Minimum spacing between features** (gap between metal traces, etc.)
+        * **Minimum layer thickness** (enclosure or overlap
+
+
+
+      <figure><img src="../../.gitbook/assets/Screenshot 2025-04-27 at 9.10.18 PM.png" alt=""><figcaption></figcaption></figure>
+  *   [KLayout](https://www.klayout.de/doc/manual/drc_runsets.html) terminology to note for dimensions:\
+      Units are added using the unit methods:
+
+      0.1: 0.1 micrometer\
+      200: 200 database units\
+      200.dbu: 200 database units\
+      200.nm: 200 nm\
+      2.um or 2.micron: 2 micrometer\
+      0.2.mm: 0.2 millimeter\
+      1e-5.m: 1e-5 meter (10 micrometer)
+
+**Roadblocks**
+
+* Just being more busy than usual during finals week, so limited things to work on before final demos + presentation, but Icey, Sandra and I scoped out what we should complete with reasonable consideration.&#x20;
+
+**Plans for next week:**&#x20;
+
+* Integrate into KLayout given simple device design to see if it runs in the way we want it to.
+* Complete documentation after feedback from Icey and prepare slides for final presentation
+
 ## Update #11&#x20;
 
 **What was accomplished:**&#x20;
