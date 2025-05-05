@@ -212,3 +212,27 @@ Roadblocks:
 Plan for next week:
 
 Keep debugging the device model parameter extraction flow. Continue to fabricate.
+
+**Weekly Update #12**
+
+Work done:
+
+This week, we had our public poster showcase ([https://docs.google.com/presentation/d/10tiBImJxgvqFkG546eg9pfuTPPuJWvkD/edit?slide=id.p1#slide=id.p1](https://docs.google.com/presentation/d/10tiBImJxgvqFkG546eg9pfuTPPuJWvkD/edit?slide=id.p1#slide=id.p1)) and final presentation ([https://docs.google.com/presentation/d/10zy9i\_6niX86A06aU5vF8ChFCYzfYGq7KJrPs41c1Ao/edit](https://docs.google.com/presentation/d/10zy9i_6niX86A06aU5vF8ChFCYzfYGq7KJrPs41c1Ao/edit)).
+
+We tried using data from KiCad simulation as the ideal dataset for parameter extraction flow. After fixing some bugs, the reconstructed plots are much closer to the original data, although the numerical parameters are not identical to what were put in the SPICE model when running KiCad simulation. We also applied the real chip 613 data, and similarly it looks better than previous results.
+
+<figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcigfiKRrNMAnBIISWqTDBDCn9kZpFn6xO1Xn4fl1ztVNXdmbO2LlCWb6SeqZBT5FUlz-l1d4q_cvfS6rdv9wKlCilcJhbAOazdKTBki2Z-YF8cznYrZlATn8iIvTUoTyoBJFI6=nw?key=eF6vVh49DavIifIl3lRxDKli" alt=""><figcaption><p>KiCad Simulation dataset</p></figcaption></figure>
+
+<figure><img src="https://lh7-rt.googleusercontent.com/slidesz/AGV_vUec9lv4pAD9Nwb3-VelGL01R0VpWI4Xq0dhnWAcYr5UDEsl49vFmM6qzsIJXakxuPgJ03LWn6A11JDzsrQ0WkfYU9wfnNyl1-zEUzJt4HsY5gyWh-SFsGB5yXLe_BOkM4mDGzObJA=nw?key=eF6vVh49DavIifIl3lRxDKli" alt=""><figcaption><p>Chip 613</p></figcaption></figure>
+
+I worked on simulating a common source amplifier in KiCad. I changed parameters a couple of times and got good gain as shown below.
+
+<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
+
+Roadblocks:
+
+I believe that during this semester we have delivered meaningful EDA work that includes but not limited to developing device modeling flow, improving fabrication process, designing chip masks, and others. However, there are some lingering work that we failed or did not have time to do, such as chip fabrication. We hope that future members of the EDA team could carry on our work and move further towards useful circuit design.
+
+Plan for next week:
+
+Finish final documentation.
