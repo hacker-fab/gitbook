@@ -295,3 +295,23 @@ a\
 Further explore KiCad SPICE modelling and the parameters' effects on those simulation results.\
 Continue investigating and developing the extraction procedure and parameters for LEVEL 2 mosfet modelling.\
 \
+\
+
+
+**Week 13 Update:**
+
+**Work done:**\
+Continued research into the higher levels of SPICE models Level 2 and Level 3, which involve Mobility Degradation with Vertical Fields and Threshold Voltage Adjustment where threshold voltage depends empirically on VDS​, VBS (backgate bias), and temperature.
+
+\
+Also ran more simulations in Cadence Virtuoso to verify our previous findings on the drain-source current at greater V<sub>DS</sub> voltages, and ways we can incorporate this into our simulation scripts (perhaps similar to what we discussed with Kent during our Final presentation on Thursday, which is introducing "breakdown" I<sub>DS</sub> current when the electric field V<sub>DS</sub> exceeds some threshold):&#x20;
+
+<figure><img src="../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
+
+\
+**Roadblocks:**\
+Our current SPICE models are not yet advanced enough to simulate non-ideal MOSFET behavior and I<sub>D</sub>-V<sub>DS</sub> curves that fall outside the capabilities of SPICE level 1, but our current device physics knowledge is limited and we need an intuitive understanding of more advanced concepts such as Velocity Saturation and DIBL (drain-induced barrier lowering).\
+\
+**Next steps:**
+
+We did our final presentation on Thursday, so now we are focusing on writing out a comprehensive final documentation so that future students at CMU or other universities can quickly learn from our experience this semester on fabrication techniques and device modelling processes. \
