@@ -58,6 +58,7 @@
   * [CV Measurements](fab-toolkit/metrology-characterization/cv-measurements.md)
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
+  * [IC Packaging](fab-toolkit/metrology-characterization/ic-packaging.md)
 * [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
   * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
   * [Dielectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
