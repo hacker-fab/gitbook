@@ -12,7 +12,7 @@ To learn more about the hardware and software involved, refer:
 
 ***
 
-## Software
+## [CMU documentation](https://docs.google.com/document/d/1VSwx756vxECuo5KkdUndfeX_VbxO7podmkbEaOvB_QA/edit?tab=t.0#heading=h.hq0a84340rop) to be added to this page
 
 
 
@@ -23,16 +23,10 @@ To learn more about the hardware and software involved, refer:
 1. If not using the tester adapter, connect W2 to the Gate probe and W1 to the Drain probe.&#x20;
 2. The Source and Body probes must be connected to GND.
 3. The +1 & -1 connections should be connected around the drain resistor.&#x20;
-4.  \+2 should be connected to the Drain terminal.&#x20;
+4.  +2 should be connected to the Drain terminal.&#x20;
 
     \
 
 
     <figure><img src="https://lh7-us.googleusercontent.com/RVLy73TuwDT9tbta7JIvf5rEiP-TORkkIragPhurHYfslcNDSV-4C60WChCPl45eIKaZN0s17kRqv0q0qx1-EXlomTFoZFzObAOAsUEncwBJyFFgY3VF418jJJvnbRPWXohWKTfKOEFh" alt="" width="375"><figcaption></figcaption></figure>
 
-### To-do:
-
-Add images with the connections, more specifics.
-
-* simple mechanical probe manipulator
-* needs 4 probes (show where each of them are used)

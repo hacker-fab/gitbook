@@ -55,7 +55,7 @@
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
   * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
-    * [SMU - Analog Discoveries](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
+    * [SMU - Analog Discovery](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
     * [SMU - Keithley 4200SCS](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-keithley-4200scs.md)
   * [CV Measurements](fab-toolkit/metrology-characterization/cv-measurements.md)
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
