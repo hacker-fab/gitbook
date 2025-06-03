@@ -1,46 +1,11 @@
 ---
 description: >-
-  This page contains information about the state of the ALD project as of
+  This page contains information about the state of the ALD project at CMU as of
   December 2024. Please note that many of the system components are outdated as
   of the May 2025 progress update.
 ---
 
 # Dec. 2024 CMU Update
-
-### Precursor Selection
-
-**Oxide of interest**
-
-For the current system we aim to deposit Indium-Tin Oxide. Indium Tin Oxide (ITO) is a versatile material widely recognized for its excellent electrical conductivity and optical transparency. These properties make ITO a promising candidate for advanced applications, particularly as a channel material in thin-film transistors (TFTs). Its high carrier mobility and tunable electrical characteristics offer significant potential for improving TFT performance in display technologies and flexible electronics. Additionally, ITO thin films are of great interest in materials and thin-film research due to their unique combination of metallic and semiconducting properties. This makes them an ideal system for exploring novel deposition techniques, optimizing film uniformity, and investigating structure-property relationships.&#x20;
-
-The precursors for the metals were chosen based on their feasibility to react with water vapor as the oxidizer. The precursors chosen are Trimethyl Indium (TMIn) for Indium and Tetrakis(dimethylamino) Tin (TDMASn) for Tin with Nitrogen carrier gas. They have been shown to be used for ALD and CVD processes with water as the oxidizer in literature. As a starting point our aim would be to reproduce the results achieved in \[Zhang et al.]. The process parameters highlighted in the paper are as follows _(substrate temperature: -225C)_:
-
-| Oxide | Bubbler temperature | Pulse time | Co-reactant pulse time | Process pressure | Purge time |
-| ----- | ------------------- | ---------- | ---------------------- | ---------------- | ---------- |
-| In2O3 | 60oC                | 0.625s     | 0.75s                  | 100 mTorr        | 10s        |
-| SnO2  | 60oC                | 2s         | 1s                     | 100 mTorr        | 30s        |
-
-**Safety Considerations**
-
-Most precursors and specifically metal organic precursors used for CVD and ALD processes tend to be pyrophoric (i.e. thermally unstable and spontaneously ignite on exposure to air) thus necessitating safety measures.&#x20;
-
-**Material Considerations**
-
-Compatibility with the precursors and byproducts produced during reaction are important to consider when selecting components for the delivery system. For our given precursors the chemical groups for which we checked compatibility are: 1) ability to handle pyrophoric materials, 2) ability to resist corrosion due to water vapor, 3) compatibility with methane (by product of TMIn reaction with water) and dimethylamine gas (by product of TDMASn reaction with water)
-
-The compatibility of o-ring materials was checked on the following sources: [(1) ](https://www.marcorubber.com/o-ring-chemical-compatibility-chart.htm#chemId=702)[(2)](https://www.calpaclab.com/content/chemical-charts/Viton.pdf?srsltid=AfmBOopyameT2zvZmpAXXrtGtFDTGRPDOtgCQlMOpx0zRFcJjbQj2GMl)
-
-Specific choices:
-
-* Stainless Steel Tubing
-* Aflas O-rings - conventionally used Viton O-rings are incompatible with dimethylamine&#x20;
-* Aluminum vacuum chamber
-* Stainless steel bellow hose
-* Vacuum pump - Although the vacuum pump manufacturer warns against using the pump with pyrophoric gases, this caution can be safely disregarded in our case. Since we will be working with extremely dilute concentrations of these gases, the risk of combustion or hazardous reactions is significantly minimized. The low concentration ensures that the gases remain well within safe limits, allowing for the pump's use without compromising safety or performance.
-
-**Sourcing Precursors**
-
-Given the safety considerations involved in handling the pyrophoric precursors, the sourcing of materials for ITO deposition is managed by the Claire & John Bertucci Nanotechnology Laboratory staff. They ensure that all necessary precautions are taken during the procurement, handling, and storage of the chemicals. The required precursors have been ordered from Strem Chemicals, a trusted supplier known for providing high-quality materials for advanced research and industrial applications. [TMIn](https://www.strem.com/product/98-4068), [TDMASn](https://www.strem.com/product/98-4050)
 
 ### DIY Substrate Heater
 
