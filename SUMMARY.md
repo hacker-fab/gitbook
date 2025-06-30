@@ -45,7 +45,7 @@
   * [⚛️DIY ALD](fab-toolkit/deposition/diy-ald/README.md)
     * [May 2025 CMU Update](fab-toolkit/deposition/diy-ald/may-2025-cmu-update.md)
     * [Dec. 2024 CMU Update](fab-toolkit/deposition/diy-ald/dec.-2024-cmu-update.md)
-  * [⚡ Sputtering Chamber](fab-toolkit/deposition/sputtering-chamber.md)
+  * [⚡ DIY RF Sputtering Chamber](fab-toolkit/deposition/diy-rf-sputtering-chamber.md)
 * [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
