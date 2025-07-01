@@ -160,11 +160,11 @@ UHP Ar and O2 cylinders not included in BOM
 * Highly conductive Al films have been sputtered
 * Further characterization of films is actively being pursued
 
-<figure><img src="../../.gitbook/assets/unnamed (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unnamed (1).png" alt=""><figcaption><p>Glass microscope slide with Al sputtered onto it</p></figcaption></figure>
 
 ## Future/Pending Work
 
-* Repalce radio with signal generator and amplifier
+* Replae radio with signal generator and amplifier
 * Build our own tuner/matching network (its literally just an inductor and variable capacitor)
 * DIY substrate heater
 * DIY QCM
