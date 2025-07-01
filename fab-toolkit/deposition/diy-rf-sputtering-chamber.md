@@ -164,7 +164,9 @@ UHP Ar and O2 cylinders not included in BOM
 
 ## Future/Pending Work
 
-* DIY Substrate heater
+* Repalce radio with signal generator and amplifier
+* Build our own tuner/matching network (its literally just an inductor and variable capacitor)
+* DIY substrate heater
 * DIY QCM
 * Automation/controls
 * More film characterization, and experimentation with various target materials
