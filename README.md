@@ -1,16 +1,5 @@
 ---
 description: the first open-source semiconductor fab.
-layout:
-  title:
-    visible: false
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Hacker Fab Documentation
@@ -99,7 +88,7 @@ The Hacker Fab was inspired by [Sam Zeloof](https://www.youtube.com/@SamZeloof).
 
 The Hacker Fab was started by Elio Bourcart, Alexander Hakim, and Sam Zeloof.
 
-The first Hacker Fab was opened at [Carnegie Mellon University](https://hackerfab.ece.cmu.edu/).
+The first Hacker Fab was opened at [Carnegie Mellon University](https://hackerfab.ece.cmu.edu/), and currently managed by Matthew Moneck, Tathagata Srimani, and Jay Kunselman.
 
 The Hacker Fab is run entirely by independent contributors.
 
