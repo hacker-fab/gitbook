@@ -92,6 +92,8 @@ The first Hacker Fab was opened at [Carnegie Mellon University](https://hackerfa
 
 The Hacker Fab is run entirely by independent contributors.
 
+By default, contributions use the following license stack, but may carry an additional NOTICE file depending on the origin of the contribution.
+
 <details>
 
 <summary>Hardware: CERN-OHL-W</summary>
