@@ -2,17 +2,6 @@
 description: >-
   Strategies for sourcing parts effectively, and a constantly updated list of
   part suppliers
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Part Sourcing
@@ -74,4 +63,4 @@ Some teams, such as Thorlabs, Kurt Lesker, Filmtronics, are very knowledgable an
 
 ## Organized List of Sellers
 
-To do, for now search our [Purchase Tracker](https://docs.google.com/spreadsheets/d/1x1SKlcFd\_YezeLDJ4mFUUFoybHkMIZpcm6by8iPltEY/edit#gid=0)
+To do, for now search our [Purchase Tracker](https://docs.google.com/spreadsheets/d/1x1SKlcFd_YezeLDJ4mFUUFoybHkMIZpcm6by8iPltEY/edit#gid=0)

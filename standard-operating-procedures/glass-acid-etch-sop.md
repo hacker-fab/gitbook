@@ -2,17 +2,6 @@
 description: >-
   THIS IS NOT A COMPREHENSIVE GUIDE FOR HF ETCHING. THIS IS A RESOURCE TO
   COMPLIMENT IN PERSON TRAINING
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Glass Acid Etch SOP

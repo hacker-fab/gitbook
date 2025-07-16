@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
----
-
 # 🎥 Patterning
 
 **For a description of what the team at CMU is working on in Spring 2025, check out** [**this document**](https://docs.google.com/document/d/1cksUbf5onK4FIIpE_ZZxUgtdfJ7OKFyU2kt76BniGkw/edit?usp=sharing)**!**

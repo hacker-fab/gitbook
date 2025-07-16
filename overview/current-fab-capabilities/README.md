@@ -1,16 +1,5 @@
 ---
 description: Last Updated April 2024
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # ✨ Current Fab Capabilities

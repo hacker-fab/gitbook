@@ -1,24 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
----
-
 # Self-Aligned NMOS V1
 
 ### Simplified View of Process
 
 <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-### See Fabublox for Interactive View&#x20;
+### See Fabublox for Interactive View
 
 {% embed url="https://www.fabublox.com/process-editor/f52fe668-594d-4a94-bfb1-b1e3ce845f38" %}
 

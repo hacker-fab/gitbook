@@ -1,16 +1,5 @@
 ---
 description: This SOP is specifically for etching 300nm of polysilicon in the NMOS process
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Plasma Etcher SOP
@@ -42,7 +31,7 @@ This first etch step creates the transistor’s gate by etching away almost all 
 1. Plasma is capable of etching silicon, whereas HF is not.
 2. The anisotropic (vertical) etch profile is capable of transferring smaller patterns than isotropic etches.
 
-![](https://lh3.googleusercontent.com/uXX\_gQv5tF0iwjYCRM9nW\_y9nMgJCNZmh8gX29XNLdeLtO6x3n9puJvh6JQcOweAe7BCvqSRlumfoE9QHpgLBnno\_xR1J2g9ds98vu9Jzm3mJxINpDpTekGtgIgwqyIC9AKQbG7ALmC13QHoKvhVg84)
+![](https://lh3.googleusercontent.com/uXX_gQv5tF0iwjYCRM9nW_y9nMgJCNZmh8gX29XNLdeLtO6x3n9puJvh6JQcOweAe7BCvqSRlumfoE9QHpgLBnno_xR1J2g9ds98vu9Jzm3mJxINpDpTekGtgIgwqyIC9AKQbG7ALmC13QHoKvhVg84)
 
 The plasma etcher breaks down the normally inert SF6, creating a fluorine ion containing plasma on the surface of the chip. A combination of physical bombardment and chemical reaction removes material from the surface. Physical bombardment occurs when the pressure is low (<\~.1 Torr) and results in an anisotropic (vertical) etch. This allows for precise transfer of a photoresist pattern onto the underlying material. Chemical etching dominates at higher pressures and results in an isotropic etch. Fluorine reacts more quickly with Si than SiO2, resulting in high selectivity.
 
@@ -80,7 +69,7 @@ The plasma etcher breaks down the normally inert SF6, creating a fluorine ion co
 5. Repeat steps 2-4 to purge again. This makes sure no water is in the chamber.
 6. Open the valve on the cylinders of gas that you are using. Lefty loosey.
 
-![](https://lh3.googleusercontent.com/z-K7CU-RkI2anr8zqe7FrCUV2ncA2f-2\_0wO40aaPKTE1MMkd\_EI4sQSiZCDjC\_NAQeo96zIVi0B\_\_DF\_9CsLVZFN43jFutxQ4\_XQatcErRQGp6GarRT4gpPbWzosOydO5L1pO9fojQrCcltEL4rqwY)
+![](https://lh3.googleusercontent.com/z-K7CU-RkI2anr8zqe7FrCUV2ncA2f-2_0wO40aaPKTE1MMkd_EI4sQSiZCDjC_NAQeo96zIVi0B__DF_9CsLVZFN43jFutxQ4_XQatcErRQGp6GarRT4gpPbWzosOydO5L1pO9fojQrCcltEL4rqwY)
 
 7. When you are ready to start etching, select **commands > plasma**.&#x20;
 8. During the etch, monitor the pressure on the screen (should be at your setpoint) and the outlet pressure on the regulator (should be around 5-15 psig). Look in the window for pretty plasma!

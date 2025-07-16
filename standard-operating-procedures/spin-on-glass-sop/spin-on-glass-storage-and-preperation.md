@@ -1,24 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
----
-
 # Spin on Glass Storage and Preparation
 
 <details>
 
 <summary>Long Term Storage</summary>
 
-![](https://lh4.googleusercontent.com/vKHxeMZpzNEleAyDKnVi7ISyzjPDv6sEDqHshNwG5TAQz6sNbwxksjdmcgkR2DcsPjflSbV9h6iiCtvpcMdmHhACZTfE9XWHPEEXuvOzDKVOOCw-tA8L-ly\_WVeG7MgyrSGj3FS8F9mv-AhmSn6NKpM)
+![](https://lh4.googleusercontent.com/vKHxeMZpzNEleAyDKnVi7ISyzjPDv6sEDqHshNwG5TAQz6sNbwxksjdmcgkR2DcsPjflSbV9h6iiCtvpcMdmHhACZTfE9XWHPEEXuvOzDKVOOCw-tA8L-ly_WVeG7MgyrSGj3FS8F9mv-AhmSn6NKpM)
 
 
 
@@ -48,11 +34,7 @@ The SOG from Filmtronics found [here](https://drive.google.com/file/d/1S-XpX1oCZ
 
 * Ensure the SOG has come to room temperature
 
-<!---->
-
-* Check the bottle’s date. If the SOG was transferred from the bulk supply more than a week prior, it is likely necessary to prepare a new bottle of SOG
-
-<!---->
+- Check the bottle’s date. If the SOG was transferred from the bulk supply more than a week prior, it is likely necessary to prepare a new bottle of SOG
 
 *   Regardless of the date on the bottle, open the bottle to check if any crust has formed near the top of the bottle. If there is any visible crust from hardened SOG, it is necessary to prepare a new bottle of SOG
 

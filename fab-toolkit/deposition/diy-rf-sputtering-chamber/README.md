@@ -2,13 +2,13 @@
 description: >-
   *More detailed design explanations, build instruction, and operating
   procedures are yet to be uploaded*
-cover: ../../.gitbook/assets/IMG_7049.jpg
+cover: ../../../.gitbook/assets/IMG_7049.jpg
 coverY: 266.6676916987451
 ---
 
 # ⚡ DIY RF Sputtering Chamber
 
-<figure><img src="../../.gitbook/assets/IMG_7063.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG_7063.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Preface
 
@@ -63,13 +63,13 @@ cons
 
 ## Chamber + Integrated Air Cooled Magnetron&#x20;
 
-<figure><img src="../../.gitbook/assets/IMG_7007.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG_7007.jpg" alt=""><figcaption></figcaption></figure>
 
 #### Concept Diagrams
 
-<figure><img src="../../.gitbook/assets/Untitled presentation (4).png" alt=""><figcaption><p>Chamber</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Untitled presentation (4).png" alt=""><figcaption><p>Chamber</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Untitled presentation (5).png" alt=""><figcaption><p>Air Cooled Magnetron</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Untitled presentation (5).png" alt=""><figcaption><p>Air Cooled Magnetron</p></figcaption></figure>
 
 #### BOM
 
@@ -85,7 +85,7 @@ The power supply consists of a 100W Radio transceiver, an antenna tuner, and a s
 
 The antenna tuner achieves 90-95% impedance matching, delivering 90-95 watts of forward power.
 
-<div><figure><img src="../../.gitbook/assets/IMG_7072.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7067.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7012.jpg" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/IMG_7072.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7067.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7012.jpg" alt=""><figcaption></figcaption></figure></div>
 
 #### BOM
 
@@ -160,7 +160,7 @@ UHP Ar and O2 cylinders not included in BOM
 * Highly conductive Al films have been sputtered
 * Further characterization of films is actively being pursued
 
-<figure><img src="../../.gitbook/assets/unnamed (1).png" alt=""><figcaption><p>Glass microscope slide with Al sputtered onto it</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unnamed (1).png" alt=""><figcaption><p>Glass microscope slide with Al sputtered onto it</p></figcaption></figure>
 
 ## Future/Pending Work
 
@@ -193,7 +193,7 @@ Many failures occurred over two iterations of power supply and chamber. A more d
 
 ## Misc. Images
 
-<div><figure><img src="../../.gitbook/assets/IMG_7087.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7088.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7041.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7042.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7043.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7021.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7024.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7029.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7037.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7030.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7034.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7020.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7023.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7038.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7033.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/IMG_7025.jpg" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/IMG_7087.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7088.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7041.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7042.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7043.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7021.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7024.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7029.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7037.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7030.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7034.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7020.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7023.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7038.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7033.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_7025.jpg" alt=""><figcaption></figcaption></figure></div>
 
 
 
