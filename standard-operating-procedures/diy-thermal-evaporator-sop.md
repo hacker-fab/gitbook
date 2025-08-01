@@ -7,7 +7,9 @@ coverY: 0
 
 ### Materials
 
-<div><figure><img src="../.gitbook/assets/IMG_5115.jpg" alt=""><figcaption><p>Laptop with STM2 software and STM2 monitor plugged in</p></figcaption></figure> <figure><img src="../.gitbook/assets/IMG_5113.jpg" alt=""><figcaption><p>Double sided polyimide tape, tunsten filament, and high purity Al wire (99.999%)</p></figcaption></figure> <figure><img src="../.gitbook/assets/IMG_7611.jpg" alt=""><figcaption><p>DIY Evaporator (CMU Version)</p></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/IMG_5115.jpg" alt=""><figcaption><p>Laptop with STM2 software and STM2 monitor plugged in</p></figcaption></figure> <figure><img src="../.gitbook/assets/IMG_5113.jpg" alt=""><figcaption><p>Double sided polyimide tape, tunsten filament, and high purity Al wire (99.999%)</p></figcaption></figure></div>
+
+<figure><img src="../.gitbook/assets/IMG_7611 (1).jpg" alt=""><figcaption><p>Chamber</p></figcaption></figure>
 
 ### Procedure
 
