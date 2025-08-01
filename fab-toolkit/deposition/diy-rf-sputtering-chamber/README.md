@@ -1,7 +1,4 @@
 ---
-description: >-
-  *More detailed design explanations, build instruction, and operating
-  procedures are yet to be uploaded*
 cover: ../../../.gitbook/assets/IMG_7049.jpg
 coverY: 266.6676916987451
 ---
@@ -114,45 +111,6 @@ $4,957.09 as of 6/30/2025
 <table data-header-hidden><thead><tr><th width="142">Part</th><th width="53">#</th><th width="408">Link</th><th>Total Price ($)</th></tr></thead><tbody><tr><td>Alicat MC Series MFC (100 SCCM Ar)</td><td>1</td><td><a href="https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/">https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/</a></td><td>1544.4</td></tr><tr><td>Alicat MC Series MFC (50 SCCM O2)</td><td>1</td><td><a href="https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/">https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/</a></td><td>1544.4</td></tr><tr><td>KF16 to 1/8” Male NPT adapter</td><td>2</td><td><a href="https://locoscience.com/products/kf-16-to-npt-male-vacuum-fitting-loco-science?currency=USD&#x26;variant=36380797141147&#x26;utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Google%20Shopping&#x26;stkn=bfb99cbe7f05&#x26;gad_source=1&#x26;gad_campaignid=19936024283&#x26;gbraid=0AAAAADdoM7-bi0ISgQTgJ8jl9yMqjvSra&#x26;gclid=Cj0KCQjw64jDBhDXARIsABkk8J4I91IYZZCROysGnBMIDE1JQgjV1BJnSxkaiapP75puMDYDi8G9wd0aAobSEALw_wcB">https://locoscience.com/products/kf-16-to-npt-male-vacuum-fitting-loco-science?currency=USD&#x26;variant=36380797141147&#x26;utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Google%20Shopping&#x26;stkn=bfb99cbe7f05&#x26;gad_source=1&#x26;gad_campaignid=19936024283&#x26;gbraid=0AAAAADdoM7-bi0ISgQTgJ8jl9yMqjvSra&#x26;gclid=Cj0KCQjw64jDBhDXARIsABkk8J4I91IYZZCROysGnBMIDE1JQgjV1BJnSxkaiapP75puMDYDi8G9wd0aAobSEALw_wcB</a></td><td>33.98</td></tr><tr><td>1/4" VCR Male to 1/4" Male NPT adapters</td><td>2</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-2">https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-2</a></td><td>31.52</td></tr><tr><td>1/4" VCR Male to 1/8" Male NPT adapters</td><td>2</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-4">https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-4</a></td><td>31.6</td></tr><tr><td>1/4" VCR metal gaskets</td><td>4</td><td><a href="https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2-GR?q=:relevance:platingsCoatings:Silver-Plated:gasketStyle:Gasket+Retainer+Assembly:bodyMaterial:316L+Stainless+Steel:gasketSize:1%2F4+in.">https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2-GR?q=:relevance:platingsCoatings:Silver-Plated:gasketStyle:Gasket+Retainer+Assembly:bodyMaterial:316L+Stainless+Steel:gasketSize:1%2F4+in.</a></td><td>23</td></tr><tr><td>Flexible Metal gas line 1/4" male VCR ends</td><td>2</td><td><a href="https://www.amazon.com/corrugated-pipe-VCR1-4Female-metal/dp/B0C13LJZG3?th=1">https://www.amazon.com/corrugated-pipe-VCR1-4Female-metal/dp/B0C13LJZG3?th=1</a></td><td>161.15</td></tr><tr><td>3850 series dual stage regulators</td><td>2</td><td><a href="https://store.mathesongas.com/3850-series-dual-stage-high-purity-miniature-regulator-brass/">https://store.mathesongas.com/3850-series-dual-stage-high-purity-miniature-regulator-brass/</a></td><td>1587.04</td></tr><tr><td><strong>Total</strong></td><td></td><td></td><td><strong>$4,957.09</strong></td></tr></tbody></table>
 
 UHP Ar and O2 cylinders not included in BOM
-
-## SOP for Al deposition
-
-\*Pics and much more detailed procedures yet to be uploaded\*
-
-1. Ensure pump, power supply, and fans are all powered off
-2. Lift off the top plate and place its sideways to avoid contaminating sealing surfaces
-3. Use wing nuts to adjust substrate stage to desired height
-4. Place chip/wafer in center of substrate stage
-5. Place top plate onto cylinder.
-6. Ensure that the substrate shutter will not collide with threaded rods
-7. Power on pumping system, turn on the pump.
-8. Use digital control unit arrow buttons to scroll to parameter 707. Click both arrows simultaneously, then ensure parameter 707 is set to 100% by using arrows to increase and decrease value. Set the value by pressing both arrows simultaneously.
-9. Scroll to parameter 340 to view chamber pressure.
-10. Wait until chamber pressure reaches 5E-7 hPa or lower (this will take several hours, but should be to E-6 range within 15 minutes)
-11. Plug in the power strip to power on all fans and MFC
-12. Open the Ar cylinder top valve.
-13. Adjust the dual stage regulator until the Ar line is at 10-15 PSIG
-14. Set the MFC to 10 sccm.
-15. Scroll to parameter 707, and set pump speed to 25% (aka 250 Hz)
-16. Scroll back to parameter 340 to view pressure, which should now be \~1E-3 hPa
-17. Wait until pump reaches 250 Hz
-18. Set MFC to 90 sccm
-19. Turn on switching DC power supply to power on radio
-20. Turn on radio, and tape handle to keep power on
-21. If plasma has not yet struck, adjust left tuning knob on antenna tuner until it does
-22. Minimize reflected power, should be 10 watts or less at 100 watt output
-23. Reduce to 30 sccm, should result in \~1E-2 hPa pressure
-24. Wait 15 minutes for Al target to be cleaned (pre-sputtering)
-25. Carefully tighten shutter thumb screw to move shutter away from target (avoid lateral torque on screw to prevent any leaks)
-26. Wait the desired deposition time
-27. Turn off radio
-28. Switch off the radio power supply,
-29. Set MFC to 0 sccm
-30. Close Ar cylinder
-31. Stop turbo pump.
-32. Wait until pump speed reaches o Hz
-33. Vent chamber with vent on the side of the turbo pump
-34. Remove top plate, collect chip/wafer.
 
 ## Testing/Verification
 
