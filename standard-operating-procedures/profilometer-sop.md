@@ -55,7 +55,7 @@ As seen in the Figure above, we can see two "bumps", which are where we want to 
 
 8. **Levelling plot:** Move the red and green vertical lines such that in between those lines, we have a relatively flat region (as seen in Figure 6). Go to Plot> Level. We should now see this:
 
-<figure><img src="../.gitbook/assets/IMG_7532.jpg" alt=""><figcaption><p>Figure 7: Levelled Results from Profilometer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/IMG_7532 (1).jpg" alt=""><figcaption><p>Figure 7: Levelled Results from Profilometer</p></figcaption></figure>
 
 9. In order to measure the step height, drag the red and green vertical lines such that in between these lines we have the region of height difference (shown in Figure 7). The height difference is captured as Vert\_D. In this case, we an see that it is 2425 Angstroms, which translates to around 243 nm.
 
@@ -63,7 +63,7 @@ As seen in the Figure above, we can see two "bumps", which are where we want to 
 
 As seen in Figure 7 above, some regions are "bumpy". In order to get the average of these "bumps", one can go the Bands > Create Band and set a specific distance. For instance, in Figure 8 below, we have taken the average of 50 nm to the left and 50 nm to the right of the region of interest.&#x20;
 
-<figure><img src="../.gitbook/assets/IMG_7558.jpg" alt=""><figcaption><p>Figure 8: Using Bands when analyzing data</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/IMG_7558 (2).jpg" alt=""><figcaption><p>Figure 8: Using Bands when analyzing data</p></figcaption></figure>
 
 
 
