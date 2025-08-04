@@ -42,7 +42,7 @@
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
   * [Electroless Nickel Plating](fab-toolkit/deposition/electroless-nickel-plating.md)
-  * [⚛️DIY ALD](fab-toolkit/deposition/diy-ald/README.md)
+  * [⚛️DIY Atomic Layer Deposition](fab-toolkit/deposition/diy-ald/README.md)
     * [May 2025 CMU Update](fab-toolkit/deposition/diy-ald/may-2025-cmu-update.md)
     * [Dec. 2024 CMU Update](fab-toolkit/deposition/diy-ald/dec.-2024-cmu-update.md)
   * [⚡ DIY RF Sputtering Chamber](fab-toolkit/deposition/diy-rf-sputtering-chamber/README.md)

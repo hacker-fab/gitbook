@@ -1,14 +1,14 @@
 ---
-description: HackerFab DIY Low-Cost Atomic Layer Deposition Tool
+description: HackerFab DIY Low-Cost Atomic Layer Deposition (ALD) Tool
 ---
 
-# ⚛️DIY ALD
+# ⚛️DIY Atomic Layer Deposition
 
 {% @github-files/github-code-block url="https://github.com/hacker-fab/ald" %}
 
 ## Preface
 
-These pages will present the current proposed machine design plan and the work completed to date for our vertically aligned, cold-walled reaction chamber ALD machine for the Hacker Fab at CMU. The Fall 2024 semester's efforts at CMU are described [here](dec.-2024-cmu-update.md) and the Spring 2025 efforts are described [here](may-2025-cmu-update.md). Please note that there were significant changes to the design of the chamber, precursor storage, and control systems from the Fall 2024 semester to Spring 2025; those aiming to replicate these efforts are recommended to review the Spring 2025 design changes. Once this project is complete, this page will be updated so as to present a finalized guide for the machine design and build.
+These pages will present the current proposed machine design plan and the work completed to date for our vertically aligned, cold-walled reaction chamber ALD machine for the Hacker Fab at CMU. The Fall 2024 semester's efforts at CMU are described [here](dec.-2024-cmu-update.md) and the Spring 2025 efforts are described [here](may-2025-cmu-update.md). Please note that there were significant changes to the design of the chamber, precursor storage, and control systems from the Fall 2024 semester to Spring 2025; those aiming to replicate these efforts are recommended to review the Spring 2025 design changes. Once this project is complete by the end of Summer 2025, this page will be updated so as to present a finalized guide for the machine design and build.
 
 ## Introduction
 
