@@ -11,26 +11,24 @@ coverY: 266.6676916987451
 
 At the CMU Hacker Fab, we started building an RF sputtering Chamber in the Fall 2024. After a second iteration, the RF sputtering chamber seems to be reliable enough to share.
 
-The sputtering project was originally initiated to support the development of a reliable DIY CMOS process. For context, the NMOS process as of F24 relies on buying p type wafers which already have a clean gate oxide grown on the, and a polysilicon gate contact deposited on top, providing a fab quality gate stack which is further processed into NMOS integrated circuits (ICs). For CMOS ICs, n type wells are needed within the p type substrate, and theses wells cannot be doped while the gate oxide and polysilicon gate contact are present on the wafer/substrate surface. Thus, to create  a CMOS process, the n wells would have to be doped **before** depositing a gate oxide and gate contact. Thus, to create a CMOS process, the fab needs to be capable of depositing a high quality gate oxide and gate contact, instead of buying wafers with the gate stack already present. The gate oxide and it's interfaces are the most sensitive parts of a transistors, as they are sensitive to small amounts of contamination, and small concentration of thin film and interfacial defects. For example to grow a high quality gate oxide of SiO2, requires a remarkably pure environment since ionic contamination at those temperature is extremely mobile, and can ruin the gate oxide.
+The sputtering project was originally initiated to support the development of a reliable DIY CMOS process. For context, the NMOS process as of F24 relies on buying p-type wafers which already have a clean gate oxide grown on the substrate, and a polysilicon gate contact deposited on top, providing a fab quality gate stack which is further processed into NMOS integrated circuits (ICs). For CMOS ICs, n-type wells are needed within the p-type substrate, and these wells cannot be doped while the gate oxide and polysilicon gate contact are present on the wafer/substrate surface. Thus, to create a CMOS process, the n-wells would have to be doped **before** depositing a gate oxide and gate contact. Therefore, the fab needs to be capable of depositing a high quality gate oxide and gate contact, instead of buying wafers with the gate stack already present. The gate oxide and its interfaces are the most sensitive parts of a transistor, as they are sensitive to small amounts of contamination, and small concentrations of thin film and interfacial defects. For example, to grow a high quality gate oxide of SiO2 requires a remarkably pure environment since ionic contamination at those temperature is extremely mobile, and can ruin the gate oxide.
 
-After assessing the feasibility of creating high quality gate stacks through various methods, we landed on sputtering as the best tool for our situation; a fab that exists in non clean room. We chose RF sputtering, as it is capable of depositing almost any material, including high K dielectrics. Additionally, the vacuum environment of the sputtering chamber is likely o produce higher purity films than if we attempted to create a high purity furnace for growing oxides.&#x20;
+After assessing the feasibility of creating high quality gate stacks through various methods, we landed on sputtering as the best tool for our situation; a fab that exists in non-clean room. We chose RF sputtering, as it is capable of depositing almost any material, including high-K dielectrics. Additionally, the vacuum environment of the sputtering chamber is likely to produce higher purity films than if we attempted to create a high purity furnace for growing oxides.&#x20;
 
-The initial material chose for the the sputter gate stack were Aluminum oxide (double the dielectric constant of SiO2) as the gate oxide, and aluminum as the gate contact. The aluminum oxide is to be deposited a a reactive process, by flowing in O2 during the sputtering process, and using an Al Target. This process selection allows for the use of a single target, and allows for the deposition of both the gate oxide, and gate contact in a single sputtering run, which helps avoid contamination of the gate oxide, since it is covered with aluminum before venting the chamber, and exposing the wafer to potential contamination.&#x20;
+The initial materials chosen for the sputter gate stack were Aluminum oxide (twice the dielectric constant of SiO2) as the gate oxide and aluminum as the gate contact. The aluminum oxide is to be deposited via a reactive process, by flowing in O2 during the sputtering process, and using an Al target. This process selection allows for the use of a single target, and allows for the deposition of both the gate oxide and gate contact in a single sputtering run, which helps avoid contamination of the gate oxide, since it is covered with aluminum before venting the chamber and exposing the wafer to potential contamination.&#x20;
 
 Si - Al2O3 to Si gate stack:
 
 &#x20;pros
 
-* High k dielectric
+* High-k dielectric
 * Single target needed if reactive sputtering is used
 * Allows for immediate protection of gate oxide (which is very contamination sensitive)
 * Cheap sputtering target material
 
-
-
 cons
 
-* Of all the metals, Al is particularly sensitive to oxygen contamination, and pre-sputtering/target cleaning. So, our system will have to be able to delivery extremely pure Ar, and a very clean vacuum environment to achieve conductive aluminum,
+* Of all the metals, Al is particularly sensitive to oxygen contamination, and pre-sputtering/target cleaning. So, our system will have to be able to delivery extremely pure Ar, and a very clean vacuum environment to achieve conductive aluminum
 
 ## Goal Specifications
 
@@ -40,7 +38,7 @@ cons
 * 100 watts 14 MHz RF power with >90% impedance matching
 * Stable plasma down to 5 millitorr Ar
 * .5 - 8" adjustable throw distance
-* \>10nm/minute deposition rate for Al at 4" throw distance.
+* \>10nm/minute deposition rate for Al at 4" throw distance
 * Balanced magnetron magnetic field
 * 1 sccm O2 flow accuracy
 * 1 sccm Ar flow accuracy
@@ -48,7 +46,7 @@ cons
 * Air cooled magnetron
 * 2 simultaneous process gasses
 * View port
-* Entire system machinable with only a drill press and band saw.
+* Entire system machinable with only a drill press and band saw
 
 #### Thin films
 
@@ -92,7 +90,7 @@ $1025.88 as of 6/30/2025
 
 ## Pumping System + Vacuum Gauge
 
-A turbo pump was selected to ensure a base pressure of 1E-7 torr prior to depositions. Any turbo pump + roughing pump system could be used, but the HiCube 300 Eco pumping system was used because we already had it prior to beginning the project. The MPT 200 pressure guage was also used simply becasue we already had one.
+A turbo pump was selected to ensure a base pressure of 1E-7 torr prior to depositions. Any turbo pump + roughing pump system could be used, but the HiCube 300 Eco pumping system was used because we already had it prior to beginning the project. The MPT 200 pressure gauge was also used simply because we already had one.
 
 #### BOM
 
@@ -102,7 +100,7 @@ $11,399.86 as of 6/30/2025
 
 ## Gas Flow
 
-Mass flow controllers that can deliver small amounts precise flow are necessary to achieve ethe desired pressures. The MCFs require a fixed pressure of around 10-20 PSIG on the inlet side to maintain accurate flow, so dual stage regulators are used to control pressure between the MFC and cylinder.
+Mass flow controllers that can deliver small amounts precise flow are necessary to achieve the desired pressures. The MCFs require a fixed pressure of around 10-20 PSIG on the inlet side to maintain accurate flow, so dual stage regulators are used to control pressure between the MFC and cylinder.
 
 #### BOM
 
@@ -110,7 +108,7 @@ $4,957.09 as of 6/30/2025
 
 <table data-header-hidden><thead><tr><th width="142">Part</th><th width="53">#</th><th width="408">Link</th><th>Total Price ($)</th></tr></thead><tbody><tr><td>Alicat MC Series MFC (100 SCCM Ar)</td><td>1</td><td><a href="https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/">https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/</a></td><td>1544.4</td></tr><tr><td>Alicat MC Series MFC (50 SCCM O2)</td><td>1</td><td><a href="https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/">https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/</a></td><td>1544.4</td></tr><tr><td>KF16 to 1/8” Male NPT adapter</td><td>2</td><td><a href="https://locoscience.com/products/kf-16-to-npt-male-vacuum-fitting-loco-science?currency=USD&#x26;variant=36380797141147&#x26;utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Google%20Shopping&#x26;stkn=bfb99cbe7f05&#x26;gad_source=1&#x26;gad_campaignid=19936024283&#x26;gbraid=0AAAAADdoM7-bi0ISgQTgJ8jl9yMqjvSra&#x26;gclid=Cj0KCQjw64jDBhDXARIsABkk8J4I91IYZZCROysGnBMIDE1JQgjV1BJnSxkaiapP75puMDYDi8G9wd0aAobSEALw_wcB">https://locoscience.com/products/kf-16-to-npt-male-vacuum-fitting-loco-science?currency=USD&#x26;variant=36380797141147&#x26;utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Google%20Shopping&#x26;stkn=bfb99cbe7f05&#x26;gad_source=1&#x26;gad_campaignid=19936024283&#x26;gbraid=0AAAAADdoM7-bi0ISgQTgJ8jl9yMqjvSra&#x26;gclid=Cj0KCQjw64jDBhDXARIsABkk8J4I91IYZZCROysGnBMIDE1JQgjV1BJnSxkaiapP75puMDYDi8G9wd0aAobSEALw_wcB</a></td><td>33.98</td></tr><tr><td>1/4" VCR Male to 1/4" Male NPT adapters</td><td>2</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-2">https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-2</a></td><td>31.52</td></tr><tr><td>1/4" VCR Male to 1/8" Male NPT adapters</td><td>2</td><td><a href="https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-4">https://products.swagelok.com/en/c/straights/p/SS-4-VCR-1-4</a></td><td>31.6</td></tr><tr><td>1/4" VCR metal gaskets</td><td>4</td><td><a href="https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2-GR?q=:relevance:platingsCoatings:Silver-Plated:gasketStyle:Gasket+Retainer+Assembly:bodyMaterial:316L+Stainless+Steel:gasketSize:1%2F4+in.">https://products.swagelok.com/en/c/gaskets/p/SS-4-VCR-2-GR?q=:relevance:platingsCoatings:Silver-Plated:gasketStyle:Gasket+Retainer+Assembly:bodyMaterial:316L+Stainless+Steel:gasketSize:1%2F4+in.</a></td><td>23</td></tr><tr><td>Flexible Metal gas line 1/4" male VCR ends</td><td>2</td><td><a href="https://www.amazon.com/corrugated-pipe-VCR1-4Female-metal/dp/B0C13LJZG3?th=1">https://www.amazon.com/corrugated-pipe-VCR1-4Female-metal/dp/B0C13LJZG3?th=1</a></td><td>161.15</td></tr><tr><td>3850 series dual stage regulators</td><td>2</td><td><a href="https://store.mathesongas.com/3850-series-dual-stage-high-purity-miniature-regulator-brass/">https://store.mathesongas.com/3850-series-dual-stage-high-purity-miniature-regulator-brass/</a></td><td>1587.04</td></tr><tr><td><strong>Total</strong></td><td></td><td></td><td><strong>$4,957.09</strong></td></tr></tbody></table>
 
-UHP Ar and O2 cylinders not included in BOM
+(UHP Ar and O2 cylinders not included in BOM)
 
 ## Testing/Verification
 
@@ -122,8 +120,8 @@ UHP Ar and O2 cylinders not included in BOM
 
 ## Future/Pending Work
 
-* Replae radio with signal generator and amplifier
-* Build our own tuner/matching network (its literally just an inductor and variable capacitor)
+* Replace radio with signal generator and amplifier
+* Build our own tuner/matching network (as it is literally just an inductor and variable capacitor)
 * DIY substrate heater
 * DIY QCM
 * Automation/controls
@@ -131,7 +129,7 @@ UHP Ar and O2 cylinders not included in BOM
 
 ## Lessons Learned
 
-Many failures occurred over two iterations of power supply and chamber. A more detailed collection and description of these is yet to be uploaded
+Many failures occurred over two iterations of the power supply and chamber. A more detailed collection and description of these is yet to be uploaded.
 
 ## Contacts
 
