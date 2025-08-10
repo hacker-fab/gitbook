@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 💡 Thermal Evaporator V1 Build (WIP)
 
 &#x20;
