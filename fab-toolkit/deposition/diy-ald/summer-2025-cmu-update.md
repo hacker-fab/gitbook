@@ -92,7 +92,7 @@ The company Mass-Vac has [posi-trap vacuum traps](https://www.massvac.com/posi-t
 
 Note: You are able to choose between two models that can be more suitable for your set up, including a right-angle or straight-through shape for the posi-traps.&#x20;
 
-This trap system will be after the chamber and before the vacuum pump to prevent major damage on the pump and filter out the chemicals before entering the exhaust. To know when to switch the filter elements of the traps, you can put one pressure gauge on the inlet side and another on the outlet side of the trap configuration. When there is a significant pressure difference between the two gauges, it is a good indicator to switch out the filter elements.&#x20;
+This trap system will be after the chamber and before the vacuum pump to prevent major damage on the pump and filter out the chemicals before entering the exhaust. To know when to switch the filter elements of the traps, you can put one pressure gauge on the inlet side and another on the outlet side of the trap configuration. When there is a significant pressure difference between the two gauges, it is a good indicator to switch out the filter elements.
 
 
 
@@ -192,82 +192,12 @@ The exhaust system is composed of aluminum and stainless steel to ensure safety 
 
 Chamber pressure&#x20;
 
-**(To be filled)**\
+**(Link to google docs/sheets data)**\
 
 
 Heating elements
 
-**(To be filled)**\
+**(Link to google docs/sheets data)**\
 
 
-## Key Components
-
-ALD precursors and co-reactants are self-limiting&#x20;
-
-1. Precursor and co-reactant selection
-   1. Have to be reactive with the surface groups&#x20;
-   2. Volatility, thermal stability, and reactivity have to be high
-   3. Different ways to deliver the precursor to the chamber
-2. Chemical composition
-   1. Checking if the intended materials are being deposited through X-ray photoelectron spectroscopy (XPS) or four-point probe conductivity measurement&#x20;
-   2. Optimization of the parameters
-   3. Chemical composition and stoichiometry will determine the final material properties&#x20;
-3. Thickness control
-   1. Want to deposit the same amount of material in each cycle&#x20;
-   2. Thickness is determined per cycle (growth per cycle or GPC)
-   3. Keep track of material increase during deposition and deposit multiple samples with a varying number of cycles (Thickness vs. ALD cycles)&#x20;
-   4. Focus of thicker films over 15 nm
-   5. Determining film thickness:
-      1. Spectroscopic ellipsometry&#x20;
-      2. Number of deposited atoms (rutherford backscattering spectroscopy)
-      3. Deposited mass (quartz-crystal microbalance or QCM)
-4. Saturation
-   1. Need to optimize precursor dosing time, precursor purging time, co-reactant dosing time, and co-reactant purging time (two-step process)
-   2. Choose a relatively long time for three of the four while varying the fourth&#x20;
-   3. Confirm saturation when increasing the dosing or purging time does not increase or decrease the GPC any more (do with all steps of the procedure)
-   4.  Phenomena that deviate the saturation curve&#x20;
-
-       1. Precursor condensation and decomposition (precursor curve)
-       2. Too short co-reactant dosing times (impurity incorporation)
-       3. Too short purging times (parasitic components impacting conformality and uniformity&#x20;
-       4. Too long dosing and purging times can slow down the process
-
-       <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-5. Material properties
-   1. Optical properties (refractive index, absorption coefficient)
-   2. Electrical properties (resistivity, carrier density, mobility)
-   3. Surface morphology (roughness, crystallinity)
-6.  Temperature dependence
-
-    1. ALD window where the GPC is nearly constant for reliability and repeatability despite slight change in temperature
-    2. Constant GPC is not necessary but verifying saturation is important for all varied temperatures&#x20;
-    3. Temperature dependent GPC exist but show saturating ALD behavior over a wide temp. range
-
-    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-7. Uniformity&#x20;
-   1. Verified saturation in one area doesn’t mean dosing is sufficient everywhere
-   2. Place the largest fitting substrate into the chamber and check for thickness variation as well as material properties
-      1. Thickness uniformity may be good but the resistivity might vary significantly over the substrate&#x20;
-8. Conformality&#x20;
-   1. Ability to deposit on 3D structures with no variation in thickness (trenches or vias)
-   2.  Check for conformality
-
-       1. Deposit a vertical trench or via with a certain aspect ration (AR = height/width)
-       2. After deposition, calculate the ratio at different locations in comparison to the thickness at the surface&#x20;
-       3. There is also the Pillar Hall aspect ratio test
-
-       <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-9. Nucleation behavior&#x20;
-   1. Different film growth behavior from beginning to end
-   2. Linear growth, accelerated growth, and delayed growth
-   3. Nucleation behavior can affect material properties (defects, pinhole density, crystalline structure, and film resistivity)&#x20;
-   4. Nucleation behavior depends on the growth mode
-      1. Island growth forms isolated clusters that will eventually grow into a continuous film
-      2. Layer-by-layer growth
-   5. Growth mode depends on the difference in surface energy (substrate and deposited film)
-   6. GPC increase after crystallization after a certain thickness
-10. Other important aspects
-    1. Stability of the films over time and sensitivity to the environment
-    2. Reproducible film thickness and properties
-    3. Avoid overdosing and required precursor dosing depends on the surface area of the substrate (larger when working with 3D substrates)
-    4. Precursors can degrade after prolonged heating so turn off the heating when not depositing
+## Bill of Materials (Controls, Trap, Exhaust)
