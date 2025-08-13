@@ -521,7 +521,7 @@ description: My name is Yuichi and I will be working on the probe station this s
   ![](<../../.gitbook/assets/image (3) (1).png>)\
   \
   For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
-  ![](<../../.gitbook/assets/image (5).png>)\
+  ![](<../../.gitbook/assets/image (5) (3).png>)\
 
 * Tested the camera and the objective. I couldn't get the pattern very visible but it was sufficient (the patten part looks black and silver when I look at the chip with naked eyes, but why does this happen? Other objects like the piezo vibration sensor or the electric wire look as they are on the camera as well).\
   ![](<../../.gitbook/assets/image (6).png>)\

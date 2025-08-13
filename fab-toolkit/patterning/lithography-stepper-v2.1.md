@@ -105,7 +105,7 @@ These steps are heavily based on the steps done for V2, but some have changed.
 
 5. Unscrew and remove the shroud by sliding it away from the rest of the optics.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. _**NEW FOR 2.1:**_ Remove the bolts and standoffs that hold the main projector assembly to the bottom plate. This should free the bottom assembly.
 
