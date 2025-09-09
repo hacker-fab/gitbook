@@ -55,6 +55,10 @@
 * [🛠️ Other Processing Machines](fab-toolkit/other-processing-machines/README.md)
   * [Tube Furnace](fab-toolkit/other-processing-machines/tube-furnace.md)
   * [Cleaving Jig](fab-toolkit/other-processing-machines/cleaving-jig.md)
+* [Electronic Design Automation](fab-toolkit/electronic-design-automation/README.md)
+  * [Mask Generation](fab-toolkit/electronic-design-automation/mask-generation.md)
+  * [Page](fab-toolkit/electronic-design-automation/page.md)
+  * [Device Modeling](fab-toolkit/electronic-design-automation/device-modeling.md)
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
   * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
@@ -110,6 +114,7 @@
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
+* [KLayout Mask Generation SOP 1](standard-operating-procedures/klayout-mask-generation-sop-1.md)
 
 ## 🟢 WORKING DOCS
 
