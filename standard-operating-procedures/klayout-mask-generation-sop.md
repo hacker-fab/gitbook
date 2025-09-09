@@ -2,8 +2,6 @@
 
 KLayout is an open-source layout viewer and editor that offers advanced GUI, is scriptable in Ruby or Python, and has built-in DRC support. We will discuss installation, setup, and use of DRC and macros.&#x20;
 
-
-
 KLayout Installation\
 
 
@@ -12,8 +10,6 @@ KLayout Installation\
 2. Follow the installation wizard’s instructions, and leave all options as default.
 
 WARNING: If you install KLayout in an existing folder, the uninstaller will erase this folder including everything else there is! There are reports of users who by mistake installed KLayout in the root of the "C:" drive and the uninstaller tried to wipe the whole disk.
-
-
 
 Once installed, there should be three versions of KLayout: an “editor” version, a “default” version, and a “viewer” version. The “editor” version will be used when you create your own layouts, while the “viewer” version is pulled up when opening an existing GDS file. While in the “viewer” version, edits cannot be made to the layout. \
 
@@ -45,8 +41,6 @@ You will need the files in [this folder](https://drive.google.com/drive/folders/
 
 9. Download [drc.lydrc](https://drive.google.com/file/d/1xfUWRz4_kFF4GF3Jgdy9Ezh_oDb34M-c/view?usp=sharing) from the folder, right click inside the left window, select Import, and import drc.lydrc. If there is another file inside the DRC tab, delete it.
 10. Press the plain green Play button on the top right bar (shown in a previous image). This will allow you to use the set of DRC rules you have defined.&#x20;
-
-
 
 ## Creating A New Layout
 
