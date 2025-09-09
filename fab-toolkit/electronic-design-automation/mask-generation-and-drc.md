@@ -1,3 +1,9 @@
+---
+description: >-
+  Source doc can be found at:
+  https://docs.google.com/document/d/1ZS5bjdoCn44r_l2MRa-WB74HD4ZpJ85C6W1FY36Ok1k/edit?tab=t.0
+---
+
 # Mask Generation and DRC
 
 Our Maskless Photolithography Stepper uses a DLP projector to create a pattern.&#x20;
