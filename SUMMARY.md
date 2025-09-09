@@ -114,7 +114,7 @@
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
-* [KLayout Mask Generation SOP 1](standard-operating-procedures/klayout-mask-generation-sop-1.md)
+* [KLayout Mask Generation SOP](standard-operating-procedures/klayout-mask-generation-sop.md)
 
 ## 🟢 WORKING DOCS
 

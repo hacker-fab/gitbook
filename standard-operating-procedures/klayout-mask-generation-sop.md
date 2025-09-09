@@ -1,4 +1,4 @@
-# KLayout Mask Generation SOP 1
+# KLayout Mask Generation SOP
 
 KLayout is an open-source layout viewer and editor that offers advanced GUI, is scriptable in Ruby or Python, and has built-in DRC support. We will discuss installation, setup, and use of DRC and macros.&#x20;
 
