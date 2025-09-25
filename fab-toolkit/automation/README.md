@@ -34,8 +34,8 @@ Lab Auto's goal is to automate the steps of the NMOS process for Hacker Fab. Thi
 [liquid-handling.md](liquid-handling.md)
 {% endcontent-ref %}
 
-{% content-ref url="../other-processing-machines/tube-furnace.md" %}
-[tube-furnace.md](../other-processing-machines/tube-furnace.md)
+{% content-ref url="../annealing/tube-furnace/" %}
+[tube-furnace](../annealing/tube-furnace/)
 {% endcontent-ref %}
 
 {% content-ref url="wafer-cleaver.md" %}

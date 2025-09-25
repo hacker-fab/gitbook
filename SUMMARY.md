@@ -52,9 +52,10 @@
 * [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
-* [🛠️ Other Processing Machines](fab-toolkit/other-processing-machines/README.md)
-  * [Tube Furnace](fab-toolkit/other-processing-machines/tube-furnace.md)
-  * [Cleaving Jig](fab-toolkit/other-processing-machines/cleaving-jig.md)
+* [🛠️ Annealing](fab-toolkit/annealing/README.md)
+  * [Tube Furnace](fab-toolkit/annealing/tube-furnace/README.md)
+    * [Tube Furnace 4: Aphex](fab-toolkit/annealing/tube-furnace/tube-furnace-4-aphex.md)
+    * [Tube Furnace 3: Tabasco](fab-toolkit/annealing/tube-furnace/tube-furnace-3-tabasco.md)
 * [Electronic Design Automation](fab-toolkit/electronic-design-automation/README.md)
   * [Mask Generation and DRC](fab-toolkit/electronic-design-automation/mask-generation-and-drc.md)
   * [Device Modeling](fab-toolkit/electronic-design-automation/device-modeling.md)
@@ -90,6 +91,7 @@
 * [📚 Database](fab-toolkit/database-build/README.md)
   * [Machine Integration](fab-toolkit/database-build/machine-integration.md)
   * [Steps and Processes](fab-toolkit/database-build/steps-and-processes.md)
+* [Cleaving Jig](fab-toolkit/cleaving-jig.md)
 
 ## 🧑‍🍳 Standard Operating Procedures
 
