@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Spin Coater V2 Build (work in progress)
 
 List of improvements over [Spin Coater V1](spin-coater-v1-build-to-do.md)

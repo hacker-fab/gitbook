@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Electroless Nickel Plating
 
 ## Working Docs

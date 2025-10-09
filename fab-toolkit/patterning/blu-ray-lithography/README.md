@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Blu-Ray Lithography
 
 ## Introduction

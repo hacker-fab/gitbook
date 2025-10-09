@@ -1,5 +1,6 @@
 ---
 description: Automating the Lab Process
+hidden: true
 ---
 
 # 🤖 Lab Automation

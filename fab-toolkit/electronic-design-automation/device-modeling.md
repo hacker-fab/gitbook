@@ -6,3 +6,8 @@ description: >-
 
 # Device Modeling
 
+
+
+Read in google doc link above for now ^&#x20;
+
+To be transferred to gitbook

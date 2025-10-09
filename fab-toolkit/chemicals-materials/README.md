@@ -1,2 +1,6 @@
-# ⚗ Chemicals / Materials
+---
+hidden: true
+---
+
+# ⚗️ Chemicals / Materials
 

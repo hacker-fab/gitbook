@@ -61,6 +61,5 @@ Some teams, such as Thorlabs, Kurt Lesker, Filmtronics, are very knowledgable an
 
 </details>
 
-## Organized List of Sellers
 
-To do, for now search our [Purchase Tracker](https://docs.google.com/spreadsheets/d/1x1SKlcFd_YezeLDJ4mFUUFoybHkMIZpcm6by8iPltEY/edit#gid=0)
+
