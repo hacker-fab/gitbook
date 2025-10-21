@@ -1,6 +1,6 @@
 # Tube Furnace 3: Tabasco
 
-## Construction
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-25 173414.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-09-18 191001.png" alt=""><figcaption></figcaption></figure>
 

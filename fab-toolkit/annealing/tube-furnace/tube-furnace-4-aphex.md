@@ -1,6 +1,6 @@
 # Tube Furnace 4: Aphex
 
-## Construction
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-09-25 173334.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-09-18 191717.png" alt=""><figcaption></figcaption></figure>
 
