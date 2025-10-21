@@ -68,6 +68,7 @@
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
   * [IC Packaging](fab-toolkit/metrology-characterization/ic-packaging.md)
+  * [Scanning Tunneling Microscope](fab-toolkit/metrology-characterization/scanning-tunneling-microscope.md)
 * [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
   * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
   * [Dielectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
