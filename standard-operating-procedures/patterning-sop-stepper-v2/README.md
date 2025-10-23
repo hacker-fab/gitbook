@@ -43,6 +43,23 @@ See the appendix for useful resources about spin coating, our resist, and develo
 6. Deionized water
 7. Evaporating dish
 
+## Photoresist Alternative
+
+UV-curable 3D printing resin can serve as an effective substitute for conventional photoresist. It is inexpensive (approximately $15 on Amazon), easy to obtain, and generally less hazardous to handle.
+
+Due to its relatively high viscosity, the resin should be spin-coated at lower rotational speeds. Viscosity varies by brand and formulation, typically ranging from 150 to 1500 cP (mPa·s). In our trials, spin speeds between 1000 and 2000 rpm produced uniform coatings.
+
+When exposed using the default blue LED on the litho-stepper projector at maximum current, the resin required approximately 30–60 seconds to cure. The longer exposure time compared to photoresist is likely due to the greater film thickness. This value may vary depending on coating thickness and light intensity.
+
+Development:\
+Isopropyl alcohol (IPA) can be used as a substitute for standard photoresist developers or etchants. Complete removal can be challenging, so a combination of DI water rinse followed by IPA spray is recommended for best results.\
+\
+Figure 1: sample checkerboard patterns\
+![](<../../.gitbook/assets/image (353).png>)\
+Figure 2: microscope close up (grey/black is UV resin, blue is wafer)\
+![](<../../.gitbook/assets/image (354).png>)\
+
+
 ***
 
 ## Procedure
