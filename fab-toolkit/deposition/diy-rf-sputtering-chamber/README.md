@@ -34,25 +34,25 @@ cons
 
 #### Machine
 
-* 1E-7 torr base pressure
-* 100 watts 14 MHz RF power with >90% impedance matching
-* Stable plasma down to 5 millitorr Ar
-* .5 - 8" adjustable throw distance
-* \>10nm/minute deposition rate for Al at 4" throw distance
-* Balanced magnetron magnetic field
-* 1 sccm O2 flow accuracy
-* 1 sccm Ar flow accuracy
-* Actuatable substrate shield
-* Air cooled magnetron
-* 2 simultaneous process gasses
-* View port
-* Entire system machinable with only a drill press and band saw
+* <1E-7 torr base pressure ✅
+* 100 watts 14 MHz RF power with >90% impedance matching ✅
+* Stable plasma down to 5 millitorr Ar ❌ (7 millitorr lowest achieved)
+* .5 - 8" adjustable throw distance ✅
+* \>10nm/minute deposition rate for Al at 4" throw distance ❌ (experiencing \~2.5 nm/min at 100 watts 4" throw)
+* Balanced magnetron magnetic field ❓
+* <1 sccm O2 flow accuracy ✅
+* <1 sccm Ar flow accuracy ✅
+* Actuatable substrate shield ✅
+* Air cooled magnetron ✅
+* 2 simultaneous process gasses ✅
+* View port ✅
+* Entire system machinable with only a drill press and band saw ✅
 
 #### Thin films
 
-* Al2O3 measured dielectric constant >6
-* Al2O3 surface roughness <5nm
-* Al resistivity of <3E-6 ohm-cm
+* Al2O3 measured dielectric constant >6 ❓
+* Al2O3 surface roughness <5nm ❓
+* Al resistivity of <3E-6 ohm-cm ❓
 
 
 
@@ -112,8 +112,9 @@ $4,957.09 as of 6/30/2025
 
 ## Testing/Verification
 
-* Chamber reaches 1.6E-7 hPa base pressure
+* Chamber reaches 8.6E-8 hPa base pressure
 * Highly conductive Al films have been sputtered
+* Insulating reactively Sputtered Al2O3 films have been sputtered
 * Further characterization of films is actively being pursued
 
 <figure><img src="../../../.gitbook/assets/unnamed (1).png" alt=""><figcaption><p>Glass microscope slide with Al sputtered onto it</p></figcaption></figure>
