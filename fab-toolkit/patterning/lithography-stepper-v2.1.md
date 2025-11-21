@@ -73,7 +73,7 @@ The software ([custom](https://github.com/hacker-fab/stepper) and [GRBL](https:/
 There are several mechanical parts that will need to be fabricated:
 
 * top plate x1: laser cut from acrylic or machined, from [V2.1 CAD](https://github.com/hacker-fab/stepper_cad) (`assembly.FCStd`, part `top_plate`)
-* adapter plate x1: 3D printed or machined, from modified [V2 CAD](https://cad.onshape.com/documents/9a26802ff74766ab4a3300db/w/c38cc8ce466d94f1188a02dc/e/dc1e5fa1658c924bae41ec8a) (part `adapter-DLP471EVM`)
+* adapter plate x1: 3D printed or machined, from modified [V2 CAD](https://cad.onshape.com/documents/9a26802ff74766ab4a3300db/w/c38cc8ce466d94f1188a02dc/e/dc1e5fa1658c924bae41ec8a) (part `adapter-DLP471EVM` for the machined version, `adapter plate 3d print alt` for the 3d print version)
 * PCB holder x1: 3D printed, CAD [here](https://cad.onshape.com/documents/10531a6d720ba41d9b6b0029/w/6ee9eb44d264029fe6767e9a/e/68128b59d67d22dde591e088). I can't make this one shared publicly due to weird permissions problems, this is a HackerFab admin issue.
 * for builds that are not making use of an existing optical table: bottom plate. laser cut or machined, 1 inch grid of ¼ inch holes at least 6x6 inches
 
