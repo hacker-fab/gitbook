@@ -45,8 +45,7 @@ description: Hey! I'm Gina, and I will be working on EDA/PDK this semester.
 **What was accomplished:**&#x20;
 
 * Worked on fabrication of Metrology Resistor chips from Friday-Sunday&#x20;
-  * First chip had issues with etching (as shown on left), so we re-did patterning on it on Sunday and left it in for longer (as shown on right).\
-
+  * First chip had issues with etching (as shown on left), so we re-did patterning on it on Sunday and left it in for longer (as shown on right).<br>
 
 <figure><img src="../../.gitbook/assets/IMG_5C2E0E76BFCC-1.jpeg" alt="" width="351"><figcaption><p>After P504 glass on chip#1, chip#2. Overlapping channel region seen above. </p></figcaption></figure>
 

@@ -83,11 +83,10 @@ As seen, the SoG with the lowest thickness (190 nm) had the maximum peak at a wa
 * Spectrogryph Manual Website: [https://www.effemm2.de/spectragryph/about\_help\_manual.html](https://www.effemm2.de/spectragryph/about_help_manual.html)
 *
 
-\
+<br>
 
+## &#x20;        <br>
 
-## &#x20;         
-
 \
 \
 \
@@ -105,13 +104,11 @@ As seen, the SoG with the lowest thickness (190 nm) had the maximum peak at a wa
 \
 \
 \
-\
-
+<br>
 
 
 
-\
-
+<br>
 
 
 

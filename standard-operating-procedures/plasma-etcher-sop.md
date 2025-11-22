@@ -101,4 +101,4 @@ SF6 is not toxic, but fluorine is. By purging before and after the plasma, we’
 1. Purging before removes all water from the chamber. This prevents any HF from being formed, which would otherwise corrode the pump and exhaust. If the exhaust hose connected to the pump turns green, this is an indication that HF is being formed.
 2. Purging after removes all reaction products from the chamber. This includes SiF4 and various other sulfur oxides.
 
-\
+<br>

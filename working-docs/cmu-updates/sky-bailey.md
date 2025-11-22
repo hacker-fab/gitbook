@@ -31,8 +31,7 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 
 1.  This week, I put the part orders for V2.1 in. Having parts on the table is a hell of a motivator for me, so I'm excited to dig in more now.\
     \
-    This week I also did a bunch more research on litho and microscope optics in general. I'm still not planning to make changes to the optics setup on V2.1 initially except for the camera, but it was still good to confirm the design decisions that went into it. One notable thing that I had been curious about in the existing design was was how we were able to see our UV LEDs with our standard color camera (which should theoretically filter that out). The answer is that our 410nm LEDs are so near-UV that the camera's "UV filter" actually barely attenuates them (maybe by a couple decibels but it's still well within the blue sensitivity range).\
-
+    This week I also did a bunch more research on litho and microscope optics in general. I'm still not planning to make changes to the optics setup on V2.1 initially except for the camera, but it was still good to confirm the design decisions that went into it. One notable thing that I had been curious about in the existing design was was how we were able to see our UV LEDs with our standard color camera (which should theoretically filter that out). The answer is that our 410nm LEDs are so near-UV that the camera's "UV filter" actually barely attenuates them (maybe by a couple decibels but it's still well within the blue sensitivity range).<br>
 
     I also got started on the design for my frame. I chatted with a MechE friend of mine and we decided that the single M4 screw mount that the optics assembly has is not enough to support it (surprise surprise), so currently the plan is to have 2 parallel plates of 5mm acrylic with some arrangement of tube clamps to suspend the optics assembly in between them.\
     \
@@ -130,8 +129,7 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 1.  Not much to report on this week due to Carnival, but I did finish up the focus calibration between the camera and projector. \
     \
     Also, while helping Yuichi with microscope setup for the probe station I learned something about finite objectives that may point toward a possible design issue with the stepper's optics... it turns out, while the Stepper V2 is designed for an objective with a 160mm backfocal length, the standard "160mm" finite objectives _are not 160mm backfocal..._ they are 160mm "eyepiece distance," which means they actually have a backfocal distance of 150mm. This means we've been running our objectives 10mm outside of their calibrated range this whole time! This isn't necessarily a huge problem... it just means our magnification is a little bit higher than specified and we might be getting a little bit more abberations than we would be otherwise (maybe this is one reason for our reduced resolution?).\
-    Unfortunately, I don't think there's a way to fully fix this without requiring me to recalibrate the camera/projector focus: I can remove this SM1L05 to get most of the way there but that removes 12.7mm of optical path length, meaning to get "exactly" on 150mm I'd need to lengthen the projector and camera tubes by 2.7mm, which would require me to redo the calibration. Since V2 runs fine while being off by a whole 10mm I think the 2.7mm disparity should probably be fine, but I'll need to test it.\
-
+    Unfortunately, I don't think there's a way to fully fix this without requiring me to recalibrate the camera/projector focus: I can remove this SM1L05 to get most of the way there but that removes 12.7mm of optical path length, meaning to get "exactly" on 150mm I'd need to lengthen the projector and camera tubes by 2.7mm, which would require me to redo the calibration. Since V2 runs fine while being off by a whole 10mm I think the 2.7mm disparity should probably be fine, but I'll need to test it.<br>
 
     <figure><img src="../../.gitbook/assets/firefox_E2eS4UaaxY (1).png" alt="" width="375"><figcaption><p>The part to remove to get closer to correct focal distances</p></figcaption></figure>
 2. My workload for Human-Robot Interaction is picking up this week, so I'll be juggling with that mainly.
@@ -143,8 +141,7 @@ Hey, I'm Sky! I'm going to be working on the Litho Stepper team this semester.
 
 1.  Stepper V2.1 is all set up now! I talked about this in my presentation but it should be totally good to use now - Carson and I ran a test and determined that the blue light is totally usable for patterning. Someone at the presentation said that it might be better to bring exposure times back down closer to 8 seconds, and talking with Carson there's 2 ways we could do this: we could just increase the brightness of the blue LEDs (they're dimmed to around 15% brightness, like on Stepper V2), or we could actually do the UV mod. As for the latter, it's probably easier to just swap in the projector from Stepper V2, since that one's not being used now.\
     \
-    Some fun side adventures: this week I also did some testing with oil immersion. This was mainly for my intuition, but here's some images I captured comparing 10x, 100x dry, and 100x oil:\
-
+    Some fun side adventures: this week I also did some testing with oil immersion. This was mainly for my intuition, but here's some images I captured comparing 10x, 100x dry, and 100x oil:<br>
 
     <figure><img src="../../.gitbook/assets/image (253).png" alt="" width="375"><figcaption><p>10x</p></figcaption></figure>
 

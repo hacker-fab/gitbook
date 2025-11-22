@@ -18,8 +18,7 @@ The tube of the furnace is a 2 inch diameter quartz glass tube, with a center co
 
 Shelf brackets, sheet metal, kanthal wire, refractory cement, ceramic wool, quartz glass tube, nuts and bolts, refractory bricks, ceramic weave insulated copper wiring, motor control, thermocouple, ceramic beads, voltmeter, controlled power box, handle
 
-\
-
+<br>
 
 | Item              | Specifications                                                                                                                                                     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -31,8 +30,7 @@ Shelf brackets, sheet metal, kanthal wire, refractory cement, ceramic wool, quar
 | Refractory Bricks | 5” x 5” x 1” each, 2” hole cut through middle for glass tube, approximately 8 used and held together by refractory cement                                          |
 | Cut Brackets      | Approximately 5’8” of bracketing used, each bracket side is 1” wide with about 4 mm thickness, additional half bracket bar was cut to hold the handle going across |
 
-\
-
+<br>
 
 4. ### Construction
 
@@ -44,8 +42,7 @@ Shelf brackets, sheet metal, kanthal wire, refractory cement, ceramic wool, quar
 
 4\. Bend sheet metal into a box, drill hole to fit tube through as it sticks through insulation. Place the tube through sheet metal box. Drill holes for wires, add more ceramic beads to prevent contact if necessary. Pull the wires through the holes and fit the tube with insulation through the case.
 
-5\. Bracket the edges of the box, leaving extra bracket to allow the furnace to stand up. Fix in thermocouple.\
-
+5\. Bracket the edges of the box, leaving extra bracket to allow the furnace to stand up. Fix in thermocouple.<br>
 
 5. ### Testing and performance
 

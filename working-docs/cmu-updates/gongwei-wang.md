@@ -79,8 +79,7 @@ Created GitBook page.
 3.  Plans for next week:
 
     1. Work on learning and mastering the chip fabrication flow to produce high-quality chips while waiting for the mask generation scale-factor to be resolved. Possibly get hands-on safety training in the lab, for example HF handling procedures.\
-       \
-
+       <br>
 
 
 
@@ -202,8 +201,7 @@ The plasma etcher GUI was also unclear with documentation and the meanings of ho
 
 Learn from this experience and continue with steps 23+ of the fabrication process. And also begin lithography for the p+ body contacts after fixing the masks for those. \
 \
-&#x20;\
-
+&#x20;<br>
 
 **Weekly Update 10**
 
@@ -295,8 +293,7 @@ a\
 Further explore KiCad SPICE modelling and the parameters' effects on those simulation results.\
 Continue investigating and developing the extraction procedure and parameters for LEVEL 2 mosfet modelling.\
 \
-\
-
+<br>
 
 **Week 13 Update:**
 
@@ -314,4 +311,4 @@ Our current SPICE models are not yet advanced enough to simulate non-ideal MOSFE
 \
 **Next steps:**
 
-We did our final presentation on Thursday, so now we are focusing on writing out a comprehensive final documentation so that future students at CMU or other universities can quickly learn from our experience this semester on fabrication techniques and device modelling processes. \
+We did our final presentation on Thursday, so now we are focusing on writing out a comprehensive final documentation so that future students at CMU or other universities can quickly learn from our experience this semester on fabrication techniques and device modelling processes. <br>

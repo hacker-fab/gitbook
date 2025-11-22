@@ -88,9 +88,8 @@ Ask at the next meeting.
 
 
 
-**Update 2 (2/2/2025)**\
-
-
+**Update 2 (2/2/2025)**<br>
+---------------------------
 
 ### Accomplishments
 
@@ -192,9 +191,8 @@ The 3d vacuum wafer holder is tilted significantly.
 
 
 
-**Update 3 (2/9/2025)**\
-
-
+**Update 3 (2/9/2025)**<br>
+---------------------------
 
 
 
@@ -328,9 +326,8 @@ should be able to make all the parts for one axis of nanopositioner **IF** tooli
 
 
 
-**Update 5 (2/23/2025)**\
-
-
+**Update 5 (2/23/2025)**<br>
+----------------------------
 
 ### Accomplishments
 
@@ -560,8 +557,7 @@ Because shipping is outside of my control. these are things I can work on while 
 * Write code to interface piezo actuator with our motion controller.&#x20;
   * We use grbl for our motion controller. As far as I know grbl can only output step and direction.&#x20;
   * The first step   would be to find a good ratio to map the step signals from the controller to a frequency of sawtooth waves.
-* Test the effects of sawtooth wave frequency, amplitude and a combination of both on actuation for the existing prototype. \
-
+* Test the effects of sawtooth wave frequency, amplitude and a combination of both on actuation for the existing prototype. <br>
 
 ## **Update 9 (3/30/2025)**&#x20;
 

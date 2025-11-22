@@ -9,7 +9,7 @@ description: >-
 
 ### Links and Videos
 
-[Simple MOSFET intro video](https://www.youtube.com/watch?v=o3M2sOCGCKs\&list=PLfYdTiQCV\_p7sDswtLZKK43BWOd2mTmHC\&index=19) (5 min)
+[Simple MOSFET intro video](https://www.youtube.com/watch?v=o3M2sOCGCKs\&list=PLfYdTiQCV_p7sDswtLZKK43BWOd2mTmHC\&index=19) (5 min)
 
 
 
@@ -26,7 +26,7 @@ description: >-
 
 
 
-[Before we had transistors, we had lightbulbs](https://www.youtube.com/watch?v=FU\_YFpfDqqA) (18 min)
+[Before we had transistors, we had lightbulbs](https://www.youtube.com/watch?v=FU_YFpfDqqA) (18 min)
 
 * Then we moved to silicon
 * This stuff is regularly communicated as complex [magic](https://www.youtube.com/watch?v=d9SWNLZvA8g), and requires the permission of [billionaires](https://www.technologyreview.com/2021/10/27/1037118/moores-law-computer-chips/) to work on it. We are starting from 1960’s level complexity and working our way up to modern complexity.&#x20;
@@ -51,16 +51,16 @@ description: >-
 
 How do these things even make computers?
 
-* [How we turn sand to intelligence](https://www.youtube.com/watch?v=m6pJNW\_jpw0)
+* [How we turn sand to intelligence](https://www.youtube.com/watch?v=m6pJNW_jpw0)
 * [Making logic gates from transistors](https://www.youtube.com/watch?v=sTu3LwpF6XI) (13 min)
 
 
 
-Transistor → [logic gates](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/gate.html#c1) → basic logic circuitry (timers, counters, latches, shift registers, etc.) → [architecture abstractions that people made up over decades](https://www.researchgate.net/figure/Abstraction-layers-in-computing\_fig1\_27301366) → CPU
+Transistor → [logic gates](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/gate.html#c1) → basic logic circuitry (timers, counters, latches, shift registers, etc.) → [architecture abstractions that people made up over decades](https://www.researchgate.net/figure/Abstraction-layers-in-computing_fig1_27301366) → CPU
 
 
 
-[TinyTapeout Video Example: Making ASIC](https://www.youtube.com/watch?v=DdF\_nzMW\_i8)&#x20;
+[TinyTapeout Video Example: Making ASIC](https://www.youtube.com/watch?v=DdF_nzMW_i8)&#x20;
 
 * Application Specific Integrated Circuits
 
@@ -95,7 +95,7 @@ Right now it takes about 8 hours of work + waiting overnight to turn a blank waf
 
 
 
-We've only made NMOS devices so far, but there are [so](https://www.google.com/search?q=every+type+of+transistor\&rlz=1C1ONGR\_enUS970US970\&oq=every+type+of+transistor\&gs\_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCggFEAAYhgMYigUyCggGEAAYhgMYigUyCggHEAAYhgMYigXSAQgyNDQyajBqN6gCALACAA\&sourceid=chrome\&ie=UTF-8) [many](https://chat.openai.com/share/099cc03e-85a9-4d2f-b484-4c63acf42be2) [more](https://en.wikipedia.org/wiki/Image\_sensor) [things](https://en.wikipedia.org/wiki/Moore's\_law) to be made. That means our process data corresponds to NMOS only, but most process steps can be generalized to any process if documented properly.&#x20;
+We've only made NMOS devices so far, but there are [so](https://www.google.com/search?q=every+type+of+transistor\&rlz=1C1ONGR_enUS970US970\&oq=every+type+of+transistor\&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCggFEAAYhgMYigUyCggGEAAYhgMYigUyCggHEAAYhgMYigXSAQgyNDQyajBqN6gCALACAA\&sourceid=chrome\&ie=UTF-8) [many](https://chat.openai.com/share/099cc03e-85a9-4d2f-b484-4c63acf42be2) [more](https://en.wikipedia.org/wiki/Image_sensor) [things](https://en.wikipedia.org/wiki/Moore's_law) to be made. That means our process data corresponds to NMOS only, but most process steps can be generalized to any process if documented properly.&#x20;
 
 Each unique device can also use different materials entirely, which requires different machines.
 
@@ -105,4 +105,4 @@ Each unique device can also use different materials entirely, which requires dif
 
 <img src="https://lh7-us.googleusercontent.com/knJmZCIrFricqFfv40scdgntszazuSamAtSgOAnnB4X4PsxFmoV0dL6gjguZ3fsYwdQB0wRZE8hr-ZWIyUhoc7wEzOimKhfX3qBBN7wqGuJPq7dwqWlR-4AQ16WBRnM5PL0EhcqAYkBbFb9cPA6zX9w" alt="" data-size="original">
 
-\
+<br>

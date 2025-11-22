@@ -167,8 +167,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 
 #### Plan
 
-* After we procure the USB microscope, check if we need to design additional parts (since it originally comes with a stand, I don't expect anything else will be needed).\
-
+* After we procure the USB microscope, check if we need to design additional parts (since it originally comes with a stand, I don't expect anything else will be needed).<br>
 * Select and order a magnetic board for the base of the probe station, like [this](https://www.amazon.com/dp/B007UHG7KI).
 * Order [the measurement device](https://digilent.com/shop/analog-discovery-3/).
 * Modify the design of the magnetic base for the positioners.
@@ -377,8 +376,7 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Last week, I found the magnetic board was too flimsy. I flipped it upside down this week like this below, but it was still not good.\
   ![](<../../.gitbook/assets/image (10).png>)\
   I used steel boards I made before for my research. I should design and order a sheet metal part like this.\
-  ![](<../../.gitbook/assets/image (11).png>)\
-
+  ![](<../../.gitbook/assets/image (11).png>)<br>
 
 #### Roadblocks
 
@@ -521,8 +519,7 @@ description: My name is Yuichi and I will be working on the probe station this s
   ![](<../../.gitbook/assets/image (3) (1).png>)\
   \
   For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
-  ![](<../../.gitbook/assets/image (5) (3).png>)\
-
+  ![](<../../.gitbook/assets/image (5) (3).png>)<br>
 * Tested the camera and the objective. I couldn't get the pattern very visible but it was sufficient (the patten part looks black and silver when I look at the chip with naked eyes, but why does this happen? Other objects like the piezo vibration sensor or the electric wire look as they are on the camera as well).\
   ![](<../../.gitbook/assets/image (6).png>)\
   ![](<../../.gitbook/assets/image (1) (8).png>)\

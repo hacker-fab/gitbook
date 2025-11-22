@@ -3,8 +3,7 @@
 | Title |
 | ----- |
 
-\
-
+<br>
 
 | Cost                  | $           |
 | --------------------- | ----------- |
@@ -12,16 +11,14 @@
 | Performance spec 1    | <p><br></p> |
 | Performance spec 2    | <p><br></p> |
 
-\
-
+<br>
 
 Insert picture of completed hardware\
-\
-
+<br>
 
 Useful Links:
 
-[Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV\_o5o/edit) and other related documents
+[Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV_o5o/edit) and other related documents
 
 ## Hardware Description
 
@@ -35,8 +32,7 @@ Stuff to buy. The BOM should include everything necessary to make the components
 
 
 
-[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1tM25RrjC127YzbMv5\_YfaZUyqUb6dUSwdO-u9tCkjsk/edit#gid=0) - edit sheet then update or copy table here\
-
+[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1tM25RrjC127YzbMv5_YfaZUyqUb6dUSwdO-u9tCkjsk/edit#gid=0) - edit sheet then update or copy table here<br>
 
 | Name        | QTY         | Cost per unit - USD | Total cost - USD | Purchasing Link                                 |
 | ----------- | ----------- | ------------------- | ---------------- | ----------------------------------------------- |
@@ -44,8 +40,7 @@ Stuff to buy. The BOM should include everything necessary to make the components
 | Item 2      | 1           | 10                  | 10               | [Amazon](https://www.amazon.com/)               |
 | <p><br></p> | <p><br></p> | <p><br></p>         | 0                | <p><br></p>                                     |
 
-\
-
+<br>
 
 You can use this space for any additional descriptions of the materials used.
 
@@ -57,8 +52,7 @@ Demonstrate the operation of the hardware and characterize its performance for a
 * If possible, characterize performance of the hardware over operational parameters.
 * Create a bulleted list describing the capabilities (and limitations) of the hardware.  For example, load and operation time, spin speed, coefficient of variation, accuracy, precision, etc
 
-\
-
+<br>
 
 ## Safety
 

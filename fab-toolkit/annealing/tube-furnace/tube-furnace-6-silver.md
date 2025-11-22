@@ -16,8 +16,7 @@ The tube of the furnace is a 2” diameter quartz class tube with 5mm thickness,
 
 Sheet metal, kanthal wire, refractory cement, ceramic wool, quartz glass tube, nuts and bolts, sewer pipe brackets, ceramic weave wire insulation, motor control, thermocouple, heat resistant tape, voltmeter, programmable circuit breaker, handle, PID controller, PID relay, plastic circuit box, metal bracket, rivets, metal zip ties, fuse reset, metal end caps
 
-\
-
+<br>
 
 | Item                | Specifications                                                                                               |
 | ------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -29,8 +28,7 @@ Sheet metal, kanthal wire, refractory cement, ceramic wool, quartz glass tube, n
 | Metal End Caps      | 5” diameter to fit around sheet metal tube, with a 2” circle cut in center to allow for access to glass tube |
 | Sewer Pipe Brackets | Circle diameter of around 5”, adjusted using bolts to fit the furnace snugly                                 |
 
-\
-
+<br>
 
 ### 4. Construction
 
@@ -45,16 +43,14 @@ Sheet metal, kanthal wire, refractory cement, ceramic wool, quartz glass tube, n
 5\. Screw on stand, add bracket with holes to the stand and screw the plastic circuit box to the bracket. Pull insulated kanthal wires into the box and wire PID controller, relay, fuse reset, and thermocouple.
 
 \
-\
-
+<br>
 
 | ![](../../../.gitbook/assets/unknown.png)                                                                                                     | ![](<../../../.gitbook/assets/unknown (1).png>)                    |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![](<../../../.gitbook/assets/unknown (3).png>)                                                                                               | ![](<../../../.gitbook/assets/unknown (4).png>)                    |
 | ![](<../../../.gitbook/assets/unknown (5).png>)Programmable circuit breaker to protect the power grid and voltmeter for thermocouple readings | ![](<../../../.gitbook/assets/unknown (6).png>)PID and Relay setup |
 
-\
-
+<br>
 
 ### 5. Testing and performance
 

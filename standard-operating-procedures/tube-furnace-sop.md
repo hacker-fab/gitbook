@@ -77,9 +77,8 @@ The furnace is obviously very hot. Keep away from any hot parts of the furnace. 
 
 The rod and tube also channel heat out of their ends via internal reflection of radiation.
 
-\
-
+<br>
 
 ***
 
-\
+<br>

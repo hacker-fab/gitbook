@@ -249,7 +249,7 @@ The primary modifications made are:
 3. Longer slot for thermocouple on the lower plate
 4. Registration marks to show users where chips should be placed on the surface.
 
-#### Insulation Plates 
+#### Insulation Plates<br>
 
 To reduce costs, the 4” ⌀ x 0.1” thick circular plates which were used in version 1 are replaced with 114 mm x 114 mm x 1 mm sheets. The original disks were sourced from Heeger materials for $220 each, while the new sheets were sourced from Amazon for $81 each. This yields an effective reduction in cost of $278 with the new design. While the heater module is still by no means cheap, reducing system costs has obvious advantages for reproducibility.
 
@@ -352,8 +352,7 @@ The Precursor Delivery System is responsible for housing and delivering precurso
 
 This project is part of the larger ALD project to unlock Hacker Fab’s capability to deposit high quality thin films with nanometer control over thickness and potential for a wide range of materials. ALD is also isotropic in nature, which allows the team to build new structures.
 
-Our aim is to create a system with similar capabilities as the ALD machine in the CMU Nanofab at a fraction of the cost. We also want our ALD system to be brought to the Nanofab in order to lower the barrier of entry to thin-film research at CMU.\
-
+Our aim is to create a system with similar capabilities as the ALD machine in the CMU Nanofab at a fraction of the cost. We also want our ALD system to be brought to the Nanofab in order to lower the barrier of entry to thin-film research at CMU.<br>
 
 The overall ALD Delivery System has two main elements:
 
@@ -424,8 +423,7 @@ Heating will be implemented with closed loop feedback control using thermocouple
 
 #### ALD valve gas supply:
 
-In order for the ALD valves to operate properly, it needs N2 gas at sufficient pressure, which has led to modification of the N2 gas supply line in our lab. This resulted in splitting the N2 supply between our plasma etcher and ALD and required purchasing of a number of NPT and push to connect fittings, as well as a pressure regulator and valves to control pressure. \
-
+In order for the ALD valves to operate properly, it needs N2 gas at sufficient pressure, which has led to modification of the N2 gas supply line in our lab. This resulted in splitting the N2 supply between our plasma etcher and ALD and required purchasing of a number of NPT and push to connect fittings, as well as a pressure regulator and valves to control pressure. <br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcgRHDfF1W_f81havlU4ngXOGoRYup_fDbHccHfbcVv4nSCFu2_mUfQqLwZOZHsUcLHyvI_ePloeD5nZMszjwmub8fUz6WuTLObtXkV5nCL2SlIfRz5NwEUvMu-TcQNOoVw5ZiSQ?key=NYzGmpur88jOR0drDW140_y5" alt=""><figcaption><p> Rough schematic of ALD valve N2 supply lines</p></figcaption></figure>
 
@@ -562,8 +560,7 @@ Holes are placed in the sheet metal enclosure to allow electrical and gas connec
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdIdHNzU5K4fGl__GDd2ymk4a7rzYDwijQ39e2XExgxzFhw13wkX-qL0gLxzDMHmB-bR2jevrzyl1ue79nYorwzKCgbxkcrbz1BXcQ1iye1UDoxIh01MNx7a1tlKx6sECN_oTC2Ng?key=NYzGmpur88jOR0drDW140_y5" alt=""><figcaption><p>Annotation of enclosure holes and other components</p></figcaption></figure>
 
-In order to further ensure smooth integration, we have decided to share a common stand with the ALD chamber constructed out of aluminum extrusions. This would allow further control over the relative positions between the Delivery System and Chamber to ensure the tube connecting both will connect successfully. 10-32 holes on the floor of the enclosure will be used for mounting to the common stand.\
-
+In order to further ensure smooth integration, we have decided to share a common stand with the ALD chamber constructed out of aluminum extrusions. This would allow further control over the relative positions between the Delivery System and Chamber to ensure the tube connecting both will connect successfully. 10-32 holes on the floor of the enclosure will be used for mounting to the common stand.<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbKZ3wBDKcD4GGZzFjrYUpQUitkU7v5HHd-IHCxXFXT--pc6-yBZlLvu182sbRzDyN4YD4AZ5zUy2Af1zP12z2ixOcQ9fPzGc8iNxc0qLR84_yCCSiY8sIUmvBn2F20MUWfDks3g?key=NYzGmpur88jOR0drDW140_y5" alt=""><figcaption><p> Front view of Delivery System with ALD Chamber on stand</p></figcaption></figure>
 
@@ -667,8 +664,7 @@ We have not yet been able to validate the heating tapes due to waiting for elect
 
 #### Exhaust Integration
 
-This is a part of the assembly that has not yet been completely finished due to lead times for all the necessary parts. So far the covers were printed and grommets installed with appropriate holes cut to size. The KF40 bulkhead clamp has also been installed to the top of the cabinet.\
-
+This is a part of the assembly that has not yet been completely finished due to lead times for all the necessary parts. So far the covers were printed and grommets installed with appropriate holes cut to size. The KF40 bulkhead clamp has also been installed to the top of the cabinet.<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf6qRgTRFk6Sg7Gtq3FjDiZU-GD6GJc11QK7Z_xtDVOkEQOFWyh0Av6DtHuK7iAWLDTbozxVNJPCuOXSENVPdnTJ6GlcNiSuFpIuoNw2GYyC5Usrh-x0AYKUixOrjob1NQQq8O5vA?key=NYzGmpur88jOR0drDW140_y5" alt=""><figcaption></figcaption></figure>
 

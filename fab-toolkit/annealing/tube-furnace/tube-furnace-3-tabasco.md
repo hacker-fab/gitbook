@@ -42,8 +42,7 @@ Shelf brackets, sheet metal, kanthal wire, refractory cement, ceramic wool, quar
 
 4\. Bend sheet metal into a box, drill hole to fit tube through as it sticks through insulation. Place the tube through sheet metal box. Drill holes for wires, use ceramic beads to prevent contact between wiring and the sheet metal box.
 
-5\. Bracket the edges of the box, leaving extra bracket to allow the furnace to stand up. Fix in thermocouple.\
-
+5\. Bracket the edges of the box, leaving extra bracket to allow the furnace to stand up. Fix in thermocouple.<br>
 
 5. ### Testing and performance
 

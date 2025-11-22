@@ -4,7 +4,7 @@ cover: ../../../.gitbook/assets/AD3.png
 coverY: -134
 ---
 
-# SMU - Analog Discoveries
+# SMU - Analog Discovery
 
 {% embed url="https://digilent.com/reference/test-and-measurement/analog-discovery-3/start" fullWidth="true" %}
 
@@ -67,8 +67,7 @@ The actual circuit will look something like this:
 
 *   Select “Measure Id/Vgs” and set the ranges for the Vgs and Vds.
 
-    \
-
+    <br>
 
     <figure><img src="https://lh7-us.googleusercontent.com/8zeOVu2eRjWmSVXl2hms-Zizn52cv3mlvYxCdZWacPnhJcgHzY-2tyelzH0sU_HLMgrEPV0rxZjdCFS6j3ahSyMKLSNZmM2gnjVGM2zyEJ4y55xqHHOnC8LHhID14SF3bQaqSTG5GI8E" alt=""><figcaption></figcaption></figure>
 * Select step-size/no. of steps for both voltages.

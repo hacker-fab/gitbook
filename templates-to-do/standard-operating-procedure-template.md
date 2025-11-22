@@ -1,4 +1,4 @@
-# Generic Process Manual Template
+# Standard Operating Procedure Template
 
 ## Parameters
 
@@ -27,11 +27,10 @@
 
 
 \
-\
-
+<br>
 
 ## Safety
 
 
 
-\
+<br>

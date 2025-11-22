@@ -10,15 +10,13 @@
 
 ## Hardware Description
 
-Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area? \
+Describe your hardware, highlighting the customization rather than the steps involved in the procedure. Explain how it differs from other hardware  and the advantages it offers over pre-existing methods. For example, how does this hardware compare to other hardware in terms of cost or ease of use, or how can it be used to develop further designs in a particular area? <br>
 
-
-Insert picture of completed hardware\
-
+Insert picture of completed hardware<br>
 
 Useful Links:
 
-[Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV\_o5o/edit) and other related documents
+[Link to Operation Manual](https://docs.google.com/document/d/1WfECnmatf4ztq5hCbmSQNtmgw9UTvR6ndzOSvIV_o5o/edit) and other related documents
 
 ## [Tools](https://docs.google.com/document/d/1vQ3mLdk9Qs4jteeLivA5NhKBnKZaRAJCvF41PBNDRNI/edit#bookmark=id.e9qhfw513e84)
 
@@ -30,7 +28,7 @@ Useful Links:
 
 Stuff to buy. The BOM should include everything necessary to make the components in the next section, design files.
 
-[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1tM25RrjC127YzbMv5\_YfaZUyqUb6dUSwdO-u9tCkjsk/edit#gid=0) - edit sheet then update or copy table here
+[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1tM25RrjC127YzbMv5_YfaZUyqUb6dUSwdO-u9tCkjsk/edit#gid=0) - edit sheet then update or copy table here
 
 | Name        | QTY         | Cost per unit - USD | Total cost - USD | Purchasing Link                                 |
 | ----------- | ----------- | ------------------- | ---------------- | ----------------------------------------------- |
@@ -54,13 +52,11 @@ Stuff to make. Complete a separate row for each design file associated with your
 | Electronic File 1                                                                                | PCB that controls XYZ sensors and actuators. Controlled by XYZ component | 3   | PCB fab, pick and place machine |
 | Software File 1                                                                                  | Firmware for XYZ microcontroller.                                        | N/A | Arduino Uno                     |
 
-\
-
+<br>
 
 CAD files:
 
-You are encouraged to use free and open source software packages for creating the files.  For  CAD files, OpenSCAD, FreeCAD, or Blender are encouraged, but, if these are not available, we accept source files from proprietary CAD packages, such as Autocad or Solidworks, and other drawing packages.\
-
+You are encouraged to use free and open source software packages for creating the files.  For  CAD files, OpenSCAD, FreeCAD, or Blender are encouraged, but, if these are not available, we accept source files from proprietary CAD packages, such as Autocad or Solidworks, and other drawing packages.<br>
 
 3D printing:
 
@@ -100,8 +96,7 @@ Provide detailed, step-by-step construction instructions for the submitted hardw
 
 4. Step 1
 5. Step 2
-6. Step 3\
-
+6. Step 3<br>
 
 ## Validation and Characterization
 

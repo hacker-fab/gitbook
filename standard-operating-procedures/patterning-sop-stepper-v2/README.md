@@ -57,8 +57,7 @@ Isopropyl alcohol (IPA) can be used as a substitute for standard photoresist dev
 Figure 1: sample checkerboard patterns\
 ![](<../../.gitbook/assets/image (353).png>)\
 Figure 2: microscope close up (grey/black is UV resin, blue is wafer)\
-![](<../../.gitbook/assets/image (354).png>)\
-
+![](<../../.gitbook/assets/image (354).png>)<br>
 
 ***
 

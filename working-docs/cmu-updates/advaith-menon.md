@@ -195,8 +195,7 @@ Image 2: New Spincoater Design
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfx9cqWl6bR9tdFc0ZbEsda3RmZFfN-Kke-PtVPbXdTN8Ql-dHHVssMtsmPlDpCmYbwStbky1GUMrKQUdyeR0X-OEHYt4tUXnVqghtEZvql0Y0zBZ0BxW_Qa1Y_cxNAy3712ofd7g?key=FWIacl3KTLTfg-fEaG5lgXWM" alt=""><figcaption></figcaption></figure>
 
-Link to Onshape (individual parts can be seen in the folder): [https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461](https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461)\
-
+Link to Onshape (individual parts can be seen in the folder): [https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461](https://cad.onshape.com/documents/df908f0b0d36941a4736405d/w/3fc81265ae581f703ba36f23/e/fc64cbec930fd345cf081461)<br>
 
 ## Week 8
 
@@ -231,8 +230,7 @@ After verifying the sensor, I turned my attention to the motor system. I attempt
 
 Thankfully, I believe this issue will be resolved once the custom PCB arrives. The ordered PCB includes an onboard buck converter, which is designed to regulate a higher input voltage down to the necessary 9V for the motor. This should allow the system to deliver the correct voltage and current without requiring an external power setup. With proper voltage regulation in place, I expect the motor to operate reliably and consistently, which will allow for more advanced testing of the motor control logic and sensor-motor interaction.
 
-Ordered PCB:\
-
+Ordered PCB:<br>
 
 <figure><img src="../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 

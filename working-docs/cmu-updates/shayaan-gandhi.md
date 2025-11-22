@@ -205,13 +205,11 @@ void loop() {
 {% step %}
 ### Weekly Update 9
 
-1.  Reading and writing to Pfeiffer devices, including the vacuum pump and vacuum gauge, was successful. The issue stemmed from a delay between writing and reading, which caused bit shifts. Brendon Sweeney’s tutorial was a great reference overall, but some modifications—such as adjusting delays and filling in missing code—were necessary to ensure proper communication.\
-
+1.  Reading and writing to Pfeiffer devices, including the vacuum pump and vacuum gauge, was successful. The issue stemmed from a delay between writing and reading, which caused bit shifts. Brendon Sweeney’s tutorial was a great reference overall, but some modifications—such as adjusting delays and filling in missing code—were necessary to ensure proper communication.<br>
 
     Once communication with the Pfeiffer devices was established, I began testing the control loop code. Currently, I have an Arduino that successfully communicates with both the vacuum gauge and the pump. This program has been verified: it turns on the pump and continuously reads pressure values as the chamber approaches vacuum.
 
-    I attempted to add communication with the Alicat to the same Arduino, but this failed. I suspect the issue may be incorrect wiring, which I will verify tomorrow. Since I have successfully communicated with the Alicat before, I expect this will be a quick fix.\
-
+    I attempted to add communication with the Alicat to the same Arduino, but this failed. I suspect the issue may be incorrect wiring, which I will verify tomorrow. Since I have successfully communicated with the Alicat before, I expect this will be a quick fix.<br>
 
     In addition to working on the project, I also troubleshot one of the Alicat devices. Its main screen was glitching, and it was unable to reach the setpoint. After consulting with Alicat IT, we determined the device was stuck in a **VOV error**, which occurs when the device attempts to output more mass than its configured limit. The solution was to perform a factory reset and then change the setpoint mode to digital, allowing the setpoint to be adjusted properly.
 2. The next major issue to address is determining why the Alicat does not work with the Arduino that successfully communicates with the other devices. Another potential concern is the number of available I/O pins. If the Arduino needs to communicate with additional devices, it may not have enough pins to support them all. One possible solution is to use multiple Arduinos in tandem. Currently, I am using two separate serial ports for each RS485 device, but I may also explore combining serial connections to free up additional pins.

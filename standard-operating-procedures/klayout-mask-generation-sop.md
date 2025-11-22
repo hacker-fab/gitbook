@@ -2,17 +2,15 @@
 
 KLayout is an open-source layout viewer and editor that offers advanced GUI, is scriptable in Ruby or Python, and has built-in DRC support. We will discuss installation, setup, and use of DRC and macros.&#x20;
 
-KLayout Installation\
-
-
+KLayout Installation<br>
+------------------------
 
 1. Go to [this page](https://www.klayout.de/build.html) and select the correct operating system for your laptop.&#x20;
 2. Follow the installation wizard’s instructions, and leave all options as default.
 
 WARNING: If you install KLayout in an existing folder, the uninstaller will erase this folder including everything else there is! There are reports of users who by mistake installed KLayout in the root of the "C:" drive and the uninstaller tried to wipe the whole disk.
 
-Once installed, there should be three versions of KLayout: an “editor” version, a “default” version, and a “viewer” version. The “editor” version will be used when you create your own layouts, while the “viewer” version is pulled up when opening an existing GDS file. While in the “viewer” version, edits cannot be made to the layout. \
-
+Once installed, there should be three versions of KLayout: an “editor” version, a “default” version, and a “viewer” version. The “editor” version will be used when you create your own layouts, while the “viewer” version is pulled up when opening an existing GDS file. While in the “viewer” version, edits cannot be made to the layout. <br>
 
 <div data-full-width="false"><figure><img src="../.gitbook/assets/Screenshot from 2025-09-09 12-21-49.png" alt="" width="364"><figcaption></figcaption></figure></div>
 
@@ -99,8 +97,7 @@ If we want to select a different kind of PCell, press the magnifying glass next 
 
 1. Open a new layout with the layer setup below.
 
-via (1/0), metal (2/0), poly (3/0), contact (4/0), ndiff (5/0), pdiff (6/0), nwell (7/0), psub (8/0)\
-
+via (1/0), metal (2/0), poly (3/0), contact (4/0), ndiff (5/0), pdiff (6/0), nwell (7/0), psub (8/0)<br>
 
 2. Place a “Template” PCell instance where you want . This shows the size of one exposure and places the alignment marks. If your design has multiple exposures, place one “Template” PCell per exposure, like shown. Make sure the alignment marks are properly aligned. &#x20;
 
@@ -125,8 +122,7 @@ This will run the macro, and create separate GDS files for each exposure (“Tem
 
 `layers_dark = ["metal", "poly"] # List layers that blocks light where the pattern is`
 
-`layers_clear = ["n+"] # List layers that lets light through where the pattern is`\
-
+`layers_clear = ["n+"] # List layers that lets light through where the pattern is`<br>
 
 10. Click Runtime >> Run All. The mask PNGs will be generated inside the Files tab on the left.
 
@@ -134,4 +130,4 @@ This will run the macro, and create separate GDS files for each exposure (“Tem
 
 To download a mask, hover over the file, press the three dots that appear on the right, and press “Download.”&#x20;
 
-\
+<br>

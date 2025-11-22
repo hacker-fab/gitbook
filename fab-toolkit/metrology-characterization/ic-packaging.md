@@ -394,8 +394,7 @@ Lastly, the encapsulation and hardware are installed, completing the package.
 
 ### Wire Bonding Test
 
-While waiting for the PCBs to arrive, I did a few wire bonding tests with spare chips from the lab to identify likely failure points in the wire bonding process\
-
+While waiting for the PCBs to arrive, I did a few wire bonding tests with spare chips from the lab to identify likely failure points in the wire bonding process<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcTeu9paT_bvuo8pDiZOhitJwCAKrTv6R6schGXx7kl6F4sWQ8WLDsuJdWjXy_OWj9PY1RbIpH3VCpZAj11ewIMEan5zZbfg3dxVQkd3T_8HrZAUT9E71QufLPGyLksshAuzfUJ5Q?key=1snATNBmdsMT0ljin0BwGXX5" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -429,13 +428,11 @@ Using this data, I was able to plot measured resistance to the reciprocal of cha
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfV6ZZZypWvcqJmSY6x032le0xdRje3477tROTC9Y0LH91khIvC5RSCOqnJ0RTDIWShgt4YJI9RUJmqblnvmlPHwi_Hr83Wzo7KAUpKZVCD0utQEAFEHNJv0B3s4O4m8IXSUxd6WA?key=1snATNBmdsMT0ljin0BwGXX5" alt=""><figcaption></figcaption></figure>
 
-Additionally, the pure contact resistance from the bond points and chip pads can be extrapolated by subtracting the parasitic resistance from the Al wires:\
-
+Additionally, the pure contact resistance from the bond points and chip pads can be extrapolated by subtracting the parasitic resistance from the Al wires:<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1CkUfpYWt39eu_OkAEnrKzo_l-uhNkEXnY7kwbKOMkHlu2MgiKj93oMBVFL6VSkULPDvR0MbWm25sEVgXugNi6ke6shu2eZjO_qsej09yUzMlVZniZNGiMju2fD1pclGJdlBTfw?key=1snATNBmdsMT0ljin0BwGXX5" alt=""><figcaption></figcaption></figure>
 
-The resistance plots are as follows:\
-
+The resistance plots are as follows:<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXci0rG1buda6lL75WNgJLaLwXFcx3ZoOEtziY09JZXoBWuZhDGJ4U0C-sPuepMyro-TIEZAG1uSjOVGTK4MUcK7drLh7alS8zqku6yxQDJ9zTMWJIBZw4eSuIsil9WN1jLL_TIvQA?key=1snATNBmdsMT0ljin0BwGXX5" alt="" width="563"><figcaption><p>Figure 36: Total resistance plot</p></figcaption></figure>
 

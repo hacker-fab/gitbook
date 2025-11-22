@@ -22,8 +22,7 @@
 3. Particulate Landed on the wafer during spinning. Sometimes the spin coater can create turbulent air and kick up dust from inside the spin coater which then lands onto the wafer.
 4. The wafer had a preexisting scratch or mark big enough to cause surface tension issues which result in the liquid SOG “un-wetting” in that spot and exposing the substrate. These scratches are often caused by scratches that occur during cleaving, slipping across the wafer when using hard tip tweezers, or dropping the wafer.
 
-\
-
+<br>
 
 3. Radial variation in thickness/diffraction color
    1. Sometimes after spin coating, there may be a radial pattern of changing color on the wafer. The varying colors indicate variation in thickness since SiO2 is translucent so thin films diffract and appear different colors based on thickness. These variations are usually on the order of a few hundred Angstroms (A) (film thickness \~2000 A) and may not warrant restarting.&#x20;
@@ -57,4 +56,4 @@ Possible Causes:
 
 1. Dust coming into the fume hood and landing onto the wafer after the SOG layer has solidified.&#x20;
 
-\
+<br>

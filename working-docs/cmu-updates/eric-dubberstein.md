@@ -11,8 +11,7 @@ Plan for this week:&#x20;
 5. Present poster on Thursday DONE&#x20;
 6. Start working on the final presentation DONE
 
-\
-
+<br>
 
 Notes on progress I made:&#x20;
 
@@ -30,35 +29,29 @@ I added detailed documentation on this process in the documentation page.&#x20;
 
 I submitted the documentation to canvas for review. I know the deadline for 18-725 is on Tuesday, so it’s totally ok if you have to wait until after that to review the documentation.&#x20;
 
-\
-
+<br>
 
 I was unable to test the full spincoater setup as the part still is not complete. It is possible that the part will be complete before the final demo, but it doesn’t look likely.&#x20;
 
-\
-
+<br>
 
 I attended the open house session and presented my poster. One individual was very interested in how a similar system could be implemented in the nanofab to improve workflows through automation.&#x20;
 
-\
-
+<br>
 
 Last, I started working on the final presentation. For the final presentation, I will include video demos of the spincoater (website -> spincoater motor + vacuum pump) and the stepper (website -> pattern). See the video linked above. I will also go into a bit more detail on how the image upload works for the stepper.&#x20;
 
 Last, I will include a bit of detail of how this will be used in the frontend, hopefully setting the stage for this project to continue in the fall.&#x20;
 
-\
-
+<br>
 
 Roadblocks: Final part for spin coater. Hopefully this will be available so the demo can include an actual chip spinning. Otherwise, the demo with only the motor spinning will have to do.&#x20;
 
-\
-
+<br>
 
 Github progress tracker is up to date.
 
-\
-
+<br>
 
 Plan for next week:&#x20;
 
@@ -79,8 +72,7 @@ The primary plan I have outlined is to complete integration with the spincoater.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe49uGLlQ6MmNe-BvFM6dCouYoMO30W1Z_Fs13Zv4_tUM7OQ-v2oL5HmssDmhLPBq0h-SxnABu0sOJcHnf1Srt1od3syZbQ4C6Y0YGvUuw44t6T-Oiky5la6_xWcTzyCpsG8AsD?key=l8lg4tMwnhDPjauU_wkJUQsi)
 
-\
-
+<br>
 
 In addition to this, I will continue to improve the documentation as needed, including documenting the IOT relay connected to the RPI.&#x20;
 
@@ -88,15 +80,13 @@ I will also assist the automated spincoater team and stepper team with integrati
 
 This is the wrapping up phase of the project, so please let me know if there are other things that I should be doing to finish the project on a high note.&#x20;
 
-\
-
+<br>
 
 Work accomplished this week:&#x20;
 
 The first thing I accomplished this week was updating the lambda API python code on AWS to allow support for PNG uploads. The stepper needs uploads of PNG, not just JPG. The solution was to remove a filter that required a JPG file. This involved modifying a few lines of AWS\_lambda.py and then uploading the file to AWS. See changes on github.&#x20;
 
-\
-
+<br>
 
 The second thing I accomplished this week was running a full system test (as much as possible). The new addition for this week was the relay switch for the spincoater vacuum pump and motor. I have updated the documentation with this additional component.&#x20;
 
@@ -110,8 +100,7 @@ I also make collapsible code block sections in the documentation. Paste the foll
 
 &#x20; \<summary>Show code snippet\</summary>
 
-\
-
+<br>
 
 &#x20; \`\`\`python
 
@@ -121,8 +110,7 @@ I also make collapsible code block sections in the documentation. Paste the foll
 
 \</details> \`\`\`
 
-\
-
+<br>
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQSYpS--A2NV7mIh4C09x6k42G8iX0juV1uG_mPsaCvZSquknaTUf6q19UqqtTfJH3AdI3GfcB8K1RzBYr-h7AQaZrSN7G_qqIEBZF9dQZbUAlJr6tDEmPGftStOBzx0niaaLl1A?key=l8lg4tMwnhDPjauU_wkJUQsi)
 
@@ -134,20 +122,17 @@ Here is a quick demo of how it works:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXei_aNKC6zuWV-n-YrIQpPIWZ-MaGi1KdZCiy9hNLia5CpoMag47uSYfJ9lKVNh8fAsDPV-MkYxNwGyYw5v0is2-zJktybACV83ffJHZYKw4FoJOiQGRF8A3jUlQx5pMjvD7TVMVg?key=l8lg4tMwnhDPjauU_wkJUQsi)
 
-\
-
+<br>
 
 The final item I accomplished this week was completing the poster to present on Thurday. I linked the poster below.&#x20;
 
 [https://docs.google.com/presentation/d/1bYjEL6R-I\_\_ucyDy-0xwlRl1eu8PsiPh/edit?slide=id.p1#slide=id.p1](https://docs.google.com/presentation/d/1bYjEL6R-I__ucyDy-0xwlRl1eu8PsiPh/edit?slide=id.p1#slide=id.p1)&#x20;
 
-\
-
+<br>
 
 I am meeting with Carson tomorrow to test the entire lab\_com system with the stepper (web UI-> patterning chip).&#x20;
 
-\
-
+<br>
 
 Roadblocks:&#x20;
 
@@ -156,8 +141,7 @@ Roadblocks:&#x20;
 
 Github project tracker up to date
 
-\
-
+<br>
 
 Plan for next week:&#x20;
 
@@ -169,8 +153,7 @@ Plan for next week:&#x20;
 
 ## Tasks accomplished week 11 (up to 4/13/2025):
 
-I presented demo two on Tuesday\
-
+I presented demo two on Tuesday<br>
 
 I met with the automated spincoater team on Thursday to understand their design requirements. They will connect their automated spincoater to the lab com system.
 
@@ -190,11 +173,9 @@ Week 11: Documentation and Training
 * Conduct training or create tutorials for others to replicate the system.
 * Justification: This will be important for future scalability.
 
-\
+<br>
 
-
-I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. \
-
+I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. <br>
 
 Beyond that, I will give the second presentation demoing my progress up until this point.&#x20;
 
@@ -204,8 +185,7 @@ If the RPI controlled relay for the air compressor arrives, I’ll get that conn
 
 I will help carson with any issues he has as he tries to implement uploading images for the stepper.&#x20;
 
-\
-
+<br>
 
 **Work accomplished for this week:**&#x20;
 
@@ -217,15 +197,13 @@ I made sure to update the documentation to include all of the new features as we
 
 The code style checks are going to wait until the final documentation is due, as the code may still change.&#x20;
 
-\
-
+<br>
 
 I tested out the IOT relay switch. See the video below. Make sure to turn the sound on.
 
 [https://drive.google.com/file/d/1VtVnRXSwdEkaFqVZ4crvYJgBhmmv24sa/view?usp=drive\_link](https://drive.google.com/file/d/1VtVnRXSwdEkaFqVZ4crvYJgBhmmv24sa/view?usp=drive_link)&#x20;
 
-\
-
+<br>
 
 I also implemented I/O control so the switch can be controlled in software. Once the full spincoater is ready (hopefully this week), I will test this along with the rest of the system.&#x20;
 
@@ -233,8 +211,7 @@ I also implemented I/O control so the switch can be controlled in software. Once
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdgpBvYg15UxBxXKqimD7RFGlkidIIqbtlsObDifB5BUvraiXRAjpCJ6wZYJ2JE3gL_N9E8mqGGHUxm-LlA4PZlx8EJItHiOM5kQ0NO3Wo-KsWnkEo53-XcpXNZYeKiEdGngCi2Hw?key=uI8IayLPtlRHTjZ_6bQqOoG_)
 
-\
-
+<br>
 
 Roadblocks:&#x20;
 
@@ -248,8 +225,7 @@ The primary plan I have outlined is to complete integration with the spincoater.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcgdmeNQevs3BbU8I-5qr1KUescwbpjS-fFntkQ3U8oT_-IC3XfTaPcKr03I-r676g1v6B527GeBBtDK4ZhdXaCj7lCAN07XtmqTLhqL7Z5307ddPQtwcF4nsSFmUtqrEnzyajB5A?key=uI8IayLPtlRHTjZ_6bQqOoG_)
 
-\
-
+<br>
 
 In addition to this, I will continue to improve the documentation as needed, including documenting the IOT relay connected to the RPI.&#x20;
 
@@ -257,13 +233,11 @@ I will also assist the automated spincoater team and stepper team with integrati
 
 This is the wrapping up phase of the project, so please let me know if there are other things that I should be doing to finish the project on a high note.&#x20;
 
-\
-
+<br>
 
 Documentation & Github progress tracker are up to date.
 
-\
-
+<br>
 
 Progress for this week (week up to 4/6/25) :&#x20;
 
@@ -283,15 +257,13 @@ Progress for this week (week up to 4/6/25) :&#x20;
 
 The spincoater can now be controlled from a temporary page on the website. When on the homepage, you can click on “Spincoater” to reach the page.&#x20;
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmRYu1NKST-QgDA4EvJrOw2-5cPgzDLaf_3UtKxelHwdfyd-6ZaZAcnEEgc8nkkTdwgyCY27MqwkTDlr1pNsyyrSF_NVHaafvA7hSkthodI6mOy62Lh7HXeLx6faW73u5Sx23RFw?key=8U3tCyUeEYyTlEkMhCB233gS)\
-
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmRYu1NKST-QgDA4EvJrOw2-5cPgzDLaf_3UtKxelHwdfyd-6ZaZAcnEEgc8nkkTdwgyCY27MqwkTDlr1pNsyyrSF_NVHaafvA7hSkthodI6mOy62Lh7HXeLx6faW73u5Sx23RFw?key=8U3tCyUeEYyTlEkMhCB233gS)<br>
 
 You can then type in the RMP and time that you want:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXec3fTUUiEQc_yhZhaRl599d0N8oZceSrAMEqhNK78wKaTeM-7relq-D4i9LOjWYrjmhgp3itA8PEAULjfZleRHE7YQsqz8eYUOX_8mRgfHcMo7prmoJ84YgMitdPGAFvHJlyY1?key=8U3tCyUeEYyTlEkMhCB233gS)
 
-\
-
+<br>
 
 After you hit submit, a message will appear if the data was successfully sent to the server:
 
@@ -299,35 +271,30 @@ After you hit submit, a message will appear if the data was successfully sent to
 
 
 
-Afterwards, you can confirm the data is present by making a postman call to the get\_next\_jobs endpoint. \
-
+Afterwards, you can confirm the data is present by making a postman call to the get\_next\_jobs endpoint. <br>
 
 Spincoater.html is the HTML page that I added. It simply instructs the browser to display the prompts, boxes, and submit button.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfB4oXPQp9-44VU8iVdqyPrKXv9FM4LMPRGPm9T61R_tgzgBN1RTy9jsghmv2-3I76m3-NGk7WCqAec40HrRRWzfV3zEx-kWAXvfq9jDNDoCMobNTt_iYm3uurwNNCohRgQNENz3g?key=8U3tCyUeEYyTlEkMhCB233gS)
 
 \
-\
-
+<br>
 
 On the server side, I added a function to views.py that handled rendering the webpage and forwarding the data onto the job queue when the submit button is clicked.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXZW2KmpE7vjqilKKABAq9dzmndCrvmD4AHS9AVc_AE_m6N3Phb7g1JbIVo-jmqd8szVxjJHBLUGHvFNo4kPWiMq13kxlE8cmcHgIJcQuWSRYl_lzf9NuUWTQMVG-94pCDhLvFzQ?key=8U3tCyUeEYyTlEkMhCB233gS)\
-\
-
+<br>
 
 Image uploading:&#x20;
 
-\
-
+<br>
 
 Example code for how to use it is outlined in the python file below. In summary: you send a request to AWS to get an upload link, upload the image, send a key for that image as a parameter for the job. On the stepper, you'll get the job as usual, extract the image key from the param list, get a download link for that key, and then download the image.&#x20;
 
 \
 \
 \
-\
-
+<br>
 
 \<code block, example\_endpoint\_calls.py in repo>
 
@@ -470,38 +437,32 @@ Here is a screenshot of the test running successfully.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5lY0fVlGWPS4PuQ4jAJmuAyA4MYTvqVUlamN_m6Mgh7i1847IJCS3HAHl-z7p0B1Z8Bko6lsosuSTX449p7DaZjZUZl2BtxutijqEU9PzAqwvvdAhXZzSvvODTUEiE7vrPz9KNw?key=8U3tCyUeEYyTlEkMhCB233gS)
 
-\
-
+<br>
 
 I sent the code over to Carson so he can get it working with the current ~~spincoater~~ lithostepper setup.
 
-\
-
+<br>
 
 Other things I accomplished this week:&#x20;
 
 We will need to automate turning the power on and off for the compressor for the spincoater. The cleanest solution that we decided on was a relay that can be controlled via the output of the RPI.&#x20;
 
-\
-
+<br>
 
 [https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr\_1\_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO\_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX\_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7\_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4\_s3pkjKSMenat\_ZYo3MOKz3C6NdbmD\_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5\_6foo\_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib\_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1](https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr_1_1?crid=3Q68PEKANVUE4\&dib=eyJ2IjoiMSJ9.CnfpJV1tO_gkJHXGqyeQr-3FeT4miTlwzzCBKMKUUe6hFI8FsgVoE6JAbkD4Jk44sgviQxRTX_JaYLr9BKPb7dV0NWYCTk8AiECgoKTlSTIs9ISmvmfqC8Hl5zteChzD-LS6ubbPalDC59yGRf3008Nd7_tdnLDdmtkNN1Wyb6EnWw-DsSx9otuiMDPV2gB4_s3pkjKSMenat_ZYo3MOKz3C6NdbmD_reEVpnXnElVJGGeJmtWZlh3-zKMApnbmuSC2d-44VY9z3MeChM9mhUSGVMj2CZ5bbkgQ4J8HGdlI.k7vrFYWbk5_6foo_E-LsUTdPJ3H6KWiCuCArTYBO4Vw\&dib_tag=se\&keywords=iot+outlet+controller+relay\&qid=1743997240\&sprefix=iot+outlet+controller+relay%2Caps%2C76\&sr=8-1)
 
 
 
-This part has been ordered. \
-
+This part has been ordered. <br>
 
 I unfortunately was not able to get the documentation fully updated for the new file transfer system I developed. This will be accomplished next week. I got a brief outline added at the moment. \
-\
-
+<br>
 
 Plans for next week:&#x20;
 
 I will first tackle the tasks that were originally outlined for week 11:
 
-\
-
+<br>
 
 Week 11: Documentation and Training
 
@@ -512,11 +473,9 @@ Week 11: Documentation and Training
 * Conduct training or create tutorials for others to replicate the system.
 * Justification: This will be important for future scalability.
 
-\
+<br>
 
-
-I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. \
-
+I won’t be able to fully document the details that are still being implemented, but I will document everything up until this point. <br>
 
 Beyond that, I will give the second presentation demoing my progress up until this point.&#x20;
 
@@ -526,16 +485,14 @@ If the RPI controlled relay for the air compressor arrives, I’ll get that conn
 
 I will help carson with any issues he has as he tries to implement uploading images for the stepper.&#x20;
 
-\
-
+<br>
 
 Roadblocks:
 
 1. Relay controller hasn’t arrived yet (on its way)
 2. 2nd spincoater isn’t fully working (other team is working on it)
 
-\
-
+<br>
 
 
 
@@ -555,41 +512,35 @@ Here is a video demo:&#x20;
 
 
 
-NOTE: The spincoater will not run at 1000 RPM. This is too low and is cut off. Send 5000RPM at least as the test RPM value.\
-
+NOTE: The spincoater will not run at 1000 RPM. This is too low and is cut off. Send 5000RPM at least as the test RPM value.<br>
 
 The following changes were made to the codebase this week:&#x20;
 
 1. I updated the AWS lambda function to accept floating point numbers as inputs and to only fetch a certain machine’s job. The desired machine is added as a query parameter.
 
-\
-
+<br>
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8Xe5eO5t3pMK954zwrK-KLGEWm_IJ9usjgEBX3Hu4jXyhQyIXVrYNnO7fK_FAXjOTGAEO-Qdd67lLEPOsUTyM5cYhd7DWjepBXLVbSXswoGeDg-GqAzodFBiLJBPGtEpVjWFS?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
 
-\
-
+<br>
 
 2. I added more comments to the arduino code and added a message to communicate from the arduino to the RPI that says whether the spinning occurred successfully or not.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_D97NyxuCdNk6XSXCSbFcvsvCqo7AOQm6uNnowDdOQ1ZGaimkmFhWWjH7UCG1EiQh7JTsbbb-xgsKb3EbuuFc2T8jYuFy0VytxOW6-XfpnrmpVSjjV44grx8i48vYyj9lzyXaUQ?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
 
-\
-
+<br>
 
 3. To accomplish the tasks that were originally outlined in week 10, I made the following modification: When the spin coater job finishes running, the arduino immediately sends a message to the RPI that the job was successfully completed instead of the user having to type in a completion message into the UI. The need to manually type in the completion status contributed to a poor user interface experience before. In addition, gentle failure logic is already present in the api requests, so there is no additional work to be done for that requirement.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXftH0YYWzY2qVcYcEVT5DUmhoBevBtcUCzogpTydLN0oQ33pWgHYPX2IpDzYJJx7UdEz8z6yJxit1k4JZYjgUbHSA01kMhg2Wv25mUMXJyen1qwBOgjAbXYomK9hoOloZE71nXb_g?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
 
-\
-
+<br>
 
 4. Although it wasn’t originally outlined in my plan for this week, we also made significant progress by integrating the lithostepper to this framework. I was able to provide carson with the following snippet of code. He was easily able to add the stepper to this system with no major issues. This clearly demonstrates the robust design and extensibility of this lab communication framework.&#x20;
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdODCZSlGVQzFr5j2nPKkYNKW9nUQzIP9724AyEgNvZdbvTfMMPqO3qvp8vQjGt55eGEJHne-m4GSyKy5uPQJ0QZ8ojywGG3nCSzfgICDlNSBaVFmJpUBE2QOhVc81f6elpkrHPCg?key=4ugOZ0-Ag2fH7nqoUn7K_qHU)
 
-\
-
+<br>
 
 These were the tasks from this week:
 
@@ -613,8 +564,7 @@ Week 10: Optimization
 * Refine the UI for user-friendliness based on feedback from initial users.
 * Justification: This will be important for future scalability.
 
-\
-
+<br>
 
 Plan for next week:
 
@@ -631,16 +581,14 @@ The only two weeks left on the original plan are for documentation and training.
 2. To better demonstrate the capabilities of the system that I have developed this semester, we need a way for people to use it from the web interface. So, I will create a basic page on the website that allows the user to control the spin coater. This webpage will allow the user to specify the time and the RPM. This webpage will call the API endpoints that have already been created. This will be done in time for the second demo
 3. I will start working on the presentation for the third demo
 
-\
-
+<br>
 
 Roadblocks:&#x20;
 
 1. AWS expiring soon: Akshunna said he’d look into it.&#x20;
 2. I’ll need to discuss with Arinud if I will be allowed to hook my system into the actual spin coater before the end of the semester.&#x20;
 
-\
-
+<br>
 
 Github progress tracker is up to date
 
@@ -676,15 +624,13 @@ Gitbook has discarded my work multiple times because there are too many change r
 
 My update is going to be on google docs for now.&#x20;
 
-\
-
+<br>
 
 Progress for this week:
 
 I got local job creation working on the arduino.
 
-\
-
+<br>
 
 Here is a video demo:&#x20;
 
@@ -692,13 +638,11 @@ Note that the job doesn’t actually do anything. Anirud is going to have the sp
 
 [https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive\_link](https://drive.google.com/file/d/1zMtn7b1HO5kucqc2ypLdfpWQ1Wd0AuPt/view?usp=drive_link)
 
-\
-
+<br>
 
 All of the changes to the lab\_com\_gui.py file are in the repo (under the EricLabComV1 branch)
 
-\
-
+<br>
 
 Here are the highlights of the changes:
 
@@ -706,24 +650,20 @@ Here are the highlights of the changes:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeqYvBMux86FVt9pyPkwEwy7w0Tgg-Vb00bVL9l4dALU2LhHj06ESMZ2qW41cg19MsAgbbyCrzFTm7dNpBGDfcLxzkenRkwyxtAK_-h7cek4Z8392bx5cIMLgKRHLK_DbZejT0Aog?key=yy18A-W-EUDVk5VHIwu4Wik0)
 
-\
-
+<br>
 
 2. Instead, the buttons are configured in one spot near other parameters that will be changed when a new tool is integrated. I am still improving this system. The documentation will be improved for this once it is finalized.&#x20;
 
-\
-
+<br>
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfKG54Ln_7sPsRpACIITL28f88o4x3ntOMGu95xLnnGV5rERLngcUL2iMFRKxxbL-dB0Khf3z3H7FoXwfVUkrjsSgxG8AA5d4WdPsuv73x7cMuRKOIMZ-d2wAatPNViXAvIXdOhmw?key=yy18A-W-EUDVk5VHIwu4Wik0)
 
 \
-\
-
+<br>
 
 Lastly, there is some logic to show and hide the UI elements as appropriate and complete the request after the user types in the details.&#x20;
 
-\
-
+<br>
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcvYyrXkp5JSwOtyka7rrynCUtSW2YKFggc1d2RMppNkE-Lby-dTnV1OFz0DT366N_gcUl3c-8eRU_BOKhNdV2UDefPIXutFRAzRA-ti68JTDdhTZ-8CES-xC9CHDvNjURhjpGx?key=yy18A-W-EUDVk5VHIwu4Wik0)
 
@@ -731,25 +671,21 @@ Lastly, there is some logic to show and hide the UI elements as appropriate and 
 \
 \
 \
-\
-
+<br>
 
 Note that if the RPI is not connected to the database, the job will still be run locally.&#x20;
 
-\
-
+<br>
 
 The documentation is up to date (although it will be improved once I have finalized the code structure).&#x20;
 
-\
-
+<br>
 
 The gitbook project tracker is up to date.&#x20;
 
 \
 \
-\
-
+<br>
 
 I am unable to complete the tasks from week 8 outlined below (testing the full system with the spincoater) because arinud did not finish making the mock spin coater yet. He said he will have it completed by tomorrow (3/24) and I will be able to test the full system then.
 
@@ -1767,8 +1703,7 @@ My roadblocks are as follows:&#x20;
 1. The parts from the BOM outlined in the proposal document need to be acquired. Most of the parts should be ready to use by the end of class on Tuesday
 2. I do not think there is a spot on the github documentation for the database team. I will ask my teammates on tuesday to get clarification on where to document how the system I am building works. Right now, all that documentation is done in the proposal document.&#x20;
 
-Next week, I will follow week 1 of the project proposal document. Specifically, this is: \
-
+Next week, I will follow week 1 of the project proposal document. Specifically, this is: <br>
 
 Week 1: Hardware Setup
 

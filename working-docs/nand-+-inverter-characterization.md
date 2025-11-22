@@ -15,4 +15,4 @@ Table 1. Inverter Truthtable
 
 
 
-\
+<br>

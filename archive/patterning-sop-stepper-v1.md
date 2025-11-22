@@ -92,8 +92,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
    1. Put a black screen as the last slide in your presentation. This will be the non-exposing/”off” slide.
    2. Put another black screen as the second to last slide, this time adding a dark gray plus sign or other easily focusable feature. Ensure this feature is in an area that will either get exposed or isn’t used.
 
-![](https://lh7-us.googleusercontent.com/AjvwQz8Y71m7Knqu636TT7OYoJrw6wIlNRHwAZwMsHg2LgaSShhtQDhUYRX2AObAnvlHiEntNSHZcHB3OZuI_vbjK_dz4LuvsMFfrz8_f3QoirlpsVRzvckBB8DvG5dvr_TEVvQG0orTsOdRoPfN1xY)\
-
+![](https://lh7-us.googleusercontent.com/AjvwQz8Y71m7Knqu636TT7OYoJrw6wIlNRHwAZwMsHg2LgaSShhtQDhUYRX2AObAnvlHiEntNSHZcHB3OZuI_vbjK_dz4LuvsMFfrz8_f3QoirlpsVRzvckBB8DvG5dvr_TEVvQG0orTsOdRoPfN1xY)<br>
 
 7. Copy the flat field correction mask from here and paste it on top of your pattern in google slides. Select the mask and go to format options > set opacity to 50%.
 8. In your browser, navigate to [http://172.26.165.101:5000/#](http://172.26.165.101:5000). This is how you control the stage. Press “cancel” when it prompts you to calibrate.
@@ -166,8 +165,7 @@ Right side: thicker lines and blurry edges. Left side: thin lines and sharp edge
 
 1. HMDS is a toxic, volatile chemical that should only be used in the fume hood.
 2. Photoresist, while not as bad as HMDS, contains some nasty solvents and should be cleaned with acetone if it gets on anything other than chips and the spin coater.
-3. AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.\
-
+3. AZ-400K developer is a strong base containing KOH. Use the appropriate precautions for working with bases. Only agitate the developer inside the fume hood to reduce the chance of droplets.<br>
 
 ***
 

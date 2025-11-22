@@ -284,8 +284,7 @@ The piezo vibration sensor is for probe touch detection, which is still in progr
 
 Attach double-sided tape to the back of the piezo vibration sensor. Trim off the excess part of the tape. Don’t cut the sensor! Attach the piezo vibration sensor board to the base, using a M3x8 screw.
 
-Note: We currently use self-threading here, but it didn’t work (when we were inserting the screw, it broke the 3D printed extrusion). We need to use the screw-and-nut method or thicken the extrusion.\
-
+Note: We currently use self-threading here, but it didn’t work (when we were inserting the screw, it broke the 3D printed extrusion). We need to use the screw-and-nut method or thicken the extrusion.<br>
 
 <figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
@@ -357,13 +356,11 @@ Search “nano every” and install the board package.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfi-EeSg9wBOXWuKxjDHT_OpWfjnsGE0RlEzzKOAxlbEAuXTJssEWEL5iX6Ac4BcmxrOiWa8DkSEhSLLw0PmyEoWHZiQYD1vzm7eEaKJ7twqCslysB1Fc0sSRMhW0jNknfZdU4hPg?key=l9Hl_NBKff9Bf_PYNQ7jlDuQ)
 
-\
-
+<br>
 
 Code:
 
-\
-
+<br>
 
 <pre><code><strong>// C/C++
 </strong><strong>const int analogPin = A0; // Analog pin to read from
@@ -407,8 +404,7 @@ The initial design is shown below.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXckgL9JQd1eQOxVgtyGCjaBwyPbTN5Ftz49lo0-rMebrMLrOHy7D7WtheCwwTckbENnaj9QSyN_JJhgIS2hiFNOEOtF8W1_2Kt8zlFLSQ2xvmFolSvhGElWXM0Bj9Qr6BZ38gKXSw?key=l9Hl_NBKff9Bf_PYNQ7jlDuQ" alt=""><figcaption></figcaption></figure>
 
-We tried [a \~$42 USB microscope](https://amscope.com/products/utp200x003mp), but the resolution was too low and it didn’t work.\
-
+We tried [a \~$42 USB microscope](https://amscope.com/products/utp200x003mp), but the resolution was too low and it didn’t work.<br>
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1-LGxcBiAkwKUjgxHJUJEYfrXPF_7TvIHFSfpTvZTW7rU3L6Ns8eyUOIvNO_ZGpbr5JKGYZWSHDqPmBj4VgTER7keA1DIZPwn4d3ta6UxI_OlrL6Nx_IomAxX_q4iHN_f6GIAXA?key=l9Hl_NBKff9Bf_PYNQ7jlDuQ" alt=""><figcaption></figcaption></figure>
 
@@ -514,8 +510,7 @@ Another thing to consider for the function is that the Z-axis micrometer handle 
 3. The +1 & -1 connections should be connected around the drain resistor.&#x20;
 4.  +2 should be connected to the Drain terminal.&#x20;
 
-    \
-
+    <br>
 
     <figure><img src="https://lh7-us.googleusercontent.com/RVLy73TuwDT9tbta7JIvf5rEiP-TORkkIragPhurHYfslcNDSV-4C60WChCPl45eIKaZN0s17kRqv0q0qx1-EXlomTFoZFzObAOAsUEncwBJyFFgY3VF418jJJvnbRPWXohWKTfKOEFh" alt="" width="375"><figcaption></figcaption></figure>
 

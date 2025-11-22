@@ -124,8 +124,7 @@ Use this as a backup technique when the crucible/thermocouple are out of commiss
 
 ***
 
-\
-
+<br>
 
 Misc. notes that need to be organized:
 
@@ -137,7 +136,6 @@ Let it evaporate at 1100 for 3 min before moving guard to expose chip
 
 This is because there is scum in the crucible and might be oxygen in the chamber at the beginning of evaporation that causes aluminum oxide to build on chip
 
-\
-
+<br>
 
 1. Evaporation is faster than sputtering (supposedly, it might be equivalent because evaporation operates at a much lower pressure than sputtering so pump down and bakeout take a whi

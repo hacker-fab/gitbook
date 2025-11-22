@@ -268,7 +268,7 @@ From this, we can calculate the maximum peak-to-peak vibration amplitude: each p
 
 We also ran another test of "ideal" conditions, in which there was no external vibration added to the stepper table, which had 2px deviation. This leads to the result being 1.2 µm.
 
-## Another Option for the Projector
+## Additional Projector Option 1: $1300
 
 As of October 2025, the [DLPDLCR471TPEVM projector](https://www.mouser.com/ProductDetail/Texas-Instruments/DLPDLCR471TPEVM?qs=DRkmTr78QAQsT6dpWa8zKg%3D%3D) is out of stock. However, Hunter G., an ECE Ph.D. student at Carnegie Mellon, figured out a way to make another project work. The model he used was the  [DLP4710EVM-LC](https://www.ti.com/tool/DLP4710EVM-LC).
 
@@ -292,6 +292,27 @@ I used a water jet to cut out the part, then marked the screw holes through the 
 Here's what it looks like assembled on the beamsplitter."
 
 Thank you Hunter for sharing your alternative build with the Hacker Fab!
+
+## Additional Projector Option 2: $250
+
+The Elegoo Mars 4 DLP resin printer contains a small 0.3" DMD projector. The entire optics stack from LithoStepper V2.1 can be used alongside this projector, as shown in the image below.\
+\
+However, there are 2 major tradeoffs.
+
+1. There is only a 405 nm LED. Inspection requires another light source, which can be done by replacing the LED PCB on the projector.
+2. The default projector controller PCB uses a resin printer file type (.goo) for projection. Thus, instead of sending images via HDMI, the user will have to slice a 1-layer pattern to generate the appropriate .goo file. Elegoo provides the slicer software Voxeldance Tango for free along the projector. This .goo file limitation means the current GUI script is not compatible, so patterning becomes a manual process.
+
+These two major tradeoffs can be resolved by 1) developing a new optics stack to include an inspection light source and 2) designing a custom projector controller board. The OpenMLA community has developed the projector controller board here: [https://github.com/openMLA/elegoo-mars-4-dlp-controller](https://github.com/openMLA/elegoo-mars-4-dlp-controller). However, the modified optics stack is currently still a work in progress.\
+\
+Surprisingly, the .goo file brings a couple benefits. 1) 254 bit greyscale adjustment 2) custom LED output power via PWM. This is useful for future projectors on computational lithography technques such as ILT.
+
+Additionally, one minor tradeoff:
+
+1. The 0.3" DMD is smaller, so the total patterning size is smaller.
+
+An adaptor plate is required to connect to this projector. It can be 3D printed (recommend 0.12mm setting). The file can be found at this OnShape: [https://cad.onshape.com/documents/7ab8f6e115c70871535a96bd/w/eccf77af3a3bcacf844e8bb4/e/cfb6b4cd12b22dd36105984d?renderMode=0\&uiState=6920f21464436a45cffaf156](https://cad.onshape.com/documents/7ab8f6e115c70871535a96bd/w/eccf77af3a3bcacf844e8bb4/e/cfb6b4cd12b22dd36105984d?renderMode=0\&uiState=6920f21464436a45cffaf156)
+
+<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
 ## Assessment and Future Work
 

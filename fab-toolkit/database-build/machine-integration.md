@@ -28,8 +28,7 @@ Download POSTMAN from their website (do a google search). Below is a basic overv
 
 <figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 <figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 

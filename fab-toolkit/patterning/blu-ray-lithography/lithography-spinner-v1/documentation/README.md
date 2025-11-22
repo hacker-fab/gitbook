@@ -21,7 +21,6 @@ Project Specification
 4. Photo Detector IC\
    [https://www.digchip.com/datasheets/download\_datasheet.php?id=3143605\&part-number=MLX75012](https://www.digchip.com/datasheets/download_datasheet.php?id=3143605\&part-number=MLX75012)
 5. CMOS to LVDS Driver\
-   [https://www.analog.com/en/products/adn4661.html](https://www.analog.com/en/products/adn4661.html)\
-
+   [https://www.analog.com/en/products/adn4661.html](https://www.analog.com/en/products/adn4661.html)<br>
 
 </details>

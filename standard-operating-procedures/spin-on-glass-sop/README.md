@@ -122,9 +122,8 @@ Be sure to work under fume hood when working with SOG. The SOG can give off toxi
 
 DO NOT touch the hot plate during operation. A 400 C hot plate will cause severe burns. (Reminder: 400 C = 752 F). The same is true of the glass cover, which is why it is important to ramp down before touching.
 
-\
-
+<br>
 
 ***
 
-\
+<br>

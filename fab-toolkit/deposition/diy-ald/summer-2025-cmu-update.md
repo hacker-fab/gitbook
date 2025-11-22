@@ -105,8 +105,7 @@ This trap system will be after the chamber and before the vacuum pump to prevent
 The exhaust system is composed of aluminum and stainless steel to ensure safety and contain the gases to the vent. The following will be a list of components from the 6” vent outlet to the pump:&#x20;
 
 * 6” to 3” reducer&#x20;
-* ...\
-
+* ...<br>
 
 ### Process Parameters
 
@@ -192,13 +191,11 @@ The exhaust system is composed of aluminum and stainless steel to ensure safety 
 
 Chamber pressure&#x20;
 
-**(Link to google docs/sheets data)**\
-
+**(Link to google docs/sheets data)**<br>
 
 Heating elements
 
-**(Link to google docs/sheets data)**\
-
+**(Link to google docs/sheets data)**<br>
 
 ## Bill of Materials (Controls, Trap, Exhaust)
 
