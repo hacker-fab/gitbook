@@ -255,7 +255,7 @@ The following steps will benefit from having two or more helpers. In the images 
 \
 <br>
 
-33. Screw the camera onto the C-mount threads at the top of the optics.&#x20;
+33. Screw the camera onto the [C-mount](https://www.sinoseen.com/c-mount-vs-cs-mount-the-main-difference) threads at the top of the optics.&#x20;
 
 <br>
 
