@@ -46,7 +46,7 @@ cons
 * Air cooled magnetron ✅
 * 2 simultaneous process gasses ✅
 * View port ✅
-* Entire system machinable with only a drill press and band saw ✅
+* Entire system machinable with only a drill press ✅
 
 #### Thin films
 
