@@ -36,9 +36,9 @@ cons
 
 * <1E-7 torr base pressure ✅
 * 100 watts 14 MHz RF power with >90% impedance matching ✅
-* Stable plasma down to 5 millitorr Ar ❌ (7 millitorr lowest achieved)
+* Stable plasma down to 5 millitorr Ar ✅ (3 millitorr lowest achieved)
 * .5 - 8" adjustable throw distance ✅
-* \>10nm/minute deposition rate for Al at 4" throw distance ❌ (experiencing \~2.5 nm/min at 100 watts 4" throw)
+* \>10nm/minute deposition rate for Al at 4" throw distance ❌ (experiencing \~2.5 nm/min at 100 watts 3" throw)
 * Balanced magnetron magnetic field ❓
 * <1 sccm O2 flow accuracy ✅
 * <1 sccm Ar flow accuracy ✅
