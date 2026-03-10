@@ -33,6 +33,8 @@ The use of low-cost, abundant, and fast-turn-around hardware serves a larger pur
 
 ## <mark style="color:purple;">working on the hacker fab.</mark>
 
+**If you are reading this and are working on any project that could be related to hacker fab, we urge you to create a merge request with details on your project (Select Jay Kunselman and Alexander Hakim as reviewers). This could include but is not limited to modifications to existing tools/processes, or completely new ones.**&#x20;
+
 You don't need prior nanofabrication experience to create meaningful contributions.
 
 You do need to read the [**Required Reading**](guides/required-reading-todo.md)**.**
