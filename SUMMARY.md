@@ -2,6 +2,13 @@
 
 * [Hacker Fab Documentation](README.md)
 
+## 🟡 Guides
+
+* [Required Reading (todo)](guides/required-reading-todo.md)
+* [Build-a-Fab](guides/build-a-fab-to-do.md)
+* [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
+* [Part Sourcing](guides/part-sourcing.md)
+
 ## NMOS Capabilities
 
 * [✨ Summary](nmos-capabilities/current-fab-capabilities/README.md)
@@ -10,13 +17,6 @@
     * [Group 2 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-2-report.md)
     * [Group 3 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-3-report.md)
   * [November 2023 Update](nmos-capabilities/current-fab-capabilities/fab-capabilities-november-2023.md)
-
-## 🟡 Guides
-
-* [Required Reading (todo)](guides/required-reading-todo.md)
-* [Build-a-Fab](guides/build-a-fab-to-do.md)
-* [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
-* [Part Sourcing](guides/part-sourcing.md)
 
 ## 📜 Processes
 
