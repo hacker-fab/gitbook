@@ -6,7 +6,7 @@ Contact(s):
 
 * Jay Kunselman
 
-Tooling in use
+Tooling in use:
 
 * DIY Litho Stepper
 * DIY RF Sputtering
@@ -18,7 +18,7 @@ Tooling in use
 
 
 
-Verified Device Capabilites:
+Verified device capabilites:
 
 * NMOS, 5um gate length (based on P type wafers with SiO2 and PolySi prefabed by waferPro)
 * MOSCaps
@@ -29,7 +29,7 @@ Verified Device Capabilites:
 
 
 
-Tooling in Progress:
+Tooling in progress:
 
 * ALD
 * 2D crystal stacking robot
@@ -40,7 +40,7 @@ Tooling in Progress:
 
 
 
-Device Capabilities in Progress
+Device capabilities in progress:
 
 * CMOS (with in house sputtered gate stack)
 
