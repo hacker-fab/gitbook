@@ -31,13 +31,13 @@ We communicate over [**Discord**](https://discord.gg/HFb3FKAxuX).
 
 You don't need to build an entire fab to contribute, [**although you can**](guides/build-a-fab-to-do.md).
 
-Read the guidelines for creating open source fab tools ([**Required Reading**](guides/required-reading-todo.md) **-WIP)**.
+Read the [contribution guidelines](guides/required-reading-todo.md).
 
 You don't need prior nanofabrication experience to create meaningful contributions.
 
 
 
-How to add your work to the gitbook:
+#### How to add your work to the gitbook:
 
 1. Hit the button that says "contribute"
 2. Find the appropriate spot in the gitbook to add your work. For new projects this may be a new page, for modifications to existing work this could be an edit or amendment to existing pages. Fill in your contributed content.
