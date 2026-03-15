@@ -23,25 +23,27 @@ Hacker Fab is the open source fab project making this happen. 7 real Hacker Fabs
 
 Hacker Fab has been built by a delocalized community of contributors. Hacker Fab can only grow to its full potential by gaining more contributors. Anyone can contribute, see the next section to learn how.
 
-<br>
-
-
-
-
-
 ***
 
-## <mark style="color:purple;">working on the hacker fab.</mark>
+## <mark style="color:purple;">contributing to the hacker fab.</mark>
 
-**If you are reading this and are working on any project that could be related to hacker fab, we urge you to create a merge request with details on your project (Select Jay Kunselman and Alexander Hakim as reviewers). This could include but is not limited to modifications to existing tools/processes, or completely new ones.**&#x20;
+We communicate over [**Discord**](https://discord.gg/HFb3FKAxuX).
+
+You don't need to build an entire fab to contribute, [**although you can**](guides/build-a-fab-to-do.md).
+
+Read the guidelines for creating open source fab tools ([**Required Reading**](guides/required-reading-todo.md) **-WIP)**.
 
 You don't need prior nanofabrication experience to create meaningful contributions.
 
-You do need to read the [**Required Reading**](guides/required-reading-todo.md)**.**
 
-You don't need to recreate the entire fab to contribute, [**although you can**](guides/build-a-fab-to-do.md).
 
-We communicate entirely over [**Discord**](https://discord.gg/HFb3FKAxuX).
+How to add your work to the gitbook:
+
+1. Hit the button that says "contribute"
+2. Find the appropriate spot in the gitbook to add your work. For new projects this may be a new page, for modifications to existing work this could be an edit or amendment to existing pages. Fill in your contributed content.
+   1. Note, if you download your working document(s) (google docs for example) as zipped .html files, you can them import them directly to a new gitbook page. This will maintain most of the content and formatting from your working document(s).
+3. Submit a merge request; select Jay Kunselman And Alexander Hakim as reviewers.
+4. Expect a message approving your merge request, or asking for revisions to your merge request.
 
 ***
 
