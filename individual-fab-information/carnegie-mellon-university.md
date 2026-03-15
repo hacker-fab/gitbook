@@ -1,0 +1,50 @@
+# Carnegie Mellon University
+
+The [Hacker Fab @ CMU](https://hackerfab.ece.cmu.edu/) operates as an integrated course + lab. The course covers nanofabrication and device fundamentals. Students spend the majority of their time working on a project that adds a new tool/process to the fab or improves an exisiting one. Additionally, students participate in labs where they use the DIY tools to fab and characterize devices. Here is a link to the Hacker Fab @ CMU [student google drive](https://drive.google.com/drive/folders/1sxDHE6ObghR9wuX18UZ02fEs8JJAK2E_?usp=drive_link), which contains more info on the course/lab at CMU.
+
+Contact(s):
+
+* Jay Kunselman
+
+Tooling in use
+
+* DIY Litho Stepper
+* DIY RF Sputtering
+* DIY Evaporator
+* DIY Spin coater
+* 2 fume hoods (lab infrastructure)
+* Purchased Plasma Etcher
+* Purchased Tube furnace
+
+
+
+Verified Device Capabilites:
+
+* NMOS, 5um gate length (based on P type wafers with SiO2 and PolySi prefabed by waferPro)
+* MOSCaps
+* Resistors
+* Diodes
+* Inverters
+* NAND gates
+
+
+
+Tooling in Progress:
+
+* ALD
+* 2D crystal stacking robot
+* STM
+* Automated Sputtering
+* Automated Litho Stepper
+* EDA tools
+
+
+
+Device Capabilities in Progress
+
+* CMOS (with in house sputtered gate stack)
+
+
+
+
+

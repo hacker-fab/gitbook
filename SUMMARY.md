@@ -171,6 +171,16 @@
 * [BOM Template](templates-to-do/bom-template.md)
 * [Hardware X Template (for reference)](templates-to-do/hardware-x-template-for-reference.md)
 
+## Individual Fab Information
+
+* [Carnegie Mellon University](individual-fab-information/carnegie-mellon-university.md)
+* [University of Waterloo](individual-fab-information/university-of-waterloo.md)
+* [Ohio State University](individual-fab-information/ohio-state-university.md)
+* [University of California: Irvine](individual-fab-information/university-of-california-irvine.md)
+* [Wroclaw University of Science and Technology](individual-fab-information/wroclaw-university-of-science-and-technology.md)
+* [Indian Institute of Technology Bombay](individual-fab-information/indian-institute-of-technology-bombay.md)
+* [Case Western Reserve University](individual-fab-information/case-western-reserve-university.md)
+
 ## Archive
 
 * [Patterning SOP - Stepper V1](archive/patterning-sop-stepper-v1.md)
