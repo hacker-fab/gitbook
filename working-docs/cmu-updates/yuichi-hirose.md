@@ -513,10 +513,10 @@ description: My name is Yuichi and I will be working on the probe station this s
 #### Accomplishments
 
 * 3D printed the new components and assembled them. I assembled the camera + stage positioner unit. I also modifed the design of the probe positioner a bit and assembled one probe positioner.\
-  ![](<../../.gitbook/assets/image (2) (1).png>)\
+  ![](<../../.gitbook/assets/image (2) (1) (2).png>)\
   \
   For the tube connecting the camera and the objective, I gave several tries to 3D print the RMS thread but failed (the objective didn't go all the way). So I ended up adding a slit and it worked. However, this means dust particles can enter inside the tube. How strictly should we be carefule about this? \
-  ![](<../../.gitbook/assets/image (3) (1).png>)\
+  ![](<../../.gitbook/assets/image (3) (1) (2).png>)\
   \
   For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
   ![](<../../.gitbook/assets/image (5) (3).png>)<br>

@@ -91,7 +91,7 @@ ALD precursors and co-reactants are self-limiting&#x20;
        3. Too short purging times (parasitic components impacting conformality and uniformity&#x20;
        4. Too long dosing and purging times can slow down the process
 
-       <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 5. Material properties
    1. Optical properties (refractive index, absorption coefficient)
    2. Electrical properties (resistivity, carrier density, mobility)
@@ -102,7 +102,7 @@ ALD precursors and co-reactants are self-limiting&#x20;
     2. Constant GPC is not necessary but verifying saturation is important for all varied temperatures&#x20;
     3. Temperature dependent GPC exist but show saturating ALD behavior over a wide temp. range
 
-    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 7. Uniformity&#x20;
    1. Verified saturation in one area doesn’t mean dosing is sufficient everywhere
    2. Place the largest fitting substrate into the chamber and check for thickness variation as well as material properties
