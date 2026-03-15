@@ -2,13 +2,13 @@
 hidden: true
 ---
 
-# Required Reading (todo)
+# Contribution Guidlines
 
 The goal function of the Hacker Fab is to never debug the same thing twice.
 
 We operate under different constraints from the semiconductor fab industry. This allows us to curb a lot of complexity.
 
-## Goals:
+### Goals:
 
 1. Low cost
 2. Create the simplest designs possible
@@ -16,35 +16,22 @@ We operate under different constraints from the semiconductor fab industry. This
    2. Reduce manufacturing complexity
 3. Minimal danger
 4. Small size
-5. No cleanroom
-6. Highly sourcable materials
-7. High literacy in understanding working principles of tools and processes
-8. End-to-end custom - **from sand to NAND**
-   1. Make the wafers
-   2. Design the tools
-   3. Design the processes
-   4. Design the IC
-   5. Package the chip
+5. Minimize required infrastructure
+6. No cleanroom needed
+7. Highly sourcable materials
 
 
 
-## Non-Goals:
+### Things to include in documentation:
 
-1. Reuse of existing fab equipment
-
-
-
-## The 1970s vs. Now
-
-
-
-
-
-## On Open-Source Hardware
-
-Who we are looking for, how we grow, how to get support
-
-### Design Constraints
+* BOM
+* Build instructions
+* Required tooling for build
+* Required infrastructure
+* Pics/diagrams
+* CAD
+* Testing/Verification
+* Contact(s) (discord username, email, linkedin, etc.)
 
 
 
@@ -72,25 +59,7 @@ But there are other equally important ways to improve a design. Every tool versi
    1. In-situ sensors
    2. Calibration software should be more generalizable (“now you can use any camera…any piezo with draw distance in range X to Y…”)
 
-## On Cleanliness
 
-
-
-
-
-## On Process Node
-
-
-
-
-
-## On Education
-
-
-
-
-
-## <mark style="color:purple;">Where to Start</mark>
 
 
 
