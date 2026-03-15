@@ -14,20 +14,18 @@ description: the first open-source semiconductor fab.
 
 Our Goals:
 
-1. Make integrated circuit prototyping as fast as 3D printing
-2. Make DIY version of every nanofabrication tool
-3. Get there with collaborative open source hardware
+1. Make a DIY version of every nanofabrication tool
+2. Get there with collaborative open source hardware
 
-Right now we use factories and tools that are optimized to manufacture at scale to do our integrated circuit prototyping. There does not exist a set of machines that enable rapid tape-out of semiconductor devices on a budget, nor are there sufficient resources to make/modify fab tools from the ground up.
+Nanofabrication labs are expensive and inaccessible. Even STEM students at "prestigious institutions" have limited if any access to nanofabrication tools. Chips run our world, everyone deserves access to the tools that make them. To ensure this level of access, cheap, open source, and easily replicable nanofabrication tools are needed. Labs that make and utilize these open source tools need to appear in mass, world wide.
 
-Nanofabrication is often communicated as complex [magic](https://www.youtube.com/watch?v=d9SWNLZvA8g), where every machine is immutable. We believe that innovation in the industry requires a thorough understanding of these machines from first principles, which will lead us to simpler solutions. Even on machines and processes of magnitudes less complexity than modern industry, there are designs worth sharing.
+Hacker Fab is the open source fab project making this happen. 7 real Hacker Fabs have popped up (as of March 2026), with multiple others actively gaining maturing. Multiple critical open source fab tools have been built, documented, and duplicated. Countless devices have been demonstrated with these tools, with documented process development.
 
-The use of low-cost, abundant, and fast-turn-around hardware serves a larger purpose than making the fab cheaper. These design constraints are what enable others to recreate, modify, and contribute to our work. The simpler the better.
+Hacker Fab has been built by a delocalized community of contributors. Hacker Fab can only grow to its full potential by gaining more contributors. Anyone can contribute, see the next section to learn how.
 
-|                                                                              |                                                               |
-| :--------------------------------------------------------------------------: | ------------------------------------------------------------- |
-| <h4>Number of People Who Have Made a Transistor by Hand in a Hacker Fab</h4> | <h4>75</h4>                                                   |
-|                        <h4>Number of Hacker Fabs</h4>                        | <h4>3 <mark style="color:green;">(+1 in progress)</mark></h4> |
+
+
+
 
 ***
 
