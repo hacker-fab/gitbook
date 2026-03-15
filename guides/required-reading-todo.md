@@ -31,6 +31,7 @@ We operate under different constraints from the semiconductor fab industry. This
 * Pics/diagrams
 * CAD
 * Testing/Verification
+* SOP(s)
 * Contact(s) (discord username, email, linkedin, etc.)
 
 
