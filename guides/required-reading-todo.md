@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Contribution Guidlines
 
 The goal function of the Hacker Fab is to never debug the same thing twice.

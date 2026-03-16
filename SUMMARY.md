@@ -11,13 +11,12 @@
 
 ## 📜 Processes
 
-* [✨ Self Aligned NMOS](processes/current-fab-capabilities/README.md)
-  * [March 2026 Update](processes/current-fab-capabilities/march-2026-update/README.md)
-    * [Group 1 report](processes/current-fab-capabilities/march-2026-update/group-1-report.md)
-    * [Group 2 report](processes/current-fab-capabilities/march-2026-update/group-2-report.md)
-    * [Group 3 report](processes/current-fab-capabilities/march-2026-update/group-3-report.md)
-  * [November 2023 Update](processes/current-fab-capabilities/fab-capabilities-november-2023.md)
-* [Self-Aligned NMOS V1](processes/self-aligned-nmos-v1.md)
+* [✨ Self Aligned NMOS](nmos-capabilities/current-fab-capabilities/README.md)
+  * [March 2026 Update](nmos-capabilities/current-fab-capabilities/march-2026-update/README.md)
+    * [Group 1 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-1-report.md)
+    * [Group 2 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-2-report.md)
+    * [Group 3 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-3-report.md)
+  * [November 2023 Update](nmos-capabilities/current-fab-capabilities/fab-capabilities-november-2023.md)
 
 ## Fab Toolkit
 
