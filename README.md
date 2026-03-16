@@ -40,7 +40,7 @@ You don't need prior nanofabrication experience to create meaningful contributio
 1. Hit the button that says "contribute"
 2. Find the appropriate spot in the gitbook to add your work. For new projects this may be a new page, for modifications to existing work this could be an edit or amendment to existing pages. Fill in your contributed content.
    1. Note, if you download your working document(s) (google docs for example) as zipped .html files, you can them import them directly to a new gitbook page. This will maintain most of the content and formatting from your working document(s).
-3. Submit a merge request; select Jay Kunselman And Alexander Hakim as reviewers.
+3. Submit a merge request; select Jay Kunselman and Alexander Hakim as reviewers.
 4. Expect a message approving your merge request, or asking for revisions to your merge request.
 
 ***
