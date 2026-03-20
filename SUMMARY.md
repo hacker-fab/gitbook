@@ -176,6 +176,7 @@
 * [Wroclaw University of Science and Technology](individual-fab-information/wroclaw-university-of-science-and-technology.md)
 * [Indian Institute of Technology Bombay](individual-fab-information/indian-institute-of-technology-bombay.md)
 * [Case Western Reserve University](individual-fab-information/case-western-reserve-university.md)
+* [University of British Columbia](individual-fab-information/university-of-british-columbia.md)
 
 ## Archive
 
