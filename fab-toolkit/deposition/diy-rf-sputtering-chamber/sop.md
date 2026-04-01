@@ -3,9 +3,10 @@ description: >-
   Guide to using the RF sputtering chamber. This is not a concise guide. you
   should understand the sputtering machine's design, function, and operating
   procedure well before interacting with it.
+icon: bolt-lightning
 ---
 
-# SOP - RF Sputtering
+# SOP
 
 ### Loading your chip and setting throw distance
 

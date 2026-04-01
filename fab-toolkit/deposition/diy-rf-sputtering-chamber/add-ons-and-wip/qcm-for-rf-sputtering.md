@@ -6,7 +6,7 @@ description: >-
 
 # QCM for RF Sputtering
 
-<figure><img src="../../../.gitbook/assets/IMG_2708.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_2708.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Preface
 
@@ -20,7 +20,7 @@ The main components of this project are the sensor head, oscillator, and sensing
 
 ## Concept Diagram
 
-<figure><img src="../../../.gitbook/assets/concept diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/concept diagram.png" alt=""><figcaption></figcaption></figure>
 
 The oscillating signal travels from the coaxial cable through the SMA connector pin and the wire to the electrode. The aluminum base and lid serve as the ground. The signal returns through the casing. The target material adheres to the surface of the exposed quartz crystal disc causing a change in frequency of the signal.
 
@@ -48,7 +48,7 @@ Note: Not all materials listed are an exact match for those used in Version 1. S
 
 ## Image Gallery
 
-<div><figure><img src="../../../.gitbook/assets/IMG_2704 (1).jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_2699 (1).jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_2911.jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/IMG_2914.jpg" alt="" width="188"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../../.gitbook/assets/IMG_2704 (1).jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/IMG_2699 (1).jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/IMG_2911.jpg" alt="" width="188"><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/IMG_2914.jpg" alt="" width="188"><figcaption></figcaption></figure></div>
 
 ## Documentation Document
 
