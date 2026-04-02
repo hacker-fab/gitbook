@@ -112,12 +112,6 @@ $4,957.09 as of 6/30/2025
 
 (UHP Ar and O2 cylinders not included in BOM)
 
-## Build Instructions
-
-#### Magnetron
-
-Pole Piece
-
 
 
 ## Testing/Verification
