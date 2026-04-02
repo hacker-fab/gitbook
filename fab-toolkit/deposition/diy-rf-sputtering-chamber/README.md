@@ -9,7 +9,15 @@ coverY: 266.6676916987451
 
 ## Subpage links
 
-TBD
+{% embed url="https://docs.hackerfab.org/home/fab-toolkit/deposition/diy-rf-sputtering-chamber/bom" %}
+
+{% embed url="https://docs.hackerfab.org/home/fab-toolkit/deposition/diy-rf-sputtering-chamber/build-instructions" %}
+
+{% embed url="https://docs.hackerfab.org/home/fab-toolkit/deposition/diy-rf-sputtering-chamber/sop" %}
+
+{% embed url="https://docs.hackerfab.org/home/fab-toolkit/deposition/diy-rf-sputtering-chamber/testing-film-characterization-and-initial-process-dev-in-support-of-cmos" %}
+
+{% embed url="https://docs.hackerfab.org/home/fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip" %}
 
 ## Preface
 
