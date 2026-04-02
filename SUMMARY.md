@@ -42,6 +42,7 @@
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
   * [Electroless Nickel Plating](fab-toolkit/deposition/electroless-nickel-plating.md)
   * [⚡ DIY RF Sputtering Chamber](fab-toolkit/deposition/diy-rf-sputtering-chamber/README.md)
+    * [BOM](fab-toolkit/deposition/diy-rf-sputtering-chamber/bom.md)
     * [Build Instructions](fab-toolkit/deposition/diy-rf-sputtering-chamber/build-instructions.md)
     * [SOP](fab-toolkit/deposition/diy-rf-sputtering-chamber/sop.md)
     * [Testing, film characterization, and initial process dev in support of CMOS](fab-toolkit/deposition/diy-rf-sputtering-chamber/testing-film-characterization-and-initial-process-dev-in-support-of-cmos.md)
