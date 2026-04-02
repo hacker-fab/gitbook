@@ -89,7 +89,7 @@ This step is the same as for V2, see the instructions [here](lithography-stepper
 
 These steps are heavily based on the steps done for V2, but some have changed.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
@@ -97,7 +97,7 @@ These steps are heavily based on the steps done for V2, but some have changed.
 
 2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current to 150mA. (The projector defaults to 1023 mA, which is its maximum output - our UV LEDs are not able to handle that much current, so reducing the current makes sure they don't burn out!)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 3. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 

@@ -72,6 +72,8 @@ cons
 
 {% embed url="https://cad.onshape.com/documents/9b37f3bdb20664244f2f9c10/w/2cb1a33f5f5ef24c0f8f9cdc/e/f2ac309f15103b1f1225eb56?renderMode=0&uiState=69c4908298c729a5b1bc7023" %}
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/IMG_7007.jpg" alt=""><figcaption></figcaption></figure>
 
 #### Concept Diagrams
