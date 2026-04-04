@@ -45,7 +45,7 @@
     * [BOM](fab-toolkit/deposition/diy-rf-sputtering-chamber/bom.md)
     * [Build Instructions](fab-toolkit/deposition/diy-rf-sputtering-chamber/build-instructions.md)
     * [SOP](fab-toolkit/deposition/diy-rf-sputtering-chamber/sop.md)
-    * [Testing, film characterization, and initial process dev in support of CMOS](fab-toolkit/deposition/diy-rf-sputtering-chamber/testing-film-characterization-and-initial-process-dev-in-support-of-cmos.md)
+    * [Testing (film characterization, and initial process dev in support of CMOS)](fab-toolkit/deposition/diy-rf-sputtering-chamber/testing-film-characterization-and-initial-process-dev-in-support-of-cmos.md)
     * [Add ons and WIP](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/README.md)
       * [QCM for RF Sputtering](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/qcm-for-rf-sputtering.md)
   * [⚛️DIY Atomic Layer Deposition](fab-toolkit/deposition/diy-ald/README.md)
