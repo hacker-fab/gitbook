@@ -12,7 +12,7 @@ icon: bolt-lightning
 | Power Supply + Mathcing Network | $1,025.88     | \~                                  |
 | Total                           | $18,356.91    | $7,811.94                           |
 
-The cheaper subs wer not made in the CMU version because most expensive components were already available to us from past systems that could be thrifted.
+The cheaper subs were not made in the CMU version because most expensive components were already available to us from past systems that could be thrifted.
 
 ### Chamber + Magnetron
 
