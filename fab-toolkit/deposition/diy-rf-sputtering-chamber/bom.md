@@ -4,13 +4,13 @@ icon: bolt-lightning
 
 # BOM
 
-| Subsystem                       | Cost as built | Cost with recomended substitutions |
-| ------------------------------- | ------------- | ---------------------------------- |
-| Chamber + Magnetron             | $974.17       | \~                                 |
-| Pumping System + Vacuum Gauge   | $11,399.86    | $3,665.99                          |
-| Gas Flow Components             | $4,957.0      | $2,145.9                           |
-| Power Supply + Mathcing Network | $1,025.88     | \~                                 |
-| Total                           | $18,356.91    | $7,811.94                          |
+| Subsystem                       | Cost as built | Cost with recommended substitutions |
+| ------------------------------- | ------------- | ----------------------------------- |
+| Chamber + Magnetron             | $974.17       | \~                                  |
+| Pumping System + Vacuum Gauge   | $11,399.86    | $3,665.99                           |
+| Gas Flow Components             | $4,957.0      | $2,145.9                            |
+| Power Supply + Mathcing Network | $1,025.88     | \~                                  |
+| Total                           | $18,356.91    | $7,811.94                           |
 
 The cheaper subs wer not made in the CMU version because most expensive components were already available to us from past systems that could be thrifted.
 
