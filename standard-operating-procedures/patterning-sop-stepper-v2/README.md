@@ -125,15 +125,15 @@ If you're doing this for the first time, it is recommended to read through the f
 
 1. Make sure the correct pattern is loaded in the Lithographer GUI. See step 4.4 in [#stepper-setup](./#stepper-setup "mention")
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 2. LYFT and move the projector to the left, out of the way of the small hole in the chip holding jig.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Turn on the vacuum pump. Ensure vibrations are isolated from the rest of the stepper.
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png>) ![](<../../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 4. Orient the chip over the hole with its squarest corner in the corner of the alignment jig. The vacuum will suck it against the jig. Push the chip into the corner. Doing this repeatably eliminates the need to adjust theta.
 
@@ -186,7 +186,7 @@ If you're doing this for the first time, it is recommended to read through the f
    1. This calibration converts pixels of the camera to microns using a calibration slide from the manufacturer. If you use a different objective, the measurement will be inaccurate.
    2. After this is selected, measure the pitch or any other length using the line tool
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption><p>Measuring Microns with a 10x Objective</p></figcaption></figure>
 
 ![](../../.gitbook/assets/2740001.jpg) ![](../../.gitbook/assets/2740002.jpg) ![](../../.gitbook/assets/274_40x_annotated0001.jpg) ![](../../.gitbook/assets/274_40x_annotated0002.jpg)
 
@@ -238,6 +238,6 @@ If horizontal bands appear in Flir-based camera preview:
 2. Select the connected Flir camera model (Blackfly S) and select the green triangle. You should see a preview of the camera's output (it may appear black or grainy; this is okay).
 3. Update the camera settings so that Acquisition Frame Rate Enable, Acquisition Frame Rate, Exposure Auto, and Exposure Time have the same values shown below:
 
-<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Example Flir Blackfly S Camera Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (64) (1).png" alt=""><figcaption><p>Example Flir Blackfly S Camera Settings</p></figcaption></figure>
 
 4. Verify that the horizontal bands are no longer present across the camera preview. This may be easier when viewing the stage or a chip while illuminated with the projector.

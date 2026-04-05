@@ -363,20 +363,20 @@ description: My name is Yuichi and I will be working on the probe station this s
 * Because [the double-sided conductive tape](https://www.amazon.com/dp/B097JQQ7SC) (double-sided conductive and double-sided adhesive) has arrived, I tested it. We thought this can be an alternative solution for the vacuum chuck. I found that it is NOT conductive.\
   [video](https://photos.app.goo.gl/rAGHJ6wtj6fDF9po6) (The first touch was with an one-sided conductive tape, and the second one was with the double-sided conductive tape)
 * I then made one-sided adhesive conductive tape double-sided adhesive, by putting a double-sided tape on it. It worked well.\
-  ![](<../../.gitbook/assets/image (7).png>) ![](<../../.gitbook/assets/image (8).png>)\
+  ![](<../../.gitbook/assets/image (7) (2).png>) ![](<../../.gitbook/assets/image (8) (2).png>)\
   [video](https://photos.app.goo.gl/NFBbWuAgZgs6JK6w7)
 * I tried how easily I could remove the chip from the tape. It was sticky, but I would say it's okay. \
   [video](https://photos.app.goo.gl/pfJrZFvBUzup7EPF7)
 * I also tested whether I could peel off the tape without any problem. It seemed okay, but..\
-  ![](<../../.gitbook/assets/image (9).png>)
+  ![](<../../.gitbook/assets/image (9) (2).png>)
 * After I removed the tape, the sensor started showing noises with or without the tape on it (I tested it after removing it, and tested it again with a new tape thinking the sensor might be vibrating a little by the environmental factors such as AC air flows).\
   [video1](https://photos.app.goo.gl/vwqMvoCkzutbV4288) [video2](https://photos.app.goo.gl/tMsDo4YayPrGcP7J8)\
   I'm not sure if I broke the sensor when I was peeling off the tape. I'll dig into this problem next week by replacing the sensor with a new one. I'm thinking of placing another tape, probably [a polyimide film tape](https://a.co/d/g3PlaNK), between the sensor and the tape, so that we don't have to put and peel directly on and off the sensor.
 * I didn't check how stable the chip was on the tape by actually trying to touch it with two probes, like I did last week (last week, because it was not stable, the multimeter value was also not stable). This is because it is difficult to do so using the low-resolution USB camera and feel I scratch too much on the chip when I try to measure it with the camera. I'll do the actual measurement of resistance again when I have the better camera setup ready.
 * Last week, I found the magnetic board was too flimsy. I flipped it upside down this week like this below, but it was still not good.\
-  ![](<../../.gitbook/assets/image (10).png>)\
+  ![](<../../.gitbook/assets/image (10) (2).png>)\
   I used steel boards I made before for my research. I should design and order a sheet metal part like this.\
-  ![](<../../.gitbook/assets/image (11).png>)<br>
+  ![](<../../.gitbook/assets/image (11) (2).png>)<br>
 
 #### Roadblocks
 
@@ -521,13 +521,13 @@ description: My name is Yuichi and I will be working on the probe station this s
   For the piezo vibration sensor mount, I tried making a φ2.8 mm hole and self-threding by a M3 screw. Then the extrusion broken when I was inserting the thread. I should thicken this extrusion or use the regular a-screw-and-a-nut method.\
   ![](<../../.gitbook/assets/image (5) (3).png>)<br>
 * Tested the camera and the objective. I couldn't get the pattern very visible but it was sufficient (the patten part looks black and silver when I look at the chip with naked eyes, but why does this happen? Other objects like the piezo vibration sensor or the electric wire look as they are on the camera as well).\
-  ![](<../../.gitbook/assets/image (6).png>)\
+  ![](<../../.gitbook/assets/image (6) (3).png>)\
   ![](<../../.gitbook/assets/image (1) (8).png>)\
   [video](https://photos.app.goo.gl/bdJTNxEfWmi7zdPx6)
 * I didn't order a magnetic base because I want to finalize everything before ordering it, and we can use the sheet metal boards I have for now.
 * Tested a new method to fix a chip on top of the stage positioner while maintaining the ability to test the bottom of a chip.\
   The situation is that our first plan using the adhesive side of the conductive tape ([weekly update #9](yuichi-hirose.md#weekly-update-9-3-24-3-30) ) was found not very conductive ([video](https://photos.app.goo.gl/DewYELnKbHn6y7Tg6)). So I tried applying the conductive tape and a regular double-sided tape next to each other.\
-  ![](<../../.gitbook/assets/image (4) (1).png>)\
+  ![](<../../.gitbook/assets/image (4) (1) (2).png>)\
   Then, I found the piezo vibration sensor doesn't work with this setup, which means that the adhesive side of the conductive tape is conductive enough to short the white part and the copper part of the sensor. So now I think it might be sufficiently conductive for the chip measurement purposes. We need to do actual chip tests that requires probing the bottom of the chip to check if it works.&#x20;
 * Created a program to make sounds when probes are in contact.\
   Now I am in Japan for a conference and I didn't bring the Arduino and the piezo vibration sensor, so I temporarily use keyboard input values instead of sensor values for now.\

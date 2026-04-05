@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="../.gitbook/assets/image (16) (1).png" alt="" width="256"><figcaption><p>Doped Silicon (grey) and Doped Gate Poly (dark blue) Resulting from Thermal Diffusion</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1) (1).png" alt="" width="256"><figcaption><p>Doped Silicon (grey) and Doped Gate Poly (dark blue) Resulting from Thermal Diffusion</p></figcaption></figure>
 
 <figure><img src="https://lh3.googleusercontent.com/7qir7MnBPj-CUMSZWvlnCNPq5UV52gKTtnjRzcUaLVMF8-oqR11-48frpT_9RhUaT4LfpejWoQORQlAR0zCBQMYhZPg6n2mjp0EcBlpQsRGzJKBjwngtWeMu4vKebWMiOmyAfP3Ax9iW9IBCtzLPDQo" alt="" width="375"><figcaption><p>Tube Furnace</p></figcaption></figure>
 
@@ -50,7 +50,7 @@ Our process uses spin on glass containing phosphorus for N doping and boron for 
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Differentiating Quartz from Borosilicate</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Differentiating Quartz from Borosilicate</p></figcaption></figure>
 
 ![](<../.gitbook/assets/melted chip in tube furnace.jpg>)
 

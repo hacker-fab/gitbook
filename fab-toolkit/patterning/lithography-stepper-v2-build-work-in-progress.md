@@ -52,9 +52,9 @@ Building the Stepper V2 requires some simple CNC machining, PCB soldering, 3D pr
 
 ### Get the Metal Parts Made
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption><p>Base Plate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1).png" alt="" width="375"><figcaption><p>Base Plate</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt="" width="188"><figcaption><p>Adapter Plate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1).png" alt="" width="188"><figcaption><p>Adapter Plate</p></figcaption></figure>
 
 There are several options for fabricating these two parts: the Base Plate and Adapter Plate. If you have access to a water jet, you may cut these parts from 1/4" aluminum plate, available on [McMaster](https://www.mcmaster.com/8975K437-8975K846/). Otherwise you can order the parts from [SendCutSend](https://sendcutsend.com/services/waterjet-cutting/), [Xometry ](https://www.xometry.com/capabilities/sheet-cutting/waterjet-cutting/)or another online CNC shop.
 
@@ -93,7 +93,7 @@ When assembling the UV LED PCB, it is easiest to use a solder syringe to careful
 Once the paste is applied, align the components with their pads (i.e. using tweezers or a pick and place machine). Keep in mind that you need to use a nozzle that is small enough to pick up the LEDs. Finally, you can put the PCB into a reflow oven to solder the components to the board.
 
 Below is a completed version of the PCB - **note the polarity!** This image shows the correct orientation of the LEDs (credit to University of Utah for the photo). If you have it flipped, then the projector will project an image briefly before shutting itself off:\
-![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to wear UV-protective glasses**, as the LEDs will be bright! Once you are confident that the PCB works, you can now replace the blue LED PCB in the TI DLP dev kit with our new UV LED PCB. To see the UV light, simply look at the leds through your phone's camera, as the sensors see it as purple light.
 
@@ -101,7 +101,7 @@ You can test by applying 6V (limit to 1A) across the LED leads, but **be sure to
 
 Taking pictures after every step is key to ensuring you can put it back together properly.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
@@ -109,36 +109,36 @@ Taking pictures after every step is key to ensuring you can put it back together
 
 2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current to 150mA.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 3. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="178"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt="" width="178"><figcaption></figcaption></figure>
 
 4. Remove the side PCB.
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Unscrew and remove the shroud by sliding it away from the rest of the optics.
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 6. Unscrew and remove the heatsink for the front-most LED, which should be the blue one.
 
-t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38).png>)
+t![](<../../.gitbook/assets/image (37) (1).png>)![](<../../.gitbook/assets/image (38) (1).png>)
 
 7. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
 8. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 9. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 10. Screw on the adapter plate with four countersunk M2 screws.
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 11. Reassemble the rest of the projector, including the shroud and the PCBs.
 
@@ -146,38 +146,38 @@ t![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38
 
 See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97) for interactive assembly help (select option 3)
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption><p>All the tubes!</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. Start with the beamsplitter cube. Unscrew the set screws, remove the holder, and clip in the beamsplitter. The text ("Thorlabs") should be facing the microscope objective and camera when the holder is reinserted. Keep track of this during assembly and fix it later if necessary.
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Assemble the DLP tube. From left to right, the parts in the first picture are 0.3" lens tube (SM1L03), 0.5" lens tube coupler (SM1CPL05), 0.5" adjustable lens tube (SM1V05), and 0.5" lens tube (SM1L05). You may want to remove any internal lens rings. The adjustable lens tube allows axial length adjustment and the coupler allows rotation about the optical axis.
 
-<figure><img src="../../.gitbook/assets/image (48).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Screw the DLP tube into the beamsplitter cube. The correct orientation is shown above, and the arrow points to the side of the beamsplitter with the text (and optical coating).
 4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), another 1" lens tube (SM1L10), and C-mount SM1 adapter (SM1A9) (last two shown below).
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).\
    \
    &#xNAN;**(NOTE:** The calculation here is done incorrectly, but we have successfully been using it without major issues. The correct back focal length is 150mm, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/))
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
-<figure><img src="../../.gitbook/assets/image (53).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 7. Assemble the objective tube, which consists of a 0.5" lens tube (SM1L05), a 0.3" lens tube (SM1L03) an SM1 to RMS adapter (SM1A3), and the microscope objective.
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 8. Temporarily loosen the top lens tube coupler in order to finally screw the entire assembly into the projector.
 
@@ -189,19 +189,19 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 1. Unscrew all the, micrometers, L-stops and stage locks from the micrometer stage. Separate the X, Y and Z axes. Throughout the assembly process we will be replacing the stock screws with \~4mm longer ones as we reattach the various components to the stage. All 3d printed mounts are 4mm thick at the screw holes. Have your M2.5 screw kit handy!
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="338"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="338"><figcaption></figcaption></figure>
 
 2. Press fit the three sliding shaft couplers onto the three micrometer handles until the knurled surface is fully covered. They should fit with significant force and maybe gentle hammering. Be careful - the micrometer handles may have different diameters so you may need to modify the CAD and reprint to get a correct fit.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. The shaft couplers should slide on the motor shafts with zero slop. Modify dimensions and re-print if this is not the case. Graphite lubricant may help decrease sliding friction, and the fit will get looser after repeated axial movement as the steel deforms and smooths the plastic.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Screw the motor, coupler, and micrometer into the X axis motor mount as shown. Doing this step before attaching to the rest of the stage takes advantage of the slop in the micrometer mounting screws and aids alignment.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -221,9 +221,9 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 <figure><img src="../../.gitbook/assets/image (10) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 8. Insert the Z axis motor mount to the Z axis. The easiest way to do this is to insert it upside down from the opposite side, then flip it while pushing the stage up, then slide it back so the holes line up. Basically it takes some fiddling.
 
@@ -231,38 +231,38 @@ Print all of the parts in the table below. Black PLA is fine. You may need to re
 
 9. As with the other stages, attach the motor first, then secure the mounts. Tighten the set screw at the green arrow. Make sure the micrometer is flush with the mount at the yellow arrow. Again pushing upwards at the red arrow eliminates prelaod from the spring inside the stage and helps alignment.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 10. Tighten down the Z axis mount.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 11. Attach the X axis motor mount to the stage with the screws at the red arrows.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 12. Add additional screws on the X and Y axes to make sure the mounts are solidly attached. Ignore the spring in the above image.
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 13. Attach the right angle bracket to the theta stage and the top of the Z stage.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 14. Screw the chip vacuum chuck onto the theta stage. The stage is finished.
 
 ### Mechanical Integration
 
-<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Bolt the XYZ stage to the base plate using short screws so they don't protrude out the bottom. Ensure the stage is aligned with the tapped holes by pushing it forward while screwing it down.
 2. Screw in the four alignment screws for the projector. They don't need to go in all the way.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Push the projector and optics against the four screws to ensure alignment.
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Plug in everything: power for the projector, locking USB cable for the camera, USB cable for the stage, power for the stage, HDMI for the projector, power for the pump, and vacuum tube for the chuck. Do not power the stage arduino shield without the motors connected, or you will burn out the drivers.
 
@@ -361,7 +361,7 @@ Once the stepper is connected to a computer and the live camera feed is visible,
 2. Project a mostly red image with some fine marks for determining focus.
 3. Using the Z axis (focus) of the stage, focus onto the chip surface. Disregard the projected pattern for now.
 
-![](<../../.gitbook/assets/image (57).png>)
+![](<../../.gitbook/assets/image (57) (1).png>)
 
 4. Loosen the clamp that connects the two parts of the DLP-beamsplitter tube so that they freely rotate. (update picture)
 5. Loosen the locking ring on the adjustable lens tube.

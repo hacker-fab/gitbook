@@ -20,9 +20,9 @@ This document includes a list of specific variables broken down as closely to fi
 
 **Background**
 
-<figure><img src="../../.gitbook/assets/image (61).png" alt="" width="375"><figcaption><p>Source: <a href="https://xeryon.com/technology/how-do-piezo-motors-work/">Xeryon</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61) (1).png" alt="" width="375"><figcaption><p>Source: <a href="https://xeryon.com/technology/how-do-piezo-motors-work/">Xeryon</a></p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (62).png" alt="" width="375"><figcaption><p>Source: <a href="https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=13790">Thorlabs</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62) (1).png" alt="" width="375"><figcaption><p>Source: <a href="https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=13790">Thorlabs</a></p></figcaption></figure>
 
 Piezo actuators are tiny stacks crystals that respond to voltage by physically expanding in a very repeatable way. The simplest of these crystal stacks simply expands and contracts in one direction. The magnitude of this expansion can range from single nanometers to multiple microns.
 
@@ -48,7 +48,7 @@ Having a preload ensures that even if both surfaces are not perfectly aligned th
 
 2. ### **Planarity of A and B surfaces**
 
-<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption><p>Piezo mounted externally (to chassis) or on the stage itself</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63) (1).png" alt=""><figcaption><p>Piezo mounted externally (to chassis) or on the stage itself</p></figcaption></figure>
 
 If the piezo element is mounted on the chassis, and not the stage itself, then any slop in the stage mounting will propagate as the stage moves throughout its range of motion. This can increase or decrease the force between the magnet and the stage, as well as wedge the magnet's corner against the stage.&#x20;
 
@@ -70,7 +70,7 @@ This can also dictate the frequency at which you can drive the stage, defining t
 
 5. ### **Waveform driving the piezo**
 
-<figure><img src="../../.gitbook/assets/image (58).png" alt="" width="563"><figcaption><p>Screenshot of Googling "piezo stick slip" showing pure sawtooths everywhere</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (58) (1).png" alt="" width="563"><figcaption><p>Screenshot of Googling "piezo stick slip" showing pure sawtooths everywhere</p></figcaption></figure>
 
 Though a linear saw-tooth waveform is able to produce movement of the piezo inertia actuator, it is far from optimal. Using a linearly increasing or decreasing waveform is not ideal for the sticking phase, as the sharp changes in direction can make the stage slip before sticking action occurs.&#x20;
 
@@ -78,9 +78,9 @@ Using a gradually increasing waveform like the ones seen below is a more optimal
 
 The velocity of the waveform starts off slowly and gradually increases speed, which allows it to reach higher driving frequencies without slipping and even a greater velocity at the end of the sticking phase – which increases the momentum of the surface A.
 
-<figure><img src="../../.gitbook/assets/image (59).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the same direction as the piezo</strong></em></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (59) (1).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the same direction as the piezo</strong></em></p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the opposite direction as the piezo (reversed direction)</strong></em></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60) (1).png" alt="" width="375"><figcaption><p><em><strong>A is moving in the opposite direction as the piezo (reversed direction)</strong></em></p></figcaption></figure>
 
 Let Fcr be the maximum driving frequency at which there still is sticking: it is desirable that the rapidly changing portions of the signal (slipping phase) be **4 times** faster than Fcr and that the slowly changing portions of the signal be 4 times slower than Fcr.
 

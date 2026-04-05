@@ -89,7 +89,7 @@ This step is the same as for V2, see the instructions [here](lithography-stepper
 
 These steps are heavily based on the steps done for V2, but some have changed.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
@@ -97,40 +97,40 @@ These steps are heavily based on the steps done for V2, but some have changed.
 
 2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current to 150mA. (The projector defaults to 1023 mA, which is its maximum output - our UV LEDs are not able to handle that much current, so reducing the current makes sure they don't burn out!)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 3. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="178"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt="" width="178"><figcaption></figcaption></figure>
 
 4. Remove the side PCB.
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Unscrew and remove the shroud by sliding it away from the rest of the optics.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. _**NEW FOR 2.1:**_ Remove the bolts and standoffs that hold the main projector assembly to the bottom plate. This should free the bottom assembly.
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 7. Unscrew and remove the heatsink for the front-most LED, which should be the blue one.
 
-![](<../../.gitbook/assets/image (37).png>)![](<../../.gitbook/assets/image (38).png>)
+![](<../../.gitbook/assets/image (37) (1).png>)![](<../../.gitbook/assets/image (38) (1).png>)
 
 8. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
 9. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 10. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 11. Screw on the adapter plate with four countersunk M2 screws.
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 12. Use four M2.5 screws to screw on the Thorlabs SM1A53 adapter flange
 13. _**NEW FOR 2.1:**_ Do not reassemble the projector case - we will use it as-is.
@@ -139,17 +139,17 @@ These steps are heavily based on the steps done for V2, but some have changed.
 
 These steps are heavily based on the same steps for V2, but slightly modified.
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. Start with the beamsplitter cube. Unscrew the set screws, remove the holder, and clip in the beamsplitter. The text ("Thorlabs") should be facing the microscope objective and camera when the holder is reinserted. Keep track of this during assembly and fix it later if necessary.
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Assemble the DLP tube. From left to right, the parts in the first picture are 0.3" lens tube (SM1L03), 0.5" lens tube coupler (SM1CPL05), 0.5" adjustable lens tube (SM1V05), and 0.5" lens tube (SM1L05). You may want to remove any internal lens rings. The adjustable lens tube allows axial length adjustment and the coupler allows rotation about the optical axis.
 
-<figure><img src="../../.gitbook/assets/image (48).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Screw the DLP tube into the beamsplitter cube. The correct orientation is shown above, and the arrow points to the side of the beamsplitter with the text (and optical coating).
 4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), another 1" lens tube (SM1L10), and C-mount SM1 adapter (SM1A9) (last two shown below).
@@ -160,7 +160,7 @@ These steps are heavily based on the same steps for V2, but slightly modified.
    \
    &#xNAN;**(NOTE:** Our objective is rated for a 160mm optical tube length, but this is NOT the same as the back focal length, which is 150mm... this is a very confusing specification, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/) for what lengths are what)
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
@@ -206,7 +206,7 @@ To test the proximity switches, connect them to a 12V supply. The sensor output 
 
 The sensors should be connected through a pull-up resistor to the Arduino's 5V supply. 12V should be supplied externally.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Wiring diagram for the sensors</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Wiring diagram for the sensors</p></figcaption></figure>
 
 TODO: Add picture of CNC shield!
 
