@@ -6,9 +6,9 @@ icon: bolt-lightning
 
 Contact: Jay Kunselman
 
-## Film Characterization (Al and Al2O3)
+Explanation of methods, data commentary, conclusions and next steps to be added by 4/8/26
 
-Explanation of methods, data commentary, conclusions and next steps to be added by 4/5/26
+## Film Characterization (Al and Al2O3)
 
 #### Thickness/Deposition Rate Measurements
 
@@ -136,7 +136,7 @@ Steps 12-25 replaced by the below sequence in chip 1 for "maskless" diffusion:
 
 
 
-All Cureves below recorded on lower row (50 um gate length, 21.4 um channel length)
+All curves below recorded on lower row (50 um gate length, 21.4 um channel length)
 
 Chip 1 electrical testing
 
