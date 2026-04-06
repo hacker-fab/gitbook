@@ -180,29 +180,13 @@ Built on same chip(s) as FETs
 
 #### 9:9, 3hr, Standard RCA Clean
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (30).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (31).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (32).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt="" width="375"><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (33).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (40).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt="" width="375"><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (35).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (37).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (33).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (40).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (35).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (37).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (38).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (39).png" alt="" width="375"><figcaption></figcaption></figure>
+<div><figure><img src="../../../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (38).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (39).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 | size (area)       | frequency | area\_mm2 | k\_avg\_raw | k\_slope\_avg\_raw | Vfb\_PN\_avg\_raw | Vfb\_NP\_avg\_raw | deltaVfb\_avg\_raw | k\_avg\_corrected | k\_slope\_avg\_corrected | Vfb\_PN\_avg\_corrected | Vfb\_NP\_avg\_corrected | deltaVfb\_avg\_corrected | Gpeak\_PN\_S | Gpeak\_NP\_S | Rs\_mean\_ohm |
 | ----------------- | --------: | --------: | ----------: | -----------------: | ----------------: | ----------------: | -----------------: | ----------------: | -----------------------: | ----------------------: | ----------------------: | -----------------------: | -----------: | -----------: | ------------: |
