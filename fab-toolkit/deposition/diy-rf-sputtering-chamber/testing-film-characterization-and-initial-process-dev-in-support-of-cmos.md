@@ -144,7 +144,7 @@ As seen above, it was also observed that no blisteres formed in films deposited 
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-From all these observations, it was conlcluded that the blisteres were a result of the surface prepartion techniques, and HF last RCA cleaning is neccesssary over standard RCA clean to prevent blsiter defects and allow for use of sputtered AL2O3 as a gate dielctric.
+From all these observations, it is conlcluded that the blisters are a result of the surface prepartion techniques, and HF last RCA cleaning is neccesssary over standard RCA clean to prevent blister defects and allow for use of sputtered Al2O3 as a gate dielectric.
 
 ## Device data (MOSCap, TLM, MOSFET)
 
