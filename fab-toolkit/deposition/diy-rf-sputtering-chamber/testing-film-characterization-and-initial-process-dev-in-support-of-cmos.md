@@ -68,7 +68,7 @@ Each data point below is an average of 5 measurments in the smae spot. Raw data 
 
 #### Al and Al2O3 Surface Topology
 
-<table data-header-hidden><thead><tr><th width="77.8182373046875">Film</th><th width="125.81805419921875">Flow Ratio                (SCCM Ar : SCCM O2)</th><th width="146.18212890625">Deposition pressure (hPa)                         (turbo pump speed kept at 250Hz)</th><th width="120.727294921875">Deposition Time (minutes)</th><th width="122.90911865234375">RMS Surface Roughness (nm)</th><th width="308.3638916015625">AFM Image</th><th width="444.36376953125">AHM Topology Histogram</th></tr></thead><tbody><tr><td>Al2O3</td><td>25:5</td><td>1.2x10-2</td><td>60 </td><td>0.139</td><td><img src="../../../.gitbook/assets/unknown (35).png" alt="" data-size="original"></td><td><img src="../../../.gitbook/assets/unknown (36).png" alt=""></td></tr><tr><td>Al2O3</td><td>15:3</td><td>5.4x10-3</td><td>60</td><td>5.74</td><td><img src="../../../.gitbook/assets/unknown (37).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (38).png" alt=""></td></tr><tr><td>Al2O3</td><td>12:6</td><td>6.3x10-3</td><td>60</td><td>2.782</td><td><img src="../../../.gitbook/assets/unknown (43).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (44).png" alt=""></td></tr><tr><td>Al2O3</td><td>9:9</td><td>6.3x10-3</td><td>60</td><td>2.044</td><td><img src="../../../.gitbook/assets/unknown (45).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (46).png" alt=""></td></tr><tr><td>Al</td><td>30:0</td><td>1.2x10-2</td><td>30</td><td>19.833</td><td><img src="../../../.gitbook/assets/unknown (41).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (42).png" alt=""></td></tr><tr><td>Al</td><td>15:0</td><td>4x10-3</td><td>30</td><td>13.099</td><td><img src="../../../.gitbook/assets/unknown (39).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (40).png" alt=""></td></tr><tr><td>Al2O3</td><td>9:9, with post deposition O2 anneal.</td><td>6.3E-3</td><td>80</td><td>.768</td><td><img src="../../../.gitbook/assets/unknown (47).png" alt=""></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="77.8182373046875">Film</th><th width="125.81805419921875">Flow Ratio                (SCCM Ar : SCCM O2)</th><th width="146.18212890625">Deposition pressure (hPa)                         (turbo pump speed kept at 250Hz)</th><th width="120.727294921875">Deposition Time (minutes)</th><th width="122.90911865234375">RMS Surface Roughness (nm)</th><th width="308.3638916015625">AFM Image</th><th width="444.36376953125">AHM Topology Histogram</th></tr></thead><tbody><tr><td>Al2O3</td><td>25:5</td><td>1.2x10-2</td><td>60 </td><td>0.139</td><td><img src="../../../.gitbook/assets/unknown (35).png" alt="" data-size="original"></td><td><img src="../../../.gitbook/assets/unknown (36).png" alt=""></td></tr><tr><td>Al2O3</td><td>15:3</td><td>5.4x10-3</td><td>60</td><td>5.74</td><td><img src="../../../.gitbook/assets/unknown (37).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (38).png" alt=""></td></tr><tr><td>Al2O3</td><td>12:6</td><td>6.3x10-3</td><td>60</td><td>2.782</td><td><img src="../../../.gitbook/assets/unknown (43).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (44).png" alt=""></td></tr><tr><td>Al2O3</td><td>9:9</td><td>6.3x10-3</td><td>60</td><td>2.044</td><td><img src="../../../.gitbook/assets/unknown (45).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (46).png" alt=""></td></tr><tr><td>Al</td><td>30:0</td><td>1.2x10-2</td><td>30</td><td>19.833</td><td><img src="../../../.gitbook/assets/unknown (41).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (42).png" alt=""></td></tr><tr><td>Al</td><td>15:0</td><td>4x10-3</td><td>30</td><td>13.099</td><td><img src="../../../.gitbook/assets/unknown (39).png" alt=""></td><td><img src="../../../.gitbook/assets/unknown (40).png" alt=""></td></tr><tr><td>Al2O3</td><td>9:9, with post deposition O2 anneal.</td><td>6.3E-3</td><td>80</td><td>.768</td><td><img src="../../../.gitbook/assets/unknown (47).png" alt=""></td><td></td></tr></tbody></table>
 
 #### Al2O3 XPS Data
 
@@ -98,6 +98,8 @@ Below is the raw data collected for XPS, and a vibe coded python notebook used f
 
 ThermoFisher reports the Al2p binding energy for alumium oxide to be 74.6 eV, and the O1s binding energy for aluminum oxide to be 531.1. 15:3 deviates the most from the reference.
 
+Peak fitting still needs to be done to detmerine composition.
+
 #### Uniformity (unassessed)
 
 All tests have been done on 1cmx1cm chips, so uniformity has not been assessed. It is of interest to process many chips at once, which may span the area of a standard 4" wafer, so uniformity will eventually be assessed quantitatively. Qualityatviy;, it seems that there is a <2" diameter area that appears to have a similar deposition rate. Below is an image of Al2O3 sputtered about \~50nm thick (which is just as Al2O3 begins to be visible to the eye on a wafer) with a relatively short 3" throw distance on a 4" diameter wafer. There is an obvious decrease in film thickness begging about 1" from the center of the wafer.
@@ -108,11 +110,41 @@ The diameter of the dark space shield is only 1.25", which is significantly smal
 
 #### Blister Defects
 
+In the reactively sputtered Al2O3 films, a bubble-like defect was observed. After some research, it was determined that these types of thin film defects are called "blisters" and are essentially a bubble in the film, caused by some type of trapped gas.
 
+Summary of blister defect observations (RCA clean with middle step HF dip)
 
+* Only occured in Al2O3 films
+* High variability in blister size (\~1-100 um in diameter) and density vhip to chip and spatially on single chips
+* Almost always circular, sometimes ovular.
+* Thicker films had higher blister density (some observed in 15nm films, many observed in 45nm films.
 
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Blisters observed in 45nm thick reactively sputtered Al2O3 (9:9 flow ratio)</p></figcaption></figure>
 
+I could not find any literature directly discussing blisters in sputtered Al2O3, however, I found some papers on trapped Ar in specific types of sputtered metal films. The images of blisters in these papers did not have similar morphology to the ones we observed, and this mechanism didn't seem to make sense given our low sputtering rates. There is a small body of literature documenting blister defects in ALD deposited thin films, which look identical to the blisters we observed. A zip file of the relevant literature collected is found below.
 
+{% file src="../../../.gitbook/assets/Blister Defect References-20260410T224919Z-3-001.zip" %}
+
+Below is an image from the work **"Analysis of blister formation in spatial ALD** ![](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) **for silicon surface passivation in photovoltaics"** by **L. Hennen** of blisters in ALD depsoited Al2O3.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Image from the work <strong>"Analysis of blister formation in spatial ALD  for silicon surface passivation in photovoltaics"</strong> by <strong>L. Hennen</strong> of blisters in ALD depsoited Al2O3.</p></figcaption></figure>
+
+The blisters in ALD films are said to come from trapped species, mainly H and/or H2O which can diffuse and agglomerate at the Al2O3-Si interface. The H source is cited as being the metal organic precursors used in the ALD process. However, in sputtering there is no obvious source of H, other than what may be on the surface of the Si before any film is deposited. Based on this, it was suspected that the blister formation was surface preparation dependent. When considering surface preparation modifications to solve the blisters, the RCA clean that was being done could not be removed as it is vital for metal ion removal which is vital for gate performance. So, attempts were made to dehydrate the chip before deposition, and heat the chip during deposition. both of which failed. What ended up working, is incorporating an HF dip at the end of the RCA clean (often called HF last RCA clean and is common practice prior to to a gate oxide deposition or growth). In theory, the HF last dip etches native SiO2 and H passivates the bare Si surface making it hydrophobic, lowering the amount of H2O or organic contaminants that could cling to the surface between the cleaning and loading into the sputtering chamber. Without the HF last step, the Si should have a thin native oxide that is OH passivated, and hydrophilic. This is confirmed by observations of the chip surface with RCA vs RCA HF last cleaning: During normal RCA cleaning, the chip stays wet with the Final DI water rinse, where as with HF last RCA cleaning, the chip behaves very hydrophobic, and appears dry even after a DI water rinse.
+
+Initially the HF last cleaning was purposefully avoided to retain an thin SiO2 layer between the Si and Al2O3 to reduce the number of dangling bonds which usually occur at a pristine Si-Al2O3 interface at the cost of a higher EOT in MOSCaps and MOSFETs. However, based on the blister defect issue, an HF last clean had to be used. Note that all the AFM images included above are done on chips that had a standard RCA clean, with the exception of the O2 annealed sample. It is unclear how much this may affect surface roughness, but needs to be noted as an uncontrolled variable in the surface roughness comparison between annealed and non annealed Al2O3.
+
+| Attempt to prevent blisters                                                                                                                                                                 | Result                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 200C vaccuum bake (50sccm Ar \~3E-2 hPa) in sputtering chamber prior to deposition (to dehydrate)                                                                                           | High blister density                                                                                 |
+| 200C substrate heating during deposition (to facilitate volatite diffusion away from film - Si interface, may have had opposite effect).                                                    | High blister density                                                                                 |
+| Alternate substrate type - used a wafer with 500nm polySi deposited on it (has rougher surface than regualr Si wafers, literature shows limited/no blister formation with rougher surfaces) | No blisters observed                                                                                 |
+| HF dip post RCA clean (remove native oxide and create temporary hydrophobic H passivated surface)                                                                                           | Almost no blisters observed (some near edges where tweezer was used to handle, otherwise very clear) |
+
+As seen above, it was also observed that no blisteres formed in films deposited on a polySi surface, which has higher surface roughness. This same phenomenon is observed in   **"Analysis of blister formation in spatial ALD** ![](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) **for silicon surface passivation in photovoltaics"** by **L. Hennen**, as seen by the figure below, where "wafer side B" has notably higher surface roughness than "wafer Side A."
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+From all these observations, it was conlcluded that the blisteres were a result of the surface prepartion techniques, and HF last RCA cleaning is neccesssary over standard RCA clean to prevent blsiter defects and allow for use of sputtered AL2O3 as a gate dielctric.
 
 ## Device data (MOSCap, TLM, MOSFET)
 
@@ -166,13 +198,13 @@ Steps 12-25 replaced by the below sequence in chip 1 for "maskless" diffusion:
 {% step %}
 ### pattern and etch alignment marks into Si
 
-<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2) (7).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (2) (7) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 ### spin on glass (dopant mask), pattern and etch source/drain regions&#x20;
 
-<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (3) (7).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (3) (7) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -230,7 +262,7 @@ Built on same chip(s) as FETs
 
 <div><figure><img src="../../../.gitbook/assets/Screenshot 2026-04-06 131954.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/Screenshot 2026-04-06 132512.png" alt=""><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1) (10).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image (1) (10) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 <div><figure><img src="../../../.gitbook/assets/maskless (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/masked.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/masked annealed.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -342,13 +374,13 @@ Built on same chip(s) as FETs
 
 #### 9:9, 80 min, HF last
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
-
 <figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1) (10).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2) (7).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (3) (7).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -360,7 +392,7 @@ Built on same chip(s) as FETs
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
 
