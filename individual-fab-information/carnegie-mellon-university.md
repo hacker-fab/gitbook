@@ -1,6 +1,6 @@
 # Carnegie Mellon University
 
-The [Hacker Fab @ CMU](https://hackerfab.ece.cmu.edu/) operates as an integrated course + lab. The course covers nanofabrication and device fundamentals. Students spend the majority of their time working on a project that adds a new tool/process to the fab or improves an exisiting one. Additionally, students participate in labs where they use the DIY tools to fab and characterize devices. Here is a link to the Hacker Fab @ CMU [student google drive](https://drive.google.com/drive/folders/1sxDHE6ObghR9wuX18UZ02fEs8JJAK2E_?usp=drive_link), which contains more info on the course/lab at CMU.
+The [Hacker Fab @ CMU](https://hackerfab.ece.cmu.edu/) operates as an integrated course + lab. The course covers nanofabrication and device fundamentals. Students spend the majority of their time working on a project that adds a new tool/process to the fab or improves an exisiting one. Additionally, students participate in labs where they use the DIY tools to fab and characterize devices.
 
 Contact(s):
 
