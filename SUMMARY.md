@@ -73,6 +73,7 @@
     * [SMU - Analog Discovery](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
     * [SMU - Keithley 4200SCS](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-keithley-4200scs.md)
   * [CV Measurements](fab-toolkit/metrology-characterization/cv-measurements.md)
+  * [CV Measurement Setup (UWaterloo)](fab-toolkit/metrology-characterization/cv-measurement-setup-uwaterloo.md)
   * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
   * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
   * [IC Packaging](fab-toolkit/metrology-characterization/ic-packaging.md)
