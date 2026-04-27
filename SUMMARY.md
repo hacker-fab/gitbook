@@ -17,6 +17,7 @@
     * [Group 2 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-2-report.md)
     * [Group 3 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-3-report.md)
   * [November 2023 Update](nmos-capabilities/current-fab-capabilities/fab-capabilities-november-2023.md)
+* [💻 CMOS - sputtered gate stack (WIP)](processes/cmos-sputtered-gate-stack-wip.md)
 
 ## Fab Toolkit
 
@@ -47,7 +48,7 @@
     * [BOM](fab-toolkit/deposition/diy-rf-sputtering-chamber/bom.md)
     * [Build Instructions](fab-toolkit/deposition/diy-rf-sputtering-chamber/build-instructions.md)
     * [SOP](fab-toolkit/deposition/diy-rf-sputtering-chamber/sop.md)
-    * [Testing (film characterization, and initial process dev in support of CMOS)](fab-toolkit/deposition/diy-rf-sputtering-chamber/testing-film-characterization-and-initial-process-dev-in-support-of-cmos.md)
+    * [Film Characterization](fab-toolkit/deposition/diy-rf-sputtering-chamber/film-characterization.md)
     * [Add ons and WIP](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/README.md)
       * [QCM for RF Sputtering](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/qcm-for-rf-sputtering.md)
   * [⚛️DIY Atomic Layer Deposition](fab-toolkit/deposition/diy-ald/README.md)
