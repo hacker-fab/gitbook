@@ -103,6 +103,8 @@
   * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
   * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v2/hot-plate-sop.md)
   * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-strip-sop.md)
+  * [Patterning SOP- Stepper V2 (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/patterning-sop-stepper-v2-uwaterloo.md)
+  * [Photoresist Development SOP (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-development-sop-uwaterloo.md)
 * [Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
 * [Spin on Glass/Diffusant SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
   * [Spin on Glass Storage and Preparation](standard-operating-procedures/spin-on-glass-sop/spin-on-glass-storage-and-preperation.md)
