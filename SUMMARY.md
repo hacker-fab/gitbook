@@ -122,6 +122,7 @@
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
 * [KLayout Mask Generation SOP](standard-operating-procedures/klayout-mask-generation-sop.md)
+* [BOE chemical waste disposal SOP (UWaterloo)](standard-operating-procedures/boe-chemical-waste-disposal-sop-uwaterloo.md)
 
 ## 🟢 WORKING DOCS
 
@@ -192,3 +193,7 @@
 ## Archive
 
 * [Patterning SOP - Stepper V1](archive/patterning-sop-stepper-v1.md)
+
+***
+
+* [ChemicalWasteDisposalforBOESOP](chemicalwastedisposalforboesop.md)
