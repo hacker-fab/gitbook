@@ -91,7 +91,7 @@ ALD precursors and co-reactants are self-limiting&#x20;
        3. Too short purging times (parasitic components impacting conformality and uniformity&#x20;
        4. Too long dosing and purging times can slow down the process
 
-       <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. Material properties
    1. Optical properties (refractive index, absorption coefficient)
    2. Electrical properties (resistivity, carrier density, mobility)

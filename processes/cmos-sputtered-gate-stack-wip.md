@@ -20,6 +20,16 @@ The sputtered film characterization that precedes this work is linked below.
 
 #### MOSCap Capacitance and Conductance Profiling
 
+**MOSCap Capacitance and Conductance Profiling**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+MOSCap devices were fabricated from the sputtered Al and Al2O3 for Conductave-Voltage and Capacititacne voltage profiling. They were fabricated from the process flow inlcuded below from prime p-Si 5-10 ohm (100) wafers. Oxide thickness, surafce preparation method, and post oxide deposition anealing were modulated to study the impact on capcitance and conductance testing.The individual MOSCaps were defined by applying a shadowmask in between the oxide Deposition nad the firt Al deposition.![](https://images.gitbook.com/__img/dpr=2,width=760,onerror=redirect,format=auto,signature=1516433323/https%3A%2F%2Ffiles.gitbook.com%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%2FXgXjz6D0Vz2o0EOp8JO5%2Fuploads%2FQNcqMQmTzeiPyuuUPqBi%2Fimage.png%3Falt%3Dmedia%26token%3D88094732-bee1-4537-8c91-6c32dcba0c3c)
+
+<table data-header-hidden><thead><tr><th width="80.3636474609375">Step #</th><th width="104.81817626953125">Step Name</th><th width="371.2728271484375">Parameters</th><th>Layer Stacks</th></tr></thead><tbody><tr><td>0</td><td>Substrate Stack</td><td>Si p-type 5-10 ohms (100): 525 µm</td><td>​​<img src="../.gitbook/assets/image (6).png" alt=""></td></tr><tr><td>1</td><td>RCA Clean</td><td>SC 1 Constituents: H2O:NH4OH(29%):H2O2(30%) (5:1:1) SC 1 Cleaning Time: 10 mins SC 1 Cleaning Temperature: 80 °C HF Concentration: 6:1 BOE HF Dip Time: 15 secs HF Dip Temperature: 20 °C SC 2 Constituents: H2O:HCl(37%):H2O2(30%) (6:1:1) SC 2 Cleaning Time: 10 mins SC 2 Cleaning Temperature: 80 °C "SC 1 and 2 mixed in 50ml pyrex beakers directly before using. Optional HF last processing step (Experimental Option) Rinsed with DI Water then N2 dried. Immediately placed into sputtering chamber for pump down."</td><td>​​<img src="../.gitbook/assets/image (5).png" alt=""></td></tr><tr><td>2</td><td>Sputter w/ CMU Hacker Fab RF Sputtering Chamber</td><td>Material: Al2O3 Film thickness: Experimental Option Deposition Rate: .00025 µm/min Deposition Time: 80 mins Sputter Type: RF Sputtering RF or DC Power: 100 Watts Sputter Gas Composition: 9 SCCM UHP Ar : 9 SCCM UHP O2 Chamber Pressure: 4.7E-3 Torr Throw Distance: 3" Base Pressure Pre Deposition: 1E-7 Torr Target Sputter Clean Ar Flow: 30 SCCM Target Sputter Clean Time: 15 Minutes</td><td>​​<img src="../.gitbook/assets/image (4).png" alt=""></td></tr><tr><td>3</td><td>Anneal (Experimental Option)</td><td>Performed in RF sputtering Chamber under partial Vacuum. Pump speed at 250Hz with 50 SCCM of either UHP Ar or UHP O2.</td><td>​​<img src="../.gitbook/assets/image (3).png" alt=""></td></tr><tr><td>4</td><td>Sputter w/ CMU Hacker Fab RF Sputtering Chamber</td><td>Material: Al Film thickness: 150 nm Deposition Rate: .0025 µm/min Deposition Time: 60 mins Sputter Type: RF Sputtering RF or DC Power: 100 Watts Sputter Gas Composition: 15 SCCM UHP Ar Chamber Pressure: 3E-3 Torr Throw Distance: 3" Base Pressure Pre Deposition: 1E-7 Torr Target Sputter Clean Ar Flow: 30 SCCM Target Sputter Clean Time: 15 Minutes SWR During Deposition: 1.5</td><td>​​<img src="../.gitbook/assets/image (2).png" alt=""></td></tr><tr><td>6</td><td>Sputter w/ CMU Hacker Fab RF Sputtering Chamber</td><td>Material: Al Film thickness: 150 nm Deposition Rate: .0025 µm/min Deposition Time: 60 mins Sputter Type: RF Sputtering RF or DC Power: 100 Watts Sputter Gas Composition: 15 SCCM UHP Ar Chamber Pressure: 3E-3 Torr Throw Distance: 3" Base Pressure Pre Deposition: 1E-7 Torr Target Sputter Clean Ar Flow: 30 SCCM Target Sputter Clean Time: 15 Minutes SWR During Deposition: 1.5</td><td>​​<img src="../.gitbook/assets/image (1).png" alt=""></td></tr></tbody></table>
+
+
+
 Summary/Comparison
 
 <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
@@ -70,31 +80,31 @@ Steps 12-25 replaced by the below sequence in chip 1 for "maskless" diffusion:
 {% step %}
 ### spin on glass (dopant mask), pattern and etch source/drain regions&#x20;
 
-<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (3) (7) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (3) (7) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 ### spin on dopant, diffuse
 
-<figure><img src="../.gitbook/assets/image (4) (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 ### etch/clean off dopant, sputter gate films, pattern and etch gates
 
-<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (5) (4) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 ### spin on glass, pattern and etch contact holes
 
-<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (6) (4) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 ### sputter Al, pattern and etch contact pads
 
-<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/Labeled Official Al2O3 Gated NMOS Patterns (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (7) (3) (1).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
@@ -226,21 +236,21 @@ Built on same chip(s) as FETs
 
 #### 9:9, 80 min, HF last
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (7).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (10).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (7).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (7) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (5).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
 
