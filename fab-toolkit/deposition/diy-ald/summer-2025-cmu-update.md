@@ -46,7 +46,7 @@ The heating tapes are to a male and female extension cable with the heating tape
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2l_UrF0TjdyOwn5T3cfKlBrgn3kaMQ6D_zO1ZsUmGRmVR53p8cFAf5mC32Qm0Xol3I83yBf1_KeSqAE7NpbFeWWF-vEQr51Ehd1IU3SMpGUbN9MiyBRgbt6UgXZCawG_x_ZbC3Q?key=LnU0XhOCfLStAR3KNGouYg" alt=""><figcaption><p>Wiring of the heating tapes and the extension cable. </p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p> Visual of the inside of the NEMA enclosure for our ALD system, along with variac and DC power supply used for heating.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p> Visual of the inside of the NEMA enclosure for our ALD system, along with variac and DC power supply used for heating.</p></figcaption></figure>
 
 ### Other Design Choices&#x20;
 
