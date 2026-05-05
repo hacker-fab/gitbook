@@ -18,7 +18,7 @@ The current design uses:
 
 The sliding interface is based on AlN (amorphous substrate) bonded to magnets and magnetic stainless steel (grade 430). Initially, motion is not perfectly smooth, but after a short “run-in” period (self-polishing), the system becomes significantly more stable.
 
-<figure><img src="../.gitbook/assets/image (367).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### **Vacuum-first design**
 
@@ -53,7 +53,7 @@ Any deviation from the Z-axis introduces lateral forces, which:
 
 This is one of the main limiting factors for stability and precision, and we are actively working on improving this.
 
-<figure><img src="../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
 ### **Electronics (WIP)**
 
@@ -71,7 +71,7 @@ We have already designed a new power supply providing **+60V / -30V**, which bet
 
 The system is designed with **opto-isolation (optocouplers)** to separate control electronics from the high-voltage section, improving robustness and reducing noise coupling.
 
-<figure><img src="../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### **Current Status**
 

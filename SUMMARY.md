@@ -132,7 +132,8 @@
 ## 🟢 WORKING DOCS
 
 * [Tip Etcher - WIP](working-docs/tip-etcher-wip.md)
-* [Nanopositioner - WIP](working-docs/nanopositioner-wip.md)
+* [Nanopositioner - WIP](working-docs/nanopositioner-wip/README.md)
+  * [Vacuum Sub-system](working-docs/nanopositioner-wip/vacuum-sub-system.md)
 * [CMOS Source/Drain Metal Contact Optimization](working-docs/cmos-source-drain-metal-contact-optimization.md)
 * [CMOS Doping Process Development](working-docs/cmos-doping-process-development.md)
 * [Sputtering Gate Oxides + Metal Gate Contacts](working-docs/sputtering-gate-oxides-+-metal-gate-contacts.md)
