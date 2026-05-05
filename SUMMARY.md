@@ -49,6 +49,7 @@
         * [BU40N Reference Design](fab-toolkit/patterning/blu-ray-lithography/lithography-spinner-v1/hardware/bu40n-reference-design.md)
       * [Software](fab-toolkit/patterning/blu-ray-lithography/lithography-spinner-v1/software.md)
     * [Base Principles](fab-toolkit/patterning/blu-ray-lithography/base-principles.md)
+  * [Tiling](fab-toolkit/patterning/tiling.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
   * [⚡ DC Sputtering (WIP) (UWaterloo)](fab-toolkit/deposition/dc-sputtering-wip-uwaterloo.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
