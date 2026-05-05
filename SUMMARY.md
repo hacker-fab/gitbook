@@ -137,6 +137,7 @@
   * [🔧 Micromanipulator](working-docs/nanopositioner-wip/micromanipulator.md)
   * [Rotational Stage Assembly](working-docs/nanopositioner-wip/rotational-stage-assembly.md)
   * [Rotational Stage Electronics & Control](working-docs/nanopositioner-wip/rotational-stage-electronics-and-control.md)
+  * [Heating System - WIP](working-docs/nanopositioner-wip/heating-system-wip.md)
 * [CMOS Source/Drain Metal Contact Optimization](working-docs/cmos-source-drain-metal-contact-optimization.md)
 * [CMOS Doping Process Development](working-docs/cmos-doping-process-development.md)
 * [Sputtering Gate Oxides + Metal Gate Contacts](working-docs/sputtering-gate-oxides-+-metal-gate-contacts.md)
