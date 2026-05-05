@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description/>
+ <version/>
+ <category/>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>false</show-in-menu>
+ <group-name/>
+ <menu-path/>
+ <interpreter>ruby</interpreter>
+ <dsl-interpreter-name/>
+ <text>module MetalContactGenerator
+ include RBA
+ app = Application.instance
+ mw = app.main_window
+ view = mw.current_view
+ cv = view.cellview(0)
+ layout = cv.layout
+ dbu = layout.dbu
+ # --- 1. environment clearance ---
+ target_name = "CONTACT_MASK_DESIGN"
+ layout.top_cells.each { |c| layout.prune_cell(c.cell_index, -1) }
+ top_cell = layout.create_cell(target_name)
+ ct_layer = layout.layer(RBA::LayerInfo.new(4, 0))
+ # --- 3. parameters ---
+ l_val = 5.0     # Channel Length
+ w_val = 50.0    # Channel Width
+ dl_val = 40.0   # Diffusion Length
+  # Contact
+ ct_size = 0.4   
+ ct_pitch = 2.0  
+  # Diffusion to Diffusion)
+ all_spacings = [
+   [2.0, 4.0, 6.0, 8.0, 10.0],
+   [2.0, 4.0, 6.0, 8.0, 10.0],
+   [2.0, 4.0, 6.0, 8.0, 10.0],
+   [2.0, 4.0, 6.0, 8.0, 10.0]
+ ]
+ y_offset = 100.0
+ # --- 4. Loop ---
+ (0..3).each do |row_index|
+   current_x = 0.0
+   spacings = all_spacings[row_index]
+  
+   (0..5).each do |i|
+
+     pv = { "channel_length" =&gt; l_val, "channel_width" =&gt; w_val, "diffusion_length" =&gt; dl_val }
+     nmos = layout.create_cell("NMosfet", "Lib", pv)
+     bbox = nmos.bbox
+    
+
+     place_x = current_x - (bbox.left * dbu)
+     place_y = row_index * y_offset
+     trans = Trans.new(Point.new((place_x/dbu).round, (place_y/dbu).round))
+     top_cell.insert(CellInstArray.new(nmos.cell_index, trans))
+    
+     contact_x_positions = [-4.5, 4.5]
+     contact_x_positions.each do |local_x|
+       (2..48).step(ct_pitch).each do |local_y|
+
+         ct_box = Box.new(
+           (place_x + local_x) / dbu,
+           (place_y + local_y) / dbu,
+           (place_x + local_x + ct_size) / dbu,
+           (place_y + local_y + ct_size) / dbu
+         )
+         top_cell.shapes(ct_layer).insert(ct_box)
+       end
+     end
+    
+     current_x += (bbox.width * dbu + (spacings[i] || 5.0))
+   end
+ end
+  view.select_cell(top_cell.cell_index, 0)
+ view.zoom_fit
+ puts "Successfully generated Metal Contact Mask for 4-row NMOS array."
+end
+</text>
+</klayout-macro>
