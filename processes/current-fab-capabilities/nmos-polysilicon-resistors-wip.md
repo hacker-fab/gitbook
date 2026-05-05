@@ -83,11 +83,11 @@ The per-resistor table shows that resistance increases mainly with longer effect
 
 #### Step 11: Resistor Body Pattern
 
-![](../../.gitbook/assets/unknown.png)![](<../../.gitbook/assets/unknown (1).png>)
+![](<../../.gitbook/assets/unknown (2).png>)![](<../../.gitbook/assets/unknown (1) (2).png>)
 
 #### Step 24: Resistor Contacts Pattern
 
-![](<../../.gitbook/assets/unknown (2).png>)<img src="../../.gitbook/assets/unknown (3).png" alt="" data-size="original">
+![](<../../.gitbook/assets/unknown (2) (2).png>)<img src="../../.gitbook/assets/unknown (3).png" alt="" data-size="original">
 
 #### Step 31: Probing Contacts Pattern
 

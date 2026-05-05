@@ -103,11 +103,11 @@ Seven NMOS transistor sizes were fabricated, with gate lengths from 5 µm (NMOS 
 | 25.0  | 7     | 1.236735 | 0.004281 | 0.000335 | 1178.387695 | 17183.785435 | 14.976045 |
 | 30.0  | 6     | 1.070343 | 0.003515 | 0.000578 | 1429.056525 | 10475.632003 | 6.374179  |
 
-![](<../../../.gitbook/assets/imagesimage1 (1).png>)
+![](<../../../.gitbook/assets/imagesimage1 (1) (1).png>)
 
-![](<../../../.gitbook/assets/imagesimage5 (1).png>)
+![](<../../../.gitbook/assets/imagesimage5 (1) (1).png>)
 
-![](<../../../.gitbook/assets/imagesimage8 (1).png>)
+![](<../../../.gitbook/assets/imagesimage8 (1) (1).png>)
 
 ![](<../../../.gitbook/assets/imagesimage6 (2).png>)
 

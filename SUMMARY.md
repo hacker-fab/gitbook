@@ -53,6 +53,7 @@
     * [Add ons and WIP](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/README.md)
       * [QCM for RF Sputtering](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/qcm-for-rf-sputtering.md)
       * [Sputtering Automation Control System](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/sputtering-automation-control-system.md)
+      * [Automated Impedance Matching](fab-toolkit/deposition/diy-rf-sputtering-chamber/add-ons-and-wip/automated-impedance-matching.md)
   * [⚛️DIY Atomic Layer Deposition](fab-toolkit/deposition/diy-ald/README.md)
     * [Summer 2025 CMU Update](fab-toolkit/deposition/diy-ald/summer-2025-cmu-update.md)
     * [Spring 2025 CMU Update](fab-toolkit/deposition/diy-ald/spring-2025-cmu-update.md)

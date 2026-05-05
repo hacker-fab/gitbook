@@ -16,9 +16,9 @@ The top middle opening of the top plate (where the magnetron will eventually go)
 
 The CAD designates the correct hole diameter and depth for each blind hole which will need to have threads tapped. The intended thread size for each blind hole are labeled below. In the CMU build, all threads were hand tapped.
 
-![](<../../../.gitbook/assets/imagesimage11 (1).png>) ![](../../../.gitbook/assets/imagesimage33.png)
+![](<../../../.gitbook/assets/imagesimage11 (1) (1).png>) ![](../../../.gitbook/assets/imagesimage33.png)
 
-![](<../../../.gitbook/assets/imagesimage2 (2).png>) ![](<../../../.gitbook/assets/imagesimage12 (1).png>)
+![](<../../../.gitbook/assets/imagesimage2 (2).png>) ![](<../../../.gitbook/assets/imagesimage12 (1) (1).png>)
 
 As shipped, the disks from McMaster have a corrugated surface which is not suitable as sealing surfaces. A local metal supplier can probably provide you these disks with a smoother surface, and maybe even polish them for you. If you end up with the poor quality surfaces like we did at CMU, you will need to smooth and planarize them. We did this by putting them on a lathe to shave off a new surface. This surface was directly used as an effective UHV sealing surface with a viton gasket. Note that we only did this for the sides sealing to the chamber pyrex cylinder, whereas the other side was polished with the hand drill polishing kit. The hand drill polishing kit was used wet to sand the sealing surfaces at each KF16 bulk head port, and sand the magnetron hole where the magnetron gasket will go. Remember, you only actually need to smooth out the areas where an o-ring or gasket will sit, not the entire surface. We stopped at 1000 grit sandpaper (should build up from \~400 grit), as seen below. Although you can still see sanding lines, this surface was able to hold an effective UHV seal.
 
@@ -34,13 +34,13 @@ The “magnetron” consists of the top copper heat sink, the steel plate/polepi
 
 ### Pole Piece
 
-![](<../../../.gitbook/assets/imagesimage20 (1).png>)
+![](<../../../.gitbook/assets/imagesimage20 (1) (1).png>)
 
 The pole piece is made from a 3x3” 1/16” thick plate of mild steel and the function is three fold. First, it creates a barrier between atmosphere and the UHV environment inside the chamber. For that reason, the bottom of the pole piece needs to serve as a sealing surface, and needs to be polished. Second, it holds up the target (the target has the center magnet bonded to it) due to magnet force, creating a “mag lock” mechanism for swapping targets or the outer magnet holder. Thirdly, it concentrates the magnetic field produced by the permanent magnets for a strong uniform field at the target surface.
 
 The pole piece will have 4 through holes drilled at the corners with the dimensions below.
 
-![](<../../../.gitbook/assets/imagesimage3 (1).png>)
+![](<../../../.gitbook/assets/imagesimage3 (1) (1).png>)
 
 After drilling the holes, one side of the pole piece will need to be polished so that it can make a good seal with the Viton gasket. Note that the polished steel will quickly rust if not promptly cleaned and dried (depending on climate, this was march in Pittsburgh). In this case the sealing side was polished to near mirror like state with this kit, however as mentioned earlier, this seems to be overkill for a UHV seal with Viton gasket, and stopping at 1000 grit paper should be sufficient.
 
@@ -56,13 +56,13 @@ The gasket forms the seal between the pole piece and the top plate. It is compre
 
 ### Outer Magnet Holder/Backing Plate
 
-![](<../../../.gitbook/assets/imagesimage14 (1).png>)
+![](<../../../.gitbook/assets/imagesimage14 (1) (1).png>)
 
 The backing plate is meant to define the outer magnet arrangement, as well as providing a backing for the target which provides an electrical connection and a heat transfer pathway. We did not do anything to enhance the interface between target and backing plate like smoothing out the backing plate for better contact. We have not had any obvious issue with overheating after extensive deposition testing with 2” Al target and 100W RF.
 
 The backing plate is machine from a 2” diameter ⅛” thick Al disk. With the dimensions below.
 
-![](../../../.gitbook/assets/imagesimage15.png) ![](../../../.gitbook/assets/imagesimage39.jpg)
+![](<../../../.gitbook/assets/imagesimage15 (1).png>) ![](../../../.gitbook/assets/imagesimage39.jpg)
 
 The ¼” diameter ⅛” thick N42SH magnets are then permanently press fit into the outer holes. For alternate magnet arrangements a new backing plate should be made (for biasing towards balanced unbalanced magnetic flux). It is extremely important that all magnets are press fit with the same polarity ,for example all with N acing up. We press fit ours with a simple vice. Note, the vice teeth can easily dent the Aluminum, so sandwich the backing plate in between two flat plates when press fitting to avoid damage.
 
@@ -74,7 +74,7 @@ The ¼” diameter ⅛” thick N42SH magnets are then permanently press fit int
 
 The target (in our case high purity Al 2” wide ⅛” thick) needs to be bonded to the 1” diameter ⅛” thick N52SH center magnet. It is critical that the center magnet’s polarity is oriented to be opposite to the outer magnets’ polarity. This is what creates the donut shaped electric field at the target surface. This allows the target to be easily snapped in and out of the magnetron assembly due the magnetic force between the center magnet and pole piece. If you have multiple targets to run, bond a center magnet to each target for easy swapping. We bonded ours with low outgassing silver epoxy because we already had it and knew it would be good for electrical and thermal conductivity. However, that epoxy is expensive, so something like Hysol 1C (which is also low outgassing) could probably be substituted, since the target will still make electric contact to the rest of the magnetron/cathode through the backing plate. Remember that this whole assembly will get very hot, so epoxies could fail. In our build, the silver epoxy has never failed even after extensive testing.
 
-![](<../../../.gitbook/assets/imagesimage9 (1).jpg>)
+![](<../../../.gitbook/assets/imagesimage9 (1) (1).jpg>)
 
 ### Alumina Space Fillers / Washers
 
@@ -92,7 +92,7 @@ In the final assembly two of the washers are stacked. We held them together and 
 
 ## Dark Space Shield
 
-![](<../../../.gitbook/assets/imagesimage21 (1).png>)
+![](<../../../.gitbook/assets/imagesimage21 (1) (1).png>)
 
 The dark space shield was designed and built when the greater design of the chamber/magetron was still unverified. For that reason, it is not optimal, and is the best candidate for an improved design. A better dark space shield could be designed and fabricated in one single piece, however, it would likely require more complex machining which was purposefully avoided for this design.
 
@@ -100,7 +100,7 @@ The dark space shield is meant to control plasma formation by setting the dark s
 
 The bottom sheet is cut and drilled to the dimensions below.
 
-![](<../../../.gitbook/assets/imagesimage18 (1).png>)
+![](<../../../.gitbook/assets/imagesimage18 (1) (1).png>)
 
 The washers are simply stacked, and can be added/removed to tune the dark space gap. While experimenting with this design, we just held the washers to the bottom with two pieces of polyimide tape. That worked so we never changed it, however a little Hysol 1C may be better.
 
@@ -112,7 +112,7 @@ The purpose of the cooling box is first to facilitate electrical connection from
 
 The box is folded out of .032” thick Al sheet to the dimensions below. We cut our lines with a dremel (band saw or tin snips would probably work) and bent the sheet with a dedicated sheet metal bender. However, the Al is so thin and malleable that this could be done in a vice with some stiff plates.
 
-![](<../../../.gitbook/assets/imagesimage13 (1).png>)
+![](<../../../.gitbook/assets/imagesimage13 (1) (1).png>)
 
 Holes were made with a drill press. Make sure to clamp as near to the hole as possible since drill bits like to grab onto thin sheet and yank it upwards.
 

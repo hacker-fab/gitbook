@@ -56,7 +56,7 @@ After automated extraction, each device's I-V graph was inspected visually. Devi
 
 The raw dataset consists of 100 Keithley-generated .xls files, one per probed transistor. Each file contains Id-Vd sweep data for gate voltages from 0 to 6 V. Files are named according to the convention: nmos{1-7}\_pattern{0-7\}}, where the nmos number encodes the gate length (SIZE 1 = 5 µm through SIZE 7 = 30 µm) and the pattern number encodes the spatial position on the chip.
 
-![](../../../.gitbook/assets/imagesimage4.png)
+![](<../../../.gitbook/assets/imagesimage4 (1).png>)
 
 #### 6.2 Processed Data
 
@@ -102,7 +102,7 @@ To optimize the experimental performance of Checkpoint 2, we will adopt the foll
 
 Vth was measured to be negative for several transistors, notably in patterns 5 to 8. Some measurements featured negative current values at low VDS. The majority of the transistors on this chip exhibited breakdown-type behavior with Ig in the range of milliamps, with the exception of a few transistors on patterns 0 and 1. Roff is very low, being only in the kiloOhm range, when it ideally should be in the megaohm to gigaohm range. The gate off current was similarly extremely high for most transistors, closely following the current at Vg = 1. This resulted in gate on/off current ratios ranging from 2 to almost 100. Graphs of the best transistor are shown below.
 
-![](../../../.gitbook/assets/imagesimage6.png) ![](../../../.gitbook/assets/imagesimage2.png)
+![](<../../../.gitbook/assets/imagesimage6 (1).png>) ![](<../../../.gitbook/assets/imagesimage2 (1).png>)
 
 #### 8.1. Output Characteristics and Driving Capability
 
@@ -112,9 +112,9 @@ The Id-Vd curves demonstrate that the fabricated NMOSFETs exhibit clear transist
 
 The Ig-Vd plot reveals critical information regarding the quality of the gate dielectric. Although the gate current Ig is in the nano-ampere (nA) range—much smaller than the drain current—it reaches levels as high as 3,500nA at Vgs = 6V, which is relatively high for a standard gate oxide. This suggests potential gate leakage due to thin spots or defects in the dielectric layer formed during fabrication. Interestingly, Ig decreases as Vd increases; this occurs because a higher drain voltage reduces the potential difference between the gate and the drain (Vgd), thereby lowering the electric field across the oxide near the drain. This leakage, combined with the observed Ioff at Vgs = 0V, highlights the impact of process-related factors on the overall switching contrast and device reliability.
 
-![](../../../.gitbook/assets/imagesimage1.png) ![](../../../.gitbook/assets/imagesimage9.png)
+![](<../../../.gitbook/assets/imagesimage1 (1).png>) ![](../../../.gitbook/assets/imagesimage9.png)
 
-![](../../../.gitbook/assets/imagesimage10.png)
+![](<../../../.gitbook/assets/imagesimage10 (1).png>)
 
 #### 8.3 The Maximum Transconductance Linearization Method
 

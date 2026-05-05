@@ -2,7 +2,7 @@
 
 1\. chips
 
-![](../../../.gitbook/assets/imagesimage25.png) ![](<../../../.gitbook/assets/imagesimage2 (1).png>)
+![](../../../.gitbook/assets/imagesimage25.png) ![](<../../../.gitbook/assets/imagesimage2 (1) (1).png>)
 
 An important distinction between the two chips comes from a process difference during insulator deposition. For Chip 19, the intended 700B spin-on silicon oxide layer was deposited and baked . For Chip 50, due to repeated cracking issues during baking the glass, this step was modified and a baked AZ photoresist was used instead of 700B. Since fabrication parameters were not fully standardized, these variations are treated as experimental process variables to help guide future process optimization.
 
@@ -10,17 +10,17 @@ An important distinction between the two chips comes from a process difference d
 
 2. Pics
 
-Final chips Chip 19 (left) and Chip 50 (right). 10x, 100x, 100x dark field.![](../../../.gitbook/assets/imagesimage23.png)
+Final chips Chip 19 (left) and Chip 50 (right). 10x, 100x, 100x dark field.![](<../../../.gitbook/assets/imagesimage23 (1).png>)
 
-![](../../../.gitbook/assets/imagesimage26.png) ![](../../../.gitbook/assets/imagesimage17.png)
+![](../../../.gitbook/assets/imagesimage26.png) ![](<../../../.gitbook/assets/imagesimage17 (1).png>)
 
 ***
 
-![](../../../.gitbook/assets/imagesimage8.png) ![](../../../.gitbook/assets/imagesimage14.png) ![](../../../.gitbook/assets/imagesimage28.png)
+![](<../../../.gitbook/assets/imagesimage8 (1).png>) ![](<../../../.gitbook/assets/imagesimage14 (1).png>) ![](../../../.gitbook/assets/imagesimage28.png)
 
 3. Fabrication Observations
 
-![](../../../.gitbook/assets/imagesimage9.jpg)
+![](<../../../.gitbook/assets/imagesimage9 (1).jpg>)
 
 3.1 Lithography
 
@@ -184,7 +184,7 @@ The per-gate-voltage data for the Chip 19 example device (nmos1, pattern2) is sh
 
 The script finds the maximum gm step (here gm = 3.651 × 10⁻³) and extrapolates the tangent line back.
 
-![](../../../.gitbook/assets/imagesimage11.png)
+![](<../../../.gitbook/assets/imagesimage11 (1).png>)
 
 6. Dataset Description
 
@@ -192,7 +192,7 @@ The script finds the maximum gm step (here gm = 3.651 × 10⁻³) and extrapolat
 
 The raw dataset consists of 100 Keithley-generated .xls files, one per probed transistor. Each file contains Id-Vd sweep data for gate voltages from 0 to 6 V. Files are named according to the convention: nmos{1-7}\_pattern{1-8}\_chip{19/50}, where the nmos number encodes the gate length (NMOS 1 = 5 µm through NMOS 7 = 30 µm) and the pattern number encodes the spatial position on the chip.
 
-![](<../../../.gitbook/assets/imagesimage4 (1).png>)
+![](<../../../.gitbook/assets/imagesimage4 (1) (1).png>)
 
 6.2 Processed Data
 
@@ -260,11 +260,11 @@ Chip 50's photoresist dielectric suppresses off-state leakage far more effective
 
 The titles of the graphs below explain what the graph shows. I have created this set of graphs for all 94 transistors. You can find them in Section 11.
 
-![](../../../.gitbook/assets/imagesimage7.png) ![](../../../.gitbook/assets/imagesimage20.png)
+![](<../../../.gitbook/assets/imagesimage7 (1).png>) ![](<../../../.gitbook/assets/imagesimage20 (1).png>)
 
-![](../../../.gitbook/assets/imagesimage21.png) ![](../../../.gitbook/assets/imagesimage5.png)
+![](<../../../.gitbook/assets/imagesimage21 (1).png>) ![](<../../../.gitbook/assets/imagesimage5 (1).png>)
 
-![](<../../../.gitbook/assets/imagesimage6 (1).png>) ![](<../../../.gitbook/assets/imagesimage10 (1).png>)
+![](<../../../.gitbook/assets/imagesimage6 (1) (1).png>) ![](<../../../.gitbook/assets/imagesimage10 (1) (1).png>)
 
 9. FET Size-Dependent Analysis
 
@@ -284,9 +284,9 @@ IMAGE
 | 6    | 30µm | 8        | 1.42 ± 0.18 | 3.26 ± 0.20  | 9.5 ± 8.8     | 1,539 ± 97    |
 | 7    | 30µm | 7        | 1.29 ± 0.16 | 2.86 ± 0.91  | 9.9 ± 13.3    | 2,125 ± 1,416 |
 
-![](../../../.gitbook/assets/imagesimage24.png)
+![](<../../../.gitbook/assets/imagesimage24 (1).png>)
 
-![](../../../.gitbook/assets/imagesimage12.png) ![](../../../.gitbook/assets/imagesimage3.png)
+![](<../../../.gitbook/assets/imagesimage12 (1).png>) ![](<../../../.gitbook/assets/imagesimage3 (1).png>)
 
 ![](../../../.gitbook/assets/imagesimage27.png)
 
