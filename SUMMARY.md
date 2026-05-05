@@ -58,6 +58,7 @@
     * [Summer 2025 CMU Update](fab-toolkit/deposition/diy-ald/summer-2025-cmu-update.md)
     * [Spring 2025 CMU Update](fab-toolkit/deposition/diy-ald/spring-2025-cmu-update.md)
     * [Fall 2024 CMU Update](fab-toolkit/deposition/diy-ald/fall-2024-cmu-update.md)
+    * [Spring 2026 CMU Update](fab-toolkit/deposition/diy-ald/spring-2026-cmu-update.md)
 * [🕳️ Etching](fab-toolkit/etching/README.md)
   * [Plasma Etcher](fab-toolkit/etching/plasma-etcher.md)
   * [HF Jig](fab-toolkit/etching/hf-jig.md)
