@@ -73,6 +73,8 @@
 * [Electronic Design Automation](fab-toolkit/electronic-design-automation/README.md)
   * [Mask Generation and DRC](fab-toolkit/electronic-design-automation/mask-generation-and-drc.md)
   * [Device Modeling](fab-toolkit/electronic-design-automation/device-modeling.md)
+  * [KLayout Mask Generation SOP](fab-toolkit/electronic-design-automation/klayout-mask-generation-sop.md)
+  * [MagicVLSI DRC and LVS - WIP](fab-toolkit/electronic-design-automation/magicvlsi-drc-and-lvs-wip.md)
 * [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
   * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
   * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
@@ -126,7 +128,6 @@
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
-* [KLayout Mask Generation SOP](standard-operating-procedures/klayout-mask-generation-sop.md)
 * [BOE chemical waste disposal SOP (UWaterloo)](standard-operating-procedures/boe-chemical-waste-disposal-sop-uwaterloo.md)
 
 ## 🟢 WORKING DOCS
