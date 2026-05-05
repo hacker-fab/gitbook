@@ -2,10 +2,10 @@
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-09-18 184957.png" alt=""><figcaption></figcaption></figure>
 
-| ![](<../../../.gitbook/assets/unknown (8).png>)                                                                                                | <p><br><img src="../../../.gitbook/assets/unknown (7).png" alt=""></p> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/unknown (9).png>)                                                                                                | ![](<../../../.gitbook/assets/unknown (10).png>)                       |
-| ![](<../../../.gitbook/assets/unknown (11).png>)Programmable circuit breaker to protect the power grid and voltmeter for thermocouple readings | ![](<../../../.gitbook/assets/unknown (12).png>)PID and Relay setup    |
+| ![](<../../../.gitbook/assets/unknown (8) (1).png>)                                                                                            | <p><br><img src="../../../.gitbook/assets/unknown (7) (1).png" alt=""></p> |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/unknown (9) (1).png>)                                                                                            | ![](<../../../.gitbook/assets/unknown (10) (1).png>)                       |
+| ![](<../../../.gitbook/assets/unknown (11).png>)Programmable circuit breaker to protect the power grid and voltmeter for thermocouple readings | ![](<../../../.gitbook/assets/unknown (12).png>)PID and Relay setup        |
 
 1. ### Goals and operating parameters
 

@@ -130,5 +130,3 @@ Under the low drain voltage condition of Vd = 0.2V, the extracted negative thres
 * Residual positive charge in the gate oxide spontaneously attracts electrons, leading to surface accumulation and the formation of an initial conductive channel. This causes the device to exhibit weak depletion characteristics even at Vg = 0V, resulting in a negative drift of the intrinsic threshold voltage.
 
 In contrast, during high-bias testing (1V to 10V), the device exhibits a stable transition toward saturation: as the drain voltage increases, the extracted Vth rebounds from 0.138V and ultimately stabilizes at approximately 0.93V. This indicates the device overcomes measurement noise at low voltages and enters a normal operating state effectively controlled by the gate.
-
-###

@@ -45,10 +45,10 @@ Sheet metal, kanthal wire, refractory cement, ceramic wool, quartz glass tube, n
 \
 <br>
 
-| ![](<../../../.gitbook/assets/unknown (2).png>)                                                                                               | ![](<../../../.gitbook/assets/unknown (1) (1).png>)                |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| ![](<../../../.gitbook/assets/unknown (3).png>)                                                                                               | ![](<../../../.gitbook/assets/unknown (4).png>)                    |
-| ![](<../../../.gitbook/assets/unknown (5).png>)Programmable circuit breaker to protect the power grid and voltmeter for thermocouple readings | ![](<../../../.gitbook/assets/unknown (6).png>)PID and Relay setup |
+| ![](<../../../.gitbook/assets/unknown (2) (1).png>)                                                                                               | ![](<../../../.gitbook/assets/unknown (1) (1) (1).png>)                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/unknown (3) (1).png>)                                                                                               | ![](<../../../.gitbook/assets/unknown (4) (1).png>)                    |
+| ![](<../../../.gitbook/assets/unknown (5) (1).png>)Programmable circuit breaker to protect the power grid and voltmeter for thermocouple readings | ![](<../../../.gitbook/assets/unknown (6) (1).png>)PID and Relay setup |
 
 <br>
 

@@ -17,6 +17,7 @@
     * [Group 2 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-2-report.md)
     * [Group 3 report](nmos-capabilities/current-fab-capabilities/march-2026-update/group-3-report.md)
   * [November 2023 Update](nmos-capabilities/current-fab-capabilities/fab-capabilities-november-2023.md)
+  * [NMOS - Polysilicon Resistors (WIP)](processes/current-fab-capabilities/nmos-polysilicon-resistors-wip.md)
 * [💻 CMOS - sputtered gate stack (WIP)](processes/cmos-sputtered-gate-stack-wip.md)
 
 ## Fab Toolkit
