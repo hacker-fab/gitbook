@@ -138,7 +138,7 @@ In the final assembly, the flap is fastened on last with nuts sandwiching it to 
 
 We 3D printed a stand for our top plate assembly to sit on while we work on the chamber and load/unload chips. The CAD for it is here.. I would widen out the holes and make the uprights shorter if I were redoing it.
 
-![](../../../.gitbook/assets/IMG_0115.jpg)
+<img src="../../../.gitbook/assets/IMG_0115.jpg" alt="" width="375">
 
 ## Final Assembly
 

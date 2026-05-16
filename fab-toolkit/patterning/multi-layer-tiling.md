@@ -2,10 +2,10 @@
 description: >-
   This page describes approaches and experiments for single and multi-layered
   tiling for lithography
-icon: grid-4
+icon: puzzle
 ---
 
-# Tiling
+# Multi-Layer Tiling
 
 Repository for tiling related resources: [https://github.com/hacker-fab/stepper\_attachments](https://github.com/hacker-fab/stepper_attachments)
 
@@ -198,7 +198,7 @@ Upon doing some quick scaling between pixels to stage steps, we can then transla
 
 **1. Feature-matching with SIFT**
 
-We initially attempted to use feature-matching between different camera view snapshots to determine how far the stage moved. This required using OpenCV’s SIFT and RANSAC algorithm to detect and match keypoints between two different images (often offsetted versions of each other).&#x20;
+We initially attempted to use feature-matching between different camera view snapshots to determine how far the stage moved. This required using OpenCV’s SIFT and RANSAC algorithm to detect and match keypoints between two different images (often offset-ed versions of each other).&#x20;
 
 However, we soon realized that the patterns that were used for chips contained lots of repetitive features, that the algorithm would not be able to easily match different keypoints to the ones on a separate image. Additionally, the feature-matcher would often focus on the outer edge of the camera view, which doesn’t contain any features of the chip at all, making it difficult to calculate stage offset. Also, the preprocessed image was not good enough in quality for us to rely on traditional computer vision methods.
 
@@ -249,7 +249,7 @@ In order to ensure that we are allowed to customize the preparation workflow for
 
 ### Layer 2+
 
-<i class="fa-exclamation" style="color:$danger;">:exclamation:</i>_<mark style="color:$danger;">Important: this part of the project is still a work in progress and documentation and code is subject to changes, optimizations, and fixes. We will try to update the documentation accordingly.</mark>_
+_<mark style="color:$danger;">Important: this part of the project is still a work in progress and documentation and code is subject to changes, optimizations, and fixes. We will try to update the documentation accordingly.</mark>_
 
 For layer 2+, there will already be underlying layers on the chip (which includes alignment marks).&#x20;
 
@@ -313,4 +313,8 @@ Since we also know the position of the marker at row 0, col 0 in the stitched im
 
 ### Limitations and Future Work
 
-\[TODO: insert some stuff here, we definitely should talk about our current progress and what could be improved. Maybe mention the rotational stage somewhere here too]
+The current stepper has no rotational stage, which limits the stepper capabilities since it forces changes to the image projection instead of the stepper stage, which bottlenecks precision to precision of the digital image projection (which is composed of pixels). With the incorporation of the MicroManipulator stage that was built for [CMU's Stepper V2.2](https://docs.hackerfab.org/home/working-docs/nanopositioner-wip/micromanipulator) (or MiMa as we like to call it), rotational motion can be added to gain better precision of rotational errors, while also creating flexibility for stage movement capabilities.&#x20;
+
+Another limitation to the existing design is the massive vibration and jerk caused by slip between the chip and the stage as it moves along each axis. A chip stabilizer slider would be tremendously beneficial for the stepper to get more accurate patterning locations.&#x20;
+
+Last noteable limitation is off-stepper processes for multi-layer patterning, specifically the longevity of visible first-layer alignment markers. As the layers grow, not only does the autofocus need to adapt to the new ideal z-stage position, but also retain visibility and detection success of the lower-layer alignment markers. We have yet to test out the layer at which we're at the brink of no longer being able to detect the markers due to the chip thickness and type of deposited materials present in the camera frame, but future work needs to be done to determine whether alignment markers need to be patterned again after a certain thickness level for multi-layer chip patterning.&#x20;

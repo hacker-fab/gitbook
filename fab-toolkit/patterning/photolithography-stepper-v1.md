@@ -1,3 +1,7 @@
+---
+icon: '1'
+---
+
 # Lithography Stepper V1 Build
 
 ## Background

@@ -1,3 +1,7 @@
+---
+icon: clipboard-check
+---
+
 # Patterning Tasks - Spring 2025
 
 This page documents the current work being done on patterning systems and the goals of that work. If you want to start a new project or research related to patterning, add it here so we can keep track of what's being done!

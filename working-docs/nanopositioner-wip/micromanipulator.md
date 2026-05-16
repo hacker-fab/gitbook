@@ -4,7 +4,7 @@ description: >-
   used for both the lithography stepper and the 2D crystal stack robot.
 ---
 
-# 🔧 Micromanipulator
+# Micromanipulator
 
 <figure><img src="../../.gitbook/assets/RRJ_7788(1).png" alt=""><figcaption><p>Assembled micromanipulator v4 (with Kirby)</p></figcaption></figure>
 

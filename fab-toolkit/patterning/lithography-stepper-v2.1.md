@@ -1,3 +1,7 @@
+---
+icon: arrow-up-right-dots
+---
+
 # Lithography Stepper V2.1
 
 Stepper V2.1 is an incremental improvement upon the existing [Stepper V2](lithography-stepper-v2-build-work-in-progress.md) with mechanical improvements. As such, a lot of the content here will be the same as V2! The changes from V2 (and reasoning):

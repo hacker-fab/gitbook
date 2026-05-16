@@ -1,3 +1,7 @@
+---
+icon: '2'
+---
+
 # Lithography Stepper V2 Build
 
 **If you already have a stepper built and you're looking for information on how to operate the tool, check out our** [**SOP**](../../standard-operating-procedures/patterning-sop-stepper-v2/)**!**

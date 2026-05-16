@@ -1,3 +1,7 @@
+---
+icon: hammer
+---
+
 # Getting started with Klayout
 
 1. Download Klayout from their websites and follow the instructions to install the software
