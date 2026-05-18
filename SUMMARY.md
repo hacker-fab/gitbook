@@ -52,7 +52,7 @@
     * [Base Principles](fab-toolkit/patterning/blu-ray-lithography/base-principles.md)
   * [Multi-Layer Tiling](fab-toolkit/patterning/multi-layer-tiling.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
-  * [⚡ DC Sputtering (WIP) (UWaterloo)](fab-toolkit/deposition/dc-sputtering-wip-uwaterloo.md)
+  * [⚡ DIY DC Sputtering (WIP) (UWaterloo)](fab-toolkit/deposition/diy-dc-sputtering-wip-uwaterloo.md)
   * [💡 Thermal Evaporator V1 Build (WIP)](fab-toolkit/deposition/thermal-evaporator-v1-build-to-do.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)

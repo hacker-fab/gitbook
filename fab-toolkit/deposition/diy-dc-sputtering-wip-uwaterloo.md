@@ -1,10 +1,9 @@
 ---
-hidden: true
 cover: ../../.gitbook/assets/IMG_8215 2.jpg
 coverY: -192.20406927023944
 ---
 
-# ⚡ DC Sputtering (WIP) (UWaterloo)
+# ⚡ DIY DC Sputtering (WIP) (UWaterloo)
 
 ## Preface
 
@@ -27,7 +26,9 @@ Although Waterloo's DC sputtering efforts began in 2024, the majority of work be
 **Thin Films:**
 
 * Copper Oxide / Copper&#x20;
-  * Minimum resistance achieved: \~20Ω
+* Aluminum
+  * Resistance of \~100-200 Ω
+  * Sputtered with Argon at a pressure of 200-300 mTorr
 
 ## Design
 
@@ -35,7 +36,7 @@ Although Waterloo's DC sputtering efforts began in 2024, the majority of work be
 
 In choosing a DC power supply, the voltage of the power source must be high enough to provide sufficient force to accelerate electrons until they carry enough kinetic energy to ionize the sputtering gas molecules on collision.
 
-Our initial solution was to re-purpose existing power supplies designed for electrophoresis processes. On paper, these power supplies are capable of delivering the voltage and current required for sputtering, and are ubiquitous on the second-hand market. They are also generally designed with built in ground leakage and arc fault protections, which at first glance appear to be welcome safety features. For these reasons, in order to minimize cost and increase safety for initial testing, an electrophohresis supply was purchased second hand, pictured below. The drawbacks of this type of supply are discussed in the [_Lessons Learned_](dc-sputtering-wip-uwaterloo.md#lessons-learned) section.
+Our initial solution was to re-purpose existing power supplies designed for electrophoresis processes. On paper, these power supplies are capable of delivering the voltage and current required for sputtering, and are ubiquitous on the second-hand market. They are also generally designed with built in ground leakage and arc fault protections, which at first glance appear to be welcome safety features. For these reasons, in order to minimize cost and increase safety for initial testing, an electrophohresis supply was purchased second hand, pictured below. The drawbacks of this type of supply are discussed in the [_Lessons Learned_](diy-dc-sputtering-wip-uwaterloo.md#lessons-learned) section.
 
 <figure><img src="../../.gitbook/assets/image (394).png" alt="" width="347"><figcaption><p>Fischer Biotech FB600 Electrophoresis DC Power Supply</p></figcaption></figure>
 
@@ -89,9 +90,25 @@ The sputtering source achieved stable plasma confinement using an electrophoresi
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-04-15 at 3.09.12 PM.png" alt="" width="356"><figcaption><p>Plasma Confinement</p></figcaption></figure>
 
-Copper was the only metal we sputtered, to varying degrees of success. Many trials exhibited high resistivity, indicating impure films and the presence of copper oxide. The lack of turbopump or Argon mass flow controller on our machine limits our ability to deposit high-quality films.&#x20;
+Many trials exhibited high resistivity, indicating impure films and the presence of copper oxide. The lack of turbopump or Argon mass flow controller on our machine limits our ability to deposit high-quality films.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption><p>Copper / Copper Oxide Sputtered on Glass Slide</p></figcaption></figure>
+
+**May 2026 Update:**
+
+With a slightly revised sputtering source, we were able to sputter a mirror-like aluminum film. However, by bringing operating at the power necessary to sputter the aluminum with this build, the magnets overheated and demagnetized.
+
+{% columns %}
+{% column %}
+<figure><img src="../../.gitbook/assets/IMG_8347.jpg" alt=""><figcaption><p>Revised Sputtering Source</p></figcaption></figure>
+
+
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../.gitbook/assets/IMG_8399.JPG" alt=""><figcaption><p>Aluminum film</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 ## Lessons Learned
 
