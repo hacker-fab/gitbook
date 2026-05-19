@@ -117,7 +117,7 @@ In efforts to expand the capabilities of the existing stepper, there are several
 
 The stepper stage is not entirely a closed-loop system because the proximity sensors can only sense  proximity in one direction, and cannot sent specific feedback on how far the stage has actually moved, and whether the stage has reached its maximum travel limit (on its own). Homing is an essential feature that allows for the GRBL stage firmware to have an approximate sense of absolute coordinates during a single session.&#x20;
 
-More details on Homing can be found in this[ documentation page](lithography-stepper-v2.1.md).
+More details on Homing can be found in this[ documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1.md).
 
 ### Chip Origin
 
@@ -129,7 +129,7 @@ Chip Origin is a feature that is enabled when homing is enabled in the configura
 
 Auto Alignment is a feature enabled when the alignment feature is enabled in the configuration toml file. It will try to detect alignment markers in the current camera view and move the stage to align the chip to those a set of ideal coordinates that represent the target location of those alignment markers before patterning.&#x20;
 
-Currently, this capability is limited due to ongoing work in a newer alignment marker detection model and updated software for the alignment algorithm. Please visit the [Multi-Layer Tiling page](multi-layer-tiling.md) to learn more about the work going into this area.&#x20;
+Currently, this capability is limited due to ongoing work in a newer alignment marker detection model and updated software for the alignment algorithm. Please visit the [Multi-Layer Tiling page](../../fab-toolkit/patterning/multi-layer-tiling.md) to learn more about the work going into this area.&#x20;
 
 ### Capture Image
 
@@ -139,13 +139,13 @@ The snapshot feature allows users to take a snapshot of the camera view, and sav
 
 ### Autofocus
 
-Autofocus is the capability for the stage to move to an optimal z-axis value such that the camera view achieve optimal focus of the chip pattern under any type of light. This feature is also undergoing massive changes due to multi-layer tiling efforts. Please visit this [documentation page](lithography-stepper-v2.1.md) to learn more about the work going into this area.&#x20;
+Autofocus is the capability for the stage to move to an optimal z-axis value such that the camera view achieve optimal focus of the chip pattern under any type of light. This feature is also undergoing massive changes due to multi-layer tiling efforts. Please visit this [documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1.md) to learn more about the work going into this area.&#x20;
 
 <figure><img src="../../.gitbook/assets/Multi-Layer Tiling &#x26; Alignment (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Multi-Layer Tiling
 
-This feature is a huge ongoing project that CMU Hacker Fab's stepper team is working on. Please visit the [Multi-Layer Tiling page](multi-layer-tiling.md) to learn more about the work going into this area. Below, we'll highlight the procedure of steps for each type of layer of patterning.
+This feature is a huge ongoing project that CMU Hacker Fab's stepper team is working on. Please visit the [Multi-Layer Tiling page](../../fab-toolkit/patterning/multi-layer-tiling.md) to learn more about the work going into this area. Below, we'll highlight the procedure of steps for each type of layer of patterning.
 
 #### Single-Layer Tiling
 

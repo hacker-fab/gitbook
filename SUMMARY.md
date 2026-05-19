@@ -34,7 +34,6 @@
     * [NOTICE](fab-toolkit/research-tools/2d-crystal-stacking-robot-wip/notice.md)
     * [LICENSE](fab-toolkit/research-tools/2d-crystal-stacking-robot-wip/license.md)
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
-  * [Stepper User Manual](fab-toolkit/patterning/stepper-user-manual.md)
   * [Lithography Stepper V2.1](fab-toolkit/patterning/lithography-stepper-v2.1.md)
   * [Lithography Stepper V2 Build](fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/patterning/photolithography-stepper-v1.md)
@@ -121,6 +120,7 @@
 ## 🧑‍🍳 Standard Operating Procedures
 
 * [Patterning SOP - Stepper V2](standard-operating-procedures/patterning-sop-stepper-v2/README.md)
+  * [Stepper User Manual](standard-operating-procedures/patterning-sop-stepper-v2/stepper-user-manual.md)
   * [Vacuum Spin Coater SOP](standard-operating-procedures/patterning-sop-stepper-v2/vacuum-spin-coater-sop.md)
   * [Hot Plate SOP](standard-operating-procedures/patterning-sop-stepper-v2/hot-plate-sop.md)
   * [Photoresist Strip SOP](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-strip-sop.md)
