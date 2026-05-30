@@ -111,7 +111,7 @@ Taking pictures after every step is key to ensuring you can put it back together
 
 <figure><img src="../../.gitbook/assets/IMG20250325152348.jpg" alt="" width="375"><figcaption><p>LED current settings in the software</p></figcaption></figure>
 
-2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current to 150mA.
+2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current drive level to 150. Note 150 is NOT the output current, that can be calculated like so: `OutputCurrent = ((DriveLevel + 1)/1024)*((0.15/0.036))`  - [Table 19-91](https://www.ti.com/lit/ug/dlpu110b/dlpu110b.pdf) . (The projector defaults to 1023 ⇒ 4A, which is its maximum output - our UV LEDs are not able to handle that much current, so reducing the current makes sure they don't burn out!)
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
