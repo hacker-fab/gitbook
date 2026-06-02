@@ -70,6 +70,8 @@ Dispose waste in labeled resist-waste container.
 
 ## Procedure
 
+See [https://www.youtube.com/watch?v=g-riji6kyWk](https://www.youtube.com/watch?v=g-riji6kyWk) for video tutorial on Spin Coater usage.
+
 ### Wafer Cleaning
 
 1. Rinse wafer with DI Water.
