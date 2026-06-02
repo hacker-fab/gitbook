@@ -1,3 +1,24 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Spin on Glass Storage and Preparation
 
 <details>
@@ -33,9 +54,7 @@ The SOG from Filmtronics found [here](https://drive.google.com/file/d/1S-XpX1oCZ
 <summary>Inspecting SOG bottle prior to use</summary>
 
 * Ensure the SOG has come to room temperature
-
-- Check the bottle’s date. If the SOG was transferred from the bulk supply more than a week prior, it is likely necessary to prepare a new bottle of SOG
-
+* Check the bottle’s date. If the SOG was transferred from the bulk supply more than a week prior, it is likely necessary to prepare a new bottle of SOG
 *   Regardless of the date on the bottle, open the bottle to check if any crust has formed near the top of the bottle. If there is any visible crust from hardened SOG, it is necessary to prepare a new bottle of SOG
 
     1. The crust formed can get into the liquid SOG applied before spin coating and ruin the SOG coating

@@ -1,5 +1,23 @@
 ---
 description: This SOP is specifically for etching 300nm of polysilicon in the NMOS process
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Plasma Etcher SOP

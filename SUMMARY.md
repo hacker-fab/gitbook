@@ -127,6 +127,7 @@
   * [Patterning SOP- Stepper V2 (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/patterning-sop-stepper-v2-uwaterloo.md)
   * [Photoresist Development SOP (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/photoresist-development-sop-uwaterloo.md)
   * [Spin Coating SOP (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/spin-coating-sop-uwaterloo.md)
+  * [Spin Coating SOP Rev 2 (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/spin-coating-sop-rev-2-uwaterloo.md)
   * [Optical Microscopy SOP (UWaterloo)](standard-operating-procedures/patterning-sop-stepper-v2/optical-microscopy-sop-uwaterloo.md)
 * [Plasma Etcher SOP](standard-operating-procedures/plasma-etcher-sop.md)
 * [Spin on Glass/Diffusant SOP](standard-operating-procedures/spin-on-glass-sop/README.md)
