@@ -192,9 +192,19 @@ These steps are heavily based on the same steps for V2, but slightly modified.
 
 Print all of the parts in the table below. Any PLA is fine. You may need to re-orient them so they print well. The stepper mounts will all need small supports in the motor flange. The X and Y axes need other supports as well.
 
-<table><thead><tr><th width="315">File Name w/ link</th><th width="362">Description</th><th width="224">QTY</th></tr></thead><tbody><tr><td><p><a href="https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/4f403f0e1f7a684bfcd56e85?renderMode=0&#x26;uiState=67a53479587ffd763470073c">Motor and Sensor Mounts</a><br>(Folder "XYZ Platform")<br>"X Motor Mount"<br>"Y Motor Mount"<br>"Z Motor Mount"<br>(Optional, for sensors:)<br>"Y Sensor Mount"<br>"Z Sensor Mount"</p><p><a href="https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/7e61b99aaa271c30cf5b125b">Base V2.1</a></p><p>"Base"</p></td><td>Three parts that connect stepper motors to the micropositioning stage x , y and z axes.</td><td>1</td></tr><tr><td><a href="https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/4f403f0e1f7a684bfcd56e85?renderMode=0&#x26;uiState=67a53479587ffd763470073c">Motor and Sensor Mounts</a><br>(Folder "XYZ Platform")<br>"Fixed Coupler"</td><td>Press fits onto micrometer and uses a grub screw to rigidly attach to motor D-shaft</td><td>2</td></tr><tr><td><a href="https://cad.onshape.com/documents/063eef6ab069a37e76b64c19/w/360bb32d9a47955784cca530/e/4050acd5b58cb3066cb89ced?renderMode=0&#x26;uiState=679ffdb2182b770fef09b329">Z Coupler</a><br>"Z Coupler"</td><td>Press fits onto micrometer and meshes with part press fit onto motor D-shaft</td><td>1</td></tr><tr><td><p><a href="https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/4f403f0e1f7a684bfcd56e85?renderMode=0&#x26;uiState=67a53479587ffd763470073c">Motor and Sensor Mount</a><a href="https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/4f403f0e1f7a684bfcd56e85?renderMode=0&#x26;uiState=67a53479587ffd763470073c">s</a></p><p>"Upright Chip Mount"</p></td><td>Provides a platform for the chip</td><td>1</td></tr></tbody></table>
+All 3D printed parts for the motion stage can be found at the [XYZ Stage Onshape](https://cad.onshape.com/documents/063eef6ab069a37e76b64c19/w/360bb32d9a47955784cca530/e/fcf33b779ad27577b4ad1dc7?renderMode=0\&uiState=6a22427d9b3d595de11bce1b). Note that the Coupler part requires 2, one for the X axis and one for the Y axis.&#x20;
 
-A detailed 3D model of the fully-assembled stage is available in the [CAD](https://cad.onshape.com/documents/0649d732771a63bcb8e6be1d/w/408d85c155072764ebeaefad/e/301b112b8d29652692865df3) under the "XYZ Platform > Fully Assembled" document.
+Parts are colored according to the following:
+
+X AXIS: GREEN\
+Y AXIS: BLUE\
+Z AXIS: ORANGE\
+COUPLERS: DARK GREY\
+TOP/BOTTOM: LIGHT GREY
+
+<figure><img src="../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
+
+Each part can be exported by right clicking it in the Instances list and selecting "export."
 
 The video below describes the necessary components and the assembly process.
 
