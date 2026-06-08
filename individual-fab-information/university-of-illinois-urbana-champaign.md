@@ -1,6 +1,6 @@
 # University of Illinois Urbana-Champaign
 
-**Illinois MicroTech @ UIUC** is a student club aimed at introducing microtechnology and cleanroom fabrication tools to students on campus. We started a **Hacker Fab @ UIUC** project branch to help interested undergrads get a hands-on feel for the field and to grow interested in the tools behind the sensors. Throughout the year, we run industry/research panels, social events, and workshops to grow the community.&#x20;
+**Illinois MicroTech @ UIUC** is a student club aimed at introducing microtechnology and cleanroom fabrication tools to students on campus. We started a **Hacker Fab @ UIUC project branch** to help interested undergrads get a hands-on feel for the field and to grow interested in the tools behind the sensors. Throughout the year, we run industry/research panels, social events, and workshops to grow the community.&#x20;
 
 {% columns %}
 {% column width="50%" %}
@@ -38,7 +38,7 @@
 * Placid Ferreira — Faculty Donor
 * Joe Maduzia — Faculty Sponsor
 
-### **Founding Members of UIUC Branch (est. 2024):**
+### **Founding Members of UIUC Branch (est. 2025):**
 
 * Nathan Bartlett (Founding Donor, Pursuing PhD @ UIUC)
 * Justin Pan (2024-25 President, Pursuing PhD @ CMU)
