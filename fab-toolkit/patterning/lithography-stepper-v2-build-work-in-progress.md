@@ -171,9 +171,19 @@ See [CAD](https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336
 
 5. Make sure this camera tube is 82.3 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 160mm: 160 - 17.5 (c-mount camera) - 22.1 (objective tube) - 38.1 (beamsplitter cube).\
    \
-   &#xNAN;**(NOTE:** The calculation here is done incorrectly, but we have successfully been using it without major issues. The correct back focal length is 150mm, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/))
+   &#xNAN;**(NOTE:** The calculation here is done incorrectly, but we have successfully been using it without major issues. The correct back focal length is 150mm, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/) and the diagram below)
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
+
+{% columns %}
+{% column width="50%" %}
+<figure><img src="../../.gitbook/assets/Optical Length Diagram.png" alt=""><figcaption><p>Optical Path Length Diagram Annotated from CMU's <a href="https://cad.onshape.com/documents/64016e74334e9df7f3829a37/w/da5b11336b83f611c84f6d9f/e/345550da08271685cbf13c97">CAD </a>(Contributed by UIUC)</p></figcaption></figure>
+{% endcolumn %}
+
+{% column width="50%" %}
+<figure><img src="../../.gitbook/assets/Optical Length Calc.png" alt=""><figcaption><p>Objective Tube Calculations for 150mm focal length (useful in case using non-exact parts lengths)</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
