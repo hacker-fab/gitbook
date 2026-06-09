@@ -124,7 +124,7 @@ These steps are heavily based on the steps done for V2, but some have changed.
 ![](<../../.gitbook/assets/image (37) (1).png>)![](<../../.gitbook/assets/image (38) (1).png>)
 
 8. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
-9. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Put the heatsink back as well.
+9. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Reattaching the black piece is recommended as it acts as a spacer between the UV LEDs and the collimating lens; it is easy to damage the LEDs without such a piece in the middle. Put the heatsink back as well.
 
 <figure><img src="../../.gitbook/assets/image (41) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
