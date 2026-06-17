@@ -216,17 +216,27 @@ Build guide
 
 To test the proximity switches, connect them to a 12V supply. The sensor output can be left unconnected. The red LED on the back of the switches should illuminate when the front of the sensor is held within \~4mm of a metal part of the stage, which will also pull the sensor output to ground.
 
-**Note**: the limit switch pin block on the CNC shield has two rows of pins. One of the rows is connected only to ground; do not connect your limit switches to that row.
+**Internals of the proximity switch:**
 
-The sensors should be connected through a pull-up resistor to the Arduino's 5V supply. 12V should be supplied externally.
+The proximity switch internally pulls up the signal line (BK) to 12V; BK is asserted LOW when the switch is active (<4mm).
+
+<figure><img src="../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+
+We use a Zener diode with Zener voltage = 5.1V to clamp the voltage going into the Arduino. A series resistor before the diode is not included since the internal resistance of the proximity switch already limits current.
+
+<figure><img src="../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:$warning;">**It’s very important that you unplug the power before debugging the sensor circuit!**</mark>
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Wiring diagram for the sensors</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/unknown (176).png" alt=""><figcaption><p>Sensor Circuit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (447).png" alt=""><figcaption><p><strong>CNC Shield</strong><br>Connect the ground pins to ground. Supply voltage is 12V. We use the same 12V on the bottom left of the CNC shield.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+
+**Note**: the limit switch pin block on the CNC shield has two rows of pins. One of the rows is connected only to ground (the black row); do not connect your limit switches to that row.
 
 ### Software Setup
 
