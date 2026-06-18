@@ -12,6 +12,8 @@ description: >-
 
 This is a replica of version 4 of this open source project: [https://github.com/0x23/MicroManipulatorStepper](https://github.com/0x23/MicroManipulatorStepper). Almost all resources for assembly can be found here.
 
+**NOTE:** As of June 2026, there is a complete guide for this project available on [StepWiseDocs](https://stepwisedocs.com/docs/projects/open-micro-manipulator-13). We recommend following their guide, but we leave the rest of this page as is in case anyone finds it helpful.
+
 ## BOM
 
 Below is a list of materials used that worked for this particular build. Parts of the table are copied from the original repository.
