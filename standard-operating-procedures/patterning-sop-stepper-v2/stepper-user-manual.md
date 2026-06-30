@@ -117,7 +117,7 @@ In efforts to expand the capabilities of the existing stepper, there are several
 
 The stepper stage is not entirely a closed-loop system because the proximity sensors can only sense  proximity in one direction, and cannot sent specific feedback on how far the stage has actually moved, and whether the stage has reached its maximum travel limit (on its own). Homing is an essential feature that allows for the GRBL stage firmware to have an approximate sense of absolute coordinates during a single session.&#x20;
 
-More details on Homing can be found in this[ documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1.md).
+More details on Homing can be found in this[ documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1+-build.md).
 
 ### Chip Origin
 
@@ -139,7 +139,7 @@ The snapshot feature allows users to take a snapshot of the camera view, and sav
 
 ### Autofocus
 
-Autofocus is the capability for the stage to move to an optimal z-axis value such that the camera view achieve optimal focus of the chip pattern under any type of light. This feature is also undergoing massive changes due to multi-layer tiling efforts. Please visit this [documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1.md) to learn more about the work going into this area.&#x20;
+Autofocus is the capability for the stage to move to an optimal z-axis value such that the camera view achieve optimal focus of the chip pattern under any type of light. This feature is also undergoing massive changes due to multi-layer tiling efforts. Please visit this [documentation page](../../fab-toolkit/patterning/lithography-stepper-v2.1+-build.md) to learn more about the work going into this area.&#x20;
 
 <figure><img src="../../.gitbook/assets/Multi-Layer Tiling &#x26; Alignment (2) (1).png" alt=""><figcaption></figcaption></figure>
 
