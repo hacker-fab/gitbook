@@ -187,7 +187,7 @@ These steps are heavily based on the same steps for V2, but slightly modified.
 <figure><img src="../../.gitbook/assets/20250321_115232.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 11. Mount the main PCB with the power connector facing downward using the 3D printed PCB holder part. Reconnect the ribbon cables and LED power cables.
-12. (Optional) You can 3D print this [PCB holder](https://cad.onshape.com/documents/a9705bf97b42bc9c6a92e208/w/4e2ca3e30047193608e7a9c8/e/e3030417e3a582f729c57309?renderMode=0\&uiState=6a444239ef38c7be8f6f5598) (thanks to Kashvi Verma and Italia Grant from Fall 2025 for this!) to help hold the PCB upright and keep things a bit more organized.
+12. (Optional) You can 3D print this [PCB holder](https://cad.onshape.com/documents/a9705bf97b42bc9c6a92e208/w/4e2ca3e30047193608e7a9c8/e/e3030417e3a582f729c57309?renderMode=0\&uiState=6a444239ef38c7be8f6f5598) (thanks to Kashvi Verma and Italia Grant from Fall 2025 for this!) to help hold the PCB upright and keep things a bit more organized. Also note that in the image below, the optical posts and stage are mounted into a piece of acrylic, which has a 1" grid of .25" holes cut out. This makes it easy to transport the stepper and secure it into an optical table, if available.
 
 <figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
 
