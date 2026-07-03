@@ -37,7 +37,7 @@ Our Goals:
 
 Nanofabrication labs are expensive and inaccessible. Even STEM students at "prestigious institutions" have limited - if any - access to nanofabrication tools. Chips run our world. Everyone deserves access to the tools that make them. To ensure this level of access; cheap, open source, and easily replicable nanofabrication tools are needed. Labs that make and utilize these open source tools need to appear world wide. Hacker Fab is the open source fab project making this happen. As of March 2026, **seven** Hacker Fabs have been established, while others are underway. Multiple critical open source fab tools have been built, documented, and duplicated. Countless devices have been demonstrated with these tools, with documented process development.
 
-Hacker Fab has is made possible by a delocalized community of contributors. Hacker Fab can only grow to its full potential by gaining more contributors. Anyone can contribute, see the next section to learn how.
+Hacker Fab is made possible by a delocalized community of contributors. Hacker Fab can only grow to its full potential by gaining more contributors. Anyone can contribute, see the next section to learn how.
 
 ***
 

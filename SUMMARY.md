@@ -4,7 +4,7 @@
 
 ## 🟡 Guides
 
-* [Contribution Guidlines](guides/required-reading-todo.md)
+* [Contribution Guidelines](guides/required-reading-todo.md)
 * [Build-a-Fab](guides/build-a-fab-to-do.md)
 * [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
 * [Part Sourcing](guides/part-sourcing.md)
