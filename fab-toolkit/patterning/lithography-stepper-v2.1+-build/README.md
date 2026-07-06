@@ -4,7 +4,7 @@ icon: arrow-up-right-dots
 
 # Lithography Stepper V2.1+ Build
 
-Stepper V2.1 is an incremental improvement upon the existing [Stepper V2](lithography-stepper-v2-build-work-in-progress.md) with mechanical improvements. As such, a lot of the content here will be the same as V2! The changes from V2 (and reasoning):
+Stepper V2.1 is an incremental improvement upon the existing [Stepper V2](../lithography-stepper-v2-build-work-in-progress.md) with mechanical improvements. As such, a lot of the content here will be the same as V2! The changes from V2 (and reasoning):
 
 * Rotate the optics so that the objective points downward instead of sideways
   * This allows using the much-improved X and Y axes of the stage, instead of X and Z, which permits higher movement resolution and repeatability
@@ -52,13 +52,13 @@ The assembly instructions is the same except for the addition of an optics adapt
 
 \*For Thorlabs order: upload the file below to [Rapid Order](https://www.thorlabs.com/uploadcart/) to retrieve the cart:
 
-{% file src="../../.gitbook/assets/v2.1-thorlabs.csv" %}
+{% file src="../../../.gitbook/assets/v2.1-thorlabs.csv" %}
 
 ## Design Files
 
 Currently the CAD for Stepper 2.1 is all in FreeCAD, with the files stored in [this repo](https://github.com/hacker-fab/stepper_cad), but will be ported to Onshape soon for consistency.
 
-<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption><p>Stepper V2.1</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (157).png" alt=""><figcaption><p>Stepper V2.1</p></figcaption></figure>
 
 Several parts from Stepper V2's CAD are used on 2.1:
 
@@ -87,54 +87,54 @@ There are several mechanical parts that will need to be fabricated:
 
 ### UV LED PCB Assembly
 
-This step is the same as for V2, see the instructions [here](lithography-stepper-v2-build-work-in-progress.md#solder-the-uv-led-pcb).
+This step is the same as for V2, see the instructions [here](../lithography-stepper-v2-build-work-in-progress.md#solder-the-uv-led-pcb).
 
 ### Projector Modification
 
 These steps are heavily based on the steps done for V2, but some have changed.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption><p>it works!</p></figcaption></figure>
 
 1. Test the projector before we completely take it apart :)
 
-<figure><img src="../../.gitbook/assets/IMG20250325152348.jpg" alt="" width="375"><figcaption><p>LED current settings in the software</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG20250325152348.jpg" alt="" width="375"><figcaption><p>LED current settings in the software</p></figcaption></figure>
 
 2. Plug in the projector over USB and use the [LightCrafter GUI software](https://www.ti.com/tool/download/DLPDLC-GUI) to set the LED current drive level to 150. Note 150 is NOT the output current, that can be calculated like so: `OutputCurrent = ((DriveLevel + 1)/1024)*((0.15/0.036))`  - [Table 19-91](https://www.ti.com/lit/ug/dlpu110b/dlpu110b.pdf) . (The projector defaults to 1023 ⇒ 4A, which is its maximum output - our UV LEDs are not able to handle that much current, so reducing the current makes sure they don't burn out!)
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 3. Unplug all the connectors and remove the top PCB by unscrewing the standoffs.
 
-<figure><img src="../../.gitbook/assets/image (32) (1).png" alt="" width="178"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1).png" alt="" width="178"><figcaption></figcaption></figure>
 
 4. Remove the side PCB.
 
-<figure><img src="../../.gitbook/assets/image (34) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Unscrew and remove the shroud by sliding it away from the rest of the optics.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. _**NEW FOR 2.1:**_ Remove the bolts and standoffs that hold the main projector assembly to the bottom plate. This should free the bottom assembly.
 
-<figure><img src="../../.gitbook/assets/image (35) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 7. Unscrew and remove the heatsink for the front-most LED, which should be the blue one.
 
-![](<../../.gitbook/assets/image (37) (1).png>)![](<../../.gitbook/assets/image (38) (1).png>)
+![](<../../../.gitbook/assets/image (37) (1).png>)![](<../../../.gitbook/assets/image (38) (1).png>)
 
 8. Disconnect the LED PCB from the cable. Heat it slightly on a hot plate or with a hot air gun to soften the adhesive and remove the black plastic housing.
 9. Glue the black plastic piece to the DIY UV LED PCB, connect it to the blue cable, and reattach it to the optics housing. Reattaching the black piece is recommended as it acts as a spacer between the UV LEDs and the collimating lens; it is easy to damage the LEDs without such a piece in the middle. Put the heatsink back as well.
 
-<figure><img src="../../.gitbook/assets/image (41) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 10. Unscrew the projection lens. That one makes things bigger, but we're trying to make things smaller. It's got to go.
 
-<figure><img src="../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 11. Screw on the adapter plate with four countersunk M2 screws.
 
-<figure><img src="../../.gitbook/assets/image (43) (1).png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43) (1).png" alt="" width="355"><figcaption></figcaption></figure>
 
 12. Use four M2.5 screws to screw on the Thorlabs SM1A53 adapter flange
 13. _**NEW FOR 2.1:**_ Do not reassemble the projector case - we will use it as-is.
@@ -143,53 +143,53 @@ These steps are heavily based on the steps done for V2, but some have changed.
 
 These steps are heavily based on the same steps for V2, but slightly modified.
 
-<figure><img src="../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. Start with the beamsplitter cube. Unscrew the set screws, remove the holder, and clip in the beamsplitter. The text ("Thorlabs") should be facing the microscope objective and camera when the holder is reinserted. Keep track of this during assembly and fix it later if necessary.
 
-<figure><img src="../../.gitbook/assets/image (46) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (46) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Assemble the DLP tube. From left to right, the parts in the first picture are 0.3" lens tube (SM1L03), 0.5" lens tube coupler (SM1CPL05), 0.5" adjustable lens tube (SM1V05), and 0.5" lens tube (SM1L05). You may want to remove any internal lens rings. The adjustable lens tube allows axial length adjustment and the coupler allows rotation about the optical axis.
 
-<figure><img src="../../.gitbook/assets/image (48) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (48) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Screw the DLP tube into the beamsplitter cube. The correct orientation is shown above, and the arrow points to the side of the beamsplitter with the text (and optical coating).
 4. Assemble the camera tube, which similarly constructed. The parts are 1" lens tube (SM1L10), 1" lens tube coupler (SM1CPL10), 1" adjustable lens tube (SM1V10), another 1" lens tube (SM1L10), and C-mount SM1 adapter (SM1A9) (last two shown below).
 
-<figure><img src="../../.gitbook/assets/badcalipers.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/badcalipers.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Make sure this camera tube is 86.8 mm long. We calculate this number by subtracting the various component lengths from the standard microscope objective back focal length of 150mm: 150 - 17.5 (c-mount camera) - 7.6 (objective tube) - 38.1 (beamsplitter cube) = 86.8mm\
    \
    &#xNAN;**(NOTE:** Our objective is rated for a 160mm optical tube length, but this is NOT the same as the back focal length, which is 150mm... this is a very confusing specification, see [this page](https://www.edmundoptics.com/knowledge-center/application-notes/microscopy/understanding-microscopes-and-objectives/) for what lengths are what)
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Camera and beamsplitter cube should be parallel.</p></figcaption></figure>
 
 6. Screw on the C-mount SM1 adapter (SM1A9) to the camera and the 1" lens tube. Adjust the lens tube coupler to align the camera with the beamsplitter cube.
 
-<figure><img src="../../.gitbook/assets/badtube.jpg" alt="" width="375"><figcaption><p>(Photo has 1 tube piece that shouldn't be there)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/badtube.jpg" alt="" width="375"><figcaption><p>(Photo has 1 tube piece that shouldn't be there)</p></figcaption></figure>
 
 7. Assemble the objective tube, which consists of a 0.3" lens tube (SM1L03), an SM1 to RMS adapter (SM1A3), and the microscope objective.
 
-<figure><img src="../../.gitbook/assets/IMG20250317192059.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG20250317192059.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 8. Use four #4-32 bolts to mount the beamsplitter cube to the top plate.
 
-<figure><img src="../../.gitbook/assets/IMG20250311191211.jpg" alt="" width="375"><figcaption><p>You should have the optics attached to the top of this by this point</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG20250311191211.jpg" alt="" width="375"><figcaption><p>You should have the optics attached to the top of this by this point</p></figcaption></figure>
 
 9. Mount the top plate to either your optical table (if you have one) or the bottom plate. First, mount the posts to the bottom plate/table using four 1/4-20 bolts (if you're using a bottom plate) or four 1/4-20 grub screws (if you're using the table). Then, mount the top plate on top with four #8-32 bolts.
 
-<figure><img src="../../.gitbook/assets/IMG20250428180057.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IMG20250428180057.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 10. Temporarily loosen the top lens tube coupler in order to screw that tube into the projector, and finally tighten it again with the projector mounted.
 
-<figure><img src="../../.gitbook/assets/20250321_115232.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20250321_115232.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 11. Mount the main PCB with the power connector facing downward using the 3D printed PCB holder part. Reconnect the ribbon cables and LED power cables.
 12. (Optional) You can 3D print this [PCB holder](https://cad.onshape.com/documents/a9705bf97b42bc9c6a92e208/w/4e2ca3e30047193608e7a9c8/e/e3030417e3a582f729c57309?renderMode=0\&uiState=6a444239ef38c7be8f6f5598) (thanks to Kashvi Verma and Italia Grant from Fall 2025 for this!) to help hold the PCB upright and keep things a bit more organized. Also note that in the image below, the optical posts and stage are mounted into a piece of acrylic, which has a 1" grid of .25" holes cut out. This makes it easy to transport the stepper and secure it into an optical table, if available.
 
-<figure><img src="../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
 
 ### Motion Stage Assembly
 
@@ -205,7 +205,7 @@ Z AXIS: ORANGE\
 COUPLERS: DARK GREY\
 TOP/BOTTOM: LIGHT GREY
 
-<figure><img src="../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
 
 Each part can be exported by right clicking it in the Instances list and selecting "export."
 
@@ -223,21 +223,21 @@ To test the proximity switches, connect them to a 12V supply. The sensor output 
 
 The proximity switch internally pulls up the signal line (BK) to 12V; BK is asserted LOW when the switch is active (<4mm).
 
-<figure><img src="../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
 
 We use a Zener diode with Zener voltage = 5.1V to clamp the voltage going into the Arduino. A series resistor before the diode is not included since the internal resistance of the proximity switch already limits current.
 
-<figure><img src="../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:$warning;">**It’s very important that you unplug the power before debugging the sensor circuit!**</mark>
 
-<figure><img src="../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: the limit switch pin block on the CNC shield has two rows of pins. One of the rows is connected only to ground (the black row); do not connect your limit switches to that row.
 
@@ -253,7 +253,7 @@ The video below descries the basic electronics setup and how to install GRBL and
 
 Once the software is set up, the final focus alignment can be done. These steps will align the two focus planes within the stepper (the projector and the camera) to ensure that images that appear in focus on the camera are actually in focus on the surface of the chip. This is done by adjusting the tube length between the projector housing and the beamsplitter cube (the length in the image below) such that both the projected image and the chip's surface are in focus in the camera view.
 
-<figure><img src="../../.gitbook/assets/adjustment (1).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/adjustment (1).jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 1. Load a chip with recognizable features into the stepper (a dirty chip is a good option).
 2. Project a red-focus pattern with recognizable features that can be used to determine projector focus.
@@ -271,27 +271,27 @@ One of the core goals of Stepper V2.1 as compared to Stepper V2 is reduction of 
 2. Using the Basler Pylon Viewer software, collect a 10 second video clip of the surface of the chip. Pylon Viewer gives the video clip as a collection of `.tiff` frame images.\
    Here is an example of a single frame:
 
-<figure><img src="../../.gitbook/assets/preview.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/preview.png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Use ImageMagick to threshold the frames: `magick '*.tiff' -channel G -threshold 75% -separate threshold.png` (this is a bulk operation on all frames).\
    Here is an example of a single frame:
 
-<figure><img src="../../.gitbook/assets/threshold-0.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/threshold-0.png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Using an image editor, find a specific feature on the chip to focus on, and crop all of the frames to it: `magick 'threshold*.png' -crop 300x300+1000+800 crop.png` \
    Here is an example of a single frame, plus a GIF of the frames playing in real time:
 
-<figure><img src="../../.gitbook/assets/crop-0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/crop-0.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/anim.gif" alt=""><figcaption><p>GIF of playing in real time</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/anim.gif" alt=""><figcaption><p>GIF of playing in real time</p></figcaption></figure>
 
 5. Multiply the thresholded frames together to produce a footprint of where the feature moved throughout the duration: `magick 'crop*.png' -compose multiply -layers merge product.png`&#x20;
 
-<figure><img src="../../.gitbook/assets/product.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/product.png" alt=""><figcaption></figcaption></figure>
 
 6. Subtract a frame from the footprint to produce an image that shows how much the feature meandered from its starting point: `magick product.png crop-0.png -compose subtract -composite diff.png`&#x20;
 
-<figure><img src="../../.gitbook/assets/diffsm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/diffsm.png" alt=""><figcaption></figcaption></figure>
 
 In this final image, all of the white pixels are deviations from the starting image. This allows us to count a maximum deviation: in this image (which is from when we were testing the effect of someone resting their hands on the table) there is a maximum 3 pixel deviation.
 
@@ -303,7 +303,7 @@ We also ran another test of "ideal" conditions, in which there was no external v
 
 As of October 2025, the [DLPDLCR471TPEVM projector](https://www.mouser.com/ProductDetail/Texas-Instruments/DLPDLCR471TPEVM?qs=DRkmTr78QAQsT6dpWa8zKg%3D%3D) is out of stock. However, Hunter G., an ECE Ph.D. student at Carnegie Mellon, figured out a way to make another project work. The model he used was the  [DLP4710EVM-LC](https://www.ti.com/tool/DLP4710EVM-LC).
 
-<figure><img src="../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
 Here is how he adapted it to work for the Stepper V2.1 build:
 
@@ -312,13 +312,13 @@ Here is how he adapted it to work for the Stepper V2.1 build:
 Also, the LED PCB wiring is a bit different on this one, though the boards you gave me do actually fit pretty well. I've been using it with the stock blue LEDs because I was having trouble getting it to turn on the UV LEDs. I think the forward voltage might not be high enough on this model or something, but I need to debug that. I was reading that some people had success with the standard blue ones though, so I will give them a try before tearing the projector down again.\
 \
 Here's a photo of my adapter and the [design file](https://drive.google.com/file/d/1x0eyXnsHauO3VgQ_aGPtDOXjgl_YrOAo/view).\
-![](<../../.gitbook/assets/image (350).png>)![](<../../.gitbook/assets/image (351).png>)
+![](<../../../.gitbook/assets/image (350).png>)![](<../../../.gitbook/assets/image (351).png>)
 
 The first photo is the original plastic part that came with the projector. It had a lens tube that stuck out a few inches from the plastic plate that you see. I cut that tube off with a saw and attempted to modify the plastic plate to fit the Thorlabs mount. However, the plastic was too soft to reliably tap threads. So, I measured it with calipers and made the attached DXF file.
 
 I used a water jet to cut out the part, then marked the screw holes through the Thorlabs mount with a punch, drilled them out, and then tapped them. For the holes which connect it to the projector, I just drilled them out and used a M2 bolt + nut to fasten it to the projector. I also had to gouge out some areas on the adapter with a dremel because there are indexing nubs on the metal facet to align the original part with the optical path. I expected there to be some alignment issues but the camera and projector seem to align perfectly with this adapter.
 
-<figure><img src="../../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
 Here's what it looks like assembled on the beamsplitter."
 
@@ -343,7 +343,7 @@ Additionally, one minor tradeoff:
 
 An adaptor plate is required to connect to this projector. It can be 3D printed (recommend 0.12mm setting). The file can be found at this OnShape: [https://cad.onshape.com/documents/7ab8f6e115c70871535a96bd/w/eccf77af3a3bcacf844e8bb4/e/cfb6b4cd12b22dd36105984d?renderMode=0\&uiState=6920f21464436a45cffaf156](https://cad.onshape.com/documents/7ab8f6e115c70871535a96bd/w/eccf77af3a3bcacf844e8bb4/e/cfb6b4cd12b22dd36105984d?renderMode=0\&uiState=6920f21464436a45cffaf156)
 
-<figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
 ## Homing <a href="#docs-internal-guid-f8b79d13-7fff-4e92-aef9-2b8e0a14d318" id="docs-internal-guid-f8b79d13-7fff-4e92-aef9-2b8e0a14d318"></a>
 
@@ -366,7 +366,7 @@ The first thing we did was download a GUI that lets us interface with GRBL direc
 
 This allows us to peek into GRBL configuration and setup resolution, speed, etc. <br>
 
-<figure><img src="../../.gitbook/assets/unknown (13).jpeg" alt=""><figcaption><p>GRBL configurations are seen here (u may need to zoom in)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (13).jpeg" alt=""><figcaption><p>GRBL configurations are seen here (u may need to zoom in)</p></figcaption></figure>
 
 Now that we had the interface setup, the next step was to look into configurations. The first issue we noticed when we enabled homing, was the fact that the GRBL stages per axis were “homing” in the wrong direction: AWAY FROM the sensors instead of TOWARDS the sensors. This is wrong because only by moving towards the sensors, would the red light eventually trigger a ‘limit’ breach to the GRBL runtime (because sensor can only sense from one direction, not both)
 
@@ -378,13 +378,13 @@ Now that we had the interface setup, the next step was to look into configuratio
 
 Configurations will be different depending on how your sensors, motor drivers, and stage controllers are set up. For us, playing around with the homing direction settings ($23), the step direction invert ($3), and the homing switch pull-off distance ($27) helped us configure an optimal way to home our stages.
 
-<figure><img src="../../.gitbook/assets/image (448).png" alt=""><figcaption><p>In our setup, the limit switches trigger when z-stage does down, x-stage moves right, and y-stage moves forward. $23 and $3 are configured based on setting the bits for each axis. Bits “ABC” → A = x-axis, B = y-axis, C = z-axis. Setting a bit means inverting the default direction.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (448).png" alt=""><figcaption><p>In our setup, the limit switches trigger when z-stage does down, x-stage moves right, and y-stage moves forward. $23 and $3 are configured based on setting the bits for each axis. Bits “ABC” → A = x-axis, B = y-axis, C = z-axis. Setting a bit means inverting the default direction.</p></figcaption></figure>
 
 ### Working vs Machine Position
 
 Depending on how your configurations for status report are ($10), GRBL may be sending you machine (MPos) or working (WPos) positions. The MPos is set at home, and will never change throughout the session. On the other hand, WPos can be set many times in a single session. Our stepper code seems to be using WPos, so we’ll be using that as our default.
 
-<figure><img src="../../.gitbook/assets/unknown (14).jpeg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (14).jpeg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### **(Optional) Hard Limits and Soft Limits**
 
@@ -451,13 +451,13 @@ A good range for estimate:
 * Acceleration: x-axis (3-5), y-axis (3-5), z-axis(1) mm/sec2
 * Travel Resolution: 3200 for all axes
 
-<figure><img src="../../.gitbook/assets/unknown (177).png" alt="" width="375"><figcaption><p>Our expected configurations</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (177).png" alt="" width="375"><figcaption><p>Our expected configurations</p></figcaption></figure>
 
 #### Motor Driver Current
 
 We found a website that dug into the [electronics ](https://blog.protoneer.co.nz/arduino-cnc-shield-v3-00-assembly-guide/)assembly of the stage controller and found that tuning the potentiometer of each driver was essential for driving enough current. According to this forum: [here](https://forum.arduino.cc/t/drivers-on-cnc-shield-heating-up-fast/1182255), not providing enough current can make it overheat, and providing too much can also cause issues such as failure to move the stage successfully.
 
-<figure><img src="../../.gitbook/assets/unknown (178).png" alt="" width="364"><figcaption><p>Potentiometer</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (178).png" alt="" width="364"><figcaption><p>Potentiometer</p></figcaption></figure>
 
 Steps: [Vref calculator](https://www.circuitist.com/how-to-set-driver-current-a4988-drv8825-tmc2208-tmc2209/) to figure out what we should set our current limit to be. Or you could tune it. We recommend adjusting it with a screwdriver and making very small rotations, then leaving it as is for a while, checking back to make sure nothing is overheating.&#x20;
 
@@ -467,13 +467,13 @@ We set ours to around 0.9-1.1 V range. You can measure this by using a multimete
 
 {% columns %}
 {% column %}
-![](<../../.gitbook/assets/unknown (179).png>)
+![](<../../../.gitbook/assets/unknown (179).png>)
 
 Out of frame projection
 {% endcolumn %}
 
 {% column %}
-![](<../../.gitbook/assets/unknown (180).png>)
+![](<../../../.gitbook/assets/unknown (180).png>)
 
 Adjusted projection
 {% endcolumn %}
@@ -481,7 +481,7 @@ Adjusted projection
 
 The fix is highlighted below. It’s a simple adjustment that often works. We also found replugging the camera USB connection to work as well.
 
-<figure><img src="../../.gitbook/assets/image (449).png" alt="" width="341"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (449).png" alt="" width="341"><figcaption></figcaption></figure>
 
 ### Fixing Projection Rotation
 
@@ -489,7 +489,7 @@ The fix is highlighted below. It’s a simple adjustment that often works. We al
 
 The projector is easy to rotate. So the only way to prevent it from rotating (which will rotate the projection that we capture in the software GUI frame), is to create a stabilizer that we can tape or drill into the acrylic that mounts the projector (or tape it).
 
-<figure><img src="../../.gitbook/assets/unknown (20).jpeg" alt="" width="375"><figcaption><p>The new stabilizer wraps around the heat sink in the back</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (20).jpeg" alt="" width="375"><figcaption><p>The new stabilizer wraps around the heat sink in the back</p></figcaption></figure>
 
 ## Assessment and Future Work
 
