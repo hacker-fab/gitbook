@@ -284,7 +284,7 @@ The model is likely far off from reality given these parameters so it is mainly 
 
 The 600C finding form the diffusion model seemed too low So, I first employed hot probe testing for 5 min doping at various temps to detect when the surface doping type switches. The hot probe method is a common way to measure whether a semiconductor is n or p type. It relies on a heated and room temp probe connected to voltmeter. The hot probe causes a diffusion current of electrons or holes between probes, and a - or + voltage is measured depending on if the dominant charge carriers are holes or electrons.
 
-<img src="../.gitbook/assets/unknown (205).png" alt="" width="375">
+<figure><img src="../.gitbook/assets/image (469).png" alt="" width="459"><figcaption></figcaption></figure>
 
 Hot probe test setup using a soldering iron and hand held multimeter. In this configuration p type Si reads +V and n type Si reads -V.&#x20;
 
