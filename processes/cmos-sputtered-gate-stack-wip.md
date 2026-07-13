@@ -150,6 +150,180 @@ Built on same chip(s) as FETs
 | Chip 2 "masked doping"                 | 1.78E-3                                | 113.25                        |
 | Chip 2 "masked doping" - 400C annealed | 3.75E-4                                | 92.27                         |
 
+## n well process development
+
+As explained above, the CMOS process requires both a gate oxide deposition process, and the ability to create n type wells within the p type substrate. As seen in the CMOS diagram below, the PMOS transistors sit inside the n wells. This section documents the process development for creating the n type wells for the PMOS transistors on a CMOS chip. Controlling the n well donor concentrations is key for threshold voltage (Vt)  control, and controlling the n well depth is key to ensure the PMOS devices stay isolated from the p type body.
+
+<br>
+
+<img src="../.gitbook/assets/unknown (182).png" alt="" height="297" width="624">
+
+<br>
+
+The NMOS transistors in the previous section were fabricated on Boron doped (p-type) 5-10 ohm-cm resistivity. As per the plot below and [BYU resistivity calculator](https://cleanroom.byu.edu/resistivitycal), 5-10 ohm-cm corresponds to \~2E15  Boron atoms/cm^3 (assuming all B are acting as substitutional atom defects in the Si lattice, interstitial Boron atoms do not behave as nice acceptors)
+
+<br>
+
+<img src="../.gitbook/assets/unknown (183).png" alt="" height="385" width="341">
+
+[Modern Semiconductor Devices for Integrated Circuit](https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/) Figure 2-8
+
+<br>
+
+This Boron concentration in the NMOS channel is much lower than the Phosphorous concentration at the Si surface in the NMOS source/drain regions, which are degenerative doped to high concentrations. Degenerative doping means that the fermi level has shifted into the conduction or valence band (conduction band in the Phosphorus case) such that the Si acts like a metal. This is best observed in the figure below, showing that the fermi level is essentially at the conduction or valence band when donor or acceptor concentrations reach \~1E20 /cm^3
+
+<img src="../.gitbook/assets/unknown (184).png" alt="" height="282" width="501">
+
+[Modern Semiconductor Devices for Integrated Circuit](https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/) Figure 1-12
+
+<br>
+
+In contrast to the source/drain regions, the dopant concentration in the channel needs to be much lower in order to control the FET’s flatband voltage (Vfb) and more importantly the Vt. By using the below equations from [Modern Semiconductor Devices for Integrated Circuits ](https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/)by Chenming Hu, we can plot the expected Vfb and Vt for different Boron concentrations, assuming we have a 20 nm Al2O3 film with dielectric constant of 6 and an Al gate contact (relevant example based on the MOS devices in above sections).
+
+<img src="../.gitbook/assets/unknown (185).png" alt="" height="49" width="624">
+
+[Modern Semiconductor Devices for Integrated Circuit](https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/)
+
+
+
+Assuming no charge in the oxide (no defects or impurities) gate work function is known from the experimental work function of the gate metal (Al in our case, \~4.1 eV). The semiconductor/Si work function is calculated from the Si electron affinity, conduction band energy, and the fermi level. And the fermi level is dependent on dopant type and concentration.<br>
+
+Vt is calculated from the equation below where Vt is dependent on Vfb, dopant type/concentration, and oxide capacitance. The oxide capacitance is determined from our CV testing results showing k=4 at t = 20nm. Na is acceptor concentration, Phi is the bulk potential which is based on Na, Epsilon is Si permittivity, q is elementary charge.
+
+<img src="../.gitbook/assets/unknown (186).png" alt="" height="84" width="624">
+
+[Modern Semiconductor Devices for Integrated Circuit](https://www.chu.berkeley.edu/modern-semiconductor-devices-for-integrated-circuits-chenming-calvin-hu-2010/)<br>
+
+With these equations used in a python script we can plot Vfb and Vt against doping concentration to determine what doping concentration range we would need to achieve in the n well to have functioning PMOS devices. The NMOS case is also plotted to review the choice of 5-10 ohm p type wafers.<br>
+
+{% file src="../.gitbook/assets/Calculating_vfb_and_vt_script.py" %}
+
+<img src="../.gitbook/assets/unknown (187).png" alt="" height="443" width="624">
+
+<img src="../.gitbook/assets/unknown (188).png" alt="" height="388" width="624">
+
+
+
+As seen above, Vt is much more sensitive to dopant concentration than Vfb.
+
+Based on the plots, we see that the Boron concentration 2E15 should give a Vfb of -.826V  and a Vt of -0.117V. A negative prediction for Vt means that 5-10 ohm wafers are probably not the right choice if we want to minimize off current when Vg = 0.&#x20;
+
+<br>
+
+If we make this same plot but assume an n type phosphorus doped channel, we see that careful donor concentration control is required for a reasonable Vt. Donor is specified, since the background Boron counteracts the donor effects of the P, ie Nd = N\_Phosphorous - N\_Boron.
+
+<img src="../.gitbook/assets/unknown (189).png" alt="" height="443" width="624">
+
+<img src="../.gitbook/assets/unknown (190).png" alt="" height="387" width="624">
+
+The key takeaway from this plot is that dopant concentration in the n well must be at least below 10^18 atoms/cm^3 to achieve a Vt low enough for reasonable demonstration of PMOSFETS within a P type substrate. Too high of a P concentration will require Vt’s that may approach the breakdown voltage of the gate or SMU Voltage limit. For this reason, the next natural step in process development is to develop a doping process that is capable of achieving low P concentration in the n-well.
+
+#### So how do we make the n well?
+
+Spin on diffusants from Filmtronics are used for the source/drain doping in the Hacker Fab self aligned NMOS process, and the NMOS/PMOS devices demonstrated above which use the Al2O3-Al gate. The goal of this part of the project is to also use the spin on dopants for creating the n well to keep the required tooling and chemicals as cheap and simple as possible.
+
+
+
+To do this, the common method of predeposition diffusion with a surface dopant source followed by drive-in diffusion in the absence of a dopant source is used, outlined below.
+
+
+
+<table><thead><tr><th width="402.3636474609375">Step</th><th width="135.272705078125">Cross section</th><th width="263.260009765625">Diffusion profile</th></tr></thead><tbody><tr><td><p>Apply spin on dopant</p><p><br></p><p>No new dopants introduced</p></td><td><img src="../.gitbook/assets/unknown (191).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/unknown (192).png" alt="" data-size="original"></td></tr><tr><td><p>“Predeposition diffusion”  </p><p><br></p><p>Use moderate to high  temperatures with a dopant source present at the surface. In this case Filmtronics P504 Phosphorus spin on dopant.</p><p><br></p><p>Ficks laws are solved assuming a semi-infinite body and constant surface source.</p><p><br></p><p><img src="../.gitbook/assets/unknown (193).png" alt="" data-size="original"></p><p><img src="../.gitbook/assets/unknown (194).png" alt="" data-size="original"></p><p>Cs is surface concentration</p><p><br></p><p>Dopant profile follows error function shape.</p></td><td><img src="../.gitbook/assets/unknown (195).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/unknown (196).png" alt="" data-size="original"></td></tr><tr><td>Remove dopant source, deposit SiO2 to prevent excess oxidation in the following step.</td><td><img src="../.gitbook/assets/unknown (197).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/unknown (198).png" alt="" data-size="original"></td></tr><tr><td><p>“Drive in diffusion”</p><p><br></p><p>High temperatures with no dopant source present.</p><p><br></p><p>Ficks laws are solved assuming a semi-infinite body and limited dopant dose near the surface.</p><p><br></p><p><img src="../.gitbook/assets/unknown (199).png" alt="" data-size="original"></p><p><img src="../.gitbook/assets/unknown (200).png" alt="" data-size="original"></p><p>Q is the dopant dose left from the predisposition diffusion. (integrate predep profile)</p><p><br><br></p><p>Dopant profile follows Gaussian shape.</p><p><br></p></td><td><img src="../.gitbook/assets/unknown (201).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/unknown (202).png" alt="" data-size="original"></td></tr></tbody></table>
+
+\
+<br>
+
+Provided is the python script used for modeling this diffusion based on a multistep process, where each step can be defined as having dopant present or not (ie predeposition or drive in).
+
+{% file src="../.gitbook/assets/general_dopant_diffusion_modeler_script.py" %}
+
+The script assumes multiple constants based on Literature for P and B diffusion in Si...
+
+* Surface solubility (input for Cs)
+  * The surface solubility is actually what is supposed to define Cs in the diffusion equations, instead of the actual concentration of the spin on dopant source. Surface solubility of P or B at various temperatures is usually much lower than the actual concentration in a spin on dopant.
+  * “[Spin-on dopant technology for cost-effective source/drain formation in silicon MOSFET](https://www.sciencedirect.com/science/article/pii/S003811012500142X)s” reports a concentration vs depth plot of SOD treated wafers measured via SIMS, indicating the surface solubility of P in Si is about **1e20 /cm^3** between 800-900C, even though the SOD P concentration is \~1e22 /cm^3.&#x20;
+* Activation Energy (Ea) and Diffusivity constant pre-exponential (D0)
+  * Phosphorous in Si.&#x20;
+    * "[On phosphorus diffusion in silicon under oxidizing atmospheres](https://www.sciencedirect.com/science/article/pii/0038110173900567)" Measures D and reports **Ea of 2.5 eV**. Basedon this D0 can be calcuated to be **3.72E-4 cm^2/s**. This is for an atmosphere of N2 w/ 10% O2, which is the closest to air composition that they studied (tube furnace used in Hacker Fab @ CMU is opne air)
+  * Boron in Si
+    * [This textbook](https://www.cityu.edu.hk/phy/appkchu/AP6120/8.PDF) reports D0 = .76 cm^2/s and Ea = 3.46. "[Solid Solubility and Diffusion Coefficients of Boron in Silicon](https://iopscience.iop.org/article/10.1149/1.2412239/pdf)" reports different values which could be substituted instead.
+
+
+
+Below is the script output comparing a 5 min 800C predeposition and a 600C 1 min predisposition profile, both with 1100C 1 hour drive in. The model suggests that 800C for 5 min predep is implanting too much dosage to reach the doping targets, and that 600C for 1 min does achieve the target concentration. However, basic multimeter resistance measurements tests at various diffusion temps showed little to no diffusion occurring below 800C. So, 800C 5 min predeposition was chosen for experimental testing.
+
+<br>
+
+<img src="../.gitbook/assets/unknown (203).png" alt="" height="383" width="624">
+
+<br>
+
+The plot below would correspond to a p type S/D region within the n well. The model predicts that a 1000C 5 min predisposition diffusion of Boron would keep the p type region within the n well. As seen by the junction depth of the p region being well within the n well junction depth.
+
+<img src="../.gitbook/assets/unknown (204).png" alt="" height="383" width="624">
+
+<br>
+
+The model is likely far off from reality given these parameters so it is mainly just a guide to see generally what predep and drive in times/temps would be appropriate to help narrow down the recipe. The general lesson from playing with the modeling script is that the initial dosage of dopant is the most sensitive knob for tuning the surface contraction after drive in, whereas drive in time has diminishing effects. These same takeaways can be inferred just from the equations governing the predep and drive in profiles.
+
+
+
+The 600C finding form the diffusion model seemed too low So, I first employed hot probe testing for 5 min doping at various temps to detect when the surface doping type switches. The hot probe method is a common way to measure whether a semiconductor is n or p type. It relies on a heated and room temp probe connected to voltmeter. The hot probe causes a diffusion current of electrons or holes between probes, and a - or + voltage is measured depending on if the dominant charge carriers are holes or electrons.
+
+<img src="../.gitbook/assets/unknown (205).png" alt="" width="375">
+
+Hot probe test setup using a soldering iron and hand held multimeter. In this configuration p type Si reads +V and n type Si reads -V.&#x20;
+
+<br>
+
+<img src="../.gitbook/assets/unknown (206).png" alt="" height="385" width="624">
+
+Undoped 5-10ohm p type wafer resistance measures \~400 KOhm with handheld multimeter.
+
+The issue with the hot probe test is the sampling depth compared to the junction depth. The heat from the probe incites diffusion deep into the wafer, whereas the doping type may have only been switched in within the first couple of micrometers or less. The resistance drops after just the 800C diffusion, but the hot probe only shows a dopant reversal at 950C diffusion, which indicates that the p type wafer surface may actually have been reversed to n type, but the hot probe test is being dominated by the substrate instead of the surface. The resistance drop at 800C (compared to a p type wafer having undergone no diffusion) is enough to signal that a meaning phosphorous dose has been delivered near the surface of the wafer.
+
+#### Determination of Dopant concentration with CV Measurement
+
+
+
+Without techniques like Secondary Ion Mass Spectrometry, dopant concentration near the surface of the n well can still be measured just through Capacitance-Voltage testing of MOSCaps. This is done by plotting 1/C^2 against voltage, and measuring the slope in depletion mode. The slope is then used to calculate acceptor or donor concentration via the relation below.
+
+<br>
+
+<img src="../.gitbook/assets/unknown (207).png" alt="" height="76" width="162">
+
+[Tektronix CV Applications Guide](https://www.tek.com/en/documents/application-note/c-v-testing-semiconductor-components-and-devices-applications-guide)
+
+
+
+It is important to note, that acceptor/donor concentration is what's calculated, not the actual concentration of Phosphorus or Boron. They can be different, since the P directly counteracts the underlying Boron doping, and if the P does not end up on a substitutional site it may not act as a donor. This may explain some discrepancy between the modeled and experimentally measured values for donor concentration seen below.
+
+
+
+The plot below demonstrates the measurement technique applied to MOSCaps fabricated on the 5-10ohm p type wafers. Both C and 1/C^2 axes are plotted to clarify what region of the CV plot was used for calculating the donor/acceptor concentrations.
+
+{% file src="../.gitbook/assets/doping_profile_form_moscap_cv_data_script.py" %}
+
+<img src="../.gitbook/assets/unknown (208).png" alt="" height="339" width="624">
+
+The plot below shows the doping concentration calculation for n type 1-10 ohm wafer with no diffusion as well as one with 5 min 800C predep + 1100C 1 hour drive in (on n type wafer). The choice of testing the diffusion conditions on an n type wafers was purposeful. If p type wafers were used, the n well would also create a conjunction in series with the MOSCap which can distort the CV measurement, so n type wafers were used as the starting substrate.
+
+<img src="../.gitbook/assets/unknown (209).png" alt="" height="339" width="624">
+
+
+
+| Sample                                                           | Expected concentration (N)                                                     | Measured concentration (N) from MOSCap CV |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------- |
+| p type 5-10 ohm wafer                                            | 2e15 /cm^3 based on [BYU calculator](https://cleanroom.byu.edu/resistivitycal) | 1.71e15 /cm^3 (acceptors)                 |
+| n type 1-10 ohm wafer                                            | 1e15 /cm^3 based on [BYU calculator](https://cleanroom.byu.edu/resistivitycal) | 1.08e15 /cm^3 (donors)                    |
+| 800C 5min predep + 1100C 1hr drive in (on n type 1-10 ohm wafer) | 9.5e17/cm^3 based on diffusion model above                                     | 2.05e16 /cm^3 (donors)                    |
+
+
+
+The measurement shows that the 800c 5 min predep with 1100C 1hr drive in yields 2.05e16 /cm^3 donor concentration, which should yield a Vt of \~1.2V based on the Vt vs N calculations.
+
+<br>
+
 ## Appendix
 
 #### 9:9, 3hr, Standard RCA Clean
