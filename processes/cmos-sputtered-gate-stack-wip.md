@@ -1,6 +1,6 @@
 # 💻 CMOS - sputtered gate stack (WIP)
 
-#### Overview
+## Overview
 
 This is in support of the development of a CMOS process that uses a Si-Al2O3-Al gate stack. The NMOS process originally developed with Hacker Fab tooling relies on procuring wafers that already have a Si-SiO2-PolySi prefabricated gate. This prevents the expansion of the NMOS process into a CMOS process. For a CMOS process, it is necessary for the gate stack to be fabricated in house with Hacker Fab tooling. Sputtering of the gate stack from just an Al target is pursued as a potential option to mitigate the risks associated with gate oxide contamination. For context, growing a SiO2 gate oxide has been considered, but abandoned due to a few challenges. The main being contamination control of the gate oxide in an open air tube furnace, contamination that can be introduced between oxide growth and metal deposition for the gate, and the added complexity of dopant pile up + depletion (discussed in the Oxidation Effects Section of "Microchip Fabrication: A Practical Guide to Semiconductor Processing by Peter Van Zant"). Overall this intended process simplifies the tooling required to tape out devices (cuts out evaporator and plasma etcher). Sputtering allows for a low contamination oxide to be deposited, which is immediately covered with a metal gate contact without the chip ever exiting the clean vacuum environment of the sputtering chamber. The choice of Al2O3 as the oxide and Al as the metal is motivated by simplified process flow it allows, and relatively inexpensive target material (Al2O3 is sputtered reactively form an Al target, then Al is sputtered immediately after from the same target, avoiding the need for a 2 target system or a target swapping). Al2O3 has favorable dielectric constant and band alignment, but there are risks related to charge traps forming at the Si-Al2O3 interface. Attempts are made to tune the process to mitigate this interface effect.
 
@@ -18,9 +18,7 @@ The sputtered film characterization that precedes this work is linked below.
 [film-characterization.md](../fab-toolkit/deposition/diy-rf-sputtering-chamber/film-characterization.md)
 {% endcontent-ref %}
 
-#### MOSCap Capacitance and Conductance Profiling
-
-**MOSCap Capacitance and Conductance Profiling**
+## MOSCap Capacitance and Conductance Profiling
 
 <figure><img src="../.gitbook/assets/image (3) (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -48,11 +46,11 @@ Summary/Comparison
 | HF-Last RCA clean                 | 20                   | 6.6          | 3.2                        | -1.05                  | -1.85                  | 0.80                 | 6.7                | 3.4                              | -0.95                        | -1.70                        | 0.75                       | 7.5E-05                   | 8.3E-05                   | 289.87                                |
 | HF-Last RCA clean, 450C O2 anneal | 20                   | 4.7          | 2.8                        | -4.35                  | -4.70                  | 0.35                 | 5.3                | 3.1                              | -4.15                        | -4.45                        | 0.30                       | 8.1E-05                   | 9.0E-05                   | 910.06                                |
 
-#### MOSCap Leakage Current
+## MOSCap Leakage Current
 
 <figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
-#### MOSFETs and TLM Test Structures
+## MOSFETs and TLM Test Structures
 
 <figure><img src="../.gitbook/assets/image (387).png" alt="" width="549"><figcaption></figcaption></figure>
 
