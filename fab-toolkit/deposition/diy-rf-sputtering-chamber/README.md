@@ -50,7 +50,7 @@ cons
 * 100 watts 14 MHz RF power with >90% impedance matching ✅
 * Stable plasma down to 5 millitorr Ar ✅ (3 millitorr lowest achieved)
 * .5 - 8" adjustable throw distance ✅
-* \>10nm/minute deposition rate for Al at 4" throw distance ❌ (experiencing \~2.5 nm/min at 100 watts 3" throw)
+* \>10nm/minute deposition rate for Al at 3" throw distance ❌ (experiencing \~2.5 nm/min at 100 watts 3" throw)
 * Balanced magnetron magnetic field ❓
 * <1 sccm O2 flow accuracy ✅
 * <1 sccm Ar flow accuracy ✅
@@ -62,9 +62,9 @@ cons
 
 #### Thin films
 
-* Al2O3 measured dielectric constant >6 ❓
-* Al2O3 surface roughness <5nm ❓
-* Al resistivity of <3E-6 ohm-cm ❓
+* Al2O3 measured dielectric constant >6 ✅
+* Al2O3 surface roughness <5nm ✅
+* Al resistivity of <4E-6 ohm-cm ✅
 
 
 
