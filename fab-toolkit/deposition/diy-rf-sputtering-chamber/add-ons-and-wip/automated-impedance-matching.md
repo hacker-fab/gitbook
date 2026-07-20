@@ -1,5 +1,7 @@
 ---
-description: Miguel Salvacion and William Gao, Carnegie Mellon University
+description: >-
+  Miguel Salvacion and William Gao (Spring 2026), Aiden Magee (Fall 2025),
+  Carnegie Mellon University
 icon: gauge-low
 layout:
   width: default
@@ -16,6 +18,8 @@ layout:
   metadata:
     visible: true
   tags:
+    visible: true
+  actions:
     visible: true
 ---
 
