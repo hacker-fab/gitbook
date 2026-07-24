@@ -219,6 +219,7 @@
 * [Case Western Reserve University](individual-fab-information/case-western-reserve-university.md)
 * [University of British Columbia](individual-fab-information/university-of-british-columbia.md)
 * [University of Illinois Urbana-Champaign](individual-fab-information/university-of-illinois-urbana-champaign.md)
+* [Georgia Institute of Technology](individual-fab-information/georgia-institute-of-technology.md)
 
 ## Archive
 
