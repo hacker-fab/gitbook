@@ -27,6 +27,8 @@ coverY: 266.6676916987451
 
 ## Preface
 
+Questions - Jay Kunselman
+
 At the CMU Hacker Fab, we started building an RF sputtering Chamber in the Fall 2024. The build were finalized Spring of 2025.
 
 The sputtering project was originally initiated to support the development of a reliable DIY CMOS process. For context, the NMOS process as of F24 relies on buying p-type wafers which already have a clean gate oxide grown on the substrate, and a polysilicon gate contact deposited on top, providing a fab quality gate stack which is further processed into NMOS integrated circuits (ICs). For CMOS ICs, n-type wells are needed within the p-type substrate, and these wells cannot be doped while the gate oxide and polysilicon gate contact are present on the wafer/substrate surface. Thus, to create a CMOS process, the n-wells would have to be doped **before** depositing a gate oxide and gate contact. Therefore, the fab needs to be capable of depositing a high quality gate oxide and gate contact, instead of buying wafers with the gate stack already present. The gate oxide and its interfaces are the most sensitive parts of a transistor, as they are sensitive to small amounts of contamination, and small concentrations of thin film and interfacial defects. For example, to grow a high quality gate oxide of SiO2 requires a remarkably pure environment since ionic contamination at those temperature is extremely mobile, and can ruin the gate oxide.
