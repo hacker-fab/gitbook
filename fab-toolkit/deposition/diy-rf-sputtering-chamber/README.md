@@ -1,7 +1,7 @@
 ---
 description: >-
-  This sputtering system was designed, built, proven, and documentedand by
-  students at CMU Hacker Fab. It is the first sputtering system built within the
+  This sputtering system was designed, built, proven, and documented by students
+  at the CMU Hacker Fab. It is the first sputtering system built within the
   Hacker Fab network.
 cover: ../../../.gitbook/assets/IMG_7049.jpg
 coverY: 266.6676916987451
