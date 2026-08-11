@@ -1,10 +1,16 @@
 # Carnegie Mellon University
 
-The [Hacker Fab @ CMU](https://hackerfab.ece.cmu.edu/) operates as an integrated course + lab. The course covers nanofabrication and device fundamentals. Students spend the majority of their time working on a project that adds a new tool/process to the fab or improves an exisiting one. Additionally, students participate in labs where they use the DIY tools to fab and characterize devices.
+The [Hacker Fab @ CMU](https://hackerfab.ece.cmu.edu/) is the birthplace of the Hacker Fab initiative, and operates as an integrated course + lab. The course covers nanofabrication and device fundamentals. Students spend the majority of their time working on a project that adds a new tool/process to the fab or improves an existing one. Additionally, students participate in labs where they use the DIY tools to fab and characterize devices.
 
 Contact(s):
 
-* Jay Kunselman
+* Joel Gonzalez (bgonzale@andrew.cmu.edu)
+* Icey Chen (yanbing@andrew.cmu.edu)
+* Jay Kunselman (jskunsel@andrew.cmu.edu)
+* Kent Wirant (jwirant@andrew.cmu.edu)
+* Rahim Malik (rahimm@andrew.cmu.edu)
+
+
 
 Tooling in use:
 
@@ -20,7 +26,7 @@ Tooling in use:
 
 Verified device capabilites:
 
-* NMOS, 5um gate length (based on P type wafers with SiO2 and PolySi prefabed by waferPro)
+* NMOS, 5um gate length (based on P type wafers with SiO2 and PolySi pre-fabbed by WaferPro)
 * MOSCaps
 * Resistors
 * Diodes
@@ -33,7 +39,6 @@ Tooling in progress:
 
 * ALD
 * 2D crystal stacking robot
-* STM
 * Automated Sputtering
 * Automated Litho Stepper
 * EDA tools
@@ -42,7 +47,7 @@ Tooling in progress:
 
 Device capabilities in progress:
 
-* CMOS (with in house sputtered gate stack)
+* PMOS, CMOS (with in-house sputtered gate stack)
 
 
 
