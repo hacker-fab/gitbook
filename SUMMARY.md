@@ -33,7 +33,7 @@
       * [Mounts](fab-toolkit/research-tools/2d-crystal-stacking-robot-wip/frame/mounts.md)
     * [NOTICE](fab-toolkit/research-tools/2d-crystal-stacking-robot-wip/notice.md)
     * [LICENSE](fab-toolkit/research-tools/2d-crystal-stacking-robot-wip/license.md)
-  * [Stepped Nanopositioner (WIP)](fab-toolkit/research-tools/stepped-nanopositioner-wip.md)
+  * [Stepping Nanopositioner (WIP)](fab-toolkit/research-tools/stepping-nanopositioner-wip.md)
 * [🎥 Patterning](fab-toolkit/patterning/README.md)
   * [Lithography Stepper V2.1+ Build](fab-toolkit/patterning/lithography-stepper-v2.1+-build/README.md)
     * [Stepper V2.1 Waterloo Build (draft)](fab-toolkit/patterning/lithography-stepper-v2.1+-build/stepper-v2.1-waterloo-build-draft.md)

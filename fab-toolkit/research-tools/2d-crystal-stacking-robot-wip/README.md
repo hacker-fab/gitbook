@@ -87,7 +87,7 @@ The carousel is a subsystem of the project that enable the system to store chips
 #### Nanopositioner
 
 {% hint style="info" %}
-Assembly and testing instructions for the Nanopositioner is [here](../stepped-nanopositioner-wip.md)
+Assembly and testing instructions for the Nanopositioner is [here](../stepping-nanopositioner-wip.md)
 
 The current 2D stacking robot is designed for version V3 of the Open Micro-manipulator, which is still compatible with all the custom designed add-ons from the Nanopositioning team
 {% endhint %}
