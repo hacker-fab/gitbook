@@ -20,7 +20,7 @@ Add **3 M3 heat set inserts** to the slide mount with the flat face of the slide
 
 ### Assembling the Nanopositioner Mount
 
-The nanopositioner mount replaces the blocks that the steppers mount to in the original V3 Open Micro-manipulator with the [nanopositioner modifications](../../../../working-docs/nanopositioner-wip/).
+The nanopositioner mount replaces the blocks that the steppers mount to in the original V3 Open Micro-manipulator with the [nanopositioner modifications](../../../../working-docs/piezoelectric-nanopositioner-wip/).
 
 The Nanopositioner Mount can be printed with standard settings (15-25% infill) in PLA.
 

@@ -58,7 +58,7 @@ After which, you should see something that looks like:
 8. Once normalized, we can now save this spectral plot in file (save it in the .sgd format, so that you can re-open it in spectrogryph later)&#x20;
 
 \
-&#xNAN;_**Determining Thickness of SoG**_
+_**Determining Thickness of SoG**_
 
 9. Create another New Acquisition View
 10. Drag the [Calibration graphs file](https://drive.google.com/file/d/1EVPOQWZP0WPVBpyYRbd6CC1ia3PgCf_a/view) (should end with .sgd) into the New Acquisition View
