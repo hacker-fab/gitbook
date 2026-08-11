@@ -6,9 +6,9 @@ Contact(s):
 
 * Joel Gonzalez (bgonzale@andrew.cmu.edu)
 * Icey Chen (yanbing@andrew.cmu.edu)
+* Rahim Malik (rahimm@andrew.cmu.edu)
 * Jay Kunselman (jskunsel@andrew.cmu.edu)
 * Kent Wirant (jwirant@andrew.cmu.edu)
-* Rahim Malik (rahimm@andrew.cmu.edu)
 
 
 
@@ -20,11 +20,11 @@ Tooling in use:
 * DIY Spin coater
 * 2 fume hoods (lab infrastructure)
 * Purchased Plasma Etcher
-* Purchased Tube furnace
+* Purchased Tube Furnace
 
 
 
-Verified device capabilites:
+Verified device capabilities:
 
 * NMOS, 5um gate length (based on P type wafers with SiO2 and PolySi pre-fabbed by WaferPro)
 * MOSCaps
