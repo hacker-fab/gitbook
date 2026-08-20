@@ -83,23 +83,23 @@ The per-resistor table shows that resistance increases mainly with longer effect
 
 #### Step 11: Resistor Body Pattern
 
-![](<../../.gitbook/assets/unknown (2).png>)![](<../../.gitbook/assets/unknown (1) (2).png>)
+![](<../../.gitbook/assets/unknown (2) (2).png>)![](<../../.gitbook/assets/unknown (1) (2) (1).png>)
 
 #### Step 24: Resistor Contacts Pattern
 
-![](<../../.gitbook/assets/unknown (2) (2).png>)<img src="../../.gitbook/assets/unknown (3).png" alt="" data-size="original">
+![](<../../.gitbook/assets/unknown (2) (2) (1).png>)<img src="../../.gitbook/assets/unknown (3) (2).png" alt="" data-size="original">
 
 #### Step 31: Probing Contacts Pattern
 
-![](<../../.gitbook/assets/unknown (4).png>)![](<../../.gitbook/assets/unknown (5).png>)
+![](<../../.gitbook/assets/unknown (4) (2).png>)![](<../../.gitbook/assets/unknown (5) (2).png>)
 
 ### Appendix
 
 5 Min Dopant Diffusion, Length modulation w/ width = 82 µm
 
-![](<../../.gitbook/assets/unknown (6).png>)![](<../../.gitbook/assets/unknown (7).png>)
+![](<../../.gitbook/assets/unknown (6) (2).png>)![](<../../.gitbook/assets/unknown (7) (2).png>)
 
-![](<../../.gitbook/assets/unknown (8).png>)![](<../../.gitbook/assets/unknown (9).png>)
+![](<../../.gitbook/assets/unknown (8) (2).png>)![](<../../.gitbook/assets/unknown (9) (2).png>)
 
 {% file src="../../.gitbook/assets/LICENSE.md" %}
 

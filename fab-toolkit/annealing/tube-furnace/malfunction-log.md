@@ -8,9 +8,9 @@
 
 <br>
 
-| Thermocouple side                                | Entry Side                                       |
-| ------------------------------------------------ | ------------------------------------------------ |
-| ![](<../../../.gitbook/assets/unknown (13).png>) | ![](<../../../.gitbook/assets/unknown (14).png>) |
+| Thermocouple side                                    | Entry Side                                           |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+| ![](<../../../.gitbook/assets/unknown (13) (1).png>) | ![](<../../../.gitbook/assets/unknown (14) (1).png>) |
 
 <br>
 
@@ -18,9 +18,9 @@ Furnace 6 ceramic wires fried, first attempt, ran for 20+ minutes
 
 <br>
 
-| Thermocouple side                                | Entry Side                                       |
-| ------------------------------------------------ | ------------------------------------------------ |
-| ![](<../../../.gitbook/assets/unknown (15).png>) | ![](<../../../.gitbook/assets/unknown (16).png>) |
+| Thermocouple side                                    | Entry Side                                           |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+| ![](<../../../.gitbook/assets/unknown (15) (1).png>) | ![](<../../../.gitbook/assets/unknown (16) (1).png>) |
 
 <br>
 
@@ -40,8 +40,8 @@ Ceramic beads seem a little burnt but otherwise intact, Furnace 5 and 6 each had
 
 To combat this, next tube was made with as few kinks in wiring as possible, and the kanthal wire is used as the connector to the motor control as opposed to ceramic coated copper
 
-| ![](<../../../.gitbook/assets/unknown (17).png>) | ![](<../../../.gitbook/assets/unknown (18).png>) |
-| ------------------------------------------------ | ------------------------------------------------ |
+| ![](<../../../.gitbook/assets/unknown (17) (1).png>) | ![](<../../../.gitbook/assets/unknown (18) (1).png>) |
+| ---------------------------------------------------- | ---------------------------------------------------- |
 
 <br>
 
