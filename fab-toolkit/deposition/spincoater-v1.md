@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Spincoater v1
+# 💿 Spincoater v1
 
 This spincoater was designed by Rahim Malik and Jay Kunselman at the CMU Hacker Fab. It features a Maasi spincoater-inspired enclosure, with custom, hand-wired hardware and software. A second-generation version of this spincoater is in development by Rahim Malik.
 
