@@ -52,6 +52,7 @@
     * [Base Principles](fab-toolkit/patterning/blu-ray-lithography/base-principles.md)
   * [Multi-Layer Tiling](fab-toolkit/patterning/multi-layer-tiling.md)
 * [🧱 Deposition](fab-toolkit/deposition/README.md)
+  * [Spincoater v1](fab-toolkit/deposition/spincoater-v1.md)
   * [Spin Coater V2 Build (work in progress)](fab-toolkit/deposition/spin-coater-v2-build-work-in-progress.md)
   * [💿 Spin Coater V1 Build (to do)](fab-toolkit/deposition/spin-coater-v1-build-to-do.md)
   * [Electroless Nickel Plating](fab-toolkit/deposition/electroless-nickel-plating.md)

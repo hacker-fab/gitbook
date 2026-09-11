@@ -82,7 +82,7 @@ In order to calculate the gradient and match the impedance of the sputtering cha
 
 A COTS Surecom SW-112 VSWR meter was reverse-engineered to measure VSWR. The important component in analog VSWR meters is the toroidal sensing line, which, after rectifying diodes and filtering, produces forward and reverse power lines. In the SW-112, the lines had a range of 0-10 V at 100 watts.<br>
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Buffering and Digitization**
 
