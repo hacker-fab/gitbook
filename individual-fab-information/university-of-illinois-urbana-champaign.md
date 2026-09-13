@@ -43,7 +43,7 @@
 * Nathan Bartlett (Founding Donor, Pursuing PhD @ UIUC)
 * Justin Pan (2024-25 President, Pursuing PhD @ CMU)
 * Andrew He (2024-25 Technical Director, Pursuing MS @ UCLA)
-* Meghan Blomberg (2025-26 President)
+* Meghan Blomberg (2025-26 President, Engineer @ Space Tango)
 * Adelyn Smith (Current President)
 * Patrick Kolcan (Current Project Management Lead)
 * Mudit Mehta (Current Technical Lead)
