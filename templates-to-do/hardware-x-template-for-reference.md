@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Hardware X Template (for reference)
 
 

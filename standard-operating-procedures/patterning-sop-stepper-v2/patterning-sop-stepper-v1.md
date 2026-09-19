@@ -17,13 +17,15 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Patterning SOP - Stepper V1
 
 
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>Generic Patterning Sequence</p></figcaption></figure>
 
 ## Parameters
 
@@ -83,7 +85,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 
 
-<figure><img src="../.gitbook/assets/spin_bake.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/spin_bake.png" alt=""><figcaption></figcaption></figure>
 
 4. If previous steps required cleaning with solvents, pre-bake the wafer to dehydrate the surface.
 5. If patterning on silicon, spin coat 1 drop of HMDS. Otherwise skip to 7.&#x20;
@@ -129,18 +131,18 @@ See the appendix for useful resources about spin coating, our resist, and develo
 3. Press \[show red focus]&#x20;
 4. Find your chip by moving it with tweezers, then rotate it so the pattern is the right way up.
 
-<figure><img src="../.gitbook/assets/redfocus.png" alt=""><figcaption><p>Example of focused view with red illuminuation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/redfocus.png" alt=""><figcaption><p>Example of focused view with red illuminuation</p></figcaption></figure>
 
 16. Use the stage to rough focus and align. Use the arrow keys with the OpenFlexure control screen to move the stage. Use pg up/ pg down to move in Z. The plus sign grid pattern is useful for accurate focus.
 17. Press \[clear] to project a black screen.
 18. Move the Z stage by 1800 steps in +Z. This will switch from focusing in red to approximately focusing in UV.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="143"><figcaption><p>AmScope exposure and gain panel</p></figcaption></figure>
 
 19. Turn the exposure time to 200-300ms and the gain all the way up on AmScope.
 20. &#x20;Use an opaque, flat object to block the light coming out of the objective while you remove the red filter and insert the UV filter.
 
-<figure><img src="../.gitbook/assets/UVfocus.png" alt="" width="373"><figcaption><p>UV focus marks.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/UVfocus.png" alt="" width="373"><figcaption><p>UV focus marks.</p></figcaption></figure>
 
 21. Press \[show UV focus] to show UV focusing pattern. Use the Z axis to focus. Try to do this as quickly as possible to avoid unnecessary exposure. Press \[clear] at any point to hide the focusing image.
 22. &#x20;Set the desired patterning time (in milliseconds)
@@ -149,7 +151,7 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 ## Develop
 
-<figure><img src="../.gitbook/assets/developer_dish (1).png" alt="" width="375"><figcaption><p>Developer (Deionized water to AZ-400K 3:1) and DI water rinse.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/developer_dish (1).png" alt="" width="375"><figcaption><p>Developer (Deionized water to AZ-400K 3:1) and DI water rinse.</p></figcaption></figure>
 
 1. Refresh the developer if it has been out for more than 6 hours. Otherwise skip to step 3.
    1. Pour the used developer into the bottle labeled "developer waste"
@@ -178,9 +180,9 @@ See the appendix for useful resources about spin coating, our resist, and develo
 
 Right side: thicker lines and blurry edges. Left side: thin lines and sharp edges.
 
-<figure><img src="../.gitbook/assets/inspect1 (2).png" alt=""><figcaption><p>Inspection image showing blurring effect from defocused stepper</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inspect1 (2).png" alt=""><figcaption><p>Inspection image showing blurring effect from defocused stepper</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/inspect2 (1).png" alt=""><figcaption><p>Insprction image showing incsufficient develop or exposure</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inspect2 (1).png" alt=""><figcaption><p>Insprction image showing incsufficient develop or exposure</p></figcaption></figure>
 
 ## Safety
 

@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # 🎥 Patterning
@@ -62,7 +64,7 @@ describe out standardized test: darkfield/brightfield, developed with AZ400K for
 
 **Method of Verification**:&#x20;
 
-**Possible Variation**: Error during development (see [Patterning SOP](../../archive/patterning-sop-stepper-v1.md))
+**Possible Variation**: Error during development (see [Patterning SOP](../../standard-operating-procedures/patterning-sop-stepper-v2/patterning-sop-stepper-v1.md))
 
 **References**: _pics/videos_
 
@@ -104,7 +106,7 @@ how much time to do one exposure, how much of that is active work vs. waiting ar
 
 **Method of Verification**:&#x20;
 
-**Possible Variation**: Error during development (see [Patterning SOP](../../archive/patterning-sop-stepper-v1.md))
+**Possible Variation**: Error during development (see [Patterning SOP](../../standard-operating-procedures/patterning-sop-stepper-v2/patterning-sop-stepper-v1.md))
 
 **References**: _pics/videos_
 

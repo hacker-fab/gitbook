@@ -16,8 +16,8 @@ This is in support of the development of a CMOS process that uses a Si-Al2O3-Al 
 
 The sputtered film characterization that precedes this work is linked below.
 
-{% content-ref url="../fab-toolkit/deposition/diy-rf-sputtering-chamber/film-characterization.md" %}
-[film-characterization.md](../fab-toolkit/deposition/diy-rf-sputtering-chamber/film-characterization.md)
+{% content-ref url="../fab-toolkit/deposition/diy-rf-sputtering-chamber-cmu/film-characterization.md" %}
+[film-characterization.md](../fab-toolkit/deposition/diy-rf-sputtering-chamber-cmu/film-characterization.md)
 {% endcontent-ref %}
 
 ## MOSCap Capacitance and Conductance Profiling
