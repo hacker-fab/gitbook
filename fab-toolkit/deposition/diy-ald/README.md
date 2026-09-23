@@ -7,24 +7,25 @@ description: HackerFab DIY Low-Cost Atomic Layer Deposition (ALD) Tool
 **Important links:**
 
 * [GitHub Repository](https://github.com/hacker-fab/ald)
+* [Standard Operating Procedure](https://docs.hackerfab.org/home/standard-operating-procedures/ald-sop)
 * [Bill of Materials](https://docs.google.com/spreadsheets/d/197pMBbWlABzj44jjp_owc5-I_hZhAVBunhPJlZiwtF0/edit?gid=0#gid=0)
-* Standard Operating Procedure
+* Build Guide (coming by end of 2026)
 
 ## Preface
 
-These pages will present the current proposed machine design plan and the work completed to date for our vertically aligned, cold-walled reaction chamber ALD machine for the Hacker Fab at CMU. The Fall 2024 semester's efforts at CMU are described [here](fall-2024-cmu-update.md) and the Spring/Summer 2025 efforts are described [here](spring-2025-cmu-update.md). Please note that there were significant changes to the design of the chamber, precursor storage, and control systems from the Fall 2024 semester to Spring 2025; those aiming to replicate these efforts are recommended to review the Spring 2025 design changes. Once this project is complete by the end of Summer 2025, this page will be updated so as to present a finalized guide for the machine design and build.
+These pages will present the current proposed machine design plan and the work completed to date for our vertically-aligned, cold-walled reaction chamber ALD machine for the Hacker Fab at CMU.
+
+You may read the status updates from the 2025-26 academic year, along with the Summer 2025 + Spring 2025 + Fall 2024 updates, by navigating to the appropriate subpages in the sidebar. Please note that there were significant changes to the design of the chamber, precursor storage, and control systems from the 2024-25 to 2025-26 academic years; those aiming to replicate these efforts are recommended to read the most recent updates to better understand the current state of the system.
+
+What follows is an overview of our ALD system including a literature review and miscellaneous background research. Once the tool is fully online and operational by the end of 2026, we intend to publish a formal build guide to GitBook.
 
 ## Introduction
 
-We are building a low cost Atomic Layer Deposition machine for the Hacker Fab to achieve improved gate dielectrics, which will help us achieve our goal of a 10 micron CMOS process as well as improve our capability in performing thin-film research. Our design work on it will be all open source, and we hope other labs can use our work to make their own ALDs at a fraction of the cost of commercial alternatives. We are building our ALD to fit 4" wafers so that it can be brought into the nanofab, which will  help us lower the barrier to entry for researching thin film deposition and new materials. Although 4" is much larger than anything we are currently using in the Hacker Fab at CMU, this larger size will make it useful to a larger audience.&#x20;
+We are building a low cost Atomic Layer Deposition machine for the Hacker Fab to achieve improved gate dielectrics, which will help us achieve our goal of a CMOS process as well as improve our capability in performing thin-film research. Our design work on it will be open-source, and we hope other labs can use our work to make their own ALDs at a fraction of the cost of commercial alternatives. We are building our ALD to fit 4" wafers so that it can be brought into the nanofab, which will help us lower the barrier to entry for researching thin film deposition and new materials. Although 4" is much larger than anything we are currently using in the Hacker Fab at CMU, this larger size will make it useful to a larger audience.&#x20;
 
-Our work thus far has been focused on machine design, largely drawing from two papers on “DIY” ALD machines: [“Design Of Atomic Layer Deposition Reactors For The Deposition Of Nanoparticle Embedded Thin Films](https://scholarly.cmich.edu/?a=d\&d=CMUGR2011-79.1.53\&e=-------en-10--1--txt-txIN%7CtxAU%7CtxTI--------)” by Michael Lubitz, and “[Homebuilt Reactor Design and Atomic Layer Deposition of Metal Oxide Thin Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)” by Pamburayi Mpofu. Each of these papers describes their machine design followed by some process development where they describe the settings (ie. temperatures and precursors deposition times) used in their initial depositions.
+Our work thus far has been focused on machine design, largely drawing from two papers on “DIY” ALD machines: [“Design Of Atomic Layer Deposition Reactors For The Deposition Of Nanoparticle Embedded Thin Films](https://scholarly.cmich.edu/?a=d\&d=CMUGR2011-79.1.53\&e=-------en-10--1--txt-txIN%7CtxAU%7CtxTI--------)” by Michael Lubitz, and “[Homebuilt Reactor Design and Atomic Layer Deposition of Metal Oxide Thin Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)” by Pamburayi Mpofu. Each of these papers describes their machine design followed by some process development where they describe the settings (i.e. temperatures and precursors deposition times) used in their initial depositions.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGEA2ge76Ug5VYrrEUXQVPkmGxAkSsFNQRsP_ExbUplk3XmULc1PfGS7NXwYY04U56aEVdUGoV-Zj3FgiVi8JXVb9aOxFnSuCSNAWuBtcAAQdtQXW8V9VN45B9TP-sMSlerOVevQ?key=QQPBc4Ozd0oiz1Y6TLHcAr9d" alt=""><figcaption><p><em>A schematic of a general system overview of the ALD machine’s subsystems and components.</em></p></figcaption></figure>
-
-## Bill of Materials
-
-A complete list of parts and components used in making the DIY ALD system can be found [here](https://docs.google.com/spreadsheets/d/197pMBbWlABzj44jjp_owc5-I_hZhAVBunhPJlZiwtF0/edit?usp=sharing).
 
 ## Precursor Selection
 
@@ -39,11 +40,11 @@ The precursors for the metals were chosen based on their feasibility to react wi
 | In2O3 | 60oC                | 0.625s     | 0.75s                  | 100 mTorr        | 10s        |
 | SnO2  | 60oC                | 2s         | 1s                     | 100 mTorr        | 30s        |
 
-For the first attempts at deposition however, the research group at CMU will attempt to deposition Al2O3, as this process is well-documented in the CMU Nanofab. Then, the group will attempt to deposit more complex oxides such as ITO.
+For the first attempts at deposition however, the research group at CMU will attempt to deposition Hafnium Oxide (HfO2), as this process is well-documented in the CMU Nanofab. Then, the group will attempt to deposit more complex oxides such as ITO.
 
 ### **Safety Considerations**
 
-Most precursors and specifically metal organic precursors used for CVD and ALD processes tend to be pyrophoric (i.e. thermally unstable and spontaneously ignite on exposure to air) thus necessitating safety measures.&#x20;
+Most precursors and specifically metal organic precursors used for CVD and ALD processes tend to be pyrophoric (i.e. thermally unstable and spontaneously ignite on exposure to air)m thus necessitating safety measures.&#x20;
 
 #### **Material Considerations**
 
