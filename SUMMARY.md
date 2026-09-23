@@ -2,14 +2,14 @@
 
 * [Hacker Fab Documentation](README.md)
 
-## 🟡 Guides
+## Guides
 
 * [Contribution Guidelines](guides/required-reading-todo.md)
 * [Build-a-Fab](guides/build-a-fab-to-do.md)
 * [Filling in the Gaps - Background Resources](guides/filling-in-the-gaps-background-resources.md)
 * [Part Sourcing](guides/part-sourcing.md)
 
-## 📜 Processes
+## Processes
 
 * [✨ Self Aligned NMOS](nmos-capabilities/current-fab-capabilities/README.md)
   * [March 2026 Update](nmos-capabilities/current-fab-capabilities/march-2026-update/README.md)
@@ -121,7 +121,7 @@
   * [Steps and Processes](fab-toolkit/database-build/steps-and-processes.md)
 * [Cleaving Jig](fab-toolkit/cleaving-jig.md)
 
-## 🧑‍🍳 Standard Operating Procedures
+## Standard Operating Procedures
 
 * [Patterning SOP - Stepper V2](standard-operating-procedures/patterning-sop-stepper-v2/README.md)
   * [Stepper User Manual](standard-operating-procedures/patterning-sop-stepper-v2/stepper-user-manual.md)
@@ -154,7 +154,7 @@
 * [BOE chemical waste disposal SOP (UWaterloo)](standard-operating-procedures/boe-chemical-waste-disposal-sop-uwaterloo.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
 
-## 🟢 WORKING DOCS
+## WORKING DOCS
 
 * [Tip Etcher - WIP](working-docs/tip-etcher-wip.md)
 * [Piezoelectric Nanopositioner - WIP](working-docs/piezoelectric-nanopositioner-wip/README.md)
@@ -164,56 +164,48 @@
 * [CMOS Doping Process Development](working-docs/cmos-doping-process-development.md)
 * [Sputtering Gate Oxides + Metal Gate Contacts](working-docs/sputtering-gate-oxides-+-metal-gate-contacts.md)
 * [NAND + Inverter Characterization](working-docs/nand-+-inverter-characterization.md)
-* [CMU Updates](working-docs/cmu-updates/README.md)
-  * [Example Student](working-docs/cmu-updates/example-student.md)
-  * [Gina Seo](working-docs/cmu-updates/gina-seo.md)
-  * [Jessica Wen](working-docs/cmu-updates/jessica-wen.md)
-  * [Yang Bai](working-docs/cmu-updates/yang-bai.md)
-  * [Alex Echols](working-docs/cmu-updates/alex-echols.md)
-  * [Gongwei Wang](working-docs/cmu-updates/gongwei-wang.md)
-  * [Ying Meng](working-docs/cmu-updates/ying-meng.md)
-  * [Shagun Maheshwari](working-docs/cmu-updates/shagun-maheshwari.md)
-  * [Yuichi Hirose](working-docs/cmu-updates/yuichi-hirose.md)
-  * [Eric Dubberstein](working-docs/cmu-updates/eric-dubberstein.md)
-  * [Michael Juan](working-docs/cmu-updates/michael-juan.md)
-  * [Justin Wang](working-docs/cmu-updates/justin-wang.md)
-  * [Katie Eisenman](working-docs/cmu-updates/katie-eisenman.md)
-  * [Marta Freitas](working-docs/cmu-updates/marta-freitas.md)
-  * [Matthew Choi's Updates](working-docs/cmu-updates/matthew-chois-updates/README.md)
-    * [Week 2 Updates](working-docs/cmu-updates/matthew-chois-updates/week-2-updates.md)
-    * [Week 3 Updates](working-docs/cmu-updates/matthew-chois-updates/week-3-updates.md)
-    * [Week 4 Updates](working-docs/cmu-updates/matthew-chois-updates/week-4-updates.md)
-    * [Week 5 Update](working-docs/cmu-updates/matthew-chois-updates/week-5-update.md)
-    * [Week 6 Update](working-docs/cmu-updates/matthew-chois-updates/week-6-update.md)
-    * [Week 7 Update](working-docs/cmu-updates/matthew-chois-updates/week-7-update.md)
-    * [Week 8 Update](working-docs/cmu-updates/matthew-chois-updates/week-8-update.md)
-    * [Week 9 Update](working-docs/cmu-updates/matthew-chois-updates/week-9-update.md)
-    * [Week 11 Update](working-docs/cmu-updates/matthew-chois-updates/week-11-update.md)
-    * [Week 12 Update](working-docs/cmu-updates/matthew-chois-updates/week-12-update.md)
-    * [Week 13 Update](working-docs/cmu-updates/matthew-chois-updates/week-13-update.md)
-  * [Sandra You](working-docs/cmu-updates/sandra-you.md)
-  * [Felicia Liu](working-docs/cmu-updates/felicia-liu.md)
-  * [Melinda Chen](working-docs/cmu-updates/melinda-chen.md)
-  * [Shayaan Gandhi](working-docs/cmu-updates/shayaan-gandhi.md)
-  * [Sky Bailey](working-docs/cmu-updates/sky-bailey.md)
-  * [Haewon Uhm](working-docs/cmu-updates/haewon-uhm.md)
-  * [James Lin](working-docs/cmu-updates/james-lin.md)
-  * [Ayan Ghosh](working-docs/cmu-updates/ayan-ghosh.md)
-  * [Advaith Menon](working-docs/cmu-updates/advaith-menon.md)
-  * [Adwoa Asare](working-docs/cmu-updates/adwoa-asare.md)
-  * [Qirui (Ridge) Da Updates - Database](working-docs/cmu-updates/qirui-ridge-da-updates-database.md)
-
-## 🔲 Templates (to do)
-
-* [Build Manual Template](templates-to-do/build-manual-template.md)
-* [Bought Equipment Template](templates-to-do/bought-equipment-template.md)
-* [Standard Operating Procedure Template](templates-to-do/standard-operating-procedure-template.md)
-* [BOM Template](templates-to-do/bom-template.md)
-* [Hardware X Template (for reference)](templates-to-do/hardware-x-template-for-reference.md)
 
 ## Individual Fab Information
 
-* [Carnegie Mellon University](individual-fab-information/carnegie-mellon-university.md)
+* [Carnegie Mellon University](individual-fab-information/carnegie-mellon-university/README.md)
+  * [CMU Updates](individual-fab-information/carnegie-mellon-university/cmu-updates/README.md)
+    * [Example Student](individual-fab-information/carnegie-mellon-university/cmu-updates/example-student.md)
+    * [Gina Seo](individual-fab-information/carnegie-mellon-university/cmu-updates/gina-seo.md)
+    * [Jessica Wen](individual-fab-information/carnegie-mellon-university/cmu-updates/jessica-wen.md)
+    * [Yang Bai](individual-fab-information/carnegie-mellon-university/cmu-updates/yang-bai.md)
+    * [Alex Echols](individual-fab-information/carnegie-mellon-university/cmu-updates/alex-echols.md)
+    * [Gongwei Wang](individual-fab-information/carnegie-mellon-university/cmu-updates/gongwei-wang.md)
+    * [Ying Meng](individual-fab-information/carnegie-mellon-university/cmu-updates/ying-meng.md)
+    * [Shagun Maheshwari](individual-fab-information/carnegie-mellon-university/cmu-updates/shagun-maheshwari.md)
+    * [Yuichi Hirose](individual-fab-information/carnegie-mellon-university/cmu-updates/yuichi-hirose.md)
+    * [Eric Dubberstein](individual-fab-information/carnegie-mellon-university/cmu-updates/eric-dubberstein.md)
+    * [Michael Juan](individual-fab-information/carnegie-mellon-university/cmu-updates/michael-juan.md)
+    * [Justin Wang](individual-fab-information/carnegie-mellon-university/cmu-updates/justin-wang.md)
+    * [Katie Eisenman](individual-fab-information/carnegie-mellon-university/cmu-updates/katie-eisenman.md)
+    * [Marta Freitas](individual-fab-information/carnegie-mellon-university/cmu-updates/marta-freitas.md)
+    * [Matthew Choi's Updates](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/README.md)
+      * [Week 2 Updates](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-2-updates.md)
+      * [Week 3 Updates](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-3-updates.md)
+      * [Week 4 Updates](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-4-updates.md)
+      * [Week 5 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-5-update.md)
+      * [Week 6 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-6-update.md)
+      * [Week 7 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-7-update.md)
+      * [Week 8 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-8-update.md)
+      * [Week 9 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-9-update.md)
+      * [Week 11 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-11-update.md)
+      * [Week 12 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-12-update.md)
+      * [Week 13 Update](individual-fab-information/carnegie-mellon-university/cmu-updates/matthew-chois-updates/week-13-update.md)
+    * [Sandra You](individual-fab-information/carnegie-mellon-university/cmu-updates/sandra-you.md)
+    * [Felicia Liu](individual-fab-information/carnegie-mellon-university/cmu-updates/felicia-liu.md)
+    * [Melinda Chen](individual-fab-information/carnegie-mellon-university/cmu-updates/melinda-chen.md)
+    * [Shayaan Gandhi](individual-fab-information/carnegie-mellon-university/cmu-updates/shayaan-gandhi.md)
+    * [Sky Bailey](individual-fab-information/carnegie-mellon-university/cmu-updates/sky-bailey.md)
+    * [Haewon Uhm](individual-fab-information/carnegie-mellon-university/cmu-updates/haewon-uhm.md)
+    * [James Lin](individual-fab-information/carnegie-mellon-university/cmu-updates/james-lin.md)
+    * [Ayan Ghosh](individual-fab-information/carnegie-mellon-university/cmu-updates/ayan-ghosh.md)
+    * [Advaith Menon](individual-fab-information/carnegie-mellon-university/cmu-updates/advaith-menon.md)
+    * [Adwoa Asare](individual-fab-information/carnegie-mellon-university/cmu-updates/adwoa-asare.md)
+    * [Qirui (Ridge) Da Updates - Database](individual-fab-information/carnegie-mellon-university/cmu-updates/qirui-ridge-da-updates-database.md)
 * [University of Waterloo](individual-fab-information/university-of-waterloo.md)
 * [Ohio State University](individual-fab-information/ohio-state-university.md)
 * [University of California: Irvine](individual-fab-information/university-of-california-irvine.md)
@@ -223,6 +215,14 @@
 * [University of British Columbia](individual-fab-information/university-of-british-columbia.md)
 * [University of Illinois Urbana-Champaign](individual-fab-information/university-of-illinois-urbana-champaign.md)
 * [Georgia Institute of Technology](individual-fab-information/georgia-institute-of-technology.md)
+
+## Templates (to do)
+
+* [Build Manual Template](templates-to-do/build-manual-template.md)
+* [Bought Equipment Template](templates-to-do/bought-equipment-template.md)
+* [Standard Operating Procedure Template](templates-to-do/standard-operating-procedure-template.md)
+* [BOM Template](templates-to-do/bom-template.md)
+* [Hardware X Template (for reference)](templates-to-do/hardware-x-template-for-reference.md)
 
 ## Archive
 

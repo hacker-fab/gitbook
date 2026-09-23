@@ -3,7 +3,6 @@ description: >-
   Guide to using the RF sputtering chamber. This is not a concise guide. You
   should understand the sputtering machine's design, function, and operating
   procedure well before interacting with it.
-icon: bolt-lightning
 ---
 
 # Sputtering SOP

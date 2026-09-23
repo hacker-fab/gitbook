@@ -4,7 +4,11 @@ description: HackerFab DIY Low-Cost Atomic Layer Deposition (ALD) Tool
 
 # ⚛️DIY Atomic Layer Deposition
 
-{% @github-files/github-code-block url="https://github.com/hacker-fab/ald" %}
+**Important links:**
+
+* [GitHub Repository](https://github.com/hacker-fab/ald)
+* [Bill of Materials](https://docs.google.com/spreadsheets/d/197pMBbWlABzj44jjp_owc5-I_hZhAVBunhPJlZiwtF0/edit?gid=0#gid=0)
+* Standard Operating Procedure
 
 ## Preface
 
