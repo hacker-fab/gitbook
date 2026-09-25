@@ -14,7 +14,10 @@ coverY: 0
 ### Procedure
 
 * Put on nitrile gloves to prevent contaminating the chamber.
-* If the Pfeiffer turbo pump is on, power it off by pressing the button pictured below.
+* If the Pfeiffer turbo pump is on, power it off by pressing the rightmost button beneath the green LED:
+
+<figure><img src="../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+
 * Use the arrows to scroll to parameter 309, which show pump speed.
 * Wait until the pump speed is at 0Hz.
 * Slowly vent the chamber by unscrewing the vent screw located on the turbo pump.
@@ -34,15 +37,16 @@ coverY: 0
 *   Tightly wrap aluminum wire near the center the W coil, you only really need an inch of wire. Due to the alloying between Al and W, the filament becomes more brittle after each evaporation, so be careful not to break it. If you do break it, use a new filament. You may have to use clippers to shorten the ends of the new filament to get it to fit right. &#x20;
 
     <figure><img src="../.gitbook/assets/IMG_7534.jpg" alt="" width="375"><figcaption></figcaption></figure>
-* Place the tungsten filament back and screw it in. Make sure it is straight. ![](../.gitbook/assets/IMG_7535.jpg)
-* Place \~ 1 inch of polyimide tape on the substrate holder shown below, then peel off the clear layer on top of the tape. Since aluminum often covers the square box, when you put the tape on, aluminum might stick to it and flake off. Just continue attempting to apply tape until it stick without flaking off.
-  * Must be polyimide/Kapton tape, otherwise it will outgas under vacuum.
+* Place the tungsten filament back and screw it in. Make sure it is straight. <img src="../.gitbook/assets/IMG_7535.jpg" alt="" data-size="line">
+* Place \~ 1 inch of polyimide tape on the substrate holder shown below, then peel off the clear layer on top of the tape. Since aluminum covers the entire interior of the chamber, when you put the tape on, aluminum might stick to it and flake off. Just continue attempting to apply tape until it stick without flaking off. Note that it must be polyimide/Kapton tape, otherwise it will outgas under vacuum.
 
 <figure><img src="../.gitbook/assets/IMG_7541.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/IMG_7542.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/IMG_7547.jpg" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (474).png" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/IMG_7548.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -81,3 +85,4 @@ coverY: 0
 
 * If current is not flowing when you press output on the power supply, then the electrodes are probably not connected through the filament. Check this by disconnecting the power lines from the back of the power supply, then use a multimeter on each electrode to see if it is an open circuit. If so, then a connection to the filament is not on.
 * No deposition: check that nothing is shorted, preventing full current flow through the filament.
+* Kapton tape not sticking - make sure to peel off any aluminum deposited onto the chamber wall so you can properly adhere the tape.
