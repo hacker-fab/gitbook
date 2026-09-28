@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Patterning SOP - Stepper V2
@@ -25,7 +27,7 @@ layout:
 
 ## Parameters
 
-<table><thead><tr><th width="262"></th><th width="116"></th><th width="213"></th><th></th></tr></thead><tbody><tr><td>HMDS Prebake Temperature</td><td>100°C</td><td>Resist Bake Temperature</td><td>100°C</td></tr><tr><td>HMDS Prebake Time</td><td>60s</td><td>Resist Bake Time</td><td>90s</td></tr><tr><td>HMDS Amount (Drops)</td><td>2</td><td>Exposure Pattern</td><td>link</td></tr><tr><td>HMDS Spin Speed</td><td>4000 rpm</td><td>Exposure Source</td><td>Stepper V2</td></tr><tr><td>HMDS Spin Time</td><td>20s</td><td>Exposure Time</td><td>8s</td></tr><tr><td>HMDS Bake Temperature</td><td>100°C</td><td>Exposure Dose</td><td></td></tr><tr><td>HMDS Bake Time</td><td>20s</td><td>Developer Type</td><td>AZ-400K</td></tr><tr><td>Resist Amount</td><td>2 drops</td><td>Develop Time</td><td>60s</td></tr><tr><td>Resist Spin Speed</td><td>4000 rpm</td><td>Developer Temperature</td><td>20°C</td></tr><tr><td>Resist Spin Time</td><td>30s</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="262"></th><th width="116"></th><th width="213"></th><th></th></tr></thead><tbody><tr><td>HMDS Prebake Temperature</td><td>100°C</td><td>Resist Bake Temperature</td><td>100°C</td></tr><tr><td>HMDS Prebake Time</td><td>60s</td><td>Resist Bake Time</td><td>90s</td></tr><tr><td>HMDS Amount (Drops)</td><td>2</td><td>Exposure Pattern</td><td>link</td></tr><tr><td>HMDS Spin Speed</td><td>4000 rpm</td><td>Exposure Source</td><td>Stepper V2</td></tr><tr><td>HMDS Spin Time</td><td>20s</td><td>Exposure Time</td><td>5s</td></tr><tr><td>HMDS Bake Temperature</td><td>100°C</td><td>Exposure Dose</td><td></td></tr><tr><td>HMDS Bake Time</td><td>20s</td><td>Developer Type</td><td>AZ-400K</td></tr><tr><td>Resist Amount</td><td>2 drops</td><td>Develop Time</td><td>60s</td></tr><tr><td>Resist Spin Speed</td><td>4000 rpm</td><td>Developer Temperature</td><td>20°C</td></tr><tr><td>Resist Spin Time</td><td>30s</td><td></td><td></td></tr></tbody></table>
 
 #### For More Detailed Process Parameters:
 
@@ -194,7 +196,7 @@ If you're doing this for the first time, it is recommended to read through the f
 
 <figure><img src="https://lh7-us.googleusercontent.com/axqPAnMxblPoWkChIuMie1_65E2vSqVRui4cz2N4oRSEIumZYhsVbAAb38c31E9rbLjrQ6miwgK5j8Dt--wry_KKysiIiK_0FhufkMqOvetXa1FrfFro0BzfPHbIRcoGSJuMWV7tX--tPwc-h8oI2HE" alt="" width="188"><figcaption><p>Agitate the developer</p></figcaption></figure>
 
-5. Agitate the chip in the developer solution with quick, small circular motions. Watch [this video](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) for proper technique.
+5. **Agitate the chip in the developer solution with quick, small circular motions. Watch** [**this video**](https://drive.google.com/file/d/1C2APhZpUS7O2a-3hzmjMloyEuc7RCg1Z/view?usp=sharing) **for proper technique. This is crucial to getting a good pattern!**
 6. 5 seconds before the end of the timer, pick up the chip and prepare to drop it into the water. The chip should **hit the water exactly at 0 seconds**. Rinse well for 10 seconds.
    1. Note that development time includes all the time that developer is touching the chip, not just during agitation
 7. Dry off the chip with compressed air.
