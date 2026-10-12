@@ -119,6 +119,10 @@ Here is a youtube tutorial that can help for that step:&#x20;
 
 {% embed url="https://www.youtube.com/watch?v=NSqPHQ1zQco" %}
 
+Alternatively, you may find these a [solder seal wire kit](https://www.amazon.com/dp/B08F46WKCZ) to be useful here:
+
+<figure><img src="../../../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+
 2. Do the equivalent thing for the linear actuator motor but just connecting the motor with the male to male wires.
 
 <figure><img src="../../../../.gitbook/assets/IMG_0149.png" alt="" width="375"><figcaption></figcaption></figure>
