@@ -14,14 +14,14 @@ The **DC bias** changes the electrical state of the device. Depending on the str
 \
 The small **AC signal** is used to measure the capacitance at that bias point. The AC voltage is usually kept small so that we measure the device around its current operating point without significantly changing its state.
 
-<figure><img src="../../../.gitbook/assets/CVmeasurement.png" alt="" width="563"><figcaption><p><strong>Basic C-V measurement principle.</strong> A DC bias sets the operating point of the DUT. A small AC signal is then applied, and the resulting voltage and current are used to determine its capactiance.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/CVmeasurement.png" alt="" width="563"><figcaption><p><strong>Basic C-V measurement principle.</strong> A DC bias sets the operating point of the DUT. A small AC signal is then applied, and the resulting voltage and current are used to determine its capactiance.</p></figcaption></figure>
 
 \
 The instrument doesn't measure capacitance directly. It measures the AC voltage across the device and the resulting AC current, including the phase relationship between them. From these measurements, it determines the impedance of the DUT and calculates its capacitance
 
 The DC bias is then swept across a range of voltages. At each bias point, the measurement is repeated. The result is a **C-V curve**, showing capacitance as a function of bias voltage.
 
-<figure><img src="../../../.gitbook/assets/CV graph.png" alt="" width="563"><figcaption><p><strong>Example C-V characteristics of a MOS capacitor.</strong> As the bias voltage changes, the device moves  through accumulation, depletion, and inversion. The measured capacitance in inversion depends on the measurement frequency. </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/CV graph.png" alt="" width="563"><figcaption><p><strong>Example C-V characteristics of a MOS capacitor.</strong> As the bias voltage changes, the device moves  through accumulation, depletion, and inversion. The measured capacitance in inversion depends on the measurement frequency. </p></figcaption></figure>
 
 The shape of a C-V curve depends on the device being measured and its physical properties. For a MOS capacitor, different regions of the curve correspond to different charge distributions in the semiconductor.
 
