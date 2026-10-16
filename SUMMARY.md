@@ -89,21 +89,15 @@
   * [KLayout Mask Generation SOP](standard-operating-procedures/klayout-mask-generation-sop.md)
   * [MagicVLSI DRC and LVS - WIP](fab-toolkit/electronic-design-automation/magicvlsi-drc-and-lvs-wip.md)
   * [KLayout NMOS Array Generation](fab-toolkit/electronic-design-automation/klayout-nmos-array-generation.md)
-* [🔍 Metrology / Characterization](fab-toolkit/metrology-characterization/README.md)
-  * [Electrical Characterization](fab-toolkit/metrology-characterization/electrical-characterization/README.md)
-    * [C-V Characterization](fab-toolkit/metrology-characterization/electrical-characterization/c-v-characterization/README.md)
-      * [MOS C-V Characterization](fab-toolkit/metrology-characterization/electrical-characterization/c-v-characterization/mos-c-v-characterization.md)
-    * [I-V Characterization](fab-toolkit/metrology-characterization/electrical-characterization/i-v-characterization.md)
-  * [Probe Station](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/probe-station.md)
-  * [Semiconductor Parameter Analyzer](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/README.md)
-    * [SMU - Analog Discovery](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md)
-    * [SMU - Keithley 4200SCS](fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-keithley-4200scs.md)
-  * [CV Measurements](fab-toolkit/metrology-characterization/cv-measurements.md)
-  * [CV Measurement Setup (UWaterloo)](fab-toolkit/metrology-characterization/cv-measurement-setup-uwaterloo.md)
-  * [Spectrometer](fab-toolkit/metrology-characterization/spectrometer.md)
-  * [Profilometer](fab-toolkit/metrology-characterization/profilometer.md)
-  * [IC Packaging](fab-toolkit/metrology-characterization/ic-packaging.md)
-  * [Scanning Tunneling Microscope](fab-toolkit/metrology-characterization/scanning-tunneling-microscope.md)
+* [⚡ Probe Station](fab-toolkit/probe-station.md)
+* [📦 IC Packaging](fab-toolkit/ic-packaging.md)
+* [📈 SMU](fab-toolkit/smu/README.md)
+  * [SMU - Analog Discovery](fab-toolkit/smu/smu-analog-discoveries.md)
+  * [SMU - Keithley 4200SCS](fab-toolkit/smu/smu-keithley-4200scs.md)
+* [Semiconductor Parameter Analyzer](fab-toolkit/semiconductor-parameter-analyzer.md)
+* [Spectrometer](fab-toolkit/spectrometer/README.md)
+  * [Profilometer](fab-toolkit/spectrometer/profilometer.md)
+* [Cleaving Jig](fab-toolkit/cleaving-jig.md)
 * [⚗️ Chemicals / Materials](fab-toolkit/chemicals-materials/README.md)
   * [Photoresists](fab-toolkit/chemicals-materials/photoresists.md)
   * [Dielectrics](fab-toolkit/chemicals-materials/dialectrics/README.md)
@@ -123,7 +117,13 @@
 * [📚 Database](fab-toolkit/database-build/README.md)
   * [Machine Integration](fab-toolkit/database-build/machine-integration.md)
   * [Steps and Processes](fab-toolkit/database-build/steps-and-processes.md)
-* [Cleaving Jig](fab-toolkit/cleaving-jig.md)
+
+## 🔍 Metrology & Characterization
+
+* [Electrical Characterization](metrology-and-characterization/electrical-characterization/README.md)
+  * [C-V Characterization](metrology-and-characterization/electrical-characterization/c-v-characterization/README.md)
+    * [MOS C-V Characterization](metrology-and-characterization/electrical-characterization/c-v-characterization/mos-c-v-characterization.md)
+  * [I-V Characterization](metrology-and-characterization/electrical-characterization/i-v-characterization.md)
 
 ## Standard Operating Procedures
 
@@ -154,6 +154,9 @@
 * [Wafer Cleaving SOP](standard-operating-procedures/wafer-cleaving-sop.md)
 * [Dry Oxide Growth SOP](standard-operating-procedures/dry-oxide-growth-sop.md)
 * [Profilometer SOP](standard-operating-procedures/profilometer-sop.md)
+* [C-V Measurement SOP](standard-operating-procedures/c-v-measurement-sop/README.md)
+  * [CMU](standard-operating-procedures/c-v-measurement-sop/cv-measurements.md)
+  * [UWaterloo](standard-operating-procedures/c-v-measurement-sop/uwaterloo.md)
 * [MTI Evaporator SOP (No longer in use)](standard-operating-procedures/evaporator-sop.md)
 * [BOE chemical waste disposal SOP (UWaterloo)](standard-operating-procedures/boe-chemical-waste-disposal-sop-uwaterloo.md)
 * [Database SOP](standard-operating-procedures/database-sop.md)
@@ -232,5 +235,6 @@
 
 ***
 
+* [Scanning Tunneling Microscope](scanning-tunneling-microscope.md)
 * [ChemicalWasteDisposalforBOESOP](chemicalwastedisposalforboesop.md)
 * [OpticalMicroscopySOP](opticalmicroscopysop.md)

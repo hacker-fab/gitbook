@@ -18,6 +18,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Hacker Fab Documentation
@@ -85,7 +87,7 @@ For the most up-to-date status on everything, join the [**Discord**](https://dis
 
 ### verification / metrology tools.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Probe Station V1</td><td><a href="/broken/pages/sr6DcGPRSb3k0lFNFZQW">Buy </a>for $15,800</td><td><a href="standard-operating-procedures/probe-station-sop.md">SOP</a></td><td><a href=".gitbook/assets/proberMPI-TS50.jpg">proberMPI-TS50.jpg</a></td><td><a href="/broken/pages/sr6DcGPRSb3k0lFNFZQW">Broken link</a></td></tr><tr><td>DIY SMU</td><td>Buy for $800</td><td><a href="fab-toolkit/metrology-characterization/semiconductor-parameter-analyzer/smu-analog-discoveries.md">SOP</a></td><td><a href=".gitbook/assets/AD3.png">AD3.png</a></td><td></td></tr><tr><td>Optical Spectrometer</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Probe Station V1</td><td><a href="/broken/pages/sr6DcGPRSb3k0lFNFZQW">Buy </a>for $15,800</td><td><a href="standard-operating-procedures/probe-station-sop.md">SOP</a></td><td><a href=".gitbook/assets/proberMPI-TS50.jpg">proberMPI-TS50.jpg</a></td><td><a href="/broken/pages/sr6DcGPRSb3k0lFNFZQW">Broken link</a></td></tr><tr><td>DIY SMU</td><td>Buy for $800</td><td><a href="fab-toolkit/smu/smu-analog-discoveries.md">SOP</a></td><td><a href=".gitbook/assets/AD3.png">AD3.png</a></td><td></td></tr><tr><td>Optical Spectrometer</td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 ### chemicals.
 

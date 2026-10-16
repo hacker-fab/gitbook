@@ -2,12 +2,12 @@
 description: A step-by-step guide on working with the Probe Station
 ---
 
-# Probe Station
+# ⚡ Probe Station
 
 To learn more about the hardware and software involved, refer:
 
-{% content-ref url="smu-analog-discoveries.md" %}
-[smu-analog-discoveries.md](smu-analog-discoveries.md)
+{% content-ref url="smu/smu-analog-discoveries.md" %}
+[smu-analog-discoveries.md](smu/smu-analog-discoveries.md)
 {% endcontent-ref %}
 
 ***
@@ -28,7 +28,7 @@ Another motivation behind this project is to implement a function to detect a pr
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcquq_Cm3aFfW92_PJtBtkjEO-DirPFesUfbYuuHnoIZb_zywcIjwtpIvfmFwSpe65MkFyR9yyEoBiDUue0ACtDWQhlBPnzEG3Wkk3V38ITEgCNiDwp1zBH_riEpA5Rht48cr4p?key=l9Hl_NBKff9Bf_PYNQ7jlDuQ" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption><p>Our DIY probe station design as of April 23, 2025.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (318).png" alt=""><figcaption><p>Our DIY probe station design as of April 23, 2025.</p></figcaption></figure>
 
 Our probe station consists of a stage positioner and microscope unit, probe positioners, and a magnetic board. The stage positioner is the stage you put your chip on, and is integrated with the microscope component. The probe positioner has probe needles and you manipulate it to touch pattern pads on the chip. These positioners are equipped with magnets and securely attach to the magnetic board. Otherwise they will shift during manipulation.
 
@@ -50,7 +50,7 @@ The specifications for our probe station are shown below:
 6. The stage positioner has a piezo vibration sensor for probe touch detection (work in progress)
 
 \
-![](<../../../.gitbook/assets/image (319).png>)
+![](<../.gitbook/assets/image (319).png>)
 
 Note on specification 4: The width and the height of pads of chips made in Hacker Fab are usually larger than 100 μm.
 
@@ -170,7 +170,7 @@ If File name in this Export window shows the assembly name, not the part name yo
 
 ### Print parts
 
-<figure><img src="../../../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
 
 Any 3D printer can be used. I used the Bambu X1 Carbon in the lab, with the Textured PEI Plate and a Bambu PLA-CF filament. Enable support (because the parts have overhangs) and make sure that the settings the arrows indicate in the figure above are correct.&#x20;
 
@@ -188,81 +188,81 @@ Start printing. You might need to apply [glue](https://us.store.bambulab.com/pro
 
 ### **Assemble probe positioner**
 
-<figure><img src="../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
 
 Place the XYZ stage on base\_probe positioner and align against the protrusions.
 
-<figure><img src="../../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
 
 Rotate the X-axis handle (micrometer) to move the X-axis stage so you can see the counterbores. Place M3 nuts on the bottom and fix M3x8 screws. Or, instead of rotating the micrometer, you can just push the stage along the X-axis. The stage is simply being pulled against the micrometer edge using a spring, so you can push it away from it.
 
-<figure><img src="../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
 
 Same for the other two counterbores. In this step, the pushing-away-from-micrometer method doesn’t work since you need to push the stage towards the micrometer.
 
-<figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 Align test arm holder attachment\_probe positioner against the edge of the XYZ stage, and fix M3x8 screws.
 
-<figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
 
 Align the bottom of the test arm holder and the edge of test arm holder attachment\_probe positioner.
 
-<figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
 
 Fix the test arm holder using M3x8 and M3 nuts. The screws included with the holder would be too short so they are not recommended.
 
-<figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
 Assemble the test arm and the probe needle. Rotate the screws so you can see the holes, then insert the test arm and the needle.
 
-<figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 Press-fit the four magnets.
 
 ### Assemble stage positioner and microscope unit
 
-<figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
 Insert the aluminum extrusion into the base and fix it using M4x10 screws and the aluminum extrusion nuts. We made holes on the front and the back as well, but you don’t have to use them (the extrusion would be fixed securely enough with two screws from the sides). Note: The extrusion needs to be longer for the design modification to match the height of the XYZR stage without the Z stage removed.
 
-<figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 Mark the aluminum extrusion at 188.2 mm from the top of the base. As we need the Z-axis adjustment for microscope focus, it does not have to be exact. Note: This length needs to be longer for the design modification to match the height of the XYZR stage without the Z stage removed.
 
-<figure><img src="../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (333).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (333).png" alt=""><figcaption></figcaption></figure>
 
 The XYZR stage consists of the X, Y, Z, and R stage from the bottom. Remove the Z stage from the top of the Y stage. Then remove the R stage from the top of the Z stage. Align the R stage to the Y stage and fix it using four of the screws you just removed from the stage. Note: As discussed in the Notes, we should not remove the Z stage. We will not need this step eventually.
 
-<figure><img src="../../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
 
 Similarly to the probe positioner, fix the XYR stage to the base using four M4x10 screws and four M4 nuts. You need to use a ball-point hex key.
 
-<figure><img src="../../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
 
 When you’re inserting the screws on the counterbores on the right side, it doesn’t go all the way even if the micrometer is rotated to the end. You need to manually push the stage.
 
-<figure><img src="../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
 Align the 3D printed chip stage so the slits are placed on the top right. Fix it using four M3x8 screws.
 
-<figure><img src="../../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
 Align the camera mount to the mark and fix it using four M4x10 screws and four aluminum extrusion nuts.
 
-<figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
 Attach the 3D printed tube to the camera and the objective lens. If you need, you can secure the connection to the lens using M3x8 screws and M3 nuts (we did not have to, so these screws and nuts are not included in the BOM).
 
-<figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
 Note: Our initial plan was to fix the camera to the mount using a screw and the thread on the back of the camera. However, we found that if we install the camera in this direction, the X and Y axis are switched (e.g., when you manipulate the X-axis, the image on your computer moves along the Y-axis). We need to modify this design. Currently, we rotated the camera so the USB socket faces the front, and simply taped it to the mount.
 
-<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
 ### **Attach the tape and the piezo vibration sensor (optional)**
 
@@ -286,7 +286,7 @@ Attach double-sided tape to the back of the piezo vibration sensor. Trim off the
 
 Note: We currently use self-threading here, but it didn’t work (when we were inserting the screw, it broke the 3D printed extrusion). We need to use the screw-and-nut method or thicken the extrusion.<br>
 
-<figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
 Place the sensor in the center of the chip stage so the wires are placed around the slits.
 
@@ -324,7 +324,7 @@ Download a Windows/Mac/Linux version, and install.
 
 Connect the USB cable to your computer and open AmLite. If you can’t open AmLite by double clicking, right click on the AmLite icon > Open, or open it on terminal.
 
-<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
 Manipulate the stage chip micrometers and check if the movement aligns what you expect. You can change the orientation by clicking the vertical and horizontal flip.
 
@@ -468,7 +468,7 @@ This is because the requirements are that the tube length needs to be 132.5 mm a
 
 The seating surface of an objective needs to be 150 mm away from the image sensor of the camera. The image sensor is located 17.5 mm away from the seating surface of the camera for AmScope MU Series cameras (to my understanding). That is why the tube length is 132.5 mm. Apparently, this 17.5 mm is a common dimension, as [an off-the-shelf tube](https://www.edmundoptics.com/p/din-objective-to-c-mount-tube-assembly/11599/), not sold by AmScope, is also 132.5 mm. Of course, it would be safer to carefully check the dimension of your camera.
 
-<figure><img src="../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 Additionally, the current tube has a slit. This is because we couldn’t get the objective in without it. We tried 3D printing the RMS thread, but objectives didn’t go all the way. This means that some particles could get inside the tube through the slit. I would like to know how careful we need to be about this. If this is a problem, we need to cover the slit in some way.
 

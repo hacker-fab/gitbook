@@ -2,7 +2,7 @@
 description: Hacker Fab DIY IC packaging documentation - as of May 21st, 2025.
 ---
 
-# IC Packaging
+# 📦 IC Packaging
 
 ***
 
@@ -124,8 +124,7 @@ Chip on board is a package that directly makes electrical connections to pads on
 
 * PCB: A piece of PCB that has pads around the IC footprint for wire bonding.&#x20;
 * Wire bonds: Thin wires (usually gold or aluminum) that connect IO pads on the IC to the lead frame.
-
-- Encapsulation: Usually made of a polymer like epoxy (though not limited) that provides structural support and protection to the package by enclosing the IC and wire bonds right on the PCB.
+* Encapsulation: Usually made of a polymer like epoxy (though not limited) that provides structural support and protection to the package by enclosing the IC and wire bonds right on the PCB.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfavmhIEknCElkfyfzDBPh24pAkpRSh-h3PVKSTJ2y6UDAUDZkzgw8FL7bTKLSqHIfpddEF4lsu9Ur6CAgRoY29e-CWLvTDMPYIhF64OKM9S60Y5Il3cDaGQPkXzSa8YFU47OxI?key=1snATNBmdsMT0ljin0BwGXX5" alt="" width="375"><figcaption><p>Figure 4: Example of chip on board</p></figcaption></figure>
 
@@ -363,7 +362,7 @@ Once the PCBs arrived, a combination of solder reflow and hand soldering was use
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe6L_MOEqK1NSIBiSO5g7Stp22fYQdmtCBmnmEZ4NeeBwf7vJH9lsIr1ggw0omB5vLqLtPMKWvaWNVVreR8TyGq_MXMUg36cVtJFlI1OaFKq3lba7hCBPcMrXxMxwcXF_9dSTzC?key=1snATNBmdsMT0ljin0BwGXX5" alt="" width="375"><figcaption><p>Figure 29: Soldered package</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/unnamed.png" alt="" width="375"><figcaption><p>Figure 30: Soldered motherboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/unnamed.png" alt="" width="375"><figcaption><p>Figure 30: Soldered motherboard</p></figcaption></figure>
 
 Finally, the resistor chip #656 from the EDA team was adhered with double sided tape and wire bonded to the package board. Due to time constraints, the other resistor chip #657 was not wired. The NMOS chip was not fabricated in time.
 
