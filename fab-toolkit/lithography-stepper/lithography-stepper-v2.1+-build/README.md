@@ -20,6 +20,8 @@ Stepper V2.1 is an incremental improvement upon the existing [Stepper V2](../lit
 
 As a whole, these changes should improve the results we get out of Stepper V2.1 compared to Stepper V2, and the mechanical changes will set the stage for further patterning capabilities such as reliable automatic alignment. Furthermore, the decoupling of the projector from the rest of the design will in the future allow us to use different projector for further improvements.
 
+**NOTE (Oct. 2026): A new nanopositioning system with closed-loop controls has been recently developed and integrated into the stepper, and is recommended over the open-loop micropositioning system described below. You can find more information including the BOM and build instructions** [**here**](../../nanopositioner/)**!**
+
 ## Specifications&#x20;
 
 | Spec                           | Value                                  |
