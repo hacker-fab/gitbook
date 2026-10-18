@@ -133,7 +133,7 @@ Figure 2: microscope close up (grey/black is UV resin, blue is wafer)\
     Note: If your pattern images have extraneous color components, the GUI has options to enable/disable different color channels for the red focus, UV focus, and exposure pattern. Use these at your convenience.
 5. Set up the patterning GUI util script
    1. In the source or scripts folder, find and open config.py in your text editor of choice. If your GUI has an integrated camera implemented, set RUN\_WITH\_CAMERA to True. If your GUI uses a motorized stage, set RUN\_WITH\_STAGE to True.
-   2. Run the python script called Lithographer.py. You can do this by opening a terminal and running the command "py -3.10 Lithographer.py". Make sure you have all dependencies installed as described in [Lithography Stepper V2 Build](../../fab-toolkit/patterning/lithography-stepper-v2-build-work-in-progress.md). If the program does not run, see [#troubleshooting](./#troubleshooting "mention").
+   2. Run the python script called Lithographer.py. You can do this by opening a terminal and running the command "py -3.10 Lithographer.py". Make sure you have all dependencies installed as described in [Lithography Stepper V2 Build](../../fab-toolkit/lithography-stepper/lithography-stepper-v2-build-work-in-progress.md). If the program does not run, see [#troubleshooting](./#troubleshooting "mention").
    3. Move the black full-screen window to the projector (on windows, this is shift + win + L/R arrow)
    4. Use the three import thumbnails to select the desired images, these can be changed whenever. Make sure they are correct using the small previews.
    5. For more information about the software and its usage, click the "help" button at the bottom right of the GUI.

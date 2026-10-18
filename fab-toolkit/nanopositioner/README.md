@@ -1,4 +1,4 @@
-# Nanopositioner
+# ⚙️ Nanopositioner
 
 ## Introduction
 
@@ -46,7 +46,7 @@ During Spring of 2026 the CMU nanopositioner team was able to produce a working 
 
 #### Vibration Resilience
 
-<figure><img src="../../../.gitbook/assets/Video Project 1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Video Project 1.gif" alt=""><figcaption></figcaption></figure>
 
 Due to the nature of moving at sub-micron levels the micro-manipulator is extremely sensitive to vibrations. The above gif was taken at a 10x object lens where each line is \~2um wide. As you can see the movement is significantly larger than the goal of 100nm movement accuracy.
 
@@ -56,7 +56,7 @@ To analyze the vibrations and we used an opencv flow detector; however, we are l
 
 #### Packaging And Setup
 
-<figure><img src="../../../.gitbook/assets/image (470).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (470).png" alt="" width="375"><figcaption></figcaption></figure>
 
 The current micro manipulator took over a month to be built and is very susceptible to things getting unplugged/twisted/broken/etc. The system should be more robust to handling and easier to put together
 
