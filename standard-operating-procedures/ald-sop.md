@@ -1,7 +1,7 @@
 ---
 description: >-
-  Contacts: Matt Moneck (mmoneck@andrew.cmu.edu), Jay Kunselman
-  (jskunsel@andrew.cmu.edu), Joel Gonzalez (bgonzale@andrew.cmu.edu)
+  Contacts: Matt Moneck (mmoneck@andrew.cmu.edu), Joel Gonzalez
+  (bgonzale@andrew.cmu.edu), Jay Kunselman (jskunsel@andrew.cmu.edu)
 ---
 
 # ALD SOP
@@ -187,7 +187,7 @@ Refer to the following instructions for how to turn on the pneumatic gas.
 
 ## Turning on Heating Elements
 
-1. Turn on the variac, and ensure it is set to 50V as seen below.
+1. Turn on the variac, and ensure it is set to the appropriate voltage for your experiment. 50V, as shown below, is a good starting point. For hafnium oxide deposition, it was set to 100V in order for the delivery line to get to the desired temperature of around 150C.
 
 <div><img src="../.gitbook/assets/unknown (24).jpeg" alt="" height="272" width="319"> <img src="../.gitbook/assets/unknown (25).jpeg" alt="" height="273" width="204"></div>
 
