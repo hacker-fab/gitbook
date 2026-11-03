@@ -24,6 +24,10 @@
 
 * [🎥 Lithography Stepper](fab-toolkit/lithography-stepper/README.md)
   * [Lithography Stepper V2.1+ Build](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/README.md)
+    * [Homing and Autofocus](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/homing-and-autofocus.md)
+    * [Additional Projector Options](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/additional-projector-options.md)
+    * [Enclosure Option](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/enclosure-option.md)
+    * [Current Issues and Next Steps](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/current-issues-and-next-steps.md)
     * [Stepper V2.1 Waterloo Build (draft)](fab-toolkit/lithography-stepper/lithography-stepper-v2.1+-build/stepper-v2.1-waterloo-build-draft.md)
   * [Lithography Stepper V2 Build](fab-toolkit/lithography-stepper/lithography-stepper-v2-build-work-in-progress.md)
   * [Lithography Stepper V1 Build](fab-toolkit/lithography-stepper/photolithography-stepper-v1.md)
