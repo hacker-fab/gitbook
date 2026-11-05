@@ -102,6 +102,7 @@
 
 * [Electrical Characterization](metrology-and-characterization/electrical-characterization/README.md)
   * [C-V Characterization](metrology-and-characterization/electrical-characterization/c-v-characterization/README.md)
+    * [PN Junction C-V Characterization](metrology-and-characterization/electrical-characterization/c-v-characterization/pn-junction-c-v-characterization.md)
     * [MOS C-V Characterization](metrology-and-characterization/electrical-characterization/c-v-characterization/mos-c-v-characterization.md)
   * [I-V Characterization](metrology-and-characterization/electrical-characterization/i-v-characterization.md)
 
