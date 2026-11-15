@@ -8,12 +8,6 @@ This is in support of the development of a CMOS process that uses a Si-Al2O3-Al 
 
 
 
-**Thus far only NMOS devices have been fabbed to verify effectiveness of sputtered gate oxide. Details on n well doping process dev to allow for CMO devices coming soon**
-
-**More details on general approach and methods and next steps coming soon**
-
-
-
 The sputtered film characterization that precedes this work is linked below.
 
 {% content-ref url="../fab-toolkit/rf-sputtering/film-characterization.md" %}
